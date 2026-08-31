@@ -729,7 +729,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I am 15 years old and I'm ready for the party.",
                       "exampleEs": "Tengo 15 años y estoy listo para la fiesta.",
                       "audio": "I am 15 years old and I'm ready for the party.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step4-questions-curious.webp",
+                      "avatarUrl": "/images/avatars-3d/c02-s04-step1-spelling-intro.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I am 15 years old and I'm ready for the party.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -741,7 +741,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "My friend Mateo is 16 years old and his sister is 14.",
                       "exampleEs": "Mi amigo Mateo tiene 16 años y su hermana tiene 14.",
                       "audio": "My friend Mateo is 16 years old and his sister is 14.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step5-wh-interview.webp",
+                      "avatarUrl": "/images/avatars-3d/c02-s04-step2-mateo-badge.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"My friend Mateo is 16 years old and his sister is 14.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -753,7 +753,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I am not 13 years old anymore; I'm 14 now.",
                       "exampleEs": "Ya no tengo 13 años; ahora tengo 14.",
                       "audio": "I am not 13 years old anymore; I'm 14 now.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step1-teacher-waving.webp",
+                      "avatarUrl": "/images/avatars-3d/c02-s04-step3-vowels-clarity.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I am not 13 years old anymore; I'm 14 now.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -765,7 +765,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Are you 15 years old too? - Yes, I am!",
                       "exampleEs": "¿Tú también tienes 15 años? - ¡Sí, sí tengo!",
                       "audio": "Are you 15 years old too? Yes, I am!",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step2-casual-greeting.webp",
+                      "avatarUrl": "/images/avatars-3d/c02-s04-step4-email-spelling.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Are you 15 years old too? - Yes, I am!\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -777,7 +777,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "How old are you and how old is your best friend?",
                       "exampleEs": "¿Cuántos años tienes tú y cuántos tiene tu mejor amigo?",
                       "audio": "How old are you and how old is your best friend?",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step3-energized-mood.webp",
+                      "avatarUrl": "/images/avatars-3d/c02-s04-step5-how-do-you-spell.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"How old are you and how old is your best friend?\", isolated on pure solid white background, clean 3D character render"
                     }
                   ],
@@ -804,7 +804,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I am fifteen (15) years old, not fifty (50)!",
                       "exampleEs": "¡Tengo quince (15) años, no cincuenta (50)!",
                       "audio": "I am fifteen years old, not fifty!",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step4-nice-to-meet.webp",
+                      "avatarUrl": "/images/avatars-3d/c02-s05-step1-open-notebook.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I am fifteen (15) years old, not fifty (50)!\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -816,7 +816,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "My birthday is in October and her birthday is in May.",
                       "exampleEs": "Mi cumpleaños es en octubre y el de ella es en mayo.",
                       "audio": "My birthday is in October and her birthday is in May.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step5-farewell-goodbye.webp",
+                      "avatarUrl": "/images/avatars-3d/c02-s05-step2-raise-hand.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"My birthday is in October and her birthday is in May.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -828,7 +828,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "My birthday party is on Saturday, October 12th.",
                       "exampleEs": "Mi fiesta de cumpleaños es el sábado 12 de octubre.",
                       "audio": "My birthday party is on Saturday, October 12th.",
-                      "avatarUrl": "/images/avatars-3d/c-habits-concept-c-avatar.webp",
+                      "avatarUrl": "/images/avatars-3d/c02-s05-step3-listen-repeat.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"My birthday party is on Saturday, October 12th.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -840,7 +840,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "When is your birthday? - It is on August 5th!",
                       "exampleEs": "¿Cuándo es tu cumpleaños? - ¡Es el 5 de agosto!",
                       "audio": "When is your birthday? It is on August 5th!",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step1-pronouns-intro.webp",
+                      "avatarUrl": "/images/avatars-3d/c02-s05-step4-can-i-borrow.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"When is your birthday? - It is on August 5th!\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -852,7 +852,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Happy birthday! Make a wish and blow out the candles!",
                       "exampleEs": "¡Feliz cumpleaños! ¡Pide un deseo y sopla las velas!",
                       "audio": "Happy birthday! Make a wish and blow out the candles!",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step2-contractions-sofia.webp",
+                      "avatarUrl": "/images/avatars-3d/c02-s05-step5-classroom-qa.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Happy birthday! Make a wish and blow out the candles!\", isolated on pure solid white background, clean 3D character render"
                     }
                   ],
@@ -1329,7 +1329,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "My brother is super funny and our dog is very friendly.",
                       "exampleEs": "Mi hermano es súper gracioso y nuestro perro es muy amigable.",
                       "audio": "My brother is super funny and our dog is very friendly.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step2-casual-greeting.webp",
+                      "avatarUrl": "/images/avatars-3d/c03-s04-step1-birthday-age.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"My brother is super funny and our dog is very friendly.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -26694,64 +26694,64 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               },
               {
                 "id": "tb4-1-verb-arena",
-                "title": "AI Verb Arena: 6 Persuasive Action Verbs / Verbos de Debate",
-                "description": "Domina 6 verbos clave para debatir, argumentar y persuadir",
+                "title": "AI Verb Arena: 6 Opinion & Debate Action Verbs / Verbos de Opinión y Argumentación",
+                "description": "Domina 6 verbos clave para expresar puntos de vista, acordar y argumentar con solidez",
                 "type": "verb-arena-embedded",
                 "limit": 6,
                 "verbsData": [
                   {
+                    "verb": "Think",
+                    "past": "Thought",
+                    "past_participle": "Thought",
+                    "meaning_es": "Pensar / Opinar",
+                    "pronunciation": "/θɪŋk - θɔːt/",
+                    "example": "I thought deeply about your proposal. (A well-thought idea.)",
+                    "example_es": "Pensé profundamente sobre tu propuesta. (Una idea bien pensada)."
+                  },
+                  {
+                    "verb": "Speak",
+                    "past": "Spoke",
+                    "past_participle": "Spoken",
+                    "meaning_es": "Hablar / Expresar ideas",
+                    "pronunciation": "/spiːk - spoʊk - ˈspoʊkən/",
+                    "example": "She spoke with strong conviction. (Spoken clearly.)",
+                    "example_es": "Ella habló con fuerte convicción. (Dicho con claridad)."
+                  },
+                  {
                     "verb": "Believe",
                     "past": "Believed",
                     "past_participle": "Believed",
-                    "meaning_es": "Creer / Opinar",
+                    "meaning_es": "Creer / Considerar",
                     "pronunciation": "/bɪˈliːv/",
-                    "example": "I believe education changes lives.",
-                    "example_es": "Creo que la educación cambia vidas."
+                    "example": "We believed in our team's potential.",
+                    "example_es": "Creímos en el potencial de nuestro equipo."
                   },
                   {
                     "verb": "Agree",
                     "past": "Agreed",
                     "past_participle": "Agreed",
-                    "meaning_es": "Estar de acuerdo",
+                    "meaning_es": "Estar de acuerdo / Coincidir",
                     "pronunciation": "/əˈɡriː/",
-                    "example": "We agree on the main project plan.",
-                    "example_es": "Estamos de acuerdo en el plan principal del proyecto."
+                    "example": "They agreed on the final schedule.",
+                    "example_es": "Ellos estuvieron de acuerdo con el horario final."
                   },
                   {
                     "verb": "Disagree",
                     "past": "Disagreed",
                     "past_participle": "Disagreed",
-                    "meaning_es": "Estar en desacuerdo",
+                    "meaning_es": "Estar en desacuerdo / Discrepar",
                     "pronunciation": "/ˌdɪsəˈɡriː/",
-                    "example": "I disagree with strict homework rules.",
-                    "example_es": "Estoy en desacuerdo con reglas estrictas de tarea."
+                    "example": "He disagreed respectfully during the debate.",
+                    "example_es": "Él discrepó respetuosamente durante el debate."
                   },
                   {
                     "verb": "Support",
                     "past": "Supported",
                     "past_participle": "Supported",
-                    "meaning_es": "Apoyar / Respaldar",
+                    "meaning_es": "Apoyar / Respaldar con pruebas",
                     "pronunciation": "/səˈpɔːrt/",
-                    "example": "She supported my idea during the debate.",
-                    "example_es": "Ella apoyó mi idea durante el debate."
-                  },
-                  {
-                    "verb": "Prove",
-                    "past": "Proved",
-                    "past_participle": "Proven",
-                    "meaning_es": "Demostrar / Probar",
-                    "pronunciation": "/pruːv/",
-                    "example": "Scientific data proved our hypothesis.",
-                    "example_es": "Los datos científicos demostraron nuestra hipótesis."
-                  },
-                  {
-                    "verb": "Suggest",
-                    "past": "Suggested",
-                    "past_participle": "Suggested",
-                    "meaning_es": "Sugerir / Proponer",
-                    "pronunciation": "/səɡˈdʒest/",
-                    "example": "I suggest trying a new study strategy.",
-                    "example_es": "Sugiero probar una nueva estrategia de estudio."
+                    "example": "She supported her thesis with solid facts.",
+                    "example_es": "Ella respaldó su tesis con hechos sólidos."
                   }
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-orange-600 to-red-700",
@@ -27197,19 +27197,37 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               },
               {
                 "id": "tb4-2-verb-arena",
-                "title": "AI Verb Arena: 6 Advice & Action Verbs / Verbos de Asesoría",
-                "description": "Domina 6 verbos clave para orientar, calmar y resolver problemas",
+                "title": "AI Verb Arena: 6 Wellness & Advice Action Verbs / Verbos de Bienestar y Consejo",
+                "description": "Domina 6 verbos clave para brindar asesoría, reducir el estrés y fomentar hábitos saludables",
                 "type": "verb-arena-embedded",
                 "limit": 6,
                 "verbsData": [
                   {
+                    "verb": "Take",
+                    "past": "Took",
+                    "past_participle": "Taken",
+                    "meaning_es": "Tomar descansos / Adoptar hábitos",
+                    "pronunciation": "/teɪk - tʊk - ˈteɪkən/",
+                    "example": "He took regular study breaks. (Breaks taken on time.)",
+                    "example_es": "Él tomó pausas activas regulares. (Pausas tomadas a tiempo)."
+                  },
+                  {
+                    "verb": "Give",
+                    "past": "Gave",
+                    "past_participle": "Given",
+                    "meaning_es": "Dar / Ofrecer consejos",
+                    "pronunciation": "/ɡɪv - ɡeɪv - ˈɡɪvn/",
+                    "example": "She gave thoughtful wellness advice. (Advice given kindly.)",
+                    "example_es": "Ella dio un sabio consejo de bienestar. (Consejo dado con amabilidad)."
+                  },
+                  {
                     "verb": "Advise",
                     "past": "Advised",
                     "past_participle": "Advised",
-                    "meaning_es": "Aconsejar / Orientar",
+                    "meaning_es": "Aconsejar / Recomendar",
                     "pronunciation": "/ədˈvaɪz/",
-                    "example": "I advised my friend to rest.",
-                    "example_es": "Le aconsejé a mi amigo que descansara."
+                    "example": "The counselor advised him to rest more.",
+                    "example_es": "El orientador le aconsejó descansar más."
                   },
                   {
                     "verb": "Avoid",
@@ -27217,8 +27235,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "past_participle": "Avoided",
                     "meaning_es": "Evitar",
                     "pronunciation": "/əˈvɔɪd/",
-                    "example": "You should avoid distractions while studying.",
-                    "example_es": "Deberías evitar distracciones mientras estudias."
+                    "example": "We avoided screen time before sleeping.",
+                    "example_es": "Evitamos las pantallas antes de dormir."
                   },
                   {
                     "verb": "Try",
@@ -27226,35 +27244,17 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "past_participle": "Tried",
                     "meaning_es": "Probar / Intentar",
                     "pronunciation": "/traɪ/",
-                    "example": "Why don't you try a new study method?",
-                    "example_es": "¿Por qué no pruebas un nuevo método de estudio?"
+                    "example": "They tried meditation to lower stress.",
+                    "example_es": "Intentaron la meditación para reducir el estrés."
                   },
                   {
                     "verb": "Relax",
                     "past": "Relaxed",
                     "past_participle": "Relaxed",
-                    "meaning_es": "Relajarse",
+                    "meaning_es": "Relajarse / Descansar",
                     "pronunciation": "/rɪˈlæks/",
-                    "example": "Take a warm shower and relax.",
-                    "example_es": "Toma una ducha caliente y relájate."
-                  },
-                  {
-                    "verb": "Talk",
-                    "past": "Talked",
-                    "past_participle": "Talked",
-                    "meaning_es": "Hablar / Conversar",
-                    "pronunciation": "/tɔːk/",
-                    "example": "You should talk openly with your parents.",
-                    "example_es": "Deberías hablar abiertamente con tus padres."
-                  },
-                  {
-                    "verb": "Organize",
-                    "past": "Organized",
-                    "past_participle": "Organized",
-                    "meaning_es": "Organizar / Planificar",
-                    "pronunciation": "/ˈɔːrɡənaɪz/",
-                    "example": "Organize your study schedule ahead of time.",
-                    "example_es": "Organiza tu horario de estudio con anticipación."
+                    "example": "She relaxed listening to calm music.",
+                    "example_es": "Ella se relajó escuchando música tranquila."
                   }
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-orange-600 to-red-700",
@@ -27700,64 +27700,64 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               },
               {
                 "id": "tb4-3-verb-arena",
-                "title": "AI Verb Arena: 6 Science & Logic Verbs / Verbos Científicos",
-                "description": "Domina 6 verbos de causa y efecto con su conjugación presente y pasado",
+                "title": "AI Verb Arena: 6 Science & Causality Action Verbs / Verbos de Causalidad Científica",
+                "description": "Domina 6 verbos clave de física, química y fenómenos naturales para oraciones condicionales",
                 "type": "verb-arena-embedded",
                 "limit": 6,
                 "verbsData": [
+                  {
+                    "verb": "Freeze",
+                    "past": "Froze",
+                    "past_participle": "Frozen",
+                    "meaning_es": "Congelar / Congelarse",
+                    "pronunciation": "/friːz - froʊz - ˈfroʊzn/",
+                    "example": "Water froze at zero degrees Celsius. (Frozen solid.)",
+                    "example_es": "El agua se congeló a cero grados Celsius. (Congelada sólida)."
+                  },
+                  {
+                    "verb": "Melt",
+                    "past": "Melted",
+                    "past_participle": "Melted",
+                    "meaning_es": "Derretir / Derretirse",
+                    "pronunciation": "/melt/",
+                    "example": "The ice melted quickly in the warm sun.",
+                    "example_es": "El hielo se derritió rápidamente bajo el sol cálido."
+                  },
                   {
                     "verb": "Boil",
                     "past": "Boiled",
                     "past_participle": "Boiled",
                     "meaning_es": "Hervir",
                     "pronunciation": "/bɔɪl/",
-                    "example": "Water boils at 100°C.",
-                    "example_es": "El agua hierve a 100°C."
-                  },
-                  {
-                    "verb": "Melt",
-                    "past": "Melted",
-                    "past_participle": "Melted",
-                    "meaning_es": "Derretirse",
-                    "pronunciation": "/melt/",
-                    "example": "Glaciers melt when temperatures rise.",
-                    "example_es": "Los glaciares se derriten cuando suben las temperaturas."
-                  },
-                  {
-                    "verb": "Freeze",
-                    "past": "Froze",
-                    "past_participle": "Frozen",
-                    "meaning_es": "Congelarse",
-                    "pronunciation": "/friːz/",
-                    "example": "Liquids freeze in extreme cold.",
-                    "example_es": "Los líquidos se congelan en frío extremo."
+                    "example": "Water boiled at 100 degrees Celsius.",
+                    "example_es": "El agua hirvió a 100 grados Celsius."
                   },
                   {
                     "verb": "Mix",
                     "past": "Mixed",
                     "past_participle": "Mixed",
-                    "meaning_es": "Mezclar",
+                    "meaning_es": "Mezclar / Combinar",
                     "pronunciation": "/mɪks/",
-                    "example": "If you mix blue and yellow, you get green.",
-                    "example_es": "Si mezclas azul y amarillo, obtienes verde."
+                    "example": "We mixed yellow and blue to make green.",
+                    "example_es": "Mezclamos amarillo y azul para hacer verde."
                   },
                   {
                     "verb": "Dissolve",
                     "past": "Dissolved",
                     "past_participle": "Dissolved",
-                    "meaning_es": "Disolverse",
+                    "meaning_es": "Disolver / Disolverse",
                     "pronunciation": "/dɪˈzɑːlv/",
-                    "example": "Salt dissolves quickly in warm water.",
-                    "example_es": "La sal se disuelve rápido en agua caliente."
+                    "example": "The salt dissolved in warm water.",
+                    "example_es": "La sal se disolvió en agua tibia."
                   },
                   {
                     "verb": "Expand",
                     "past": "Expanded",
                     "past_participle": "Expanded",
-                    "meaning_es": "Expandirse",
+                    "meaning_es": "Expandir / Dilatarse",
                     "pronunciation": "/ɪkˈspænd/",
-                    "example": "Air expands when it gets hot.",
-                    "example_es": "El aire se expande cuando se calienta."
+                    "example": "Air expanded when heated.",
+                    "example_es": "El aire se expandió al calentarse."
                   }
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-orange-600 to-red-700",
@@ -28203,64 +28203,64 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               },
               {
                 "id": "tb4-4-verb-arena",
-                "title": "AI Verb Arena: 6 Digital Action Verbs / Verbos de Tecnología",
-                "description": "Domina 6 verbos esenciales para interactuar en aplicaciones y juegos",
+                "title": "AI Verb Arena: 6 Digital Lifestyle Action Verbs / Verbos de Vida Digital",
+                "description": "Domina 6 verbos clave para la tecnología, redes sociales y gestión del tiempo digital",
                 "type": "verb-arena-embedded",
                 "limit": 6,
                 "verbsData": [
                   {
+                    "verb": "Send",
+                    "past": "Sent",
+                    "past_participle": "Sent",
+                    "meaning_es": "Enviar mensajes / Transmitir",
+                    "pronunciation": "/send - sent/",
+                    "example": "I sent the urgent group invitation. (Message sent.)",
+                    "example_es": "Envié la invitación urgente al grupo. (Mensaje enviado)."
+                  },
+                  {
+                    "verb": "Spend",
+                    "past": "Spent",
+                    "past_participle": "Spent",
+                    "meaning_es": "Pasar tiempo / Invertir horas",
+                    "pronunciation": "/spend - spent/",
+                    "example": "He spent two hours practicing code. (Time well spent.)",
+                    "example_es": "Él pasó dos horas practicando código. (Tiempo bien invertido)."
+                  },
+                  {
                     "verb": "Text",
                     "past": "Texted",
                     "past_participle": "Texted",
-                    "meaning_es": "Textear / Escribir por chat",
+                    "meaning_es": "Mensajear / Chatear",
                     "pronunciation": "/tekst/",
-                    "example": "I texted you the meeting link.",
-                    "example_es": "Te envié por mensaje el enlace de la reunión."
+                    "example": "She texted her classmates about homework.",
+                    "example_es": "Ella mensajeó a sus compañeros sobre la tarea."
                   },
                   {
                     "verb": "Share",
                     "past": "Shared",
                     "past_participle": "Shared",
-                    "meaning_es": "Compartir",
+                    "meaning_es": "Compartir contenido",
                     "pronunciation": "/ʃer/",
-                    "example": "Share the playlist with the group.",
-                    "example_es": "Comparte la lista de canciones con el grupo."
+                    "example": "We shared the tutorial link with friends.",
+                    "example_es": "Compartimos el enlace del tutorial con amigos."
                   },
                   {
                     "verb": "Download",
                     "past": "Downloaded",
                     "past_participle": "Downloaded",
-                    "meaning_es": "Descargar",
+                    "meaning_es": "Descargar archivos",
                     "pronunciation": "/ˌdaʊnˈloʊd/",
-                    "example": "I downloaded the latest game update.",
-                    "example_es": "Descargué la última actualización del juego."
+                    "example": "They downloaded the offline study guide.",
+                    "example_es": "Descargaron la guía de estudio sin conexión."
                   },
                   {
                     "verb": "Upload",
                     "past": "Uploaded",
                     "past_participle": "Uploaded",
-                    "meaning_es": "Subir a la nube / Publicar",
-                    "pronunciation": "/ˈʌploʊd/",
-                    "example": "She uploaded a great tutorial video.",
-                    "example_es": "Ella subió un gran video tutorial."
-                  },
-                  {
-                    "verb": "Reply",
-                    "past": "Replied",
-                    "past_participle": "Replied",
-                    "meaning_es": "Responder / Contestar",
-                    "pronunciation": "/rɪˈplaɪ/",
-                    "example": "He replied to my message immediately.",
-                    "example_es": "Él respondió a mi mensaje de inmediato."
-                  },
-                  {
-                    "verb": "Stream",
-                    "past": "Streamed",
-                    "past_participle": "Streamed",
-                    "meaning_es": "Transmitir en vivo",
-                    "pronunciation": "/striːm/",
-                    "example": "They streamed the gaming tournament live.",
-                    "example_es": "Transmitieron el torneo de juegos en vivo."
+                    "meaning_es": "Subir / Publicar archivos",
+                    "pronunciation": "/ˌʌpˈloʊd/",
+                    "example": "He uploaded his video project on time.",
+                    "example_es": "Él subió su proyecto de video a tiempo."
                   }
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-orange-600 to-red-700",
@@ -28706,64 +28706,64 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               },
               {
                 "id": "tb4-5-verb-arena",
-                "title": "AI Verb Arena: 6 Future Action Verbs / Verbos de Metas Futuras",
-                "description": "Domina 6 verbos clave para planear tu futuro y alcanzar metas",
+                "title": "AI Verb Arena: 6 Future Achievement Verbs / Verbos de Metas y Logros",
+                "description": "Domina 6 verbos clave para planificar metas académicas, becas y proyectos de vida",
                 "type": "verb-arena-embedded",
                 "limit": 6,
                 "verbsData": [
                   {
+                    "verb": "Win",
+                    "past": "Won",
+                    "past_participle": "Won",
+                    "meaning_es": "Ganar becas / Triunfar",
+                    "pronunciation": "/wɪn - wʌn/",
+                    "example": "She won the international science contest. (A hard-won prize.)",
+                    "example_es": "Ella ganó el concurso internacional de ciencias. (Un premio bien ganado)."
+                  },
+                  {
+                    "verb": "Become",
+                    "past": "Became",
+                    "past_participle": "Become",
+                    "meaning_es": "Convertirse en / Llegar a ser",
+                    "pronunciation": "/bɪˈkʌm - bɪˈkeɪm - bɪˈkʌm/",
+                    "example": "He became an outstanding programmer. (Become fluent.)",
+                    "example_es": "Él se convirtió en un programador sobresaliente. (Volverse fluido)."
+                  },
+                  {
                     "verb": "Achieve",
                     "past": "Achieved",
                     "past_participle": "Achieved",
-                    "meaning_es": "Lograr / Alcanzar",
+                    "meaning_es": "Alcanzar / Lograr metas",
                     "pronunciation": "/əˈtʃiːv/",
-                    "example": "You will achieve your biggest goals.",
-                    "example_es": "Alcanzarás tus metas más grandes."
+                    "example": "We achieved our English learning goals.",
+                    "example_es": "Alcanzamos nuestras metas de aprendizaje de inglés."
                   },
                   {
                     "verb": "Pass",
                     "past": "Passed",
                     "past_participle": "Passed",
-                    "meaning_es": "Aprobar / Pasar examen",
+                    "meaning_es": "Aprobar exámenes",
                     "pronunciation": "/pæs/",
-                    "example": "If I study, I will pass the exam.",
-                    "example_es": "Si estudio, aprobaré el examen."
-                  },
-                  {
-                    "verb": "Win",
-                    "past": "Won",
-                    "past_participle": "Won",
-                    "meaning_es": "Ganar",
-                    "pronunciation": "/wɪn/",
-                    "example": "Our team will win the championship.",
-                    "example_es": "Nuestro equipo ganará el campeonato."
+                    "example": "They passed the B1 certification exam.",
+                    "example_es": "Ellos aprobaron el examen de certificación B1."
                   },
                   {
                     "verb": "Travel",
                     "past": "Traveled",
                     "past_participle": "Traveled",
-                    "meaning_es": "Viajar",
+                    "meaning_es": "Viajar al exterior",
                     "pronunciation": "/ˈtrævl/",
-                    "example": "We will travel to London next summer.",
-                    "example_es": "Viajaremos a Londres el próximo verano."
-                  },
-                  {
-                    "verb": "Save",
-                    "past": "Saved",
-                    "past_participle": "Saved",
-                    "meaning_es": "Ahorrar / Guardar",
-                    "pronunciation": "/seɪv/",
-                    "example": "If I save money, I will buy a tablet.",
-                    "example_es": "Si ahorro dinero, compraré una tableta."
+                    "example": "She traveled abroad on an exchange program.",
+                    "example_es": "Ella viajó al extranjero en un programa de intercambio."
                   },
                   {
                     "verb": "Improve",
                     "past": "Improved",
                     "past_participle": "Improved",
-                    "meaning_es": "Mejorar",
+                    "meaning_es": "Mejorar / Perfeccionar",
                     "pronunciation": "/ɪmˈpruːv/",
-                    "example": "Your speaking will improve very fast.",
-                    "example_es": "Tu expresión oral mejorará muy rápido."
+                    "example": "I improved my speaking confidence tremendously.",
+                    "example_es": "Mejoré mi confianza al hablar enormemente."
                   }
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-orange-600 to-red-700",
@@ -29210,10 +29210,28 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               {
                 "id": "tb4-6-verb-arena",
                 "title": "AI Verb Arena: 6 Evaluative Action Verbs / Verbos de Comparación",
-                "description": "Domina 6 verbos clave para comparar, elegir y evaluar calidad",
+                "description": "Domina 6 verbos clave para comparar, elegir y evaluar calidad de productos y tecnología",
                 "type": "verb-arena-embedded",
                 "limit": 6,
                 "verbsData": [
+                  {
+                    "verb": "Choose",
+                    "past": "Chose",
+                    "past_participle": "Chosen",
+                    "meaning_es": "Elegir / Escoger",
+                    "pronunciation": "/tʃuːz - tʃoʊz - ˈtʃoʊzn/",
+                    "example": "She chose the best wireless headphones. (The chosen device.)",
+                    "example_es": "Ella escogió los mejores audífonos inalámbricos. (El dispositivo elegido)."
+                  },
+                  {
+                    "verb": "Buy",
+                    "past": "Bought",
+                    "past_participle": "Bought",
+                    "meaning_es": "Comprar / Adquirir",
+                    "pronunciation": "/baɪ - bɔːt/",
+                    "example": "He bought the fastest smartphone. (Bought online.)",
+                    "example_es": "Él compró el celular más rápido. (Comprado en línea)."
+                  },
                   {
                     "verb": "Compare",
                     "past": "Compared",
@@ -29222,15 +29240,6 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "pronunciation": "/kəmˈper/",
                     "example": "We compared both gaming consoles.",
                     "example_es": "Comparamos ambas consolas de juego."
-                  },
-                  {
-                    "verb": "Choose",
-                    "past": "Chose",
-                    "past_participle": "Chosen",
-                    "meaning_es": "Elegir / Escoger",
-                    "pronunciation": "/tʃuːz/",
-                    "example": "She chose the best wireless headphones.",
-                    "example_es": "Ella escogió los mejores audífonos inalámbricos."
                   },
                   {
                     "verb": "Prefer",
@@ -29249,15 +29258,6 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "pronunciation": "/ˌaʊtpərˈfɔːrm/",
                     "example": "The new chip outperformed all rivals.",
                     "example_es": "El nuevo chip superó en rendimiento a todos los rivales."
-                  },
-                  {
-                    "verb": "Rank",
-                    "past": "Ranked",
-                    "past_participle": "Ranked",
-                    "meaning_es": "Clasificar / Posicionar",
-                    "pronunciation": "/ræŋk/",
-                    "example": "They ranked this movie as number one.",
-                    "example_es": "Clasificaron esta película como la número uno."
                   },
                   {
                     "verb": "Recommend",
@@ -29713,10 +29713,28 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               {
                 "id": "tb4-7-verb-arena",
                 "title": "AI Verb Arena: 6 Troubleshooting Action Verbs / Verbos de Reparación",
-                "description": "Domina 6 verbos clave para solucionar problemas de hardware y espacio",
+                "description": "Domina 6 verbos clave para solucionar problemas de hardware, espacio y rendimiento",
                 "type": "verb-arena-embedded",
                 "limit": 6,
                 "verbsData": [
+                  {
+                    "verb": "Spend",
+                    "past": "Spent",
+                    "past_participle": "Spent",
+                    "meaning_es": "Gastar dinero / Pasar tiempo",
+                    "pronunciation": "/spend - spent/",
+                    "example": "I spent too much money on games. (Money spent.)",
+                    "example_es": "Gasté demasiado dinero en juegos. (Dinero gastado)."
+                  },
+                  {
+                    "verb": "Lose",
+                    "past": "Lost",
+                    "past_participle": "Lost",
+                    "meaning_es": "Perder datos / Perder archivos",
+                    "pronunciation": "/luːz - lɔːst/",
+                    "example": "He lost his unsaved project. (A lost file.)",
+                    "example_es": "Él perdió su proyecto sin guardar. (Un archivo perdido)."
+                  },
                   {
                     "verb": "Fix",
                     "past": "Fixed",
@@ -29736,15 +29754,6 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "example_es": "Elimina apps sin usar para liberar espacio."
                   },
                   {
-                    "verb": "Upgrade",
-                    "past": "Upgraded",
-                    "past_participle": "Upgraded",
-                    "meaning_es": "Actualizar / Mejorar",
-                    "pronunciation": "/ˈʌpɡreɪd/",
-                    "example": "They upgraded the internet router.",
-                    "example_es": "Ellos actualizaron el router de internet."
-                  },
-                  {
                     "verb": "Charge",
                     "past": "Charged",
                     "past_participle": "Charged",
@@ -29761,15 +29770,6 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "pronunciation": "/ˌriːˈstɑːrt/",
                     "example": "Restart the tablet if it freezes.",
                     "example_es": "Reinicia la tableta si se congela."
-                  },
-                  {
-                    "verb": "Afford",
-                    "past": "Afforded",
-                    "past_participle": "Afforded",
-                    "meaning_es": "Poder pagar / Costear",
-                    "pronunciation": "/əˈfɔːrd/",
-                    "example": "I can afford the new gaming mouse.",
-                    "example_es": "Puedo costear el nuevo mouse de juegos."
                   }
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-orange-600 to-red-700",
@@ -30216,7 +30216,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               {
                 "id": "tb4-8-verb-arena",
                 "title": "AI Verb Arena: 6 Friendship & Mediation Verbs / Verbos de Amistad",
-                "description": "Domina 6 verbos clave para mediar, disculpar y fortalecer lazos",
+                "description": "Domina 6 verbos clave para mediar, disculpar y fortalecer lazos personales y escolares",
                 "type": "verb-arena-embedded",
                 "limit": 6,
                 "verbsData": [
@@ -30225,9 +30225,18 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "past": "Forgave",
                     "past_participle": "Forgiven",
                     "meaning_es": "Perdonar",
-                    "pronunciation": "/fərˈɡɪv/",
-                    "example": "She forgave her friend sincerely.",
-                    "example_es": "Ella perdonó a su amigo sinceramente."
+                    "pronunciation": "/fərˈɡɪv - fərˈɡeɪv - fərˈɡɪvn/",
+                    "example": "She forgave her friend sincerely. (Forgiven completely.)",
+                    "example_es": "Ella perdonó a su amigo sinceramente. (Perdonado por completo)."
+                  },
+                  {
+                    "verb": "Speak",
+                    "past": "Spoke",
+                    "past_participle": "Spoken",
+                    "meaning_es": "Hablar / Expresarse con honestidad",
+                    "pronunciation": "/spiːk - spoʊk - ˈspoʊkən/",
+                    "example": "We spoke honestly about the issue. (Spoken words.)",
+                    "example_es": "Hablamos honestamente sobre el problema. (Palabras dichas)."
                   },
                   {
                     "verb": "Apologize",
@@ -30264,15 +30273,6 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "pronunciation": "/ˈlɪsn/",
                     "example": "Listen carefully before judging.",
                     "example_es": "Escucha con atención antes de juzgar."
-                  },
-                  {
-                    "verb": "Respect",
-                    "past": "Respected",
-                    "past_participle": "Respected",
-                    "meaning_es": "Respetar",
-                    "pronunciation": "/rɪˈspekt/",
-                    "example": "Always respect personal boundaries.",
-                    "example_es": "Siempre respeta los límites personales."
                   }
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-orange-600 to-red-700",
@@ -30719,10 +30719,28 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               {
                 "id": "tb4-9-verb-arena",
                 "title": "AI Verb Arena: 6 Professional & Academic Action Verbs / Verbos Formales",
-                "description": "Domina 6 verbos clave para la redacción de correos y solicitudes oficiales",
+                "description": "Domina 6 verbos clave para la redacción de correos, solicitudes oficiales y envío de documentos",
                 "type": "verb-arena-embedded",
                 "limit": 6,
                 "verbsData": [
+                  {
+                    "verb": "Write",
+                    "past": "Wrote",
+                    "past_participle": "Written",
+                    "meaning_es": "Redactar / Escribir formalmente",
+                    "pronunciation": "/raɪt - roʊt - ˈrɪtn/",
+                    "example": "I wrote a formal inquiry email. (A well-written letter.)",
+                    "example_es": "Escribí un correo formal de consulta. (Una carta bien escrita)."
+                  },
+                  {
+                    "verb": "Send",
+                    "past": "Sent",
+                    "past_participle": "Sent",
+                    "meaning_es": "Enviar / Remitir",
+                    "pronunciation": "/send - sent/",
+                    "example": "She sent the application packet. (Files already sent.)",
+                    "example_es": "Ella envió el paquete de postulación. (Archivos ya enviados)."
+                  },
                   {
                     "verb": "Inquire",
                     "past": "Inquired",
@@ -30758,24 +30776,6 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "pronunciation": "/kənˈfɜːrm/",
                     "example": "Please confirm your attendance.",
                     "example_es": "Por favor confirme su asistencia."
-                  },
-                  {
-                    "verb": "Clarify",
-                    "past": "Clarified",
-                    "past_participle": "Clarified",
-                    "meaning_es": "Aclarar / Explicar",
-                    "pronunciation": "/ˈklærəfaɪ/",
-                    "example": "The teacher clarified the instructions.",
-                    "example_es": "El profesor aclaró las instrucciones."
-                  },
-                  {
-                    "verb": "Submit",
-                    "past": "Submitted",
-                    "past_participle": "Submitted",
-                    "meaning_es": "Entregar / Enviar solicitud",
-                    "pronunciation": "/səbˈmɪt/",
-                    "example": "I submitted my application on time.",
-                    "example_es": "Entregué mi postulación a tiempo."
                   }
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-orange-600 to-red-700",
@@ -31221,8 +31221,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               },
               {
                 "id": "tb4-10-verb-arena",
-                "title": "AI Verb Arena: 6 Leadership Action Verbs / Verbos de Liderazgo",
-                "description": "Domina 6 verbos clave de liderazgo, gestión y resolución de problemas",
+                "title": "AI Verb Arena: 6 Leadership & Mastery Verbs / Verbos de Liderazgo y Maestría",
+                "description": "Domina 6 verbos clave de liderazgo, gestión, proyectos y resolución de problemas",
                 "type": "verb-arena-embedded",
                 "limit": 6,
                 "verbsData": [
@@ -31231,9 +31231,18 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "past": "Led",
                     "past_participle": "Led",
                     "meaning_es": "Liderar / Guiar",
-                    "pronunciation": "/liːd/",
-                    "example": "She led the team to victory.",
-                    "example_es": "Ella lideró el equipo hacia la victoria."
+                    "pronunciation": "/liːd - led/",
+                    "example": "She led the team to victory. (A well-led initiative.)",
+                    "example_es": "Ella lideró el equipo hacia la victoria. (Una iniciativa bien liderada)."
+                  },
+                  {
+                    "verb": "Build",
+                    "past": "Built",
+                    "past_participle": "Built",
+                    "meaning_es": "Construir / Desarrollar proyectos",
+                    "pronunciation": "/bɪld - bɪlt/",
+                    "example": "We built a strong collaborative network. (Built to last.)",
+                    "example_es": "Construimos una sólida red colaborativa. (Construida para durar)."
                   },
                   {
                     "verb": "Resolve",
@@ -31261,15 +31270,6 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "pronunciation": "/əˈtʃiːv/",
                     "example": "We achieved Level 4 graduation honors.",
                     "example_es": "Alcanzamos honores de graduación de Nivel 4."
-                  },
-                  {
-                    "verb": "Coordinate",
-                    "past": "Coordinated",
-                    "past_participle": "Coordinated",
-                    "meaning_es": "Coordinar",
-                    "pronunciation": "/koʊˈɔːrdɪneɪt/",
-                    "example": "They coordinated the science fair event.",
-                    "example_es": "Ellos coordinaron el evento de la feria de ciencias."
                   },
                   {
                     "verb": "Empower",

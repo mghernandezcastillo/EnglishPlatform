@@ -164,14 +164,22 @@ export function SpinningWheel({
   }, [bulbPhase]);
 
   return (
-    <div className="relative w-full h-full flex flex-col justify-between p-5 sm:p-7 overflow-hidden select-none">
+    <div className="relative w-full h-full flex flex-col justify-between p-5 sm:p-7 overflow-hidden select-none bg-gradient-to-br from-[#121c54] via-[#1b2266] to-[#0e143c]">
       {/* ── Spotlights & Stage Atmosphere ─────────────────────────────────── */}
       <div
-        className="pointer-events-none absolute -top-10 left-[15%] w-72 h-[480px] bg-gradient-to-b from-cyan-400/20 via-blue-500/10 to-transparent blur-2xl transform -rotate-12"
+        className="pointer-events-none absolute -top-10 left-[10%] w-96 h-[520px] bg-gradient-to-b from-cyan-300/35 via-blue-500/20 to-transparent blur-2xl transform -rotate-12"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute -top-10 right-[25%] w-80 h-[520px] bg-gradient-to-b from-blue-400/25 via-indigo-500/10 to-transparent blur-2xl transform rotate-12"
+        className="pointer-events-none absolute -top-10 right-[15%] w-[420px] h-[560px] bg-gradient-to-b from-fuchsia-300/35 via-purple-500/20 to-transparent blur-2xl transform rotate-12"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute -bottom-10 right-[5%] w-96 h-96 bg-amber-400/20 blur-3xl rounded-full"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-indigo-500/18 blur-3xl rounded-full"
         aria-hidden="true"
       />
 
@@ -188,13 +196,13 @@ export function SpinningWheel({
 
         {/* Gamified Retro Scoreboard */}
         <div className="relative shrink-0">
-          <div className="relative bg-[#0d1024] border-2 border-amber-400/80 rounded-2xl px-5 py-2.5 shadow-[0_0_20px_rgba(251,191,36,0.35)] flex flex-col items-center">
+          <div className="relative bg-gradient-to-b from-[#1c245c] to-[#121844] border-2 border-amber-400 rounded-2xl px-5 py-2.5 shadow-[0_0_25px_rgba(251,191,36,0.5)] flex flex-col items-center">
             {/* Top tiny label */}
-            <span className="text-[10px] sm:text-xs font-black tracking-widest text-amber-400 uppercase">
+            <span className="text-[10px] sm:text-xs font-black tracking-widest text-amber-300 uppercase">
               CLASS POINTS
             </span>
             {/* Digital LED number */}
-            <div className="flex items-center gap-1.5 font-mono text-2xl sm:text-3xl font-black text-amber-300 tracking-wider drop-shadow-[0_0_8px_rgba(252,211,77,0.8)]">
+            <div className="flex items-center gap-1.5 font-mono text-2xl sm:text-3xl font-black text-amber-300 tracking-wider drop-shadow-[0_0_10px_rgba(252,211,77,0.9)]">
               <span>{points}</span>
               <Star className="w-5 h-5 text-amber-400 fill-amber-400 animate-pulse" />
             </div>
@@ -205,7 +213,7 @@ export function SpinningWheel({
                 initial={{ opacity: 0, y: 0, scale: 0.8 }}
                 animate={{ opacity: 1, y: -28, scale: 1.15 }}
                 exit={{ opacity: 0 }}
-                className="absolute -top-3 right-2 bg-gradient-to-r from-amber-400 to-yellow-300 text-slate-950 font-black text-xs px-2.5 py-0.5 rounded-full shadow-lg shadow-amber-400/50"
+                className="absolute -top-3 right-2 bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 text-slate-950 font-black text-xs px-2.5 py-0.5 rounded-full shadow-lg shadow-amber-400/60"
               >
                 +50 ⭐
               </motion.div>
@@ -347,7 +355,10 @@ export function SpinningWheel({
 
         {/* ══ RIGHT: Game Show Marquee Question Billboard ════════════════════ */}
         <div className="flex-1 w-full h-full min-h-[300px] flex items-center justify-center">
-          <div className="relative w-full max-w-2xl h-full min-h-[290px] rounded-3xl bg-gradient-to-b from-[#0e1335] via-[#101844] to-[#0b0e2b] border-[5px] border-amber-400/90 shadow-[0_0_40px_rgba(251,191,36,0.35)] p-6 sm:p-8 flex flex-col items-center justify-center text-center overflow-hidden">
+          <div className="relative w-full max-w-2xl h-full min-h-[290px] rounded-3xl bg-gradient-to-b from-[#182368] via-[#1d2260] to-[#121648] border-[4px] border-amber-400 shadow-[0_0_50px_rgba(251,191,36,0.45),0_0_90px_rgba(99,102,241,0.35)] p-6 sm:p-8 flex flex-col items-center justify-center text-center overflow-hidden">
+            {/* Inner Atmospheric Backdrop Glow */}
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(99,102,241,0.3),_transparent_75%)]" />
+            <div className="pointer-events-none absolute -top-10 -right-10 w-48 h-48 bg-cyan-400/20 rounded-full blur-2xl" />
             
             {/* Marquee Bulbs around the Frame Perimeter */}
             {marqueeBulbs.map((b) => (
@@ -356,14 +367,14 @@ export function SpinningWheel({
                 style={b.style}
                 className={`absolute w-3 h-3 rounded-full transition-all duration-300 ${
                   b.active
-                    ? 'bg-amber-200 shadow-[0_0_10px_#fde047]'
+                    ? 'bg-amber-200 shadow-[0_0_12px_#fde047]'
                     : 'bg-amber-500/80 shadow-[0_0_3px_#d97706]'
                 }`}
               />
             ))}
 
             {/* Top Pill Badge: QUESTION */}
-            <div className="inline-flex items-center gap-1.5 px-6 py-1 rounded-full bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-widest shadow-md shadow-amber-400/40 mb-4 z-10">
+            <div className="inline-flex items-center gap-1.5 px-6 py-1 rounded-full bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-widest shadow-md shadow-amber-400/50 mb-4 z-10 border border-amber-200/60">
               <Sparkles className="w-3.5 h-3.5" />
               <span>QUESTION</span>
             </div>
@@ -374,15 +385,15 @@ export function SpinningWheel({
                 <motion.div
                   animate={{ scale: [1, 1.06, 1] }}
                   transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-                  className="text-4xl sm:text-5xl mb-3"
+                  className="text-4xl sm:text-5xl mb-3 drop-shadow"
                 >
                   🎯
                 </motion.div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-snug">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-snug drop-shadow-md">
                   Spin the wheel to get your question!
                 </h2>
-                <p className="text-base sm:text-xl font-bold text-amber-300/90 mt-2">
-                  ¡Toca <span className="underline decoration-amber-400">SPIN</span> para girar la ruleta!
+                <p className="text-base sm:text-xl font-extrabold text-amber-300 mt-2 drop-shadow">
+                  ¡Toca <span className="underline decoration-amber-400 decoration-2">SPIN</span> para girar la ruleta!
                 </p>
               </div>
             ) : (
@@ -395,20 +406,20 @@ export function SpinningWheel({
               >
                 {/* Selected slice badge */}
                 <span
-                  className="px-3.5 py-1 rounded-full text-white text-xs font-black uppercase tracking-wider mb-3 shadow-md"
+                  className="px-4 py-1 rounded-full text-white text-xs font-black uppercase tracking-wider mb-3 shadow-lg border border-white/30"
                   style={{ backgroundColor: selectedItem.color }}
                 >
                   {selectedItem.label}
                 </span>
 
                 {/* English Big Question */}
-                <h2 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-black text-white leading-tight tracking-tight drop-shadow-md">
+                <h2 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-black text-white leading-tight tracking-tight drop-shadow-lg">
                   {selectedPrompt}
                 </h2>
 
                 {/* Spanish Translation */}
                 {selectedItem.es && (
-                  <p className="text-xl sm:text-2xl lg:text-[1.65rem] font-bold text-amber-300 mt-3 drop-shadow leading-snug">
+                  <p className="text-xl sm:text-2xl lg:text-[1.65rem] font-black text-amber-300 mt-3 drop-shadow leading-snug">
                     {selectedItem.es}
                   </p>
                 )}

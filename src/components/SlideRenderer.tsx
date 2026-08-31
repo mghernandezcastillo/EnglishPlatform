@@ -1121,17 +1121,21 @@ export function SlideRenderer({
     production: 'bg-emerald-600', feedback: 'bg-purple-600',
   };
 
-  const bgGradient = isOpeningSlide || isGoalsSlide || isTeachingConceptSlide
-    ? 'bg-gradient-to-br from-[#120d2d] via-[#1a0f3d] to-[#0c081e]'
-    : isChatSlide
-    ? 'bg-gradient-to-br from-[#0f1442] via-[#1a113f] to-[#0c0a24]'
-    : isOptionExerciseSlide
-    ? 'bg-gradient-to-br from-[#101442] via-[#1a113e] to-[#0c0924]'
-    : slide.type === 'emoji-game' || slide.type === 'structure-drag'
-    ? 'bg-gradient-to-br from-[#0c0d28] via-[#140e3a] to-[#08081c]'
-    : isSpinningWheelSlide
-    ? 'bg-gradient-to-br from-[#0a0d24] via-[#0f1738] to-[#080a1c]'
-    : slide.bgColor || bgColorMap[section.id.split('-')[1]] || 'bg-slate-800';
+  const bgGradient = (() => {
+    if (isOpeningSlide) return 'bg-gradient-to-br from-[#121c54] via-[#1b2266] to-[#0e143c]';
+    if (isGoalsSlide || slide.type === 'objectives-animated') return 'bg-gradient-to-br from-[#10235e] via-[#182062] to-[#0c123c]';
+    if (isSpinningWheelSlide) return 'bg-gradient-to-br from-[#121c54] via-[#1b2266] to-[#0e143c]';
+    if (slide.type === 'grammar-studio' || Boolean(slide.grammarData)) return 'bg-gradient-to-br from-[#161858] via-[#201c64] to-[#0f113a]';
+    if (isChatSlide) return 'bg-gradient-to-br from-[#102058] via-[#182260] to-[#0d123a]';
+    if (isOptionExerciseSlide) return 'bg-gradient-to-br from-[#141d58] via-[#1e1e62] to-[#0e113a]';
+    if (slide.type === 'emoji-game' || slide.type === 'structure-drag') return 'bg-gradient-to-br from-[#1c1652] via-[#26185a] to-[#100e34]';
+    if (slide.type === 'reading') return 'bg-gradient-to-br from-[#102058] via-[#182260] to-[#0d123a]';
+    if (slide.type === 'writing-guided') return 'bg-gradient-to-br from-[#1c1448] via-[#241854] to-[#100d30]';
+    if (slide.type === 'speaking' || isRoleplaySlide) return 'bg-gradient-to-br from-[#1e124a] via-[#281658] to-[#120a32]';
+    if (slide.type === 'homework' || slide.type === 'video') return 'bg-gradient-to-br from-[#1c1650] via-[#261a5c] to-[#100d34]';
+
+    return bgColorMap[section.id.split('-')[1]] || 'bg-gradient-to-br from-[#121c54] via-[#1b2266] to-[#0e143c]';
+  })();
 
   const isReadingPracticeSlide =
     /reading practice|practica de lectura|práctica de lectura/i.test(slide.title || '') ||
@@ -1152,6 +1156,11 @@ export function SlideRenderer({
         ${compact ? 'w-[1280px] h-[720px]' : 'w-full h-full'}
       `}
     >
+      {/* Universal Ambient Studio Glow Orbs with Rich Luminosity */}
+      <div className="pointer-events-none absolute -top-20 -left-20 w-[420px] h-[420px] bg-cyan-400/22 rounded-full blur-[100px]" aria-hidden="true" />
+      <div className="pointer-events-none absolute -bottom-20 -right-20 w-[420px] h-[420px] bg-fuchsia-400/20 rounded-full blur-[100px]" aria-hidden="true" />
+      <div className="pointer-events-none absolute top-1/3 right-1/4 w-[350px] h-[350px] bg-indigo-400/18 rounded-full blur-[90px]" aria-hidden="true" />
+
       {/* Opening glow blobs */}
       {isOpeningSlide && (
         <>
@@ -1173,11 +1182,11 @@ export function SlideRenderer({
         <div className="relative flex-1 flex flex-col z-10 min-h-0 overflow-hidden">
           {(slide.type === 'objectives-animated' || /today.*mission|nuestra misi[oó]n|learning goals/i.test(slide.title || '')) ? (
             <div className="relative flex-1 flex flex-col justify-between p-6 sm:p-8 z-10 min-h-0 overflow-hidden">
-              <div className="pointer-events-none absolute -top-16 left-1/4 w-[400px] h-[250px] bg-gradient-to-b from-cyan-400/20 via-violet-600/10 to-transparent blur-3xl" aria-hidden="true" />
-              <div className="pointer-events-none absolute -bottom-10 -right-10 w-[350px] h-[250px] bg-pink-500/15 blur-3xl" aria-hidden="true" />
+              <div className="pointer-events-none absolute -top-16 left-1/4 w-[450px] h-[260px] bg-cyan-400/20 blur-3xl" aria-hidden="true" />
+              <div className="pointer-events-none absolute -bottom-10 -right-10 w-[380px] h-[260px] bg-indigo-500/20 blur-3xl" aria-hidden="true" />
               <div className="shrink-0 mb-3">
-                <h1 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-black tracking-tight leading-tight bg-gradient-to-r from-cyan-300 via-sky-200 to-white bg-clip-text text-transparent">{slide.title}</h1>
-                <p className="text-sm sm:text-base font-bold text-violet-300/80 mt-1">{slide.description}</p>
+                <h1 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-black tracking-tight leading-tight bg-gradient-to-r from-cyan-300 via-sky-100 to-white bg-clip-text text-transparent">{slide.title}</h1>
+                <p className="text-sm sm:text-base font-bold text-cyan-200/90 mt-1">{slide.description}</p>
               </div>
               <div className="flex-1 flex flex-col justify-center gap-4 py-2">
                 {(() => {
@@ -1185,7 +1194,11 @@ export function SlideRenderer({
                   const goalItems = goalsList.map((g, gIdx) => {
                     const clean = g.replace(/^[✔️\s*•\d.-]+/, '').trim();
                     const iconTypes: ('target' | 'book' | 'users')[] = ['target', 'book', 'users'];
-                    const colors = ['from-pink-600 via-rose-500 to-fuchsia-600', 'from-violet-600 via-purple-500 to-indigo-600', 'from-cyan-600 via-sky-500 to-blue-600'];
+                    const colors = [
+                      'from-cyan-600 via-blue-600 to-indigo-700',
+                      'from-indigo-600 via-purple-600 to-violet-700',
+                      'from-violet-600 via-fuchsia-600 to-purple-700'
+                    ];
                     return {
                       index: gIdx,
                       title: `Meta ${gIdx + 1} • Objetivo de la Clase`,
@@ -1207,17 +1220,17 @@ export function SlideRenderer({
                         onClick={() => {
                           setSpotlightElement({ ...item, total: goalItems.length, items: goalItems });
                         }}
-                        className={`relative group flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-r ${item.gradient} shadow-xl text-left border-2 border-white/20 hover:border-white/60 hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 cursor-pointer focus:outline-none`}
+                        className={`relative group flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-r ${item.gradient} shadow-xl text-left border-2 border-white/25 hover:border-white/70 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer focus:outline-none`}
                         title="Haz clic para ver esta meta gigante en pantalla"
                       >
-                        <div className="absolute top-3 right-3 opacity-60 group-hover:opacity-100 transition-opacity bg-black/30 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-bold text-white flex items-center gap-1.5 border border-white/20">
+                        <div className="absolute top-3 right-3 opacity-70 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-bold text-white flex items-center gap-1.5 border border-white/20">
                           <span>Zoom</span>
-                          <Sparkles className="w-3.5 h-3.5 text-white" />
+                          <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
                         </div>
-                        <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center shrink-0 shadow-md group-hover:scale-110 transition-transform">
+                        <div className="w-12 h-12 rounded-xl bg-white/25 flex items-center justify-center shrink-0 shadow-md group-hover:scale-110 transition-transform border border-white/20">
                           <IconC className="w-6 h-6 text-white" />
                         </div>
-                        <p className="text-xl sm:text-2xl font-black text-white leading-snug pr-16">{item.text}</p>
+                        <p className="text-xl sm:text-2xl font-black text-white leading-snug pr-16 drop-shadow">{item.text}</p>
                       </button>
                     );
                   });
@@ -1657,29 +1670,29 @@ export function SlideRenderer({
               const currentLine = readingLines[safeReadingIndex] || readingLines[0];
               const speakerInfo = getTeenSpeakerInfo(currentLine.speaker, safeReadingIndex);
               return (
-                <div className="relative flex-1 flex flex-col justify-between p-5 sm:p-7 z-10 min-h-0 overflow-hidden bg-gradient-to-br from-[#0a1b3f] via-[#0d2757] to-[#1d164d]">
+                <div className="relative flex-1 flex flex-col justify-between p-3 sm:p-5 lg:p-6 z-10 min-h-0 overflow-hidden bg-gradient-to-br from-[#0a1b3f] via-[#0d2757] to-[#1d164d]">
                   {/* High Brightness Ambient Glow */}
                   <div className="pointer-events-none absolute -top-16 left-1/4 w-[600px] h-[350px] bg-gradient-to-b from-cyan-300/30 via-sky-400/20 to-transparent blur-3xl" aria-hidden="true" />
                   <div className="pointer-events-none absolute -bottom-10 right-10 w-[500px] h-[300px] bg-indigo-400/25 blur-3xl" aria-hidden="true" />
 
                   {/* Header */}
-                  <div className="shrink-0 mb-3 flex items-center justify-between">
-                    <div>
-                      <h1 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-black tracking-tight leading-tight bg-gradient-to-r from-cyan-300 via-sky-100 to-white bg-clip-text text-transparent drop-shadow-md">
+                  <div className="shrink-0 mb-2 sm:mb-3 flex items-center justify-between gap-3">
+                    <div className="min-w-0">
+                      <h1 className="text-2xl sm:text-3xl lg:text-[2.3rem] font-black tracking-tight leading-tight bg-gradient-to-r from-cyan-300 via-sky-100 to-white bg-clip-text text-transparent drop-shadow-md truncate">
                         {slide.title}
                       </h1>
-                      <p className="text-base sm:text-lg font-extrabold text-cyan-200 mt-0.5 drop-shadow">
+                      <p className="text-xs sm:text-sm md:text-base font-extrabold text-cyan-200 mt-0.5 drop-shadow truncate">
                         {slide.description || "Lee en voz alta con buena entonación y fluidez."}
                       </p>
                     </div>
 
-                    <div className="flex items-center gap-3">
-                      <span className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-2xl bg-cyan-400/20 border-2 border-cyan-300/50 text-cyan-100 text-xs sm:text-sm font-black shadow-md">
+                    <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+                      <span className="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-cyan-400/20 border border-cyan-300/40 text-cyan-100 text-xs sm:text-sm font-black shadow-md">
                         📖 Lectura Guiada
                       </span>
                       <button
                         onClick={() => setIsFullTextView(v => !v)}
-                        className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/15 hover:bg-white/25 border-2 border-white/30 text-white text-xs sm:text-sm font-black backdrop-blur-md transition-all shadow-xl hover:scale-105 active:scale-95 cursor-pointer"
+                        className="flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-white/15 hover:bg-white/25 border border-white/30 text-white text-xs sm:text-sm font-black backdrop-blur-md transition-all shadow-xl hover:scale-105 active:scale-95 cursor-pointer"
                       >
                         {isFullTextView ? <Layers3 className="w-4 h-4 text-cyan-300" /> : <Eye className="w-4 h-4 text-cyan-300" />}
                         <span>{isFullTextView ? 'Modo Spotlight 🎯' : 'Ver Todo el Texto 📜'}</span>
@@ -1688,9 +1701,9 @@ export function SlideRenderer({
                   </div>
 
                   {/* Body */}
-                  <div className="flex-1 flex flex-col justify-center gap-3 min-h-0 py-1">
+                  <div className="flex-1 flex flex-col justify-center gap-2 min-h-0 py-0.5">
                     {isFullTextView ? (
-                      <div className="flex-1 grid grid-cols-1 gap-3 overflow-y-auto max-h-[440px] pr-2">
+                      <div className="flex-1 flex flex-col gap-2.5 overflow-y-auto min-h-0 pr-1 max-h-[calc(100vh-240px)]">
                         {readingLines.map((lineObj, idx) => {
                           const isSelected = idx === safeReadingIndex;
                           const lineSpeaker = getTeenSpeakerInfo(lineObj.speaker, idx);
@@ -1699,45 +1712,45 @@ export function SlideRenderer({
                               key={idx}
                               initial={{ opacity: 0, y: 10 }}
                               animate={{ opacity: 1, y: 0 }}
-                              transition={{ delay: idx * 0.05 }}
+                              transition={{ delay: idx * 0.04 }}
                               onClick={() => {
                                 setReadingLineIndex(idx);
                                 playSpeech(lineObj.cleanText || lineObj.text, 'en-US', 0.9);
                               }}
-                              className={`group flex items-center justify-between p-4 sm:p-5 rounded-2xl border-2 transition-all cursor-pointer shadow-lg ${
+                              className={`group flex items-center justify-between p-3 sm:p-4 rounded-2xl border-2 transition-all cursor-pointer shadow-lg ${
                                 isSelected
                                   ? 'border-cyan-300 bg-cyan-500/30 text-white shadow-[0_0_30px_rgba(6,182,212,0.45)] scale-[1.01]'
                                   : 'border-white/20 bg-slate-900/85 text-white hover:bg-cyan-950/60 hover:border-cyan-400'
                               }`}
                             >
-                              <div className="flex items-center gap-4 min-w-0">
+                              <div className="flex items-center gap-3 sm:gap-4 min-w-0">
                                 {/* Circular Speaker Avatar */}
-                                <div className={`relative w-12 h-12 sm:w-14 sm:h-14 rounded-full p-[2.5px] bg-gradient-to-tr ${lineSpeaker.ringGradient} shrink-0 shadow-lg`}>
+                                <div className={`relative w-10 h-10 sm:w-12 sm:h-12 rounded-full p-[2px] bg-gradient-to-tr ${lineSpeaker.ringGradient} shrink-0 shadow-lg`}>
                                   <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 flex items-center justify-center">
                                     {lineSpeaker.avatarSvg}
                                   </div>
                                 </div>
 
                                 <div className="flex flex-col min-w-0">
-                                  <div className="flex items-center gap-2 mb-1">
-                                    <span className={`px-2.5 py-0.5 rounded-lg text-xs font-black uppercase tracking-wide ${lineSpeaker.badgeStyle}`}>
+                                  <div className="flex items-center gap-2 mb-0.5">
+                                    <span className={`px-2 py-0.5 rounded-lg text-xs font-black uppercase tracking-wide ${lineSpeaker.badgeStyle}`}>
                                       {lineSpeaker.name}
                                     </span>
                                     <span className="text-white/40 text-xs font-bold">Línea {idx + 1} de {readingLines.length}</span>
                                   </div>
-                                  <span className="text-xl sm:text-2xl font-black leading-snug tracking-tight text-white drop-shadow">
+                                  <span className="text-lg sm:text-xl font-black leading-snug tracking-tight text-white drop-shadow">
                                     "{lineObj.cleanText || lineObj.text}"
                                   </span>
                                   {lineObj.es && (
-                                    <span className="text-sm sm:text-base font-bold text-cyan-200 mt-1">
+                                    <span className="text-xs sm:text-sm font-bold text-cyan-200 mt-0.5">
                                       {lineObj.es}
                                     </span>
                                   )}
                                 </div>
                               </div>
 
-                              <div className="flex items-center gap-2 shrink-0 ml-4">
-                                <span className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black flex items-center gap-1.5 transition-all shadow-md ${
+                              <div className="flex items-center gap-2 shrink-0 ml-3">
+                                <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-black flex items-center gap-1.5 transition-all shadow-md ${
                                   isSelected
                                     ? 'bg-cyan-300 text-slate-950'
                                     : 'bg-white/15 text-white group-hover:bg-cyan-400 group-hover:text-slate-950'
@@ -1754,81 +1767,77 @@ export function SlideRenderer({
                       <AnimatePresence mode="wait">
                         <motion.div
                           key={safeReadingIndex}
-                          initial={{ opacity: 0, scale: 0.96, y: 15 }}
+                          initial={{ opacity: 0, scale: 0.97, y: 10 }}
                           animate={{ opacity: 1, scale: 1, y: 0 }}
-                          exit={{ opacity: 0, scale: 0.96, y: -15 }}
-                          transition={{ duration: 0.25, ease: 'easeOut' }}
-                          className="flex-1 flex flex-col justify-between rounded-3xl border-2 border-cyan-300/80 bg-slate-950/85 p-6 sm:p-8 shadow-[0_0_50px_rgba(6,182,212,0.35)] backdrop-blur-2xl min-h-[320px]"
+                          exit={{ opacity: 0, scale: 0.97, y: -10 }}
+                          transition={{ duration: 0.2, ease: 'easeOut' }}
+                          className="flex-1 flex flex-col justify-between rounded-2xl sm:rounded-3xl border-2 border-cyan-300/80 bg-slate-950/85 p-4 sm:p-5 lg:p-6 shadow-[0_0_50px_rgba(6,182,212,0.35)] backdrop-blur-2xl min-h-0"
                         >
-                          {/* Top Status Bar */}
-                          <div className="flex items-center justify-between text-xs sm:text-sm font-black uppercase tracking-wider text-cyan-300">
-                            <span className="bg-cyan-400/20 border-2 border-cyan-400/40 px-3.5 py-1.5 rounded-xl text-white font-black shadow-sm">
-                              Línea {safeReadingIndex + 1} de {readingLines.length}
-                            </span>
-                            <span className="text-white/80 font-bold">Práctica de Fluidez y Entonación 🎙️</span>
-                          </div>
-
-                          {/* Speaker Circular Avatar & Badge Header */}
-                          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 my-2">
-                            <div className="relative group">
-                              <div
-                                className="absolute -inset-1 rounded-full opacity-70 blur-md transition-opacity"
-                                style={{ backgroundColor: speakerInfo.glowColor }}
-                              />
-                              <div className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-full p-[3px] bg-gradient-to-tr ${speakerInfo.ringGradient} shadow-xl`}>
-                                <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 flex items-center justify-center">
-                                  {speakerInfo.avatarSvg}
+                          {/* Top Status & Speaker & Audio Bar */}
+                          <div className="flex items-center justify-between gap-3 pb-2 border-b border-white/10 shrink-0">
+                            {/* Speaker & Line Info */}
+                            <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+                              <div className="relative group shrink-0">
+                                <div
+                                  className="absolute -inset-1 rounded-full opacity-70 blur-sm transition-opacity"
+                                  style={{ backgroundColor: speakerInfo.glowColor }}
+                                />
+                                <div className={`relative w-10 h-10 sm:w-11 sm:h-11 rounded-full p-[2px] bg-gradient-to-tr ${speakerInfo.ringGradient} shadow-md`}>
+                                  <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 flex items-center justify-center">
+                                    {speakerInfo.avatarSvg}
+                                  </div>
                                 </div>
+                              </div>
+
+                              <div className="flex items-center gap-2 flex-wrap">
+                                <span className={`px-3 py-1 rounded-xl text-xs sm:text-sm font-black tracking-wider uppercase shadow-md ${speakerInfo.badgeStyle}`}>
+                                  {speakerInfo.name} 💬
+                                </span>
+                                <span className="bg-cyan-400/20 border border-cyan-400/40 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-lg text-white font-bold text-xs sm:text-sm shadow-sm">
+                                  Línea {safeReadingIndex + 1} de {readingLines.length}
+                                </span>
                               </div>
                             </div>
 
-                            <div className="flex items-center gap-2">
-                              <span className={`px-4 py-1.5 rounded-2xl text-xs sm:text-sm font-black tracking-wider uppercase shadow-md ${speakerInfo.badgeStyle}`}>
-                                {speakerInfo.name} 💬
-                              </span>
-                            </div>
+                            {/* Audio Button in Top Bar */}
+                            <button
+                              onClick={() => playSpeech(currentLine.cleanText || currentLine.text, 'en-US', 0.9)}
+                              className="flex items-center gap-2 px-4 py-1.5 sm:px-5 sm:py-2 rounded-xl bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-xs sm:text-sm md:text-base shadow-lg shadow-cyan-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer shrink-0"
+                            >
+                              <Volume2 className="w-4 h-4 sm:w-5 sm:h-5" />
+                              <span>Escuchar Pronunciación</span>
+                            </button>
                           </div>
 
-                          {/* Large Main Sentence */}
-                          <div className="my-auto text-center py-2 px-2 max-w-4xl mx-auto">
-                            <p className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-[1.2] tracking-tight drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)]">
+                          {/* Large Main Sentence (Hero Area) */}
+                          <div className="my-auto flex-1 flex flex-col justify-center items-center text-center py-2 sm:py-4 px-2 max-w-5xl mx-auto w-full min-h-0">
+                            <p className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-[1.2] tracking-tight drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)] max-w-4xl">
                               "{currentLine.cleanText || currentLine.text}"
                             </p>
                             {currentLine.es && (
-                              <div className="mt-3.5 inline-block rounded-2xl bg-cyan-950/80 border-2 border-cyan-400/40 px-6 py-2 shadow-inner">
-                                <p className="text-lg sm:text-xl lg:text-2xl font-extrabold text-cyan-200 drop-shadow">
+                              <div className="mt-3 inline-flex items-center justify-center rounded-xl sm:rounded-2xl bg-cyan-950/80 border border-cyan-400/40 px-4 py-1.5 sm:px-6 sm:py-2 shadow-inner max-w-3xl">
+                                <p className="text-base sm:text-xl lg:text-2xl font-extrabold text-cyan-200 drop-shadow">
                                   {currentLine.es}
                                 </p>
                               </div>
                             )}
-                          </div>
-
-                          {/* Audio Button */}
-                          <div className="flex justify-center pt-2">
-                            <button
-                              onClick={() => playSpeech(currentLine.cleanText || currentLine.text, 'en-US', 0.9)}
-                              className="flex items-center gap-3 px-8 py-3 rounded-2xl bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-base sm:text-lg shadow-xl shadow-cyan-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                            >
-                              <Volume2 className="w-5 h-5 sm:w-6 sm:h-6" />
-                              <span>Escuchar Pronunciación</span>
-                            </button>
                           </div>
                         </motion.div>
                       </AnimatePresence>
                     )}
 
                     {/* Footer Controls */}
-                    <div className="shrink-0 flex items-center justify-between gap-3 pt-2">
+                    <div className="shrink-0 flex items-center justify-between gap-3 pt-1.5 sm:pt-2">
                       <button
                         disabled={safeReadingIndex === 0}
                         onClick={() => setReadingLineIndex(i => Math.max(0, i - 1))}
-                        className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-white/20 bg-white/10 hover:bg-white/20 text-white font-bold text-sm disabled:opacity-30 disabled:pointer-events-none transition-all cursor-pointer"
+                        className="flex items-center gap-1.5 px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl border border-white/20 bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm disabled:opacity-30 disabled:pointer-events-none transition-all cursor-pointer"
                       >
                         <ChevronLeft className="w-4 h-4" />
                         <span>Anterior</span>
                       </button>
 
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1.5 sm:gap-2">
                         {readingLines.map((_, i) => (
                           <button
                             key={i}
@@ -1838,8 +1847,8 @@ export function SlideRenderer({
                             }}
                             className={`transition-all rounded-full cursor-pointer ${
                               i === safeReadingIndex
-                                ? 'w-8 h-2.5 bg-gradient-to-r from-cyan-400 to-sky-400 shadow-md shadow-cyan-400/50'
-                                : 'w-2.5 h-2.5 bg-white/25 hover:bg-white/50'
+                                ? 'w-7 sm:w-8 h-2 sm:h-2.5 bg-gradient-to-r from-cyan-400 to-sky-400 shadow-md shadow-cyan-400/50'
+                                : 'w-2 sm:w-2.5 h-2 sm:h-2.5 bg-white/25 hover:bg-white/50'
                             }`}
                             title={`Ir a línea ${i + 1}`}
                           />
@@ -1849,7 +1858,7 @@ export function SlideRenderer({
                       {safeReadingIndex < readingLines.length - 1 ? (
                         <button
                           onClick={() => setReadingLineIndex(i => Math.min(readingLines.length - 1, i + 1))}
-                          className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-sm transition-all shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
+                          className="flex items-center gap-1.5 px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-xs sm:text-sm transition-all shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
                         >
                           <span>Siguiente</span>
                           <ChevronRight className="w-4 h-4" />
@@ -1857,7 +1866,7 @@ export function SlideRenderer({
                       ) : (
                         <button
                           onClick={onNext || onComplete}
-                          className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-black text-sm transition-all shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
+                          className="flex items-center gap-1.5 px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-black text-xs sm:text-sm transition-all shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
                         >
                           <span>¡Muy bien! Siguiente Diapositiva</span>
                           <ChevronRight className="w-4 h-4 stroke-[3]" />
@@ -1869,22 +1878,22 @@ export function SlideRenderer({
               );
             })()
           ) : (slide.type === 'listening-audio-teacher' || Boolean(slide.listeningData) || /listening.*audio|audio.*listening|listening:/i.test(slide.title || '')) && slide.listeningData ? (
-            <div className="relative flex-1 flex flex-col justify-between p-5 sm:p-7 z-10 min-h-0 overflow-hidden bg-gradient-to-br from-[#0c1330] via-[#140e36] to-[#250d3a]">
+            <div className="relative flex-1 flex flex-col justify-between p-3 sm:p-5 lg:p-6 z-10 min-h-0 overflow-hidden bg-gradient-to-br from-[#0c1330] via-[#140e36] to-[#250d3a]">
               {/* High Brightness Ambient Glow */}
               <div className="pointer-events-none absolute -top-16 left-1/3 w-[600px] h-[350px] bg-gradient-to-b from-violet-400/25 via-indigo-500/15 to-transparent blur-3xl" aria-hidden="true" />
               <div className="pointer-events-none absolute -bottom-10 right-10 w-[500px] h-[300px] bg-pink-500/20 blur-3xl" aria-hidden="true" />
               
               {/* Header */}
-              <div className="shrink-0 mb-3 flex items-center justify-between">
-                <div>
-                  <h1 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-black text-white tracking-tight leading-tight bg-gradient-to-r from-violet-300 via-pink-200 to-white bg-clip-text text-transparent drop-shadow-md">
+              <div className="shrink-0 mb-2 sm:mb-3 flex items-center justify-between gap-3">
+                <div className="min-w-0">
+                  <h1 className="text-2xl sm:text-3xl lg:text-[2.3rem] font-black text-white tracking-tight leading-tight bg-gradient-to-r from-violet-300 via-pink-200 to-white bg-clip-text text-transparent drop-shadow-md truncate">
                     {slide.title}
                   </h1>
-                  <p className="text-base sm:text-lg font-extrabold text-violet-200 mt-0.5 drop-shadow">
+                  <p className="text-xs sm:text-sm md:text-base font-extrabold text-violet-200 mt-0.5 drop-shadow truncate">
                     {slide.description || "Escucha el audio nativo y responde la pregunta de comprensión:"}
                   </p>
                 </div>
-                <div className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-violet-500/20 border-2 border-violet-400/40 text-violet-200 text-sm font-black shadow-md">
+                <div className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-violet-500/20 border border-violet-400/40 text-violet-200 text-xs sm:text-sm font-black shadow-md shrink-0">
                   <span>🎧 Listening Lab</span>
                 </div>
               </div>
@@ -1892,24 +1901,24 @@ export function SlideRenderer({
               {(() => {
                 const listeningText = slide.listeningData?.transcription || slide.listeningData?.audioTeacherText || '';
                 return (
-                  <div className="flex-1 flex flex-row items-stretch gap-6 min-h-0 py-1">
+                  <div className="flex-1 flex flex-row items-stretch gap-4 sm:gap-6 min-h-0 py-0.5">
                     {/* Left Column: Audio & Transcript */}
-                    <div className="w-[48%] h-full flex flex-col justify-between gap-3 min-h-0">
+                    <div className="w-[45%] lg:w-[42%] h-full flex flex-col justify-between gap-2.5 sm:gap-3 min-h-0">
                       {/* Audio Player Card */}
-                      <div className="rounded-3xl border-2 border-indigo-400/50 bg-slate-950/85 p-5 sm:p-6 shadow-2xl backdrop-blur-xl flex flex-col justify-between shrink-0">
-                        <div className="flex items-center justify-between mb-3">
-                          <span className="text-xs sm:text-sm font-black uppercase tracking-[0.2em] text-indigo-300">
+                      <div className="rounded-2xl sm:rounded-3xl border-2 border-indigo-400/50 bg-slate-950/85 p-3.5 sm:p-5 shadow-2xl backdrop-blur-xl flex flex-col justify-between shrink-0">
+                        <div className="flex items-center justify-between mb-2 sm:mb-2.5">
+                          <span className="text-xs sm:text-sm font-black uppercase tracking-[0.15em] text-indigo-300">
                             🎧 Audio de la Clase
                           </span>
                           {isPlaying && (
-                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-black animate-pulse">
+                            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-black animate-pulse">
                               <span className="w-2 h-2 rounded-full bg-emerald-400" />
                               Reproduciendo
                             </span>
                           )}
                         </div>
 
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-2 sm:gap-2.5">
                           <button
                             onClick={() => {
                               if (isPlaying) {
@@ -1954,17 +1963,17 @@ export function SlideRenderer({
                                 }
                               }
                             }}
-                            className={`flex min-h-16 sm:min-h-18 items-center justify-center gap-3 px-6 py-4 rounded-2xl font-black text-xl sm:text-2xl transition-all cursor-pointer shadow-xl ${
+                            className={`flex min-h-12 sm:min-h-14 items-center justify-center gap-2.5 px-4 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl font-black text-lg sm:text-xl transition-all cursor-pointer shadow-xl ${
                               isPlaying
                                 ? 'bg-red-500/30 border-2 border-red-400 text-red-200 shadow-red-900/50 hover:bg-red-500/50'
                                 : 'bg-gradient-to-r from-violet-500 via-indigo-500 to-pink-500 hover:from-violet-400 hover:to-pink-400 text-white shadow-indigo-500/40 hover:scale-[1.02] active:scale-95'
                             }`}
                           >
-                            {isPlaying ? <VolumeX className="w-7 h-7" /> : <Play className="w-7 h-7 fill-current" />}
+                            {isPlaying ? <VolumeX className="w-5 h-5 sm:w-6 sm:h-6" /> : <Play className="w-5 h-5 sm:w-6 sm:h-6 fill-current" />}
                             <span>{isPlaying ? 'Pausar Audio' : '▶ Reproducir Audio'}</span>
                           </button>
 
-                          <div className="grid grid-cols-3 gap-2">
+                          <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
                             {[0.7, 0.9, 1.0].map(s => (
                               <button
                                 key={s}
@@ -1977,9 +1986,9 @@ export function SlideRenderer({
                                     setIsPlaying(false);
                                   }
                                 }}
-                                className={`h-11 sm:h-12 rounded-xl text-xs sm:text-sm font-black border-2 transition-all cursor-pointer ${
+                                className={`h-8 sm:h-9 rounded-lg sm:rounded-xl text-xs sm:text-sm font-black border transition-all cursor-pointer ${
                                   listeningSpeed === s
-                                    ? 'border-indigo-300 bg-indigo-500/40 text-white shadow-md ring-2 ring-indigo-400/30'
+                                    ? 'border-indigo-300 bg-indigo-500/40 text-white shadow-md ring-1 ring-indigo-400/30'
                                     : 'border-white/15 bg-white/5 text-white/70 hover:bg-white/10 hover:text-white'
                                 }`}
                               >
@@ -1991,24 +2000,24 @@ export function SlideRenderer({
                       </div>
 
                       {/* Transcription Box */}
-                      <div className="rounded-3xl border-2 border-violet-400/40 bg-slate-950/85 p-5 sm:p-6 flex-1 flex flex-col justify-between shadow-2xl backdrop-blur-xl min-h-0">
+                      <div className="rounded-2xl sm:rounded-3xl border-2 border-violet-400/40 bg-slate-950/85 p-3.5 sm:p-4 flex-1 flex flex-col justify-between shadow-2xl backdrop-blur-xl min-h-0">
                         <button
                           onClick={() => setShowListeningTranscript(!showListeningTranscript)}
-                          className="flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-2xl bg-violet-600/30 hover:bg-violet-600/50 text-violet-100 text-base font-black border-2 border-violet-500/40 transition-all hover:scale-[1.01] active:scale-98 cursor-pointer shadow-md"
+                          className="flex items-center justify-center gap-2 w-full py-2 sm:py-2.5 px-3 rounded-xl bg-violet-600/30 hover:bg-violet-600/50 text-violet-100 text-xs sm:text-sm font-black border border-violet-500/40 transition-all hover:scale-[1.01] active:scale-98 cursor-pointer shadow-md"
                         >
-                          {showListeningTranscript ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5 text-violet-300" />}
+                          {showListeningTranscript ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4 text-violet-300" />}
                           <span>{showListeningTranscript ? 'Ocultar Transcripción' : 'Revelar Transcripción (Profesor)'}</span>
                         </button>
 
-                        <div className="flex-1 min-h-0 flex flex-col justify-center mt-2">
+                        <div className="flex-1 min-h-0 flex flex-col justify-center mt-1.5">
                           <AnimatePresence mode="wait">
                             {showListeningTranscript ? (
                               <motion.div
                                 key="transcript-visible"
-                                initial={{ opacity: 0, y: 10 }}
+                                initial={{ opacity: 0, y: 8 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -10 }}
-                                className="p-4 rounded-2xl bg-violet-950/70 border-2 border-violet-400/40 text-lg sm:text-xl font-black text-violet-100 leading-relaxed shadow-inner max-h-44 overflow-y-auto"
+                                exit={{ opacity: 0, y: -8 }}
+                                className="p-3 sm:p-4 rounded-xl bg-violet-950/70 border border-violet-400/40 text-base sm:text-lg font-black text-violet-100 leading-snug shadow-inner max-h-36 overflow-y-auto"
                               >
                                 "{listeningText}"
                               </motion.div>
@@ -2018,11 +2027,11 @@ export function SlideRenderer({
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                className="rounded-2xl border-2 border-dashed border-white/15 bg-white/5 p-4 text-center flex flex-col items-center justify-center h-full"
+                                className="rounded-xl border border-dashed border-white/15 bg-white/5 p-2 sm:p-3 text-center flex flex-col items-center justify-center h-full"
                               >
-                                <span className="text-3xl sm:text-4xl mb-1">🎧</span>
-                                <p className="text-sm sm:text-base font-bold text-violet-200/70">
-                                  Escucha con atención el audio para responder la pregunta de comprensión.
+                                <span className="text-2xl sm:text-3xl mb-0.5">🎧</span>
+                                <p className="text-xs sm:text-sm font-bold text-violet-200/70">
+                                  Escucha con atención el audio para responder la pregunta.
                                 </p>
                               </motion.div>
                             )}
@@ -2032,20 +2041,20 @@ export function SlideRenderer({
                     </div>
 
                     {/* Right Column: Comprehension Question & Options */}
-                    <div className="w-[52%] h-full flex flex-col justify-between min-h-0">
+                    <div className="w-[55%] lg:w-[58%] h-full flex flex-col justify-between min-h-0">
                       {slide.listeningData.question ? (
-                        <div className="rounded-3xl border-2 border-pink-400/50 bg-slate-950/85 p-6 sm:p-7 shadow-2xl backdrop-blur-xl flex flex-col justify-between h-full min-h-0">
-                          <div>
-                            <span className="text-xs sm:text-sm font-black uppercase tracking-[0.2em] text-pink-300">
+                        <div className="rounded-2xl sm:rounded-3xl border-2 border-pink-400/50 bg-slate-950/85 p-4 sm:p-6 shadow-2xl backdrop-blur-xl flex flex-col justify-between h-full min-h-0">
+                          <div className="shrink-0">
+                            <span className="text-xs sm:text-sm font-black uppercase tracking-[0.15em] text-pink-300">
                               🎯 Pregunta de Comprensión
                             </span>
-                            <h2 className="text-2xl sm:text-3xl lg:text-[2.2rem] font-black text-white mt-1.5 leading-snug drop-shadow-md">
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-white mt-1 leading-snug drop-shadow-md">
                               {slide.listeningData.question}
                             </h2>
                           </div>
 
                           {slide.listeningData.options && (
-                            <div className="grid gap-3 my-2 flex-1 justify-center flex-col">
+                            <div className="grid gap-2 sm:gap-2.5 my-auto py-1.5 flex-1 justify-center flex-col min-h-0">
                               {slide.listeningData.options.map((opt, idx) => {
                                 const isSelected = selectedListeningOption === idx;
                                 const isCorrect = idx === slide.listeningData?.correctOptionIndex;
@@ -2070,10 +2079,10 @@ export function SlideRenderer({
                                       setShowListeningResult(true);
                                       if (isCorrect) confetti({ particleCount: 40, spread: 60, origin: { y: 0.8 } });
                                     }}
-                                    className={`w-full text-left p-4 sm:p-5 rounded-2xl border-2 text-base sm:text-lg lg:text-xl font-black flex items-center justify-between gap-3.5 transition-all shadow-lg hover:scale-[1.01] active:scale-[0.98] cursor-pointer ${btnStyle}`}
+                                    className={`w-full text-left p-3 sm:p-4 rounded-xl sm:rounded-2xl border-2 text-base sm:text-lg lg:text-xl font-black flex items-center justify-between gap-3 transition-all shadow-md hover:scale-[1.01] active:scale-[0.98] cursor-pointer ${btnStyle}`}
                                   >
-                                    <div className="flex items-center gap-3.5 min-w-0">
-                                      <span className={`w-9 h-9 sm:w-11 sm:h-11 rounded-xl text-base sm:text-lg font-black flex items-center justify-center shrink-0 shadow-md ${
+                                    <div className="flex items-center gap-3 min-w-0">
+                                      <span className={`w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl text-sm sm:text-base font-black flex items-center justify-center shrink-0 shadow-md ${
                                         showListeningResult && isCorrect
                                           ? 'bg-emerald-400 text-slate-950'
                                           : isSelected
@@ -2085,7 +2094,7 @@ export function SlideRenderer({
                                       <span className="min-w-0 break-words">{opt}</span>
                                     </div>
                                     {showListeningResult && isCorrect && (
-                                      <Check className="w-6 h-6 text-emerald-300 shrink-0 stroke-[3]" />
+                                      <Check className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-300 shrink-0 stroke-[3]" />
                                     )}
                                   </button>
                                 );
@@ -2094,10 +2103,10 @@ export function SlideRenderer({
                           )}
 
                           {showListeningResult && (
-                            <div className="pt-2 flex justify-end">
+                            <div className="pt-1.5 flex justify-end shrink-0">
                               <button
                                 onClick={onNext || onComplete}
-                                className="px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-black text-base transition-all shadow-xl hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-2"
+                                className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-black text-sm sm:text-base transition-all shadow-xl hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-2"
                               >
                                 <span>Continuar ➔</span>
                               </button>
@@ -2105,8 +2114,8 @@ export function SlideRenderer({
                           )}
                         </div>
                       ) : (
-                        <div className="rounded-3xl border-2 border-dashed border-white/20 bg-white/5 p-8 text-center flex flex-col items-center justify-center h-full">
-                          <p className="text-2xl font-black text-white">Escucha con atención y comenta lo entendido con tu profesor.</p>
+                        <div className="rounded-2xl sm:rounded-3xl border-2 border-dashed border-white/20 bg-white/5 p-6 text-center flex flex-col items-center justify-center h-full">
+                          <p className="text-xl sm:text-2xl font-black text-white">Escucha con atención y comenta lo entendido con tu profesor.</p>
                         </div>
                       )}
                     </div>
@@ -2129,50 +2138,50 @@ export function SlideRenderer({
               const { speaker, quote } = parseDialogueLine(currentLine?.es);
 
               return (
-                <div className="relative flex-1 flex flex-col justify-between p-4 sm:p-5 lg:p-6 z-10 min-h-0 overflow-hidden bg-gradient-to-br from-[#06141c] via-[#091f26] to-[#041015]">
+                <div className="relative flex-1 flex flex-col justify-between p-3 sm:p-4 lg:p-5 z-10 min-h-0 overflow-hidden bg-gradient-to-br from-[#06141c] via-[#091f26] to-[#041015]">
                   {/* Ambient Emerald & Cyan Aura */}
                   <div className="pointer-events-none absolute -top-16 left-1/4 w-[600px] h-[350px] bg-gradient-to-b from-emerald-400/25 via-teal-500/15 to-transparent blur-3xl" aria-hidden="true" />
                   <div className="pointer-events-none absolute -bottom-10 right-10 w-[500px] h-[300px] bg-cyan-400/20 blur-3xl" aria-hidden="true" />
 
                   {/* Header */}
-                  <div className="shrink-0 mb-1.5 flex items-center justify-between">
-                    <div>
-                      <h1 className="text-2xl sm:text-3xl lg:text-[2.2rem] font-black text-white tracking-tight leading-tight flex items-center gap-2.5 drop-shadow-md">
+                  <div className="shrink-0 mb-1 flex items-center justify-between gap-3">
+                    <div className="min-w-0">
+                      <h1 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight flex items-center gap-2 drop-shadow-md truncate">
                         <span>🧩</span>
-                        <span className="bg-gradient-to-r from-emerald-300 via-teal-200 to-white bg-clip-text text-transparent">{slide.title}</span>
+                        <span className="bg-gradient-to-r from-emerald-300 via-teal-200 to-white bg-clip-text text-transparent truncate">{slide.title}</span>
                       </h1>
-                      <p className="text-sm sm:text-base font-extrabold text-emerald-200 mt-0.5 drop-shadow">
+                      <p className="text-xs sm:text-sm font-extrabold text-emerald-200 mt-0.5 drop-shadow truncate">
                         {slide.description || "Ordena los bloques para traducir la frase correctamente:"}
                       </p>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs sm:text-sm font-black text-emerald-300 bg-emerald-500/20 border-2 border-emerald-400/50 px-3.5 py-1.5 rounded-xl shadow-md">
+                    <div className="flex items-center gap-2 shrink-0">
+                      <span className="text-xs sm:text-sm font-black text-emerald-300 bg-emerald-500/20 border border-emerald-400/40 px-3 py-1 rounded-xl shadow-md">
                         Línea {safeLineIndex + 1} de {lines.length}
                       </span>
                     </div>
                   </div>
 
-                  {/* Main Interactive Workspace (Full Width, Compact & Balanced) */}
-                  <div className="flex-1 flex flex-col justify-between w-full min-h-0 py-0.5 gap-2 sm:gap-2.5">
+                  {/* Main Interactive Workspace */}
+                  <div className="flex-1 flex flex-col justify-between w-full min-h-0 py-0.5 gap-1.5 sm:gap-2">
                     
-                    {/* Spanish Prompt Card with Conversational Speaker Highlight */}
-                    <div className="rounded-2xl sm:rounded-3xl bg-slate-950/85 border-2 border-emerald-400/60 p-3 sm:p-4 shadow-[0_0_35px_rgba(16,185,129,0.2)] text-center backdrop-blur-xl shrink-0">
-                      <div className="text-[11px] sm:text-xs font-black uppercase tracking-[0.2em] text-emerald-400 mb-1">
+                    {/* Spanish Prompt Card */}
+                    <div className="rounded-xl sm:rounded-2xl bg-slate-950/85 border-2 border-emerald-400/60 p-2 sm:p-2.5 shadow-[0_0_35px_rgba(16,185,129,0.2)] text-center backdrop-blur-xl shrink-0">
+                      <div className="text-[10px] sm:text-xs font-black uppercase tracking-[0.15em] text-emerald-400 mb-0.5">
                         🇪🇸 Frase en Español a Traducir
                       </div>
-                      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                      <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2.5">
                         {speaker ? (
                           <>
-                            <span className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-4 sm:py-1.5 rounded-xl sm:rounded-2xl bg-cyan-500/20 border-2 border-cyan-400/60 text-cyan-300 font-black text-lg sm:text-xl lg:text-2xl shadow-md shrink-0">
-                              <span className="text-base sm:text-lg">👤</span>
+                            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-xl bg-cyan-500/20 border border-cyan-400/60 text-cyan-300 font-black text-base sm:text-lg lg:text-xl shadow-md shrink-0">
+                              <span>👤</span>
                               <span>{speaker}:</span>
                             </span>
-                            <span className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-yellow-300 drop-shadow-[0_0_20px_rgba(253,224,71,0.35)] leading-snug tracking-tight">
+                            <span className="text-xl sm:text-2xl lg:text-3xl font-black text-yellow-300 drop-shadow-[0_0_20px_rgba(253,224,71,0.35)] leading-snug tracking-tight">
                               "{quote}"
                             </span>
                           </>
                         ) : (
-                          <span className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-yellow-300 drop-shadow-[0_0_20px_rgba(253,224,71,0.35)] leading-snug tracking-tight">
+                          <span className="text-xl sm:text-2xl lg:text-3xl font-black text-yellow-300 drop-shadow-[0_0_20px_rgba(253,224,71,0.35)] leading-snug tracking-tight">
                             "{quote}"
                           </span>
                         )}
@@ -2180,9 +2189,9 @@ export function SlideRenderer({
                     </div>
 
                     {/* Assembly Drop Area */}
-                    <div className="rounded-2xl sm:rounded-3xl bg-slate-950/80 border-2 border-dashed border-emerald-400/50 p-3 sm:p-4 min-h-[75px] sm:min-h-[90px] flex flex-wrap gap-2.5 items-center justify-center shadow-inner shrink-0">
+                    <div className="rounded-xl sm:rounded-2xl bg-slate-950/80 border-2 border-dashed border-emerald-400/50 p-2 sm:p-2.5 min-h-[56px] sm:min-h-[64px] flex flex-wrap gap-2 items-center justify-center shadow-inner shrink-0">
                       {selectedTokenIndexes.length === 0 ? (
-                        <div className="flex items-center gap-2 text-white/50 text-base sm:text-lg font-bold italic py-1">
+                        <div className="flex items-center gap-1.5 text-white/50 text-xs sm:text-sm md:text-base font-bold italic py-0.5">
                           <span>👇</span>
                           <span>Toca las palabras de abajo en orden para construir la frase...</span>
                         </div>
@@ -2193,7 +2202,7 @@ export function SlideRenderer({
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             onClick={() => setSelectedTokenIndexes(prev => prev.filter((_, p) => p !== pos))}
-                            className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl bg-gradient-to-r from-emerald-500/30 to-teal-500/30 border-2 border-emerald-400 text-emerald-100 text-lg sm:text-xl lg:text-2xl font-black shadow-lg shadow-emerald-500/30 hover:bg-red-500/30 hover:border-red-400 hover:text-red-200 transition-all cursor-pointer flex items-center gap-1.5 active:scale-95"
+                            className="px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-xl bg-gradient-to-r from-emerald-500/30 to-teal-500/30 border-2 border-emerald-400 text-emerald-100 text-base sm:text-lg lg:text-xl font-black shadow-lg shadow-emerald-500/30 hover:bg-red-500/30 hover:border-red-400 hover:text-red-200 transition-all cursor-pointer flex items-center gap-1.5 active:scale-95"
                             title="Toca para quitar de la respuesta"
                           >
                             <span>{tokens[ti]?.text}</span>
@@ -2205,13 +2214,13 @@ export function SlideRenderer({
 
                     {/* Word Bank / Possible Answers with Hide/Reveal feature */}
                     <div className="shrink-0 flex flex-col justify-center">
-                      <div className="mb-1.5 flex items-center justify-between gap-2 px-2">
+                      <div className="mb-1 flex items-center justify-between gap-2 px-1">
                         <div className="flex items-center gap-2">
                           <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-emerald-300">Banco de palabras:</span>
                           {selectedTokenIndexes.length > 0 && (
                             <button
                               onClick={() => setSelectedTokenIndexes([])}
-                              className="text-xs sm:text-sm font-black text-red-400 hover:text-red-300 transition-colors cursor-pointer ml-1 px-2.5 py-0.5 rounded-lg bg-red-500/10 border border-red-400/30"
+                              className="text-xs font-black text-red-400 hover:text-red-300 transition-colors cursor-pointer ml-1 px-2 py-0.5 rounded-lg bg-red-500/10 border border-red-400/30"
                             >
                               ✕ Limpiar
                             </button>
@@ -2221,10 +2230,10 @@ export function SlideRenderer({
                         <button
                           type="button"
                           onClick={() => setWordsRevealed(v => !v)}
-                          className={`flex items-center gap-1.5 rounded-xl border-2 px-3.5 py-1 text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                          className={`flex items-center gap-1.5 rounded-xl border px-3 py-0.5 text-xs sm:text-sm font-black transition-all cursor-pointer ${
                             wordsRevealed
                               ? 'border-white/20 bg-white/10 text-white/80 hover:bg-white/20'
-                              : 'border-yellow-300/60 bg-yellow-300/20 text-yellow-200 hover:bg-yellow-300 hover:text-yellow-950 shadow-lg shadow-yellow-500/20 animate-pulse'
+                              : 'border-yellow-300/60 bg-yellow-300/20 text-yellow-200 hover:bg-yellow-300 hover:text-yellow-950 shadow-md shadow-yellow-500/20 animate-pulse'
                           }`}
                         >
                           {wordsRevealed ? (
@@ -2241,7 +2250,7 @@ export function SlideRenderer({
                         </button>
                       </div>
 
-                      <div className="flex flex-wrap gap-2 sm:gap-3 justify-center items-center min-h-[50px]">
+                      <div className="flex flex-wrap gap-1.5 sm:gap-2.5 justify-center items-center min-h-[44px]">
                         {tokens.map((t, i) => {
                           const used = selectedTokenIndexes.includes(i);
                           return (
@@ -2250,12 +2259,12 @@ export function SlideRenderer({
                               disabled={used}
                               initial={{ scale: 0.9, opacity: 0 }}
                               animate={{ scale: 1, opacity: 1 }}
-                              transition={{ delay: i * 0.03 }}
+                              transition={{ delay: i * 0.02 }}
                               onClick={() => {
                                 if (!wordsRevealed) setWordsRevealed(true);
                                 setSelectedTokenIndexes(prev => [...prev, i]);
                               }}
-                              className={`px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl text-lg sm:text-xl lg:text-2xl font-black border-2 transition-all cursor-pointer shadow-xl ${
+                              className={`px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-xl text-base sm:text-lg lg:text-xl font-black border-2 transition-all cursor-pointer shadow-lg ${
                                 used
                                   ? 'opacity-20 bg-white/5 border-white/10 text-white/30 scale-95 pointer-events-none'
                                   : 'bg-[#0a2027] border-emerald-400/80 text-white hover:bg-emerald-500/40 hover:border-emerald-300 hover:scale-105 active:scale-95 shadow-emerald-950/50'
@@ -2273,21 +2282,21 @@ export function SlideRenderer({
                     {/* Feedback Alert */}
                     {storyFeedback !== 'idle' && (
                       <motion.div
-                        initial={{ opacity: 0, scale: 0.95, y: -5 }}
+                        initial={{ opacity: 0, scale: 0.95, y: -4 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
-                        className={`rounded-2xl p-2.5 sm:p-3 text-center font-black border-2 shadow-xl shrink-0 ${
+                        className={`rounded-xl p-1.5 sm:p-2 text-center font-black border-2 shadow-lg shrink-0 ${
                           storyFeedback === 'correct'
                             ? 'bg-emerald-500/20 border-emerald-400 text-emerald-200 shadow-emerald-500/20'
                             : 'bg-red-500/20 border-red-400 text-red-200 shadow-red-500/20'
                         }`}
                       >
                         {storyFeedback === 'correct' ? (
-                          <div className="flex items-center justify-center gap-2.5 text-lg sm:text-xl">
+                          <div className="flex items-center justify-center gap-2 text-sm sm:text-base">
                             <span>🎉</span>
                             <span>¡Excelente! Frase descodificada correctamente.</span>
                           </div>
                         ) : (
-                          <div className="text-sm sm:text-base">
+                          <div className="text-xs sm:text-sm">
                             <span>❌ Respuesta esperada: </span>
                             <span className="text-white underline font-extrabold">"{targetAnswer}"</span>
                           </div>
@@ -2296,7 +2305,7 @@ export function SlideRenderer({
                     )}
 
                     {/* Centered Controls */}
-                    <div className="flex flex-wrap items-center justify-center gap-3 shrink-0 pt-0.5">
+                    <div className="flex flex-wrap items-center justify-center gap-2.5 shrink-0 pt-0.5">
                       <button
                         onClick={() => {
                           const normalize = (str: string) => str.trim().toLowerCase().replace(/[.,!?;:]/g, '');
@@ -2308,13 +2317,13 @@ export function SlideRenderer({
                           }
                         }}
                         disabled={selectedTokenIndexes.length === 0}
-                        className="min-h-12 sm:min-h-13 px-7 py-3 sm:px-8 sm:py-3.5 rounded-2xl bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 text-slate-950 font-black text-base sm:text-lg lg:text-xl shadow-2xl shadow-emerald-500/40 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer flex items-center gap-2.5"
+                        className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 text-slate-950 font-black text-sm sm:text-base lg:text-lg shadow-xl shadow-emerald-500/30 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer flex items-center gap-2"
                       >
-                        <Check className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
+                        <Check className="w-4 h-4 sm:w-5 sm:h-5 stroke-[3]" />
                         <span>Comprobar Respuesta</span>
                       </button>
 
-                      {/* Story Decoder Vocabulary Saver Modal Trigger (Activated after checking answer) */}
+                      {/* Story Decoder Vocabulary Saver Modal Trigger */}
                       {storyFeedback !== 'idle' && (
                         <StoryDecoderVocabTool
                           targetAnswer={targetAnswer}
@@ -2341,20 +2350,20 @@ export function SlideRenderer({
                             const shuffled = [...blocks].map((t: string, i: number) => ({ id: String(i), text: t })).sort(() => Math.random() - 0.5);
                             setShuffledStoryTokens(shuffled);
                           }}
-                          className="min-h-12 sm:min-h-13 px-7 py-3 sm:px-8 sm:py-3.5 rounded-2xl bg-gradient-to-r from-violet-500 to-indigo-600 hover:from-violet-400 hover:to-indigo-500 text-white font-black text-base sm:text-lg lg:text-xl shadow-2xl shadow-violet-500/40 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-2.5"
+                          className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl bg-gradient-to-r from-violet-500 to-indigo-600 hover:from-violet-400 hover:to-indigo-500 text-white font-black text-sm sm:text-base lg:text-lg shadow-xl shadow-violet-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-2"
                         >
                           <span>Siguiente Línea</span>
-                          <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
+                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[3]" />
                         </button>
                       )}
 
                       {safeLineIndex === lines.length - 1 && storyFeedback !== 'idle' && (
                         <button
                           onClick={onNext || onComplete}
-                          className="min-h-12 sm:min-h-13 px-7 py-3 sm:px-8 sm:py-3.5 rounded-2xl bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 hover:from-pink-400 hover:to-amber-400 text-white font-black text-base sm:text-lg lg:text-xl shadow-2xl shadow-pink-500/40 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-2.5 animate-bounce"
+                          className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 hover:from-pink-400 hover:to-amber-400 text-white font-black text-sm sm:text-base lg:text-lg shadow-xl shadow-pink-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-2 animate-bounce"
                         >
                           <span>🏆 Continuar a la Siguiente Diapositiva</span>
-                          <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
+                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[3]" />
                         </button>
                       )}
                     </div>
@@ -3124,16 +3133,17 @@ export function SlideRenderer({
           </div>
         </div>
       ) : isOpeningSlide ? (
-        <div className="relative flex-1 flex flex-col justify-between p-7 sm:p-9 z-10 min-h-0 overflow-hidden">
-          <div className="flex-1 flex flex-row items-center gap-7 min-h-0">
+        <div className="relative flex-1 flex flex-col justify-between p-6 sm:p-8 lg:p-9 z-10 min-h-0 overflow-hidden">
+          <div className="flex-1 flex flex-row items-center gap-6 sm:gap-8 min-h-0">
             {/* Left Content (58%) */}
             <div className="w-[58%] h-full flex flex-col justify-between py-1 min-w-0">
               {/* Category tag */}
-              <span className="text-violet-300 font-bold text-xs sm:text-sm tracking-widest uppercase opacity-90">
-                {slide.description || 'introductions'}
-              </span>
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-cyan-500/20 border border-cyan-400/40 text-cyan-200 font-extrabold text-xs uppercase tracking-wider w-fit shadow-sm">
+                <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+                <span>{slide.description || 'Welcome & Introduction'}</span>
+              </div>
 
-              {/* Multi-line gradient title */}
+              {/* Multi-line clean title */}
               {(() => {
                 const rawClassTitle = cls?.title || '';
                 const classTopicEn = rawClassTitle
@@ -3175,26 +3185,26 @@ export function SlideRenderer({
                 }
 
                 return (
-                  <div className="flex flex-col">
-                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white/90 leading-tight">
+                  <div className="flex flex-col my-1">
+                    <h2 className="text-xs sm:text-sm font-bold uppercase tracking-widest text-cyan-300">
                       Welcome to
                     </h2>
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black bg-gradient-to-r from-pink-400 via-rose-400 to-fuchsia-400 bg-clip-text text-transparent leading-tight drop-shadow-md">
+                    <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-black text-white leading-tight drop-shadow-md tracking-tight">
                       {cleanEn}
                     </h1>
-                    <p className="text-base sm:text-lg lg:text-xl font-bold text-white/80 mt-0.5">
+                    <p className="text-base sm:text-lg lg:text-xl font-bold text-amber-300 mt-0.5 drop-shadow">
                       ¡Bienvenidos a {cleanEs}!
                     </p>
                   </div>
                 );
               })()}
 
-              {/* 3 Large Screen-Share Optimized Horizontal Cards with Click-to-Zoom */}
-              <div className="grid grid-cols-3 gap-3.5 my-1 flex-1 items-stretch min-h-[190px]">
+              {/* 3 Large Screen-Share Optimized Cohesive Glass Cards */}
+              <div className="grid grid-cols-3 gap-3 sm:gap-3.5 my-1 flex-1 items-stretch min-h-[185px]">
                 {(() => {
                   const openingCards = [
-                    { index: 0, title: 'Elemento 1 • Misión de la Clase', text: slide.content?.[0] || 'Are you ready to level up your English?', iconType: 'target' as const, gradient: 'from-pink-500 to-rose-600', iconBg: 'bg-gradient-to-br from-pink-500 to-rose-600' },
-                    { index: 1, title: 'Elemento 2 • Concepto Clave', text: slide.content?.[1] || 'Today we learn how to introduce ourselves.', iconType: 'book' as const, gradient: 'from-cyan-500 to-blue-600', iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600' },
+                    { index: 0, title: 'Elemento 1 • Misión de la Clase', text: slide.content?.[0] || 'Are you ready to level up your English?', iconType: 'target' as const, gradient: 'from-cyan-500 to-blue-600', iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600' },
+                    { index: 1, title: 'Elemento 2 • Concepto Clave', text: slide.content?.[1] || 'Today we learn how to introduce ourselves.', iconType: 'book' as const, gradient: 'from-indigo-500 to-purple-600', iconBg: 'bg-gradient-to-br from-indigo-500 to-purple-600' },
                     { index: 2, title: 'Elemento 3 • Desafío y Conversación', text: slide.content?.[2] || "Let's make some new friends!", iconType: 'users' as const, gradient: 'from-amber-400 to-orange-500', iconBg: 'bg-gradient-to-br from-amber-400 to-orange-500' }
                   ];
 
@@ -3204,17 +3214,17 @@ export function SlideRenderer({
                       <button
                         type="button"
                         onClick={() => setSpotlightElement({ ...openingCards[0], total: 3, items: openingCards })}
-                        className="relative group bg-[#18113c]/95 border-2 border-violet-500/35 hover:border-pink-500/80 hover:bg-[#221652] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-center text-center backdrop-blur-md shadow-2xl transition-all duration-200 hover:scale-[1.04] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-pink-400"
+                        className="relative group bg-[#111a48]/85 border-2 border-cyan-500/40 hover:border-cyan-300 hover:bg-[#182464] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-center text-center backdrop-blur-xl shadow-xl transition-all duration-200 hover:scale-[1.03] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-cyan-400"
                         title="Haz clic para ver gigante en pantalla"
                       >
-                        <div className="absolute top-2.5 right-2.5 opacity-60 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-pink-300 flex items-center gap-1">
+                        <div className="absolute top-2.5 right-2.5 opacity-70 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-cyan-200 flex items-center gap-1 border border-white/10">
                           <span>Zoom</span>
-                          <Sparkles className="w-3 h-3 text-pink-400" />
+                          <Sparkles className="w-3 h-3 text-cyan-400" />
                         </div>
-                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-white mb-3 shadow-lg shadow-pink-500/35 shrink-0 group-hover:scale-110 transition-transform">
+                        <div className="w-13 h-13 sm:w-15 sm:h-15 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white mb-2.5 shadow-lg shadow-cyan-500/40 shrink-0 group-hover:scale-110 transition-transform">
                           <Target className="w-7 h-7 sm:w-8 sm:h-8" />
                         </div>
-                        <span className="text-sm sm:text-base lg:text-[1.05rem] font-bold text-white leading-snug tracking-tight">
+                        <span className="text-sm sm:text-base lg:text-[1.02rem] font-bold text-white leading-snug tracking-tight">
                           {openingCards[0].text}
                         </span>
                       </button>
@@ -3223,17 +3233,17 @@ export function SlideRenderer({
                       <button
                         type="button"
                         onClick={() => setSpotlightElement({ ...openingCards[1], total: 3, items: openingCards })}
-                        className="relative group bg-[#18113c]/95 border-2 border-violet-500/35 hover:border-cyan-500/80 hover:bg-[#15234d] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-center text-center backdrop-blur-md shadow-2xl transition-all duration-200 hover:scale-[1.04] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                        className="relative group bg-[#15174c]/85 border-2 border-indigo-400/40 hover:border-indigo-300 hover:bg-[#1f2066] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-center text-center backdrop-blur-xl shadow-xl transition-all duration-200 hover:scale-[1.03] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-indigo-400"
                         title="Haz clic para ver gigante en pantalla"
                       >
-                        <div className="absolute top-2.5 right-2.5 opacity-60 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-cyan-300 flex items-center gap-1">
+                        <div className="absolute top-2.5 right-2.5 opacity-70 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-indigo-200 flex items-center gap-1 border border-white/10">
                           <span>Zoom</span>
-                          <Sparkles className="w-3 h-3 text-cyan-400" />
+                          <Sparkles className="w-3 h-3 text-indigo-300" />
                         </div>
-                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white mb-3 shadow-lg shadow-cyan-500/35 shrink-0 group-hover:scale-110 transition-transform">
+                        <div className="w-13 h-13 sm:w-15 sm:h-15 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white mb-2.5 shadow-lg shadow-indigo-500/40 shrink-0 group-hover:scale-110 transition-transform">
                           <BookOpen className="w-7 h-7 sm:w-8 sm:h-8" />
                         </div>
-                        <span className="text-sm sm:text-base lg:text-[1.05rem] font-bold text-white leading-snug tracking-tight">
+                        <span className="text-sm sm:text-base lg:text-[1.02rem] font-bold text-white leading-snug tracking-tight">
                           {openingCards[1].text}
                         </span>
                       </button>
@@ -3242,17 +3252,17 @@ export function SlideRenderer({
                       <button
                         type="button"
                         onClick={() => setSpotlightElement({ ...openingCards[2], total: 3, items: openingCards })}
-                        className="relative group bg-[#18113c]/95 border-2 border-violet-500/35 hover:border-amber-500/80 hover:bg-[#342416] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-center text-center backdrop-blur-md shadow-2xl transition-all duration-200 hover:scale-[1.04] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-amber-400"
+                        className="relative group bg-[#1a1744]/85 border-2 border-amber-400/40 hover:border-amber-300 hover:bg-[#28205c] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-center text-center backdrop-blur-xl shadow-xl transition-all duration-200 hover:scale-[1.03] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-amber-400"
                         title="Haz clic para ver gigante en pantalla"
                       >
-                        <div className="absolute top-2.5 right-2.5 opacity-60 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-amber-300 flex items-center gap-1">
+                        <div className="absolute top-2.5 right-2.5 opacity-70 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-amber-200 flex items-center gap-1 border border-white/10">
                           <span>Zoom</span>
-                          <Sparkles className="w-3 h-3 text-amber-400" />
+                          <Sparkles className="w-3 h-3 text-amber-300" />
                         </div>
-                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white mb-3 shadow-lg shadow-amber-500/35 shrink-0 group-hover:scale-110 transition-transform">
+                        <div className="w-13 h-13 sm:w-15 sm:h-15 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-slate-950 mb-2.5 shadow-lg shadow-amber-500/40 shrink-0 group-hover:scale-110 transition-transform">
                           <Users className="w-7 h-7 sm:w-8 sm:h-8" />
                         </div>
-                        <span className="text-sm sm:text-base lg:text-[1.05rem] font-bold text-white leading-snug tracking-tight">
+                        <span className="text-sm sm:text-base lg:text-[1.02rem] font-bold text-white leading-snug tracking-tight">
                           {openingCards[2].text}
                         </span>
                       </button>
@@ -3266,7 +3276,7 @@ export function SlideRenderer({
                 <div className="pt-1">
                   <button
                     onClick={onNext}
-                    className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-gradient-to-r from-violet-600 via-indigo-600 to-purple-600 hover:from-violet-500 hover:to-purple-500 text-white font-black text-base sm:text-lg tracking-wider uppercase shadow-xl shadow-violet-600/40 hover:scale-105 active:scale-95 transition-all"
+                    className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-blue-500 text-white font-black text-base sm:text-lg tracking-wider uppercase shadow-xl shadow-cyan-500/35 border-2 border-cyan-300/50 hover:scale-105 active:scale-95 transition-all cursor-pointer"
                   >
                     <span>LET'S GO!</span>
                     <ArrowRight className="w-5 h-5" />
@@ -3291,18 +3301,20 @@ export function SlideRenderer({
                     imageUrl: slide.imageUrl || '/images/teens-basic-zero-class-01/slide-01.jpg'
                   });
                 }}
-                className="relative group w-full h-full max-h-[540px] rounded-3xl overflow-hidden border-2 border-white/20 hover:border-pink-400/80 shadow-2xl bg-black/30 cursor-pointer transition-all hover:scale-[1.02] active:scale-[0.98] focus:outline-none"
+                className="relative group w-full h-full max-h-[540px] rounded-3xl overflow-hidden border-[3px] border-cyan-400/60 hover:border-cyan-300 shadow-[0_0_35px_rgba(6,182,212,0.3)] bg-gradient-to-br from-cyan-500/20 via-indigo-500/20 to-purple-500/20 p-1 cursor-pointer transition-all hover:scale-[1.02] active:scale-[0.98] focus:outline-none"
                 title="Haz clic para ver la imagen en pantalla completa"
               >
-                <div className="absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white flex items-center gap-1.5 border border-white/20">
+                <div className="absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white flex items-center gap-1.5 border border-white/20">
                   <span>Zoom Gigante</span>
-                  <Sparkles className="w-3.5 h-3.5 text-pink-400" />
+                  <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
                 </div>
-                <img
-                  src={slide.imageUrl || '/images/teens-basic-zero-class-01/slide-01.jpg'}
-                  alt={slide.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                <div className="w-full h-full rounded-[22px] overflow-hidden">
+                  <img
+                    src={slide.imageUrl || '/images/teens-basic-zero-class-01/slide-01.jpg'}
+                    alt={slide.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </button>
             </div>
           </div>
@@ -3953,7 +3965,7 @@ export function SlideRenderer({
           })()}
         </div>
       ) : (slide.type === 'story-decoder-embedded' || Boolean(slide.storyDecoderData) || /story decoder|descodificador/i.test(slide.title || '')) && resolveStoryDecoderLines(slide).length > 0 ? (
-        <div className="relative flex-1 flex flex-col justify-between p-4 sm:p-5 lg:p-6 z-10 min-h-0 overflow-hidden bg-gradient-to-br from-[#06141c] via-[#091f26] to-[#041015]">
+        <div className="relative flex-1 flex flex-col justify-between p-3 sm:p-4 lg:p-5 z-10 min-h-0 overflow-hidden bg-gradient-to-br from-[#06141c] via-[#091f26] to-[#041015]">
           {/* Ambient Emerald & Cyan Aura */}
           <div className="pointer-events-none absolute -top-16 left-1/4 w-[600px] h-[350px] bg-gradient-to-b from-emerald-400/25 via-teal-500/15 to-transparent blur-3xl" aria-hidden="true" />
           <div className="pointer-events-none absolute -bottom-10 right-10 w-[500px] h-[300px] bg-cyan-400/20 blur-3xl" aria-hidden="true" />
@@ -3963,20 +3975,20 @@ export function SlideRenderer({
             const lines = resolveStoryDecoderLines(slide);
             const safeLineIndex = Math.max(0, Math.min(storyLineIndex, lines.length - 1));
             return (
-              <div className="shrink-0 mb-1.5 flex items-center justify-between">
-                <div>
-                  <h1 className="text-2xl sm:text-3xl lg:text-[2.2rem] font-black text-white tracking-tight leading-tight flex items-center gap-2.5 drop-shadow-md">
+              <div className="shrink-0 mb-1 flex items-center justify-between gap-3">
+                <div className="min-w-0">
+                  <h1 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight flex items-center gap-2 drop-shadow-md truncate">
                     <span>🧩</span>
-                    <span className="bg-gradient-to-r from-emerald-300 via-teal-200 to-white bg-clip-text text-transparent">{slide.title}</span>
+                    <span className="bg-gradient-to-r from-emerald-300 via-teal-200 to-white bg-clip-text text-transparent truncate">{slide.title}</span>
                   </h1>
-                  <p className="text-sm sm:text-base font-extrabold text-emerald-200 mt-0.5 drop-shadow">
+                  <p className="text-xs sm:text-sm font-extrabold text-emerald-200 mt-0.5 drop-shadow truncate">
                     {slide.description || "Ordena los bloques para traducir la frase correctamente:"}
                   </p>
                 </div>
 
                 {/* Line tabs */}
-                <div className="flex items-center gap-2">
-                  <span className="text-xs sm:text-sm font-black text-emerald-300 bg-emerald-500/20 border-2 border-emerald-400/50 px-3.5 py-1.5 rounded-xl shadow-md">
+                <div className="flex items-center gap-2 shrink-0">
+                  <span className="text-xs sm:text-sm font-black text-emerald-300 bg-emerald-500/20 border border-emerald-400/40 px-3 py-1 rounded-xl shadow-md">
                     Línea {safeLineIndex + 1} de {lines.length}
                   </span>
                 </div>
@@ -4001,25 +4013,25 @@ export function SlideRenderer({
             const { speaker, quote } = parseDialogueLine(line?.es);
 
             return (
-              <div className="flex-1 flex flex-col justify-between w-full min-h-0 py-0.5 gap-2 sm:gap-2.5">
+              <div className="flex-1 flex flex-col justify-between w-full min-h-0 py-0.5 gap-1.5 sm:gap-2">
                 {/* Spanish Prompt Card with Conversational Speaker Highlight */}
-                <div className="rounded-2xl sm:rounded-3xl bg-slate-950/85 border-2 border-emerald-400/60 p-3 sm:p-4 shadow-[0_0_35px_rgba(16,185,129,0.2)] text-center backdrop-blur-xl shrink-0">
-                  <div className="text-[11px] sm:text-xs font-black uppercase tracking-[0.2em] text-emerald-400 mb-1">
+                <div className="rounded-xl sm:rounded-2xl bg-slate-950/85 border-2 border-emerald-400/60 p-2 sm:p-2.5 shadow-[0_0_35px_rgba(16,185,129,0.2)] text-center backdrop-blur-xl shrink-0">
+                  <div className="text-[10px] sm:text-xs font-black uppercase tracking-[0.15em] text-emerald-400 mb-0.5">
                     🇪🇸 Frase en Español a Traducir
                   </div>
-                  <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                  <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2.5">
                     {speaker ? (
                       <>
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-4 sm:py-1.5 rounded-xl sm:rounded-2xl bg-cyan-500/20 border-2 border-cyan-400/60 text-cyan-300 font-black text-lg sm:text-xl lg:text-2xl shadow-md shrink-0">
-                          <span className="text-base sm:text-lg">👤</span>
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-xl bg-cyan-500/20 border border-cyan-400/60 text-cyan-300 font-black text-base sm:text-lg lg:text-xl shadow-md shrink-0">
+                          <span>👤</span>
                           <span>{speaker}:</span>
                         </span>
-                        <span className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-yellow-300 drop-shadow-[0_0_20px_rgba(253,224,71,0.35)] leading-snug tracking-tight">
+                        <span className="text-xl sm:text-2xl lg:text-3xl font-black text-yellow-300 drop-shadow-[0_0_20px_rgba(253,224,71,0.35)] leading-snug tracking-tight">
                           "{quote}"
                         </span>
                       </>
                     ) : (
-                      <span className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-yellow-300 drop-shadow-[0_0_20px_rgba(253,224,71,0.35)] leading-snug tracking-tight">
+                      <span className="text-xl sm:text-2xl lg:text-3xl font-black text-yellow-300 drop-shadow-[0_0_20px_rgba(253,224,71,0.35)] leading-snug tracking-tight">
                         "{quote}"
                       </span>
                     )}
@@ -4027,9 +4039,9 @@ export function SlideRenderer({
                 </div>
 
                 {/* Assembled Tokens Slot Box */}
-                <div className="rounded-2xl sm:rounded-3xl bg-slate-950/80 border-2 border-dashed border-emerald-400/50 p-3 sm:p-4 min-h-[75px] sm:min-h-[90px] flex flex-wrap gap-2.5 items-center justify-center shadow-inner shrink-0">
+                <div className="rounded-xl sm:rounded-2xl bg-slate-950/80 border-2 border-dashed border-emerald-400/50 p-2 sm:p-2.5 min-h-[56px] sm:min-h-[64px] flex flex-wrap gap-2 items-center justify-center shadow-inner shrink-0">
                   {selectedTokenIndexes.length === 0 ? (
-                    <div className="flex items-center gap-2 text-white/50 text-base sm:text-lg font-bold italic py-1">
+                    <div className="flex items-center gap-1.5 text-white/50 text-xs sm:text-sm md:text-base font-bold italic py-0.5">
                       <span>👇</span>
                       <span>Toca las palabras de abajo en orden para construir la frase...</span>
                     </div>
@@ -4040,7 +4052,7 @@ export function SlideRenderer({
                         initial={{ scale: 0.8, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         onClick={() => setSelectedTokenIndexes(prev => prev.filter((_, p) => p !== pos))}
-                        className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl bg-gradient-to-r from-emerald-500/30 to-teal-500/30 border-2 border-emerald-400 text-emerald-100 text-lg sm:text-xl lg:text-2xl font-black shadow-lg shadow-emerald-500/30 hover:bg-red-500/30 hover:border-red-400 hover:text-red-200 transition-all cursor-pointer flex items-center gap-1.5 active:scale-95"
+                        className="px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-xl bg-gradient-to-r from-emerald-500/30 to-teal-500/30 border-2 border-emerald-400 text-emerald-100 text-base sm:text-lg lg:text-xl font-black shadow-lg shadow-emerald-500/30 hover:bg-red-500/30 hover:border-red-400 hover:text-red-200 transition-all cursor-pointer flex items-center gap-1.5 active:scale-95"
                         title="Toca para quitar de la respuesta"
                       >
                         <span>{tokens[ti]?.text}</span>
@@ -4052,13 +4064,13 @@ export function SlideRenderer({
 
                 {/* Word Bank Header & Tokens */}
                 <div className="shrink-0 flex flex-col justify-center">
-                  <div className="mb-1.5 flex items-center justify-between gap-2 px-2">
+                  <div className="mb-1 flex items-center justify-between gap-2 px-1">
                     <div className="flex items-center gap-2">
                       <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-emerald-300">Banco de palabras:</span>
                       {selectedTokenIndexes.length > 0 && (
                         <button
                           onClick={() => setSelectedTokenIndexes([])}
-                          className="text-xs sm:text-sm font-black text-red-400 hover:text-red-300 transition-colors cursor-pointer ml-1 px-2.5 py-0.5 rounded-lg bg-red-500/10 border border-red-400/30"
+                          className="text-xs font-black text-red-400 hover:text-red-300 transition-colors cursor-pointer ml-1 px-2 py-0.5 rounded-lg bg-red-500/10 border border-red-400/30"
                         >
                           ✕ Limpiar
                         </button>
@@ -4068,10 +4080,10 @@ export function SlideRenderer({
                     <button
                       type="button"
                       onClick={() => setWordsRevealed(v => !v)}
-                      className={`flex items-center gap-1.5 rounded-xl border-2 px-3.5 py-1 text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                      className={`flex items-center gap-1.5 rounded-xl border px-3 py-0.5 text-xs sm:text-sm font-black transition-all cursor-pointer ${
                         wordsRevealed
                           ? 'border-white/20 bg-white/10 text-white/80 hover:bg-white/20'
-                          : 'border-yellow-300/60 bg-yellow-300/20 text-yellow-200 hover:bg-yellow-300 hover:text-yellow-950 shadow-lg shadow-yellow-500/20 animate-pulse'
+                          : 'border-yellow-300/60 bg-yellow-300/20 text-yellow-200 hover:bg-yellow-300 hover:text-yellow-950 shadow-md shadow-yellow-500/20 animate-pulse'
                       }`}
                     >
                       {wordsRevealed ? (
@@ -4088,7 +4100,7 @@ export function SlideRenderer({
                     </button>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 sm:gap-3 justify-center items-center min-h-[50px]">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2.5 justify-center items-center min-h-[44px]">
                     {tokens.map((t, i) => {
                       const used = selectedTokenIndexes.includes(i);
                       return (
@@ -4097,12 +4109,12 @@ export function SlideRenderer({
                           disabled={used}
                           initial={{ scale: 0.9, opacity: 0 }}
                           animate={{ scale: 1, opacity: 1 }}
-                          transition={{ delay: i * 0.03 }}
+                          transition={{ delay: i * 0.02 }}
                           onClick={() => {
                             if (!wordsRevealed) setWordsRevealed(true);
                             setSelectedTokenIndexes(prev => [...prev, i]);
                           }}
-                          className={`px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl text-lg sm:text-xl lg:text-2xl font-black border-2 transition-all cursor-pointer shadow-xl ${
+                          className={`px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-xl text-base sm:text-lg lg:text-xl font-black border-2 transition-all cursor-pointer shadow-lg ${
                             used
                               ? 'opacity-20 bg-white/5 border-white/10 text-white/30 scale-95 pointer-events-none'
                               : 'bg-[#0a2027] border-emerald-400/80 text-white hover:bg-emerald-500/40 hover:border-emerald-300 hover:scale-105 active:scale-95 shadow-emerald-950/50'
@@ -4120,21 +4132,21 @@ export function SlideRenderer({
                 {/* Feedback Alert */}
                 {storyFeedback !== 'idle' && (
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.95, y: -5 }}
+                    initial={{ opacity: 0, scale: 0.95, y: -4 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
-                    className={`rounded-2xl p-2.5 sm:p-3 text-center font-black border-2 shadow-xl shrink-0 ${
+                    className={`rounded-xl p-1.5 sm:p-2 text-center font-black border-2 shadow-lg shrink-0 ${
                       storyFeedback === 'correct'
                         ? 'bg-emerald-500/20 border-emerald-400 text-emerald-200 shadow-emerald-500/20'
                         : 'bg-red-500/20 border-red-400 text-red-200 shadow-red-500/20'
                     }`}
                   >
                     {storyFeedback === 'correct' ? (
-                      <div className="flex items-center justify-center gap-2.5 text-lg sm:text-xl">
+                      <div className="flex items-center justify-center gap-2 text-sm sm:text-base">
                         <span>🎉</span>
                         <span>¡Excelente! Frase descodificada correctamente.</span>
                       </div>
                     ) : (
-                      <div className="text-sm sm:text-base">
+                      <div className="text-xs sm:text-sm">
                         <span>❌ Respuesta esperada: </span>
                         <span className="text-white underline font-extrabold">"{targetAnswer}"</span>
                       </div>
@@ -4143,7 +4155,7 @@ export function SlideRenderer({
                 )}
 
                 {/* Centered Controls */}
-                <div className="flex flex-wrap items-center justify-center gap-3 shrink-0 pt-0.5">
+                <div className="flex flex-wrap items-center justify-center gap-2.5 shrink-0 pt-0.5">
                   <button
                     onClick={() => {
                       const normalize = (str: string) => str.trim().toLowerCase().replace(/[.,!?;:]/g, '');
@@ -4155,9 +4167,9 @@ export function SlideRenderer({
                       }
                     }}
                     disabled={selectedTokenIndexes.length === 0}
-                    className="min-h-12 sm:min-h-13 px-7 py-3 sm:px-8 sm:py-3.5 rounded-2xl bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 text-slate-950 font-black text-base sm:text-lg lg:text-xl shadow-2xl shadow-emerald-500/40 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer flex items-center gap-2.5"
+                    className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 text-slate-950 font-black text-sm sm:text-base lg:text-lg shadow-xl shadow-emerald-500/30 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer flex items-center gap-2"
                   >
-                    <Check className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
+                    <Check className="w-4 h-4 sm:w-5 sm:h-5 stroke-[3]" />
                     <span>Comprobar Respuesta</span>
                   </button>
 
@@ -4188,20 +4200,20 @@ export function SlideRenderer({
                         const shuffled = [...blocks].map((t: string, i: number) => ({ id: String(i), text: t })).sort(() => Math.random() - 0.5);
                         setShuffledStoryTokens(shuffled);
                       }}
-                      className="min-h-12 sm:min-h-13 px-7 py-3 sm:px-8 sm:py-3.5 rounded-2xl bg-gradient-to-r from-violet-500 to-indigo-600 hover:from-violet-400 hover:to-indigo-500 text-white font-black text-base sm:text-lg lg:text-xl shadow-2xl shadow-violet-500/40 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-2.5"
+                      className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl bg-gradient-to-r from-violet-500 to-indigo-600 hover:from-violet-400 hover:to-indigo-500 text-white font-black text-sm sm:text-base lg:text-lg shadow-xl shadow-violet-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-2"
                     >
                       <span>Siguiente Línea</span>
-                      <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
+                      <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[3]" />
                     </button>
                   )}
 
                   {safeLineIndex === lines.length - 1 && storyFeedback !== 'idle' && (
                     <button
                       onClick={onNext || onComplete}
-                      className="min-h-12 sm:min-h-13 px-7 py-3 sm:px-8 sm:py-3.5 rounded-2xl bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 hover:from-pink-400 hover:to-amber-400 text-white font-black text-base sm:text-lg lg:text-xl shadow-2xl shadow-pink-500/40 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-2.5 animate-bounce"
+                      className="px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 hover:from-pink-400 hover:to-amber-400 text-white font-black text-sm sm:text-base lg:text-lg shadow-xl shadow-pink-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-2 animate-bounce"
                     >
                       <span>🏆 Continuar a la Siguiente Diapositiva</span>
-                      <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
+                      <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[3]" />
                     </button>
                   )}
                 </div>
@@ -4627,18 +4639,26 @@ export function SlideRenderer({
                     const isRevealed = showResult && isSelected;
                     const letter = ['A', 'B', 'C', 'D', 'E'][idx] || String(idx + 1);
 
+                    const OPTION_STYLES = [
+                      { badge: 'bg-gradient-to-br from-cyan-400 to-blue-600 text-white shadow-cyan-500/40', border: 'border-cyan-500/40 hover:border-cyan-300 hover:shadow-[0_0_25px_rgba(6,182,212,0.35)]', cardBg: 'bg-[#151a46]/90 hover:bg-[#1d2360]' },
+                      { badge: 'bg-gradient-to-br from-fuchsia-400 to-pink-600 text-white shadow-fuchsia-500/40', border: 'border-fuchsia-500/40 hover:border-fuchsia-300 hover:shadow-[0_0_25px_rgba(217,70,239,0.35)]', cardBg: 'bg-[#1b1448]/90 hover:bg-[#261a64]' },
+                      { badge: 'bg-gradient-to-br from-amber-400 to-orange-500 text-slate-950 font-black shadow-amber-500/40', border: 'border-amber-500/40 hover:border-amber-300 hover:shadow-[0_0_25px_rgba(245,158,11,0.35)]', cardBg: 'bg-[#201840]/90 hover:bg-[#2d205a]' },
+                      { badge: 'bg-gradient-to-br from-emerald-400 to-teal-600 text-white shadow-emerald-500/40', border: 'border-emerald-500/40 hover:border-emerald-300 hover:shadow-[0_0_25px_rgba(16,185,129,0.35)]', cardBg: 'bg-[#131f42]/90 hover:bg-[#1a2c5e]' },
+                    ];
+                    const currentStyle = OPTION_STYLES[idx % OPTION_STYLES.length];
+
                     let btn = 'w-full px-5 sm:px-7 py-4 sm:py-5 min-h-[70px] sm:min-h-[80px] lg:min-h-[88px] flex-1 rounded-2xl sm:rounded-3xl text-xl sm:text-2xl lg:text-[1.95rem] font-black transition-all shadow-xl border-2 flex items-center justify-between text-left backdrop-blur-md ';
 
                     if (!showResult) {
-                      btn += 'bg-[#18113c]/90 border-violet-500/50 hover:border-cyan-400/80 hover:bg-[#20154d] text-white hover:scale-[1.02] active:scale-[0.99] cursor-pointer shadow-lg shadow-violet-950/40';
+                      btn += `${currentStyle.cardBg} ${currentStyle.border} text-white hover:scale-[1.02] active:scale-[0.99] cursor-pointer shadow-lg shadow-black/40`;
                     } else if (isRevealed) {
                       btn += isCorrect
-                        ? 'bg-gradient-to-r from-emerald-600 to-teal-500 text-white border-emerald-300 scale-[1.02] shadow-2xl shadow-emerald-500/50 ring-4 ring-emerald-400/60'
+                        ? 'bg-gradient-to-r from-emerald-600 via-teal-500 to-green-600 text-white border-emerald-300 scale-[1.02] shadow-2xl shadow-emerald-500/50 ring-4 ring-emerald-400/60'
                         : 'bg-gradient-to-r from-rose-600 to-pink-600 text-white border-rose-400 opacity-70';
                     } else {
                       btn += isCorrect
-                        ? 'bg-gradient-to-r from-emerald-600 to-teal-500 text-white border-emerald-300 ring-2 ring-emerald-400/60'
-                        : 'bg-[#150f33]/60 text-white/40 border-white/10 opacity-40';
+                        ? 'bg-gradient-to-r from-emerald-600 via-teal-500 to-green-600 text-white border-emerald-300 ring-2 ring-emerald-400/60'
+                        : 'bg-[#120f2e]/60 text-white/40 border-white/10 opacity-40';
                     }
 
                     return (
@@ -4646,7 +4666,7 @@ export function SlideRenderer({
                         <div className="flex items-center gap-3.5 sm:gap-5 min-w-0 flex-1">
                           <span className={`inline-flex items-center justify-center w-11 h-11 sm:w-13 sm:h-13 rounded-2xl font-black text-xl sm:text-2xl shrink-0 shadow-md ${
                             !showResult
-                              ? 'bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-cyan-500/30'
+                              ? currentStyle.badge
                               : 'bg-white/25 text-white'
                           }`}>{letter}</span>
                           <span className="leading-snug font-black text-left break-words line-clamp-2 sm:line-clamp-none">{opt}</span>
@@ -4706,21 +4726,25 @@ export function SlideRenderer({
 
       {/* Teacher Note */}
       {(section.action || (slide as any).teacherNote || isOpeningSlide || isGoalsSlide || slide.type === 'objectives-animated' || isSpinningWheelSlide) && !isSpeakingBossBattle && !isRoleplaySlide && !isHomeworkSlide && !isVideoHomeworkSlide && !isWrapUpSlide && !hideTeacherNote && (
-        <div className={`${isScreenShareExerciseSlide ? 'bg-black/25 p-2.5 sm:p-3' : 'bg-black/30 p-3 sm:p-4'} backdrop-blur-md border-t border-white/10 shrink-0 mt-auto`}>
-          <p className={`${isScreenShareExerciseSlide ? 'text-[10px] sm:text-xs' : 'text-xs sm:text-sm'} text-yellow-300/90 font-medium flex items-center gap-2`}>
-            <span className="bg-yellow-400/20 px-2 py-1 rounded text-yellow-300 font-bold tracking-wide uppercase text-[10px] sm:text-xs">👩‍🏫 Nota para el profe</span>
-            {(() => {
-              if (isOpeningSlide || currentIndex === 0 || /welcome|bienvenid|presentaci[oó]n/i.test(slide.title || '')) {
-                return 'Saludar cordialmente al estudiante, conectar con entusiasmo y preparar la sesión de hoy.';
-              }
-              if (slide.type === 'objectives-animated' || isGoalsSlide || /objetivo|misi[oó]n|goals|mission|metas/i.test(slide.title || '')) {
-                return 'Presentar con claridad los 3 objetivos de la clase y motivar al estudiante a alcanzarlos hoy.';
-              }
-              if (isSpinningWheelSlide || slide.type === 'spinning-wheel' || /ruleta|wheel/i.test(slide.title || '')) {
-                return 'Girar la ruleta, hacer la pregunta seleccionada y motivar al estudiante a responder en inglés.';
-              }
-              return (slide as any).teacherNote || section.action || 'Guiar la actividad y evaluar la pronunciación y fluidez del estudiante.';
-            })()}
+        <div className={`${isScreenShareExerciseSlide ? 'p-2 sm:p-2.5' : 'p-2.5 sm:p-3.5'} bg-gradient-to-r from-[#1e1538]/90 via-[#1a183b]/85 to-[#12132e]/90 backdrop-blur-lg border-t-2 border-amber-400/35 shrink-0 mt-auto shadow-inner select-none`}>
+          <p className={`${isScreenShareExerciseSlide ? 'text-[11px] sm:text-xs' : 'text-xs sm:text-sm'} text-amber-100/90 font-medium flex items-center gap-2 flex-wrap sm:flex-nowrap`}>
+            <span className="inline-flex items-center gap-1 bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950 px-2.5 py-0.5 rounded-md font-black tracking-wide uppercase text-[10px] sm:text-xs shadow-md shadow-amber-400/30 shrink-0">
+              👩‍🏫 NOTA PARA EL PROFE
+            </span>
+            <span className="truncate sm:whitespace-normal">
+              {(() => {
+                if (isOpeningSlide || currentIndex === 0 || /welcome|bienvenid|presentaci[oó]n/i.test(slide.title || '')) {
+                  return 'Saludar cordialmente al estudiante, conectar con entusiasmo y preparar la sesión de hoy.';
+                }
+                if (slide.type === 'objectives-animated' || isGoalsSlide || /objetivo|misi[oó]n|goals|mission|metas/i.test(slide.title || '')) {
+                  return 'Presentar con claridad los 3 objetivos de la clase y motivar al estudiante a alcanzarlos hoy.';
+                }
+                if (isSpinningWheelSlide || slide.type === 'spinning-wheel' || /ruleta|wheel/i.test(slide.title || '')) {
+                  return 'Girar la ruleta, hacer la pregunta seleccionada y motivar al estudiante a responder en inglés.';
+                }
+                return (slide as any).teacherNote || section.action || 'Guiar la actividad y evaluar la pronunciación y fluidez del estudiante.';
+              })()}
+            </span>
           </p>
         </div>
       )}
