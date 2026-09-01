@@ -1336,14 +1336,23 @@ export function SlideRenderer({
       {isBetaSlide ? (
         <div className="relative flex-1 flex flex-col z-10 min-h-0 overflow-hidden">
           {(slide.type === 'objectives-animated' || /today.*mission|nuestra misi[oó]n|learning goals/i.test(slide.title || '')) ? (
-            <div className="relative flex-1 flex flex-col justify-between p-6 sm:p-8 z-10 min-h-0 overflow-hidden">
+            <div className="relative flex-1 flex flex-col justify-between p-5 sm:p-7 lg:p-8 z-10 min-h-0 overflow-hidden">
               <div className="pointer-events-none absolute -top-16 left-1/4 w-[450px] h-[260px] bg-cyan-400/20 blur-3xl" aria-hidden="true" />
               <div className="pointer-events-none absolute -bottom-10 -right-10 w-[380px] h-[260px] bg-indigo-500/20 blur-3xl" aria-hidden="true" />
-              <div className="shrink-0 mb-3">
-                <h1 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-black tracking-tight leading-tight bg-gradient-to-r from-cyan-300 via-sky-100 to-white bg-clip-text text-transparent">{slide.title}</h1>
-                <p className="text-sm sm:text-base font-bold text-cyan-200/90 mt-1">{slide.description}</p>
+              
+              {/* Header */}
+              <div className="shrink-0 mb-2 sm:mb-3">
+                <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-cyan-500/20 border border-cyan-400/40 text-cyan-200 font-extrabold text-xs uppercase tracking-wider mb-1.5 shadow-sm">
+                  <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>{slide.description || "Class Objectives / Metas de la Clase"}</span>
+                </div>
+                <h1 className="text-2xl sm:text-3xl lg:text-[2.5rem] font-black tracking-tight leading-tight bg-gradient-to-r from-cyan-300 via-sky-100 to-white bg-clip-text text-transparent drop-shadow-md">
+                  {slide.title}
+                </h1>
               </div>
-              <div className="flex-1 flex flex-col justify-center gap-4 py-2">
+
+              {/* 3 Goals Cards filling the vertical canvas */}
+              <div className="flex-1 flex flex-col justify-between gap-3 sm:gap-4 py-1 min-h-0">
                 {(() => {
                   const goalsList = resolveGoalsList(slide, cls);
                   const goalItems = goalsList.map((g, gIdx) => {
@@ -1367,6 +1376,7 @@ export function SlideRenderer({
                   return goalItems.map((item, idx) => {
                     const icons = [Target, BookOpen, MessageSquare];
                     const IconC = icons[idx % icons.length];
+                    const stepNum = String(idx + 1).padStart(2, '0');
 
                     return (
                       <button
@@ -1375,17 +1385,22 @@ export function SlideRenderer({
                         onClick={() => {
                           setSpotlightElement({ ...item, total: goalItems.length, items: goalItems });
                         }}
-                        className={`relative group flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-r ${item.gradient} shadow-xl text-left border-2 border-white/25 hover:border-white/70 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer focus:outline-none`}
+                        className={`relative group flex-1 flex items-center gap-4 sm:gap-5 px-5 sm:px-6 py-3.5 sm:py-4.5 rounded-2xl sm:rounded-3xl bg-gradient-to-r ${item.gradient} shadow-xl text-left border-2 border-white/25 hover:border-white/70 hover:scale-[1.015] active:scale-[0.99] transition-all duration-200 cursor-pointer focus:outline-none min-h-0`}
                         title="Haz clic para ver esta meta gigante en pantalla"
                       >
                         <div className="absolute top-3 right-3 opacity-70 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-bold text-white flex items-center gap-1.5 border border-white/20">
                           <span>Zoom</span>
                           <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
                         </div>
-                        <div className="w-12 h-12 rounded-xl bg-white/25 flex items-center justify-center shrink-0 shadow-md group-hover:scale-110 transition-transform border border-white/20">
-                          <IconC className="w-6 h-6 text-white" />
+                        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/20 border border-white/40 flex items-center justify-center text-white shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                          <IconC className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                         </div>
-                        <p className="text-xl sm:text-2xl font-black text-white leading-snug pr-16 drop-shadow">{item.text}</p>
+                        <span className="text-white/60 font-mono font-black text-xl sm:text-2xl lg:text-3xl shrink-0">
+                          {stepNum}
+                        </span>
+                        <p className="text-lg sm:text-xl lg:text-[1.5rem] xl:text-[1.65rem] font-black text-white leading-snug pr-14 drop-shadow flex-1">
+                          {item.text}
+                        </p>
                       </button>
                     );
                   });
@@ -1496,49 +1511,59 @@ export function SlideRenderer({
                       </div>
                     </div>
 
-                    {/* SPOTLIGHT VIEW (DEFAULT ENFOCADO 2 COLUMNAS) */}
+                    {/* SPOTLIGHT VIEW (ENFOCADO HIGH-IMPACT 100% WIDTH HERO LAYOUT) */}
                     {grammarViewMode === 'spotlight' ? (
-                      <div className="relative z-10 flex-1 grid grid-cols-1 lg:grid-cols-[220px_1fr] xl:grid-cols-[260px_1fr] gap-3 sm:gap-4 py-1 min-h-0 items-stretch overflow-hidden">
-                        {/* LEFT COLUMN: 3D Animated Character Avatar Stage (Immersive Full-Height Clean Cutout) */}
-                        <div className="relative flex flex-col justify-between items-center py-0 h-full min-h-0">
-                          {/* 3D Avatar Image - Full Height Clean Cutout */}
-                          <div className="relative z-10 flex-1 flex items-center justify-center min-h-0 w-full overflow-visible">
-                            <img
-                              src={activeAvatar}
-                              alt={activeStruct?.label || 'Avatar'}
-                              onError={(e) => {
-                                const target = e.currentTarget;
-                                if (!target.src.includes('male_3d_avatar')) {
-                                  target.src = '/images/male_3d_avatar_1781219297751.jpg';
-                                }
-                              }}
-                              className="relative z-10 max-h-[300px] sm:max-h-[340px] lg:max-h-[380px] h-full w-auto max-w-full object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.95)] filter hover:scale-105 transition-transform duration-300 select-none"
-                            />
+                      <div className="relative z-10 flex-1 flex flex-col justify-between gap-1.5 sm:gap-2.5 py-1 min-h-0">
+                        {/* Step Header with 3D Mascot Avatar Hero Badge & Metric Bar */}
+                        <div className="flex items-center justify-between gap-3 p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-black/60 border border-white/20 shadow-md shrink-0">
+                          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+                            {/* Glowing 3D Avatar Hero Badge */}
+                            <div className="relative group shrink-0">
+                              <div
+                                className="absolute -inset-1 rounded-2xl opacity-75 blur-sm transition-opacity"
+                                style={{ background: activeTheme.neonColor }}
+                              />
+                              <div className="relative w-11 h-11 sm:w-13 sm:h-13 rounded-2xl overflow-hidden bg-slate-900 border-2 border-white/40 shadow-lg flex items-center justify-center p-0.5">
+                                <img
+                                  src={activeAvatar}
+                                  alt={activeStruct?.label || 'Avatar'}
+                                  onError={(e) => {
+                                    const target = e.currentTarget;
+                                    if (!target.src.includes('male_3d_avatar')) {
+                                      target.src = '/images/male_3d_avatar_1781219297751.jpg';
+                                    }
+                                  }}
+                                  className="w-full h-full object-cover object-top filter group-hover:scale-110 transition-transform duration-300 select-none"
+                                />
+                              </div>
+                            </div>
+
+                            {/* Step Title & Subject Tag */}
+                            <div className="flex flex-col min-w-0">
+                              <div className="flex items-center gap-2 flex-wrap">
+                                <h2 className="text-base sm:text-lg lg:text-xl font-black text-white leading-tight drop-shadow-md truncate">
+                                  {activeStruct?.label || `Paso ${safeTab + 1}`}
+                                </h2>
+                                {activeStruct?.subject && (
+                                  <span className="px-2 py-0.5 rounded-md bg-white/15 border border-white/20 text-[10px] sm:text-xs font-black text-cyan-200 tracking-wide uppercase">
+                                    {activeStruct.subject}
+                                  </span>
+                                )}
+                              </div>
+                              <span className="text-[11px] sm:text-xs font-bold text-white/70 truncate">
+                                {activeStruct?.rule || activeStruct?.explanation || 'Estructura gramatical clave'}
+                              </span>
+                            </div>
                           </div>
 
-                          {/* Subject / Category Tag */}
-                          <div className="relative z-10 mt-1 rounded-xl bg-black/80 border border-white/20 px-3 py-0.5 text-center shadow-xl backdrop-blur-md">
-                            <span className="text-[11px] sm:text-xs font-black text-white/95 tracking-wide">
-                              {activeStruct?.subject || activeStruct?.label?.replace(/^\d+\.\s*/, '')}
-                            </span>
-                          </div>
-                        </div>
-
-                        {/* RIGHT COLUMN: High-Impact Grammar Content */}
-                        <div className="relative z-10 flex flex-col justify-between gap-1.5 sm:gap-2 min-h-0">
-                          {/* Step Sub-Title & Metric */}
-                          <div className="flex items-center justify-between gap-2 flex-wrap shrink-0">
-                            <h2 className="text-lg sm:text-xl lg:text-2xl font-black text-white leading-tight drop-shadow-md">
-                              {activeStruct?.label || `Paso ${safeTab + 1}`}
-                            </h2>
-
-                            {/* Metric Badge */}
+                          {/* Metric / Polarity Badge */}
+                          <div className="shrink-0 flex items-center gap-2">
                             {activeMetric.type === 'frequency' && typeof activeMetric.percentage === 'number' ? (
-                              <div className="flex items-center gap-2 px-2.5 py-0.5 rounded-xl bg-black/60 border border-white/20 shadow-md">
-                                <span className="text-xs font-black text-amber-300">
+                              <div className="flex items-center gap-2 px-3 py-1 rounded-xl bg-black/80 border border-white/20 shadow-md">
+                                <span className="text-xs sm:text-sm font-black text-amber-300">
                                   {activeMetric.label}
                                 </span>
-                                <div className="w-16 sm:w-24 h-2.5 rounded-full bg-white/10 overflow-hidden border border-white/20 p-0.5">
+                                <div className="w-16 sm:w-28 h-2.5 sm:h-3 rounded-full bg-white/10 overflow-hidden border border-white/20 p-0.5">
                                   <div
                                     className="h-full rounded-full transition-all duration-700"
                                     style={{
@@ -1549,119 +1574,113 @@ export function SlideRenderer({
                                 </div>
                               </div>
                             ) : activeMetric.type === 'question' ? (
-                              <span className="px-2.5 py-0.5 rounded-xl bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 text-xs font-black shadow-md">
+                              <span className="px-3 py-1 rounded-xl bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 text-xs sm:text-sm font-black shadow-md">
                                 {activeMetric.sign} • {activeMetric.label}
                               </span>
                             ) : activeMetric.type === 'polarity' ? (
-                              <span className="px-2.5 py-0.5 rounded-xl bg-rose-500/20 border border-rose-400/50 text-rose-300 text-xs font-black shadow-md">
+                              <span className="px-3 py-1 rounded-xl bg-rose-500/20 border border-rose-400/50 text-rose-300 text-xs sm:text-sm font-black shadow-md">
                                 {activeMetric.sign}
                               </span>
                             ) : activeMetric.type === 'variation' ? (
-                              <span className="px-2.5 py-0.5 rounded-xl bg-amber-500/20 border border-amber-400/50 text-amber-300 text-xs font-black shadow-md">
+                              <span className="px-3 py-1 rounded-xl bg-amber-500/20 border border-amber-400/50 text-amber-300 text-xs sm:text-sm font-black shadow-md">
                                 {activeMetric.sign}
                               </span>
                             ) : (
-                              <span className="px-2.5 py-0.5 rounded-xl bg-purple-500/20 border border-purple-400/50 text-purple-300 text-xs font-black shadow-md">
+                              <span className="px-3 py-1 rounded-xl bg-purple-500/20 border border-purple-400/50 text-purple-300 text-xs sm:text-sm font-black shadow-md">
                                 {activeMetric.label}
                               </span>
                             )}
                           </div>
+                        </div>
 
-                          {/* Gamified Lego Block Syntactic Formula */}
-                          <div className="flex flex-col gap-0.5 p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-black/80 border border-white/20 shadow-inner shrink-0">
-                            <div className="flex items-center justify-between gap-2">
-                              <div className="flex items-center gap-1.5">
-                                <span className="w-4 h-4 rounded-md bg-cyan-500/30 text-cyan-300 flex items-center justify-center font-mono font-black text-[10px]">
-                                  fx
-                                </span>
-                                <span className="text-[10px] font-black uppercase tracking-wider text-cyan-300">
-                                  Estructura por Bloques de Construcción
-                                </span>
-                              </div>
-                              <span className="text-[10px] font-bold text-white/50 hidden sm:inline">
-                                {activeFormulaToken !== null ? '💡 Ficha resaltada' : 'Toca una ficha para resaltar'}
+                        {/* Gamified Lego Block Syntactic Formula (Full Width, Large Chips) */}
+                        <div className="flex flex-col gap-1 p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-black/80 border border-white/20 shadow-inner shrink-0">
+                          <div className="flex items-center justify-between gap-2">
+                            <div className="flex items-center gap-1.5">
+                              <span className="w-4 h-4 rounded-md bg-cyan-500/30 text-cyan-300 flex items-center justify-center font-mono font-black text-[10px]">
+                                fx
+                              </span>
+                              <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-cyan-300">
+                                Estructura por Bloques de Construcción
                               </span>
                             </div>
-
-                            {/* Lego Chips Flow */}
-                            <div className="flex flex-wrap items-center gap-1 sm:gap-1.5 pt-0.5">
-                              {formulaTokens.map((tok, tIdx) => {
-                                const isSelected = activeFormulaToken === tIdx;
-                                return (
-                                  <div key={tIdx} className="flex items-center gap-1">
-                                    <button
-                                      type="button"
-                                      onMouseEnter={() => setActiveFormulaToken(tIdx)}
-                                      onMouseLeave={() => setActiveFormulaToken(null)}
-                                      onClick={() => setActiveFormulaToken(prev => prev === tIdx ? null : tIdx)}
-                                      className={`group relative flex flex-col items-start px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl border transition-all cursor-pointer shadow-md ${tok.theme.bg} ${tok.theme.border} ${
-                                        isSelected
-                                          ? `${tok.theme.glow} ring-2 ring-white/80 scale-105 shadow-xl`
-                                          : 'hover:scale-[1.03] hover:border-white/60'
-                                      }`}
-                                    >
-                                      <span className={`text-[8px] sm:text-[9px] font-black uppercase tracking-wider px-1 py-0.2 rounded border mb-0.5 ${tok.theme.badgeBg}`}>
-                                        {tok.label}
-                                      </span>
-                                      <span className={`text-[11px] sm:text-xs lg:text-sm font-mono font-black ${tok.theme.text} leading-tight`}>
-                                        {tok.text}
-                                      </span>
-                                    </button>
-
-                                    {tIdx < formulaTokens.length - 1 && (
-                                      <span className="text-xs font-black text-white/40 px-0.5 select-none animate-pulse">
-                                        ➕
-                                      </span>
-                                    )}
-                                  </div>
-                                );
-                              })}
-                            </div>
+                            <span className="text-[10px] sm:text-xs font-bold text-white/60">
+                              {activeFormulaToken !== null ? '💡 Ficha resaltada en la oración' : 'Toca una ficha para resaltar'}
+                            </span>
                           </div>
 
-                          {/* English Sentence & Spanish Translation (Dynamic Multi-Color Highlighting) */}
-                          <div className="flex-1 flex flex-col justify-center rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0e1338]/95 via-[#13103c]/90 to-[#0b0f2e]/95 border-2 border-cyan-400/35 p-2.5 sm:p-3.5 backdrop-blur-md shadow-[0_0_30px_rgba(6,182,212,0.2)] min-h-0 relative overflow-hidden">
-                            {/* Ambient Glow */}
-                            <div className="absolute -top-12 -right-12 w-44 h-44 bg-cyan-500/15 rounded-full blur-2xl pointer-events-none" />
-                            <div className="absolute -bottom-12 -left-12 w-44 h-44 bg-purple-500/15 rounded-full blur-2xl pointer-events-none" />
+                          {/* Lego Chips Flow */}
+                          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 pt-0.5">
+                            {formulaTokens.map((tok, tIdx) => {
+                              const isSelected = activeFormulaToken === tIdx;
+                              return (
+                                <div key={tIdx} className="flex items-center gap-1.5">
+                                  <button
+                                    type="button"
+                                    onMouseEnter={() => setActiveFormulaToken(tIdx)}
+                                    onMouseLeave={() => setActiveFormulaToken(null)}
+                                    onClick={() => setActiveFormulaToken(prev => prev === tIdx ? null : tIdx)}
+                                    className={`group relative flex flex-col items-start px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl border transition-all cursor-pointer shadow-md ${tok.theme.bg} ${tok.theme.border} ${
+                                      isSelected
+                                        ? `${tok.theme.glow} ring-2 ring-white scale-105 shadow-xl`
+                                        : 'hover:scale-[1.03] hover:border-white/60'
+                                    }`}
+                                  >
+                                    <span className={`text-[9px] sm:text-[10px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded border mb-0.5 ${tok.theme.badgeBg}`}>
+                                      {tok.label}
+                                    </span>
+                                    <span className={`text-xs sm:text-sm lg:text-base font-mono font-black ${tok.theme.text} leading-tight`}>
+                                      {tok.text}
+                                    </span>
+                                  </button>
 
-                            <div className="relative z-10 flex items-center justify-between gap-2 mb-1">
-                              <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-cyan-300 flex items-center gap-1.5">
-                                <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_#22d3ee]" />
-                                <span>Oración Modelo en Inglés</span>
+                                  {tIdx < formulaTokens.length - 1 && (
+                                    <span className="text-sm font-black text-white/50 px-0.5 select-none animate-pulse">
+                                      ➕
+                                    </span>
+                                  )}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+
+                        {/* English Sentence & Spanish Translation (Expanded Full-Width Cinema Card) */}
+                        <div className="flex-1 flex flex-col justify-between rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0e1338]/95 via-[#13103c]/90 to-[#0b0f2e]/95 border-2 border-cyan-400/40 p-4 sm:p-5 lg:p-6 backdrop-blur-md shadow-[0_0_35px_rgba(6,182,212,0.25)] min-h-0 relative overflow-hidden">
+                          {/* Ambient Glow */}
+                          <div className="absolute -top-12 -right-12 w-64 h-64 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
+                          <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-purple-500/15 rounded-full blur-3xl pointer-events-none" />
+
+                          <div className="relative z-10 flex items-center justify-between gap-2 mb-1">
+                            <span className="text-[11px] sm:text-xs font-black uppercase tracking-wider text-cyan-300 flex items-center gap-2">
+                              <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_10px_#22d3ee]" />
+                              <span>Oración Modelo en Inglés</span>
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() => playSpeech(activeStruct?.audio || activeStruct?.example, 'en-US', 0.9)}
+                              className="flex items-center gap-1.5 text-[10px] sm:text-xs font-extrabold text-amber-300 uppercase tracking-wider px-3 py-1 rounded-lg bg-amber-400/20 hover:bg-amber-400/35 border border-amber-300/50 transition-all cursor-pointer shadow-md active:scale-95"
+                              title="Escuchar pronunciación nativa"
+                            >
+                              <Volume2 className="w-3.5 h-3.5 text-amber-300" />
+                              <span>Pronunciación Nativa</span>
+                            </button>
+                          </div>
+
+                          <div className="relative z-10 my-auto text-2xl sm:text-3xl lg:text-[2.4rem] xl:text-[2.85rem] font-black text-white leading-snug tracking-tight drop-shadow-[0_0_35px_rgba(255,255,255,0.35)] py-2 sm:py-3">
+                            {renderColoredGrammarSentence(activeStruct?.example || '', activeFormulaToken !== null && formulaTokens[activeFormulaToken] ? formulaTokens[activeFormulaToken].text : null)}
+                          </div>
+
+                          {activeStruct?.exampleEs && (
+                            <div className="relative z-10 flex items-center gap-2.5 mt-1 pt-2 border-t border-white/15">
+                              <span className="px-2 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 text-[10px] sm:text-xs font-black uppercase tracking-wider border border-cyan-400/40 shrink-0">
+                                🇨🇴 Español
                               </span>
-                              <button
-                                type="button"
-                                onClick={() => playSpeech(activeStruct?.audio || activeStruct?.example, 'en-US', 0.9)}
-                                className="flex items-center gap-1 text-[9px] sm:text-[10px] font-extrabold text-amber-300 uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-400/15 hover:bg-amber-400/30 border border-amber-300/40 transition-all cursor-pointer shadow-sm active:scale-95"
-                                title="Escuchar pronunciación nativa"
-                              >
-                                <Volume2 className="w-3 h-3 text-amber-300" />
-                                <span>Pronunciación Nativa</span>
-                              </button>
+                              <p className="text-sm sm:text-base lg:text-lg font-bold text-cyan-100/95 leading-snug">
+                                {activeStruct.exampleEs}
+                              </p>
                             </div>
-
-                            <div className="relative z-10 text-xl sm:text-2xl lg:text-[1.85rem] font-black text-white leading-snug tracking-tight drop-shadow-[0_0_25px_rgba(255,255,255,0.25)] py-0.5">
-                              {renderColoredGrammarSentence(activeStruct?.example || '', activeFormulaToken !== null && formulaTokens[activeFormulaToken] ? formulaTokens[activeFormulaToken].text : null)}
-                            </div>
-
-                            {activeStruct?.exampleEs && (
-                              <div className="relative z-10 flex items-center gap-2 mt-1 pt-1 border-t border-white/10">
-                                <span className="px-1.5 py-0.5 rounded-md bg-cyan-500/15 text-cyan-300 text-[9px] sm:text-[10px] font-black uppercase tracking-wider border border-cyan-400/30 shrink-0">
-                                  🇨🇴 Español
-                                </span>
-                                <p className="text-xs sm:text-sm lg:text-[0.95rem] font-bold text-cyan-100/95 leading-snug">
-                                  {activeStruct.exampleEs}
-                                </p>
-                              </div>
-                            )}
-                          </div>
-
-                          {/* Rule / Tip Pill */}
-                          <div className="flex items-center gap-2 px-3 py-1 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 text-[11px] sm:text-xs font-bold text-white/90 shrink-0">
-                            <span className="text-amber-400 font-black text-sm shrink-0">📌</span>
-                            <span className="line-clamp-1">{activeStruct?.rule || activeStruct?.explanation || activeStruct?.subject}</span>
-                          </div>
+                          )}
                         </div>
                       </div>
                     ) : (
@@ -2757,7 +2776,7 @@ export function SlideRenderer({
                   </div>
 
                   {/* Main Interactive Hero Card */}
-                  <div className="flex-1 flex flex-col justify-center gap-4 max-w-4xl mx-auto w-full min-h-0 py-2">
+                  <div className="flex-1 flex flex-col justify-center gap-4 max-w-5xl mx-auto w-full min-h-0 py-2">
                     <AnimatePresence mode="wait">
                       <motion.div
                         key={safeSpeakingIndex}
@@ -2765,7 +2784,7 @@ export function SlideRenderer({
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: -20 }}
                         transition={{ duration: 0.28, ease: 'easeOut' }}
-                        className="flex-1 flex flex-col justify-between rounded-[2.2rem] border-2 border-purple-400/40 bg-[#0c102a]/90 p-8 sm:p-10 shadow-[0_0_50px_rgba(168,85,247,0.2)] backdrop-blur-2xl text-center min-h-[300px]"
+                        className="flex-1 flex flex-col justify-between rounded-[2.2rem] border-2 border-purple-400/40 bg-[#0c102a]/90 p-6 sm:p-9 lg:p-11 shadow-[0_0_50px_rgba(168,85,247,0.25)] backdrop-blur-2xl text-center min-h-[300px]"
                       >
                         {/* Audio Waveform Animation Visualizer */}
                         <div className="flex items-center justify-center gap-1.5 mb-2">
@@ -2782,7 +2801,7 @@ export function SlideRenderer({
 
                         {/* Question Text */}
                         <div className="my-auto py-3">
-                          <p className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-snug tracking-tight drop-shadow-[0_0_30px_rgba(255,255,255,0.25)]">
+                          <p className="text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-[3.25rem] font-black text-white leading-snug tracking-tight drop-shadow-[0_0_35px_rgba(255,255,255,0.3)]">
                             {currentQuestion}
                           </p>
                         </div>
@@ -3368,12 +3387,12 @@ export function SlideRenderer({
               })()}
 
               {/* 3 Large Screen-Share Optimized Cohesive Glass Cards */}
-              <div className="grid grid-cols-3 gap-3 sm:gap-3.5 my-1 flex-1 items-stretch min-h-[185px]">
+              <div className="grid grid-cols-3 gap-3 sm:gap-4 my-1 flex-1 items-stretch min-h-[190px]">
                 {(() => {
                   const openingCards = [
-                    { index: 0, title: 'Elemento 1 • Misión de la Clase', text: slide.content?.[0] || 'Are you ready to level up your English?', iconType: 'target' as const, gradient: 'from-cyan-500 to-blue-600', iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600' },
-                    { index: 1, title: 'Elemento 2 • Concepto Clave', text: slide.content?.[1] || 'Today we learn how to introduce ourselves.', iconType: 'book' as const, gradient: 'from-indigo-500 to-purple-600', iconBg: 'bg-gradient-to-br from-indigo-500 to-purple-600' },
-                    { index: 2, title: 'Elemento 3 • Desafío y Conversación', text: slide.content?.[2] || "Let's make some new friends!", iconType: 'users' as const, gradient: 'from-amber-400 to-orange-500', iconBg: 'bg-gradient-to-br from-amber-400 to-orange-500' }
+                    { index: 0, badge: 'Paso 1 • Misión', title: 'Elemento 1 • Misión de la Clase', text: slide.content?.[0] || 'Are you ready to level up your English?', iconType: 'target' as const, gradient: 'from-cyan-500 to-blue-600', iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600' },
+                    { index: 1, badge: 'Paso 2 • Concepto', title: 'Elemento 2 • Concepto Clave', text: slide.content?.[1] || 'Today we learn how to introduce ourselves.', iconType: 'book' as const, gradient: 'from-indigo-500 to-purple-600', iconBg: 'bg-gradient-to-br from-indigo-500 to-purple-600' },
+                    { index: 2, badge: 'Paso 3 • Reto', title: 'Elemento 3 • Desafío y Conversación', text: slide.content?.[2] || "Let's make some new friends!", iconType: 'users' as const, gradient: 'from-amber-400 to-orange-500', iconBg: 'bg-gradient-to-br from-amber-400 to-orange-500' }
                   ];
 
                   return (
@@ -3382,17 +3401,27 @@ export function SlideRenderer({
                       <button
                         type="button"
                         onClick={() => setSpotlightElement({ ...openingCards[0], total: 3, items: openingCards })}
-                        className="relative group bg-[#111a48]/85 border-2 border-cyan-500/40 hover:border-cyan-300 hover:bg-[#182464] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-center text-center backdrop-blur-xl shadow-xl transition-all duration-200 hover:scale-[1.03] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                        className="relative group bg-[#111a48]/90 border-2 border-cyan-500/50 hover:border-cyan-300 hover:bg-[#182464] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col justify-between items-center text-center backdrop-blur-xl shadow-xl transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-cyan-400 min-h-0"
                         title="Haz clic para ver gigante en pantalla"
                       >
-                        <div className="absolute top-2.5 right-2.5 opacity-70 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-cyan-200 flex items-center gap-1 border border-white/10">
-                          <span>Zoom</span>
-                          <Sparkles className="w-3 h-3 text-cyan-400" />
+                        {/* Top Bar */}
+                        <div className="w-full flex items-center justify-between gap-1">
+                          <span className="px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-black uppercase tracking-wider bg-cyan-500/20 text-cyan-200 border border-cyan-400/30">
+                            {openingCards[0].badge}
+                          </span>
+                          <div className="opacity-70 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-cyan-200 flex items-center gap-1 border border-white/10">
+                            <span>Zoom</span>
+                            <Sparkles className="w-3 h-3 text-cyan-400" />
+                          </div>
                         </div>
-                        <div className="w-13 h-13 sm:w-15 sm:h-15 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white mb-2.5 shadow-lg shadow-cyan-500/40 shrink-0 group-hover:scale-110 transition-transform">
-                          <Target className="w-7 h-7 sm:w-8 sm:h-8" />
+
+                        {/* Center Icon */}
+                        <div className="w-13 h-13 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white my-auto shadow-lg shadow-cyan-500/40 shrink-0 group-hover:scale-110 transition-transform">
+                          <Target className="w-7 h-7 sm:w-9 sm:h-9" />
                         </div>
-                        <span className="text-sm sm:text-base lg:text-[1.02rem] font-bold text-white leading-snug tracking-tight">
+
+                        {/* Bottom Text */}
+                        <span className="text-sm sm:text-base lg:text-[1.1rem] font-bold text-white leading-snug tracking-tight">
                           {openingCards[0].text}
                         </span>
                       </button>
@@ -3401,17 +3430,27 @@ export function SlideRenderer({
                       <button
                         type="button"
                         onClick={() => setSpotlightElement({ ...openingCards[1], total: 3, items: openingCards })}
-                        className="relative group bg-[#15174c]/85 border-2 border-indigo-400/40 hover:border-indigo-300 hover:bg-[#1f2066] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-center text-center backdrop-blur-xl shadow-xl transition-all duration-200 hover:scale-[1.03] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                        className="relative group bg-[#15174c]/90 border-2 border-indigo-400/50 hover:border-indigo-300 hover:bg-[#1f2066] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col justify-between items-center text-center backdrop-blur-xl shadow-xl transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-indigo-400 min-h-0"
                         title="Haz clic para ver gigante en pantalla"
                       >
-                        <div className="absolute top-2.5 right-2.5 opacity-70 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-indigo-200 flex items-center gap-1 border border-white/10">
-                          <span>Zoom</span>
-                          <Sparkles className="w-3 h-3 text-indigo-300" />
+                        {/* Top Bar */}
+                        <div className="w-full flex items-center justify-between gap-1">
+                          <span className="px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-black uppercase tracking-wider bg-indigo-500/20 text-indigo-200 border border-indigo-400/30">
+                            {openingCards[1].badge}
+                          </span>
+                          <div className="opacity-70 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-indigo-200 flex items-center gap-1 border border-white/10">
+                            <span>Zoom</span>
+                            <Sparkles className="w-3 h-3 text-indigo-300" />
+                          </div>
                         </div>
-                        <div className="w-13 h-13 sm:w-15 sm:h-15 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white mb-2.5 shadow-lg shadow-indigo-500/40 shrink-0 group-hover:scale-110 transition-transform">
-                          <BookOpen className="w-7 h-7 sm:w-8 sm:h-8" />
+
+                        {/* Center Icon */}
+                        <div className="w-13 h-13 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white my-auto shadow-lg shadow-indigo-500/40 shrink-0 group-hover:scale-110 transition-transform">
+                          <BookOpen className="w-7 h-7 sm:w-9 sm:h-9" />
                         </div>
-                        <span className="text-sm sm:text-base lg:text-[1.02rem] font-bold text-white leading-snug tracking-tight">
+
+                        {/* Bottom Text */}
+                        <span className="text-sm sm:text-base lg:text-[1.1rem] font-bold text-white leading-snug tracking-tight">
                           {openingCards[1].text}
                         </span>
                       </button>
@@ -3420,17 +3459,27 @@ export function SlideRenderer({
                       <button
                         type="button"
                         onClick={() => setSpotlightElement({ ...openingCards[2], total: 3, items: openingCards })}
-                        className="relative group bg-[#1a1744]/85 border-2 border-amber-400/40 hover:border-amber-300 hover:bg-[#28205c] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-center text-center backdrop-blur-xl shadow-xl transition-all duration-200 hover:scale-[1.03] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-amber-400"
+                        className="relative group bg-[#1a1744]/90 border-2 border-amber-400/50 hover:border-amber-300 hover:bg-[#28205c] rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col justify-between items-center text-center backdrop-blur-xl shadow-xl transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-amber-400 min-h-0"
                         title="Haz clic para ver gigante en pantalla"
                       >
-                        <div className="absolute top-2.5 right-2.5 opacity-70 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-amber-200 flex items-center gap-1 border border-white/10">
-                          <span>Zoom</span>
-                          <Sparkles className="w-3 h-3 text-amber-300" />
+                        {/* Top Bar */}
+                        <div className="w-full flex items-center justify-between gap-1">
+                          <span className="px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-black uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-400/30">
+                            {openingCards[2].badge}
+                          </span>
+                          <div className="opacity-70 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-amber-200 flex items-center gap-1 border border-white/10">
+                            <span>Zoom</span>
+                            <Sparkles className="w-3 h-3 text-amber-300" />
+                          </div>
                         </div>
-                        <div className="w-13 h-13 sm:w-15 sm:h-15 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-slate-950 mb-2.5 shadow-lg shadow-amber-500/40 shrink-0 group-hover:scale-110 transition-transform">
-                          <Users className="w-7 h-7 sm:w-8 sm:h-8" />
+
+                        {/* Center Icon */}
+                        <div className="w-13 h-13 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-slate-950 my-auto shadow-lg shadow-amber-500/40 shrink-0 group-hover:scale-110 transition-transform">
+                          <Users className="w-7 h-7 sm:w-9 sm:h-9" />
                         </div>
-                        <span className="text-sm sm:text-base lg:text-[1.02rem] font-bold text-white leading-snug tracking-tight">
+
+                        {/* Bottom Text */}
+                        <span className="text-sm sm:text-base lg:text-[1.1rem] font-bold text-white leading-snug tracking-tight">
                           {openingCards[2].text}
                         </span>
                       </button>
@@ -3663,8 +3712,8 @@ export function SlideRenderer({
           </div>
 
           {/* Content Area */}
-          <div className="flex-1 flex flex-row items-center gap-7 min-h-0">
-            <div className="w-[58%] h-full flex flex-col justify-center gap-3 sm:gap-4 min-w-0 py-1">
+          <div className="flex-1 flex flex-row items-center gap-6 sm:gap-7 min-h-0">
+            <div className="w-[58%] h-full flex flex-col justify-between gap-3 sm:gap-4 min-w-0 py-1">
               {resolveGoalsList(slide, cls).map((rawLine, idx) => {
                 const cleanLine = rawLine.replace(/^[✔️\s*•\d.-]+/, '').trim();
                 const style = GOAL_CARD_STYLES[idx % GOAL_CARD_STYLES.length];
@@ -3686,20 +3735,20 @@ export function SlideRenderer({
                       }));
                       setSpotlightElement({ ...allGoals[idx], total: allGoals.length, items: allGoals });
                     }}
-                    className={`relative group flex-1 flex items-center gap-4 px-5 py-4 rounded-2xl sm:rounded-3xl ${style.bg} border-2 ${style.border} shadow-xl ${style.glow} backdrop-blur-md transition-all hover:scale-[1.03] active:scale-[0.98] cursor-pointer text-left focus:outline-none`}
+                    className={`relative group flex-1 flex items-center gap-4 sm:gap-5 px-5 sm:px-6 py-4 rounded-2xl sm:rounded-3xl ${style.bg} border-2 ${style.border} shadow-xl ${style.glow} backdrop-blur-md transition-all hover:scale-[1.015] active:scale-[0.98] cursor-pointer text-left focus:outline-none min-h-0`}
                     title="Haz clic para ver esta meta gigante en pantalla"
                   >
-                    <div className="absolute top-2.5 right-2.5 opacity-60 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-white flex items-center gap-1">
+                    <div className="absolute top-2.5 right-2.5 opacity-60 group-hover:opacity-100 transition-opacity bg-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-white flex items-center gap-1 border border-white/10">
                       <span>Zoom</span>
                       <Sparkles className="w-3 h-3 text-white" />
                     </div>
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 border border-white/40 flex items-center justify-center text-white shrink-0 shadow-md group-hover:scale-110 transition-transform">
-                      <IconComponent className="w-5 h-5 sm:w-6 sm:h-6" />
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/20 border border-white/40 flex items-center justify-center text-white shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                      <IconComponent className="w-6 h-6 sm:w-7 sm:h-7" />
                     </div>
-                    <span className="text-white/60 font-mono font-black text-lg sm:text-xl shrink-0">
+                    <span className="text-white/60 font-mono font-black text-xl sm:text-2xl lg:text-3xl shrink-0">
                       {stepNum}
                     </span>
-                    <span className="text-lg sm:text-xl lg:text-[1.35rem] font-bold text-white leading-tight tracking-tight drop-shadow-sm flex-1">
+                    <span className="text-lg sm:text-xl lg:text-[1.45rem] xl:text-[1.6rem] font-black text-white leading-snug tracking-tight drop-shadow-sm flex-1">
                       {cleanLine}
                     </span>
                   </button>
