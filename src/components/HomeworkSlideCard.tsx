@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Check, Clock, MessageCircle, Sparkles, Target, Zap, Play, Star, BookOpen, ExternalLink, Copy } from 'lucide-react';
 import { ClassSlide, CurriculumClass } from '../types';
 import { resolveHomeworkData, buildWhatsAppHomeworkMessage, getActiveStudentName, getActiveStudentId } from '../lib/homeworkResolver';
+import { safeEncodeURIComponent } from '../lib/safeUrl';
 import { fireClassCompletionConfetti } from '../lib/celebration';
 import { missionService } from '../lib/missionService';
 
@@ -18,39 +19,17 @@ interface HomeworkSlideCardProps {
 export function HomeworkSlideCard({ slide, cls, teacherNote, onComplete, studentName }: HomeworkSlideCardProps) {
   const [copied, setCopied] = useState(false);
   const data = resolveHomeworkData(slide, cls);
+  const activeStudent = studentName?.trim() || getActiveStudentName();
+  const whatsAppMessage = buildWhatsAppHomeworkMessage(slide, cls, activeStudent);
+  const whatsAppUrl = `https://wa.me/?text=${safeEncodeURIComponent(whatsAppMessage)}`;
 
   const handleShareWhatsApp = (e?: React.MouseEvent) => {
-    if (e) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    const activeStudent = studentName?.trim() || getActiveStudentName();
-    const message = buildWhatsAppHomeworkMessage(slide, cls, activeStudent);
-    const encoded = encodeURIComponent(message);
-    const url = `https://api.whatsapp.com/send?text=${encoded}`;
-    
     // Copy message to clipboard automatically
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
-      navigator.clipboard.writeText(message).catch(() => {});
+      navigator.clipboard.writeText(whatsAppMessage).catch(() => {});
     }
     setCopied(true);
     setTimeout(() => setCopied(false), 4000);
-
-    // Open WhatsApp reliably avoiding popup blocker
-    try {
-      const win = window.open(url, '_blank', 'noopener,noreferrer');
-      if (!win || win.closed || typeof win.closed === 'undefined') {
-        const link = document.createElement('a');
-        link.href = url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }
-    } catch (err) {
-      window.location.href = url;
-    }
   };
 
   const handleOpenMission = (e?: React.MouseEvent) => {
@@ -230,14 +209,16 @@ export function HomeworkSlideCard({ slide, cls, teacherNote, onComplete, student
             </button>
           )}
 
-          <button
-            type="button"
+          <a
+            href={whatsAppUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={handleShareWhatsApp}
-            className="inline-flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 px-5 py-3 text-xs sm:text-sm lg:text-base font-black text-white shadow-xl shadow-emerald-500/40 hover:scale-105 active:scale-95 transition-all cursor-pointer border border-emerald-300/60"
+            className="inline-flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 px-5 py-3 text-xs sm:text-sm lg:text-base font-black text-white shadow-xl shadow-emerald-500/40 hover:scale-105 active:scale-95 transition-all cursor-pointer border border-emerald-300/60 no-underline"
           >
             <MessageCircle className="w-5 h-5 fill-current" />
             <span>{copied ? '¡Copiado & Abriendo! ✅' : 'Compartir por WhatsApp'}</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

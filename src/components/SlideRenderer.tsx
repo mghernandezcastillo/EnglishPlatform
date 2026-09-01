@@ -26,6 +26,7 @@ import { VideoHomeworkSlideCard } from './VideoHomeworkSlideCard';
 import { SlideSelectionTranslator } from './SlideSelectionTranslator';
 import { StoryDecoderVocabTool } from './StoryDecoderVocabTool';
 import { fireClassCompletionConfetti } from '../lib/celebration';
+import { safeEncodeURIComponent } from '../lib/safeUrl';
 import confetti from 'canvas-confetti';
 import { getTeenSpeakerInfo } from './TeenAvatar';
 
@@ -4786,7 +4787,7 @@ export function SlideRenderer({
                     if (vid?.includes('/embed/')) vid = vid.replace('/embed/', '/watch?v=');
                     const vidText = vid ? `\n🎬 Video: ${vid}` : '';
                     const msg = `📚 Tarea de la clase "${cls.title}":\n\n${slide.description}\n\n${hw}${vidText}\n\n¡Mucho éxito!`;
-                    window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+                    window.open(`https://wa.me/?text=${safeEncodeURIComponent(msg)}`, '_blank');
                   }} className="flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-3 px-6 rounded-xl transition-colors shadow-lg">
                     <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
                       <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />

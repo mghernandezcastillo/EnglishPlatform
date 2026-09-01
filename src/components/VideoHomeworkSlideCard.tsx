@@ -4,6 +4,7 @@ import { Eye, Lightbulb, MessageCircle, Pencil, Play, Sparkles, Check } from 'lu
 import { ClassSlide, CurriculumClass } from '../types';
 import { resolveVideoHomeworkData } from '../lib/videoHomeworkResolver';
 import { getActiveStudentName } from '../lib/homeworkResolver';
+import { safeEncodeURIComponent } from '../lib/safeUrl';
 import { fireClassCompletionConfetti } from '../lib/celebration';
 
 interface VideoHomeworkSlideCardProps {
@@ -21,26 +22,27 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
   const [copied, setCopied] = useState(false);
 
   const data = resolveVideoHomeworkData(slide, cls);
+  const activeStudent = studentName?.trim() || getActiveStudentName();
+  const formattedClassTitle = cls?.title?.split('/')[0]?.trim() || 'English Class';
+  const greeting = activeStudent ? `👋 ¡Hola *${activeStudent}*! Aquí tienes tu tarea en video:\n\n` : '';
+  let msg = data.whatsappMessage || '';
+  if (answer1 || answer2) {
+    msg = `${greeting}*Video Homework 📹 - ${formattedClassTitle}*\n\n` +
+      `*1. Watch:* ${data.watchInstruction}\n` +
+      `*2. Write:* ${data.writeInstruction}\n\n` +
+      `*Video link:* ${data.videoUrl}\n\n` +
+      `*My Answers:*\n1. ${answer1 || '...'}\n2. ${answer2 || '...'}\n\n🚀`;
+  } else if (activeStudent) {
+    msg = `${greeting}${msg}`;
+  }
+  const whatsAppUrl = `https://wa.me/?text=${safeEncodeURIComponent(msg)}`;
 
   const handleShareWhatsApp = () => {
-    const activeStudent = studentName?.trim() || getActiveStudentName();
-    const formattedClassTitle = cls?.title?.split('/')[0]?.trim() || 'English Class';
-    const greeting = activeStudent ? `👋 ¡Hola *${activeStudent}*! Aquí tienes tu tarea en video:\n\n` : '';
-    let msg = data.whatsappMessage || '';
-    if (answer1 || answer2) {
-      msg = `${greeting}*Video Homework 📹 - ${formattedClassTitle}*\n\n` +
-        `*1. Watch:* ${data.watchInstruction}\n` +
-        `*2. Write:* ${data.writeInstruction}\n\n` +
-        `*Video link:* ${data.videoUrl}\n\n` +
-        `*My Answers:*\n1. ${answer1 || '...'}\n2. ${answer2 || '...'}\n\n🚀`;
-    } else if (activeStudent) {
-      msg = `${greeting}${msg}`;
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(msg).catch(() => {});
     }
-    const encoded = encodeURIComponent(msg);
-    const url = `https://api.whatsapp.com/send?text=${encoded}`;
-    window.open(url, '_blank');
     setCopied(true);
-    setTimeout(() => setCopied(false), 3000);
+    setTimeout(() => setCopied(false), 4000);
   };
 
   const handleAddIdea = (ideaText: string) => {
@@ -229,21 +231,34 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
           <span className="truncate">{teacherNote || 'Assign the task and check answers next class.'}</span>
         </div>
 
-        {onComplete && (
-          <button
-            type="button"
-            onClick={() => {
-              fireClassCompletionConfetti();
-              onComplete();
-            }}
-            className="inline-flex shrink-0 items-center gap-2 rounded-xl sm:rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-green-600 hover:from-emerald-400 hover:to-green-500 px-4 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm lg:text-base font-black text-white shadow-xl shadow-emerald-500/30 hover:scale-105 active:scale-95 transition-all border border-emerald-300/70 ring-2 ring-emerald-400/30 cursor-pointer"
-            title="Marcar clase como completada"
+        <div className="flex items-center gap-2.5 shrink-0">
+          {onComplete && (
+            <button
+              type="button"
+              onClick={() => {
+                fireClassCompletionConfetti();
+                onComplete();
+              }}
+              className="inline-flex shrink-0 items-center gap-2 rounded-xl sm:rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-green-600 hover:from-emerald-400 hover:to-green-500 px-4 sm:px-5 py-2 text-xs sm:text-sm lg:text-base font-black text-white shadow-xl shadow-emerald-500/30 hover:scale-105 active:scale-95 transition-all border border-emerald-300/70 ring-2 ring-emerald-400/30 cursor-pointer"
+              title="Marcar clase como completada"
+            >
+              <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-300 animate-spin" style={{ animationDuration: '3s' }} />
+              <span>¡Completar Clase!</span>
+              <Check className="h-4 w-4 sm:h-5 sm:w-5 stroke-[3]" />
+            </button>
+          )}
+
+          <a
+            href={whatsAppUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleShareWhatsApp}
+            className="inline-flex shrink-0 items-center gap-2 rounded-xl sm:rounded-2xl bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 px-4 sm:px-5 py-2 text-xs sm:text-sm lg:text-base font-black text-white shadow-xl shadow-emerald-500/40 hover:scale-105 active:scale-95 transition-all cursor-pointer border border-emerald-300/60 no-underline"
           >
-            <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-300 animate-spin" style={{ animationDuration: '3s' }} />
-            <span>¡Completar Clase!</span>
-            <Check className="h-4 w-4 sm:h-5 sm:w-5 stroke-[3]" />
-          </button>
-        )}
+            <MessageCircle className="w-5 h-5 fill-current" />
+            <span>{copied ? '¡Copiado! ✅' : 'Compartir por WhatsApp'}</span>
+          </a>
+        </div>
       </div>
     </div>
   );

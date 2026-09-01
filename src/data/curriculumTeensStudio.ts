@@ -598,9 +598,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-purple-950 to-indigo-950",
                 "imageUrl": "/images/teens-basic-zero-class-01/slide-21.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'Hi! My name is Juan and I am very happy today. \ude04'",
+                  "1. Escribe una oración modelo: 'Hi! My name is Juan and I am very happy today. 😄'",
                   "2. Escribe una oración modelo: 'This is my best friend Mateo; he is 15 years old.'",
-                  "3. Escribe una oración modelo: 'Nice to meet you everyone. See you next class! \udc4b'"
+                  "3. Escribe una oración modelo: 'Nice to meet you everyone. See you next class! 👋'"
                 ]
               }
             ],
@@ -1198,9 +1198,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-orange-950 to-amber-950",
                 "imageUrl": "/images/teens-basic-zero-class-02/slide-21.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'My mother is 42 years old and her birthday is in May. \udf38'",
-                  "2. Escribe una oración modelo: 'My brother is 12 years old and his birthday is in December. \udf84'",
-                  "3. Escribe una oración modelo: 'My best friend is 15 years old and we celebrate together! \udf89'"
+                  "1. Escribe una oración modelo: 'My mother is 42 years old and her birthday is in May. 🌸'",
+                  "2. Escribe una oración modelo: 'My brother is 12 years old and his birthday is in December. 🎄'",
+                  "3. Escribe una oración modelo: 'My best friend is 15 years old and we celebrate together! 🎉'"
                 ]
               }
             ],
@@ -2400,7 +2400,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "content": [
                   "1. Escribe una oración modelo: 'For breakfast, I love scrambled eggs with arepa and hot coffee. ☕'",
                   "2. Escribe una oración modelo: 'For lunch, I like grilled steak with French fries and salad. 🥩'",
-                  "3. Escribe una oración modelo: 'I don't like seafood, but I love chocolate ice cream for dessert! \udf68'"
+                  "3. Escribe una oración modelo: 'I don't like seafood, but I love chocolate ice cream for dessert! 🍨'"
                 ]
               }
             ],
@@ -2577,7 +2577,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "What time do you finish school and go home?",
                       "exampleEs": "¿A qué hora terminas el colegio y vas a casa?",
                       "audio": "What time do you finish school and go home?",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step1-teacher-waving.webp",
+                      "avatarUrl": "/images/avatars-3d/c05-s04-step5-japan-exchange.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"What time do you finish school and go home?\", isolated on pure solid white background, clean 3D character render"
                     }
                   ],
@@ -2604,7 +2604,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "My alarm rings at 6:15 AM every weekday.",
                       "exampleEs": "Mi alarma suena a las 6:15 AM todos los días de semana.",
                       "audio": "My alarm rings at 6:15 AM every weekday.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step2-casual-greeting.webp",
+                      "avatarUrl": "/images/avatars-3d/c05-s05-step1-americas-latin-america.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"My alarm rings at 6:15 AM every weekday.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -2616,7 +2616,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "School finishes at half past two (2:30 PM) every day.",
                       "exampleEs": "El colegio termina a las dos y media (2:30 PM) cada día.",
                       "audio": "School finishes at half past two (2:30 PM) every day.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step3-energized-mood.webp",
+                      "avatarUrl": "/images/avatars-3d/c05-s05-step2-europe-countries.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"School finishes at half past two (2:30 PM) every day.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -2628,7 +2628,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "We eat lunch at noon and hang out in the afternoon.",
                       "exampleEs": "Almorzamos al mediodía y parchamos en la tarde.",
                       "audio": "We eat lunch at noon and hang out in the afternoon.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step4-nice-to-meet.webp",
+                      "avatarUrl": "/images/avatars-3d/c05-s05-step3-world-languages.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"We eat lunch at noon and hang out in the afternoon.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -2640,7 +2640,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "First I wake up, then I have breakfast, and finally I go to school.",
                       "exampleEs": "Primero me despierto, luego desayuno y finalmente voy al colegio.",
                       "audio": "First I wake up, then I have breakfast, and finally I go to school.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step5-farewell-goodbye.webp",
+                      "avatarUrl": "/images/avatars-3d/c05-s05-step4-travel-gear-suitcase.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"First I wake up, then I have breakfast, and finally I go to school.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -2652,7 +2652,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Excuse me, what time is it? - It's quarter to four (3:45 PM)!",
                       "exampleEs": "Disculpa, ¿qué hora es? - ¡Es un cuarto para las cuatro (3:45 PM)!",
                       "audio": "Excuse me, what time is it? It's quarter to four!",
-                      "avatarUrl": "/images/avatars-3d/c-habits-concept-c-avatar.webp",
+                      "avatarUrl": "/images/avatars-3d/c05-s05-step5-country-trivia-qa.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Excuse me, what time is it? - It's quarter to four (3:45 PM)!\", isolated on pure solid white background, clean 3D character render"
                     }
                   ],
@@ -2998,9 +2998,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-950",
                 "imageUrl": "/images/teens-basic-zero-class-05/slide-21.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'In the morning, I wake up at 6:15 AM and listen to my favorite music. \udfa7'",
-                  "2. Escribe una oración modelo: 'In the afternoon, I do my homework at 4:00 PM and eat a fruit snack. \udf4e'",
-                  "3. Escribe una oración modelo: 'At night, I chat with my squad and sleep at 10:30 PM. \udf19'"
+                  "1. Escribe una oración modelo: 'In the morning, I wake up at 6:15 AM and listen to my favorite music. 🎧'",
+                  "2. Escribe una oración modelo: 'In the afternoon, I do my homework at 4:00 PM and eat a fruit snack. 🍎'",
+                  "3. Escribe una oración modelo: 'At night, I chat with my squad and sleep at 10:30 PM. 🌙'"
                 ]
               }
             ],
@@ -3129,7 +3129,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I wear an oversized black hoodie and comfortable white sneakers.",
                       "exampleEs": "Uso un buzo negro ancho y tenis blancos cómodos.",
                       "audio": "I wear an oversized black hoodie and comfortable white sneakers.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step5-wh-interview.webp",
+                      "avatarUrl": "/images/avatars-3d/c06-s04-step1-family-support.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I wear an oversized black hoodie and comfortable white sneakers.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -3141,7 +3141,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Lucas is wearing a vintage denim jacket and dark cargo pants.",
                       "exampleEs": "Lucas lleva puesta una chaqueta de jean vintage y pantalones cargo oscuros.",
                       "audio": "Lucas is wearing a vintage denim jacket and dark cargo pants.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step1-teacher-waving.webp",
+                      "avatarUrl": "/images/avatars-3d/c06-s04-step2-soccer-brother.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Lucas is wearing a vintage denim jacket and dark cargo pants.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -3153,7 +3153,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I have a red cap, a leather jacket, and blue jeans.",
                       "exampleEs": "Tengo una gorra roja, una chaqueta de cuero y jeans azules.",
                       "audio": "I have a red cap, a leather jacket, and blue jeans.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step2-casual-greeting.webp",
+                      "avatarUrl": "/images/avatars-3d/c06-s04-step3-quiet-cousins.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I have a red cap, a leather jacket, and blue jeans.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -3165,7 +3165,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I don't wear formal suits or tight shoes; I prefer streetwear.",
                       "exampleEs": "No uso trajes formales ni zapatos apretados; prefiero ropa urbana.",
                       "audio": "I don't wear formal suits or tight shoes; I prefer streetwear.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step3-energized-mood.webp",
+                      "avatarUrl": "/images/avatars-3d/c06-s04-step4-height-compare.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I don't wear formal suits or tight shoes; I prefer streetwear.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -3598,8 +3598,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-rose-950 to-purple-950",
                 "imageUrl": "/images/teens-basic-zero-class-06/slide-21.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'I wear an oversized black hoodie with cool silver rings. \udc8d'",
-                  "2. Escribe una oración modelo: 'I wear light blue baggy jeans and comfortable white sneakers. \udc5f'",
+                  "1. Escribe una oración modelo: 'I wear an oversized black hoodie with cool silver rings. 💍'",
+                  "2. Escribe una oración modelo: 'I wear light blue baggy jeans and comfortable white sneakers. 👟'",
                   "3. Escribe una oración modelo: 'My dark green cap matches my backpack perfectly!'"
                 ]
               }
@@ -4798,9 +4798,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-amber-950 to-orange-950",
                 "imageUrl": "/images/teens-basic-zero-class-08/slide-21.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'I can ride my bike and play soccer with my friends on weekends. \udeb4'",
-                  "2. Escribe una oración modelo: 'I can speak basic English with confidence and introduce myself. \udcac'",
-                  "3. Escribe una oración modelo: 'I can't play the piano yet, but I want to learn next year! \udfb9'"
+                  "1. Escribe una oración modelo: 'I can ride my bike and play soccer with my friends on weekends. 🚴'",
+                  "2. Escribe una oración modelo: 'I can speak basic English with confidence and introduce myself. 💬'",
+                  "3. Escribe una oración modelo: 'I can't play the piano yet, but I want to learn next year! 🎹'"
                 ]
               }
             ],
@@ -9425,9 +9425,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-indigo-950 to-purple-950",
                 "imageUrl": "/images/teens-basic-1-class-01/slide-13.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'My best friend Mateo has a very creative and energetic personality. \udfa8'",
-                  "2. Escribe una oración modelo: 'He doesn't have a shy attitude; he is always outgoing and funny. \ude04'",
-                  "3. Escribe una oración modelo: 'What is your best friend like? Do they have a loyal vibe? \udcac'"
+                  "1. Escribe una oración modelo: 'My best friend Mateo has a very creative and energetic personality. 🎨'",
+                  "2. Escribe una oración modelo: 'He doesn't have a shy attitude; he is always outgoing and funny. 😄'",
+                  "3. Escribe una oración modelo: 'What is your best friend like? Do they have a loyal vibe? 💬'"
                 ]
               }
             ],
@@ -10020,7 +10020,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "imageUrl": "/images/teens-basic-1-class-02/slide-13.jpg",
                 "content": [
                   "1. Escribe una oración modelo: 'I eat grilled chicken and fresh avocado because they give me steady energy. 🥑'",
-                  "2. Escribe una oración modelo: 'I don't drink sugary sodas because they make me feel tired in class. \udca7'",
+                  "2. Escribe una oración modelo: 'I don't drink sugary sodas because they make me feel tired in class. 💧'",
                   "3. Escribe una oración modelo: 'Why do you choose fresh fruit smoothies over packaged snacks? 🥤'"
                 ]
               }
@@ -10615,7 +10615,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "content": [
                   "1. Escribe una oración modelo: 'I feel very proud and cheerful today because I got an A in English!'",
                   "2. Escribe una oración modelo: 'I don't feel nervous about the match because we practiced all week. ⚽'",
-                  "3. Escribe una oración modelo: 'Why do you feel thrilled when the school weekend begins? \udf89'"
+                  "3. Escribe una oración modelo: 'Why do you feel thrilled when the school weekend begins? 🎉'"
                 ]
               }
             ],
@@ -11207,9 +11207,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-blue-950 to-cyan-950",
                 "imageUrl": "/images/teens-basic-1-class-04/slide-13.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'I love Computer Science and Robotics because we build video games. \udcbb'",
-                  "2. Escribe una oración modelo: 'I don't like having exams on Monday morning because I like relaxed weekends. \udcda'",
-                  "3. Escribe una oración modelo: 'Do you have Art class in the afternoon or in the morning? \udfa8'"
+                  "1. Escribe una oración modelo: 'I love Computer Science and Robotics because we build video games. 💻'",
+                  "2. Escribe una oración modelo: 'I don't like having exams on Monday morning because I like relaxed weekends. 📚'",
+                  "3. Escribe una oración modelo: 'Do you have Art class in the afternoon or in the morning? 🎨'"
                 ]
               }
             ],
@@ -11802,8 +11802,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "imageUrl": "/images/teens-basic-1-class-05/slide-13.jpg",
                 "content": [
                   "1. Escribe una oración modelo: 'First, I always wake up at six thirty and have a nutritious breakfast. 🥞'",
-                  "2. Escribe una oración modelo: 'I never check social media while studying because I want sharp focus. \udcf1'",
-                  "3. Escribe una oración modelo: 'How often do you go cycling or practice sports on the weekend? \udeb4'"
+                  "2. Escribe una oración modelo: 'I never check social media while studying because I want sharp focus. 📱'",
+                  "3. Escribe una oración modelo: 'How often do you go cycling or practice sports on the weekend? 🚴'"
                 ]
               }
             ],
@@ -12395,9 +12395,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-emerald-950 to-teal-950",
                 "imageUrl": "/images/teens-basic-1-class-06/slide-13.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'On Sunday morning, I go cycling and play basketball with my squad. \udfc0'",
+                  "1. Escribe una oración modelo: 'On Sunday morning, I go cycling and play basketball with my squad. 🏀'",
                   "2. Escribe una oración modelo: 'I don't play video games on sunny days because I prefer being outdoors. ☀️'",
-                  "3. Escribe una oración modelo: 'Would you like to go skating at the park with us this Saturday afternoon? \udef9'"
+                  "3. Escribe una oración modelo: 'Would you like to go skating at the park with us this Saturday afternoon? 🛹'"
                 ]
               }
             ],
@@ -12990,7 +12990,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "imageUrl": "/images/teens-basic-1-class-07/slide-13.jpg",
                 "content": [
                   "1. Escribe una oración modelo: 'Today it is chilly and cloudy in Bogotá, so I am wearing a warm hoodie. 🧥'",
-                  "2. Escribe una oración modelo: 'I am not wearing sandals because the streets are wet and cold. \udf27️'",
+                  "2. Escribe una oración modelo: 'I am not wearing sandals because the streets are wet and cold. 🌧️️'",
                   "3. Escribe una oración modelo: 'What is the weather like in your neighborhood this afternoon? ⛅'"
                 ]
               }
@@ -13584,8 +13584,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "imageUrl": "/images/teens-basic-1-class-08/slide-13.jpg",
                 "content": [
                   "1. Escribe una oración modelo: 'My favorite bubble tea shop is next to the cinema, across from the park. 🧋'",
-                  "2. Escribe una oración modelo: 'The skatepark isn't near the metro station; you need to walk three blocks. \udef9'",
-                  "3. Escribe una oración modelo: 'Excuse me, how do I get to the central sports center from here? \udccd'"
+                  "2. Escribe una oración modelo: 'The skatepark isn't near the metro station; you need to walk three blocks. 🛹'",
+                  "3. Escribe una oración modelo: 'Excuse me, how do I get to the central sports center from here? 📍'"
                 ]
               }
             ],
@@ -14177,9 +14177,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-teal-950 to-cyan-950",
                 "imageUrl": "/images/teens-basic-1-class-09/slide-13.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'You can connect your wireless earbuds by holding the pairing button. \udfa7'",
-                  "2. Escribe una oración modelo: 'My tablet can't download the update because the storage is full. \udcbe'",
-                  "3. Escribe una oración modelo: 'What should I do if my smartphone screen freezes completely? \udcf1'"
+                  "1. Escribe una oración modelo: 'You can connect your wireless earbuds by holding the pairing button. 🎧'",
+                  "2. Escribe una oración modelo: 'My tablet can't download the update because the storage is full. 💾'",
+                  "3. Escribe una oración modelo: 'What should I do if my smartphone screen freezes completely? 📱'"
                 ]
               }
             ],
@@ -14771,9 +14771,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-purple-950 to-pink-950",
                 "imageUrl": "/images/teens-basic-1-class-10/slide-13.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'We would like to book four tickets for the mountain adventure park this Saturday. \udfde️'",
-                  "2. Escribe una oración modelo: 'We can't travel by night because we want to enjoy the scenic morning views. \udf04'",
-                  "3. Escribe una oración modelo: 'Could you please confirm the student group discount for our squad? \udf9f️'"
+                  "1. Escribe una oración modelo: 'We would like to book four tickets for the mountain adventure park this Saturday. 🏞️️'",
+                  "2. Escribe una oración modelo: 'We can't travel by night because we want to enjoy the scenic morning views. 🌄'",
+                  "3. Escribe una oración modelo: 'Could you please confirm the student group discount for our squad? 🎟️️'"
                 ]
               }
             ],
@@ -15442,7 +15442,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "content": [
                   "1. Escribe una oración modelo: 'The Andean condor can fly over high mountains and glide for hours without flapping. 🦅'",
                   "2. Escribe una oración modelo: 'Polar bears cannot survive in warm tropical climates because they need arctic ice. ❄️'",
-                  "3. Escribe una oración modelo: 'Where do pink river dolphins live and how do they communicate underwater? \udc2c'"
+                  "3. Escribe una oración modelo: 'Where do pink river dolphins live and how do they communicate underwater? 🐬'"
                 ]
               }
             ],
@@ -16100,9 +16100,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-purple-950 to-indigo-950",
                 "imageUrl": "/images/teens-basic-2-class-02/slide-13.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'There is a large ergonomic desk next to the window with dual gaming monitors. \udda5️'",
+                  "1. Escribe una oración modelo: 'There is a large ergonomic desk next to the window with dual gaming monitors. 🖥️️'",
                   "2. Escribe una oración modelo: 'There aren't any loud televisions in my bedroom because I value peace and quiet. 🤫'",
-                  "3. Escribe una oración modelo: 'Is there a private balcony with plants and a hammock in your dream house? \udf3f'"
+                  "3. Escribe una oración modelo: 'Is there a private balcony with plants and a hammock in your dream house? 🌿'"
                 ]
               }
             ],
@@ -16760,9 +16760,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-blue-950 to-cyan-950",
                 "imageUrl": "/images/teens-basic-2-class-03/slide-13.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'I go to the sports center by bicycle along the green bike lane every Tuesday. \udeb2'",
-                  "2. Escribe una oración modelo: 'We don't travel by car during rush hour because public transit is much faster. \ude87'",
-                  "3. Escribe una oración modelo: 'How long does it take to reach the mountain viewpoint by cable car? \udea0'"
+                  "1. Escribe una oración modelo: 'I go to the sports center by bicycle along the green bike lane every Tuesday. 🚲'",
+                  "2. Escribe una oración modelo: 'We don't travel by car during rush hour because public transit is much faster. 🚇'",
+                  "3. Escribe una oración modelo: 'How long does it take to reach the mountain viewpoint by cable car? 🚡'"
                 ]
               }
             ],
@@ -17420,9 +17420,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-indigo-950 to-purple-950",
                 "imageUrl": "/images/teens-basic-2-class-04/slide-13.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'I want to be a software engineer because I love developing mobile video games. \udcbb'",
-                  "2. Escribe una oración modelo: 'She doesn't want to work in an office without natural light and creative freedom. \udfa8'",
-                  "3. Escribe una oración modelo: 'Where do you want to study and what company do you dream of joining? \ude80'"
+                  "1. Escribe una oración modelo: 'I want to be a software engineer because I love developing mobile video games. 💻'",
+                  "2. Escribe una oración modelo: 'She doesn't want to work in an office without natural light and creative freedom. 🎨'",
+                  "3. Escribe una oración modelo: 'Where do you want to study and what company do you dream of joining? 🚀'"
                 ]
               }
             ],
@@ -18080,9 +18080,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-purple-950 to-pink-950",
                 "imageUrl": "/images/teens-basic-2-class-05/slide-13.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'I can code 2D video games easily and solve complex math puzzles very quickly. \udcbb'",
-                  "2. Escribe una oración modelo: 'She can dance hip-hop with great style, but she cannot play the violin yet. \udfbb'",
-                  "3. Escribe una oración modelo: 'Can you speak English fluently and perform live on stage in front of people? \udfa4'"
+                  "1. Escribe una oración modelo: 'I can code 2D video games easily and solve complex math puzzles very quickly. 💻'",
+                  "2. Escribe una oración modelo: 'She can dance hip-hop with great style, but she cannot play the violin yet. 🎻'",
+                  "3. Escribe una oración modelo: 'Can you speak English fluently and perform live on stage in front of people? 🎤'"
                 ]
               }
             ],
@@ -18742,7 +18742,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "imageUrl": "/images/teens-basic-2-class-06/slide-13.jpg",
                 "content": [
                   "1. Escribe una oración modelo: 'Students must wear safety goggles at all times inside the science laboratory. 🥽'",
-                  "2. Escribe una oración modelo: 'You should not check social media notifications while doing your math homework. \udcf5'",
+                  "2. Escribe una oración modelo: 'You should not check social media notifications while doing your math homework. 📵'",
                   "3. Escribe una oración modelo: 'Do we have to submit the biology presentation before Friday afternoon? ⏰'"
                 ]
               }
@@ -19402,9 +19402,9 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-900 via-teal-950 to-emerald-950",
                 "imageUrl": "/images/teens-basic-2-class-07/slide-13.jpg",
                 "content": [
-                  "1. Escribe una oración modelo: 'I usually go cycling three times a week because it boosts my stamina and mood. \udeb4‍♂️'",
+                  "1. Escribe una oración modelo: 'I usually go cycling three times a week because it boosts my stamina and mood. 🚴‍♂️'",
                   "2. Escribe una oración modelo: 'I never eat junk food before a football match because I need light, healthy energy. 🥗'",
-                  "3. Escribe una oración modelo: 'How often do you stretch your muscles and how many hours do you sleep every night? \ude34'"
+                  "3. Escribe una oración modelo: 'How often do you stretch your muscles and how many hours do you sleep every night? 😴'"
                 ]
               }
             ],
@@ -20064,7 +20064,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "imageUrl": "/images/teens-basic-2-class-08/slide-13.jpg",
                 "content": [
                   "1. Escribe una oración modelo: 'Let's meet in front of the cinema at 3:30 PM to watch the new superhero movie.'",
-                  "2. Escribe una oración modelo: 'Let's not take a taxi because taking the metro is much faster and cheaper. \ude87'",
+                  "2. Escribe una oración modelo: 'Let's not take a taxi because taking the metro is much faster and cheaper. 🚇'",
                   "3. Escribe una oración modelo: 'How about grabbing artisan ice cream and skating at the park after the film? \udf66'"
                 ]
               }
@@ -21386,7 +21386,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "imageUrl": "/images/teens-basic-2-class-10/slide-13.jpg",
                 "content": [
                   "1. Escribe una oración modelo: 'I can describe wildlife habitats, navigate city transit by subway, and review trending games with confidence.'",
-                  "2. Escribe una oración modelo: 'We should never stop practicing because consistency is the key to English fluency. \ude80'",
+                  "2. Escribe una oración modelo: 'We should never stop practicing because consistency is the key to English fluency. 🚀'",
                   "3. Escribe una oración modelo: 'Are you ready to conquer storytelling and international debates in Level 3? \udf93'"
                 ]
               }

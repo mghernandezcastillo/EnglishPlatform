@@ -1,5 +1,8 @@
 import { ClassSlide, CurriculumClass } from '../types';
 import { TEEN_HOMEWORK_CATALOG, TeenHomeworkSpec } from '../data/teenHomeworkCatalog';
+import { safeEncodeURIComponent, safeTruncate, sanitizeLoneSurrogates } from './safeUrl';
+
+export { safeEncodeURIComponent, safeTruncate, sanitizeLoneSurrogates };
 
 export interface HomeworkStep {
   number: number;
@@ -142,9 +145,7 @@ export function resolveHomeworkData(slide: ClassSlide, cls?: CurriculumClass): H
         .replace(/^(?:con|un|una|el|la|los|las)\s+/i, '')
         .trim();
       label = label.charAt(0).toUpperCase() + label.slice(1);
-      if (label.length > 40) {
-        label = label.slice(0, 37) + '...';
-      }
+      label = safeTruncate(label, 40);
       return {
         icon: getIconForRequirement(step.instruction),
         label
@@ -276,42 +277,50 @@ export function buildWhatsAppHomeworkMessage(
     ? `👋 ¡Hola *${resolvedStudent}*! Aquí tienes tu reto de hoy:` 
     : `👋 ¡Hola! Aquí tienes tu reto de hoy de Maven English:`;
 
-  let message = `${greeting}\n\n`;
-  message += `━━━━━━━━━━━━━━━━━━━━━\n`;
-  message += `📚 *CLASE:* ${classTitle}\n`;
-  if (classSub) {
-    message += `🎯 *TEMA:* ${classSub}\n`;
-  }
-  message += `━━━━━━━━━━━━━━━━━━━━━\n\n`;
+  let message = `${greeting}\n`;
+  message += `📚 *${classTitle}*${classSub ? ` • ${classSub}` : ''}\n\n`;
 
-  message += `✍️ *1. RETO EN TU CUADERNO (Solo 3 frases):*\n`;
+  message += `✍️ *1. En tu Cuaderno (Solo 3 frases):*\n`;
   if (data.taskSteps && data.taskSteps.length > 0) {
     const symbols = ['(+)', '(−)', '(?)'];
     data.taskSteps.slice(0, 3).forEach((step, idx) => {
-      message += `🔹 *${symbols[idx] || `${idx + 1}.`}* ${step.instruction}\n`;
-      if (step.example) {
-        message += `   💡 _Ejemplo:_ "${step.example}"\n`;
+      const sym = symbols[idx] || `(${idx + 1})`;
+      
+      // Clean instruction: prefer whatToInclude label if cleaner, remove boilerplate prefixes
+      let label = (data.whatToInclude[idx]?.label || step.instruction || '')
+        .replace(/^Escribe una oración modelo:?/i, '')
+        .replace(/^Escribe una oración:?/i, '')
+        .replace(/^Usa la estructura:?/i, '')
+        .replace(/\(\+\)|\(−\)|\(\?\)/g, '')
+        .trim();
+
+      if (label) {
+        label = label.charAt(0).toUpperCase() + label.slice(1);
+      } else {
+        label = `Oración ${sym}`;
+      }
+
+      const exampleText = step.example || data.exampleLines[idx];
+      if (exampleText) {
+        const cleanExample = exampleText.replace(/^['"“]|['"”]$/g, '').trim();
+        message += `🔹 *${sym}* ${label}: _"${cleanExample}"_\n`;
+      } else {
+        message += `🔹 *${sym}* ${label}\n`;
       }
     });
   } else {
-    message += `${data.task}\n`;
+    message += `🔹 ${data.task}\n`;
   }
 
   if (cls?.id) {
     const origin = typeof window !== 'undefined' ? window.location.origin : 'https://maven-english.com';
     const studentId = getActiveStudentId();
     const linkParam = studentId ? `?studentId=${studentId}&mission=${cls.id}` : `?mission=${cls.id}`;
-    message += `\n━━━━━━━━━━━━━━━━━━━━━\n`;
-    message += `🎮 *2. TU MISIÓN DIGITAL (SOLO 5 MINUTOS):*\n`;
-    message += `⚡ Practica vocabulario, listening y gana +150 XP con el Tigre Maven:\n`;
+    message += `\n🎮 *2. Tu Misión Digital (Solo 5 min):*\n`;
     message += `👉 ${origin}/${linkParam}\n`;
-    message += `🔥 ¡Mantén tu racha de fuego activa! 🐅✨\n`;
   }
 
-  message += `\n━━━━━━━━━━━━━━━━━━━━━\n`;
-  message += `⏰ *ENTREGA:* ${data.dueDate || 'Próxima Clase'}\n`;
-  message += `📸 _Toma una foto de tus 3 frases y envíala por este chat._\n\n`;
-  message += `🚀 *¡Muchos éxitos, tú puedes lograrlo!* 🌟`;
+  message += `\n📸 _Toma una foto a tus 3 frases y envíala por aquí._ ¡Muchos éxitos! 🌟`;
 
   return message;
 }
@@ -362,9 +371,7 @@ function resolveHomeworkDataDirect(slide: ClassSlide, cls?: CurriculumClass) {
         .replace(/^(?:con|un|una|el|la|los|las)\s+/i, '')
         .trim();
       label = label.charAt(0).toUpperCase() + label.slice(1);
-      if (label.length > 40) {
-        label = label.slice(0, 37) + '...';
-      }
+      label = safeTruncate(label, 40);
       return {
         icon: getIconForRequirement(step.instruction),
         label
