@@ -3177,7 +3177,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "What are you wearing to the party today? - My favorite hoodie!",
                       "exampleEs": "¿Qué llevas puesto para la fiesta de hoy? - ¡Mi buzo favorito!",
                       "audio": "What are you wearing to the party today? My favorite hoodie!",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step4-nice-to-meet.webp",
+                      "avatarUrl": "/images/avatars-3d/c06-s04-step5-grandma-photo.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"What are you wearing to the party today? - My favorite hoodie!\", isolated on pure solid white background, clean 3D character render"
                     }
                   ],
