@@ -67,12 +67,14 @@ export function MissionHub({
 
         // Fetch student lessons from DB to reflect historical completions
         let completedLessons: string[] = [];
+        let currentProfileLevel = '';
         try {
           const students = await dbAdmin.getStudents();
           const current = students.find(s => s.id === effectiveStudentId);
           if (current) {
             completedLessons = current.completed_lessons || [];
             setStudentCompletedLessons(completedLessons);
+            currentProfileLevel = current.level || '';
             
             // Format level nicely (e.g. Level 1 • Basic 1)
             let formattedLevel = current.level || 'Basic 1';
@@ -149,6 +151,31 @@ export function MissionHub({
         setMissions(fullMissions);
         setStreak(loadedStreak);
         setBadges(loadedBadges);
+
+        // Automatically default selectedLevelFilter to student's current active level!
+        let initialFilter = 'basic-1';
+        if (targetMissionId) {
+          const match = targetMissionId.match(/basic-zero|basic-1|basic-2|basic-3|basic-4|inter|advanced|elite|masters/);
+          if (match) initialFilter = match[0];
+        } else if (currentProfileLevel) {
+          const lvl = currentProfileLevel.toLowerCase();
+          if (lvl.includes('basic 1') || lvl.includes('basic-1')) initialFilter = 'basic-1';
+          else if (lvl.includes('basic 2') || lvl.includes('basic-2')) initialFilter = 'basic-2';
+          else if (lvl.includes('basic 3') || lvl.includes('basic-3')) initialFilter = 'basic-3';
+          else if (lvl.includes('basic 4') || lvl.includes('basic-4')) initialFilter = 'basic-4';
+          else if (lvl.includes('inter')) initialFilter = 'inter';
+          else if (lvl.includes('advanced')) initialFilter = 'advanced';
+          else if (lvl.includes('elite')) initialFilter = 'elite';
+          else if (lvl.includes('masters')) initialFilter = 'masters';
+          else if (lvl.includes('zero')) initialFilter = 'basic-zero';
+        } else if (completedLessons.length > 0) {
+          if (completedLessons.some(id => id.includes('basic-1'))) initialFilter = 'basic-1';
+          else if (completedLessons.some(id => id.includes('basic-2'))) initialFilter = 'basic-2';
+          else if (completedLessons.some(id => id.includes('basic-3'))) initialFilter = 'basic-3';
+          else if (completedLessons.some(id => id.includes('basic-4'))) initialFilter = 'basic-4';
+          else initialFilter = 'basic-zero';
+        }
+        setSelectedLevelFilter(initialFilter);
       } catch (error) {
         console.error("Error loading missions data:", error);
       } finally {
@@ -274,6 +301,18 @@ export function MissionHub({
     const content = getMissionContentForClass(classId);
     return content ? `${content.badgeEmoji} ${classId.replace(/^c-(teens|adults|kids)-/, '').replace(/-/g, ' ').toUpperCase()}` : classId;
   }
+
+  const isLevelCompleted = (tabId: string) => {
+    if (tabId === 'all') return false;
+    if (
+      studentCompletedLessons.includes(`__level_approved__:teens-${tabId}`) || 
+      studentCompletedLessons.includes(`__level_approved__:${tabId}`)
+    ) {
+      return true;
+    }
+    const levelMissions = missions.filter(m => m.classId.includes(tabId));
+    return levelMissions.length > 0 && levelMissions.every(m => m.status === 'completed');
+  };
 
   const filteredMissions = missions.filter(m => {
     if (selectedLevelFilter === 'all') return true;
@@ -533,36 +572,54 @@ export function MissionHub({
             </motion.section>
           )}
 
-          {/* Level Filter Tabs (Colorful & Tactile) */}
+          {/* Level Filter Tabs (Highlighting Completed Levels & Current Level) */}
           <div className="flex items-center gap-2.5 overflow-x-auto pb-2 scrollbar-hide">
-            {LEVEL_GROUPS.map(tab => (
-              <button
-                key={tab.id}
-                onClick={() => setSelectedLevelFilter(tab.id)}
-                className={`px-4 py-2.5 rounded-2xl text-xs font-black whitespace-nowrap transition-all cursor-pointer border-2 ${
-                  selectedLevelFilter === tab.id
-                    ? (isCool 
-                        ? 'bg-blue-600 text-white border-blue-400 shadow-lg' 
-                        : 'bg-gradient-to-r from-amber-500 to-orange-500 text-white border-amber-300 shadow-md shadow-orange-500/25')
-                    : (isCool 
-                        ? 'bg-slate-900 text-slate-300 hover:bg-slate-800 border-slate-800' 
-                        : 'bg-white text-slate-700 hover:bg-amber-50 hover:text-amber-900 border-slate-200/90 shadow-sm')
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
+            {LEVEL_GROUPS.map(tab => {
+              const isSelected = selectedLevelFilter === tab.id;
+              const isCompleted = isLevelCompleted(tab.id);
+
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setSelectedLevelFilter(tab.id)}
+                  className={`px-4 py-2.5 rounded-2xl text-xs font-black whitespace-nowrap transition-all cursor-pointer border-2 flex items-center gap-1.5 ${
+                    isSelected
+                      ? (isCool 
+                          ? 'bg-blue-600 text-white border-blue-400 shadow-lg' 
+                          : isCompleted
+                            ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white border-emerald-300 shadow-md shadow-emerald-500/25'
+                            : 'bg-gradient-to-r from-amber-500 to-orange-500 text-white border-amber-300 shadow-md shadow-orange-500/25')
+                      : isCompleted
+                        ? (isCool
+                            ? 'bg-emerald-950/60 text-emerald-300 border-emerald-700/80 hover:bg-emerald-900/60'
+                            : 'bg-emerald-50 text-emerald-800 border-emerald-300 hover:bg-emerald-100/90 shadow-sm')
+                        : (isCool 
+                            ? 'bg-slate-900 text-slate-300 hover:bg-slate-800 border-slate-800' 
+                            : 'bg-white text-slate-700 hover:bg-amber-50 hover:text-amber-900 border-slate-200/90 shadow-sm')
+                  }`}
+                >
+                  <span>{tab.label}</span>
+                  {isCompleted && <span className="text-xs">✅</span>}
+                </button>
+              );
+            })}
           </div>
 
           {/* Mission Journey Catalog */}
           <section className="space-y-4">
-            <h2 className="text-lg font-bold px-1 flex items-center justify-between">
-              <span className="flex items-center gap-2">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 px-1">
+              <h2 className="text-lg font-black flex items-center gap-2 text-slate-900 dark:text-white">
                 <Target className="w-5 h-5 text-indigo-500" />
-                Ruta de Aprendizaje ({filteredMissions.length} Misiones)
+                <span>
+                  {selectedLevelFilter === 'all' 
+                    ? `Ruta de Aprendizaje (99 Misiones)` 
+                    : `Misiones de ${LEVEL_GROUPS.find(g => g.id === selectedLevelFilter)?.label || selectedLevelFilter} (${filteredMissions.length})`}
+                </span>
+              </h2>
+              <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                Pasa cada misión para ganar XP y medallas 🏆
               </span>
-              <span className="text-xs font-semibold text-slate-400">Pasa cada misión para ganar medallas</span>
-            </h2>
+            </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5">
               {filteredMissions.map((m) => {
