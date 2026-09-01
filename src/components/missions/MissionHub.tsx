@@ -248,26 +248,21 @@ export function MissionHub({
   const longestStreak = streak?.longestStreak || 0;
   const currentStreak = streak?.currentStreak || 0;
 
-  // Theme styling
+  // Theme styling (Super Joyful, Vibrant, Colorful Light Theme)
   const isCool = theme === 'cool';
   const bgGradient = isCool 
     ? 'bg-gradient-to-br from-slate-950 via-gray-950 to-blue-950 text-slate-50' 
-    : 'bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 text-white';
+    : 'bg-gradient-to-b from-sky-50/80 via-amber-50/40 to-indigo-50/60 text-slate-900';
   
   const headerBg = isCool 
-    ? 'bg-slate-950/90 border-slate-800 text-white' 
-    : 'bg-slate-900/95 border-indigo-500/30 text-white shadow-lg shadow-indigo-950/40';
-  const cardBg = isCool ? 'bg-slate-800/80 border-slate-700' : 'bg-slate-900/90 border-slate-800 shadow-md';
-  const cardBorder = isCool ? 'border-slate-700' : 'border-slate-800';
+    ? 'bg-slate-950/90 border-slate-800 text-white shadow-lg' 
+    : 'bg-white/95 border-amber-300 text-slate-900 shadow-md';
   
   const activeCardGradient = isCool
     ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 text-white border-blue-400'
-    : 'bg-gradient-to-r from-amber-500 via-orange-500 to-rose-600 text-white border-amber-300';
+    : 'bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white border-purple-300 shadow-2xl shadow-purple-500/25';
 
-  const statsCardBg = isCool 
-    ? 'bg-slate-900/80 border border-slate-800 text-white' 
-    : 'bg-slate-900/80 border border-slate-800/90 text-white shadow-md';
-  const textMuted = 'text-slate-400';
+  const textMuted = isCool ? 'text-slate-400' : 'text-slate-600';
 
   function getClassTitle(classId: string) {
     const content = getMissionContentForClass(classId);
@@ -287,39 +282,58 @@ export function MissionHub({
 
   return (
     <div className={`min-h-screen ${bgGradient} font-sans pb-24 overflow-x-hidden selection:bg-amber-500/30`}>
-      {/* Header */}
-      <header className={`sticky top-0 z-20 backdrop-blur-xl border-b ${headerBg} px-4 py-4 flex items-center justify-between`}>
+      {/* Header (Vibrant, Friendly & Colorful) */}
+      <header className={`sticky top-0 z-20 backdrop-blur-xl border-b-2 ${headerBg} px-4 py-3.5 flex items-center justify-between`}>
         <div className="flex items-center gap-3">
           <button 
             onClick={onBack}
-            className="p-2 rounded-full transition-colors hover:bg-white/10 text-white cursor-pointer"
+            className={`p-2.5 rounded-2xl transition-all cursor-pointer shadow-sm ${
+              isCool 
+                ? 'bg-slate-800 hover:bg-slate-700 text-white' 
+                : 'bg-amber-100/80 hover:bg-amber-200 text-amber-950 border border-amber-300/80'
+            }`}
           >
             <ArrowLeft className="w-5 h-5" />
           </button>
-          <h1 className="text-lg sm:text-xl font-black tracking-tight flex items-center gap-2 text-white">
-            <span>🎯 Mis Misiones</span>
-            {studentName && <span className="text-amber-400 font-extrabold">• {studentName}</span>}
-          </h1>
+          <div className="flex items-center gap-2">
+            <h1 className={`text-lg sm:text-xl font-black tracking-tight flex items-center gap-1.5 ${isCool ? 'text-white' : 'text-slate-950'}`}>
+              <span>🎯 Mis Misiones</span>
+            </h1>
+            {studentName && (
+              <span className={`text-xs sm:text-sm font-black px-3 py-0.5 rounded-full shadow-sm border ${
+                isCool 
+                  ? 'bg-indigo-950/80 text-amber-300 border-indigo-700/50' 
+                  : 'bg-gradient-to-r from-orange-500 to-amber-500 text-white border-amber-300'
+              }`}>
+                {studentName}
+              </span>
+            )}
+          </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5 sm:gap-3">
           {/* Streak Badge */}
-          <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-black text-xs sm:text-sm bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg shadow-orange-500/30 border border-orange-300/40">
+          <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-black text-xs sm:text-sm bg-gradient-to-r from-orange-500 via-amber-500 to-orange-500 text-white shadow-lg shadow-orange-500/30 border-2 border-amber-200">
             <motion.div
               animate={{ 
-                scale: currentStreak > 0 ? [1, 1.2, 1] : 1,
+                scale: currentStreak > 0 ? [1, 1.25, 1] : 1,
               }}
               transition={{ repeat: Infinity, duration: 1.5 }}
             >
               <Flame className="w-4 h-4 fill-white text-white" />
             </motion.div>
-            <span>{currentStreak} DÍAS</span>
+            <span>{currentStreak} {currentStreak === 1 ? 'DÍA' : 'DÍAS'} 🔥</span>
           </div>
           
           {/* Theme Toggle */}
           <button
             onClick={() => handleChangeTheme(isCool ? 'vibrant' : 'cool')}
-            className="p-2 rounded-full transition-colors bg-white/10 hover:bg-white/20 text-yellow-300 cursor-pointer"
+            className={`p-2.5 rounded-2xl transition-all cursor-pointer shadow-sm border ${
+              isCool 
+                ? 'bg-slate-800 text-yellow-300 border-slate-700' 
+                : 'bg-amber-100 hover:bg-amber-200 text-amber-900 border-amber-300'
+            }`}
+            title="Cambiar tema de color"
           >
             {isCool ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           </button>
@@ -339,99 +353,127 @@ export function MissionHub({
       ) : (
         <main className="p-4 max-w-4xl mx-auto space-y-8 mt-4">
           
-          {/* Student & 3D Mascot Welcome Banner */}
+          {/* Student & 3D Mascot Welcome Banner (Super Colorful & Joyful) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            className="p-4 sm:p-5 rounded-3xl border-2 shadow-2xl flex flex-col sm:flex-row items-center gap-3.5 sm:gap-4 justify-between bg-gradient-to-br from-slate-900 via-indigo-950 to-purple-950 border-indigo-500/40 text-white relative overflow-hidden backdrop-blur-xl"
+            className={`p-4 sm:p-5 rounded-3xl border-2 shadow-xl flex flex-col sm:flex-row items-center gap-3.5 sm:gap-4 justify-between relative overflow-hidden backdrop-blur-xl ${
+              isCool 
+                ? 'bg-gradient-to-br from-slate-900 via-indigo-950 to-purple-950 border-indigo-500/40 text-white' 
+                : 'bg-gradient-to-r from-amber-400 via-orange-500 to-rose-500 border-amber-300 text-white shadow-orange-500/20'
+            }`}
           >
+            {/* Background Decorative Circles */}
+            <div className="absolute -top-12 -right-12 w-44 h-44 bg-white/15 rounded-full blur-2xl pointer-events-none" />
+            <div className="absolute -bottom-12 -left-12 w-44 h-44 bg-yellow-300/20 rounded-full blur-2xl pointer-events-none" />
+
             {/* Student Profile Info */}
             <div className="flex items-center gap-3.5 w-full sm:w-auto z-10">
               <div className="relative shrink-0">
                 <img
                   src={displayAvatarUrl}
                   alt={studentName || 'Estudiante'}
-                  className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl object-cover border-2 border-amber-400 shadow-xl ring-4 ring-amber-400/20 bg-indigo-50"
+                  className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl object-cover border-2 border-white shadow-2xl ring-4 ring-white/30 bg-white"
                 />
-                <div className="absolute -bottom-1 -right-1 p-0.5 bg-emerald-500 rounded-full border border-white text-white shadow-sm">
-                  <Sparkles className="w-3 h-3" />
+                <div className="absolute -bottom-1 -right-1 p-0.5 bg-emerald-400 rounded-full border-2 border-white text-emerald-950 shadow-md">
+                  <Sparkles className="w-3.5 h-3.5 fill-current" />
                 </div>
               </div>
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-amber-300 bg-amber-400/20 border border-amber-400/30 px-2 py-0.5 rounded-full">
-                    Estudiante
+                  <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider bg-white/25 backdrop-blur-md text-white border border-white/40 px-2.5 py-0.5 rounded-full shadow-sm">
+                    Estudiante Activo
                   </span>
-                  <span className="text-xs font-bold text-indigo-200 truncate">
+                  <span className="text-xs font-black text-amber-100 drop-shadow truncate">
                     {studentProfile?.level || 'Maven Teens'}
                   </span>
                 </div>
-                <h2 className="text-xl sm:text-2xl font-black text-white mt-0.5 truncate">
+                <h2 className="text-xl sm:text-2xl font-black text-white mt-0.5 truncate drop-shadow-sm">
                   ¡Hola, {studentName || 'Estudiante'}! 👋
                 </h2>
-                <p className="text-[11px] sm:text-xs text-slate-300 font-medium">
+                <p className="text-[11px] sm:text-xs text-white/90 font-bold drop-shadow-sm">
                   {currentStreak > 0 
-                    ? `🔥 Racha de ${currentStreak} días activa. ¡Sigue así!` 
-                    : 'Completa tu reto de 5 min y gana +150 XP.'}
+                    ? `🔥 Racha de ${currentStreak} días activa. ¡Sigue con toda la energía!` 
+                    : 'Completa tu reto interactivo de 5 min y gana tus +150 XP 🏆'}
                 </p>
               </div>
             </div>
 
             {/* Maven the Tiger Mentor (Visible on Mobile & Desktop) */}
-            <div className="w-full sm:w-auto flex items-center justify-between sm:justify-end gap-3 pt-2.5 sm:pt-0 border-t sm:border-t-0 border-indigo-500/20 shrink-0 z-10">
-              <div className="flex items-center gap-2.5">
+            <div className="w-full sm:w-auto flex items-center justify-between sm:justify-end gap-3 pt-2.5 sm:pt-0 border-t sm:border-t-0 border-white/20 shrink-0 z-10">
+              <div className="flex items-center gap-2.5 bg-black/15 backdrop-blur-md px-3 py-2 rounded-2xl border border-white/20">
                 <div className="relative shrink-0">
                   <img
                     src="/images/mascot/tiger_mentor_wave.jpg"
                     alt="Tigre Maven 3D"
-                    className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl object-cover border-2 border-amber-400 shadow-xl ring-4 ring-amber-400/20 bg-white"
+                    className="w-11 h-11 sm:w-13 sm:h-13 rounded-xl object-cover border-2 border-amber-300 shadow-md bg-white"
                   />
                   <span className="absolute -top-1.5 -right-1 px-1.5 py-0.2 bg-amber-400 text-slate-950 font-black text-[9px] rounded-full border border-white">
                     3D
                   </span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] font-black uppercase tracking-wider text-amber-400">
+                  <span className="text-[10px] font-black uppercase tracking-wider text-amber-200">
                     Tigre Maven • Mentor
                   </span>
-                  <span className="text-xs font-extrabold text-white">
-                    "¡A romperla hoy con toda! ⚡"
+                  <span className="text-xs font-black text-white">
+                    "¡A romperla hoy! ⚡"
                   </span>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Stats Bar */}
+          {/* Stats Bar (4 Vibrant High-Energy Colorful Cards) */}
           <div className="flex overflow-x-auto pb-4 -mx-4 px-4 gap-3 snap-x scrollbar-hide">
-            <div className={`snap-start shrink-0 w-36 rounded-2xl p-4 flex flex-col gap-1 ${statsCardBg}`}>
-              <div className="flex items-center gap-1.5 text-yellow-500 font-medium">
-                <Star className="w-4 h-4 fill-current" />
-                <span className="text-sm">Total XP</span>
+            {/* XP Card */}
+            <div className={`snap-start shrink-0 w-36 rounded-3xl p-4 flex flex-col gap-1 border-2 shadow-md transition-all hover:scale-105 ${
+              isCool 
+                ? 'bg-slate-900/80 border-amber-500/40 text-white' 
+                : 'bg-gradient-to-br from-amber-50 to-yellow-100 border-amber-300 text-amber-950'
+            }`}>
+              <div className="flex items-center gap-1.5 text-amber-500 font-black">
+                <Star className="w-4 h-4 fill-amber-400 text-amber-500" />
+                <span className="text-xs uppercase tracking-wider font-extrabold">Total XP</span>
               </div>
               <span className="text-2xl font-black">{totalXP}</span>
             </div>
             
-            <div className={`snap-start shrink-0 w-36 rounded-2xl p-4 flex flex-col gap-1 ${statsCardBg}`}>
-              <div className="flex items-center gap-1.5 text-emerald-500 font-medium">
+            {/* Completadas Card */}
+            <div className={`snap-start shrink-0 w-36 rounded-3xl p-4 flex flex-col gap-1 border-2 shadow-md transition-all hover:scale-105 ${
+              isCool 
+                ? 'bg-slate-900/80 border-emerald-500/40 text-white' 
+                : 'bg-gradient-to-br from-emerald-50 to-teal-100 border-emerald-300 text-emerald-950'
+            }`}>
+              <div className="flex items-center gap-1.5 text-emerald-600 font-black">
                 <Target className="w-4 h-4" />
-                <span className="text-sm">Completadas</span>
+                <span className="text-xs uppercase tracking-wider font-extrabold">Misiones</span>
               </div>
               <span className="text-2xl font-black">{totalCompleted}</span>
             </div>
             
-            <div className={`snap-start shrink-0 w-36 rounded-2xl p-4 flex flex-col gap-1 ${statsCardBg}`}>
-              <div className="flex items-center gap-1.5 text-blue-500 font-medium">
-                <Zap className="w-4 h-4" />
-                <span className="text-sm">Precisión</span>
+            {/* Precisión Card */}
+            <div className={`snap-start shrink-0 w-36 rounded-3xl p-4 flex flex-col gap-1 border-2 shadow-md transition-all hover:scale-105 ${
+              isCool 
+                ? 'bg-slate-900/80 border-blue-500/40 text-white' 
+                : 'bg-gradient-to-br from-sky-50 to-blue-100 border-sky-300 text-sky-950'
+            }`}>
+              <div className="flex items-center gap-1.5 text-blue-600 font-black">
+                <Zap className="w-4 h-4 fill-blue-500 text-blue-500" />
+                <span className="text-xs uppercase tracking-wider font-extrabold">Precisión</span>
               </div>
               <span className="text-2xl font-black">{avgAccuracy}%</span>
             </div>
             
-            <div className={`snap-start shrink-0 w-36 rounded-2xl p-4 flex flex-col gap-1 ${statsCardBg}`}>
-              <div className="flex items-center gap-1.5 text-orange-500 font-medium">
+            {/* Racha Card */}
+            <div className={`snap-start shrink-0 w-36 rounded-3xl p-4 flex flex-col gap-1 border-2 shadow-md transition-all hover:scale-105 ${
+              isCool 
+                ? 'bg-slate-900/80 border-orange-500/40 text-white' 
+                : 'bg-gradient-to-br from-rose-50 to-orange-100 border-rose-300 text-rose-950'
+            }`}>
+              <div className="flex items-center gap-1.5 text-rose-600 font-black">
                 <Trophy className="w-4 h-4" />
-                <span className="text-sm">Racha Max</span>
+                <span className="text-xs uppercase tracking-wider font-extrabold">Racha Max</span>
               </div>
               <span className="text-2xl font-black">{longestStreak}</span>
             </div>
@@ -491,16 +533,20 @@ export function MissionHub({
             </motion.section>
           )}
 
-          {/* Level Filter Tabs */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
+          {/* Level Filter Tabs (Colorful & Tactile) */}
+          <div className="flex items-center gap-2.5 overflow-x-auto pb-2 scrollbar-hide">
             {LEVEL_GROUPS.map(tab => (
               <button
                 key={tab.id}
                 onClick={() => setSelectedLevelFilter(tab.id)}
-                className={`px-4 py-2 rounded-full text-xs font-black whitespace-nowrap transition cursor-pointer ${
+                className={`px-4 py-2.5 rounded-2xl text-xs font-black whitespace-nowrap transition-all cursor-pointer border-2 ${
                   selectedLevelFilter === tab.id
-                    ? (isCool ? 'bg-blue-600 text-white shadow-lg' : 'bg-slate-900 text-white shadow-md')
-                    : (isCool ? 'bg-slate-800 text-slate-300 hover:bg-slate-700' : 'bg-white text-slate-700 hover:bg-amber-100/60 border border-slate-200')
+                    ? (isCool 
+                        ? 'bg-blue-600 text-white border-blue-400 shadow-lg' 
+                        : 'bg-gradient-to-r from-amber-500 to-orange-500 text-white border-amber-300 shadow-md shadow-orange-500/25')
+                    : (isCool 
+                        ? 'bg-slate-900 text-slate-300 hover:bg-slate-800 border-slate-800' 
+                        : 'bg-white text-slate-700 hover:bg-amber-50 hover:text-amber-900 border-slate-200/90 shadow-sm')
                 }`}
               >
                 {tab.label}
@@ -534,38 +580,44 @@ export function MissionHub({
                         handleStartMission(m.classId);
                       }
                     }}
-                    className={`p-4 rounded-3xl border-2 transition-all flex flex-col justify-between gap-3 ${
+                    className={`p-4 sm:p-5 rounded-3xl border-2 transition-all flex flex-col justify-between gap-3 shadow-sm ${
                       isCompleted 
-                        ? (isCool ? 'bg-emerald-950/40 border-emerald-700/60 text-emerald-100 cursor-pointer shadow-sm' : 'bg-emerald-50 border-emerald-300 text-emerald-950 cursor-pointer shadow-sm')
+                        ? (isCool 
+                            ? 'bg-emerald-950/40 border-emerald-700/60 text-emerald-100 cursor-pointer' 
+                            : 'bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-300 hover:border-emerald-400 text-slate-900 cursor-pointer hover:shadow-md')
                         : isUnlocked
-                          ? (isCool ? 'bg-indigo-950/60 border-indigo-500 hover:bg-indigo-900/60 text-white cursor-pointer shadow-md' : 'bg-gradient-to-br from-amber-50 to-orange-50/80 border-amber-400 hover:bg-amber-100 text-slate-900 cursor-pointer shadow-md')
-                          : (isCool ? 'bg-slate-900/40 border-slate-800/80 text-slate-500 opacity-60 cursor-not-allowed' : 'bg-slate-100/70 border-slate-200 text-slate-400 opacity-70 cursor-not-allowed')
+                          ? (isCool 
+                              ? 'bg-indigo-950/60 border-indigo-500 hover:bg-indigo-900/60 text-white cursor-pointer shadow-md' 
+                              : 'bg-white hover:bg-amber-50/50 border-amber-300 hover:border-amber-400 text-slate-900 cursor-pointer shadow-md hover:shadow-lg ring-2 ring-amber-400/20')
+                          : (isCool 
+                              ? 'bg-slate-900/40 border-slate-800/80 text-slate-500 opacity-60 cursor-not-allowed' 
+                              : 'bg-slate-100/70 border-slate-200 text-slate-400 opacity-70 cursor-not-allowed')
                     }`}
                   >
                     <div className="flex items-start justify-between gap-2">
                       <div className="flex items-center gap-2.5 min-w-0">
-                        <span className="text-2xl shrink-0">{getMissionContentForClass(m.classId)?.badgeEmoji || '🎯'}</span>
+                        <span className="text-2xl shrink-0 p-2 rounded-2xl bg-amber-50/80 dark:bg-slate-800 shadow-sm border border-amber-200 dark:border-slate-700">{getMissionContentForClass(m.classId)?.badgeEmoji || '🎯'}</span>
                         <div className="min-w-0">
-                          <h4 className="font-black text-sm leading-tight truncate">{getClassTitle(m.classId)}</h4>
-                          <p className="text-[11px] font-semibold opacity-75 truncate">{getClassLabel(m.classId)}</p>
+                          <h4 className="font-black text-sm sm:text-base leading-tight truncate text-slate-900 dark:text-white">{getClassTitle(m.classId)}</h4>
+                          <p className="text-[11px] font-bold text-slate-500 dark:text-slate-400 truncate">{getClassLabel(m.classId)}</p>
                         </div>
                       </div>
                     </div>
 
-                    <div className="flex items-center justify-between pt-2 border-t border-black/5 dark:border-white/5">
-                      <span className={`text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider ${
+                    <div className="flex items-center justify-between pt-2.5 border-t border-slate-100 dark:border-slate-800">
+                      <span className={`text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider ${
                         isCompleted 
-                          ? 'bg-emerald-200/60 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200' 
+                          ? 'bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-900 dark:text-emerald-200' 
                           : isUnlocked 
-                            ? 'bg-amber-200 text-amber-900 dark:bg-indigo-800 dark:text-white' 
+                            ? 'bg-amber-100 text-amber-900 border border-amber-300 dark:bg-indigo-800 dark:text-white' 
                             : 'bg-slate-200/80 text-slate-600 dark:bg-slate-800 dark:text-slate-400'
                       }`}>
                         {isCompleted ? 'Completada ✅' : isUnlocked ? '🚀 Jugar Misión' : '🔒 Bloqueada'}
                       </span>
 
                       {(isUnlocked || isCompleted) && (
-                        <span className="text-xs font-black flex items-center gap-1 text-amber-500">
-                          <Star className="w-3.5 h-3.5 fill-current" /> +150 XP
+                        <span className="text-xs font-black flex items-center gap-1 text-amber-600 dark:text-amber-400">
+                          <Star className="w-3.5 h-3.5 fill-amber-500 text-amber-500" /> +150 XP
                         </span>
                       )}
                     </div>
