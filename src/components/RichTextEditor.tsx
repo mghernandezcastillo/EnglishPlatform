@@ -55,10 +55,10 @@ const HIGHLIGHT_COLORS = [
 ];
 
 const FONT_SIZE_PRESETS = [
-  { label: 'S (14px)', size: 14 },
-  { label: 'M (18px)', size: 18 },
-  { label: 'L (24px)', size: 24 },
-  { label: 'XL (32px)', size: 32 },
+  { label: 'S (16px)', size: 16 },
+  { label: 'M (22px)', size: 22 },
+  { label: 'L - Por Defecto / Celular (28px)', size: 28 },
+  { label: 'XL (34px)', size: 34 },
   { label: '2XL (42px)', size: 42 },
   { label: '3XL (56px)', size: 56 },
   { label: '4XL (72px)', size: 72 },
@@ -67,7 +67,7 @@ const FONT_SIZE_PRESETS = [
 export function RichTextEditor({
   value,
   onChange,
-  fontSize = 20,
+  fontSize = 28,
   onFontSizeChange,
   lineSpacing = 'normal',
   theme = 'light',

@@ -79,9 +79,14 @@ export function TeacherMasterNotes({
   const [fontSize, setFontSize] = useState<number>(() => {
     try {
       const saved = localStorage.getItem('teacher_notes_fontsize');
-      return saved ? parseInt(saved, 10) : 18;
+      if (saved) {
+        const parsed = parseInt(saved, 10);
+        // If it was the legacy small size (<= 20px), upgrade to 28px for optimal mobile screen-share visibility
+        return parsed > 20 ? parsed : 28;
+      }
+      return 28;
     } catch {
-      return 18;
+      return 28;
     }
   });
 
@@ -111,8 +116,8 @@ export function TeacherMasterNotes({
 
   // --- Window Positioning & Resizing (Clamped) ---
   const [bounds, setBounds] = useState<WindowBounds>(() => {
-    const defaultW = 490;
-    const defaultH = 540;
+    const defaultW = 520;
+    const defaultH = 560;
     try {
       const saved = localStorage.getItem('teacher_notes_bounds_v2');
       if (saved) {
