@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="38%" r="60%" fx="50%" fy="30%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+
+    <radialGradient id="iconBackdropGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#2563EB" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="cardBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#E2E8F0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#94A3B8" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <linearGradient id="cardSurfaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+
+    <linearGradient id="leftWingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="40%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+
+    <linearGradient id="rightWingGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#00D2FF"/>
+    </linearGradient>
+
+    <linearGradient id="centerLeftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <linearGradient id="centerRightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#00D2FF"/>
+    </linearGradient>
+
+    <linearGradient id="englishTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#00D2FF"/>
+    </linearGradient>
+
+    <linearGradient id="accentLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E3A8A" stop-opacity="0.1"/>
+      <stop offset="25%" stop-color="#2563EB"/>
+      <stop offset="75%" stop-color="#00D2FF"/>
+      <stop offset="100%" stop-color="#00D2FF" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <filter id="premiumShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.10"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0284C7" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+
+    <filter id="innerGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00D2FF" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" rx="32" fill="url(#bgGlow)"/>
+  <rect width="800" height="500" rx="32" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <circle cx="400" cy="145" r="160" fill="url(#iconBackdropGlow)"/>
+
+  <g transform="translate(320, 65)" filter="url(#premiumShadow)">
+    <rect width="160" height="160" rx="42" fill="url(#cardSurfaceGrad)"/>
+    <rect width="160" height="160" rx="42" fill="none" stroke="url(#cardBorderGrad)" stroke-width="2"/>
+    <path d="M 1 42 C 1 19 19 1 42 1 L 118 1 C 141 1 159 19 159 42 C 159 48 150 68 110 68 C 50 68 1 54 1 42 Z" fill="#FFFFFF" opacity="0.45"/>
+
+    <g transform="translate(0, 0)">
+      <path d="M 38 122 L 38 56 C 38 46 47 40 56 46 L 80 64 L 80 84 L 56 65 C 54 63 52 65 52 68 L 52 122 Z" fill="url(#leftWingGrad)"/>
+      <path d="M 122 122 L 122 56 C 122 46 113 40 104 46 L 80 64 L 80 84 L 104 65 C 106 63 108 65 108 68 L 108 122 Z" fill="url(#rightWingGrad)"/>
+      <path d="M 80 64 L 80 106 L 64 68 Z" fill="url(#centerLeftGrad)" opacity="0.95"/>
+      <path d="M 80 64 L 96 68 L 80 106 Z" fill="url(#centerRightGrad)"/>
+
+      <g filter="url(#innerGlow)">
+        <polygon points="80,42 86,52 96,54 88,61 90,71 80,65 70,71 72,61 64,54 74,52" fill="#00D2FF" opacity="0.9"/>
+        <polygon points="80,45 84,52 91,54 86,59 87,66 80,62 73,66 74,59 69,54 76,52" fill="#FFFFFF" opacity="0.95"/>
+      </g>
+    </g>
+  </g>
+
+  <g text-anchor="middle">
+    <text x="400" y="298" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="900" letter-spacing="3.5">
+      <tspan fill="#0F172A">MAVEN </tspan>
+      <tspan fill="url(#englishTextGrad)">ENGLISH</tspan>
+    </text>
+
+    <rect x="260" y="322" width="280" height="2.5" rx="1.25" fill="url(#accentLineGrad)"/>
+
+    <g transform="translate(285, 344)">
+      <rect width="230" height="34" rx="17" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1.2"/>
+      <path d="M 22 17 L 24 13 L 28 15 L 24 17 L 26 21 L 22 17 Z" fill="#0284C7" opacity="0.8"/>
+      <text x="115" y="22" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="800" fill="#0369A1" letter-spacing="4.5">ACADEMIA DE INGLÉS</text>
+      <path d="M 208 17 L 206 13 L 202 15 L 206 17 L 204 21 L 208 17 Z" fill="#0284C7" opacity="0.8"/>
+    </g>
+
+    <text x="400" y="415" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#94A3B8" letter-spacing="2.5">SMART LEARNING PLATFORM</text>
+  </g>
+</svg>

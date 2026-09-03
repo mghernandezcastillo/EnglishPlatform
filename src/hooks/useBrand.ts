@@ -9,7 +9,7 @@ export interface BrandSettings {
 
 const defaultBrand: BrandSettings = {
   name: "Maven English",
-  logoUrl: "/logo.jpg",
+  logoUrl: "/logo-icon.svg",
   teacherPin: "2393"
 };
 
