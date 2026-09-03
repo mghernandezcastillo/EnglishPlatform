@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { lazy, Suspense, useState, useEffect } from 'react';
 import { dbAdmin } from '../lib/db';
 import { DbStudent, DbGroup, EvaluationRecord } from '../types';
-import { Users, UserPlus, BookOpen, ChevronLeft, Save, Target, ExternalLink, RefreshCw } from 'lucide-react';
+import { Users, UserPlus, BookOpen, CalendarDays, ChevronLeft, LogOut, Save, Target, ExternalLink, RefreshCw } from 'lucide-react';
 import { avatars } from '../config';
 import { CurriculumView } from './CurriculumView';
 import { useCurriculum } from '../hooks/useCurriculum';
@@ -12,17 +12,22 @@ import { VirtualEvaluationResult } from './VirtualEvaluationResult';
 import { AdminSlideManager } from './admin/AdminSlideManager';
 import { ClassWorkshop } from './ClassWorkshop';
 import { MissionTeacherTab } from './missions/MissionTeacherTab';
+import type { StaffUser } from '../lib/staffAuth';
+
+const AgendaMaven = lazy(() => import('../features/agenda/AgendaMaven'));
 
 interface TeacherDashboardProps {
   onBack: () => void;
   onEnterAsStudent?: (student: DbStudent) => void;
+  staffUser: StaffUser;
+  onSignOut: () => Promise<void>;
 }
 
-export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardProps) {
+export function TeacherDashboard({ onBack, onEnterAsStudent, staffUser, onSignOut }: TeacherDashboardProps) {
   const [students, setStudents] = useState<DbStudent[]>([]);
   const [groups, setGroups] = useState<DbGroup[]>([]);
   const [evaluations, setEvaluations] = useState<EvaluationRecord[]>([]);
-  const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum' | 'cms' | 'settings' | 'workshop' | 'missions'>('students');
+  const [activeTab, setActiveTab] = useState<'agenda' | 'students' | 'groups' | 'evaluations' | 'curriculum' | 'cms' | 'settings' | 'workshop' | 'missions'>('agenda');
   const [selectedStudent, setSelectedStudent] = useState<DbStudent | null>(null);
   const [isEditingStudentInfo, setIsEditingStudentInfo] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
@@ -96,7 +101,8 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
       avatar_id: newStudent.avatar_id,
       level: newStudent.level,
       type: newStudent.type,
-      group_id: newStudent.group_id || undefined
+      group_id: newStudent.group_id || undefined,
+      teacher_id: staffUser.role === 'teacher' ? staffUser.id : undefined
     });
     setIsCreatingStudent(false);
     setNewStudent({ name: '', avatar_id: 'female', level: 'Basic Zero', type: 'adulto', group_id: '' });
@@ -482,8 +488,23 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                <p className="text-gray-500 mt-1">Gestiona estudiantes, grupos y supervisa su progreso.</p>
              </div>
            </div>
+           <div className="flex items-center gap-3">
+             <div className="hidden text-right sm:block">
+               <p className="text-sm font-black text-slate-900">{staffUser.fullName}</p>
+               <p className="text-xs font-bold uppercase tracking-wider text-indigo-600">{staffUser.role === 'admin' ? 'Administrador' : 'Profesor'}</p>
+             </div>
+             <button onClick={onSignOut} className="flex min-h-11 items-center gap-2 rounded-xl bg-rose-50 px-4 text-sm font-black text-rose-700 transition hover:bg-rose-100">
+               <LogOut className="h-4 w-4" /> Cerrar sesión
+             </button>
+           </div>
         </div>
         <div className="flex flex-wrap gap-4 mt-6 md:mt-0 w-full md:w-auto">
+          <button
+            onClick={() => setActiveTab('agenda')}
+            className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'agenda' ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-200' : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100'}`}
+          >
+            <CalendarDays className="h-5 w-5" /> Agenda Maven
+          </button>
           <button 
             onClick={() => setActiveTab('students')}
             className={`px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'students' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
@@ -534,6 +555,12 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
           </button>
         </div>
       </div>
+
+      {activeTab === 'agenda' && (
+        <Suspense fallback={<div className="flex min-h-[500px] items-center justify-center"><RefreshCw className="h-8 w-8 animate-spin text-indigo-600" /></div>}>
+          <AgendaMaven staffUser={staffUser} />
+        </Suspense>
+      )}
 
       {activeTab === 'students' && (
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -771,15 +798,9 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                </div>
                <p className="text-xs text-gray-400 mt-2">Puedes subir el logo externamente e indicar aquí el link. O usar un logo local como /logo.jpg</p>
             </div>
-            <div className="mb-8">
-               <label className="block text-sm font-bold text-gray-700 mb-2">PIN de Acceso Profesor (4 dígitos)</label>
-               <input 
-                 type="text" 
-                 maxLength={4}
-                 value={editingBrand.teacherPin} 
-                 onChange={e => setEditingBrand({...editingBrand, teacherPin: e.target.value.replace(/\D/g, '')})} 
-                 className="w-32 text-center text-xl tracking-widest font-mono py-2 border-2 border-gray-100 focus:border-indigo-500 rounded-xl outline-none"
-               />
+            <div className="mb-8 rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
+               <p className="font-black text-emerald-800">Acceso protegido con Supabase Auth</p>
+               <p className="mt-1 text-sm text-emerald-700">Los profesores ingresan con correo y contraseña. Las sesiones se conservan y se renuevan automáticamente.</p>
             </div>
             <button 
               onClick={() => {

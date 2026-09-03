@@ -396,6 +396,7 @@ export interface DbStudent {
   completed_lessons: string[];
   approved_levels?: string[];
   group_id?: string;
+  teacher_id?: string;
   created_at?: string;
 }
 
@@ -490,4 +491,3 @@ export interface StudentWhProgress {
   last_practiced_at?: string;
   created_at?: string;
 }
-

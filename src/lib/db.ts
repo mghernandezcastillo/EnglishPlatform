@@ -25,6 +25,9 @@ export const dbAdmin = {
 
   getStudents: async (groupId?: string): Promise<DbStudent[]> => {
     let query = supabase.from('students').select('*').order('created_at', { ascending: false });
+    const { data: authData } = await supabase.auth.getSession();
+    const staff = authData.session?.user;
+    if (staff?.app_metadata?.role === 'teacher') query = query.eq('teacher_id', staff.id);
     if (groupId) query = query.eq('group_id', groupId);
     const { data, error } = await query;
     if (error) {

@@ -13,6 +13,7 @@ import { libraryLessons } from './data/libraryLessons';
 import { supabase } from './lib/supabase';
 import { avatars } from './config';
 import { useBrand } from './hooks/useBrand';
+import { StaffUser, staffFromSession } from './lib/staffAuth';
 
 // Lazy — only loaded when the user navigates to them
 const LessonPlayer = lazy(() => import('./components/LessonPlayer').then(m => ({ default: m.LessonPlayer })));
@@ -37,14 +38,13 @@ const LazyFallback = () => (
 );
 
 const STORAGE_KEY = 'english_easy_path_progress';
-const TEACHER_UNLOCK_KEY = 'maven_teacher_unlocked';
-
 type AppRole = 'none' | 'teacher' | 'student';
 
 export default function App() {
   const { brand } = useBrand();
   const [role, setRole] = useState<AppRole>('none');
-  const [isTeacherUnlocked, setIsTeacherUnlocked] = useState(() => localStorage.getItem(TEACHER_UNLOCK_KEY) === 'true');
+  const [staffUser, setStaffUser] = useState<StaffUser | null>(null);
+  const [authReady, setAuthReady] = useState(false);
   const [currentStudentId, setCurrentStudentId] = useState<string | null>(null);
 
   const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], approvedLevelIds: [], currentLessonId: '', level: 'Nivel Inicial' });
@@ -52,6 +52,31 @@ export default function App() {
   const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'entrance_assessment' | 'speaking_practice' | 'story_decoder' | 'structure_mode' | 'verbs_guide' | 'verb_arena' | 'vocab_vault' | 'missions'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
   const [activeMissionParam, setActiveMissionParam] = useState<string | null>(null);
+
+  useEffect(() => {
+    let mounted = true;
+    const isExplicitStudentRoute = () => {
+      const params = new URLSearchParams(window.location.search);
+      return Boolean(params.get('studentId') || params.get('mission') || params.get('evaluacion') || params.get('structureReport') || params.get('structure_report'));
+    };
+    const applySession = (session: Parameters<typeof staffFromSession>[0]) => {
+      if (!mounted) return;
+      const staff = staffFromSession(session);
+      setStaffUser(staff);
+      if (staff && !isExplicitStudentRoute()) setRole('teacher');
+      if (!staff && !isExplicitStudentRoute()) setRole(current => current === 'student' ? current : 'none');
+    };
+
+    supabase.auth.getSession()
+      .then(({ data }) => applySession(data.session))
+      .finally(() => { if (mounted) setAuthReady(true); });
+
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => applySession(session));
+    return () => {
+      mounted = false;
+      listener.subscription.unsubscribe();
+    };
+  }, []);
 
   useEffect(() => {
     // Check URL
@@ -191,10 +216,15 @@ export default function App() {
     setRole('student');
   };
 
-  const handleSelectTeacher = () => {
-    localStorage.setItem(TEACHER_UNLOCK_KEY, 'true');
-    setIsTeacherUnlocked(true);
+  const handleSelectTeacher = (staff?: StaffUser) => {
+    if (staff) setStaffUser(staff);
     setRole('teacher');
+  };
+
+  const handleStaffSignOut = async () => {
+    await supabase.auth.signOut();
+    setStaffUser(null);
+    setRole('none');
   };
 
   const activeLesson = activeLessonId 
@@ -374,7 +404,7 @@ export default function App() {
     return <Suspense fallback={<LazyFallback />}><StoryDecoder onClose={() => { window.location.href = '/'; }} studentId={currentStudentId} /></Suspense>;
   }
 
-  if (!isLoaded) {
+  if (!isLoaded || !authReady) {
     return <div className="min-h-screen flex items-center justify-center bg-slate-50"><div className="w-8 h-8 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin"></div></div>;
   }
 
@@ -386,7 +416,7 @@ export default function App() {
             Atención: Faltan las variables VITE_SUPABASE_URL y VITE_SUPABASE_ANON_KEY en el menú Settings para conectar con la base de datos real.
           </div>
         )}
-        <RoleSelection onSelectTeacher={handleSelectTeacher} isTeacherUnlocked={isTeacherUnlocked} />
+        <RoleSelection onSelectTeacher={handleSelectTeacher} currentStaff={staffUser} />
       </div>
     );
   }
@@ -395,7 +425,16 @@ export default function App() {
     return (
       <Suspense fallback={<LazyFallback />}>
         <div className="min-h-screen bg-slate-50 font-sans">
-          <TeacherDashboard onBack={() => setRole('none')} onEnterAsStudent={handleSelectStudent} />
+          {staffUser ? (
+            <TeacherDashboard
+              onBack={() => setRole('none')}
+              onEnterAsStudent={handleSelectStudent}
+              staffUser={staffUser}
+              onSignOut={handleStaffSignOut}
+            />
+          ) : (
+            <RoleSelection onSelectTeacher={handleSelectTeacher} currentStaff={staffUser} />
+          )}
           <GlobalAiAssistant />
         </div>
       </Suspense>

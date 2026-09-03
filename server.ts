@@ -3,6 +3,9 @@ import path from 'path';
 import fs from 'fs';
 import dotenv from 'dotenv';
 import { GoogleGenAI } from '@google/genai';
+import bootstrapStatusHandler from './api/auth/bootstrap-status';
+import bootstrapAdminHandler from './api/auth/bootstrap-admin';
+import teachersHandler from './api/admin/teachers';
 
 const app = express();
 const PORT = 3000;
@@ -12,6 +15,10 @@ dotenv.config({ path: '.env.local' });
 dotenv.config();
 
 app.use(express.json({ limit: '12mb' }));
+
+app.all('/api/auth/bootstrap-status', (req, res) => bootstrapStatusHandler(req, res));
+app.all('/api/auth/bootstrap-admin', (req, res) => bootstrapAdminHandler(req, res));
+app.all('/api/admin/teachers', (req, res) => teachersHandler(req, res));
 
 app.post('/api/speaking-assessment', async (req, res) => {
   try {
