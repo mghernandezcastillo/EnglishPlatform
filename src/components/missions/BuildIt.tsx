@@ -72,14 +72,16 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
   const handleUseHint = () => {
     if (verifyLockedRef.current || isVerifying || isSuccess) return;
     
-    const correctEnglishTokens = englishAnswer.split(' ');
-    const nextExpectedWord = correctEnglishTokens[assembledTokens.length];
+    const expectedTokens = currentSentence?.tokens || [];
+    const nextExpectedToken = expectedTokens[assembledTokens.length];
     
-    if (nextExpectedWord) {
-      const hintToken = availableTokens.find(t => t.text === nextExpectedWord);
+    if (nextExpectedToken) {
+      const hintToken = availableTokens.find(
+        (t) => t.text.trim().toLowerCase() === nextExpectedToken.trim().toLowerCase()
+      ) || availableTokens.find((t) => t.text === nextExpectedToken);
       if (hintToken) {
         setHintTokenId(hintToken.id);
-        setHintsUsed(prev => prev + 1);
+        setHintsUsed((prev) => prev + 1);
       }
     }
   };
@@ -89,10 +91,19 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
     verifyLockedRef.current = true;
     setIsVerifying(true);
     
-    const assembledText = assembledTokens.map(t => t.text).join(' ').trim().toLowerCase().replace(/[.,!?;:]/g, '');
-    const correctText = englishAnswer.trim().toLowerCase().replace(/[.,!?;:]/g, '');
+    const normalize = (str: string) =>
+      str
+        .toLowerCase()
+        .replace(/[’‘]/g, "'")
+        .replace(/[.,!?;:¿¡"“”()[\]{}]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+    const assembledText = normalize(assembledTokens.map((t) => t.text).join(' '));
+    const correctText = normalize(englishAnswer);
+    const correctFromTokens = normalize((currentSentence.tokens || []).join(' '));
     
-    if (assembledText === correctText) {
+    if (assembledText === correctText || (correctFromTokens && assembledText === correctFromTokens)) {
       setIsSuccess(true);
       feedbackTimerRef.current = window.setTimeout(() => {
         if (currentIndex < sentences.length - 1) {
@@ -122,8 +133,8 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
     : 'bg-gradient-to-br from-slate-900 via-slate-800 to-blue-950';
 
   const tokenStyle = theme === 'vibrant'
-    ? 'bg-white text-slate-800 shadow-md'
-    : 'bg-slate-700 text-white shadow-md';
+    ? 'bg-white text-slate-800 shadow-lg border border-teal-100/60 hover:border-teal-300'
+    : 'bg-slate-700/95 text-white shadow-lg border border-slate-600 hover:border-cyan-400';
 
   const containerThemeClass = theme === 'vibrant' ? 'text-white' : 'text-white';
 
@@ -179,7 +190,7 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
               exit={{ opacity: 0, scale: 0.8 }}
               key={token.id}
               onClick={() => handleTokenRemove(token)}
-              className={`px-4 py-2 rounded-xl text-lg font-bold transition-colors ${tokenStyle} ${isError ? 'bg-red-500 text-white' : ''}`}
+              className={`px-4 py-2.5 sm:px-5 sm:py-3 rounded-2xl text-base sm:text-lg font-black transition-all cursor-pointer ${tokenStyle} ${isError ? 'bg-red-500 text-white' : ''}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -188,8 +199,8 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
           ))}
         </AnimatePresence>
         {assembledTokens.length === 0 && (
-          <div className="absolute inset-0 flex items-center justify-center opacity-50 text-sm font-medium pointer-events-none">
-            Toca las palabras para formar la frase
+          <div className="absolute inset-0 flex items-center justify-center opacity-70 text-sm sm:text-base font-bold pointer-events-none text-white/90">
+            Toca los bloques para armar la frase
           </div>
         )}
         
@@ -224,21 +235,21 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
 
       {/* Available Tokens Pool */}
       <div className="flex-1">
-        <div className="flex flex-wrap gap-3 justify-center">
+        <div className="flex flex-wrap gap-2.5 sm:gap-3.5 justify-center">
           <AnimatePresence>
             {availableTokens.map((token) => (
               <motion.button
                 layout
                 initial={{ opacity: 0, y: 20 }}
                 animate={hintTokenId === token.id ? {
-                  opacity: 1, y: 0, scale: [1, 1.1, 1],
-                  boxShadow: ["0px 0px 0px rgba(250,204,21,0)", "0px 0px 15px rgba(250,204,21,0.8)", "0px 0px 0px rgba(250,204,21,0)"]
+                  opacity: 1, y: 0, scale: [1, 1.08, 1],
+                  boxShadow: ["0px 0px 0px rgba(250,204,21,0)", "0px 0px 20px rgba(250,204,21,0.9)", "0px 0px 0px rgba(250,204,21,0)"]
                 } : { opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={hintTokenId === token.id ? { duration: 1, repeat: Infinity } : {}}
                 key={token.id}
                 onClick={() => handleTokenSelect(token)}
-                className={`px-5 py-3 rounded-xl text-lg font-bold ${tokenStyle} ${hintTokenId === token.id ? 'ring-2 ring-yellow-400' : ''}`}
+                className={`px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-2xl text-base sm:text-lg font-black transition-all cursor-pointer ${tokenStyle} ${hintTokenId === token.id ? 'ring-4 ring-yellow-400 scale-105' : ''}`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

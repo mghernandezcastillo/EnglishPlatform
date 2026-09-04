@@ -7,6 +7,7 @@ import { EarCheck } from './EarCheck';
 import { MissionResultsScreen } from './MissionResultsScreen';
 import { TigerMentor } from './TigerMentor';
 import { missionService, type MissionContent } from '../../lib/missionService';
+import { chunkSentenceIntoBlocks } from '../../lib/sentenceChunker';
 
 export interface MissionResults {
   speedCards: { score: number; total: number; unknownTerms: string[] };
@@ -70,10 +71,11 @@ export function MissionRunner({
   // and unrelated distractors from another sentence cannot leak into the exercise.
   const buildItMapped = useMemo(() => content.buildIt.map((item: any) => {
     const english = normalizeBuildItAnswer(item.answer || item.english || '');
+    const tokens = chunkSentenceIntoBlocks(english, item.tokens);
     return {
       spanish: cleanBuildItPrompt(item.prompt || item.spanish || ''),
       english,
-      tokens: english.split(/\s+/).filter(Boolean),
+      tokens: tokens.length > 0 ? tokens : [english],
       hints: item.hints || []
     };
   }), [content.buildIt]);

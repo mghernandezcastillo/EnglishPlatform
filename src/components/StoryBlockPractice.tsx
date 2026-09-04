@@ -25,6 +25,7 @@ import { CURATED_BLOCK_PRACTICE_DATA, CuratedPracticeItem } from '../data/storyB
 import { VocabularyCaptureModal } from './StoryDecoder';
 import { type SavedVocabularyWord } from './StoryVocabularyLibrary';
 import { findStoryWordTranslation } from '../data/storyDecoderTranslations';
+import { chunkSentenceIntoBlocks } from '../lib/sentenceChunker';
 
 export type DecoderPuzzle = {
   easy_blocks: string[];
@@ -159,28 +160,7 @@ function speakText(text: string) {
 }
 
 function autoChunkSentence(englishSentence: string): string[] {
-  const words = englishSentence.trim().split(/\s+/);
-  if (words.length <= 4) return words;
-  
-  if (words.length <= 8) {
-    const p1 = Math.ceil(words.length / 3);
-    const p2 = Math.ceil((words.length * 2) / 3);
-    return [
-      words.slice(0, p1).join(' '),
-      words.slice(p1, p2).join(' '),
-      words.slice(p2).join(' ')
-    ].filter(Boolean);
-  }
-
-  const p1 = Math.ceil(words.length / 4);
-  const p2 = Math.ceil((words.length * 2) / 4);
-  const p3 = Math.ceil((words.length * 3) / 4);
-  return [
-    words.slice(0, p1).join(' '),
-    words.slice(p1, p2).join(' '),
-    words.slice(p2, p3).join(' '),
-    words.slice(p3).join(' ')
-  ].filter(Boolean);
+  return chunkSentenceIntoBlocks(englishSentence);
 }
 
 export const StoryBlockPractice: React.FC<StoryBlockPracticeProps> = ({

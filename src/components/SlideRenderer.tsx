@@ -29,6 +29,7 @@ import { fireClassCompletionConfetti } from '../lib/celebration';
 import { safeEncodeURIComponent } from '../lib/safeUrl';
 import confetti from 'canvas-confetti';
 import { getTeenSpeakerInfo } from './TeenAvatar';
+import { chunkSentenceIntoBlocks } from '../lib/sentenceChunker';
 
 const VerbArenaGame = lazy(() => import('./VerbArenaGame').then(m => ({ default: m.VerbArenaGame })));
 
@@ -1001,7 +1002,7 @@ export function SlideRenderer({
         // Pool easy blocks or words
         const rawPool = line.puzzle?.easy_blocks && line.puzzle.easy_blocks.length > 0
           ? line.puzzle.easy_blocks
-          : (line.en ? line.en.split(' ') : []);
+          : (line.en ? chunkSentenceIntoBlocks(line.en) : []);
         
         const mapped = rawPool.map((token: string, i: number) => ({ id: `tok-${i}-${token}`, text: token }));
         // Shuffle
@@ -2317,7 +2318,7 @@ export function SlideRenderer({
               const currentLine = lines[safeLineIndex] || lines[0];
               const easyBlocks = currentLine?.puzzle?.easy_blocks && currentLine.puzzle.easy_blocks.length > 0
                 ? currentLine.puzzle.easy_blocks
-                : (currentLine?.en ? currentLine.en.split(' ') : []);
+                : (currentLine?.en ? chunkSentenceIntoBlocks(currentLine.en) : []);
               const tokens = shuffledStoryTokens.length > 0 ? shuffledStoryTokens : easyBlocks.map((t: string, i: number) => ({ id: String(i), text: t }));
               const correctOrder = easyBlocks;
               const assembled = selectedTokenIndexes.map(i => tokens[i]?.text ?? '').join(' ');
@@ -2533,7 +2534,7 @@ export function SlideRenderer({
                             const next = lines[safeLineIndex + 1];
                             const blocks = next?.puzzle?.easy_blocks && next.puzzle.easy_blocks.length > 0
                               ? next.puzzle.easy_blocks
-                              : (next?.en ? next.en.split(' ') : []);
+                              : (next?.en ? chunkSentenceIntoBlocks(next.en) : []);
                             const shuffled = [...blocks].map((t: string, i: number) => ({ id: String(i), text: t })).sort(() => Math.random() - 0.5);
                             setShuffledStoryTokens(shuffled);
                           }}
@@ -4222,7 +4223,7 @@ export function SlideRenderer({
 
             const easyBlocks = line?.puzzle?.easy_blocks && line.puzzle.easy_blocks.length > 0
               ? line.puzzle.easy_blocks
-              : (line?.en ? line.en.split(' ') : []);
+              : (line?.en ? chunkSentenceIntoBlocks(line.en) : []);
             const tokens = shuffledStoryTokens.length > 0 ? shuffledStoryTokens : easyBlocks.map((t: string, i: number) => ({ id: String(i), text: t }));
             const correctOrder = easyBlocks;
             const assembled = selectedTokenIndexes.map(i => tokens[i]?.text ?? '').join(' ');
@@ -4413,7 +4414,7 @@ export function SlideRenderer({
                         const next = lines[safeLineIndex + 1];
                         const blocks = next?.puzzle?.easy_blocks && next.puzzle.easy_blocks.length > 0
                           ? next.puzzle.easy_blocks
-                          : (next?.en ? next.en.split(' ') : []);
+                          : (next?.en ? chunkSentenceIntoBlocks(next.en) : []);
                         const shuffled = [...blocks].map((t: string, i: number) => ({ id: String(i), text: t })).sort(() => Math.random() - 0.5);
                         setShuffledStoryTokens(shuffled);
                       }}
