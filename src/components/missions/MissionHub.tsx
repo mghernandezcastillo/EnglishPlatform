@@ -5,6 +5,7 @@ import { missionService } from '../../lib/missionService';
 import type { Mission, MissionStreak, MissionBadge, ThemeMode, MissionContent } from '../../lib/missionService';
 import { TEEN_MISSION_CONTENT, getMissionContentForClass } from '../../lib/missionContentData';
 import { TigerMentor } from './TigerMentor';
+import { MissionErrorBoundary } from './MissionErrorBoundary';
 import { dbAdmin } from '../../lib/db';
 import { avatars, studentConfig } from '../../config';
 
@@ -242,16 +243,21 @@ export function MissionHub({
       };
       return (
         <Suspense fallback={<div className="fixed inset-0 z-50 bg-slate-900/80 flex items-center justify-center"><div className="w-10 h-10 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin" /></div>}>
-          <MissionRunner
-            classId={activeMissionClassId}
-            classTitle={getClassTitle(activeMissionClassId)}
-            content={missionContent}
-            studentId={studentId || 'guest-student'}
-            studentName={studentName || 'Estudiante'}
-            theme={theme}
-            onComplete={handleMissionComplete}
+          <MissionErrorBoundary
+            missionKey={activeMissionClassId}
             onExit={() => setActiveMissionClassId(null)}
-          />
+          >
+            <MissionRunner
+              classId={activeMissionClassId}
+              classTitle={getClassTitle(activeMissionClassId)}
+              content={missionContent}
+              studentId={studentId || 'guest-student'}
+              studentName={studentName || 'Estudiante'}
+              theme={theme}
+              onComplete={handleMissionComplete}
+              onExit={() => setActiveMissionClassId(null)}
+            />
+          </MissionErrorBoundary>
         </Suspense>
       );
     }

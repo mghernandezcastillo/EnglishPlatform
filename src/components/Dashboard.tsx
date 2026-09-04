@@ -16,6 +16,7 @@ import { OralEvaluationPresentation } from './OralEvaluationPresentation';
 import { dbAdmin } from '../lib/db';
 import { evaluationPassed, latestEvaluation } from '../lib/evaluationResults';
 import { VirtualEvaluationResult } from './VirtualEvaluationResult';
+import { NextClassCard } from './NextClassCard';
 
 interface DashboardProps {
   completedLessonIds: string[];
@@ -237,6 +238,8 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
               </div>
             )}
           </div>
+
+        <NextClassCard studentId={studentId} />
 
         {/* 3D Pixar Tiger Mascot Active Mission Banner */}
         <div

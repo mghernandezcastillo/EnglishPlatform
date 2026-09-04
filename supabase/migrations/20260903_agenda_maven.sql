@@ -162,11 +162,15 @@ create table if not exists public.agenda_bookings (
   status text not null default 'scheduled'
     check (status in ('scheduled', 'completed', 'cancelled', 'no_show')),
   series_id uuid,
+  meeting_url text,
   notes text,
   created_by uuid references public.profiles(id) on delete set null default auth.uid(),
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
-  constraint agenda_booking_valid_time check (ends_at > starts_at)
+  constraint agenda_booking_valid_time check (ends_at > starts_at),
+  constraint agenda_booking_meeting_url check (
+    meeting_url is null or meeting_url ~* '^https://[^[:space:]]+$'
+  )
 );
 
 -- Dos operaciones concurrentes tampoco pueden reservar al profesor o al alumno dos veces.
@@ -315,6 +319,7 @@ declare
   occurrence jsonb;
   occurrence_start timestamp without time zone;
   occurrence_end timestamp without time zone;
+  occurrence_meeting_url text;
   new_series_id uuid := gen_random_uuid();
   inserted_count integer := 0;
   student_teacher uuid;
@@ -350,11 +355,15 @@ begin
   loop
     occurrence_start := (occurrence ->> 'starts_at')::timestamp;
     occurrence_end := (occurrence ->> 'ends_at')::timestamp;
+    occurrence_meeting_url := nullif(trim(occurrence ->> 'meeting_url'), '');
     if occurrence_end <= occurrence_start then
       raise exception using errcode = '22023', message = 'La hora final debe ser posterior a la inicial.';
     end if;
     if occurrence_start::date <> occurrence_end::date then
       raise exception using errcode = '22023', message = 'Una clase debe comenzar y terminar el mismo dia.';
+    end if;
+    if occurrence_meeting_url is not null and occurrence_meeting_url !~* '^https://[^[:space:]]+$' then
+      raise exception using errcode = '22023', message = 'El link de la clase debe comenzar por https://';
     end if;
 
     if not exists (
@@ -390,10 +399,10 @@ begin
     end if;
 
     insert into public.agenda_bookings (
-      teacher_id, student_id, title, starts_at, ends_at, series_id, notes, created_by
+      teacher_id, student_id, title, starts_at, ends_at, series_id, meeting_url, notes, created_by
     ) values (
       p_teacher_id, p_student_id, coalesce(nullif(trim(p_title), ''), 'Clase de ingles'),
-      occurrence_start, occurrence_end, new_series_id, nullif(trim(p_notes), ''), auth.uid()
+      occurrence_start, occurrence_end, new_series_id, occurrence_meeting_url, nullif(trim(p_notes), ''), auth.uid()
     );
     inserted_count := inserted_count + 1;
   end loop;
@@ -408,7 +417,49 @@ $$;
 revoke all on function public.agenda_create_recurring_bookings(uuid, uuid, text, text, jsonb) from public;
 grant execute on function public.agenda_create_recurring_bookings(uuid, uuid, text, text, jsonb) to authenticated;
 
-grant usage on schema public to authenticated;
+-- Devuelve solo la siguiente clase del alumno y comprueba que siga vinculada a su profesor.
+create or replace function public.agenda_get_next_student_class(p_student_id uuid)
+returns table (
+  booking_id uuid,
+  title text,
+  starts_at timestamp without time zone,
+  ends_at timestamp without time zone,
+  meeting_url text,
+  teacher_name text,
+  teacher_timezone text
+)
+language sql
+stable
+security definer
+set search_path = public
+as $$
+  select
+    b.id,
+    b.title,
+    b.starts_at,
+    b.ends_at,
+    b.meeting_url,
+    p.full_name,
+    p.timezone
+  from public.students s
+  join public.agenda_bookings b
+    on b.student_id = s.id
+   and b.teacher_id = s.teacher_id
+  join public.profiles p
+    on p.id = b.teacher_id
+   and p.active
+  where s.id = p_student_id
+    and s.teacher_id is not null
+    and b.status = 'scheduled'
+    and b.ends_at >= timezone(coalesce(p.timezone, 'America/Bogota'), now())
+  order by b.starts_at
+  limit 1;
+$$;
+
+revoke all on function public.agenda_get_next_student_class(uuid) from public;
+grant execute on function public.agenda_get_next_student_class(uuid) to anon, authenticated;
+
+grant usage on schema public to anon, authenticated;
 grant select on public.profiles to authenticated;
 grant select, insert, update, delete on public.students to authenticated;
 grant select, update on public.students to anon;
@@ -418,4 +469,5 @@ grant select, insert, update, delete on public.student_billing_plans to authenti
 grant select, insert, update, delete on public.teacher_payments to authenticated;
 
 comment on table public.agenda_bookings is 'Clases de Agenda Maven; horarios locales de la zona configurada en el perfil.';
+comment on column public.agenda_bookings.meeting_url is 'Enlace HTTPS de Meet, Teams, Zoom u otra sala virtual.';
 comment on column public.student_billing_plans.amount is 'Valor acordado por ciclo; en per_class corresponde al valor de una clase.';

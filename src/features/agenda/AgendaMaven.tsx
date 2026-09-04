@@ -388,6 +388,7 @@ function BookingForm({ teacherId, students, initialDate, onClose, onCreated, onE
   const initialWeekday = parseLocalDate(initialDate).getDay() || 7;
   const [studentId, setStudentId] = useState(students[0]?.id || '');
   const [title, setTitle] = useState('Clase de inglés');
+  const [meetingUrl, setMeetingUrl] = useState('');
   const [notes, setNotes] = useState('');
   const [startDate, setStartDate] = useState(initialDate);
   const [endDate, setEndDate] = useState(defaultEnd);
@@ -408,7 +409,7 @@ function BookingForm({ teacherId, students, initialDate, onClose, onCreated, onE
     setSaving(true);
     setFormError('');
     try {
-      const result = await agendaService.createRecurringBooking({ teacherId, studentId, title, notes, startDate, endDate, startTime, durationMinutes: duration, weekdays, repeats });
+      const result = await agendaService.createRecurringBooking({ teacherId, studentId, title, meetingUrl, notes, startDate, endDate, startTime, durationMinutes: duration, weekdays, repeats });
       await onCreated(result.inserted);
     } catch (saveError) {
       const message = saveError instanceof Error ? saveError.message : 'No fue posible programar la clase.';
@@ -449,7 +450,8 @@ function BookingForm({ teacherId, students, initialDate, onClose, onCreated, onE
                 </div>
               </>
             )}
-            <Field label="Notas" wide><textarea value={notes} onChange={event => setNotes(event.target.value)} className="agenda-input min-h-24 py-3" placeholder="Enlace de Meet, material o recordatorio…" /></Field>
+            <Field label="Link de la clase" wide><input type="url" value={meetingUrl} onChange={event => setMeetingUrl(event.target.value)} className="agenda-input" placeholder="https://meet.google.com/xxx-xxxx-xxx" /></Field>
+            <Field label="Notas internas" wide><textarea value={notes} onChange={event => setNotes(event.target.value)} className="agenda-input min-h-24 py-3" placeholder="Material, tema o recordatorio para el profesor…" /></Field>
           </div>
         )}
         {formError && <p className="mt-5 rounded-xl bg-rose-50 p-4 font-bold text-rose-700">{formError}</p>}

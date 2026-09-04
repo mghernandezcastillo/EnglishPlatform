@@ -63,20 +63,34 @@ function addMinutes(date: string, time: string, minutes: number) {
   return `${date}T${endHours}:${endMinutes}:00`;
 }
 
+function normalizeMeetingUrl(value: string) {
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  try {
+    const url = new URL(trimmed);
+    if (url.protocol !== 'https:') throw new Error();
+    return url.toString();
+  } catch {
+    throw new Error('Escribe un link de clase válido que comience por https://');
+  }
+}
+
 function buildOccurrences(input: RecurringBookingInput) {
   const first = dateAtNoon(input.startDate);
   const last = dateAtNoon(input.repeats ? input.endDate : input.startDate);
   if (last < first) throw new Error('La fecha final debe ser igual o posterior a la inicial.');
   const allowedDays = new Set(input.repeats ? input.weekdays : [isoWeekday(first)]);
   if (!allowedDays.size) throw new Error('Selecciona al menos un día de clase.');
-  const occurrences: Array<{ starts_at: string; ends_at: string }> = [];
+  const meetingUrl = normalizeMeetingUrl(input.meetingUrl);
+  const occurrences: Array<{ starts_at: string; ends_at: string; meeting_url: string | null }> = [];
   const cursor = new Date(first);
   while (cursor <= last) {
     if (allowedDays.has(isoWeekday(cursor))) {
       const currentDate = dateOnly(cursor);
       occurrences.push({
         starts_at: `${currentDate}T${input.startTime}:00`,
-        ends_at: addMinutes(currentDate, input.startTime, input.durationMinutes)
+        ends_at: addMinutes(currentDate, input.startTime, input.durationMinutes),
+        meeting_url: meetingUrl
       });
     }
     cursor.setDate(cursor.getDate() + 1);

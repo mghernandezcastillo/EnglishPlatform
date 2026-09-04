@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Zap, Hammer, Headphones } from 'lucide-react';
 import { SpeedCards } from './SpeedCards';
@@ -45,25 +45,44 @@ export function MissionRunner({
   const [interstitial, setInterstitial] = useState<InterstitialState>(null);
   const [countdown, setCountdown] = useState<number>(3);
   const [startTime] = useState<number>(Date.now());
-  
   const [results, setResults] = useState<Partial<MissionResults>>({});
+  const transitionLockedRef = useRef(false);
+  const transitionTimerRef = useRef<number | null>(null);
+  const completionLockedRef = useRef(false);
+
+  // Accept both legacy prompt/answer entries and the newer spanish/english shape.
+  // This hook must stay above every conditional return.
+  const buildItMapped = useMemo(() => content.buildIt.map((item: any) => ({
+    spanish: item.prompt || item.spanish || '',
+    english: item.answer || item.english || '',
+    tokens: item.tokens || [],
+    hints: item.hints || []
+  })), [content.buildIt]);
 
   // Countdown timer for intro
   useEffect(() => {
     if (stage === 'intro') {
-      const timer = setInterval(() => {
+      let launchTimer: number | null = null;
+      const timer = window.setInterval(() => {
         setCountdown((prev) => {
           if (prev <= 1) {
-            clearInterval(timer);
-            setTimeout(() => setStage('speed_cards'), 1000);
+            window.clearInterval(timer);
+            launchTimer = window.setTimeout(() => setStage('speed_cards'), 1000);
             return 0; // 0 means GO!
           }
           return prev - 1;
         });
       }, 1000);
-      return () => clearInterval(timer);
+      return () => {
+        window.clearInterval(timer);
+        if (launchTimer !== null) window.clearTimeout(launchTimer);
+      };
     }
   }, [stage]);
+
+  useEffect(() => () => {
+    if (transitionTimerRef.current !== null) window.clearTimeout(transitionTimerRef.current);
+  }, []);
 
   const handleExit = () => {
     if (window.confirm('La misión no se guardará. ¿Salir?')) {
@@ -72,28 +91,36 @@ export function MissionRunner({
   };
 
   const handleSpeedCardsComplete = (res: { score: number; total: number; unknownTerms: string[] }) => {
+    if (transitionLockedRef.current) return;
+    transitionLockedRef.current = true;
     setResults(prev => ({ ...prev, speedCards: res }));
     setInterstitial('speed_cards_to_build_it');
-    setTimeout(() => {
+    transitionTimerRef.current = window.setTimeout(() => {
       setInterstitial(null);
       setStage('build_it');
+      transitionLockedRef.current = false;
     }, 2000);
   };
 
   const handleBuildItComplete = (res: { score: number; total: number; hintsUsed: number }) => {
+    if (transitionLockedRef.current) return;
+    transitionLockedRef.current = true;
     setResults(prev => ({ ...prev, buildIt: res }));
     setInterstitial('build_it_to_ear_check');
-    setTimeout(() => {
+    transitionTimerRef.current = window.setTimeout(() => {
       setInterstitial(null);
       setStage('ear_check');
+      transitionLockedRef.current = false;
     }, 2000);
   };
 
   const handleEarCheckComplete = (res: { score: number; total: number }) => {
+    if (completionLockedRef.current) return;
+    completionLockedRef.current = true;
     const timeSpentSeconds = Math.floor((Date.now() - startTime) / 1000);
-    
-    const sc = results.speedCards!;
-    const bi = results.buildIt!;
+
+    const sc = results.speedCards || { score: 0, total: content.speedCards.length, unknownTerms: [] };
+    const bi = results.buildIt || { score: 0, total: content.buildIt.length, hintsUsed: 0 };
     const ec = res;
     
     const totalScore = sc.score + bi.score + ec.score;
@@ -229,14 +256,6 @@ export function MissionRunner({
       </div>
     );
   }
-
-  // Map buildIt data if it uses prompt/answer instead of spanish/english
-  const buildItMapped = content.buildIt.map((item: any) => ({
-    spanish: item.prompt || item.spanish || '',
-    english: item.answer || item.english || '',
-    tokens: item.tokens || [],
-    hints: item.hints || []
-  }));
 
   return (
     <div className={`fixed inset-0 flex flex-col ${theme === 'vibrant' ? 'bg-slate-50' : 'bg-slate-100'}`}>

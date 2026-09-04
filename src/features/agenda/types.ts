@@ -36,6 +36,7 @@ export interface AgendaBooking {
   ends_at: string;
   status: BookingStatus;
   series_id?: string | null;
+  meeting_url?: string | null;
   notes?: string | null;
   students?: { id: string; name: string } | null;
 }
@@ -75,6 +76,7 @@ export interface RecurringBookingInput {
   teacherId: string;
   studentId: string;
   title: string;
+  meetingUrl: string;
   notes: string;
   startDate: string;
   endDate: string;

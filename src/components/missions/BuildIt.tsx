@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Lightbulb, Check, RotateCcw, ArrowRight } from 'lucide-react';
 
@@ -22,6 +22,8 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
   const [isError, setIsError] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [hintTokenId, setHintTokenId] = useState<string | null>(null);
+  const verifyLockedRef = useRef(false);
+  const feedbackTimerRef = useRef<number | null>(null);
 
   const currentSentence = sentences[currentIndex];
 
@@ -37,11 +39,16 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
       setIsError(false);
       setIsSuccess(false);
       setHintTokenId(null);
+      verifyLockedRef.current = false;
     }
   }, [currentIndex, currentSentence]);
 
+  useEffect(() => () => {
+    if (feedbackTimerRef.current !== null) window.clearTimeout(feedbackTimerRef.current);
+  }, []);
+
   const handleTokenSelect = (token: { id: string; text: string }) => {
-    if (isVerifying || isSuccess) return;
+    if (verifyLockedRef.current || isVerifying || isSuccess) return;
     
     setAvailableTokens((prev) => prev.filter((t) => t.id !== token.id));
     setAssembledTokens((prev) => [...prev, token]);
@@ -49,17 +56,17 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
   };
 
   const handleTokenRemove = (token: { id: string; text: string }) => {
-    if (isVerifying || isSuccess) return;
+    if (verifyLockedRef.current || isVerifying || isSuccess) return;
 
     setAssembledTokens((prev) => prev.filter((t) => t.id !== token.id));
     setAvailableTokens((prev) => [...prev, token]);
   };
 
-  const spanishPrompt = currentSentence.spanish || (currentSentence as any).prompt || '';
-  const englishAnswer = currentSentence.english || (currentSentence as any).answer || '';
+  const spanishPrompt = currentSentence?.spanish || (currentSentence as any)?.prompt || '';
+  const englishAnswer = currentSentence?.english || (currentSentence as any)?.answer || '';
 
   const handleUseHint = () => {
-    if (isVerifying || isSuccess) return;
+    if (verifyLockedRef.current || isVerifying || isSuccess) return;
     
     const correctEnglishTokens = englishAnswer.split(' ');
     const nextExpectedWord = correctEnglishTokens[assembledTokens.length];
@@ -74,7 +81,8 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
   };
 
   const handleVerify = () => {
-    if (assembledTokens.length === 0) return;
+    if (verifyLockedRef.current || assembledTokens.length === 0 || !currentSentence) return;
+    verifyLockedRef.current = true;
     setIsVerifying(true);
     
     const assembledText = assembledTokens.map(t => t.text).join(' ').trim().toLowerCase().replace(/[.,!?;:]/g, '');
@@ -82,9 +90,10 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
     
     if (assembledText === correctText) {
       setIsSuccess(true);
-      setTimeout(() => {
+      feedbackTimerRef.current = window.setTimeout(() => {
         if (currentIndex < sentences.length - 1) {
           setCurrentIndex(prev => prev + 1);
+          verifyLockedRef.current = false;
         } else {
           onComplete({
             score: Math.max(0, 100 - (hintsUsed * 10)),
@@ -96,14 +105,13 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
       }, 1500);
     } else {
       setIsError(true);
-      setTimeout(() => {
+      feedbackTimerRef.current = window.setTimeout(() => {
         setIsError(false);
         setIsVerifying(false);
+        verifyLockedRef.current = false;
       }, 800);
     }
   };
-
-  if (!currentSentence) return null;
 
   const bgGradient = theme === 'vibrant' 
     ? 'bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-600'
@@ -114,6 +122,19 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
     : 'bg-slate-700 text-white shadow-md';
 
   const containerThemeClass = theme === 'vibrant' ? 'text-white' : 'text-white';
+
+  if (!currentSentence) {
+    return (
+      <div className={`flex h-full w-full flex-col items-center justify-center p-6 text-center ${bgGradient} ${containerThemeClass}`}>
+        <RotateCcw className="h-16 w-16 text-white/90" aria-hidden="true" />
+        <h2 className="mt-4 text-2xl font-black">No pudimos cargar esta frase</h2>
+        <p className="mt-2 max-w-md text-white/85">Continúa para conservar el avance de las otras estaciones.</p>
+        <button type="button" onClick={() => onComplete({ score: 0, total: sentences.length, hintsUsed })} className="mt-6 min-h-12 rounded-2xl bg-white px-6 font-black text-emerald-700 shadow-lg">
+          Continuar
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className={`flex flex-col h-full w-full p-4 ${bgGradient} ${containerThemeClass}`}>

@@ -19,6 +19,8 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [rate, setRate] = useState(0.9);
   const [showConfetti, setShowConfetti] = useState(false);
+  const answerLockedRef = useRef(false);
+  const advanceTimerRef = useRef<number | null>(null);
 
   const currentItem = items[currentIndex];
   const isVibrant = theme === 'vibrant';
@@ -38,36 +40,53 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
       gain.gain.exponentialRampToValueAtTime(0.00001, ctx.currentTime + 0.5);
       osc.start();
       osc.stop(ctx.currentTime + 0.5);
+      osc.onended = () => ctx.close().catch(() => {});
     } catch (e) {
       // Ignore audio errors
     }
   };
 
   const speak = useCallback((text: string, currentRate: number = 0.9) => {
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    utterance.rate = currentRate;
-    
-    const voices = window.speechSynthesis.getVoices();
-    const enVoice = voices.find(v => v.lang.startsWith('en') && v.name.includes('Female')) || voices.find(v => v.lang.startsWith('en'));
-    if (enVoice) utterance.voice = enVoice;
-    
-    utterance.onstart = () => setIsPlaying(true);
-    utterance.onend = () => setIsPlaying(false);
-    utterance.onerror = () => setIsPlaying(false);
-    
-    window.speechSynthesis.speak(utterance);
+    try {
+      if (!('speechSynthesis' in window) || typeof SpeechSynthesisUtterance === 'undefined') {
+        setIsPlaying(false);
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = currentRate;
+
+      const voices = window.speechSynthesis.getVoices();
+      const enVoice = voices.find(v => v.lang.startsWith('en') && v.name.includes('Female')) || voices.find(v => v.lang.startsWith('en'));
+      if (enVoice) utterance.voice = enVoice;
+
+      utterance.onstart = () => setIsPlaying(true);
+      utterance.onend = () => setIsPlaying(false);
+      utterance.onerror = () => setIsPlaying(false);
+
+      window.speechSynthesis.speak(utterance);
+    } catch {
+      setIsPlaying(false);
+    }
   }, []);
 
   // Ensure voices are loaded
   useEffect(() => {
-    window.speechSynthesis.getVoices();
+    try {
+      window.speechSynthesis?.getVoices();
+    } catch {}
+    return () => {
+      if (advanceTimerRef.current !== null) window.clearTimeout(advanceTimerRef.current);
+      try {
+        window.speechSynthesis?.cancel();
+      } catch {}
+    };
   }, []);
 
   const handleOptionClick = (option: string) => {
-    if (selectedAnswer !== null) return;
-    
+    if (answerLockedRef.current || selectedAnswer !== null || !currentItem) return;
+    answerLockedRef.current = true;
     setSelectedAnswer(option);
     
     const isCorrect = option === currentItem.correctAnswer;
@@ -77,11 +96,12 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
       setShowConfetti(true);
     }
 
-    setTimeout(() => {
+    advanceTimerRef.current = window.setTimeout(() => {
       setShowConfetti(false);
       if (currentIndex < items.length - 1) {
         setCurrentIndex(i => i + 1);
         setSelectedAnswer(null);
+        answerLockedRef.current = false;
       } else {
         onComplete({ score: isCorrect ? score + 1 : score, total: items.length });
       }
@@ -111,8 +131,21 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
       : "bg-slate-800/50 text-slate-400 border-slate-700";
   };
 
+  if (!currentItem) {
+    return (
+      <div className="flex h-full min-h-[400px] w-full flex-col items-center justify-center bg-gradient-to-br from-purple-700 via-fuchsia-700 to-pink-600 p-6 text-center text-white">
+        <HeadphonesFallback />
+        <h2 className="mt-4 text-2xl font-black">No pudimos cargar este audio</h2>
+        <p className="mt-2 max-w-md text-white/85">Puedes continuar la misión sin perder tu avance.</p>
+        <button type="button" onClick={() => onComplete({ score, total: items.length })} className="mt-6 min-h-12 rounded-2xl bg-white px-6 font-black text-purple-700 shadow-lg">
+          Continuar
+        </button>
+      </div>
+    );
+  }
+
   return (
-    <div className={`min-h-[400px] w-full p-6 rounded-3xl flex flex-col items-center \${
+    <div className={`h-full min-h-[400px] w-full p-6 flex flex-col items-center ${
       isVibrant 
         ? 'bg-gradient-to-br from-purple-600 via-fuchsia-600 to-pink-500' 
         : 'bg-gradient-to-br from-gray-900 via-slate-800 to-blue-950'
@@ -132,7 +165,7 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
                 y: (Math.random() - 0.5) * 400
               }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className={`absolute w-3 h-3 rounded-full \${
+              className={`absolute w-3 h-3 rounded-full ${
                 ['bg-yellow-400', 'bg-blue-400', 'bg-green-400', 'bg-pink-400'][Math.floor(Math.random() * 4)]
               }`}
             />
@@ -142,7 +175,7 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
 
       {/* Progress */}
       <div className="w-full flex justify-between items-center mb-8">
-        <div className={`text-sm font-medium px-4 py-1.5 rounded-full \${
+        <div className={`text-sm font-medium px-4 py-1.5 rounded-full ${
           isVibrant ? 'bg-white/20 text-white' : 'bg-slate-800/50 text-slate-300'
         }`}>
           {currentIndex + 1} / {items.length}
@@ -154,7 +187,7 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => speak(currentItem.audioText, rate)}
-        className={`w-24 h-24 rounded-full flex items-center justify-center shadow-lg mb-6 relative \${
+        className={`w-24 h-24 rounded-full flex items-center justify-center shadow-lg mb-6 relative ${
           isVibrant ? 'bg-white text-purple-600' : 'bg-slate-700 text-cyan-400'
         }`}
       >
@@ -162,7 +195,7 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
           <motion.div 
             animate={{ scale: [1, 1.4, 1], opacity: [0.5, 0, 0.5] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            className={`absolute inset-0 rounded-full \${isVibrant ? 'bg-white' : 'bg-slate-700'}`}
+            className={`absolute inset-0 rounded-full ${isVibrant ? 'bg-white' : 'bg-slate-700'}`}
           />
         )}
         <Volume2 size={40} className="relative z-10" />
@@ -178,7 +211,7 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
           <button
             key={s.value}
             onClick={() => setRate(s.value)}
-            className={`px-4 py-1.5 text-sm font-medium rounded-full transition-colors \${
+            className={`px-4 py-1.5 text-sm font-medium rounded-full transition-colors ${
               rate === s.value 
                 ? (isVibrant ? 'bg-white text-purple-600' : 'bg-cyan-500 text-slate-900')
                 : 'text-white/70 hover:text-white'
@@ -217,9 +250,9 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
                 whileTap={!showFeedback ? { scale: 0.98 } : {}}
                 onClick={() => handleOptionClick(option)}
                 disabled={showFeedback}
-                className={`w-full relative px-6 py-5 rounded-2xl border-2 text-lg font-semibold flex items-center shadow-sm transition-colors \${getOptionStyle(option)}`}
+                className={`w-full relative px-6 py-5 rounded-2xl border-2 text-lg font-semibold flex items-center shadow-sm transition-colors ${getOptionStyle(option)}`}
               >
-                <span className={`mr-4 text-sm px-2 py-1 rounded-md \${
+                <span className={`mr-4 text-sm px-2 py-1 rounded-md ${
                   showFeedback && (isCorrect || isSelected)
                     ? 'bg-white/20 text-white'
                     : (isVibrant ? 'bg-gray-100 text-gray-500' : 'bg-slate-700 text-slate-400')
@@ -248,4 +281,8 @@ export function EarCheck({ items, theme, onComplete }: EarCheckProps) {
       </div>
     </div>
   );
+}
+
+function HeadphonesFallback() {
+  return <Volume2 className="h-16 w-16 text-white/90" aria-hidden="true" />;
 }

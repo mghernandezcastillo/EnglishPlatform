@@ -11,6 +11,10 @@ Si Agenda Maven ya estaba instalada, ejecuta también
 `supabase/migrations/20260903130000_increase_agenda_recurring_limit.sql` para habilitar
 series de hasta 1.000 clases en la base de datos.
 
+Después ejecuta `supabase/migrations/20260903140000_add_student_class_links.sql` para
+guardar el enlace de videollamada por reserva y mostrar la próxima clase en el panel
+del alumno. Esta migración recupera también los enlaces HTTPS que ya estaban en `notes`.
+
 La conexión Postgres directa local conserva `[YOUR-PASSWORD]`, por lo que la migración no se puede aplicar automáticamente desde este repositorio hasta configurar la contraseña real. No uses la llave `service_role` dentro del cliente.
 
 ## Sesiones
@@ -26,6 +30,7 @@ Supabase Auth guarda la sesión del personal en el navegador, renueva los tokens
 - Los planes y pagos se guardan en Supabase. No existe persistencia exclusiva en `localStorage` para Agenda Maven.
 - Para cambiar días o intensidad, cancela la serie futura y crea la nueva recurrencia desde la fecha efectiva.
 - Una serie puede contener hasta 1.000 clases; el formulario muestra la cantidad antes de guardar.
+- El alumno solo recibe los datos de su próxima reserva activa y el enlace ligado a su profesor asignado.
 
 ## Cálculos
 

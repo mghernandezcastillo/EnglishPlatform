@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Volume2, RotateCw, Sparkles, Check, HelpCircle } from 'lucide-react';
 import type { SpeedCard } from '../../lib/missionService';
@@ -15,11 +15,14 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
   const [score, setScore] = useState(0);
   const [unknownTerms, setUnknownTerms] = useState<string[]>([]);
   const [actionFeedback, setActionFeedback] = useState<'correct' | 'review' | null>(null);
+  const actionLockedRef = useRef(false);
+  const advanceTimerRef = useRef<number | null>(null);
 
   const currentCard = cards[currentIndex];
 
   const handleAudio = (text: string) => {
     try {
+      if (!('speechSynthesis' in window) || typeof SpeechSynthesisUtterance === 'undefined') return;
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
@@ -31,6 +34,7 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
   // Play audio on card appearance
   useEffect(() => {
     if (currentCard) {
+      actionLockedRef.current = false;
       setIsFlipped(false);
       const timer = setTimeout(() => {
         handleAudio(currentCard.audioText || currentCard.term);
@@ -39,16 +43,25 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
     }
   }, [currentIndex]);
 
+  useEffect(() => () => {
+    if (advanceTimerRef.current !== null) window.clearTimeout(advanceTimerRef.current);
+    try {
+      window.speechSynthesis?.cancel();
+    } catch {}
+  }, []);
+
   const handleKnowIt = () => {
-    if (actionFeedback) return;
+    if (actionLockedRef.current || actionFeedback || !currentCard) return;
+    actionLockedRef.current = true;
     setActionFeedback('correct');
     setScore(prev => prev + 1);
 
-    setTimeout(() => {
+    advanceTimerRef.current = window.setTimeout(() => {
       setActionFeedback(null);
       setIsFlipped(false);
       if (currentIndex < cards.length - 1) {
         setCurrentIndex(prev => prev + 1);
+        actionLockedRef.current = false;
       } else {
         onComplete({ score: score + 1, total: cards.length, unknownTerms });
       }
@@ -56,7 +69,8 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
   };
 
   const handleNeedReview = () => {
-    if (actionFeedback) return;
+    if (actionLockedRef.current || actionFeedback || !currentCard) return;
+    actionLockedRef.current = true;
     setActionFeedback('review');
     setUnknownTerms(prev => [...prev, currentCard.term]);
     
@@ -65,11 +79,12 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
       setIsFlipped(true);
     }
 
-    setTimeout(() => {
+    advanceTimerRef.current = window.setTimeout(() => {
       setActionFeedback(null);
       setIsFlipped(false);
       if (currentIndex < cards.length - 1) {
         setCurrentIndex(prev => prev + 1);
+        actionLockedRef.current = false;
       } else {
         onComplete({ score, total: cards.length, unknownTerms: [...unknownTerms, currentCard.term] });
       }
@@ -88,6 +103,19 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
   const cardBackBg = isCool 
     ? 'bg-indigo-950/95 border-purple-500/50 text-white shadow-2xl' 
     : 'bg-gradient-to-b from-amber-50 to-orange-50 text-slate-950 border-orange-300 shadow-2xl';
+
+  if (!currentCard) {
+    return (
+      <div className={`fixed inset-0 z-50 flex flex-col items-center justify-center p-6 text-center ${bgGradient}`}>
+        <RotateCw className="h-16 w-16 text-white/90" aria-hidden="true" />
+        <h2 className="mt-4 text-2xl font-black">No pudimos cargar esta tarjeta</h2>
+        <p className="mt-2 max-w-md text-white/85">Continúa para conservar el avance de las otras estaciones.</p>
+        <button type="button" onClick={() => onComplete({ score, total: cards.length, unknownTerms })} className="mt-6 min-h-12 rounded-2xl bg-white px-6 font-black text-indigo-700 shadow-lg">
+          Continuar
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className={`fixed inset-0 z-50 flex flex-col items-center justify-between p-4 pt-4 pb-8 sm:p-6 sm:pb-10 overflow-hidden ${bgGradient} select-none h-[100dvh]`}>
