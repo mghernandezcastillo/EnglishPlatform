@@ -24,6 +24,7 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
   const [hintTokenId, setHintTokenId] = useState<string | null>(null);
   const verifyLockedRef = useRef(false);
   const feedbackTimerRef = useRef<number | null>(null);
+  const selectedTokenIdsRef = useRef<Set<string>>(new Set());
 
   const currentSentence = sentences[currentIndex];
 
@@ -40,6 +41,7 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
       setIsSuccess(false);
       setHintTokenId(null);
       verifyLockedRef.current = false;
+      selectedTokenIdsRef.current = new Set();
     }
   }, [currentIndex, currentSentence]);
 
@@ -48,15 +50,17 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
   }, []);
 
   const handleTokenSelect = (token: { id: string; text: string }) => {
-    if (verifyLockedRef.current || isVerifying || isSuccess) return;
-    
+    if (verifyLockedRef.current || isVerifying || isSuccess || selectedTokenIdsRef.current.has(token.id)) return;
+    selectedTokenIdsRef.current.add(token.id);
+
     setAvailableTokens((prev) => prev.filter((t) => t.id !== token.id));
     setAssembledTokens((prev) => [...prev, token]);
     setHintTokenId(null);
   };
 
   const handleTokenRemove = (token: { id: string; text: string }) => {
-    if (verifyLockedRef.current || isVerifying || isSuccess) return;
+    if (verifyLockedRef.current || isVerifying || isSuccess || !selectedTokenIdsRef.current.has(token.id)) return;
+    selectedTokenIdsRef.current.delete(token.id);
 
     setAssembledTokens((prev) => prev.filter((t) => t.id !== token.id));
     setAvailableTokens((prev) => [...prev, token]);
@@ -96,7 +100,7 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
           verifyLockedRef.current = false;
         } else {
           onComplete({
-            score: Math.max(0, 100 - (hintsUsed * 10)),
+            score: sentences.length,
             total: sentences.length,
             hintsUsed
           });

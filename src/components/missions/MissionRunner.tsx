@@ -31,6 +31,21 @@ interface MissionRunnerProps {
 type MissionStage = 'intro' | 'speed_cards' | 'build_it' | 'ear_check' | 'results';
 type InterstitialState = null | 'speed_cards_to_build_it' | 'build_it_to_ear_check';
 
+function normalizeBuildItAnswer(value: string) {
+  return value
+    .replace(/[’`]/g, "'")
+    .replace(/\b(don|doesn|didn|isn|aren|wasn|weren|couldn|shouldn|wouldn|haven|hasn|hadn|can|won)\s+t\b/gi, "$1't")
+    .replace(/\bo\s+clock\b/gi, "o'clock")
+    .replace(/[.,!?;:]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function cleanBuildItPrompt(value: string) {
+  const prompt = value.trim();
+  return /^["'“‘]/.test(prompt) ? prompt : prompt.replace(/["'”’]\s*$/, '');
+}
+
 export function MissionRunner({
   classId,
   classTitle,
@@ -51,13 +66,17 @@ export function MissionRunner({
   const completionLockedRef = useRef(false);
 
   // Accept both legacy prompt/answer entries and the newer spanish/english shape.
-  // This hook must stay above every conditional return.
-  const buildItMapped = useMemo(() => content.buildIt.map((item: any) => ({
-    spanish: item.prompt || item.spanish || '',
-    english: item.answer || item.english || '',
-    tokens: item.tokens || [],
-    hints: item.hints || []
-  })), [content.buildIt]);
+  // Correct tokens are derived from the answer so repeated words never disappear
+  // and unrelated distractors from another sentence cannot leak into the exercise.
+  const buildItMapped = useMemo(() => content.buildIt.map((item: any) => {
+    const english = normalizeBuildItAnswer(item.answer || item.english || '');
+    return {
+      spanish: cleanBuildItPrompt(item.prompt || item.spanish || ''),
+      english,
+      tokens: english.split(/\s+/).filter(Boolean),
+      hints: item.hints || []
+    };
+  }), [content.buildIt]);
 
   // Countdown timer for intro
   useEffect(() => {
