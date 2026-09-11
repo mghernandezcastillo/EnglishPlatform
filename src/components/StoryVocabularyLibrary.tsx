@@ -1,11 +1,16 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { motion } from 'motion/react';
 import confetti from 'canvas-confetti';
 import {
   ArrowLeft,
+  ArrowRight,
+  ArrowLeftRight,
   BookMarked,
   Brain,
+  CheckCircle2,
+  Eye,
   LibraryBig,
+  Lightbulb,
   Pencil,
   RefreshCw,
   Share2,
@@ -13,7 +18,6 @@ import {
   Trash2,
   Trophy,
   Volume2,
-  Eye,
 } from 'lucide-react';
 
 export type SavedVocabularyWord = {
@@ -39,7 +43,19 @@ type StoryVocabularyLibraryProps = {
   onImportShared: () => void;
 };
 
-const fallbackAnswers = ['casa', 'tiempo', 'trabajo', 'persona', 'lugar', 'ayuda'];
+const fallbackAnswersEs = ['casa', 'tiempo', 'trabajo', 'persona', 'lugar', 'ayuda', 'día', 'cosa', 'vida', 'mundo', 'familia', 'camino'];
+const fallbackAnswersEn = ['house', 'time', 'work', 'person', 'place', 'help', 'day', 'thing', 'life', 'world', 'family', 'way'];
+
+function createDeck(wordsList: SavedVocabularyWord[], lastWordId?: string): SavedVocabularyWord[] {
+  if (!wordsList.length) return [];
+  if (wordsList.length === 1) return [...wordsList];
+  const shuffled = shuffle([...wordsList]);
+  if (lastWordId && shuffled[0].id === lastWordId) {
+    const swapIdx = Math.floor(Math.random() * (shuffled.length - 1)) + 1;
+    [shuffled[0], shuffled[swapIdx]] = [shuffled[swapIdx], shuffled[0]];
+  }
+  return shuffled;
+}
 
 function renderHighlightedSentence(sentence: string, targetWord: string) {
   if (!sentence) return null;
@@ -155,53 +171,97 @@ export function decodeSharedVocabulary(value: string | null): SavedVocabularyWor
 
 export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, initialView = 'library', onBack, onDelete, onUpdate, onImportShared }: StoryVocabularyLibraryProps) {
   const [view, setView] = useState<'library' | 'quiz' | 'result'>(initialView === 'quiz' && words.length ? 'quiz' : 'library');
-  const [quizWords, setQuizWords] = useState<SavedVocabularyWord[]>(() => initialView === 'quiz' && words.length ? shuffle(words).slice(0, Math.min(words.length, 10)) : []);
-  const [questionIndex, setQuestionIndex] = useState(0);
+  const [quizDirection, setQuizDirection] = useState<'en_to_es' | 'es_to_en'>('en_to_es');
+  const [deck, setDeck] = useState<SavedVocabularyWord[]>(() => (initialView === 'quiz' && words.length ? createDeck(words) : []));
+  const [deckIndex, setDeckIndex] = useState(0);
+  const [roundNumber, setRoundNumber] = useState(1);
+  const [totalPracticedCount, setTotalPracticedCount] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [answersVisible, setAnswersVisible] = useState(false);
+  const [isDirectRevealed, setIsDirectRevealed] = useState(false);
   const [score, setScore] = useState(0);
   const [shareStatus, setShareStatus] = useState('');
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editingEnglish, setEditingEnglish] = useState('');
   const [editingSpanish, setEditingSpanish] = useState('');
-  const currentWord = quizWords[questionIndex] || null;
+
+  const currentWord = deck[deckIndex] || null;
+  const isEnToEs = quizDirection === 'en_to_es';
+  const promptWord = currentWord ? (isEnToEs ? currentWord.english : currentWord.spanish) : '';
+  const targetAnswer = currentWord ? (isEnToEs ? currentWord.spanish : currentWord.english) : '';
+  const contextSentence = currentWord ? (isEnToEs ? currentWord.exampleEn : currentWord.exampleEs) : '';
+  const contextTranslation = currentWord ? (isEnToEs ? currentWord.exampleEs : currentWord.exampleEn) : '';
+  const isAnswered = Boolean(selectedAnswer);
+  const isResolved = isAnswered || isDirectRevealed;
+  const answeredCorrectly = isAnswered && selectedAnswer === targetAnswer;
 
   const options = useMemo(() => {
     if (!currentWord) return [];
-    const alternatives = Array.from(new Set([
-      ...words.filter((word) => word.id !== currentWord.id).map((word) => word.spanish),
-      ...fallbackAnswers
-    ])).filter((answer) => answer !== currentWord.spanish);
-    return shuffle([currentWord.spanish, ...shuffle(alternatives).slice(0, 2)]);
-  }, [currentWord, words]);
+    if (isEnToEs) {
+      const alternatives = Array.from(new Set([
+        ...words.filter((w) => w.id !== currentWord.id).map((w) => w.spanish),
+        ...fallbackAnswersEs
+      ])).filter((ans) => ans !== currentWord.spanish);
+      return shuffle([currentWord.spanish, ...shuffle(alternatives).slice(0, 2)]);
+    } else {
+      const alternatives = Array.from(new Set([
+        ...words.filter((w) => w.id !== currentWord.id).map((w) => w.english),
+        ...fallbackAnswersEn
+      ])).filter((ans) => ans !== currentWord.english);
+      return shuffle([currentWord.english, ...shuffle(alternatives).slice(0, 2)]);
+    }
+  }, [currentWord, words, isEnToEs]);
 
-  const startQuiz = () => {
+  const startQuiz = (direction?: 'en_to_es' | 'es_to_en') => {
     if (!words.length) return;
-    setQuizWords(shuffle(words).slice(0, Math.min(words.length, 10)));
-    setQuestionIndex(0);
+    if (direction === 'en_to_es' || direction === 'es_to_en') {
+      setQuizDirection(direction);
+    }
+    const freshDeck = createDeck(words);
+    setDeck(freshDeck);
+    setDeckIndex(0);
+    setRoundNumber(1);
+    setTotalPracticedCount(0);
     setSelectedAnswer('');
     setAnswersVisible(false);
+    setIsDirectRevealed(false);
     setScore(0);
     setView('quiz');
   };
 
   const chooseAnswer = (answer: string) => {
-    if (!currentWord || selectedAnswer) return;
+    if (!currentWord || isResolved) return;
     setSelectedAnswer(answer);
-    if (answer === currentWord.spanish) {
+    if (answer === targetAnswer) {
       setScore((current) => current + 1);
       confetti({ particleCount: 55, spread: 60, origin: { y: 0.72 }, colors: ['#22d3ee', '#fde047', '#34d399'] });
+      speak(currentWord.english);
     }
   };
 
+  const revealDirectAnswer = () => {
+    if (!currentWord || isResolved) return;
+    setIsDirectRevealed(true);
+    speak(currentWord.english);
+  };
+
   const nextQuestion = () => {
-    if (questionIndex >= quizWords.length - 1) {
-      setView('result');
-      return;
-    }
-    setQuestionIndex((current) => current + 1);
+    if (!deck.length) return;
+    setTotalPracticedCount((prev) => prev + 1);
     setSelectedAnswer('');
     setAnswersVisible(false);
+    setIsDirectRevealed(false);
+
+    if (deckIndex + 1 < deck.length) {
+      setDeckIndex((prev) => prev + 1);
+    } else {
+      // Reached the end of the entire vocabulary deck without repetition!
+      // Shuffle again without repeating the very last word as the first word
+      const nextDeck = createDeck(words, deck[deck.length - 1]?.id);
+      setDeck(nextDeck);
+      setDeckIndex(0);
+      setRoundNumber((r) => r + 1);
+    }
   };
 
   const speak = (text: string) => {
@@ -212,6 +272,33 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
     utterance.rate = 0.82;
     window.speechSynthesis.speak(utterance);
   };
+
+  useEffect(() => {
+    if (view !== 'quiz' || !currentWord) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+
+      if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault();
+        if (isResolved) {
+          nextQuestion();
+        } else if (!answersVisible) {
+          setAnswersVisible(true);
+        }
+      } else if (e.key === 'ArrowRight' && isResolved) {
+        e.preventDefault();
+        nextQuestion();
+      } else if (!isResolved && answersVisible && options.length > 0) {
+        if (e.key === '1' && options[0]) chooseAnswer(options[0]);
+        if (e.key === '2' && options[1]) chooseAnswer(options[1]);
+        if (e.key === '3' && options[2]) chooseAnswer(options[2]);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [view, currentWord, isResolved, answersVisible, options]);
 
   const startEditing = (word: SavedVocabularyWord) => {
     setEditingId(word.id);
@@ -255,55 +342,235 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
   };
 
   if (view === 'quiz' && currentWord) {
-    const answeredCorrectly = selectedAnswer === currentWord.spanish;
     return (
       <div className="fixed inset-0 z-50 flex min-h-0 flex-col overflow-hidden bg-gradient-to-br from-slate-950 via-violet-950 to-cyan-950 text-white">
-        <header className="shrink-0 border-b border-white/10 bg-slate-950/70 px-4 py-3 backdrop-blur-xl">
-          <div className="mx-auto flex max-w-5xl items-center gap-3">
-            <button type="button" onClick={() => setView('library')} className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 hover:bg-white hover:text-slate-950" aria-label="Volver al vocabulario"><ArrowLeft className="h-6 w-6" /></button>
-            <div className="min-w-0 flex-1"><div className="text-xs font-black uppercase tracking-[0.2em] text-cyan-300">{contextLabel ? `Repaso de ${contextLabel}` : 'Test de memoria'}</div><div className="text-xl font-black">¿Qué significa esta palabra?</div></div>
-            <div className="rounded-xl bg-white/10 px-4 py-2 text-lg font-black text-yellow-300">{questionIndex + 1}/{quizWords.length}</div>
+        <header className="shrink-0 border-b border-white/10 bg-slate-950/80 px-4 py-3 backdrop-blur-xl">
+          <div className="mx-auto flex max-w-5xl items-center justify-between gap-3">
+            <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+              <button
+                type="button"
+                onClick={() => setView('library')}
+                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white/10 hover:bg-white hover:text-slate-950 transition"
+                aria-label="Volver al vocabulario"
+                title="Volver a la lista"
+              >
+                <ArrowLeft className="h-5 w-5" />
+              </button>
+              <div className="min-w-0">
+                <div className="text-[0.65rem] font-black uppercase tracking-[0.2em] text-cyan-300">
+                  {contextLabel ? `Repaso: ${contextLabel}` : 'Práctica Continua'}
+                </div>
+                <div className="text-base sm:text-lg font-black truncate">
+                  {isEnToEs ? '¿Cómo se dice en español?' : '¿Cómo se dice en inglés?'}
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              {/* Direction Switch */}
+              <button
+                type="button"
+                onClick={() => {
+                  setQuizDirection((prev) => (prev === 'en_to_es' ? 'es_to_en' : 'en_to_es'));
+                  setSelectedAnswer('');
+                  setAnswersVisible(false);
+                  setIsDirectRevealed(false);
+                }}
+                className="flex items-center gap-1.5 rounded-xl bg-cyan-400/20 hover:bg-cyan-400 hover:text-slate-950 border border-cyan-400/40 px-3 py-2 text-xs font-black text-cyan-200 transition"
+                title="Cambiar dirección (Inglés ➔ Español o Español ➔ Inglés)"
+              >
+                <ArrowLeftRight className="h-4 w-4 shrink-0" />
+                <span className="hidden sm:inline">{isEnToEs ? 'EN ➔ ES' : 'ES ➔ EN'}</span>
+              </button>
+
+              {/* Deck round progress */}
+              <div className="rounded-xl bg-white/10 px-3 py-2 text-xs sm:text-sm font-black text-yellow-300 whitespace-nowrap">
+                #{deckIndex + 1}/{deck.length}
+                {roundNumber > 1 && (
+                  <span className="ml-1 text-[0.7rem] text-white/60">(Ciclo {roundNumber})</span>
+                )}
+              </div>
+
+              {/* Score badge */}
+              <div className="hidden sm:flex items-center gap-1 rounded-xl bg-emerald-500/20 border border-emerald-400/30 px-3 py-2 text-xs sm:text-sm font-black text-emerald-300">
+                <CheckCircle2 className="h-4 w-4" />
+                <span>{score}</span>
+              </div>
+
+              {/* Stop / Finish button */}
+              <button
+                type="button"
+                onClick={() => setView('result')}
+                className="flex items-center gap-1 rounded-xl bg-rose-500/20 hover:bg-rose-500 hover:text-white border border-rose-400/30 px-3 py-2 text-xs font-black text-rose-200 transition"
+                title="Parar práctica y ver resultados"
+              >
+                Parar
+              </button>
+            </div>
           </div>
-          <div className="mx-auto mt-3 h-2 max-w-5xl overflow-hidden rounded-full bg-white/10"><motion.div className="h-full rounded-full bg-gradient-to-r from-cyan-400 to-yellow-300" animate={{ width: `${((questionIndex + 1) / quizWords.length) * 100}%` }} /></div>
+
+          <div className="mx-auto mt-2.5 h-1.5 max-w-5xl overflow-hidden rounded-full bg-white/10">
+            <motion.div
+              className="h-full rounded-full bg-gradient-to-r from-cyan-400 via-yellow-300 to-emerald-400"
+              animate={{ width: `${((deckIndex + 1) / deck.length) * 100}%` }}
+              transition={{ duration: 0.2 }}
+            />
+          </div>
         </header>
+
         <main className="flex min-h-0 flex-1 items-center justify-center overflow-y-auto p-4 sm:p-8">
-          <motion.section key={currentWord.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-4xl rounded-[2.5rem] border border-white/15 bg-white/[0.08] p-5 text-center shadow-2xl backdrop-blur-xl sm:p-10">
-            <button type="button" onClick={() => speak(currentWord.english)} className="mx-auto flex min-h-14 items-center gap-3 rounded-2xl bg-cyan-300/15 px-5 font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-cyan-950"><Volume2 className="h-6 w-6" /> Escuchar</button>
-            <h1 className="mt-6 text-[clamp(3rem,9vw,6.5rem)] font-black leading-tight tracking-tight text-white">{currentWord.english}</h1>
-            {currentWord.exampleEn && (
-              <div className="mx-auto mt-4 max-w-3xl rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-md">
-                <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan-300/80 mb-1.5">Frase de la historia</p>
-                <p className="text-xl sm:text-2xl font-bold leading-relaxed text-indigo-100/90">
-                  {renderHighlightedSentence(currentWord.exampleEn, currentWord.english)}
+          <motion.section
+            key={`${currentWord.id}-${quizDirection}-${deckIndex}`}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="w-full max-w-4xl rounded-[2.5rem] border border-white/15 bg-white/[0.08] p-5 text-center shadow-2xl backdrop-blur-xl sm:p-10"
+          >
+            {/* Audio pronunciation button */}
+            <button
+              type="button"
+              onClick={() => speak(currentWord.english)}
+              className="mx-auto flex min-h-12 items-center gap-2 rounded-2xl bg-cyan-300/15 px-5 font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-cyan-950"
+              title="Escuchar pronunciación en inglés"
+            >
+              <Volume2 className="h-5 w-5" />
+              <span>{isEnToEs ? 'Escuchar en inglés' : 'Pronunciar en inglés'}</span>
+            </button>
+
+            {/* Main Word / Expression Prompt */}
+            <div className="mt-5">
+              <span className="text-xs font-black uppercase tracking-widest text-cyan-300/80 bg-white/5 px-3 py-1 rounded-full border border-white/10">
+                {isEnToEs ? 'Palabra en inglés' : 'Expresión en español'}
+              </span>
+              <h1 className="mt-3 text-[clamp(2.5rem,8vw,5.5rem)] font-black leading-tight tracking-tight text-white">
+                {promptWord}
+              </h1>
+            </div>
+
+            {/* Context Sentence */}
+            {contextSentence && (
+              <div className="mx-auto mt-5 max-w-3xl rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-md text-left sm:text-center">
+                <p className="text-[0.65rem] sm:text-xs font-black uppercase tracking-[0.2em] text-cyan-300/80 mb-1">
+                  Frase de contexto ({isEnToEs ? 'Historia' : 'Traducción'})
                 </p>
-                {selectedAnswer && currentWord.exampleEs && (
+                <p className="text-lg sm:text-2xl font-bold leading-relaxed text-indigo-100/90">
+                  {isEnToEs ? renderHighlightedSentence(currentWord.exampleEn, currentWord.english) : `"${contextSentence}"`}
+                </p>
+                {isResolved && contextTranslation && (
                   <motion.p
                     initial={{ opacity: 0, y: -4 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="mt-2.5 border-t border-white/10 pt-2 text-sm sm:text-base font-semibold italic text-slate-300/90"
                   >
-                    &ldquo;{currentWord.exampleEs}&rdquo;
+                    &ldquo;{contextTranslation}&rdquo;
                   </motion.p>
                 )}
               </div>
             )}
-            {!answersVisible ? (
-              <button type="button" onClick={() => setAnswersVisible(true)} className="mx-auto mt-7 flex min-h-20 w-full max-w-3xl items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-yellow-300 to-orange-400 px-6 text-2xl font-black text-slate-950 shadow-xl transition hover:-translate-y-1 hover:from-yellow-200 hover:to-orange-300"><Eye className="h-8 w-8" /> Ver posibles respuestas</button>
-            ) : (
-              <div className="mx-auto mt-7 grid max-w-3xl gap-3 sm:grid-cols-3">
-                {options.map((answer) => {
-                  const chosen = selectedAnswer === answer;
-                  const correct = selectedAnswer && answer === currentWord.spanish;
-                  return <button key={answer} type="button" disabled={Boolean(selectedAnswer)} onClick={() => chooseAnswer(answer)} className={`min-h-24 rounded-2xl border-2 p-4 text-xl font-black transition ${correct ? 'border-emerald-200 bg-emerald-400 text-emerald-950' : chosen ? 'border-rose-200 bg-rose-500 text-white' : 'border-white/15 bg-white text-slate-950 hover:-translate-y-1 hover:border-yellow-300'}`}>{answer}</button>;
-                })}
+
+            {/* UNRESOLVED STATE: Options hidden or shown */}
+            {!isResolved && (
+              <div className="mx-auto mt-7 max-w-3xl space-y-4">
+                {!answersVisible ? (
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setAnswersVisible(true)}
+                      className="w-full sm:flex-1 flex min-h-16 items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 px-6 text-xl font-black text-slate-950 shadow-xl transition hover:-translate-y-0.5 hover:shadow-yellow-300/20"
+                    >
+                      <Eye className="h-6 w-6" />
+                      <span>Ver opciones (Pistas)</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={revealDirectAnswer}
+                      className="w-full sm:w-auto flex min-h-16 items-center justify-center gap-2 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/20 px-6 text-base font-black text-white transition hover:-translate-y-0.5"
+                    >
+                      <Lightbulb className="h-5 w-5 text-yellow-300" />
+                      <span>Revelar respuesta</span>
+                    </button>
+                  </div>
+                ) : (
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between text-xs font-black uppercase tracking-wider text-cyan-300 px-1">
+                      <span>Selecciona una opción:</span>
+                      <button
+                        type="button"
+                        onClick={revealDirectAnswer}
+                        className="text-yellow-300 hover:underline inline-flex items-center gap-1"
+                      >
+                        <Lightbulb className="h-3.5 w-3.5" /> Revelar directamente
+                      </button>
+                    </div>
+
+                    <div className="grid gap-3 sm:grid-cols-3">
+                      {options.map((answer, optIdx) => (
+                        <button
+                          key={answer}
+                          type="button"
+                          disabled={isAnswered}
+                          onClick={() => chooseAnswer(answer)}
+                          className="min-h-20 rounded-2xl border-2 border-white/15 bg-white p-4 text-xl font-black text-slate-950 transition hover:-translate-y-1 hover:border-yellow-300 active:scale-95 shadow-md relative"
+                        >
+                          <span className="absolute left-2.5 top-2.5 text-[0.65rem] font-black opacity-40 px-1.5 py-0.5 rounded bg-slate-900/10">
+                            {optIdx + 1}
+                          </span>
+                          {answer}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
-            {selectedAnswer && (
-              <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className={`mx-auto mt-5 max-w-3xl rounded-2xl p-4 text-lg font-black ${answeredCorrectly ? 'bg-emerald-300 text-emerald-950' : 'bg-rose-500 text-white'}`}>
-                {answeredCorrectly ? '¡Correcto! La recordaste.' : `La respuesta correcta es: ${currentWord.spanish}`}
+
+            {/* RESOLVED STATE (Answered or directly revealed) */}
+            {isResolved && (
+              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mx-auto mt-6 max-w-3xl space-y-4">
+                <div
+                  className={`rounded-2xl p-5 border shadow-xl ${
+                    answeredCorrectly
+                      ? 'bg-emerald-500/20 border-emerald-400/40 text-emerald-100'
+                      : isDirectRevealed
+                      ? 'bg-indigo-500/20 border-indigo-400/40 text-white'
+                      : 'bg-rose-500/20 border-rose-400/40 text-rose-100'
+                  }`}
+                >
+                  <div className="text-xs font-black uppercase tracking-widest text-cyan-300 mb-1">
+                    {answeredCorrectly
+                      ? '¡Correcto! Respuesta acertada 🎉'
+                      : isDirectRevealed
+                      ? '💡 Respuesta revelada'
+                      : `Incorrecto: elegiste "${selectedAnswer}"`}
+                  </div>
+                  <div className="flex flex-wrap items-center justify-center gap-3 text-2xl sm:text-3xl font-black text-white">
+                    <span className="text-yellow-300">{currentWord.english}</span>
+                    <span className="text-white/40">⟷</span>
+                    <span className="text-emerald-300">{currentWord.spanish}</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+                  <button
+                    type="button"
+                    onClick={nextQuestion}
+                    className="flex min-h-16 items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-yellow-300 via-amber-300 to-orange-400 px-10 text-xl font-black text-slate-950 shadow-2xl transition hover:-translate-y-1 hover:shadow-yellow-400/20"
+                  >
+                    <span>Siguiente palabra</span>
+                    <ArrowRight className="h-6 w-6" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setView('result')}
+                    className="flex min-h-16 items-center justify-center gap-2 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 px-6 text-base font-bold text-white transition"
+                  >
+                    Terminar sesión
+                  </button>
+                </div>
+                <p className="text-xs font-semibold text-white/40">
+                  Tip: Presiona <kbd className="px-1.5 py-0.5 rounded bg-white/10 text-white font-mono">Espacio</kbd> o <kbd className="px-1.5 py-0.5 rounded bg-white/10 text-white font-mono">Enter</kbd> para avanzar.
+                </p>
               </motion.div>
             )}
-            {selectedAnswer && <button type="button" onClick={nextQuestion} className="mt-5 min-h-14 rounded-2xl bg-gradient-to-r from-yellow-300 to-orange-400 px-8 text-lg font-black text-slate-950 shadow-xl">{questionIndex === quizWords.length - 1 ? 'Ver resultado' : 'Siguiente palabra'}</button>}
           </motion.section>
         </main>
       </div>
@@ -311,17 +578,47 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
   }
 
   if (view === 'result') {
-    const percentage = quizWords.length ? Math.round((score / quizWords.length) * 100) : 0;
+    const totalPracticed = totalPracticedCount + (isResolved ? 1 : 0);
+    const percentage = totalPracticed ? Math.round((score / totalPracticed) * 100) : 0;
+
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-950 p-4 text-white">
         <motion.section initial={{ opacity: 0, scale: 0.92 }} animate={{ opacity: 1, scale: 1 }} className="w-full max-w-2xl rounded-[2.5rem] border border-white/15 bg-white/10 p-7 text-center shadow-2xl backdrop-blur-xl sm:p-12">
-          <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-[2rem] bg-yellow-300 text-yellow-950 shadow-xl"><Trophy className="h-12 w-12" /></div>
-          <div className="mt-6 text-sm font-black uppercase tracking-[0.22em] text-cyan-300">Repaso completado</div>
-          <h1 className="mt-2 text-6xl font-black">{score}/{quizWords.length}</h1>
-          <p className="mt-3 text-xl font-bold text-white/70">Recordaste correctamente el {percentage}%.</p>
+          <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-[2rem] bg-yellow-300 text-yellow-950 shadow-xl">
+            <Trophy className="h-12 w-12" />
+          </div>
+          <div className="mt-6 text-sm font-black uppercase tracking-[0.22em] text-cyan-300">Sesión de práctica finalizada</div>
+          <h1 className="mt-2 text-5xl sm:text-6xl font-black">{score} / {totalPracticed} aciertos</h1>
+          <p className="mt-3 text-xl font-bold text-white/80">
+            Completaste {totalPracticed} palabra{totalPracticed === 1 ? '' : 's'} con {percentage}% de acierto.
+          </p>
+          <p className="mt-1 text-sm font-semibold text-cyan-200/80">
+            Total de palabras en tu lista: {words.length} ({roundNumber > 1 ? `${roundNumber} ciclos completados` : 'Ciclo 1'})
+          </p>
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
-            <button type="button" onClick={startQuiz} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-cyan-300 to-emerald-300 px-5 font-black text-slate-950"><RefreshCw className="h-5 w-5" /> Repetir test</button>
-            <button type="button" onClick={() => setView('library')} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-white/10 px-5 font-black hover:bg-white hover:text-slate-950"><LibraryBig className="h-5 w-5" /> Ver mis palabras</button>
+            <button
+              type="button"
+              onClick={() => {
+                setView('quiz');
+              }}
+              className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-cyan-300 to-emerald-300 px-5 font-black text-slate-950 hover:opacity-95 transition"
+            >
+              <ArrowRight className="h-5 w-5" /> Continuar practicando
+            </button>
+            <button
+              type="button"
+              onClick={() => startQuiz()}
+              className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-yellow-300 hover:bg-yellow-200 px-5 font-black text-slate-950 transition"
+            >
+              <RefreshCw className="h-5 w-5" /> Reiniciar desde cero
+            </button>
+            <button
+              type="button"
+              onClick={() => setView('library')}
+              className="col-span-full flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-white/10 px-5 font-black hover:bg-white hover:text-slate-950 transition"
+            >
+              <LibraryBig className="h-5 w-5" /> Volver a mis palabras
+            </button>
           </div>
         </motion.section>
       </div>
@@ -343,8 +640,42 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
             <div><div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-black uppercase tracking-widest text-cyan-200"><BookMarked className="h-4 w-4" /> Tu memoria en crecimiento</div><h1 className="mt-4 text-[clamp(2.4rem,6vw,5rem)] font-black leading-none">{contextLabel || 'Guarda. Recuerda. Usa.'}</h1><p className="mt-3 max-w-2xl text-lg font-semibold text-white/70">{subtitle || 'Repasa el significado y comprueba tu memoria con preguntas rápidas de tres opciones.'}</p></div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-              <button type="button" disabled={!words.length} onClick={startQuiz} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-yellow-300 to-orange-400 px-6 text-lg font-black text-slate-950 shadow-xl disabled:opacity-40"><Brain className="h-6 w-6" /> Test de memoria</button>
-              {shared ? <button type="button" onClick={onImportShared} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-300 px-6 font-black text-emerald-950"><BookMarked className="h-5 w-5" /> Guardar en mi vocabulario</button> : <button type="button" disabled={!words.length} onClick={shareLibrary} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-6 font-black transition hover:bg-white hover:text-slate-950 disabled:opacity-40"><Share2 className="h-5 w-5" /> {shareStatus || 'Compartir enlace'}</button>}
+              <div className="flex flex-col gap-2">
+                <button
+                  type="button"
+                  disabled={!words.length}
+                  onClick={() => startQuiz('en_to_es')}
+                  className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-yellow-300 via-amber-300 to-orange-400 px-6 text-lg font-black text-slate-950 shadow-xl transition hover:-translate-y-0.5 disabled:opacity-40"
+                >
+                  <Brain className="h-6 w-6" /> Test: Inglés ➔ Español
+                </button>
+                <button
+                  type="button"
+                  disabled={!words.length}
+                  onClick={() => startQuiz('es_to_en')}
+                  className="flex min-h-11 items-center justify-center gap-2 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 px-5 text-sm font-black text-cyan-200 transition hover:-translate-y-0.5 disabled:opacity-40"
+                >
+                  <ArrowLeftRight className="h-4 w-4" /> Reverso: Español ➔ Inglés
+                </button>
+              </div>
+              {shared ? (
+                <button
+                  type="button"
+                  onClick={onImportShared}
+                  className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-300 px-6 font-black text-emerald-950 transition hover:bg-emerald-200"
+                >
+                  <BookMarked className="h-5 w-5" /> Guardar en mi vocabulario
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  disabled={!words.length}
+                  onClick={shareLibrary}
+                  className="flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-6 font-black transition hover:bg-white hover:text-slate-950 disabled:opacity-40"
+                >
+                  <Share2 className="h-5 w-5" /> {shareStatus || 'Compartir enlace'}
+                </button>
+              )}
             </div>
           </div>
         </section>

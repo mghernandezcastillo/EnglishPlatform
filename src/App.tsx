@@ -7,6 +7,7 @@ import { FloatingControls } from './components/FloatingControls';
 import { BrandWordmark } from './components/BrandWordmark';
 import { dbAdmin } from './lib/db';
 import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds } from './lib/levelApproval';
+import { AppErrorBoundary } from './components/AppErrorBoundary';
 import { DbStudent, UserProgress } from './types';
 import { lessons } from './data/lessons';
 import { libraryLessons } from './data/libraryLessons';
@@ -57,21 +58,46 @@ export default function App() {
     let mounted = true;
     const isExplicitStudentRoute = () => {
       const params = new URLSearchParams(window.location.search);
-      return Boolean(params.get('studentId') || params.get('mission') || params.get('evaluacion') || params.get('structureReport') || params.get('structure_report'));
-    };
-    const applySession = (session: Parameters<typeof staffFromSession>[0]) => {
-      if (!mounted) return;
-      const staff = staffFromSession(session);
-      setStaffUser(staff);
-      if (staff && !isExplicitStudentRoute()) setRole('teacher');
-      if (!staff && !isExplicitStudentRoute()) setRole(current => current === 'student' ? current : 'none');
+      return Boolean(
+        params.get('studentId') || 
+        params.get('mission') || 
+        params.get('evaluacion') || 
+        params.get('structureReport') || 
+        params.get('structure_report') ||
+        params.get('activity') ||
+        params.get('classId') ||
+        params.get('lesson')
+      );
     };
 
     supabase.auth.getSession()
-      .then(({ data }) => applySession(data.session))
+      .then(({ data }) => {
+        if (!mounted) return;
+        const staff = staffFromSession(data.session);
+        setStaffUser(staff);
+        if (staff && !isExplicitStudentRoute()) {
+          setRole('teacher');
+        } else if (!staff && !isExplicitStudentRoute()) {
+          setRole(current => current === 'student' ? current : 'none');
+        }
+      })
       .finally(() => { if (mounted) setAuthReady(true); });
 
-    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => applySession(session));
+    const { data: listener } = supabase.auth.onAuthStateChange((event, session) => {
+      if (!mounted) return;
+      const staff = staffFromSession(session);
+      setStaffUser(staff);
+
+      // CRITICAL: Only alter role on explicit login or logout actions.
+      // Background events like TOKEN_REFRESHED or browser window focus must NEVER override an active student session.
+      if (event === 'SIGNED_OUT') {
+        setStaffUser(null);
+        setRole(current => current === 'teacher' ? 'none' : current);
+      } else if (event === 'SIGNED_IN') {
+        setRole(current => (current === 'student' ? current : (staff ? 'teacher' : 'none')));
+      }
+    });
+
     return () => {
       mounted = false;
       listener.subscription.unsubscribe();
@@ -116,8 +142,15 @@ export default function App() {
           setRole('student');
         }
 
-        // Direct Routing to Missions if requested by URL
-        if (missionParam) {
+        // Direct Routing to Missions, Class or Activities if requested by URL
+        const classIdParam = params.get('classId') || params.get('lesson');
+        const activityParam = params.get('activity');
+        if (classIdParam) {
+          setActiveLessonId(classIdParam);
+          setCurrentView('lesson');
+        } else if (activityParam === 'story_decoder') {
+          setCurrentView('story_decoder');
+        } else if (missionParam) {
           setActiveMissionParam(missionParam);
           setCurrentView('missions');
         } else if (tabParam === 'missions') {
@@ -212,6 +245,13 @@ export default function App() {
         studentType: st.type || 'adulto',
         presentationMode: studentMode
       });
+
+      // Synchronize studentId in URL so tab focus or page reload keeps active student
+      try {
+        const url = new URL(window.location.href);
+        url.searchParams.set('studentId', st.id);
+        window.history.replaceState({}, '', url.toString());
+      } catch {}
     }
     setRole('student');
   };
@@ -235,6 +275,11 @@ export default function App() {
     setActiveLessonId(lessonId);
     setCurrentView('lesson');
     setProgress(prev => ({ ...prev, currentLessonId: lessonId }));
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.set('classId', lessonId);
+      window.history.replaceState({}, '', url.toString());
+    } catch {}
   };
 
   const handleToggleClass = async (classId: string) => {
@@ -289,11 +334,23 @@ export default function App() {
     }
     setActiveLessonId(null);
     setCurrentView('dashboard');
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('classId');
+      url.searchParams.delete('lesson');
+      window.history.replaceState({}, '', url.toString());
+    } catch {}
   };
 
   const handleExitLesson = () => {
     setActiveLessonId(null);
     setCurrentView('dashboard');
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('classId');
+      url.searchParams.delete('lesson');
+      window.history.replaceState({}, '', url.toString());
+    } catch {}
   };
 
   const handleOpenEntranceAssessment = () => {
@@ -302,6 +359,11 @@ export default function App() {
 
   const handleOpenStoryDecoder = () => {
     setCurrentView('story_decoder');
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.set('activity', 'story_decoder');
+      window.history.replaceState({}, '', url.toString());
+    } catch {}
   };
 
   const handleOpenSpeakingPractice = () => {
@@ -562,10 +624,20 @@ export default function App() {
               <Settings className="w-5 h-5" />
             </button>
             <button 
-              onClick={() => setRole('none')}
+              onClick={() => {
+                try {
+                  const url = new URL(window.location.href);
+                  url.searchParams.delete('studentId');
+                  url.searchParams.delete('classId');
+                  url.searchParams.delete('lesson');
+                  url.searchParams.delete('activity');
+                  window.history.replaceState({}, '', url.pathname + (url.search ? `?${url.searchParams.toString()}` : ''));
+                } catch {}
+                setRole(staffUser ? 'teacher' : 'none');
+              }}
               className="hidden sm:block text-sm font-medium text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-1.5 rounded-lg transition-colors border border-transparent hover:border-indigo-100"
             >
-              Cambiar Perfil
+              {staffUser ? 'Panel del Profesor' : 'Cambiar Perfil'}
             </button>
           </div>
         </header>
@@ -574,15 +646,29 @@ export default function App() {
       {/* Main Content */}
       <Suspense fallback={<LazyFallback />}>
         {currentView === 'lesson' && activeLesson ? (
-          <LessonPlayer 
-            lesson={activeLesson as any}
-            onComplete={handleCompleteLesson}
-            onExit={handleExitLesson}
-          />
+          <AppErrorBoundary fallbackMessage="Ocurrió un error en la lección. Puedes reintentar o volver al panel del estudiante." onReset={() => setCurrentView('dashboard')}>
+            <LessonPlayer 
+              lesson={activeLesson as any}
+              onComplete={handleCompleteLesson}
+              onExit={handleExitLesson}
+            />
+          </AppErrorBoundary>
         ) : currentView === 'entrance_assessment' ? (
           <EntranceAssessment progress={progress} onClose={handleCloseAssessment} />
         ) : currentView === 'story_decoder' ? (
-          <StoryDecoder onClose={() => setCurrentView('dashboard')} studentId={currentStudentId} />
+          <AppErrorBoundary fallbackMessage="Ocurrió un error en Story Decoder. Puedes reintentar o volver al panel del estudiante." onReset={() => setCurrentView('dashboard')}>
+            <StoryDecoder 
+              onClose={() => {
+                setCurrentView('dashboard');
+                try {
+                  const url = new URL(window.location.href);
+                  url.searchParams.delete('activity');
+                  window.history.replaceState({}, '', url.toString());
+                } catch {}
+              }} 
+              studentId={currentStudentId} 
+            />
+          </AppErrorBoundary>
         ) : currentView === 'speaking_practice' ? (
           <SpeakingPractice onClose={() => setCurrentView('dashboard')} />
         ) : currentView === 'structure_mode' ? (

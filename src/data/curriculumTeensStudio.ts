@@ -411,11 +411,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Good morning everyone! My name is Teacher David. I am very excited to meet all of you today. How is everyone feeling?",
                   "audioTeacherText": "Good morning everyone! My name is Teacher David. I am very excited to meet all of you today. How is everyone feeling?",
-                  "question": "¿Cómo saluda el profesor y cómo se siente hoy?",
+                  "question": "¿Cómo saluda el profesor David y qué ánimo expresa?",
                   "options": [
-                    "Dice Good morning y está muy emocionado de conocerlos a todos.",
-                    "Dice Good night y está cansado por el viaje.",
-                    "Dice Goodbye y se va al descanso."
+                    "Dice Good morning y expresa que está muy emocionado de conocerlos.",
+                    "Dice Good morning pero menciona que se siente cansado por el viaje.",
+                    "Dice Good afternoon y pregunta si todos trajeron sus tareas listas."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-1.mp3"
@@ -1011,11 +1011,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Hey guys! I turn 16 this Saturday, October 12th. I am throwing a party at my house at 6:00 PM. Don't forget to come!",
                   "audioTeacherText": "Hey guys! I turn 16 this Saturday, October 12th. I am throwing a party at my house at 6:00 PM. Don't forget to come!",
-                  "question": "¿Cuántos años cumple y en qué fecha es la fiesta?",
+                  "question": "¿Cuántos años cumple y en qué horario celebrará su fiesta?",
                   "options": [
-                    "Cumple 15 años el próximo año.",
-                    "Cumple 16 años este sábado 12 de octubre.",
-                    "Cumple 18 años un domingo en la mañana."
+                    "Cumple 15 años este sábado y celebra una comida a las 8:00 PM.",
+                    "Cumple 16 años este sábado 12 de octubre en su casa a las 6:00 PM.",
+                    "Cumple 17 años el próximo mes y hará su reunión a las 6:00 PM."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-2.mp3"
@@ -1611,11 +1611,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Hello class! I have a big family. I have two older brothers and one younger sister. We all live together in a cozy apartment with our cat.",
                   "audioTeacherText": "Hello class! I have a big family. I have two older brothers and one younger sister. We all live together in a cozy apartment with our cat.",
-                  "question": "¿Cómo está conformada la familia del profesor?",
+                  "question": "¿Cómo está conformada la familia con la que vive el profesor?",
                   "options": [
-                    "Es hijo único y no tiene mascotas.",
-                    "Vive solo en una casa de campo.",
-                    "Tiene dos hermanos mayores, una hermana menor y un gato."
+                    "Vive con sus padres, dos hermanas mayores y dos perros en casa.",
+                    "Vive en un apartamento con un hermano menor y tres gatos persas.",
+                    "Vive con dos hermanos mayores, una hermana menor y un lindo gato."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-3.mp3"
@@ -2211,11 +2211,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Hi! Can I get one large pepperoni pizza, two orders of garlic bread, and a bottle of sparkling water, please?",
                   "audioTeacherText": "Hi! Can I get one large pepperoni pizza, two orders of garlic bread, and a bottle of sparkling water, please?",
-                  "question": "¿Qué está pidiendo el cliente?",
+                  "question": "¿Qué orden exacta de comida y bebida solicita el cliente?",
                   "options": [
                     "Una pizza grande de pepperoni, dos panes de ajo y agua con gas.",
-                    "Dos hamburguesas triples y una gaseosa de dieta.",
-                    "Una ensalada de frutas y un café caliente."
+                    "Dos pizzas medianas de queso, un pan de ajo y gaseosa dietética.",
+                    "Una pizza familiar con jamón, tres panes tostados y agua mineral."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-4.mp3"
@@ -2811,11 +2811,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "On weekdays, my alarm rings at 5:45 AM. I stretch, make my bed, and drink a hot cup of Colombian coffee before starting my classes.",
                   "audioTeacherText": "On weekdays, my alarm rings at 5:45 AM. I stretch, make my bed, and drink a hot cup of Colombian coffee before starting my classes.",
-                  "question": "¿A qué hora suena la alarma del profesor y qué hace primero?",
+                  "question": "¿A qué hora suena la alarma del profesor y qué hace antes de clases?",
                   "options": [
-                    "Suena a las 8:00 AM y sale corriendo sin desayunar.",
-                    "Suena a las 5:45 AM, se estira, tiende su cama y toma café.",
-                    "No usa alarma porque se despierta al mediodía."
+                    "Suena a las 6:15 AM, se baña con agua fría y toma un jugo de naranja.",
+                    "Suena a las 5:45 AM, se estira, hace su cama y toma café colombiano.",
+                    "Suena a las 7:00 AM, desayuna fruta fresca y repasa sus lecciones."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-5.mp3"
@@ -3411,10 +3411,10 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Tonight I am wearing a black leather jacket, blue jeans, and clean white sneakers. It is stylish, simple, and very comfortable.",
                   "audioTeacherText": "Tonight I am wearing a black leather jacket, blue jeans, and clean white sneakers. It is stylish, simple, and very comfortable.",
-                  "question": "¿Qué prendas describe el profesor?",
+                  "question": "¿Qué atuendo describe el profesor para esta noche?",
                   "options": [
-                    "Un vestido formal rojo con zapatos de tacón.",
-                    "Pijama deportiva para quedarse en casa.",
+                    "Un saco deportivo negro, pantalones grises y botas de cuero café.",
+                    "Una camisa casual azul, jeans oscuros y tenis deportivos negros.",
                     "Chaqueta de cuero negra, jeans azules y tenis blancos limpios."
                   ],
                   "correctOptionIndex": 2,
@@ -4011,11 +4011,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "I always listen to English podcasts while walking to class. It helps me improve my listening skills and discover new music from all over the world.",
                   "audioTeacherText": "I always listen to English podcasts while walking to class. It helps me improve my listening skills and discover new music from all over the world.",
-                  "question": "¿Qué hace el profesor mientras camina a clase?",
+                  "question": "¿Qué actividad realiza el profesor de camino a clase?",
                   "options": [
-                    "Siempre escucha podcasts en inglés para mejorar su oído y descubrir música.",
-                    "Juega videojuegos en su celular sin prestar atención.",
-                    "Nunca usa audífonos porque no le gusta la música."
+                    "Escucha podcasts en inglés para mejorar su oído y descubrir música.",
+                    "Practica listas de verbos irregulares y repasa audios de gramática.",
+                    "Llama a sus compañeros para coordinar las presentaciones del curso."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-7.mp3"
@@ -4611,11 +4611,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Welcome to soccer tryouts! If you can run, pass the ball accurately, and communicate well with your team, you have a great chance of making the squad.",
                   "audioTeacherText": "Welcome to soccer tryouts! If you can run, pass the ball accurately, and communicate well with your team, you have a great chance of making the squad.",
-                  "question": "¿Qué habilidades busca el entrenador para el equipo de fútbol?",
+                  "question": "¿Qué tres habilidades esenciales destaca el entrenador para el equipo?",
                   "options": [
-                    "Saber nadar y jugar videojuegos.",
-                    "Correr, pasar el balón con precisión y comunicarse bien en equipo.",
-                    "Llegar tarde y no pasar el balón."
+                    "Tener mucha fuerza física, patear desde lejos y liderar al grupo.",
+                    "Saber correr, pasar con precisión y comunicarse bien con el equipo.",
+                    "Correr muy rápido por las bandas, defender el arco y saltar alto."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-8.mp3"
@@ -5167,13 +5167,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y responde cuál es el pasatiempo favorito del locutor.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "In my free time, I love playing the electric guitar and streaming video games with my squad on Discord.",
                   "transcription": "In my free time, I love playing the electric guitar and streaming video games with my squad on Discord.",
-                  "question": "What does the speaker love doing in his free time?",
+                  "audioTeacherText": "In my free time, I love playing the electric guitar and streaming video games with my squad on Discord.",
+                  "question": "What two activities does the speaker enjoy during his free time?",
                   "options": [
-                    "Doing math homework all weekend long.",
-                    "Sleeping 24 hours without eating.",
-                    "Playing electric guitar and streaming video games with his squad."
+                    "Recording pop songs on guitar and editing gaming videos for YouTube.",
+                    "Practicing the acoustic drums and hosting live podcasts on Twitch.",
+                    "Playing the electric guitar and streaming video games on Discord."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-9.mp3"
@@ -5670,13 +5670,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la descripción de la mejor amiga de la hablante.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "My best friend is Sofia. Her favorite hobby is playing the acoustic guitar and our dream is to form a musical band together.",
                   "transcription": "My best friend is Sofia. Her favorite hobby is playing the acoustic guitar and our dream is to form a musical band together.",
-                  "question": "What is Sofia's favorite hobby and their shared dream?",
+                  "audioTeacherText": "My best friend is Sofia. Her favorite hobby is playing the acoustic guitar and our dream is to form a musical band together.",
+                  "question": "What is Sofia's favorite hobby and what is their shared dream?",
                   "options": [
-                    "Her hobby is playing acoustic guitar and their dream is forming a band.",
-                    "Her hobby is sleeping all day and eating chips.",
-                    "She does not like music at all."
+                    "Playing the acoustic guitar and forming a musical band together.",
+                    "Writing modern song lyrics and producing dance videos online.",
+                    "Learning electric keyboards and touring with a famous band."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-10.mp3"
@@ -6173,13 +6173,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es el correo electrónico dictado con exactitud.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "My official email address is camilo vargas at gmail dot com. That is C - A - M - I - L - O, underscore, V - A - R - G - A - S.",
                   "transcription": "My official email address is camilo vargas at gmail dot com. That is C - A - M - I - L - O, underscore, V - A - R - G - A - S.",
-                  "question": "What is the exact email address dictation?",
+                  "audioTeacherText": "My official email address is camilo vargas at gmail dot com. That is C - A - M - I - L - O, underscore, V - A - R - G - A - S.",
+                  "question": "What is the exact email address dictated by Camilo?",
                   "options": [
-                    "camilovargas123 at hotmail dot net",
+                    "camilo.vargas at gmail dot com",
                     "camilo_vargas at gmail dot com",
-                    "vortex_gamer at yahoo dot com"
+                    "camilovargas at hotmail dot com"
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-11.mp3"
@@ -6676,13 +6676,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la ciudad y pasatiempo del estudiante.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Hello everyone! I am Carlos, I am fifteen years old, I live in Bogota and my biggest passion is programming video games.",
                   "transcription": "Hello everyone! I am Carlos, I am fifteen years old, I live in Bogota and my biggest passion is programming video games.",
+                  "audioTeacherText": "Hello everyone! I am Carlos, I am fifteen years old, I live in Bogota and my biggest passion is programming video games.",
                   "question": "Where does Carlos live and what is his biggest passion?",
                   "options": [
-                    "He lives in Miami and hates computers.",
-                    "He lives in London and only plays soccer.",
-                    "He lives in Bogota and his passion is programming video games."
+                    "He lives in Medellin and his passion is building robotic drones.",
+                    "He lives in Cali and his favorite goal is designing mobile apps.",
+                    "He lives in Bogota and his biggest passion is coding video games."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-12.mp3"
@@ -7179,13 +7179,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es el atuendo exacto que describe la locutora.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Today I am wearing a comfortable grey hoodie, dark blue jeans, and my favorite white athletic sneakers.",
                   "transcription": "Today I am wearing a comfortable grey hoodie, dark blue jeans, and my favorite white athletic sneakers.",
-                  "question": "What outfit is the speaker wearing today?",
+                  "audioTeacherText": "Today I am wearing a comfortable grey hoodie, dark blue jeans, and my favorite white athletic sneakers.",
+                  "question": "What specific outfit is the speaker wearing today?",
                   "options": [
-                    "A grey hoodie, dark blue jeans, and white athletic sneakers.",
-                    "A formal suit and yellow plastic boots.",
-                    "A swimming suit and winter gloves."
+                    "A comfortable grey hoodie, dark blue jeans, and white sneakers.",
+                    "A stylish black jacket, light blue jeans, and grey sports shoes.",
+                    "A warm navy sweatshirt, black pants, and white athletic trainers."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-13.mp3"
@@ -7682,13 +7682,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la materia programada después del descanso.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Good morning class! Today we have Math first, and right after the morning break, we have our fun Science experiment in the chemistry lab.",
                   "transcription": "Good morning class! Today we have Math first, and right after the morning break, we have our fun Science experiment in the chemistry lab.",
-                  "question": "What class do students have right after the morning break?",
+                  "audioTeacherText": "Good morning class! Today we have Math first, and right after the morning break, we have our fun Science experiment in the chemistry lab.",
+                  "question": "What class do the students have right after the morning break?",
                   "options": [
-                    "Sleeping class in the dormitory.",
-                    "Science experiment in the chemistry lab.",
-                    "Video game tournament in the cafeteria."
+                    "They have English literature practice in the campus library.",
+                    "They have a fun Science experiment in the chemistry lab.",
+                    "They have an advanced geometry lesson in the computer room."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-14.mp3"
@@ -8185,13 +8185,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona a qué hora se despierta y cena la locutora.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "On school days, I wake up at 6:30 AM, attend classes until 2:30 PM, and have dinner with my family at 7:30 PM.",
                   "transcription": "On school days, I wake up at 6:30 AM, attend classes until 2:30 PM, and have dinner with my family at 7:30 PM.",
-                  "question": "What time does the speaker wake up and have dinner on school days?",
+                  "audioTeacherText": "On school days, I wake up at 6:30 AM, attend classes until 2:30 PM, and have dinner with my family at 7:30 PM.",
+                  "question": "What is the speaker's exact routine on school days?",
                   "options": [
-                    "Wakes up at 12:00 PM and never eats dinner.",
-                    "Wakes up at 3:00 AM and sleeps during class.",
-                    "Wakes up at 6:30 AM and has dinner at 7:30 PM."
+                    "Wakes up at 6:00 AM, finishes school at 3:00 PM, and dines at 8:00.",
+                    "Wakes up at 7:00 AM, attends school until 1:30 PM, and dines at 7:00.",
+                    "Wakes up at 6:30 AM, finishes school at 2:30 PM, and dines at 7:30."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-15.mp3"
@@ -8688,13 +8688,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el mensaje del director de la academia y selecciona el logro principal de los estudiantes.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Congratulations teens! You have completed all 16 classes of Level 0 with total dedication, and you now speak English with great confidence and clear pronunciation.",
                   "transcription": "Congratulations teens! You have completed all 16 classes of Level 0 with total dedication, and you now speak English with great confidence and clear pronunciation.",
-                  "question": "What did the students achieve in Level 0 according to the director?",
+                  "audioTeacherText": "Congratulations teens! You have completed all 16 classes of Level 0 with total dedication, and you now speak English with great confidence and clear pronunciation.",
+                  "question": "What key accomplishment does the teacher highlight for Level 0?",
                   "options": [
-                    "Completed all 16 classes and speak English with confidence and clear pronunciation.",
-                    "Failed all classes and need to start over.",
-                    "Decided to never study English again."
+                    "Completing 16 classes and speaking English with confidence and clear pronunciation.",
+                    "Passing all written exams and memorizing over five hundred advanced grammar formulas.",
+                    "Leading weekly bilingual debates and presenting final research projects in English."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-zero-16.mp3"
@@ -9244,11 +9244,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Welcome to our team! My best friend Leo is super creative and always has cool ideas for our school projects. He is very friendly, loyal, and loves meeting new people.",
                   "audioTeacherText": "Welcome to our team! My best friend Leo is super creative and always has cool ideas for our school projects. He is very friendly, loyal, and loves meeting new people.",
-                  "question": "¿Cómo describe el profesor a su mejor amigo Leo?",
+                  "question": "¿Qué pide el profesor para almorzar hoy?",
                   "options": [
-                    "Es callado, tímido y prefiere no hablar en clase.",
-                    "Es muy creativo, siempre tiene ideas geniales, es amigable y leal.",
-                    "No le gusta trabajar en grupo ni hacer proyectos."
+                    "Una ensalada de atún fresco, papas al horno y una botella de limonada.",
+                    "Un wrap de pollo a la parrilla y dos botellas de agua con gas fría.",
+                    "Un sándwich de jamón con queso caliente y dos vasos de té helado."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-1-1.mp3"
@@ -9838,11 +9838,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Hey team! For lunch today I choose a grilled chicken wrap and two bottles of cold water because we have intense soccer training this afternoon. Clean food gives me steady power.",
                   "audioTeacherText": "Hey team! For lunch today I choose a grilled chicken wrap and two bottles of cold water because we have intense soccer training this afternoon. Clean food gives me steady power.",
-                  "question": "¿Por qué el profesor elige un wrap de pollo y agua para el almuerzo?",
+                  "question": "¿Cómo se siente el equipo hoy y por qué?",
                   "options": [
-                    "Porque no le gusta comer comida rápida los fines de semana.",
-                    "Porque olvidó su almuerzo en casa y compró lo primero que vio.",
-                    "Porque tiene entrenamiento intenso de fútbol y la comida sana le da energía constante."
+                    "Preocupados y nerviosos porque tienen una evaluación final mañana.",
+                    "Sorprendidos y motivados porque ganaron un concurso escolar hoy.",
+                    "Aliviados y orgullosos porque terminaron el proyecto de ciencias."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-1-2.mp3"
@@ -10432,11 +10432,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Hey everyone! Today I feel very relieved and proud because our team finished the science project on time. Valentina was nervous earlier, but we supported her and now she feels fantastic.",
                   "audioTeacherText": "Hey everyone! Today I feel very relieved and proud because our team finished the science project on time. Valentina was nervous earlier, but we supported her and now she feels fantastic.",
-                  "question": "¿Por qué el profesor se siente aliviado y orgulloso hoy?",
+                  "question": "¿Cuál es la materia favorita del profesor este semestre y por qué?",
                   "options": [
-                    "Porque terminaron el proyecto de ciencias a tiempo y apoyaron a Valentina.",
-                    "Porque cancelaron las clases y no tienen tareas hoy.",
-                    "Porque perdieron el campeonato de fútbol."
+                    "Informática, porque aprende a programar y diseñar páginas web geniales.",
+                    "Biología, porque realiza experimentos fascinantes sobre el medio ambiente.",
+                    "Historia, porque analiza eventos mundiales y debate sobre culturas antiguas."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-1-3.mp3"
@@ -11026,11 +11026,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Hello class! My absolute favorite subject this semester is Computer Science because we learn how to code video games in the main computer lab on Wednesday mornings.",
                   "audioTeacherText": "Hello class! My absolute favorite subject this semester is Computer Science because we learn how to code video games in the main computer lab on Wednesday mornings.",
-                  "question": "¿Cuál es la materia favorita del profesor y por qué?",
+                  "question": "¿Cuál es la secuencia de la rutina matutina del profesor?",
                   "options": [
-                    "Historia, porque le gusta memorizar fechas del siglo pasado.",
-                    "Informática, porque aprenden a programar videojuegos los miércoles en el laboratorio.",
-                    "Educación Física, porque juegan baloncesto todas las tardes."
+                    "Se despierta a las 6:15, sale a trotar y desayuna tostadas con té caliente.",
+                    "Se ducha rápido, desayuna fruta con arepas y repasa sus notas de inglés.",
+                    "Repasa sus apuntes escolares, toma una ducha tibia y desayuna cereal solo."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-1-4.mp3"
@@ -11620,11 +11620,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Every morning, I always wake up at six fifteen. First, I take a quick shower, then I have fresh fruit and arepas for breakfast, and finally I review my English notes before leaving for school.",
                   "audioTeacherText": "Every morning, I always wake up at six fifteen. First, I take a quick shower, then I have fresh fruit and arepas for breakfast, and finally I review my English notes before leaving for school.",
-                  "question": "¿Cuál es la secuencia de la rutina matutina del profesor?",
+                  "question": "¿Qué actividad realiza el profesor los sábados por la mañana?",
                   "options": [
-                    "Primero juega videojuegos, luego sale corriendo sin desayunar.",
-                    "Se despierta al mediodía y duerme toda la mañana.",
-                    "Primero se baña, luego desayuna fruta y arepas, y finalmente repasa sus notas de inglés."
+                    "Entrena en el gimnasio local y nada en la piscina olímpica municipal.",
+                    "Juega partidos de fútbol con sus primos en las canchas de su colegio.",
+                    "Sube la montaña en cicla con su padre y disfruta del aire fresco arriba."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-1-5.mp3"
@@ -12214,11 +12214,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Hey guys! On Saturday mornings, I always go cycling up the mountain with my cousin. Then in the afternoon, we play basketball at the local sports center. Would you like to join us this weekend?",
                   "audioTeacherText": "Hey guys! On Saturday mornings, I always go cycling up the mountain with my cousin. Then in the afternoon, we play basketball at the local sports center. Would you like to join us this weekend?",
-                  "question": "¿Qué actividades hace el profesor los sábados por la mañana y por la tarde?",
+                  "question": "¿Cómo está el clima y qué prendas lleva puestas el profesor?",
                   "options": [
-                    "Monta bicicleta por la mañana y juega baloncesto por la tarde con su primo.",
-                    "Se queda en su habitación jugando videojuegos todo el día.",
-                    "Va a clases de matemáticas los sábados."
+                    "Llueve fuerte; lleva buzo grueso, botas impermeables y sombrilla.",
+                    "Hace frío con neblina; lleva chaqueta térmica, bufanda y guantes.",
+                    "Está ventoso y nublado; lleva impermeable ligero y tenis oscuros."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-1-6.mp3"
@@ -12808,11 +12808,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Look outside! It is raining heavily in the city right now. I am wearing a thick hoodie, waterproof boots, and carrying my umbrella. What are you wearing today?",
                   "audioTeacherText": "Look outside! It is raining heavily in the city right now. I am wearing a thick hoodie, waterproof boots, and carrying my umbrella. What are you wearing today?",
-                  "question": "¿Cómo está el clima y qué lleva puesto el profesor?",
+                  "question": "¿Cómo se llega a la biblioteca principal según el profesor?",
                   "options": [
-                    "Hace un sol abrasador y lleva gafas oscuras y pantaloneta de playa.",
-                    "Está lloviendo fuerte y lleva puesto un buzo grueso, botas impermeables y sombrilla.",
-                    "Está nevando en la costa y hace mucho viento."
+                    "Avanza tres cuadras, gira a la izquierda y cruza la avenida central.",
+                    "Camina dos cuadras, gira a la derecha en el semáforo; está frente al parque.",
+                    "Sigue derecho por el parqueadero, entra a la plaza y sube las escaleras."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-1-7.mp3"
@@ -13402,11 +13402,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Excuse me! To reach the main library, walk straight ahead for two blocks, then turn right at the traffic lights. The library is across from the green park, next to the bookstore.",
                   "audioTeacherText": "Excuse me! To reach the main library, walk straight ahead for two blocks, then turn right at the traffic lights. The library is across from the green park, next to the bookstore.",
-                  "question": "¿Cómo se llega a la biblioteca según el audio del profesor?",
+                  "question": "¿Qué recomienda hacer si la señal de WiFi del celular no funciona?",
                   "options": [
-                    "Toma el metro hasta la última estación en las afueras de la ciudad.",
-                    "Gira a la izquierda y entra al centro comercial.",
-                    "Camina derecho dos cuadras, gira a la derecha en el semáforo y queda frente al parque, al lado de la librería."
+                    "Reiniciar el módem principal y desconectar los cables de energía.",
+                    "Olvidar la red registrada y volver a escribir la contraseña completa.",
+                    "Activar y desactivar el modo avión en el celular para reiniciar la señal."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-1-8.mp3"
@@ -13996,11 +13996,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "If your smartphone battery is low, first plug in the fast charger using the USB-C cable. If the WiFi is not working, you should turn airplane mode on and off to reset the signal.",
                   "audioTeacherText": "If your smartphone battery is low, first plug in the fast charger using the USB-C cable. If the WiFi is not working, you should turn airplane mode on and off to reset the signal.",
-                  "question": "¿Qué recomienda el profesor si la señal de WiFi del celular no está funcionando?",
+                  "question": "¿Qué solicitud y pregunta hace el cliente durante la llamada?",
                   "options": [
-                    "Activar y desactivar el modo avión para reiniciar y restablecer la señal.",
-                    "Comprar un celular nuevo inmediatamente.",
-                    "Apagar la luz de la habitación y dormir."
+                    "Reserva cuatro entradas para el parque y consulta si incluyen el almuerzo.",
+                    "Pide boletos familiares para el zoológico y pregunta por horarios guiados.",
+                    "Compra pases VIP para el cine escolar y solicita un combo de refrigerio."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-1-9.mp3"
@@ -14590,11 +14590,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "listeningData": {
                   "transcription": "Hello, I would like to book four student tickets for the amusement park this Saturday morning. Could you please confirm if lunch is included in the package? Thank you!",
                   "audioTeacherText": "Hello, I would like to book four student tickets for the amusement park this Saturday morning. Could you please confirm if lunch is included in the package? Thank you!",
-                  "question": "¿Qué está reservando y preguntando el profesor en la llamada telefónica?",
+                  "question": "According to the teacher, what is a distinctive capability of the jaguar?",
                   "options": [
-                    "Está cancelando un viaje a la playa por mal clima.",
-                    "Está reservando cuatro entradas estudiantiles para el parque de atracciones y preguntando si incluye el almuerzo.",
-                    "Está pidiendo comida a domicilio para su casa."
+                    "It can climb the highest mountain ridges to hunt during freezing winter nights.",
+                    "It can swim exceptionally well and frequently hunts along freshwater rivers.",
+                    "It can sprint across open grasslands faster than any other feline in America."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-1-10.mp3"
@@ -15250,17 +15250,15 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el reporte del profesor y responde la pregunta de comprensión:",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The jaguar is the largest feline in the Americas. It lives in dense tropical rainforests and wetlands. Unlike many other cats, the jaguar can swim very well and often hunts near rivers. However, jaguars can't survive if we destroy their natural forest habitat, so environmental protection is essential.",
                   "transcription": "The jaguar is the largest feline in the Americas. It lives in dense tropical rainforests and wetlands. Unlike many other cats, the jaguar can swim very well and often hunts near rivers. However, jaguars can't survive if we destroy their natural forest habitat, so environmental protection is essential.",
-                  "question": "According to the teacher, what is a special ability of the jaguar?",
-                  "questionEs": "Según el profesor, ¿cuál es una habilidad especial del jaguar?",
+                  "audioTeacherText": "The jaguar is the largest feline in the Americas. It lives in dense tropical rainforests and wetlands. Unlike many other cats, the jaguar can swim very well and often hunts near rivers. However, jaguars can't survive if we destroy their natural forest habitat, so environmental protection is essential.",
+                  "question": "Where is the adjustable desk positioned in the teen bedroom?",
                   "options": [
-                    "It can fly between mountain peaks.",
-                    "It can survive without water for months.",
-                    "It can swim very well and hunt near rivers."
+                    "Right next to the entrance door opposite the wooden closet.",
+                    "In the center of the room beneath the ceiling light fixture.",
+                    "Positioned neatly between the wardrobe closet and the window."
                   ],
                   "correctOptionIndex": 2,
-                  "explanation": "El audio resalta: 'the jaguar can swim very well and often hunts near rivers'.",
                   "audioUrl": "/audio/teens-listening/c-teens-basic-2-1.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-teal-950 via-slate-900 to-indigo-950",
@@ -15910,17 +15908,15 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha la descripción del profesor y responde la pregunta de comprensión:",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "In a modern teen bedroom, having proper ergonomic furniture is essential. There is an adjustable desk between the closet and the window, which provides plenty of natural daylight. Above the desk, there are two wooden shelves for books and plants. There aren't any messy cables on the floor because everything is neatly organized.",
                   "transcription": "In a modern teen bedroom, having proper ergonomic furniture is essential. There is an adjustable desk between the closet and the window, which provides plenty of natural daylight. Above the desk, there are two wooden shelves for books and plants. There aren't any messy cables on the floor because everything is neatly organized.",
-                  "question": "Where is the adjustable desk located in the room?",
-                  "questionEs": "¿Dónde está ubicado el escritorio ajustable en la habitación?",
+                  "audioTeacherText": "In a modern teen bedroom, having proper ergonomic furniture is essential. There is an adjustable desk between the closet and the window, which provides plenty of natural daylight. Above the desk, there are two wooden shelves for books and plants. There aren't any messy cables on the floor because everything is neatly organized.",
+                  "question": "How long does the subway ride take from North Terminal to Plaza Station?",
                   "options": [
-                    "Between the closet and the window.",
-                    "Under the bed in the dark corner.",
-                    "Inside the bathroom next to the door."
+                    "It takes fifteen minutes from North Terminal to reach Plaza Station.",
+                    "It takes twenty-five minutes depending on morning pedestrian traffic.",
+                    "It takes forty minutes if travelers need to transfer to green buses."
                   ],
                   "correctOptionIndex": 0,
-                  "explanation": "El audio indica claramente: 'There is an adjustable desk between the closet and the window'.",
                   "audioUrl": "/audio/teens-listening/c-teens-basic-2-2.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950",
@@ -16570,17 +16566,15 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha las indicaciones del profesor y responde la pregunta de comprensión:",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "To get to the Botanical Garden quickly, the best option is to take the subway from North Terminal. It takes fifteen minutes to reach Plaza Station. When you get off the train, you transfer to the green feeder bus or simply walk four blocks on foot. Avoid taking a taxi during rush hour because the avenue gets very crowded.",
                   "transcription": "To get to the Botanical Garden quickly, the best option is to take the subway from North Terminal. It takes fifteen minutes to reach Plaza Station. When you get off the train, you transfer to the green feeder bus or simply walk four blocks on foot. Avoid taking a taxi during rush hour because the avenue gets very crowded.",
-                  "question": "How long does the subway trip take to reach Plaza Station?",
-                  "questionEs": "¿Cuánto tiempo toma el viaje en metro hasta la estación Plaza?",
+                  "audioTeacherText": "To get to the Botanical Garden quickly, the best option is to take the subway from North Terminal. It takes fifteen minutes to reach Plaza Station. When you get off the train, you transfer to the green feeder bus or simply walk four blocks on foot. Avoid taking a taxi during rush hour because the avenue gets very crowded.",
+                  "question": "Where do software developers and data analysts frequently work?",
                   "options": [
-                    "It takes two hours by airplane.",
-                    "It takes fifteen minutes from North Terminal.",
-                    "It takes forty-five minutes in traffic."
+                    "Exclusively inside scientific laboratories and corporate banks.",
+                    "In modern tech hubs or remotely collaborating from anywhere.",
+                    "Primarily in government agencies and telecommunication centers."
                   ],
                   "correctOptionIndex": 1,
-                  "explanation": "El audio afirma claramente: 'It takes fifteen minutes to reach Plaza Station'.",
                   "audioUrl": "/audio/teens-listening/c-teens-basic-2-3.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950",
@@ -17230,17 +17224,15 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha la charla del profesor y responde la pregunta de comprensión:",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Choosing a future career is all about connecting your passions with useful skills. If you love technology and problem solving, becoming a software developer or data analyst is a fantastic choice. These professionals work in modern tech hubs or remotely from anywhere in the world, collaborating on global projects.",
                   "transcription": "Choosing a future career is all about connecting your passions with useful skills. If you love technology and problem solving, becoming a software developer or data analyst is a fantastic choice. These professionals work in modern tech hubs or remotely from anywhere in the world, collaborating on global projects.",
-                  "question": "According to the teacher, where do software developers and data analysts often work?",
-                  "questionEs": "Según el profesor, ¿dónde trabajan frecuentemente los desarrolladores y analistas?",
+                  "audioTeacherText": "Choosing a future career is all about connecting your passions with useful skills. If you love technology and problem solving, becoming a software developer or data analyst is a fantastic choice. These professionals work in modern tech hubs or remotely from anywhere in the world, collaborating on global projects.",
+                  "question": "Why can Lucas write interactive software programs easily?",
                   "options": [
-                    "Only inside noisy physical factories.",
-                    "Exclusively in sports stadiums.",
-                    "In modern tech hubs or remotely from anywhere."
+                    "Because he completed an intensive coding course during summer camp.",
+                    "Because he was mentored by senior computer engineers at his school.",
+                    "Because he practices coding software projects consistently every weekend."
                   ],
                   "correctOptionIndex": 2,
-                  "explanation": "El audio resalta: 'These professionals work in modern tech hubs or remotely from anywhere in the world'.",
                   "audioUrl": "/audio/teens-listening/c-teens-basic-2-4.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950",
@@ -17890,17 +17882,15 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el mensaje del profesor y responde la pregunta de comprensión:",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Everyone has a unique talent waiting to be developed. You might not be able to play an instrument today, but with dedicated practice, you can learn any creative skill. Lucas can code interactive programs easily because he practices every weekend, while Sara trains her voice thirty minutes every morning.",
                   "transcription": "Everyone has a unique talent waiting to be developed. You might not be able to play an instrument today, but with dedicated practice, you can learn any creative skill. Lucas can code interactive programs easily because he practices every weekend, while Sara trains her voice thirty minutes every morning.",
-                  "question": "Why can Lucas code interactive programs easily according to the teacher?",
-                  "questionEs": "¿Por qué Lucas puede programar con facilidad según el profesor?",
+                  "audioTeacherText": "Everyone has a unique talent waiting to be developed. You might not be able to play an instrument today, but with dedicated practice, you can learn any creative skill. Lucas can code interactive programs easily because he practices every weekend, while Sara trains her voice thirty minutes every morning.",
+                  "question": "What practical study tip does the teacher suggest for remembering concepts?",
                   "options": [
-                    "Because he practices coding every weekend.",
-                    "Because he bought a magic computer.",
-                    "Because he only plays video games."
+                    "Forming study groups and explaining academic concepts aloud to classmates.",
+                    "Writing colorful handwritten summaries and highlighting key textbook terms.",
+                    "Listening to recorded classroom lectures multiple times before final tests."
                   ],
                   "correctOptionIndex": 0,
-                  "explanation": "El audio afirma: 'Lucas can code interactive programs easily because he practices every weekend'.",
                   "audioUrl": "/audio/teens-listening/c-teens-basic-2-5.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-pink-950 via-slate-900 to-purple-950",
@@ -18550,17 +18540,15 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha las recomendaciones del profesor y responde la pregunta de comprensión:",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Success at school requires a clear balance of discipline and smart strategies. At our school, all students must arrive on time before 7:00 AM and must wear their official student badges. Additionally, you have to submit your weekly homework on the online portal. Finally, you should form study groups with classmates because explaining concepts aloud helps you remember everything much better.",
                   "transcription": "Success at school requires a clear balance of discipline and smart strategies. At our school, all students must arrive on time before 7:00 AM and must wear their official student badges. Additionally, you have to submit your weekly homework on the online portal. Finally, you should form study groups with classmates because explaining concepts aloud helps you remember everything much better.",
-                  "question": "What advice does the teacher give to remember concepts better?",
-                  "questionEs": "¿Qué consejo da el profesor para recordar mejor los conceptos?",
+                  "audioTeacherText": "Success at school requires a clear balance of discipline and smart strategies. At our school, all students must arrive on time before 7:00 AM and must wear their official student badges. Additionally, you have to submit your weekly homework on the online portal. Finally, you should form study groups with classmates because explaining concepts aloud helps you remember everything much better.",
+                  "question": "Why does the coach advise teenage athletes to sleep eight hours nightly?",
                   "options": [
-                    "Never do homework and play games all night.",
-                    "Form study groups and explain concepts aloud to classmates.",
-                    "Arrive at school after 10:00 AM."
+                    "To prevent daytime fatigue and maintain high concentration during tests.",
+                    "Because deep nocturnal rest repairs physical muscles and strengthens memory.",
+                    "To keep their metabolism active and lower cardiovascular pressure during runs."
                   ],
                   "correctOptionIndex": 1,
-                  "explanation": "El audio aconseja: 'you should form study groups with classmates because explaining concepts aloud helps you remember everything much better'.",
                   "audioUrl": "/audio/teens-listening/c-teens-basic-2-6.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-amber-950 via-slate-900 to-orange-950",
@@ -19211,17 +19199,15 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha los consejos del entrenador y responde la pregunta de comprensión:",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Maintaining a healthy lifestyle as a teenager is easier than you think. First, always drink at least two liters of fresh water daily, especially before and after workouts. Second, athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory. Finally, try to play a sport or walk outside at least three times a week.",
                   "transcription": "Maintaining a healthy lifestyle as a teenager is easier than you think. First, always drink at least two liters of fresh water daily, especially before and after workouts. Second, athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory. Finally, try to play a sport or walk outside at least three times a week.",
-                  "question": "Why should athletes sleep eight hours every night according to the coach?",
-                  "questionEs": "¿Por qué los deportistas deberían dormir 8 horas según el entrenador?",
+                  "audioTeacherText": "Maintaining a healthy lifestyle as a teenager is easier than you think. First, always drink at least two liters of fresh water daily, especially before and after workouts. Second, athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory. Finally, try to play a sport or walk outside at least three times a week.",
+                  "question": "Where and at what time is the teen group meeting on Saturday?",
                   "options": [
-                    "Because they don't want to go to school.",
-                    "Because sleeping makes them run ten times faster.",
-                    "Because deep rest recovers muscles and boosts memory."
+                    "At 3:15 PM inside the arcade food court by the subway terminal.",
+                    "At 2:00 PM near the skatepark entrance next to the movie theater.",
+                    "At 2:45 PM in front of the central fountain inside Central Mall."
                   ],
                   "correctOptionIndex": 2,
-                  "explanation": "El audio afirma: 'athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory'.",
                   "audioUrl": "/audio/teens-listening/c-teens-basic-2-7.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950",
@@ -19872,17 +19858,15 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el mensaje de voz del profesor y responde la pregunta de comprensión:",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Hey guys! I just booked our tickets for the escape room challenge this Saturday. Let's meet at 2:45 PM in front of the fountain at Central Mall. Afterward, how about grabbing bubble tea and hanging out at the skatepark? Make sure to bring your transit card and be on time!",
                   "transcription": "Hey guys! I just booked our tickets for the escape room challenge this Saturday. Let's meet at 2:45 PM in front of the fountain at Central Mall. Afterward, how about grabbing bubble tea and hanging out at the skatepark? Make sure to bring your transit card and be on time!",
-                  "question": "Where and what time are they meeting on Saturday?",
-                  "questionEs": "¿Dónde y a qué hora se van a encontrar el sábado?",
+                  "audioTeacherText": "Hey guys! I just booked our tickets for the escape room challenge this Saturday. Let's meet at 2:45 PM in front of the fountain at Central Mall. Afterward, how about grabbing bubble tea and hanging out at the skatepark? Make sure to bring your transit card and be on time!",
+                  "question": "What elements make the sci-fi movie a must-watch cinematic experience?",
                   "options": [
-                    "At 2:45 PM in front of the fountain at Central Mall.",
-                    "At 6:00 PM inside the dark parking lot.",
-                    "On Monday morning at school."
+                    "Its outstanding orchestral soundtrack and innovative CGI visual effects.",
+                    "Its unpredictable dramatic plot twists and award-winning lead cast.",
+                    "Its realistic historical set design and emotional dialogue delivery."
                   ],
                   "correctOptionIndex": 0,
-                  "explanation": "El audio indica: 'Let's meet at 2:45 PM in front of the fountain at Central Mall'.",
                   "audioUrl": "/audio/teens-listening/c-teens-basic-2-8.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950",
@@ -20533,17 +20517,15 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el segmento de podcast del profesor y responde la pregunta de comprensión:",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Welcome back to Teen Media Radar! Today we are reviewing the latest sci-fi movie. In my opinion, the film is action-packed and highly entertaining from start to finish. Although some plot twists are a bit predictable, the outstanding soundtrack and CGI visual effects make it a must-watch experience on the big screen.",
                   "transcription": "Welcome back to Teen Media Radar! Today we are reviewing the latest sci-fi movie. In my opinion, the film is action-packed and highly entertaining from start to finish. Although some plot twists are a bit predictable, the outstanding soundtrack and CGI visual effects make it a must-watch experience on the big screen.",
-                  "question": "Why is the movie a must-watch experience according to the podcast host?",
-                  "questionEs": "¿Por qué la película vale la pena verse según el conductor del podcast?",
+                  "audioTeacherText": "Welcome back to Teen Media Radar! Today we are reviewing the latest sci-fi movie. In my opinion, the film is action-packed and highly entertaining from start to finish. Although some plot twists are a bit predictable, the outstanding soundtrack and CGI visual effects make it a must-watch experience on the big screen.",
+                  "question": "What milestone does the instructor celebrate at the conclusion of Basic 2?",
                   "options": [
-                    "Because it is very short and boring.",
-                    "Because of its outstanding soundtrack and CGI visual effects.",
-                    "Because it has no sound or special effects."
+                    "Mastering professional business correspondence and corporate meetings.",
+                    "Readiness to enter Level 3 and advance into storytelling and debates.",
+                    "Earning an official bilingual certificate for intermediate translation."
                   ],
                   "correctOptionIndex": 1,
-                  "explanation": "El audio resalta: 'the outstanding soundtrack and CGI visual effects make it a must-watch experience on the big screen'.",
                   "audioUrl": "/audio/teens-listening/c-teens-basic-2-9.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-pink-950 via-slate-900 to-purple-950",
@@ -21194,17 +21176,15 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el mensaje de felicitación del profesor y responde la pregunta de comprensión:",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Congratulations on completing all ten classes of Teens Basic 2 Communicator! You have mastered discussing animal habitats, home layout, urban transit, future careers, abilities, rules, sports routines, weekend plans, and media reviews. You are now fully prepared to enter Level 3 and take your English debates, storytelling, and global communication to the next level!",
                   "transcription": "Congratulations on completing all ten classes of Teens Basic 2 Communicator! You have mastered discussing animal habitats, home layout, urban transit, future careers, abilities, rules, sports routines, weekend plans, and media reviews. You are now fully prepared to enter Level 3 and take your English debates, storytelling, and global communication to the next level!",
-                  "question": "What does the teacher confirm you are ready for at the end of the message?",
-                  "questionEs": "¿Para qué confirma el profesor que estás listo al final del mensaje?",
+                  "audioTeacherText": "Congratulations on completing all ten classes of Teens Basic 2 Communicator! You have mastered discussing animal habitats, home layout, urban transit, future careers, abilities, rules, sports routines, weekend plans, and media reviews. You are now fully prepared to enter Level 3 and take your English debates, storytelling, and global communication to the next level!",
+                  "question": "What time does the soccer practice begin and why is punctuality essential?",
                   "options": [
-                    "To stop learning and forget all English vocabulary.",
-                    "To only watch silent movies.",
-                    "To enter Level 3 and take debates and storytelling to the next level."
+                    "Starts at 5:00 PM; the coach is selecting team captains for the tournament.",
+                    "Starts at 4:00 PM; players need thirty minutes of dynamic warm-up drills.",
+                    "Starts at 4:30 PM (half past four); the squad has an important Friday match."
                   ],
                   "correctOptionIndex": 2,
-                  "explanation": "El audio confirma: 'You are now fully prepared to enter Level 3 and take your English debates, storytelling, and global communication to the next level!'.",
                   "audioUrl": "/audio/teens-listening/c-teens-basic-2-10.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-amber-950 via-slate-900 to-yellow-950",
@@ -21763,13 +21743,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona la opción correcta sobre la rutina.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Our soccer training always starts at half past four in the afternoon. Please do not be late because we have a big match on Friday.",
                   "transcription": "Our soccer training always starts at half past four in the afternoon. Please do not be late because we have a big match on Friday.",
-                  "question": "What time does the soccer training start?",
+                  "audioTeacherText": "Our soccer training always starts at half past four in the afternoon. Please do not be late because we have a big match on Friday.",
+                  "question": "What tactical advice does the team captain emphasize before the match?",
                   "options": [
-                    "At half past four in the afternoon (4:30 PM).",
-                    "At quarter to four in the morning (3:45 AM).",
-                    "At five o'clock in the evening (5:00 PM)."
+                    "Passing the ball quickly, staying firm on defense, and backing the striker.",
+                    "Maintaining ball possession in midfield and avoiding aggressive sliding tackles.",
+                    "Pressing the opposing goalkeeper early and taking shots from outside the box."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-3-1.mp3"
@@ -22266,13 +22246,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona la estrategia del capitán.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Listen up team! We need to pass the ball quickly, stay strong on defense, and support our striker. We can win this trophy together!",
                   "transcription": "Listen up team! We need to pass the ball quickly, stay strong on defense, and support our striker. We can win this trophy together!",
-                  "question": "What is the captain's main instruction to the team?",
+                  "audioTeacherText": "Listen up team! We need to pass the ball quickly, stay strong on defense, and support our striker. We can win this trophy together!",
+                  "question": "What two customs are observed at midnight on December 31st for good luck?",
                   "options": [
-                    "To leave the pitch and play video games instead.",
-                    "To pass the ball quickly and stay strong on defense.",
-                    "To let the rival team score five goals."
+                    "Wearing yellow garments and writing down twelve personal wishes on paper.",
+                    "Eating twelve grapes and running around the block carrying travel suitcases.",
+                    "Lighting colorful sparklers and sharing sweet holiday bread with neighbors."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-3-2.mp3"
@@ -22769,13 +22749,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona el momento exacto de la celebración.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Every year on December 31st at midnight, we eat twelve grapes and run around the block with suitcases for good travel luck!",
                   "transcription": "Every year on December 31st at midnight, we eat twelve grapes and run around the block with suitcases for good travel luck!",
-                  "question": "When does this traditional New Year celebration happen?",
+                  "audioTeacherText": "Every year on December 31st at midnight, we eat twelve grapes and run around the block with suitcases for good travel luck!",
+                  "question": "What does the professor anticipate regarding artificial intelligence in thirty years?",
                   "options": [
-                    "In July on a sunny Friday afternoon.",
-                    "On October 31st during Halloween night.",
-                    "On December 31st at midnight (12:00 AM)."
+                    "It will automate all scientific writing while human scholars focus on ethics.",
+                    "It will construct self-repairing space habitats across neighboring planets.",
+                    "It will assist in unlocking clean fusion energy without replacing human empathy."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-3-3.mp3"
@@ -23272,13 +23252,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y responde qué predice sobre la inteligencia artificial.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "In the next thirty years, artificial intelligence will help humans discover clean fusion energy, but it will not replace human creativity or empathy.",
                   "transcription": "In the next thirty years, artificial intelligence will help humans discover clean fusion energy, but it will not replace human creativity or empathy.",
-                  "question": "What does the professor predict about artificial intelligence?",
+                  "audioTeacherText": "In the next thirty years, artificial intelligence will help humans discover clean fusion energy, but it will not replace human creativity or empathy.",
+                  "question": "How did the speaker feel on the first day of primary school and why?",
                   "options": [
-                    "It will help discover clean fusion energy, but won't replace human creativity.",
-                    "It will destroy all computers and telescopes on Earth.",
-                    "It will stop space exploration completely in two years."
+                    "Felt very nervous because the campus was huge, but the teacher was warm.",
+                    "Felt completely confident because older siblings walked together to class.",
+                    "Felt shy and overwhelmed because classrooms were crowded with unfamiliar peers."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-3-4.mp3"
@@ -23775,13 +23755,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y responde cómo se sentía en su primer día de colegio.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "On my first day of primary school, I was very nervous because the school was huge, but my teacher was super friendly and welcoming.",
                   "transcription": "On my first day of primary school, I was very nervous because the school was huge, but my teacher was super friendly and welcoming.",
-                  "question": "How was the teacher feeling on the first day of primary school?",
+                  "audioTeacherText": "On my first day of primary school, I was very nervous because the school was huge, but my teacher was super friendly and welcoming.",
+                  "question": "Why did the campers relocate inside their vehicle in the middle of the night?",
                   "options": [
-                    "Angry and fighting with other classmates.",
-                    "Very nervous because the school was huge.",
-                    "Asleep in the car until noon."
+                    "Because strong lake winds damaged their campsite tents around midnight.",
+                    "Because heavy rainfall started at midnight, so they packed up sleeping bags.",
+                    "Because nocturnal woodland animals wandered too close to their fire pit."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-3-5.mp3"
@@ -24278,13 +24258,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y responde qué ocurrió durante la noche de campamento.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Last summer we camped near the lake. At midnight it started to rain heavily, so we packed our sleeping bags and slept inside the car!",
                   "transcription": "Last summer we camped near the lake. At midnight it started to rain heavily, so we packed our sleeping bags and slept inside the car!",
-                  "question": "Why did they sleep inside the car during the camping trip?",
+                  "audioTeacherText": "Last summer we camped near the lake. At midnight it started to rain heavily, so we packed our sleeping bags and slept inside the car!",
+                  "question": "At what early ages did Shakira showcase her artistic talents?",
                   "options": [
-                    "Because they lost their car keys in the lake.",
-                    "Because a bear entered their hotel room.",
-                    "Because it started to rain heavily at midnight."
+                    "She recorded her first studio album at seven and learned acoustic guitar at ten.",
+                    "She won local talent contests at age six and performed international tours at twelve.",
+                    "She composed her first poem at age four and wrote her first musical song at eight."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-3-6.mp3"
@@ -24781,13 +24761,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona el momento en que Shakira comenzó a escribir.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Shakira wrote her first poem at age four and composed her first song at age eight. Later, she moved to the United States and became a global music icon.",
                   "transcription": "Shakira wrote her first poem at age four and composed her first song at age eight. Later, she moved to the United States and became a global music icon.",
-                  "question": "At what age did Shakira write her first poem?",
+                  "audioTeacherText": "Shakira wrote her first poem at age four and composed her first song at age eight. Later, she moved to the United States and became a global music icon.",
+                  "question": "How did the speaker recover the missing school backpack?",
                   "options": [
-                    "At age four (4 years old).",
-                    "At age twenty after university.",
-                    "At age fifteen during high school."
+                    "His brother phoned him to confirm the backpack was in his vehicle all along.",
+                    "A security officer at the shopping mall located the backpack at the lost desk.",
+                    "A kind classmate picked up the bag and returned it safely during morning class."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-3-7.mp3"
@@ -25284,13 +25264,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y responde cómo se resolvió el misterio.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "I thought I lost my backpack at the mall. Suddenly, my brother called me on my phone. Fortunately, he had my backpack in his car the whole time!",
                   "transcription": "I thought I lost my backpack at the mall. Suddenly, my brother called me on my phone. Fortunately, he had my backpack in his car the whole time!",
-                  "question": "How was the mystery of the lost backpack resolved?",
+                  "audioTeacherText": "I thought I lost my backpack at the mall. Suddenly, my brother called me on my phone. Fortunately, he had my backpack in his car the whole time!",
+                  "question": "What courteous request does the presenter make after their laptop freezes?",
                   "options": [
-                    "He bought a new backpack in a foreign country.",
-                    "Fortunately, his brother had the backpack in his car the whole time.",
-                    "A thief ran away with all his school notebooks."
+                    "Asks to present using another classmate's slide deck during the session.",
+                    "Requests two minutes to reboot the frozen laptop and resume the presentation.",
+                    "Inquires if the oral presentation can be rescheduled for the next class period."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-3-8.mp3"
@@ -25787,13 +25767,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y responde qué favor solicita el estudiante.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Excuse me teacher, my laptop screen froze completely during the presentation. Could you please give me two minutes to restart it?",
                   "transcription": "Excuse me teacher, my laptop screen froze completely during the presentation. Could you please give me two minutes to restart it?",
-                  "question": "What polite request does the student make to the teacher?",
+                  "audioTeacherText": "Excuse me teacher, my laptop screen froze completely during the presentation. Could you please give me two minutes to restart it?",
+                  "question": "Which past regular verb pronounced in the audio carries the /ɪd/ ending sound?",
                   "options": [
-                    "Could you buy me a brand new computer right now?",
-                    "Could you cancel the class for the whole semester?",
-                    "Could you please give me two minutes to restart my laptop?"
+                    "Walked (which terminates with the voiceless /t/ phonetic ending).",
+                    "Played (which terminates with the voiced /d/ phonetic ending).",
+                    "Visited (which terminates with the syllabic /ɪd/ phonetic ending)."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-3-9.mp3"
@@ -26290,13 +26270,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona qué verbo tiene terminación con sonido /ɪd/.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Yesterday I walked to school, played soccer with my friends, and visited my grandparents. The verb visited ends with the id sound.",
                   "transcription": "Yesterday I walked to school, played soccer with my friends, and visited my grandparents. The verb visited ends with the id sound.",
-                  "question": "Which of the three verbs in the teacher's audio has the /ɪd/ ending sound?",
+                  "audioTeacherText": "Yesterday I walked to school, played soccer with my friends, and visited my grandparents. The verb visited ends with the id sound.",
+                  "question": "What educational perspective does the teacher share about evaluating fluency?",
                   "options": [
-                    "Visited (has the /ɪd/ ending sound)",
-                    "Walked (has the /t/ ending sound)",
-                    "Played (has the /d/ ending sound)"
+                    "Practical oral speeches and group projects reveal fluency better than exams.",
+                    "Structured grammar tests provide more objective metrics than speaking rubrics.",
+                    "Weekly vocabulary dictations build communicative confidence faster than debates."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-3-10.mp3"
@@ -26800,13 +26780,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es su opinión sobre las evaluaciones prácticas.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "From my perspective, practical oral presentations and team projects demonstrate real English fluency much better than traditional multiple-choice grammar exams.",
                   "transcription": "From my perspective, practical oral presentations and team projects demonstrate real English fluency much better than traditional multiple-choice grammar exams.",
-                  "question": "What is the teacher's perspective on student evaluation?",
+                  "audioTeacherText": "From my perspective, practical oral presentations and team projects demonstrate real English fluency much better than traditional multiple-choice grammar exams.",
+                  "question": "What sleep hygiene habits does the health expert recommend to teenagers?",
                   "options": [
-                    "Students should only do written grammar tests every single day.",
-                    "Practical presentations demonstrate real fluency better than traditional exams.",
-                    "Oral English practice is completely unnecessary."
+                    "Dimming room lighting an hour early and practicing gentle breathing exercises.",
+                    "Switching off mobile screens 30 minutes prior to bed and skipping late coffee.",
+                    "Avoiding sugary snacks past 8:00 PM and keeping bedroom windows open for fresh air."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-4-1.mp3"
@@ -27303,13 +27283,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la recomendación principal para dormir mejor.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "If you want to wake up with great energy, you should turn off your phone screen thirty minutes before sleeping and you shouldn't drink coffee after 5:00 PM.",
                   "transcription": "If you want to wake up with great energy, you should turn off your phone screen thirty minutes before sleeping and you shouldn't drink coffee after 5:00 PM.",
-                  "question": "What does the doctor advise teenagers to do before sleeping?",
+                  "audioTeacherText": "If you want to wake up with great energy, you should turn off your phone screen thirty minutes before sleeping and you shouldn't drink coffee after 5:00 PM.",
+                  "question": "What physical transformation occurs when liquid water cools below 0°C?",
                   "options": [
-                    "Play video games until 3:00 AM every single night.",
-                    "Drink three energy drinks before going to bed.",
-                    "Turn off phone screens 30 minutes before sleep and avoid late caffeine."
+                    "Its molecular density drops and it immediately vaporizes into light mist.",
+                    "It loses electrical conductivity while maintaining its liquid properties.",
+                    "It undergoes freezing crystallization and solidifies into structured ice."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-4-2.mp3"
@@ -27806,13 +27786,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y responde qué ocurre cuando la temperatura del agua baja de cero.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "In physics and chemistry, if the temperature of liquid water drops below zero degrees Celsius, it freezes and transforms into solid ice.",
                   "transcription": "In physics and chemistry, if the temperature of liquid water drops below zero degrees Celsius, it freezes and transforms into solid ice.",
-                  "question": "What happens when liquid water drops below zero degrees Celsius?",
+                  "audioTeacherText": "In physics and chemistry, if the temperature of liquid water drops below zero degrees Celsius, it freezes and transforms into solid ice.",
+                  "question": "Why is the gamer briefly stepping away (BRB) for five minutes?",
                   "options": [
-                    "It freezes and transforms into solid ice.",
-                    "It evaporates quickly into hot steam.",
-                    "It stays liquid without changing state."
+                    "To reboot the internet router and eliminate severe latency lag during gameplay.",
+                    "To connect an auxiliary ethernet cable directly to the gaming console unit.",
+                    "To download an urgent system firmware update before tournament matches begin."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-4-3.mp3"
@@ -28309,13 +28289,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha la nota de voz del profesor y responde qué pide el amigo en el mensaje de chat.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Hey guys! I have terrible lag right now. BRB in five minutes, I will restart my wifi router so we can play the tournament without disconnection.",
                   "transcription": "Hey guys! I have terrible lag right now. BRB in five minutes, I will restart my wifi router so we can play the tournament without disconnection.",
-                  "question": "Why is the speaker stepping away for five minutes (BRB)?",
+                  "audioTeacherText": "Hey guys! I have terrible lag right now. BRB in five minutes, I will restart my wifi router so we can play the tournament without disconnection.",
+                  "question": "What positive outcome will the athletic team achieve through discipline?",
                   "options": [
-                    "To download an entirely new game file.",
-                    "To restart the wifi router and fix bad internet lag.",
-                    "To buy new headphones at the mall."
+                    "They will secure automatic qualification for the regional autumn tournament.",
+                    "They will earn the championship trophy together by supporting teammates on field.",
+                    "They will receive sponsorship contracts and modern sporting equipment for school."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-4-4.mp3"
@@ -28812,13 +28792,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la condición para ganar el campeonato.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Listen team: If we train with maximum discipline and support each other on the field, we will lift the championship trophy on Saturday!",
                   "transcription": "Listen team: If we train with maximum discipline and support each other on the field, we will lift the championship trophy on Saturday!",
-                  "question": "What will happen if the team trains with discipline and supports each other?",
+                  "audioTeacherText": "Listen team: If we train with maximum discipline and support each other on the field, we will lift the championship trophy on Saturday!",
+                  "question": "What standout advantages does the Pro Edition demonstrate after two weeks?",
                   "options": [
-                    "They will lose their spot in the regional tournament.",
-                    "They will only play friendly practice games.",
-                    "They will lift the championship trophy on Saturday."
+                    "Faster biometric authentication and superior low-light camera sensor processing.",
+                    "Lighter chassis construction and significantly faster rapid-charging capabilities.",
+                    "Superior structural durability paired with the longest operational battery life."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-4-5.mp3"
@@ -29315,13 +29295,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el veredicto del profesor y selecciona cuál es el teléfono con la mejor batería.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "After testing both models for two weeks, the Pro Edition is clearly the most durable smartphone with the longest battery life on the market.",
                   "transcription": "After testing both models for two weeks, the Pro Edition is clearly the most durable smartphone with the longest battery life on the market.",
-                  "question": "What is the expert verdict on the Pro Edition smartphone?",
+                  "audioTeacherText": "After testing both models for two weeks, the Pro Edition is clearly the most durable smartphone with the longest battery life on the market.",
+                  "question": "Why is the tablet unable to complete the 4K video file download?",
                   "options": [
-                    "It is the most durable smartphone with the longest battery life.",
-                    "It has a great camera but very weak battery life.",
-                    "It is cheaper but much less durable than the base model."
+                    "Device internal storage is insufficient, requiring 5 gigabytes to be freed up.",
+                    "The local WiFi network bandwidth is restricted by administrator security rules.",
+                    "The operating system requires an urgent software patch before downloading files."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-4-6.mp3"
@@ -29818,13 +29798,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la razón por la que el archivo no se descarga.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Your tablet cannot download this 4K video file because you do not have enough storage space on your device. Please delete five gigabytes of old photos first.",
                   "transcription": "Your tablet cannot download this 4K video file because you do not have enough storage space on your device. Please delete five gigabytes of old photos first.",
-                  "question": "Why can't the tablet download the 4K video file?",
+                  "audioTeacherText": "Your tablet cannot download this 4K video file because you do not have enough storage space on your device. Please delete five gigabytes of old photos first.",
+                  "question": "What constructive conflict resolution advice is given for disagreements with friends?",
                   "options": [
-                    "Because the internet connection was lost completely.",
-                    "Because there is not enough storage space on the device.",
-                    "Because the tablet does not support video playback."
+                    "Pausing the conversation until emotions cool down and asking a counselor to mediate.",
+                    "Listening actively with empathy and avoiding hashing out personal disputes in group chats.",
+                    "Writing an honest personal letter rather than sending impulsive audio voice notes."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-4-7.mp3"
@@ -30321,13 +30301,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio de la orientadora escolar y responde cuál es el paso más importante ante un malentendido.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "When you have an argument with a close friend, you ought to listen with empathy first and you had better not discuss your private issues in public group chats.",
                   "transcription": "When you have an argument with a close friend, you ought to listen with empathy first and you had better not discuss your private issues in public group chats.",
-                  "question": "What should teenagers do when having an argument with a friend?",
+                  "audioTeacherText": "When you have an argument with a close friend, you ought to listen with empathy first and you had better not discuss your private issues in public group chats.",
+                  "question": "What two required credentials must scholarship applicants provide before Friday?",
                   "options": [
-                    "Ignore their friend's messages for several weeks.",
-                    "Ask other classmates to take sides in the argument.",
-                    "Listen with empathy and avoid arguing in public group chats."
+                    "Their verified academic diploma and signed extracurricular participation logs.",
+                    "Their certified birth certificate and proof of foreign exchange medical insurance.",
+                    "Their official high school transcript along with a personalized recommendation letter."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-4-8.mp3"
@@ -30824,13 +30804,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el mensaje formal del funcionario de admisiones y responde cuál es el documento requerido.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Good morning candidates. Please submit your official high school transcript and your personal recommendation letter before Friday at 5:00 PM.",
                   "transcription": "Good morning candidates. Please submit your official high school transcript and your personal recommendation letter before Friday at 5:00 PM.",
-                  "question": "What must candidates submit before Friday at 5:00 PM?",
+                  "audioTeacherText": "Good morning candidates. Please submit your official high school transcript and your personal recommendation letter before Friday at 5:00 PM.",
+                  "question": "What inspiring message does the academy director share with Level 4 graduates?",
                   "options": [
-                    "Their official high school transcript and recommendation letter.",
-                    "Their updated passport and proof of foreign address.",
-                    "Their personal essay and payment receipt."
+                    "Dedication and passion in English empower students to seize international leadership.",
+                    "Consistent grammar review and bilingual reading ensure top marks in college admissions.",
+                    "Mastering communicative English allows graduates to mentor younger community scholars."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-4-9.mp3"
@@ -31327,13 +31307,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha las palabras del director de la academia y selecciona cuál es el mensaje para los graduados.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Congratulations Level 4 graduates! You have proven that if you dedicate effort and passion to English, you will conquer international opportunities and lead with confidence.",
                   "transcription": "Congratulations Level 4 graduates! You have proven that if you dedicate effort and passion to English, you will conquer international opportunities and lead with confidence.",
-                  "question": "What does the academy director say about Level 4 graduates?",
+                  "audioTeacherText": "Congratulations Level 4 graduates! You have proven that if you dedicate effort and passion to English, you will conquer international opportunities and lead with confidence.",
+                  "question": "What travel accomplishment has the speaker completed, and what remains pending?",
                   "options": [
-                    "They need to complete additional written exams before graduating.",
-                    "They have proven that effort and passion lead to international opportunities and confidence.",
-                    "They are ready for basic travel phrases only."
+                    "Has explored Andean national parks, but has not taken an Amazon boat cruise.",
+                    "Has visited three South American nations, but has not yet seen the Amazon rainforest.",
+                    "Has backpacked across coastal cities, but has not visited historical inland ruins."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-basic-4-10.mp3"
@@ -31838,13 +31818,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la experiencia que el estudiante ya ha completado.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "I have already visited three South American countries, but I have not seen the Amazon rainforest yet.",
                   "transcription": "I have already visited three South American countries, but I have not seen the Amazon rainforest yet.",
-                  "question": "What experience has the speaker already completed and what is still pending?",
+                  "audioTeacherText": "I have already visited three South American countries, but I have not seen the Amazon rainforest yet.",
+                  "question": "What impromptu plan did the speaker make with Felipe after meeting at the park?",
                   "options": [
-                    "Has explored the Amazon rainforest, but hasn't traveled abroad yet.",
-                    "Has lived in three South American countries for five years.",
-                    "Has visited three South American countries, but hasn't seen the Amazon rainforest yet."
+                    "They decided to ride bicycles to the riverside and grab milkshakes together.",
+                    "They planned to visit the library to complete their collaborative physics project.",
+                    "They agreed to hang out at the skatepark and practice kickflips until sunset."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-1.mp3"
@@ -32341,13 +32321,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la propuesta exacta del locutor.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Hey guys! I just ran into Felipe at the park and we decided to hang out at my place to chill out and play video games. Are you down?",
                   "transcription": "Hey guys! I just ran into Felipe at the park and we decided to hang out at my place to chill out and play video games. Are you down?",
-                  "question": "What did the speaker and Felipe decide to do?",
+                  "audioTeacherText": "Hey guys! I just ran into Felipe at the park and we decided to hang out at my place to chill out and play video games. Are you down?",
+                  "question": "What deduction does the speaker make about the chemistry laboratory at 8:00 PM?",
                   "options": [
-                    "Hang out at his place to chill out and play video games.",
-                    "Go to the library to finish their physics assignment.",
-                    "Meet at the skatepark for an outdoor tournament."
+                    "Professor Martinez must be completing lab experiments because lights and music are on.",
+                    "The school cleaning crew might be sanitizing test tubes before tomorrow's workshop.",
+                    "Senior robotics students could be testing motorized circuits for the upcoming expo."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-2.mp3"
@@ -32844,13 +32824,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la deducción correcta sobre las luces del laboratorio.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The chemistry laboratory lights are on and music is playing inside at 8:00 PM. Professor Gomez must still be working on the science fair project.",
                   "transcription": "The chemistry laboratory lights are on and music is playing inside at 8:00 PM. Professor Gomez must still be working on the science fair project.",
-                  "question": "What is the logical deduction about Professor Gomez?",
+                  "audioTeacherText": "The chemistry laboratory lights are on and music is playing inside at 8:00 PM. Professor Gomez must still be working on the science fair project.",
+                  "question": "What environmental initiative would the speaker implement as Minister?",
                   "options": [
-                    "He might have already left for the teacher conference.",
-                    "He must still be working on the science fair project.",
-                    "He could be attending a faculty meeting in the main hall."
+                    "Subsidize solar panel installations for municipal schools and rural clinics.",
+                    "Ban single-use plastics and subsidize student eco-startups creating biodegradable packs.",
+                    "Establish strict carbon emissions taxes on public transportation fleets nationwide."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-3.mp3"
@@ -33347,13 +33327,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la primera medida que tomaría la líder ecológica.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "If I were the Minister of the Environment, I would immediately ban single-use plastics and plant one million native trees in Colombia.",
                   "transcription": "If I were the Minister of the Environment, I would immediately ban single-use plastics and plant one million native trees in Colombia.",
-                  "question": "What two actions would the speaker take if she were Minister of the Environment?",
+                  "audioTeacherText": "If I were the Minister of the Environment, I would immediately ban single-use plastics and plant one million native trees in Colombia.",
+                  "question": "What did the debate adjudicator observe regarding both participating teams?",
                   "options": [
-                    "Increase taxes on paper and restrict renewable energy.",
-                    "Build more highways through national parks.",
-                    "Ban single-use plastics and plant one million native trees."
+                    "Both teams relied too heavily on emotional anecdotes rather than scientific studies.",
+                    "Team A dominated rebuttal periods while Team B failed to present factual statistics.",
+                    "Both delivered compelling arguments, balancing technological innovation with ethics."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-4.mp3"
@@ -33850,13 +33830,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál fue la conclusión diplomática del debate.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Both teams presented compelling arguments. While team A highlighted innovation, team B rightly emphasized human ethics and student discipline.",
                   "transcription": "Both teams presented compelling arguments. While team A highlighted innovation, team B rightly emphasized human ethics and student discipline.",
-                  "question": "What did the moderator conclude about both teams?",
+                  "audioTeacherText": "Both teams presented compelling arguments. While team A highlighted innovation, team B rightly emphasized human ethics and student discipline.",
+                  "question": "What inspiring community achievement does the Global Teen Spotlight highlight?",
                   "options": [
-                    "Both presented compelling arguments balancing innovation with ethics and discipline.",
-                    "The first team dominated completely while the second had no evidence.",
-                    "Neither team addressed the central motion of the debate."
+                    "Teen innovators in Medellin converted vacant urban lots into communal organic gardens.",
+                    "Youth activists in Bogota organized tree-planting campaigns across twenty high schools.",
+                    "High school scholars built solar water filtration units for underserved coastal towns."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-5.mp3"
@@ -34353,13 +34333,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es el llamado a la acción final del presentador.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Welcome to Global Teen Spotlight! Today we are exploring youth sustainability projects. If you enjoy this episode, hit the subscribe button and stay tuned for part two!",
                   "transcription": "Welcome to Global Teen Spotlight! Today we are exploring youth sustainability projects. If you enjoy this episode, hit the subscribe button and stay tuned for part two!",
-                  "question": "What is the host's call to action at the end of the intro?",
+                  "audioTeacherText": "Welcome to Global Teen Spotlight! Today we are exploring youth sustainability projects. If you enjoy this episode, hit the subscribe button and stay tuned for part two!",
+                  "question": "How long has the musician played electric guitar, and what has the band achieved?",
                   "options": [
-                    "Leave a comment with suggestions for next semester.",
-                    "Hit the subscribe button and stay tuned for part two.",
-                    "Share the episode on social media to enter a giveaway."
+                    "Playing since age twelve, and their quartet has headlined festivals for two seasons.",
+                    "Playing since age ten, and their rock group has composed original songs for three years.",
+                    "Playing for five straight years, and their band has produced two digital music albums."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-6.mp3"
@@ -34856,13 +34836,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuánto tiempo lleva el guitarrista tocando en su banda.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "I have been playing the electric guitar since I was ten years old, and our rock band has been writing original songs for three consecutive years.",
                   "transcription": "I have been playing the electric guitar since I was ten years old, and our rock band has been writing original songs for three consecutive years.",
-                  "question": "Since when has the speaker played electric guitar and for how long has the band written songs?",
+                  "audioTeacherText": "I have been playing the electric guitar since I was ten years old, and our rock band has been writing original songs for three consecutive years.",
+                  "question": "What cinematic aspects of the indie sci-fi movie impressed the reviewer?",
                   "options": [
-                    "Guitar for three years, and started writing songs last month.",
-                    "Guitar since last year, and formed the band five years ago.",
-                    "Guitar since age 10, and writing band songs for three years."
+                    "The minimalist sound design and the emotional chemistry between the two supporting roles.",
+                    "The high-budget practical special effects and the philosophical open-ended conclusion.",
+                    "The standout lead performance and the stunning unexpected plot twist at the climax."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-7.mp3"
@@ -35359,13 +35339,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál fue el veredicto del crítico sobre la película de aventura.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "While browsing streaming apps, I came across an indie science fiction film. The lead actor stood out brilliantly, and the director pulled off a stunning plot twist at the climax.",
                   "transcription": "While browsing streaming apps, I came across an indie science fiction film. The lead actor stood out brilliantly, and the director pulled off a stunning plot twist at the climax.",
-                  "question": "What made the indie science fiction movie so memorable?",
+                  "audioTeacherText": "While browsing streaming apps, I came across an indie science fiction film. The lead actor stood out brilliantly, and the director pulled off a stunning plot twist at the climax.",
+                  "question": "What forensic deduction explains the package delivery with no signs of forced entry?",
                   "options": [
-                    "The lead actor stood out brilliantly and the director pulled off a stunning plot twist.",
-                    "The special visual effects were impressive despite weak acting.",
-                    "The soundtrack was memorable but the ending was predictable."
+                    "The delivery courier must have dropped the parcel through the mail slot before noon.",
+                    "A friendly neighbor likely accepted the package and left it safely on the porch.",
+                    "The courier must have retrieved a master key code from the leasing manager's desk."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-8.mp3"
@@ -35862,13 +35842,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la deducción concluyente sobre el paquete misterioso.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The locked front door shows zero signs of forced entry. The delivery courier must have dropped the package through the mail slot before noon.",
                   "transcription": "The locked front door shows zero signs of forced entry. The delivery courier must have dropped the package through the mail slot before noon.",
-                  "question": "What is the investigator's logical deduction about how the package entered the house?",
+                  "audioTeacherText": "The locked front door shows zero signs of forced entry. The delivery courier must have dropped the package through the mail slot before noon.",
+                  "question": "Under what condition will the student robot navigate the autonomous course?",
                   "options": [
-                    "The homeowner must have picked it up at the post office.",
-                    "The delivery courier must have dropped it through the mail slot.",
-                    "A neighbor could have left it by the front door yesterday."
+                    "As soon as the remote controller pairs and battery voltage exceeds ninety percent.",
+                    "As soon as the green light turns on, provided optical sensors remain properly calibrated.",
+                    "Whenever the starting signal sounds, as long as wheel traction remains slip-free."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-9.mp3"
@@ -36365,13 +36345,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la condición para que el equipo active su sensor autónomo.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Our robot will execute the autonomous course as soon as the green light turns on, provided that our optical sensors stay calibrated.",
                   "transcription": "Our robot will execute the autonomous course as soon as the green light turns on, provided that our optical sensors stay calibrated.",
-                  "question": "When will the robot execute the course and under what condition?",
+                  "audioTeacherText": "Our robot will execute the autonomous course as soon as the green light turns on, provided that our optical sensors stay calibrated.",
+                  "question": "According to the speaker, what is the genuine essence of diplomatic negotiation?",
                   "options": [
-                    "Only when manual controls are activated by the operator.",
-                    "After the battery charges to 100%, regardless of sensors.",
-                    "As soon as the green light turns on, provided that sensors stay calibrated."
+                    "Dismantling ideological biases through clear legal arbitration and structured debate.",
+                    "Reaching political consensus by offering tactical concessions during early negotiations.",
+                    "Finding common ground and establishing harmony so that all communities thrive together."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-10.mp3"
@@ -36868,13 +36848,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es la recomendación central del enviado diplomático.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "True diplomacy is not about defeating the opposing team; it is about finding common ground and striking a balance where all communities thrive together.",
                   "transcription": "True diplomacy is not about defeating the opposing team; it is about finding common ground and striking a balance where all communities thrive together.",
-                  "question": "According to the speaker, what is the true essence of diplomacy?",
+                  "audioTeacherText": "True diplomacy is not about defeating the opposing team; it is about finding common ground and striking a balance where all communities thrive together.",
+                  "question": "Why was Santiago awarded the Global Youth Leadership Scholarship?",
                   "options": [
-                    "Finding common ground and striking a balance where all communities thrive.",
-                    "Defending one's national interests without compromising.",
-                    "Enforcing strict legal regulations on international trade."
+                    "His proven resilience, eloquent communication, and commitment to community empowerment.",
+                    "His exceptional standardized exam scores and extensive international volunteer record.",
+                    "His innovative entrepreneurial venture solving clean drinking water access in rural areas."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-11.mp3"
@@ -37371,13 +37351,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del presidente del comité de admisiones y selecciona por qué Santiago ganó la beca.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "We are thrilled to award Santiago the Global Youth Leadership Scholarship. His proven resilience, eloquent communication, and clear commitment to empowering his community made his application stand out brilliantly.",
                   "transcription": "We are thrilled to award Santiago the Global Youth Leadership Scholarship. His proven resilience, eloquent communication, and clear commitment to empowering his community made his application stand out brilliantly.",
-                  "question": "Why did the committee award Santiago the international scholarship?",
+                  "audioTeacherText": "We are thrilled to award Santiago the Global Youth Leadership Scholarship. His proven resilience, eloquent communication, and clear commitment to empowering his community made his application stand out brilliantly.",
+                  "question": "What event did the student council announce for this Friday evening?",
                   "options": [
-                    "His perfect academic score in mathematics and sports.",
-                    "His proven resilience, eloquent communication, and commitment to empowering his community.",
-                    "His prior experience studying abroad in European institutions."
+                    "The annual inter-school science symposium in the newly refurbished science pavilion.",
+                    "The cultural talent gala taking place this Friday evening inside the main auditorium.",
+                    "The community fundraising concert supporting youth sports facilities in the borough."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-inter-12.mp3"
@@ -37877,13 +37857,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio de la locutora y selecciona qué fue exactamente lo que anunció el comité organizador.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The student council announced that the cultural talent gala would take place this Friday evening in the main auditorium.",
                   "transcription": "The student council announced that the cultural talent gala would take place this Friday evening in the main auditorium.",
-                  "question": "What did the student council announce on the radio broadcast?",
+                  "audioTeacherText": "The student council announced that the cultural talent gala would take place this Friday evening in the main auditorium.",
+                  "question": "What two specific questions did the scholarship selection board inquire about?",
                   "options": [
-                    "That the sports championship had been postponed until next month.",
-                    "That ticket sales for the gala were officially sold out.",
-                    "That the cultural talent gala would take place this Friday evening in the main auditorium."
+                    "Why I chose civil engineering and whether I had presented research at youth summits.",
+                    "What prompted my interest in renewable energy and whether I had studied abroad before.",
+                    "Why I chose environmental engineering and whether I led hometown sustainability projects."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-advanced-1.mp3"
@@ -38375,13 +38355,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio de la candidata y selecciona qué fue lo que el comité evaluador le preguntó.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The scholarship committee asked me why I wanted to study environmental engineering, and they inquired if I had led any sustainability projects in my hometown.",
                   "transcription": "The scholarship committee asked me why I wanted to study environmental engineering, and they inquired if I had led any sustainability projects in my hometown.",
-                  "question": "What two things did the scholarship committee ask the candidate?",
+                  "audioTeacherText": "The scholarship committee asked me why I wanted to study environmental engineering, and they inquired if I had led any sustainability projects in my hometown.",
+                  "question": "What pioneering scientific breakthrough did Dr. Rodriguez successfully develop?",
                   "options": [
-                    "Why she wanted to study environmental engineering and if she had led sustainability projects.",
-                    "What her grade point average was and which university she preferred.",
-                    "How she planned to fund her living expenses in the foreign city."
+                    "A quantum sensor to detect underground aquifers, with an algorithm featured in Nature.",
+                    "An airborne hyperspectral camera to monitor drought patterns across vulnerable forests.",
+                    "A subterranean acoustic probe identifying geothermal energy reserves beneath volcanoes."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-advanced-2.mp3"
@@ -38873,13 +38853,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona qué inventó la investigadora destacada.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Dr. Rodriguez, whose pioneering algorithm was published in Nature magazine, developed a quantum sensor which can detect underground aquifers with unprecedented precision.",
                   "transcription": "Dr. Rodriguez, whose pioneering algorithm was published in Nature magazine, developed a quantum sensor which can detect underground aquifers with unprecedented precision.",
-                  "question": "What did Dr. Rodriguez develop and what made her algorithm stand out?",
+                  "audioTeacherText": "Dr. Rodriguez, whose pioneering algorithm was published in Nature magazine, developed a quantum sensor which can detect underground aquifers with unprecedented precision.",
+                  "question": "What technical specifications characterize the Bogota search-and-rescue drone?",
                   "options": [
-                    "A satellite imaging system for tracking deforestation in rainforests.",
-                    "A quantum sensor to detect underground aquifers, with an algorithm published in Nature.",
-                    "A geothermal mapping tool presented at an engineering conference."
+                    "Constructed with carbon composite parts and piloted through long-range 5G cellular arrays.",
+                    "Equipped with thermal night-vision cameras and driven by solar-rechargeable batteries.",
+                    "Integrated with high-frequency radar sensors and powered by dual hydrogen fuel cells."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-advanced-3.mp3"
@@ -39371,13 +39351,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del revisor de tecnología y selecciona qué componentes destacan en el nuevo dron de rescate.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "This autonomous search-and-rescue drone was developed in Bogota. It is equipped with thermal night-vision cameras and it is powered by solar-rechargeable batteries.",
                   "transcription": "This autonomous search-and-rescue drone was developed in Bogota. It is equipped with thermal night-vision cameras and it is powered by solar-rechargeable batteries.",
-                  "question": "Where was the drone developed and what is it equipped with?",
+                  "audioTeacherText": "This autonomous search-and-rescue drone was developed in Bogota. It is equipped with thermal night-vision cameras and it is powered by solar-rechargeable batteries.",
+                  "question": "What milestone is projected for 2028 regarding lunar scientific exploration?",
                   "options": [
-                    "Imported from Germany, equipped with LiDAR sensors, and powered by hydrogen.",
-                    "Designed in Medellin, equipped with optical lenses, and tethered to a base station.",
-                    "Developed in Bogota, equipped with thermal cameras, and powered by solar batteries."
+                    "Automated robotic rovers will commence mapping subterranean ice tunnels across craters.",
+                    "A commercial lunar transport corridor will deploy regular cargo resupply missions.",
+                    "A permanent lunar research outpost will be set up with proven oxygen extraction tech."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-advanced-4.mp3"
@@ -39869,13 +39849,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del director de la misión y selecciona cuáles son los dos hitos confirmados para el programa lunar.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "A permanent lunar scientific base will be established by 2028, and vital oxygen extraction technologies have already been successfully tested.",
                   "transcription": "A permanent lunar scientific base will be established by 2028, and vital oxygen extraction technologies have already been successfully tested.",
-                  "question": "What two milestones were confirmed regarding the lunar scientific program?",
+                  "audioTeacherText": "A permanent lunar scientific base will be established by 2028, and vital oxygen extraction technologies have already been successfully tested.",
+                  "question": "Why was the art contest rejection considered a 'blessing in disguise'?",
                   "options": [
-                    "A permanent lunar base will be established by 2028, and oxygen extraction has been tested.",
-                    "A commercial lunar spaceport will be constructed by 2035 with private funding.",
-                    "Uncrewed rovers will search for ice deposits before crewed landings begin."
+                    "It motivated the creator to master digital 3D illustration and expand creative horizons.",
+                    "It encouraged the painter to explore classical oil portraiture under experienced mentors.",
+                    "It prompted the student to enter international competitions with greater self-belief."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-advanced-5.mp3"
@@ -40367,13 +40347,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio de la locutora y selecciona qué modismo utilizó para describir el rechazo de su primer proyecto.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Being rejected from the regional art contest was painful at first, but it turned out to be a blessing in disguise because it motivated me to master digital 3D illustration.",
                   "transcription": "Being rejected from the regional art contest was painful at first, but it turned out to be a blessing in disguise because it motivated me to master digital 3D illustration.",
-                  "question": "How did the speaker describe being rejected from the art contest?",
+                  "audioTeacherText": "Being rejected from the regional art contest was painful at first, but it turned out to be a blessing in disguise because it motivated me to master digital 3D illustration.",
+                  "question": "How did the technical team handle the primary cloud provider's unexpected outage?",
                   "options": [
-                    "It was a major setback that caused her to switch to graphic design.",
-                    "It was a blessing in disguise because it motivated her to master digital 3D illustration.",
-                    "It prompted her to appeal the judges' decision with new artwork."
+                    "They migrated all client traffic to redundant European servers within forty minutes.",
+                    "They stepped up immediately to iron out server bugs and hammer out a failover protocol.",
+                    "They notified enterprise stakeholders while security experts initiated network audits."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-advanced-6.mp3"
@@ -40865,13 +40845,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio de la CEO juvenil y selecciona cuál fue la decisión que tomó el equipo para salvar el lanzamiento.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "When our main cloud provider suffered an outage, our technical team stepped up immediately to iron out the server bugs and hammer out a failover protocol.",
                   "transcription": "When our main cloud provider suffered an outage, our technical team stepped up immediately to iron out the server bugs and hammer out a failover protocol.",
-                  "question": "What two actions did the technical team take when the cloud provider suffered an outage?",
+                  "audioTeacherText": "When our main cloud provider suffered an outage, our technical team stepped up immediately to iron out the server bugs and hammer out a failover protocol.",
+                  "question": "Why did the proposition debate team secure victory over their opponents?",
                   "options": [
-                    "Migrated all databases to an on-premise data center overnight.",
-                    "Notified customers and waited for the cloud vendor to resolve the outage.",
-                    "Stepped up immediately to iron out server bugs and hammered out a failover protocol."
+                    "They articulated their points with greater rhetorical poise and charismatic delivery.",
+                    "They demonstrated superior rebuttal agility during the interactive floor debate round.",
+                    "They backed claims with empirical algorithmic bias data while opponents used assumptions."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-advanced-7.mp3"
@@ -41363,13 +41343,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del presidente del jurado y selecciona cuál fue el veredicto sobre la solidez de las refutaciones.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The proposition team won the debate because they substantiated their claims with empirical evidence regarding algorithmic bias, whereas the opposition relied on unproven assumptions.",
                   "transcription": "The proposition team won the debate because they substantiated their claims with empirical evidence regarding algorithmic bias, whereas the opposition relied on unproven assumptions.",
-                  "question": "Why did the proposition team win the championship debate?",
+                  "audioTeacherText": "The proposition team won the debate because they substantiated their claims with empirical evidence regarding algorithmic bias, whereas the opposition relied on unproven assumptions.",
+                  "question": "What hypothetical scenario regarding renewable energy does the speaker reflect upon?",
                   "options": [
-                    "They substantiated their claims with empirical evidence on algorithmic bias.",
-                    "They utilized superior emotional rhetoric and personal storytelling.",
-                    "The opposition exceeded their allocated speaking time limit."
+                    "If humanity had invested in solar and geothermal 30 years ago, energy would be clean today.",
+                    "If global governments had subsidized wind farms decades ago, fossil fuels would be obsolete.",
+                    "If international pacts had taxed carbon emissions in the 1990s, climate shifts would cease."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-advanced-8.mp3"
@@ -41861,13 +41841,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio de la científica climática y selecciona cuál es la reflexión central en Mixed Conditional.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "If humanity had invested in solar and geothermal technologies thirty years ago, our global energy grid would be completely clean and affordable today.",
                   "transcription": "If humanity had invested in solar and geothermal technologies thirty years ago, our global energy grid would be completely clean and affordable today.",
-                  "question": "What is the speaker's reflection on past investment in clean energy?",
+                  "audioTeacherText": "If humanity had invested in solar and geothermal technologies thirty years ago, our global energy grid would be completely clean and affordable today.",
+                  "question": "Why did EcoTech Colombia receive the unanimous maximum grant of $500,000?",
                   "options": [
-                    "If nuclear power had been expanded earlier, fossil fuels would be phased out.",
-                    "If we had invested in solar and geothermal 30 years ago, our energy grid would be clean and affordable today.",
-                    "If energy consumption had decreased, current grid upgrades wouldn't be necessary."
+                    "Their proprietary water recycling patents and rapid commercial expansion across LatAm.",
+                    "Their proven fiscal governance, measurable community impact, and eloquent youth leadership.",
+                    "Their robust academic partnerships, verified carbon reduction metrics, and lean operations."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-advanced-9.mp3"
@@ -42359,13 +42339,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el veredicto del presidente de la fundación internacional y selecciona por qué EcoTech ganó el fondo mayor.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "We are unanimously voting to award EcoTech Colombia the maximum grant of five hundred thousand dollars. Their proven fiscal governance, measurable community impact, and eloquent youth leadership set the gold standard for social innovation worldwide.",
                   "transcription": "We are unanimously voting to award EcoTech Colombia the maximum grant of five hundred thousand dollars. Their proven fiscal governance, measurable community impact, and eloquent youth leadership set the gold standard for social innovation worldwide.",
-                  "question": "Why did the philanthropic board unanimously award EcoTech the maximum grant?",
+                  "audioTeacherText": "We are unanimously voting to award EcoTech Colombia the maximum grant of five hundred thousand dollars. Their proven fiscal governance, measurable community impact, and eloquent youth leadership set the gold standard for social innovation worldwide.",
+                  "question": "What dual technological achievements are predicted to unfold by the year 2032?",
                   "options": [
-                    "Their proprietary hardware patents and venture capital backing.",
-                    "Their partnership with international NGOs and academic endorsements.",
-                    "Their proven fiscal governance, measurable community impact, and eloquent youth leadership."
+                    "Commercial fusion power plants will open while manned missions land safely on Mars.",
+                    "Neural computer interfaces will decode brain signals while orbital elevators operate.",
+                    "Quantum computing will solve complex molecular simulations while probes explore Europa."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-advanced-10.mp3"
@@ -42865,13 +42845,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del científico y selecciona cuáles son las dos predicciones temporales confirmadas.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "By 2032, quantum computing algorithms will have cracked complex molecular simulations, and autonomous space probes will be exploring subsurface oceans on Europa.",
                   "transcription": "By 2032, quantum computing algorithms will have cracked complex molecular simulations, and autonomous space probes will be exploring subsurface oceans on Europa.",
-                  "question": "What two futuristic milestones did the scientist predict?",
+                  "audioTeacherText": "By 2032, quantum computing algorithms will have cracked complex molecular simulations, and autonomous space probes will be exploring subsurface oceans on Europa.",
+                  "question": "What strategic corporate pivot enabled the startup's global international expansion?",
                   "options": [
-                    "Quantum computing will have cracked molecular simulations, and probes will be exploring Europa's oceans.",
-                    "Fusion reactors will be commercially viable, and colonies will be founded on Mars.",
-                    "Neural interfaces will replace mobile screens, and orbital habitats will be operational."
+                    "Pivoting from hardware manufacturing to cloud AI software platforms two years ago.",
+                    "Shifting from regional enterprise consulting to consumer software licensing agreements.",
+                    "Transitioning from physical server sales to subscription-based cybersecurity models."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-1.mp3"
@@ -43363,13 +43343,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio de la CEO y selecciona cuál es la conclusión contrafáctica del informe.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "If our founders hadn't pivoted from hardware manufacturing to cloud AI software two years ago, our company wouldn't be expanding internationally today.",
                   "transcription": "If our founders hadn't pivoted from hardware manufacturing to cloud AI software two years ago, our company wouldn't be expanding internationally today.",
-                  "question": "What did the CEO state regarding their pivot two years ago?",
+                  "audioTeacherText": "If our founders hadn't pivoted from hardware manufacturing to cloud AI software two years ago, our company wouldn't be expanding internationally today.",
+                  "question": "What two transformative qualities did visionary leaders leave behind?",
                   "options": [
-                    "If they had secured Series B funding earlier, they would have dominated the domestic market.",
-                    "If they hadn't pivoted to cloud AI software 2 years ago, they wouldn't be expanding internationally today.",
-                    "If the founders hadn't merged with an enterprise competitor, profitability would be delayed."
+                    "Uncompromising business agility that disrupted markets, and iconic consumer branding.",
+                    "Passion and relentless attention to design, leaving behind not just products, but inspiration.",
+                    "Rigorous technical perfectionism that set standards, and lasting institutional values."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-2.mp3"
@@ -43861,13 +43841,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del presentador y selecciona cuál fue la Cleft Sentence que utilizó para definir la grandeza.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "It was passion and relentless attention to design that revolutionized personal computing, and what visionary leaders leave behind is not just products, but inspiration.",
                   "transcription": "It was passion and relentless attention to design that revolutionized personal computing, and what visionary leaders leave behind is not just products, but inspiration.",
-                  "question": "What two emphatic cleft structures did the speaker use in the keynote?",
+                  "audioTeacherText": "It was passion and relentless attention to design that revolutionized personal computing, and what visionary leaders leave behind is not just products, but inspiration.",
+                  "question": "What two rhetorical inversions did the parliamentary adjudicator highlight?",
                   "options": [
-                    "It was strict corporate hierarchy that drove market share, and what companies need is capital efficiency.",
-                    "It was aggressive marketing that captured consumers, and what founders build is brand loyalty.",
-                    "It was passion and attention to design that revolutionized computing, and what leaders leave is inspiration."
+                    "Seldom had a team defended civil liberties so boldly, nor had they yielded ground.",
+                    "Hardly had the opposition structured arguments before the motion carried total favor.",
+                    "Rarely have I seen such rhetoric, and not only did proposition dismantle opposing claims."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-3.mp3"
@@ -44359,13 +44339,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del orador y selecciona cuáles fueron las dos inversiones retóricas que utilizó.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Rarely have I seen such impassioned rhetoric, and not only did the proposition dismantle every opposing claim, but they also established an inviolable moral standard for AI governance.",
                   "transcription": "Rarely have I seen such impassioned rhetoric, and not only did the proposition dismantle every opposing claim, but they also established an inviolable moral standard for AI governance.",
-                  "question": "What two rhetorical inversions did the adjudicator highlight in the address?",
+                  "audioTeacherText": "Rarely have I seen such impassioned rhetoric, and not only did the proposition dismantle every opposing claim, but they also established an inviolable moral standard for AI governance.",
+                  "question": "What diplomatic hedging phrases did the peace envoy formulate in the address?",
                   "options": [
-                    "Rarely have I seen such impassioned rhetoric, and not only did the proposition dismantle claims.",
-                    "Seldom has a debate team adhered so strictly to time limits while delivering analytical clarity.",
-                    "Hardly had the opposition begun their refutation before the proposition introduced new arguments."
+                    "It is widely believed that peace is achievable, suggesting parties are amenable to accords.",
+                    "Evidence strongly implies compromise is feasible, indicating both factions desire peace.",
+                    "Observers generally anticipate positive outcomes, suggesting leaders favor mutual pacts."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-4.mp3"
@@ -44857,13 +44837,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del embajador de paz y selecciona cómo formuló su propuesta con lenguaje diplomático matizado.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "It is widely believed that sustainable peace can be achieved, and I would venture to suggest that both parties remain remarkably amenable to a phased diplomatic accord.",
                   "transcription": "It is widely believed that sustainable peace can be achieved, and I would venture to suggest that both parties remain remarkably amenable to a phased diplomatic accord.",
-                  "question": "What two diplomatic hedging phrases did the peace envoy utilize?",
+                  "audioTeacherText": "It is widely believed that sustainable peace can be achieved, and I would venture to suggest that both parties remain remarkably amenable to a phased diplomatic accord.",
+                  "question": "What is the core argument regarding the role of human mentorship in the age of AI?",
                   "options": [
-                    "It is generally assumed that negotiations will stall, although regional stakeholders remain optimistic.",
-                    "It is widely believed that peace can be achieved, and I would venture to suggest both parties are amenable.",
-                    "Evidence suggests that bilateral concessions are unlikely, but dialogue must continue."
+                    "While automated grading speeds feedback, peer collaboration remains key to motivation.",
+                    "Although AI boosts efficiency, human mentorship is foundational as empathy cannot be coded.",
+                    "Whereas digital tutors democratize learning, academic ethics require human supervision."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-5.mp3"
@@ -45355,13 +45335,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál fue la formulación de tesis de tres niveles presentada en el simposio.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Although artificial intelligence enhances analytical efficiency, human mentorship must remain the cornerstone of higher education on the grounds that critical ethical judgment and empathy cannot be codified into algorithms.",
                   "transcription": "Although artificial intelligence enhances analytical efficiency, human mentorship must remain the cornerstone of higher education on the grounds that critical ethical judgment and empathy cannot be codified into algorithms.",
-                  "question": "What was the speaker's three-tier thesis statement regarding AI in higher education?",
+                  "audioTeacherText": "Although artificial intelligence enhances analytical efficiency, human mentorship must remain the cornerstone of higher education on the grounds that critical ethical judgment and empathy cannot be codified into algorithms.",
+                  "question": "Why did the scientific panel unanimously award the Gold Medal to the research paper?",
                   "options": [
-                    "While AI accelerates content mastery, standardized evaluation must evolve because automated grading is flawed.",
-                    "Whereas AI reduces administrative overhead, institutional funding must prioritize research over digital tools.",
-                    "Although AI enhances efficiency, human mentorship must remain the cornerstone on the grounds that ethics and empathy cannot be codified."
+                    "The paper utilized mathematical proofs that reconciled historical statistical anomalies.",
+                    "The team demonstrated unprecedented chemical synthesis through automated machine learning.",
+                    "The methodology used double-blind trials, showing 98% reduction with rigorous peer citations."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-6.mp3"
@@ -45853,13 +45833,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del jurado de ciencias y selecciona cuáles fueron los dos puntos fuertes del abstract premiado.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The jury unanimously awarded the Gold Medal to this paper because the methodology incorporated a double-blind trial and the empirical results demonstrated a 98% reduction with rigorous peer citations.",
                   "transcription": "The jury unanimously awarded the Gold Medal to this paper because the methodology incorporated a double-blind trial and the empirical results demonstrated a 98% reduction with rigorous peer citations.",
-                  "question": "Why did the scientific jury award the Gold Medal to the student research paper?",
+                  "audioTeacherText": "The jury unanimously awarded the Gold Medal to this paper because the methodology incorporated a double-blind trial and the empirical results demonstrated a 98% reduction with rigorous peer citations.",
+                  "question": "What was the procedural resolution regarding the revised environmental bylaws?",
                   "options": [
-                    "The methodology used a double-blind trial, results showed a 98% reduction, and peer citations were rigorous.",
-                    "The sample size was statistically significant, though observational bias was noted in early trials.",
-                    "The experimental framework was innovative, but replication across secondary cohorts was pending."
+                    "The motion was moved and seconded; the Ayes carried it and it passed unanimously.",
+                    "The motion was thoroughly amended in committee and referred back for legal appraisal.",
+                    "The bylaws were provisionally ratified pending independent environmental impact reviews."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-7.mp3"
@@ -46351,13 +46331,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio de la presidenta de la junta y selecciona cuál fue el resultado de la votación oficial.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The motion to ratify the revised environmental bylaws has been moved and seconded. All in favor say Aye; opposed Nay. The Ayes have it; the motion carries unanimously.",
                   "transcription": "The motion to ratify the revised environmental bylaws has been moved and seconded. All in favor say Aye; opposed Nay. The Ayes have it; the motion carries unanimously.",
-                  "question": "What was the official result of the boardroom vote on the environmental bylaws?",
+                  "audioTeacherText": "The motion to ratify the revised environmental bylaws has been moved and seconded. All in favor say Aye; opposed Nay. The Ayes have it; the motion carries unanimously.",
+                  "question": "How did the crisis spokesperson employ the Media Bridging technique during the briefing?",
                   "options": [
-                    "The motion was amended, debated extensively, and referred back to the oversight committee.",
-                    "The motion was moved, seconded, voted upon, and carried unanimously.",
-                    "The resolution was tabled until the subsequent quarter due to a lack of a voting quorum."
+                    "Redirected public queries toward historical compliance and reaffirmed client safety.",
+                    "Acknowledged public concern, pivoted with audit facts, and affirmed zero-trust repelled intrusion.",
+                    "Expressed sympathy for customer anxieties while emphasizing their robust recovery plan."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-8.mp3"
@@ -46849,13 +46829,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio de la vocera y selecciona cómo aplicó la técnica de Bridging ante la acusación del periodista.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "While I appreciate the public concern regarding data encryption, what our independent forensic audit unequivocally demonstrates is that our zero-trust architecture completely repelled the intrusion.",
                   "transcription": "While I appreciate the public concern regarding data encryption, what our independent forensic audit unequivocally demonstrates is that our zero-trust architecture completely repelled the intrusion.",
-                  "question": "How did the crisis spokesperson apply the Media Bridging technique?",
+                  "audioTeacherText": "While I appreciate the public concern regarding data encryption, what our independent forensic audit unequivocally demonstrates is that our zero-trust architecture completely repelled the intrusion.",
+                  "question": "Why was the $1,500,000 venture seed investment enthusiastically approved by the committee?",
                   "options": [
-                    "Dismissed the allegations as unverified rumors and promised a press release by end of week.",
-                    "Acknowledged partial vulnerabilities while attributing the incident to third-party vendor failure.",
-                    "Acknowledged public concern, pivoted with 'what our audit demonstrates', and affirmed zero-trust repelled the intrusion."
+                    "Verified rapid enterprise adoption across six sectors and sustainable customer referrals.",
+                    "Projected recurring revenue tripling within eight quarters and negligible operating burn.",
+                    "Demonstrated a 4.2 to 1 LTV to CAC ratio alongside verified eighty percent gross margins."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-9.mp3"
@@ -47347,13 +47327,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del socio director y selecciona por qué el fondo aprobó la inversión de 1.5 millones de dólares.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "We are enthusiastically approving the one point five million dollar seed investment because the founders demonstrated a four point two to one LTV to CAC ratio and verified eighty percent gross margins.",
                   "transcription": "We are enthusiastically approving the one point five million dollar seed investment because the founders demonstrated a four point two to one LTV to CAC ratio and verified eighty percent gross margins.",
-                  "question": "Why did the Venture Capital investment committee approve the $1.5M seed check?",
+                  "audioTeacherText": "We are enthusiastically approving the one point five million dollar seed investment because the founders demonstrated a four point two to one LTV to CAC ratio and verified eighty percent gross margins.",
+                  "question": "What three decisive venture pillars motivated the unanimous $2,000,000 seed term sheet?",
                   "options": [
-                    "The founders demonstrated a 4.2:1 LTV:CAC ratio and verified 80% gross profit margins.",
-                    "The company projected a 3:1 payback period with high monthly active user retention.",
-                    "The startup demonstrated product-market fit through enterprise contracts and low churn."
+                    "Exceptional unit economics, unshakeable proprietary moats, and charismatic youth leadership.",
+                    "Strong defensible intellectual property, global expansion momentum, and experienced founders.",
+                    "Capital-efficient operational execution, rapid organic acquisition, and high client retention."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-10.mp3"
@@ -47845,13 +47825,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del socio director y selecciona por qué el fondo de Venture Capital aprobó la ronda mayor.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "We are unanimously issuing a two-million-dollar seed term sheet to this startup because of their exceptional unit economics, unshakeable proprietary moats, and charismatic youth leadership.",
                   "transcription": "We are unanimously issuing a two-million-dollar seed term sheet to this startup because of their exceptional unit economics, unshakeable proprietary moats, and charismatic youth leadership.",
-                  "question": "Why did the VC syndicate unanimously issue the $2,000,000 seed term sheet?",
+                  "audioTeacherText": "We are unanimously issuing a two-million-dollar seed term sheet to this startup because of their exceptional unit economics, unshakeable proprietary moats, and charismatic youth leadership.",
+                  "question": "Why did the proposition team prevail in the Oxford Union parliamentary division?",
                   "options": [
-                    "A defensive patent portfolio, rapid international distribution, and experienced advisory board.",
-                    "Exceptional unit economics, unshakeable proprietary moats, and charismatic youth leadership.",
-                    "Strong organic growth metrics, positive net revenue retention, and lean operational burn."
+                    "Their closing address exposed ethical paradoxes while upholding universal moral axioms.",
+                    "Their refutations dismantled the false dichotomy and their empirical weighing was decisive.",
+                    "Their cross-examination invalidated the opposition's primary premises through legal logic."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-elite-11.mp3"
@@ -48351,13 +48331,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del presidente de la Oxford Union y selecciona cuál fue el veredicto de la división parlamentaria.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The proposition team won the historic Oxford Union division because their refutations dismantled the opposition's false dichotomy and their empirical weighing proved decisive.",
                   "transcription": "The proposition team won the historic Oxford Union division because their refutations dismantled the opposition's false dichotomy and their empirical weighing proved decisive.",
-                  "question": "Why did the proposition win the historic Oxford Union parliamentary division?",
+                  "audioTeacherText": "The proposition team won the historic Oxford Union division because their refutations dismantled the opposition's false dichotomy and their empirical weighing proved decisive.",
+                  "question": "Why did the proposition prevail in the historic Oxford Union parliamentary division?",
                   "options": [
-                    "Their framing established a higher threshold of urgency and their cross-examination exposed logical gaps.",
-                    "Their closing summation appealed to constitutional precedents while the opposition relied on emotional appeals.",
-                    "Their refutations dismantled the false dichotomy and their empirical weighing proved decisive."
+                    "Their arguments established higher moral urgency while challenging legal precedents.",
+                    "Their rhetoric exposed core epistemological flaws within the opposition's framework.",
+                    "Their refutations dismantled the false dichotomy and their empirical weighing was decisive."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-masters-1.mp3"
@@ -48849,13 +48829,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio de la semióloga y selecciona cuál fue su análisis sobre los filtros de belleza y la hiperrealidad.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Digital beautifying filters operate as Baudrillardian simulacra where the simulated digital image supersedes authentic physical reality, constructing an inescapable hyperreal ideal.",
                   "transcription": "Digital beautifying filters operate as Baudrillardian simulacra where the simulated digital image supersedes authentic physical reality, constructing an inescapable hyperreal ideal.",
-                  "question": "How did the cultural theorist analyze digital beautifying filters using Baudrillard's framework?",
+                  "audioTeacherText": "Digital beautifying filters operate as Baudrillardian simulacra where the simulated digital image supersedes authentic physical reality, constructing an inescapable hyperreal ideal.",
+                  "question": "How does the cultural theorist characterize digital filters using Baudrillard's framework?",
                   "options": [
-                    "They operate as simulacra where the simulated digital image supersedes physical reality into hyperreality.",
-                    "They act as cultural signifiers reflecting internalized beauty standards in contemporary visual media.",
-                    "They function as algorithmic feedback loops designed to maximize platform engagement metrics."
+                    "As simulacra where simulated images supersede physical reality into hyperreality.",
+                    "As semiotic signifiers reinforcing algorithmic conformity in visual digital media.",
+                    "As aesthetic manifestations of alienated subjectivity within surveillance capitalism."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-masters-2.mp3"
@@ -49347,13 +49327,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del tribunal doctoral y selecciona por qué la defensa del candidato fue aprobada con honores unánimes.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The doctoral committee unanimously passed this dissertation with distinction because the candidate rigorously demonstrated the empirical falsifiability of their quantum model while deconstructing foundational category mistakes.",
                   "transcription": "The doctoral committee unanimously passed this dissertation with distinction because the candidate rigorously demonstrated the empirical falsifiability of their quantum model while deconstructing foundational category mistakes.",
-                  "question": "Why did the Princeton doctoral committee pass the dissertation with distinction?",
+                  "audioTeacherText": "The doctoral committee unanimously passed this dissertation with distinction because the candidate rigorously demonstrated the empirical falsifiability of their quantum model while deconstructing foundational category mistakes.",
+                  "question": "Why did the doctoral committee pass the dissertation with highest distinction?",
                   "options": [
-                    "The research resolved theoretical paradoxes through novel mathematical axioms and robust peer review.",
-                    "The candidate demonstrated empirical falsifiability and deconstructed category mistakes.",
-                    "The methodology synthesized qualitative ethnography with high-dimensional computational models."
+                    "The author unified conflicting mathematical frameworks through novel topological proofs.",
+                    "The scholar proved empirical falsifiability of their model while deconstructing mistakes.",
+                    "The candidate introduced ground-breaking quantum equations verified through peer review."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-masters-3.mp3"
@@ -49845,13 +49825,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del curador principal de TED y selecciona por qué la charla recibió una ovación de pie unánime.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Mariana's keynote received a standing ovation because she balanced raw personal vulnerability with an unshakeable sticky metaphor and rigorous empirical data.",
                   "transcription": "Mariana's keynote received a standing ovation because she balanced raw personal vulnerability with an unshakeable sticky metaphor and rigorous empirical data.",
-                  "question": "Why did the TED keynote receive an immediate standing ovation from the global audience?",
+                  "audioTeacherText": "Mariana's keynote received a standing ovation because she balanced raw personal vulnerability with an unshakeable sticky metaphor and rigorous empirical data.",
+                  "question": "Why did Mariana's keynote receive an immediate standing ovation from the global audience?",
                   "options": [
-                    "Combined historical case studies with charismatic stage presence and interactive audience polling.",
-                    "Delivered an analytical thesis structured around three provocative rhetorical questions.",
-                    "Balanced raw vulnerability with a sticky metaphor and rigorous empirical data."
+                    "She synthesized geopolitical trends with magnetic stage presence and resonant humor.",
+                    "She presented rigorous macro-economic models alongside moving historical narratives.",
+                    "She balanced raw vulnerability with an unshakeable sticky metaphor and empirical data."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-masters-4.mp3"
@@ -50343,13 +50323,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del presidente del Consejo de Seguridad y selecciona cuál fue el resultado de la votación del tratado.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Draft Resolution 2035, mandating universal clean energy transition and establishing protected biological corridors, has received fifteen affirmative votes and zero vetoes. The resolution is adopted.",
                   "transcription": "Draft Resolution 2035, mandating universal clean energy transition and establishing protected biological corridors, has received fifteen affirmative votes and zero vetoes. The resolution is adopted.",
-                  "question": "What was the final outcome of the UN Security Council vote on Draft Resolution 2035?",
+                  "audioTeacherText": "Draft Resolution 2035, mandating universal clean energy transition and establishing protected biological corridors, has received fifteen affirmative votes and zero vetoes. The resolution is adopted.",
+                  "question": "What was the historic voting outcome on UN Security Council Draft Resolution 2035?",
                   "options": [
-                    "Received 15 affirmative votes and zero vetoes; the resolution was officially adopted.",
-                    "Passed with 12 affirmative votes and 3 abstentions from non-permanent member states.",
-                    "Was vetoed by a permanent member despite overwhelming support from the general assembly."
+                    "Received fifteen affirmative votes and zero vetoes; the resolution was officially adopted.",
+                    "Passed with thirteen affirmative votes and two abstentions from permanent member states.",
+                    "Was approved by fourteen nations after contentious debate over binding emission targets."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-masters-5.mp3"
@@ -50841,13 +50821,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del presidente del jurado del Festival de Cannes y selecciona por qué la película ganó la Palma de Oro unánime.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The jury unanimously awards the Palme d'Or to this cinematic masterpiece for its groundbreaking chiaroscuro mise-en-scène, innovative diegetic soundscapes, and profound literary depth.",
                   "transcription": "The jury unanimously awards the Palme d'Or to this cinematic masterpiece for its groundbreaking chiaroscuro mise-en-scène, innovative diegetic soundscapes, and profound literary depth.",
-                  "question": "Why did the Cannes jury award the Palme d'Or to the film?",
+                  "audioTeacherText": "The jury unanimously awards the Palme d'Or to this cinematic masterpiece for its groundbreaking chiaroscuro mise-en-scène, innovative diegetic soundscapes, and profound literary depth.",
+                  "question": "Why did the Cannes jury award the Palme d'Or to this cinematic masterpiece?",
                   "options": [
-                    "Unconventional non-linear narrative editing, evocative cinematography, and poignant character arcs.",
-                    "Groundbreaking chiaroscuro mise-en-scène, innovative diegetic soundscapes, and profound literary depth.",
-                    "Masterful naturalistic performances, minimalist set design, and allegorical social commentary."
+                    "Its poetic allegorical screenplay and fearless naturalistic performances throughout.",
+                    "Groundbreaking chiaroscuro mise-en-scène, innovative soundscapes, and literary depth.",
+                    "Its evocative visual compositions coupled with radical nonlinear temporal editing."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-masters-6.mp3"
@@ -51339,13 +51319,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del rector de Oxford anunciando la elección unánime del becario Rhodes.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "We are unanimously electing Santiago as our Rhodes Scholar because of his unshakeable moral force of character, proven systemic community impact, and vision to fight the world's fight at Oxford.",
                   "transcription": "We are unanimously electing Santiago as our Rhodes Scholar because of his unshakeable moral force of character, proven systemic community impact, and vision to fight the world's fight at Oxford.",
+                  "audioTeacherText": "We are unanimously electing Santiago as our Rhodes Scholar because of his unshakeable moral force of character, proven systemic community impact, and vision to fight the world's fight at Oxford.",
                   "question": "Why was Santiago unanimously elected as a Rhodes Scholar to the University of Oxford?",
                   "options": [
-                    "Exceptional academic scholarship, multidisciplinary research output, and institutional leadership.",
-                    "Demonstrated diplomatic acumen, cross-cultural competence, and dedication to public policy reform.",
-                    "Unshakeable moral force of character, proven systemic impact, and vision to fight the world's fight."
+                    "Pioneering research output, institutional reform leadership, and diplomatic acumen.",
+                    "Flawless academic distinction, visionary oratory skills, and civic advocacy across LatAm.",
+                    "Moral force of character, proven systemic community impact, and vision to fight at Oxford."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-masters-7.mp3"
@@ -51837,13 +51817,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del editor en jefe de investigación y selecciona por qué dio luz verde a la publicación del documental.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "We are greenlighting this investigative documentary because the cold open hook is intellectually irresistible, the whistleblower evidence is forensically corroborated, and the legal defamation safeguards are airtight.",
                   "transcription": "We are greenlighting this investigative documentary because the cold open hook is intellectually irresistible, the whistleblower evidence is forensically corroborated, and the legal defamation safeguards are airtight.",
-                  "question": "Why did the Chief Investigative Editor greenlight the video essay for global broadcast?",
+                  "audioTeacherText": "We are greenlighting this investigative documentary because the cold open hook is intellectually irresistible, the whistleblower evidence is forensically corroborated, and the legal defamation safeguards are airtight.",
+                  "question": "Why did the Chief Investigative Editor greenlight the investigative video essay?",
                   "options": [
-                    "Irresistible cold open hook, forensically corroborated whistleblower evidence, and airtight legal safeguards.",
-                    "Compelling narrative investigative arc, exclusive interviews, and cinematic archival footage.",
-                    "Data-driven statistical investigation supported by open-source intelligence and expert testimony."
+                    "Irresistible cold open hook, corroborated whistleblower evidence, and airtight legal safeguards.",
+                    "Groundbreaking leaked financial logs, courageous undercover footage, and balanced reporting.",
+                    "Compelling narrative tension, verified institutional misconduct, and bulletproof legal vetting."
                   ],
                   "correctOptionIndex": 0,
                   "audioUrl": "/audio/teens-listening/c-teens-masters-8.mp3"
@@ -52335,13 +52315,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del filósofo principal del Future of Humanity Institute y selecciona por qué la propuesta de gobernanza fue aprobada unánimemente.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "The international council approved the planetary governance framework because it established mathematical AI alignment constraints, prohibited inheritable germline editing, and banned unilateral solar geoengineering.",
                   "transcription": "The international council approved the planetary governance framework because it established mathematical AI alignment constraints, prohibited inheritable germline editing, and banned unilateral solar geoengineering.",
+                  "audioTeacherText": "The international council approved the planetary governance framework because it established mathematical AI alignment constraints, prohibited inheritable germline editing, and banned unilateral solar geoengineering.",
                   "question": "Why did the international council approve the planetary governance framework?",
                   "options": [
-                    "Mandated transparency in algorithmic auditing, capped carbon emissions, and funded bio-surveillance.",
-                    "Established mathematical AI alignment constraints, prohibited germline editing, and banned unilateral geoengineering.",
-                    "Created a multilateral oversight treaty for quantum encryption, synthetic biology, and space exploration."
+                    "It established strict caps on artificial intelligence deployment and regulated ocean mining.",
+                    "It created mathematical AI alignment rules, banned germline edits, and barred geoengineering.",
+                    "It mandated global carbon pricing mechanisms and prohibited autonomous lethal weapon systems."
                   ],
                   "correctOptionIndex": 1,
                   "audioUrl": "/audio/teens-listening/c-teens-masters-9.mp3"
@@ -52833,13 +52813,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el solemne audio del Gran Canciller confiriendo la graduación C2 con honores supremos.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "We officially confer the supreme title of C2 Master of English with Highest Distinction upon this graduating scholar for demonstrating flawless multidisciplinary eloquence, moral leadership, and visionary statesmanship.",
                   "transcription": "We officially confer the supreme title of C2 Master of English with Highest Distinction upon this graduating scholar for demonstrating flawless multidisciplinary eloquence, moral leadership, and visionary statesmanship.",
-                  "question": "Why was the title of C2 Master of English conferred with Highest Distinction?",
+                  "audioTeacherText": "We officially confer the supreme title of C2 Master of English with Highest Distinction upon this graduating scholar for demonstrating flawless multidisciplinary eloquence, moral leadership, and visionary statesmanship.",
+                  "question": "Why was the supreme title of C2 Master of English conferred with Highest Distinction?",
                   "options": [
-                    "Demonstrated academic rigor across disciplines, critical reasoning, and global communicative impact.",
-                    "Outstanding philosophical scholarship, rhetorical mastery, and dedication to youth empowerment.",
-                    "Flawless multidisciplinary eloquence, moral leadership, and visionary statesmanship."
+                    "Exemplary philosophical scholarship, rhetorical brilliance, and global youth leadership.",
+                    "Extraordinary communicative precision, academic versatility, and international impact.",
+                    "Demonstrating flawless multidisciplinary eloquence, moral leadership, and statesmanship."
                   ],
                   "correctOptionIndex": 2,
                   "audioUrl": "/audio/teens-listening/c-teens-masters-10.mp3"

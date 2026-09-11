@@ -991,6 +991,11 @@ export function SlideRenderer({
   const [grammarActiveTab, setGrammarActiveTab] = useState(0);
   const [grammarViewMode, setGrammarViewMode] = useState<'spotlight' | 'showcase'>('spotlight');
   const [activeFormulaToken, setActiveFormulaToken] = useState<number | null>(null);
+  const [showGrammarTranslation, setShowGrammarTranslation] = useState(false);
+
+  useEffect(() => {
+    setShowGrammarTranslation(false);
+  }, [grammarActiveTab]);
 
   // Effect to load story decoder tokens on change
   useEffect(() => {
@@ -1069,6 +1074,7 @@ export function SlideRenderer({
     setGrammarActiveTab(0);
     setGrammarViewMode('spotlight');
     setActiveFormulaToken(null);
+    setShowGrammarTranslation(false);
   }, [slide.id]);
 
   // Compact scale: measure parent to scale 1280×720 into available space
@@ -1652,20 +1658,37 @@ export function SlideRenderer({
                           <div className="absolute -top-12 -right-12 w-64 h-64 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
                           <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-purple-500/15 rounded-full blur-3xl pointer-events-none" />
 
-                          <div className="relative z-10 flex items-center justify-between gap-2 mb-1">
+                          <div className="relative z-10 flex items-center justify-between gap-2 mb-1 flex-wrap">
                             <span className="text-[11px] sm:text-xs font-black uppercase tracking-wider text-cyan-300 flex items-center gap-2">
                               <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_10px_#22d3ee]" />
                               <span>Oración Modelo en Inglés</span>
                             </span>
-                            <button
-                              type="button"
-                              onClick={() => playSpeech(activeStruct?.audio || activeStruct?.example, 'en-US', 0.9)}
-                              className="flex items-center gap-1.5 text-[10px] sm:text-xs font-extrabold text-amber-300 uppercase tracking-wider px-3 py-1 rounded-lg bg-amber-400/20 hover:bg-amber-400/35 border border-amber-300/50 transition-all cursor-pointer shadow-md active:scale-95"
-                              title="Escuchar pronunciación nativa"
-                            >
-                              <Volume2 className="w-3.5 h-3.5 text-amber-300" />
-                              <span>Pronunciación Nativa</span>
-                            </button>
+                            <div className="flex items-center gap-2 flex-wrap">
+                              {activeStruct?.exampleEs && (
+                                <button
+                                  type="button"
+                                  onClick={() => setShowGrammarTranslation(prev => !prev)}
+                                  className={`flex items-center gap-1.5 text-[10px] sm:text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-lg border transition-all cursor-pointer shadow-md active:scale-95 ${
+                                    showGrammarTranslation
+                                      ? 'bg-cyan-500/20 text-cyan-300 border-cyan-400/50 hover:bg-cyan-500/30'
+                                      : 'bg-white/10 text-white/80 border-white/20 hover:bg-white/20 hover:text-white'
+                                  }`}
+                                  title={showGrammarTranslation ? 'Ocultar traducción al español' : 'Revelar traducción al español'}
+                                >
+                                  {showGrammarTranslation ? <EyeOff className="w-3.5 h-3.5 text-cyan-300" /> : <Eye className="w-3.5 h-3.5 text-cyan-300" />}
+                                  <span>{showGrammarTranslation ? 'Ocultar Traducción' : 'Revelar Traducción'}</span>
+                                </button>
+                              )}
+                              <button
+                                type="button"
+                                onClick={() => playSpeech(activeStruct?.audio || activeStruct?.example, 'en-US', 0.9)}
+                                className="flex items-center gap-1.5 text-[10px] sm:text-xs font-extrabold text-amber-300 uppercase tracking-wider px-3 py-1 rounded-lg bg-amber-400/20 hover:bg-amber-400/35 border border-amber-300/50 transition-all cursor-pointer shadow-md active:scale-95"
+                                title="Escuchar pronunciación nativa"
+                              >
+                                <Volume2 className="w-3.5 h-3.5 text-amber-300" />
+                                <span>Pronunciación Nativa</span>
+                              </button>
+                            </div>
                           </div>
 
                           <div className="relative z-10 my-auto text-2xl sm:text-3xl lg:text-[2.4rem] xl:text-[2.85rem] font-black text-white leading-snug tracking-tight drop-shadow-[0_0_35px_rgba(255,255,255,0.35)] py-2 sm:py-3">
@@ -1673,14 +1696,38 @@ export function SlideRenderer({
                           </div>
 
                           {activeStruct?.exampleEs && (
-                            <div className="relative z-10 flex items-center gap-2.5 mt-1 pt-2 border-t border-white/15">
-                              <span className="px-2 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 text-[10px] sm:text-xs font-black uppercase tracking-wider border border-cyan-400/40 shrink-0">
-                                🇨🇴 Español
-                              </span>
-                              <p className="text-sm sm:text-base lg:text-lg font-bold text-cyan-100/95 leading-snug">
-                                {activeStruct.exampleEs}
-                              </p>
-                            </div>
+                            showGrammarTranslation ? (
+                              <div className="relative z-10 flex items-center justify-between gap-2.5 mt-1 pt-2 border-t border-white/15 animate-in fade-in duration-200">
+                                <div className="flex items-center gap-2.5 min-w-0">
+                                  <span className="px-2 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 text-[10px] sm:text-xs font-black uppercase tracking-wider border border-cyan-400/40 shrink-0">
+                                    🇨🇴 Español
+                                  </span>
+                                  <p className="text-sm sm:text-base lg:text-lg font-bold text-cyan-100/95 leading-snug">
+                                    {activeStruct.exampleEs}
+                                  </p>
+                                </div>
+                                <button
+                                  type="button"
+                                  onClick={() => setShowGrammarTranslation(false)}
+                                  className="shrink-0 flex items-center gap-1 px-2 py-1 rounded-lg text-white/50 hover:text-white hover:bg-white/10 text-xs font-semibold transition-colors cursor-pointer"
+                                  title="Ocultar traducción"
+                                >
+                                  <EyeOff className="w-3.5 h-3.5" />
+                                  <span className="hidden sm:inline">Ocultar</span>
+                                </button>
+                              </div>
+                            ) : (
+                              <div className="relative z-10 flex items-center gap-2.5 mt-1 pt-2 border-t border-white/10">
+                                <button
+                                  type="button"
+                                  onClick={() => setShowGrammarTranslation(true)}
+                                  className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-cyan-500/15 hover:bg-cyan-500/30 border-2 border-cyan-400/50 hover:border-cyan-400 text-cyan-300 hover:text-white text-xs sm:text-sm font-black uppercase tracking-wider transition-all cursor-pointer shadow-sm hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] active:scale-95 group"
+                                >
+                                  <Eye className="w-4 h-4 text-cyan-300 group-hover:scale-110 transition-transform" />
+                                  <span>Revelar Traducción (🇨🇴 Español)</span>
+                                </button>
+                              </div>
+                            )
                           )}
                         </div>
                       </div>
@@ -1745,9 +1792,15 @@ export function SlideRenderer({
                                   {renderColoredGrammarSentence(st.example)}
                                 </div>
                                 {st.exampleEs && (
-                                  <p className="text-[11px] font-semibold text-cyan-200/90 line-clamp-1">
-                                    {st.exampleEs}
-                                  </p>
+                                  showGrammarTranslation ? (
+                                    <p className="text-[11px] font-semibold text-cyan-200/90 line-clamp-1">
+                                      {st.exampleEs}
+                                    </p>
+                                  ) : (
+                                    <span className="text-[10px] font-semibold text-cyan-400/60 flex items-center gap-1 italic">
+                                      <Eye className="w-2.5 h-2.5" /> Traducción oculta
+                                    </span>
+                                  )
                                 )}
                               </div>
 
