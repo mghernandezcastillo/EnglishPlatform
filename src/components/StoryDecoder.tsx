@@ -841,12 +841,18 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
         const remoteWords = await storyDecoderDb.getVocabulary(studentId);
         if (!cancelled && remoteWords.length > 0) {
           setVocabulary((prev) => {
-            const merged = [...prev];
+            const byTerm = new Map<string, SavedVocabularyWord>();
+            prev.forEach((w) => {
+              const term = (w.english || '').toLowerCase().trim();
+              if (term && !byTerm.has(term)) byTerm.set(term, w);
+            });
             remoteWords.forEach((rw) => {
-              if (!merged.some((m) => m.id === rw.id)) {
-                merged.push(rw);
+              const term = (rw.english || '').toLowerCase().trim();
+              if (term && !byTerm.has(term)) {
+                byTerm.set(term, rw);
               }
             });
+            const merged = Array.from(byTerm.values()).sort((a, b) => (b.addedAt || 0) - (a.addedAt || 0));
             try {
               localStorage.setItem(vocabularyKey, JSON.stringify(merged));
             } catch (err) {

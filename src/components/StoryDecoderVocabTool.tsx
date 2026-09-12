@@ -265,8 +265,9 @@ export const StoryDecoderVocabTool: React.FC<StoryDecoderVocabToolProps> = ({
       // 2. Also save directly to story_decoder_vocabulary table if studentId is present
       if (activeStudentId) {
         try {
+          const stableId = `sd_${term.toLowerCase().trim().replace(/[^a-z0-9]/g, '_')}`;
           await storyDecoderDb.saveWord(activeStudentId, {
-            id: crypto.randomUUID(),
+            id: stableId,
             english: term,
             spanish: translation,
             storyTitle: storyTitle,

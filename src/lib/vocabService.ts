@@ -233,10 +233,21 @@ const syncStoryDecoderItems = async (
   );
 
   // 1. Fetch from Supabase story_decoder_vocabulary if studentId present
-  let storyWords: any[] = [];
+  let rawStoryWords: any[] = [];
   if (studentId) {
-    storyWords = await storyDecoderDb.getVocabulary(studentId);
+    rawStoryWords = await storyDecoderDb.getVocabulary(studentId);
   }
+
+  // Deduplicate fetched words by english term
+  const storyWords: any[] = [];
+  const seenStoryTerms = new Set<string>();
+  rawStoryWords.forEach((sw) => {
+    const term = (sw.english || '').toLowerCase().trim();
+    if (term && !seenStoryTerms.has(term)) {
+      seenStoryTerms.add(term);
+      storyWords.push(sw);
+    }
+  });
 
   // 2. Fetch from LocalStorage keys strictly scoped to studentId
   const storageKeys = studentId
@@ -249,11 +260,22 @@ const syncStoryDecoderItems = async (
       if (raw) {
         const parsed = JSON.parse(raw);
         if (Array.isArray(parsed)) {
+          const cleanLocal: any[] = [];
+          const localSeen = new Set<string>();
           parsed.forEach((pw) => {
-            if (!storyWords.some((sw) => sw.id === pw.id || sw.english?.toLowerCase() === pw.english?.toLowerCase())) {
-              storyWords.push(pw);
+            const term = (pw.english || '').toLowerCase().trim();
+            if (term && !localSeen.has(term)) {
+              localSeen.add(term);
+              cleanLocal.push(pw);
+              if (!seenStoryTerms.has(term)) {
+                seenStoryTerms.add(term);
+                storyWords.push(pw);
+              }
             }
           });
+          if (cleanLocal.length !== parsed.length) {
+            localStorage.setItem(key, JSON.stringify(cleanLocal));
+          }
         }
       }
     } catch (err) {
@@ -271,9 +293,9 @@ const syncStoryDecoderItems = async (
       const defaultType = isMultiWord ? (normTerm.split(' ').length > 3 ? 'expression' : 'phrasal_verb') : 'word';
 
       const newItem: VocabItem = {
-        id: sw.id || crypto.randomUUID(),
+        id: sw.id || `sd_${normTerm.replace(/[^a-z0-9]/g, '_')}`,
         studentId: studentId || null,
-        term: sw.english,
+        term: sw.english.trim(),
         type: defaultType,
         ipa: '',
         level: 'B1',
@@ -407,10 +429,16 @@ export const vocabService = {
     const storageKey = getLocalStorageKey(studentId);
     // 1. Update local storage first
     let current = await vocabService.getItems(studentId);
-    const updatedMap = new Map<string, VocabItem>(current.map(i => [i.id, i]));
+    const updatedMap = new Map<string, VocabItem>(current.map(i => [i.term.toLowerCase().trim(), i]));
     items.forEach(i => {
       if (studentId) i.studentId = studentId;
-      updatedMap.set(i.id, i);
+      const termKey = i.term.toLowerCase().trim();
+      const existing = updatedMap.get(termKey);
+      if (existing) {
+        updatedMap.set(termKey, { ...existing, ...i, id: existing.id });
+      } else {
+        updatedMap.set(termKey, i);
+      }
     });
     const nextList = Array.from(updatedMap.values()).sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
     localStorage.setItem(storageKey, JSON.stringify(nextList));
@@ -501,11 +529,30 @@ export const vocabService = {
     const cleanTerm = term.trim();
     if (!cleanTerm) throw new Error('Term required');
 
+    const current = await vocabService.getItems(studentId);
+    const existing = current.find(i => i.term.toLowerCase().trim() === cleanTerm.toLowerCase());
+    if (existing) {
+      if (translationEs && translationEs !== cleanTerm && existing.meanings[0]?.meaningLabel !== translationEs) {
+        const updated: VocabItem = {
+          ...existing,
+          meanings: existing.meanings.map((m, idx) => idx === 0 ? {
+            ...m,
+            meaningLabel: translationEs,
+            definitionEs: translationEs
+          } : m)
+        };
+        await vocabService.saveItems([updated], studentId);
+        return updated;
+      }
+      return existing;
+    }
+
     const isMultiWord = cleanTerm.includes(' ');
     const defaultType = isMultiWord ? (cleanTerm.split(' ').length > 3 ? 'expression' : 'phrasal_verb') : 'word';
+    const stableId = `term_${cleanTerm.toLowerCase().replace(/[^a-z0-9]/g, '_')}`;
 
     const item: VocabItem = {
-      id: crypto.randomUUID(),
+      id: stableId,
       studentId: studentId || null,
       term: cleanTerm,
       type: defaultType,

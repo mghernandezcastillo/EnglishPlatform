@@ -75,16 +75,25 @@ export const storyDecoderDb = {
       }
 
       if (data && data.length > 0) {
-        return data.map((row) => ({
-          id: row.id,
-          english: row.english,
-          spanish: row.spanish,
-          exampleEn: row.example_en || '',
-          exampleEs: row.example_es || '',
-          storyTitle: row.story_title || '',
-          storyId: row.story_id || '',
-          addedAt: Number(row.added_at) || Date.now()
-        }));
+        const seen = new Set<string>();
+        const uniqueWords: SavedVocabularyWord[] = [];
+        data.forEach((row) => {
+          const norm = (row.english || '').toLowerCase().trim();
+          if (norm && !seen.has(norm)) {
+            seen.add(norm);
+            uniqueWords.push({
+              id: row.id,
+              english: row.english,
+              spanish: row.spanish,
+              exampleEn: row.example_en || '',
+              exampleEs: row.example_es || '',
+              storyTitle: row.story_title || '',
+              storyId: row.story_id || '',
+              addedAt: Number(row.added_at) || Date.now()
+            });
+          }
+        });
+        return uniqueWords;
       }
     } catch (err) {
       console.warn('Error reading from story_decoder_vocabulary in Supabase:', err);
@@ -97,11 +106,12 @@ export const storyDecoderDb = {
     if (!studentId) return;
 
     try {
+      const stableId = word.id || `sd_${(word.english || '').toLowerCase().trim().replace(/[^a-z0-9]/g, '_')}`;
       const payload = {
-        id: word.id,
+        id: stableId,
         student_id: studentId,
-        english: word.english,
-        spanish: word.spanish,
+        english: word.english.trim(),
+        spanish: word.spanish.trim(),
         example_en: word.exampleEn || '',
         example_es: word.exampleEs || '',
         story_title: word.storyTitle || '',
@@ -115,19 +125,6 @@ export const storyDecoderDb = {
 
       if (error) {
         console.warn('Error saving word to Supabase story_decoder_vocabulary:', error);
-      }
-
-      // Sync to Mi Vocabulario under story_decoder section
-      try {
-        await vocabService.saveQuickTerm(
-          word.english,
-          word.spanish,
-          'story_decoder',
-          word.storyTitle ? `📖 Story: ${word.storyTitle}` : '📖 Story Decoder',
-          studentId
-        );
-      } catch (syncErr) {
-        console.warn('Error syncing word to vocabService:', syncErr);
       }
     } catch (err) {
       console.warn('Supabase saveWord error:', err);
