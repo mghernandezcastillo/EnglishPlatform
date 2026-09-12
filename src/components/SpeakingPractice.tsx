@@ -1,10 +1,15 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Mic, RefreshCw, ChevronRight, MessageCircle, Sparkles, Languages, Bot, Target, Bookmark, BookmarkCheck, Loader2 } from 'lucide-react';
+import { 
+  X, Mic, RefreshCw, ChevronRight, MessageCircle, Sparkles, Languages, Bot, Target, 
+  Bookmark, BookmarkCheck, Loader2, Volume2, Layers, Zap, CheckCircle2, Lightbulb, Sparkle, BookOpen 
+} from 'lucide-react';
 import { speakingQuestions, SpeakingQuestion } from '../data/speakingQuestions';
 import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
 import { vocabService } from '../lib/vocabService';
 import { storyDecoderDb } from '../lib/storyDecoderDb';
+import { getBlueprintForQuestion, TargetWord, BlueprintLevel } from '../data/speakingBlueprints';
+import { playAudio, stopAudio } from '../lib/audio';
 
 interface SpeakingPracticeProps {
   onClose: () => void;
@@ -283,7 +288,35 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
   const [activeQuestionWord, setActiveQuestionWord] = useState<string | null>(null);
   const [savedTerms, setSavedTerms] = useState<Set<string>>(new Set());
   const [savingTerm, setSavingTerm] = useState<string | null>(null);
+  const [selectedLevel, setSelectedLevel] = useState<'starter' | 'confident' | 'pro'>('starter');
+  const [playingSnippet, setPlayingSnippet] = useState<string | null>(null);
   const remainingQuestions = useRef<SpeakingQuestion[]>([]);
+
+  // Cleanup audio on unmount
+  useEffect(() => {
+    return () => {
+      stopAudio();
+    };
+  }, []);
+
+  const blueprint = useMemo(() => {
+    if (!currentQuestion) return null;
+    return getBlueprintForQuestion(currentQuestion);
+  }, [currentQuestion]);
+
+  const handlePlaySpeech = (text: string, id: string, e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    if (playingSnippet === id) {
+      stopAudio();
+      setPlayingSnippet(null);
+      return;
+    }
+    setPlayingSnippet(id);
+    playAudio(text, 'en-US', {
+      onEnd: () => setPlayingSnippet(null),
+      onError: () => setPlayingSnippet(null),
+    });
+  };
 
   // Load saved vocabulary for the current student
   useEffect(() => {
@@ -476,9 +509,24 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                       transition={{ duration: 0.45, type: 'spring', stiffness: 160, damping: 20 }}
                     >
                       <div className="absolute inset-0 rounded-3xl border border-indigo-100 bg-white/95 p-6 sm:p-8 shadow-sm [backface-visibility:hidden] flex flex-col justify-center">
-                        <div className="flex items-center gap-2 text-indigo-500 text-xs font-black uppercase tracking-[0.2em] mb-4">
-                          <Languages className="w-4 h-4" />
-                          English
+                        <div className="flex items-center justify-between gap-2 mb-4">
+                          <div className="flex items-center gap-2 text-indigo-500 text-xs font-black uppercase tracking-[0.2em]">
+                            <Languages className="w-4 h-4" />
+                            English
+                          </div>
+                          <button
+                            type="button"
+                            onClick={(e) => handlePlaySpeech(currentQuestion.question, 'q_speech', e)}
+                            className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold transition-all ${
+                              playingSnippet === 'q_speech'
+                                ? 'bg-indigo-600 text-white animate-pulse'
+                                : 'bg-indigo-50 text-indigo-600 hover:bg-indigo-100'
+                            }`}
+                            title="Escuchar pregunta"
+                          >
+                            <Volume2 className="w-3.5 h-3.5" />
+                            <span>Escuchar</span>
+                          </button>
                         </div>
                         <h3 className="text-2xl sm:text-4xl font-extrabold text-slate-800 leading-tight">
                           {splitQuestion(currentQuestion.question).map((part, index) => {
@@ -508,9 +556,12 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                       </div>
 
                       <div className="absolute inset-0 rounded-3xl border border-emerald-100 bg-emerald-50 p-6 sm:p-8 shadow-sm [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center">
-                        <div className="flex items-center gap-2 text-emerald-600 text-xs font-black uppercase tracking-[0.2em] mb-4">
-                          <Languages className="w-4 h-4" />
-                          Espanol
+                        <div className="flex items-center justify-between gap-2 mb-4">
+                          <div className="flex items-center gap-2 text-emerald-600 text-xs font-black uppercase tracking-[0.2em]">
+                            <Languages className="w-4 h-4" />
+                            Español
+                          </div>
+                          <span className="text-[11px] text-emerald-700/70 font-semibold">Toca para volver a inglés</span>
                         </div>
                         <p className="text-xl sm:text-3xl font-extrabold text-emerald-950 leading-tight">
                           {currentQuestion.spanish || translateText(currentQuestion.question)}
@@ -522,82 +573,250 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                     </motion.div>
                   </button>
 
-                  <div className="w-full mt-8">
-                    <div className="flex flex-col items-center justify-center gap-1 mb-4">
-                      <div className="flex items-center gap-2 text-indigo-500 text-sm font-semibold uppercase tracking-wider">
-                        <MessageCircle className="w-4 h-4" />
-                        <span>Vocabulario util</span>
+                  {/* 1. Target Words & Expressions (Palabras clave personalizadas) */}
+                  <div className="w-full mt-10 text-left">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+                      <div className="flex items-center gap-2.5">
+                        <div className="h-9 w-9 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold shadow-sm">
+                          <Target className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <h4 className="text-base font-black text-slate-900 uppercase tracking-wider">
+                            Palabras Clave para tu Respuesta
+                          </h4>
+                          <p className="text-xs text-slate-500 font-medium">
+                            Úsalas al hablar para ganar fluidez. Toca 🔊 para pronunciar o 🔖 para guardar en Mi Vocabulario.
+                          </p>
+                        </div>
                       </div>
-                      <span className="text-xs text-slate-400 font-medium">Toca para traducir • Guarda con 🔖 en Mi Vocabulario</span>
                     </div>
-                    <div className="flex flex-wrap justify-center gap-3">
-                      {currentQuestion.vocab.map((word, index) => {
-                        const isFlipped = flippedVocab.has(word);
-                        const cleanWord = word.trim();
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {(blueprint?.targetWords || []).map((item, idx) => {
+                        const cleanWord = item.word.trim();
                         const isSaved = savedTerms.has(cleanWord.toLowerCase());
                         const isSaving = savingTerm === cleanWord;
+                        const isAudioPlaying = playingSnippet === `word_${cleanWord}`;
+
+                        const typeConfig: Record<string, { label: string; badge: string }> = {
+                          noun: { label: 'Sustantivo', badge: 'bg-blue-50 text-blue-700 border-blue-200' },
+                          verb: { label: 'Verbo de acción', badge: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                          adjective: { label: 'Adjetivo', badge: 'bg-purple-50 text-purple-700 border-purple-200' },
+                          expression: { label: 'Expresión', badge: 'bg-amber-50 text-amber-700 border-amber-200' },
+                        };
+                        const config = typeConfig[item.type] || typeConfig.expression;
 
                         return (
                           <div
-                            key={`${word}-${index}`}
-                            className="relative group inline-flex items-center"
+                            key={`${cleanWord}-${idx}`}
+                            className={`relative rounded-2xl p-4 border transition-all text-left ${
+                              isSaved
+                                ? 'bg-amber-50/40 border-amber-300 shadow-sm'
+                                : 'bg-white border-slate-200/90 hover:border-indigo-200 hover:shadow-md'
+                            }`}
                           >
-                            <button
-                              type="button"
-                              onClick={() => toggleVocab(word)}
-                              className="relative h-14 min-w-[145px] rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-100 pr-9 pl-3.5 transition-all shadow-sm active:scale-98 cursor-pointer"
-                              aria-label={`Traducir ${word}`}
-                            >
-                              <motion.span
-                                className="absolute inset-0 rounded-2xl border text-sm font-black flex items-center justify-center pr-8 pl-3"
-                                style={{ transformStyle: 'preserve-3d' }}
-                                animate={{ rotateY: isFlipped ? 180 : 0 }}
-                                transition={{ duration: 0.35 }}
-                              >
-                                <span className={`absolute inset-0 rounded-2xl border flex items-center justify-center pr-8 pl-3 [backface-visibility:hidden] ${
-                                  isSaved
-                                    ? 'border-amber-200 bg-amber-50/70 text-amber-900'
-                                    : 'border-indigo-100 bg-indigo-50 text-indigo-700'
-                                }`}>
-                                  <span className="truncate max-w-[150px] font-bold">{word}</span>
-                                </span>
-                                <span className={`absolute inset-0 rounded-2xl border flex flex-col items-center justify-center pr-8 pl-3 [backface-visibility:hidden] [transform:rotateY(180deg)] ${
-                                  isSaved
-                                    ? 'border-amber-300 bg-amber-100/80 text-amber-950'
-                                    : 'border-emerald-100 bg-emerald-50 text-emerald-800'
-                                }`}>
-                                  <span className="text-[10px] uppercase font-bold tracking-wide text-emerald-600">ES</span>
-                                  <span className="text-xs font-bold leading-tight truncate max-w-[150px]">{getVocabTranslation(word)}</span>
-                                </span>
-                              </motion.span>
-                            </button>
+                            <div className="flex items-start justify-between gap-2 mb-2">
+                              <span className={`text-[10px] uppercase font-black px-2 py-0.5 rounded-full border ${config.badge}`}>
+                                {config.label}
+                              </span>
 
-                            {/* Bookmark / Save to Mi Vocabulario Button */}
-                            <button
-                              type="button"
-                              onClick={(e) => handleToggleSaveVocab(word, e)}
-                              disabled={isSaving}
-                              className={`absolute right-2 top-1/2 -translate-y-1/2 z-20 h-7 w-7 rounded-xl flex items-center justify-center transition-all ${
-                                isSaved
-                                  ? 'bg-amber-500 text-white shadow hover:bg-amber-600 hover:scale-110 active:scale-95'
-                                  : 'bg-white/90 text-slate-400 hover:text-amber-500 hover:bg-amber-50 hover:scale-110 border border-slate-200 shadow-sm active:scale-95'
-                              }`}
-                              title={isSaved ? 'Guardado en Mi Vocabulario (Clic para quitar)' : 'Guardar en Mi Vocabulario'}
-                              aria-label={isSaved ? 'Guardado en Mi Vocabulario' : 'Guardar en Mi Vocabulario'}
-                            >
-                              {isSaving ? (
-                                <Loader2 className="w-3.5 h-3.5 animate-spin text-amber-500" />
-                              ) : isSaved ? (
-                                <BookmarkCheck className="w-3.5 h-3.5 fill-current" />
-                              ) : (
-                                <Bookmark className="w-3.5 h-3.5" />
-                              )}
-                            </button>
+                              <div className="flex items-center gap-1">
+                                <button
+                                  type="button"
+                                  onClick={(e) => handlePlaySpeech(cleanWord, `word_${cleanWord}`, e)}
+                                  className={`p-1.5 rounded-lg transition-colors ${
+                                    isAudioPlaying
+                                      ? 'bg-indigo-600 text-white animate-pulse'
+                                      : 'text-slate-400 hover:text-indigo-600 hover:bg-indigo-50'
+                                  }`}
+                                  title={`Escuchar pronunciación de "${cleanWord}"`}
+                                >
+                                  <Volume2 className="w-4 h-4" />
+                                </button>
+
+                                <button
+                                  type="button"
+                                  onClick={(e) => handleToggleSaveVocab(cleanWord, e)}
+                                  disabled={isSaving}
+                                  className={`p-1.5 rounded-lg transition-all ${
+                                    isSaved
+                                      ? 'text-amber-600 bg-amber-100 hover:bg-amber-200'
+                                      : 'text-slate-400 hover:text-amber-500 hover:bg-slate-100'
+                                  }`}
+                                  title={isSaved ? 'Guardado en Mi Vocabulario (Clic para quitar)' : 'Guardar en Mi Vocabulario'}
+                                >
+                                  {isSaving ? (
+                                    <Loader2 className="w-4 h-4 animate-spin text-amber-500" />
+                                  ) : isSaved ? (
+                                    <BookmarkCheck className="w-4 h-4 fill-current" />
+                                  ) : (
+                                    <Bookmark className="w-4 h-4" />
+                                  )}
+                                </button>
+                              </div>
+                            </div>
+
+                            <div className="font-extrabold text-slate-900 text-lg leading-tight">
+                              {cleanWord}
+                            </div>
+                            <div className="text-xs font-semibold text-slate-500 mt-0.5">
+                              {item.translation}
+                            </div>
+
+                            {item.exampleSnippet && (
+                              <div className="mt-3 pt-2.5 border-t border-slate-100 text-[11px] text-slate-600 font-medium italic flex items-center gap-1.5">
+                                <span className="text-indigo-600 font-bold not-italic">Uso:</span>
+                                <span>"{item.exampleSnippet}"</span>
+                              </div>
+                            )}
                           </div>
                         );
                       })}
                     </div>
                   </div>
+
+                  {/* 2. P.R.E.P. Scaffolding Studio (Andamiaje por Niveles) */}
+                  {blueprint && (
+                    <div className="w-full mt-10 text-left">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+                        <div className="flex items-center gap-2.5">
+                          <div className="h-9 w-9 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold shadow-sm">
+                            <Layers className="w-5 h-5" />
+                          </div>
+                          <div>
+                            <h4 className="text-base font-black text-slate-900 uppercase tracking-wider">
+                              Estructura P.R.E.P. (Cómo armar tu respuesta)
+                            </h4>
+                            <p className="text-xs text-slate-500 font-medium">
+                              Elige tu nivel para ver la fórmula guiada paso a paso.
+                            </p>
+                          </div>
+                        </div>
+
+                        {/* Level Selector Tabs */}
+                        <div className="inline-flex rounded-2xl bg-slate-100 p-1 border border-slate-200 self-start sm:self-auto">
+                          {(['starter', 'confident', 'pro'] as const).map((lvlKey) => {
+                            const lvlData = blueprint[lvlKey];
+                            const isSelected = selectedLevel === lvlKey;
+                            return (
+                              <button
+                                key={lvlKey}
+                                type="button"
+                                onClick={() => setSelectedLevel(lvlKey)}
+                                className={`px-3.5 py-1.5 rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 cursor-pointer ${
+                                  isSelected
+                                    ? lvlKey === 'starter'
+                                      ? 'bg-emerald-600 text-white shadow-sm'
+                                      : lvlKey === 'confident'
+                                      ? 'bg-amber-600 text-white shadow-sm'
+                                      : 'bg-indigo-600 text-white shadow-sm'
+                                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
+                                }`}
+                              >
+                                <span>{lvlData.label}</span>
+                                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-md ${
+                                  isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'
+                                }`}>
+                                  {lvlData.cefr}
+                                </span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+
+                      {/* Quick Starters / Conectores de apertura */}
+                      <div className="mb-4 bg-slate-50/80 rounded-2xl p-3.5 border border-slate-200">
+                        <div className="text-[11px] font-black uppercase tracking-wider text-slate-500 mb-2 flex items-center gap-1.5">
+                          <Zap className="w-3.5 h-3.5 text-amber-500" />
+                          <span>Arranques recomendados (Toca para escuchar entonación):</span>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {blueprint.quickStarters.map((qs, qIdx) => {
+                            const isAudioPlaying = playingSnippet === `starter_${qIdx}`;
+                            return (
+                              <button
+                                key={qIdx}
+                                type="button"
+                                onClick={(e) => handlePlaySpeech(qs.en, `starter_${qIdx}`, e)}
+                                className={`group inline-flex items-center gap-2 px-3 py-1.5 rounded-xl border text-xs font-bold transition-all text-left cursor-pointer ${
+                                  isAudioPlaying
+                                    ? 'bg-indigo-600 text-white border-indigo-600 shadow-sm'
+                                    : 'bg-white hover:bg-indigo-50/80 border-slate-200 text-slate-800 hover:border-indigo-200'
+                                }`}
+                              >
+                                <Volume2 className={`w-3.5 h-3.5 flex-shrink-0 transition-transform ${
+                                  isAudioPlaying ? 'text-white scale-110' : 'text-indigo-500 group-hover:scale-110'
+                                }`} />
+                                <span>"{qs.en}"</span>
+                                <span className={`text-[10px] font-normal ${
+                                  isAudioPlaying ? 'text-indigo-100' : 'text-slate-400 group-hover:text-indigo-600'
+                                }`}>({qs.es})</span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+
+                      {/* Selected Level Scaffolding Card */}
+                      {(() => {
+                        const activeLvl = blueprint[selectedLevel];
+                        const isAudioPlaying = playingSnippet === `full_${selectedLevel}`;
+
+                        return (
+                          <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm">
+                            {/* Strategy Tip Banner */}
+                            <div className="mb-5 rounded-2xl bg-amber-50/90 border border-amber-200 p-3.5 flex items-start gap-2.5 text-xs text-amber-900 font-medium">
+                              <Lightbulb className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                              <div>
+                                <span className="font-extrabold text-amber-950">Tip de Estrategia: </span>
+                                {activeLvl.strategyTip}
+                              </div>
+                            </div>
+
+                            {/* Scaffolded Template */}
+                            <div className="mb-6">
+                              <div className="text-xs font-black uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1.5">
+                                <BookOpen className="w-3.5 h-3.5 text-indigo-500" />
+                                <span>Plantilla Guiada (Llena los corchetes con tu opinión o vocabulario):</span>
+                              </div>
+                              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 text-sm sm:text-base font-bold leading-relaxed">
+                                {activeLvl.templateEn}
+                              </div>
+                              <div className="mt-2.5 px-2 text-xs text-slate-500 font-medium italic">
+                                {activeLvl.templateEs}
+                              </div>
+                            </div>
+
+                            {/* Solved Model Answer */}
+                            <div className="rounded-2xl bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-950 p-4 sm:p-5 text-white shadow-md">
+                              <div className="flex items-center justify-between gap-3 mb-2.5">
+                                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-cyan-300">
+                                  <Sparkle className="w-4 h-4" />
+                                  <span>Respuesta Modelo Completa ({activeLvl.label} • {activeLvl.cefr})</span>
+                                </div>
+                                <button
+                                  type="button"
+                                  onClick={(e) => handlePlaySpeech(activeLvl.exampleFullEn, `full_${selectedLevel}`, e)}
+                                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold transition-all cursor-pointer ${
+                                    isAudioPlaying
+                                      ? 'bg-cyan-400 text-slate-950 animate-pulse font-extrabold'
+                                      : 'bg-white/10 text-cyan-200 hover:bg-white/20'
+                                  }`}
+                                >
+                                  <Volume2 className="w-3.5 h-3.5" />
+                                  <span>{isAudioPlaying ? 'Reproduciendo...' : 'Escuchar modelo'}</span>
+                                </button>
+                              </div>
+                              <p className="text-sm sm:text-base font-medium text-white/90 leading-relaxed">
+                                "{activeLvl.exampleFullEn}"
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })()}
+                    </div>
+                  )}
                 </motion.div>
               )}
             </AnimatePresence>
