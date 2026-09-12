@@ -2,8 +2,8 @@ export type SpeakingQuestion = { question: string; spanish: string; vocab: strin
 
 export const speakingQuestions: SpeakingQuestion[] = [
   {
-    "question": "What is your name?",
-    "spanish": "¿Cuál es tu nombre?",
+    "question": "How would you introduce yourself and describe your personal passions in three words?",
+    "spanish": "¿Cómo te presentarías y describirías tus pasiones personales en tres palabras?",
     "vocab": [
       "I am...",
       "I'm from...",
@@ -17,8 +17,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "basic"
   },
   {
-    "question": "Where are you from?",
-    "spanish": "¿De dónde eres?",
+    "question": "What is the most unique cultural tradition or custom from your hometown?",
+    "spanish": "¿Cuál es la tradición o costumbre cultural más única de tu ciudad natal?",
     "vocab": [
       "I am...",
       "I'm from...",
@@ -32,8 +32,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "basic"
   },
   {
-    "question": "Where do you live currently?",
-    "spanish": "¿Dónde vives actualmente?",
+    "question": "What do you love the most about the neighborhood or city where you live today?",
+    "spanish": "¿Qué es lo que más te gusta del barrio o ciudad donde vives hoy?",
     "vocab": [
       "I am...",
       "I'm from...",
@@ -152,8 +152,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "basic"
   },
   {
-    "question": "How do you spell your name?",
-    "spanish": "¿Cómo se deletrea tu nombre?",
+    "question": "What is the story or meaning behind your name, or what would you choose as your nickname?",
+    "spanish": "¿Cuál es la historia o significado detrás de tu nombre, o cuál apodo elegirías?",
     "vocab": [
       "I am...",
       "I'm from...",
@@ -167,8 +167,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "basic"
   },
   {
-    "question": "What's your phone number?",
-    "spanish": "¿Cuál es tu número de teléfono?",
+    "question": "Do you think people today are too glued to messaging and phone notifications?",
+    "spanish": "¿Crees que la gente de hoy está demasiado atada a la mensajería y notificaciones del celular?",
     "vocab": [
       "I am...",
       "I'm from...",
@@ -182,8 +182,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "basic"
   },
   {
-    "question": "What is your email address?",
-    "spanish": "¿Cuál es tu correo electrónico?",
+    "question": "How do you organize your digital life, emails, and daily communication?",
+    "spanish": "¿Cómo organizas tu vida digital, correos y comunicación diaria?",
     "vocab": [
       "I am...",
       "I'm from...",
@@ -197,8 +197,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "basic"
   },
   {
-    "question": "When is your birthday?",
-    "spanish": "¿Cuándo es tu cumpleaños?",
+    "question": "How do you prefer celebrating your birthday or important personal milestones?",
+    "spanish": "¿Cómo prefieres celebrar tu cumpleaños o hitos personales importantes?",
     "vocab": [
       "I am...",
       "I'm from...",
@@ -212,8 +212,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "basic"
   },
   {
-    "question": "Where were you born?",
-    "spanish": "¿Dónde naciste?",
+    "question": "How has the place where you grew up influenced your personality and outlook on life?",
+    "spanish": "¿Cómo ha influido el lugar donde creciste en tu personalidad y visión de la vida?",
     "vocab": [
       "I am...",
       "I'm from...",
@@ -227,8 +227,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "basic"
   },
   {
-    "question": "What's your favorite color?",
-    "spanish": "¿Cuál es tu color favorito?",
+    "question": "How do the colors and aesthetics of your environment impact your daily mood and creativity?",
+    "spanish": "¿Cómo influyen los colores y la estética de tu entorno en tu estado de ánimo y creatividad diaria?",
     "vocab": [
       "I am...",
       "I'm from...",
@@ -422,8 +422,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "family"
   },
   {
-    "question": "Are you married?",
-    "spanish": "¿Estás casado/a?",
+    "question": "What values or qualities are most important to you in a long-term relationship or partnership?",
+    "spanish": "¿Qué valores o cualidades son más importantes para ti en una relación duradera?",
     "vocab": [
       "Siblings",
       "Only child",
@@ -437,8 +437,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "family"
   },
   {
-    "question": "Do you have any children?",
-    "spanish": "¿Tienes hijos?",
+    "question": "How has your perspective on family and personal responsibility evolved over the years?",
+    "spanish": "¿Cómo ha evolucionado tu perspectiva sobre la familia y la responsabilidad con los años?",
     "vocab": [
       "Siblings",
       "Only child",
@@ -647,8 +647,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "hobbies"
   },
   {
-    "question": "What time do you usually wake up?",
-    "spanish": "¿A qué hora te despiertas normalmente?",
+    "question": "Do you think morning routines really determine daily success, or does it depend on the individual?",
+    "spanish": "¿Crees que las rutinas matutinas realmente determinan el éxito diario, o depende de cada individuo?",
     "vocab": [
       "Usually",
       "Normally",
@@ -2672,8 +2672,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "abstract"
   },
   {
-    "question": "Do you have a nickname?",
-    "spanish": "¿Tienes algún apodo?",
+    "question": "Do you prefer being called by your given name, a nickname, or a professional title?",
+    "spanish": "¿Prefieres que te llamen por tu nombre, un apodo o un título profesional?",
     "vocab": [
       "Weird",
       "Funny",
@@ -2687,8 +2687,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "random"
   },
   {
-    "question": "What is your favorite animal?",
-    "spanish": "¿Cuál es tu animal favorito?",
+    "question": "If you could protect one endangered animal species, which one would you champion and why?",
+    "spanish": "Si pudieras proteger una especie animal en peligro, ¿cuál defenderías y por qué?",
     "vocab": [
       "Weird",
       "Funny",
@@ -2762,8 +2762,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "random"
   },
   {
-    "question": "Can you juggle?",
-    "spanish": "¿Sabes hacer malabares?",
+    "question": "What is a unique or unconventional skill you would love to master in your free time?",
+    "spanish": "¿Qué habilidad única o poco convencional te encantaría dominar en tu tiempo libre?",
     "vocab": [
       "Weird",
       "Funny",
@@ -2777,8 +2777,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "random"
   },
   {
-    "question": "Can you whistle?",
-    "spanish": "¿Sabes silbar?",
+    "question": "Do you consider yourself a musically inclined person, or do you prefer other forms of creative expression?",
+    "spanish": "¿Te consideras una persona con afinidad musical o prefieres otras formas de expresión creativa?",
     "vocab": [
       "Weird",
       "Funny",
@@ -2792,8 +2792,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "random"
   },
   {
-    "question": "Do you sing in the shower?",
-    "spanish": "¿Cantas en la ducha?",
+    "question": "Why do you think music has such a powerful effect on people's moods when they are alone?",
+    "spanish": "¿Por qué crees que la música tiene un efecto tan potente en el estado de ánimo de las personas cuando están solas?",
     "vocab": [
       "Weird",
       "Funny",
@@ -2837,8 +2837,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "random"
   },
   {
-    "question": "Do you prefer cats or dogs?",
-    "spanish": "¿Prefieres los gatos o los perros?",
+    "question": "Do you think having pets genuinely improves human mental health and well-being?",
+    "spanish": "¿Crees que tener mascotas genuinamente mejora la salud mental y el bienestar humano?",
     "vocab": [
       "Weird",
       "Funny",
@@ -2867,8 +2867,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "random"
   },
   {
-    "question": "Have you ever been on TV?",
-    "spanish": "¿Alguna vez has salido en televisión?",
+    "question": "Would you ever want to be famous in the public spotlight, or do you prefer living a private life?",
+    "spanish": "¿Alguna vez querrías ser famoso en el ojo público, o prefieres vivir una vida privada?",
     "vocab": [
       "Weird",
       "Funny",
@@ -2897,8 +2897,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "random"
   },
   {
-    "question": "What's the funniest joke you know?",
-    "spanish": "¿Cuál es el chiste más divertido que te sabes?",
+    "question": "What kind of humor or comedy resonates with you the most, and why is humor vital in life?",
+    "spanish": "¿Qué tipo de humor o comedia resuena más contigo, y por qué el humor es vital en la vida?",
     "vocab": [
       "Weird",
       "Funny",
@@ -2912,8 +2912,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "random"
   },
   {
-    "question": "Do you collect anything?",
-    "spanish": "¿Coleccionas algo?",
+    "question": "Do you prefer keeping physical souvenirs or storing your memories purely digitally?",
+    "spanish": "¿Prefieres guardar recuerdos físicos o almacenar tus memorias de forma puramente digital?",
     "vocab": [
       "Weird",
       "Funny",
@@ -2927,8 +2927,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "random"
   },
   {
-    "question": "What is the most beautiful word in English?",
-    "spanish": "¿Cuál es la palabra más hermosa en inglés?",
+    "question": "What English expression or phrase do you find the most expressive or satisfying to use?",
+    "spanish": "¿Qué expresión o frase en inglés te parece la más expresiva o satisfactoria de usar?",
     "vocab": [
       "Weird",
       "Funny",
@@ -2942,8 +2942,8 @@ export const speakingQuestions: SpeakingQuestion[] = [
     "topic": "random"
   },
   {
-    "question": "If you had a boat, what would you name it?",
-    "spanish": "¿Si tuvieras un barco, qué nombre le pondrías?",
+    "question": "If you could take a one-month sabbatical anywhere in the world, where would you go and why?",
+    "spanish": "Si pudieras tomarte un año sabático de un mes en cualquier parte del mundo, ¿a dónde irías y por qué?",
     "vocab": [
       "Weird",
       "Funny",
