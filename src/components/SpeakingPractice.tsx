@@ -251,24 +251,27 @@ const getVocabTranslation = (word: string) => VOCAB_TRANSLATIONS[word] || transl
 
 const cleanToken = (token: string) => token.toLowerCase().replace(/[^a-z']/g, '');
 
+const QUESTION_TRANSLATION_MAP = new Map<string, string>();
+speakingQuestions.forEach((q) => {
+  if (q.question && q.spanish) {
+    QUESTION_TRANSLATION_MAP.set(q.question.trim().toLowerCase(), q.spanish);
+  }
+});
+
 const translateWord = (word: string) => {
   const normalized = cleanToken(word);
-  return WORD_TRANSLATIONS[normalized] || VOCAB_TRANSLATIONS[word] || 'Toca otra palabra o pregunta al profesor';
+  return WORD_TRANSLATIONS[normalized] || VOCAB_TRANSLATIONS[word] || 'Toca otra palabra o consulta al profesor';
 };
 
 const translateText = (text: string) => {
+  const norm = text.trim().toLowerCase();
+  const known = QUESTION_TRANSLATION_MAP.get(norm);
+  if (known) return known;
+
   const exact = QUESTION_PHRASES.find(([pattern]) => pattern.test(text));
   if (exact) return exact[1];
 
-  return text
-    .split(/(\s+)/)
-    .map(part => {
-      if (/^\s+$/.test(part)) return part;
-      const normalized = cleanToken(part);
-      const translated = WORD_TRANSLATIONS[normalized];
-      return translated || part;
-    })
-    .join('');
+  return text;
 };
 
 const splitQuestion = (question: string) => question.match(/[A-Za-z']+|[^A-Za-z']+/g) || [question];
@@ -340,7 +343,7 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
               spanish: translation,
               storyTitle: `Speaking Practice: ${currentQuestion?.topic || 'General'}`,
               exampleEn: currentQuestion?.question || '',
-              exampleEs: translateText(currentQuestion?.question || ''),
+              exampleEs: currentQuestion?.spanish || translateText(currentQuestion?.question || ''),
               addedAt: Date.now()
             });
           } catch (dbErr) {
@@ -510,7 +513,7 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                           Espanol
                         </div>
                         <p className="text-xl sm:text-3xl font-extrabold text-emerald-950 leading-tight">
-                          {translateText(currentQuestion.question)}
+                          {currentQuestion.spanish || translateText(currentQuestion.question)}
                         </p>
                         <p className="mt-5 text-sm sm:text-base font-bold text-emerald-700">
                           English: {currentQuestion.question}
