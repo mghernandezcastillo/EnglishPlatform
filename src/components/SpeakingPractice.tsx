@@ -281,6 +281,37 @@ const translateText = (text: string) => {
 
 const splitQuestion = (question: string) => question.match(/[A-Za-z']+|[^A-Za-z']+/g) || [question];
 
+const renderHighlightedTemplate = (text: string, isSpanish = false) => {
+  if (!text) return null;
+  const parts = text.split(/(\[[^\]]+\])/g);
+
+  return parts.map((part, index) => {
+    if (part.startsWith('[') && part.endsWith(']')) {
+      const inner = part.slice(1, -1);
+      if (isSpanish) {
+        return (
+          <span
+            key={index}
+            className="inline-flex items-center px-2 py-0.5 mx-1 rounded-md bg-amber-400/15 text-amber-300 font-bold border border-amber-400/30 not-italic tracking-normal text-xs sm:text-sm"
+          >
+            {inner}
+          </span>
+        );
+      }
+
+      return (
+        <span
+          key={index}
+          className="inline-flex items-center px-2.5 py-1 mx-1.5 rounded-xl bg-amber-400/20 text-amber-300 font-black border-2 border-amber-400/50 shadow-md shadow-amber-950/40 tracking-normal text-base sm:text-lg lg:text-xl align-baseline"
+        >
+          {inner}
+        </span>
+      );
+    }
+    return <span key={index}>{part}</span>;
+  });
+};
+
 export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) {
   const [currentQuestion, setCurrentQuestion] = useState<SpeakingQuestion | null>(null);
   const [isQuestionFlipped, setIsQuestionFlipped] = useState(false);
@@ -772,10 +803,10 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                           <span>Tip de Estrategia P.R.E.P.: {activeLvl.strategyTip}</span>
                         </div>
                         <div className="text-lg sm:text-xl lg:text-2xl font-black text-white leading-relaxed">
-                          {activeLvl.templateEn}
+                          {renderHighlightedTemplate(activeLvl.templateEn, false)}
                         </div>
                         <div className="text-xs sm:text-sm lg:text-base text-slate-300 font-medium italic mt-2 leading-relaxed">
-                          {activeLvl.templateEs}
+                          {renderHighlightedTemplate(activeLvl.templateEs, true)}
                         </div>
                       </div>
 
