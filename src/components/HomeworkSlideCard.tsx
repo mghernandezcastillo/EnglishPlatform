@@ -18,10 +18,32 @@ interface HomeworkSlideCardProps {
 
 export function HomeworkSlideCard({ slide, cls, teacherNote, onComplete, studentName }: HomeworkSlideCardProps) {
   const [copied, setCopied] = useState(false);
+  const [copiedClipboard, setCopiedClipboard] = useState(false);
   const data = resolveHomeworkData(slide, cls);
   const activeStudent = studentName?.trim() || getActiveStudentName();
   const whatsAppMessage = buildWhatsAppHomeworkMessage(slide, cls, activeStudent);
   const whatsAppUrl = `https://wa.me/?text=${safeEncodeURIComponent(whatsAppMessage)}`;
+
+  const handleCopyToClipboard = async (e?: React.MouseEvent) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      try {
+        await navigator.clipboard.writeText(whatsAppMessage);
+      } catch {
+        const textArea = document.createElement('textarea');
+        textArea.value = whatsAppMessage;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+      }
+    }
+    setCopiedClipboard(true);
+    setTimeout(() => setCopiedClipboard(false), 3000);
+  };
 
   const handleShareWhatsApp = (e?: React.MouseEvent) => {
     // Copy message to clipboard automatically
@@ -208,6 +230,25 @@ export function HomeworkSlideCard({ slide, cls, teacherNote, onComplete, student
               <Check className="w-4 h-4 stroke-[3]" />
             </button>
           )}
+
+          <button
+            type="button"
+            onClick={handleCopyToClipboard}
+            className="inline-flex items-center gap-2 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 border border-slate-600 px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-black text-white shadow-xl hover:scale-105 active:scale-95 transition-all cursor-pointer"
+            title="Copiar texto de la tarea al portapapeles"
+          >
+            {copiedClipboard ? (
+              <>
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 stroke-[3]" />
+                <span className="text-emerald-300">¡Copiado al portapapeles! ✅</span>
+              </>
+            ) : (
+              <>
+                <Copy className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-300" />
+                <span>Copiar al portapapeles</span>
+              </>
+            )}
+          </button>
 
           <a
             href={whatsAppUrl}

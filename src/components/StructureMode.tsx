@@ -22,7 +22,8 @@ import {
   Swords,
   Target,
   Trophy,
-  X
+  X,
+  Copy
 } from 'lucide-react';
 import { StructureLesson, StructureSlide, structureLessons, structureRoadmap } from '../data/structureMode';
 import { StructureAssessment } from './StructureAssessment';
@@ -620,6 +621,7 @@ export function StructureMode({ onClose, studentId, studentName }: StructureMode
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({});
   const [showAssessment, setShowAssessment] = useState(() => Boolean(new URLSearchParams(window.location.search).get('structureReport')));
   const [progressLoaded, setProgressLoaded] = useState(false);
+  const [copiedHomework, setCopiedHomework] = useState(false);
   const [localKey] = useState(() => {
     const existing = localStorage.getItem(LOCAL_KEY_STORAGE);
     if (existing) return existing;
@@ -745,6 +747,34 @@ export function StructureMode({ onClose, studentId, studentName }: StructureMode
     if (isCorrect) {
       confetti({ particleCount: 60, spread: 55, origin: { y: 0.62 } });
     }
+  };
+
+  const copyHomeworkToClipboard = async () => {
+    if (!activeLesson || !slide || slide.type !== 'homework') return;
+
+    const homeworkLines = slide.content.map((line, index) => `${index + 1}. ${line}`).join('\n');
+    const message = [
+      `Homework - ${activeLesson.title}`,
+      '',
+      homeworkLines,
+      '',
+      'Maven English - Modo Estructuras'
+    ].join('\n');
+
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      try {
+        await navigator.clipboard.writeText(message);
+      } catch {
+        const textArea = document.createElement('textarea');
+        textArea.value = message;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+      }
+    }
+    setCopiedHomework(true);
+    setTimeout(() => setCopiedHomework(false), 3000);
   };
 
   const shareHomeworkToWhatsApp = () => {
@@ -1055,14 +1085,24 @@ export function StructureMode({ onClose, studentId, studentName }: StructureMode
                       </div>
                     )}
                     {slide.type === 'homework' && (
-                      <button
-                        type="button"
-                        onClick={shareHomeworkToWhatsApp}
-                        className="flex min-h-16 items-center justify-center gap-3 rounded-3xl bg-emerald-400 px-6 py-4 text-[clamp(1.15rem,2.5vw,1.75rem)] font-black text-slate-950 shadow-2xl transition hover:scale-[1.02] hover:bg-emerald-300"
-                      >
-                        <MessageCircle className="h-7 w-7 shrink-0" />
-                        Compartir por WhatsApp
-                      </button>
+                      <div className="flex flex-col sm:flex-row items-center gap-3 w-full">
+                        <button
+                          type="button"
+                          onClick={copyHomeworkToClipboard}
+                          className="flex flex-1 min-h-16 w-full items-center justify-center gap-3 rounded-3xl bg-slate-800 border-2 border-slate-600 px-6 py-4 text-[clamp(1.15rem,2.5vw,1.75rem)] font-black text-white shadow-2xl transition hover:scale-[1.02] hover:bg-slate-700 cursor-pointer"
+                        >
+                          <Copy className="h-7 w-7 shrink-0 text-cyan-300" />
+                          {copiedHomework ? '¡Copiado al portapapeles! ✅' : 'Copiar al portapapeles'}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={shareHomeworkToWhatsApp}
+                          className="flex flex-1 min-h-16 w-full items-center justify-center gap-3 rounded-3xl bg-emerald-400 px-6 py-4 text-[clamp(1.15rem,2.5vw,1.75rem)] font-black text-slate-950 shadow-2xl transition hover:scale-[1.02] hover:bg-emerald-300 cursor-pointer"
+                        >
+                          <MessageCircle className="h-7 w-7 shrink-0" />
+                          Compartir por WhatsApp
+                        </button>
+                      </div>
                     )}
                   </div>
                 </div>

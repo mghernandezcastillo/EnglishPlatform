@@ -417,7 +417,11 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
 
   const generateRandomQuestion = () => {
     if (remainingQuestions.current.length === 0) {
-      remainingQuestions.current = shuffleArray(speakingQuestions);
+      // Prioritize high-impact conversational topics, opinions, and dilemmas
+      const filtered = speakingQuestions.filter(q => 
+        !/spell your name|phone number|email address|what is your name\?/i.test(q.question)
+      );
+      remainingQuestions.current = shuffleArray(filtered.length > 0 ? filtered : speakingQuestions);
     }
     const nextQuestion = remainingQuestions.current.pop();
     if (nextQuestion) {
@@ -438,436 +442,477 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
   };
 
   return (
-    <div className="fixed inset-0 bg-slate-50 z-50 overflow-y-auto">
-      <div className="min-h-screen relative flex flex-col justify-center items-center py-12 px-4 sm:px-6">
-        <button
-          onClick={onClose}
-          className="absolute top-6 right-6 p-3 bg-white rounded-full text-gray-400 hover:text-red-500 shadow-sm border border-gray-100 hover:bg-red-50 transition-colors z-10"
-        >
-          <X className="w-6 h-6" />
-        </button>
-
-        <div className="max-w-5xl w-full">
-          <div className="text-center mb-8">
-            <div className="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner relative">
-              <Mic className="w-10 h-10 text-indigo-600" />
-              <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-4 border-slate-50 animate-pulse" />
+    <div className="fixed inset-0 bg-slate-100 z-50 overflow-y-auto">
+      <div className="w-full max-w-[1760px] mx-auto min-h-screen flex flex-col justify-start px-4 sm:px-8 lg:px-12 py-6 sm:py-10 space-y-8">
+        
+        {/* Top Sticky/Header Bar */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center shadow-lg shadow-indigo-200 flex-shrink-0">
+              <Mic className="w-6 h-6" />
             </div>
-            <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">Practica de Speaking</h2>
-            <p className="text-gray-500 mt-2 font-medium">Toca la pregunta para verla en espanol. Toca palabras o vocabulario para ver significados.</p>
+            <div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                  Práctica de Speaking
+                </h1>
+                <span className="text-xs uppercase px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 font-black tracking-wider border border-indigo-200">
+                  Blueprint Studio
+                </span>
+              </div>
+              <p className="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">
+                Toca la tarjeta para ver traducción en español. Usa el vocabulario y las estructuras P.R.E.P. para estructurar tu respuesta.
+              </p>
+            </div>
           </div>
 
-          <div className="bg-white rounded-3xl shadow-xl shadow-indigo-100/50 border border-indigo-50 p-6 sm:p-10 text-center min-h-[420px] flex flex-col justify-center relative overflow-hidden">
-            <motion.div
-              className="absolute -top-16 -right-16 h-40 w-40 rounded-full bg-indigo-100"
-              animate={{ scale: [1, 1.12, 1], rotate: [0, 12, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-            />
-            <motion.div
-              className="absolute -bottom-20 -left-12 h-36 w-36 rounded-full bg-emerald-100"
-              animate={{ scale: [1.08, 1, 1.08], rotate: [0, -10, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-            />
+          <div className="flex items-center gap-3 self-end sm:self-auto">
+            <button
+              onClick={generateRandomQuestion}
+              className="group flex items-center gap-2.5 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-2xl font-black text-sm sm:text-base shadow-lg shadow-indigo-200 transition-all cursor-pointer active:scale-95"
+            >
+              <RefreshCw className="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" />
+              <span>Siguiente Pregunta</span>
+              <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </button>
 
-            <AnimatePresence mode="wait">
-              {currentQuestion && (
-                <motion.div
-                  key={currentQuestion.question}
-                  initial={{ opacity: 0, x: 50, scale: 0.95, rotateY: 20 }}
-                  animate={{ opacity: 1, x: 0, scale: 1, rotateY: 0 }}
-                  exit={{ opacity: 0, x: -50, scale: 0.95, rotateY: -20 }}
-                  transition={{ duration: 0.25, type: 'spring', stiffness: 200, damping: 20 }}
-                  className="relative z-10 flex flex-col items-center justify-center h-full w-full"
-                >
-                  <div className="mb-6 flex items-center gap-3 text-indigo-500">
-                    <motion.div
-                      animate={{ y: [0, -5, 0], rotate: [0, 8, -8, 0] }}
-                      transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
-                      className="h-11 w-11 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center shadow-sm"
-                    >
-                      <Sparkles className="w-6 h-6" />
-                    </motion.div>
-                    <div className="text-left">
-                      <div className="text-xs font-black uppercase tracking-[0.24em]">Pregunta aleatoria</div>
-                      <div className="text-sm font-semibold text-slate-500">Click para girar</div>
+            <button
+              onClick={onClose}
+              className="p-3 bg-white rounded-2xl text-slate-400 hover:text-red-500 shadow-sm border border-slate-200 hover:bg-red-50 transition-colors cursor-pointer"
+              title="Cerrar práctica"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+
+        {/* Question Hero Card (Expansive, High Visibility) */}
+        {currentQuestion && (
+          <div className="w-full">
+            <button
+              type="button"
+              onClick={() => {
+                setIsQuestionFlipped(prev => !prev);
+                setActiveQuestionWord(null);
+              }}
+              className="w-full text-left focus:outline-none cursor-pointer group"
+              aria-label="Girar pregunta"
+            >
+              <motion.div
+                className="relative min-h-[220px] sm:min-h-[260px] w-full"
+                style={{ transformStyle: 'preserve-3d' }}
+                animate={{ rotateY: isQuestionFlipped ? 180 : 0 }}
+                transition={{ duration: 0.45, type: 'spring', stiffness: 160, damping: 20 }}
+              >
+                {/* Front: English */}
+                <div className="absolute inset-0 rounded-[2.5rem] border-2 border-indigo-100 bg-white p-6 sm:p-10 shadow-xl shadow-indigo-100/50 [backface-visibility:hidden] flex flex-col justify-between">
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="inline-flex items-center gap-2 text-indigo-600 text-xs sm:text-sm font-black uppercase tracking-[0.2em] bg-indigo-50 px-3.5 py-1.5 rounded-full">
+                      <Languages className="w-4 h-4" />
+                      English • Toca la tarjeta para ver en Español
                     </div>
+                    <button
+                      type="button"
+                      onClick={(e) => handlePlaySpeech(currentQuestion.question, 'q_speech', e)}
+                      className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
+                        playingSnippet === 'q_speech'
+                          ? 'bg-indigo-600 text-white animate-pulse shadow-md'
+                          : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100'
+                      }`}
+                      title="Escuchar pronunciación de la pregunta"
+                    >
+                      <Volume2 className="w-4 h-4" />
+                      <span>Escuchar Pregunta</span>
+                    </button>
                   </div>
 
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setIsQuestionFlipped(prev => !prev);
-                      setActiveQuestionWord(null);
-                    }}
-                    className="w-full max-w-3xl text-left focus:outline-none"
-                    aria-label="Girar pregunta"
-                  >
-                    <motion.div
-                      className="relative min-h-[190px]"
-                      style={{ transformStyle: 'preserve-3d' }}
-                      animate={{ rotateY: isQuestionFlipped ? 180 : 0 }}
-                      transition={{ duration: 0.45, type: 'spring', stiffness: 160, damping: 20 }}
-                    >
-                      <div className="absolute inset-0 rounded-3xl border border-indigo-100 bg-white/95 p-6 sm:p-8 shadow-sm [backface-visibility:hidden] flex flex-col justify-center">
-                        <div className="flex items-center justify-between gap-2 mb-4">
-                          <div className="flex items-center gap-2 text-indigo-500 text-xs font-black uppercase tracking-[0.2em]">
-                            <Languages className="w-4 h-4" />
-                            English
-                          </div>
+                  <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight py-4 tracking-tight">
+                    {splitQuestion(currentQuestion.question).map((part, index) => {
+                      if (!/[A-Za-z']/.test(part)) return <span key={`${part}-${index}`}>{part}</span>;
+                      const key = `${part}-${index}`;
+                      return (
+                        <span key={key} className="relative inline-block">
                           <button
                             type="button"
-                            onClick={(e) => handlePlaySpeech(currentQuestion.question, 'q_speech', e)}
-                            className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold transition-all ${
-                              playingSnippet === 'q_speech'
-                                ? 'bg-indigo-600 text-white animate-pulse'
-                                : 'bg-indigo-50 text-indigo-600 hover:bg-indigo-100'
-                            }`}
-                            title="Escuchar pregunta"
+                            onClick={(event) => {
+                              event.stopPropagation();
+                              setActiveQuestionWord(activeQuestionWord === key ? null : key);
+                            }}
+                            className="mx-0.5 rounded-xl px-1.5 transition-colors hover:bg-amber-100 hover:text-amber-900 focus:bg-amber-100 focus:outline-none"
                           >
-                            <Volume2 className="w-3.5 h-3.5" />
-                            <span>Escuchar</span>
+                            {part}
                           </button>
-                        </div>
-                        <h3 className="text-2xl sm:text-4xl font-extrabold text-slate-800 leading-tight">
-                          {splitQuestion(currentQuestion.question).map((part, index) => {
-                            if (!/[A-Za-z']/.test(part)) return <span key={`${part}-${index}`}>{part}</span>;
-                            const key = `${part}-${index}`;
-                            return (
-                              <span key={key} className="relative inline-block">
-                                <button
-                                  type="button"
-                                  onClick={(event) => {
-                                    event.stopPropagation();
-                                    setActiveQuestionWord(activeQuestionWord === key ? null : key);
-                                  }}
-                                  className="mx-0.5 rounded-lg px-1 transition-colors hover:bg-amber-100 hover:text-amber-800 focus:bg-amber-100 focus:outline-none"
-                                >
-                                  {part}
-                                </button>
-                                {activeQuestionWord === key && (
-                                  <span className="absolute left-1/2 top-full z-20 mt-2 -translate-x-1/2 whitespace-nowrap rounded-xl border border-amber-200 bg-amber-50 px-3 py-1.5 text-xs font-bold text-amber-900 shadow-lg">
-                                    {translateWord(part)}
-                                  </span>
-                                )}
-                              </span>
-                            );
-                          })}
-                        </h3>
-                      </div>
+                          {activeQuestionWord === key && (
+                            <span className="absolute left-1/2 top-full z-20 mt-2 -translate-x-1/2 whitespace-nowrap rounded-2xl border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-bold text-amber-950 shadow-xl">
+                              {translateWord(part)}
+                            </span>
+                          )}
+                        </span>
+                      );
+                    })}
+                  </h2>
 
-                      <div className="absolute inset-0 rounded-3xl border border-emerald-100 bg-emerald-50 p-6 sm:p-8 shadow-sm [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center">
-                        <div className="flex items-center justify-between gap-2 mb-4">
-                          <div className="flex items-center gap-2 text-emerald-600 text-xs font-black uppercase tracking-[0.2em]">
-                            <Languages className="w-4 h-4" />
-                            Español
-                          </div>
-                          <span className="text-[11px] text-emerald-700/70 font-semibold">Toca para volver a inglés</span>
-                        </div>
-                        <p className="text-xl sm:text-3xl font-extrabold text-emerald-950 leading-tight">
-                          {currentQuestion.spanish || translateText(currentQuestion.question)}
-                        </p>
-                        <p className="mt-5 text-sm sm:text-base font-bold text-emerald-700">
-                          English: {currentQuestion.question}
-                        </p>
-                      </div>
-                    </motion.div>
-                  </button>
-
-                  {/* 1. Target Words & Expressions (Palabras clave personalizadas) */}
-                  <div className="w-full mt-10 text-left">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                      <div className="flex items-center gap-2.5">
-                        <div className="h-9 w-9 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold shadow-sm">
-                          <Target className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <h4 className="text-base font-black text-slate-900 uppercase tracking-wider">
-                            Palabras Clave para tu Respuesta
-                          </h4>
-                          <p className="text-xs text-slate-500 font-medium">
-                            Úsalas al hablar para ganar fluidez. Toca 🔊 para pronunciar o 🔖 para guardar en Mi Vocabulario.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                      {(blueprint?.targetWords || []).map((item, idx) => {
-                        const cleanWord = item.word.trim();
-                        const isSaved = savedTerms.has(cleanWord.toLowerCase());
-                        const isSaving = savingTerm === cleanWord;
-                        const isAudioPlaying = playingSnippet === `word_${cleanWord}`;
-
-                        const typeConfig: Record<string, { label: string; badge: string }> = {
-                          noun: { label: 'Sustantivo', badge: 'bg-blue-50 text-blue-700 border-blue-200' },
-                          verb: { label: 'Verbo de acción', badge: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
-                          adjective: { label: 'Adjetivo', badge: 'bg-purple-50 text-purple-700 border-purple-200' },
-                          expression: { label: 'Expresión', badge: 'bg-amber-50 text-amber-700 border-amber-200' },
-                        };
-                        const config = typeConfig[item.type] || typeConfig.expression;
-
-                        return (
-                          <div
-                            key={`${cleanWord}-${idx}`}
-                            className={`relative rounded-2xl p-4 border transition-all text-left ${
-                              isSaved
-                                ? 'bg-amber-50/40 border-amber-300 shadow-sm'
-                                : 'bg-white border-slate-200/90 hover:border-indigo-200 hover:shadow-md'
-                            }`}
-                          >
-                            <div className="flex items-start justify-between gap-2 mb-2">
-                              <span className={`text-[10px] uppercase font-black px-2 py-0.5 rounded-full border ${config.badge}`}>
-                                {config.label}
-                              </span>
-
-                              <div className="flex items-center gap-1">
-                                <button
-                                  type="button"
-                                  onClick={(e) => handlePlaySpeech(cleanWord, `word_${cleanWord}`, e)}
-                                  className={`p-1.5 rounded-lg transition-colors ${
-                                    isAudioPlaying
-                                      ? 'bg-indigo-600 text-white animate-pulse'
-                                      : 'text-slate-400 hover:text-indigo-600 hover:bg-indigo-50'
-                                  }`}
-                                  title={`Escuchar pronunciación de "${cleanWord}"`}
-                                >
-                                  <Volume2 className="w-4 h-4" />
-                                </button>
-
-                                <button
-                                  type="button"
-                                  onClick={(e) => handleToggleSaveVocab(cleanWord, e)}
-                                  disabled={isSaving}
-                                  className={`p-1.5 rounded-lg transition-all ${
-                                    isSaved
-                                      ? 'text-amber-600 bg-amber-100 hover:bg-amber-200'
-                                      : 'text-slate-400 hover:text-amber-500 hover:bg-slate-100'
-                                  }`}
-                                  title={isSaved ? 'Guardado en Mi Vocabulario (Clic para quitar)' : 'Guardar en Mi Vocabulario'}
-                                >
-                                  {isSaving ? (
-                                    <Loader2 className="w-4 h-4 animate-spin text-amber-500" />
-                                  ) : isSaved ? (
-                                    <BookmarkCheck className="w-4 h-4 fill-current" />
-                                  ) : (
-                                    <Bookmark className="w-4 h-4" />
-                                  )}
-                                </button>
-                              </div>
-                            </div>
-
-                            <div className="font-extrabold text-slate-900 text-lg leading-tight">
-                              {cleanWord}
-                            </div>
-                            <div className="text-xs font-semibold text-slate-500 mt-0.5">
-                              {item.translation}
-                            </div>
-
-                            {item.exampleSnippet && (
-                              <div className="mt-3 pt-2.5 border-t border-slate-100 text-[11px] text-slate-600 font-medium italic flex items-center gap-1.5">
-                                <span className="text-indigo-600 font-bold not-italic">Uso:</span>
-                                <span>"{item.exampleSnippet}"</span>
-                              </div>
-                            )}
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-
-                  {/* 2. P.R.E.P. Scaffolding Studio (Andamiaje por Niveles) */}
-                  {blueprint && (
-                    <div className="w-full mt-10 text-left">
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
-                        <div className="flex items-center gap-2.5">
-                          <div className="h-9 w-9 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold shadow-sm">
-                            <Layers className="w-5 h-5" />
-                          </div>
-                          <div>
-                            <h4 className="text-base font-black text-slate-900 uppercase tracking-wider">
-                              Estructura P.R.E.P. (Cómo armar tu respuesta)
-                            </h4>
-                            <p className="text-xs text-slate-500 font-medium">
-                              Elige tu nivel para ver la fórmula guiada paso a paso.
-                            </p>
-                          </div>
-                        </div>
-
-                        {/* Level Selector Tabs */}
-                        <div className="inline-flex rounded-2xl bg-slate-100 p-1 border border-slate-200 self-start sm:self-auto">
-                          {(['starter', 'confident', 'pro'] as const).map((lvlKey) => {
-                            const lvlData = blueprint[lvlKey];
-                            const isSelected = selectedLevel === lvlKey;
-                            return (
-                              <button
-                                key={lvlKey}
-                                type="button"
-                                onClick={() => setSelectedLevel(lvlKey)}
-                                className={`px-3.5 py-1.5 rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 cursor-pointer ${
-                                  isSelected
-                                    ? lvlKey === 'starter'
-                                      ? 'bg-emerald-600 text-white shadow-sm'
-                                      : lvlKey === 'confident'
-                                      ? 'bg-amber-600 text-white shadow-sm'
-                                      : 'bg-indigo-600 text-white shadow-sm'
-                                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
-                                }`}
-                              >
-                                <span>{lvlData.label}</span>
-                                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-md ${
-                                  isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'
-                                }`}>
-                                  {lvlData.cefr}
-                                </span>
-                              </button>
-                            );
-                          })}
-                        </div>
-                      </div>
-
-                      {/* Quick Starters / Conectores de apertura */}
-                      <div className="mb-4 bg-slate-50/80 rounded-2xl p-3.5 border border-slate-200">
-                        <div className="text-[11px] font-black uppercase tracking-wider text-slate-500 mb-2 flex items-center gap-1.5">
-                          <Zap className="w-3.5 h-3.5 text-amber-500" />
-                          <span>Arranques recomendados (Toca para escuchar entonación):</span>
-                        </div>
-                        <div className="flex flex-wrap gap-2">
-                          {blueprint.quickStarters.map((qs, qIdx) => {
-                            const isAudioPlaying = playingSnippet === `starter_${qIdx}`;
-                            return (
-                              <button
-                                key={qIdx}
-                                type="button"
-                                onClick={(e) => handlePlaySpeech(qs.en, `starter_${qIdx}`, e)}
-                                className={`group inline-flex items-center gap-2 px-3 py-1.5 rounded-xl border text-xs font-bold transition-all text-left cursor-pointer ${
-                                  isAudioPlaying
-                                    ? 'bg-indigo-600 text-white border-indigo-600 shadow-sm'
-                                    : 'bg-white hover:bg-indigo-50/80 border-slate-200 text-slate-800 hover:border-indigo-200'
-                                }`}
-                              >
-                                <Volume2 className={`w-3.5 h-3.5 flex-shrink-0 transition-transform ${
-                                  isAudioPlaying ? 'text-white scale-110' : 'text-indigo-500 group-hover:scale-110'
-                                }`} />
-                                <span>"{qs.en}"</span>
-                                <span className={`text-[10px] font-normal ${
-                                  isAudioPlaying ? 'text-indigo-100' : 'text-slate-400 group-hover:text-indigo-600'
-                                }`}>({qs.es})</span>
-                              </button>
-                            );
-                          })}
-                        </div>
-                      </div>
-
-                      {/* Selected Level Scaffolding Card */}
-                      {(() => {
-                        const activeLvl = blueprint[selectedLevel];
-                        const isAudioPlaying = playingSnippet === `full_${selectedLevel}`;
-
-                        return (
-                          <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm">
-                            {/* Strategy Tip Banner */}
-                            <div className="mb-5 rounded-2xl bg-amber-50/90 border border-amber-200 p-3.5 flex items-start gap-2.5 text-xs text-amber-900 font-medium">
-                              <Lightbulb className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
-                              <div>
-                                <span className="font-extrabold text-amber-950">Tip de Estrategia: </span>
-                                {activeLvl.strategyTip}
-                              </div>
-                            </div>
-
-                            {/* Scaffolded Template */}
-                            <div className="mb-6">
-                              <div className="text-xs font-black uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1.5">
-                                <BookOpen className="w-3.5 h-3.5 text-indigo-500" />
-                                <span>Plantilla Guiada (Llena los corchetes con tu opinión o vocabulario):</span>
-                              </div>
-                              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 text-sm sm:text-base font-bold leading-relaxed">
-                                {activeLvl.templateEn}
-                              </div>
-                              <div className="mt-2.5 px-2 text-xs text-slate-500 font-medium italic">
-                                {activeLvl.templateEs}
-                              </div>
-                            </div>
-
-                            {/* Solved Model Answer */}
-                            <div className="rounded-2xl bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-950 p-4 sm:p-5 text-white shadow-md">
-                              <div className="flex items-center justify-between gap-3 mb-2.5">
-                                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-cyan-300">
-                                  <Sparkle className="w-4 h-4" />
-                                  <span>Respuesta Modelo Completa ({activeLvl.label} • {activeLvl.cefr})</span>
-                                </div>
-                                <button
-                                  type="button"
-                                  onClick={(e) => handlePlaySpeech(activeLvl.exampleFullEn, `full_${selectedLevel}`, e)}
-                                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold transition-all cursor-pointer ${
-                                    isAudioPlaying
-                                      ? 'bg-cyan-400 text-slate-950 animate-pulse font-extrabold'
-                                      : 'bg-white/10 text-cyan-200 hover:bg-white/20'
-                                  }`}
-                                >
-                                  <Volume2 className="w-3.5 h-3.5" />
-                                  <span>{isAudioPlaying ? 'Reproduciendo...' : 'Escuchar modelo'}</span>
-                                </button>
-                              </div>
-                              <p className="text-sm sm:text-base font-medium text-white/90 leading-relaxed">
-                                "{activeLvl.exampleFullEn}"
-                              </p>
-                            </div>
-                          </div>
-                        );
-                      })()}
-                    </div>
-                  )}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-
-          {currentQuestion && (
-            <div className="mt-6 rounded-[2rem] bg-slate-950 p-5 text-white shadow-2xl shadow-indigo-200/60 sm:p-6">
-              <div className="grid gap-5 lg:grid-cols-[1fr_360px] lg:items-center">
-                <div className="text-left">
-                  <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-cyan-300/15 px-3 py-1.5 text-xs font-black uppercase tracking-[0.18em] text-cyan-100">
-                    <Bot className="h-4 w-4" />
-                    Coach IA integrado
-                  </div>
-                  <h3 className="text-2xl font-black leading-tight sm:text-3xl">
-                    Graba la respuesta del estudiante y recibe feedback al instante.
-                  </h3>
-                  <div className="mt-4 rounded-2xl bg-white/8 p-4">
-                    <div className="mb-2 flex items-center gap-2 text-xs font-black uppercase tracking-[0.16em] text-emerald-200">
-                      <Target className="h-4 w-4" />
-                      Pregunta actual
-                    </div>
-                    <p className="text-lg font-bold leading-relaxed text-white/90">
-                      {currentQuestion.question}
-                    </p>
-                    <p className="mt-2 text-sm font-semibold text-white/60">
-                      El asistente evalúa claridad, pronunciación, gramática, vocabulario y próximos pasos.
-                    </p>
+                  <div className="flex items-center justify-between text-xs sm:text-sm text-slate-400 font-bold uppercase tracking-wider">
+                    <span>Tema: <strong className="text-slate-600">{currentQuestion.topic}</strong></span>
+                    <span className="text-indigo-600 group-hover:translate-x-1 transition-transform font-extrabold">
+                      Haz clic para voltear al Español ➔
+                    </span>
                   </div>
                 </div>
 
+                {/* Back: Spanish */}
+                <div className="absolute inset-0 rounded-[2.5rem] border-2 border-emerald-200 bg-emerald-50/95 p-6 sm:p-10 shadow-xl shadow-emerald-100/50 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="inline-flex items-center gap-2 text-emerald-800 text-xs sm:text-sm font-black uppercase tracking-[0.2em] bg-emerald-100 px-3.5 py-1.5 rounded-full">
+                      <Languages className="w-4 h-4" />
+                      Español
+                    </div>
+                    <span className="text-xs sm:text-sm font-extrabold text-emerald-800">
+                      Toca la tarjeta para volver a inglés
+                    </span>
+                  </div>
+
+                  <p className="text-2xl sm:text-4xl lg:text-5xl font-black text-emerald-950 leading-tight py-4 tracking-tight">
+                    {currentQuestion.spanish || translateText(currentQuestion.question)}
+                  </p>
+
+                  <p className="text-sm sm:text-base font-bold text-emerald-700">
+                    English: {currentQuestion.question}
+                  </p>
+                </div>
+              </motion.div>
+            </button>
+          </div>
+        )}
+
+        {/* Pillar 1: Vocabulario Clave para Responder (Expansive Full-Width 4-Column Grid) */}
+        <div className="w-full bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200 shadow-sm flex flex-col gap-6 text-left">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-4 border-b border-slate-100">
+            <div className="flex items-center gap-3">
+              <div className="h-12 w-12 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold shadow-sm flex-shrink-0">
+                <Target className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wider">
+                  Vocabulario Clave para Responder
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">
+                  Aprende estas palabras clave para enriquecer tu respuesta. Toca 🔊 para escuchar pronunciación nativa o 🔖 para guardar en Mi Vocabulario.
+                </p>
+              </div>
+            </div>
+
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-600 font-bold text-xs uppercase tracking-wider self-start sm:self-auto border border-slate-200">
+              <Sparkles className="w-4 h-4 text-amber-500" />
+              <span>{(blueprint?.targetWords || []).length} términos sugeridos</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+            {(blueprint?.targetWords || []).map((item, idx) => {
+              const cleanWord = item.word.trim();
+              const isSaved = savedTerms.has(cleanWord.toLowerCase());
+              const isSaving = savingTerm === cleanWord;
+              const isAudioPlaying = playingSnippet === `word_${cleanWord}`;
+
+              const typeConfig: Record<string, { label: string; badge: string }> = {
+                noun: { label: 'Sustantivo', badge: 'bg-blue-50 text-blue-700 border-blue-200' },
+                verb: { label: 'Verbo de acción', badge: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                adjective: { label: 'Adjetivo', badge: 'bg-purple-50 text-purple-700 border-purple-200' },
+                expression: { label: 'Expresión', badge: 'bg-amber-50 text-amber-700 border-amber-200' },
+              };
+              const config = typeConfig[item.type] || typeConfig.expression;
+
+              return (
+                <div
+                  key={`${cleanWord}-${idx}`}
+                  className={`relative rounded-2xl p-6 border-2 transition-all text-left flex flex-col justify-between min-h-[220px] ${
+                    isSaved
+                      ? 'bg-amber-50/50 border-amber-300 shadow-sm'
+                      : 'bg-slate-50/80 border-slate-200 hover:border-indigo-300 hover:bg-white hover:shadow-md'
+                  }`}
+                >
+                  <div>
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                      <span className={`text-xs uppercase font-black px-3 py-1 rounded-full border tracking-wide ${config.badge}`}>
+                        {config.label}
+                      </span>
+
+                      <div className="flex items-center gap-2">
+                        <button
+                          type="button"
+                          onClick={(e) => handlePlaySpeech(cleanWord, `word_${cleanWord}`, e)}
+                          className={`p-2.5 rounded-xl transition-all cursor-pointer ${
+                            isAudioPlaying
+                              ? 'bg-indigo-600 text-white animate-pulse shadow-sm'
+                              : 'text-slate-500 hover:text-indigo-600 hover:bg-indigo-50 bg-white border border-slate-200'
+                          }`}
+                          title={`Escuchar pronunciación de "${cleanWord}"`}
+                        >
+                          <Volume2 className="w-4 h-4" />
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={(e) => handleToggleSaveVocab(cleanWord, e)}
+                          disabled={isSaving}
+                          className={`p-2.5 rounded-xl transition-all cursor-pointer ${
+                            isSaved
+                              ? 'text-amber-700 bg-amber-100 hover:bg-amber-200 border border-amber-300'
+                              : 'text-slate-400 hover:text-amber-600 hover:bg-amber-50 bg-white border border-slate-200'
+                          }`}
+                          title={isSaved ? 'Guardado en Mi Vocabulario (Clic para quitar)' : 'Guardar en Mi Vocabulario'}
+                        >
+                          {isSaving ? (
+                            <Loader2 className="w-4 h-4 animate-spin text-amber-500" />
+                          ) : isSaved ? (
+                            <BookmarkCheck className="w-4 h-4 fill-current text-amber-600" />
+                          ) : (
+                            <Bookmark className="w-4 h-4" />
+                          )}
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="font-black text-slate-900 text-2xl sm:text-3xl leading-snug tracking-tight mt-2">
+                      {cleanWord}
+                    </div>
+                    <div className="text-base sm:text-lg font-bold text-indigo-700 mt-1">
+                      {item.translation}
+                    </div>
+                  </div>
+
+                  {item.exampleSnippet && (
+                    <div className="mt-5 p-3.5 rounded-xl bg-white border border-slate-200/90 text-left shadow-2xs">
+                      <div className="text-[11px] font-black uppercase tracking-wider text-indigo-600 mb-1">
+                        Ejemplo de uso:
+                      </div>
+                      <div className="text-sm sm:text-base font-semibold text-slate-800 leading-snug italic">
+                        "{item.exampleSnippet}"
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Pillar 2: Estructura P.R.E.P. (Andamiaje Conversacional) */}
+        {blueprint && (
+          <div className="w-full bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200 shadow-sm flex flex-col gap-8 text-left">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pb-4 border-b border-slate-100">
+              <div className="flex items-center gap-3">
+                <div className="h-12 w-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold shadow-sm flex-shrink-0">
+                  <Layers className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wider">
+                    Estructura P.R.E.P. (Punto + Razón + Ejemplo + Punto)
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">
+                    Elige tu nivel de comodidad para desbloquear la fórmula guiada paso a paso y la respuesta modelo.
+                  </p>
+                </div>
+              </div>
+
+              {/* Level Selector Tabs */}
+              <div className="inline-flex rounded-2xl bg-slate-100 p-1.5 border border-slate-200 self-start lg:self-auto">
+                {(['starter', 'confident', 'pro'] as const).map((lvlKey) => {
+                  const lvlData = blueprint[lvlKey];
+                  const isSelected = selectedLevel === lvlKey;
+                  return (
+                    <button
+                      key={lvlKey}
+                      type="button"
+                      onClick={() => setSelectedLevel(lvlKey)}
+                      className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all flex items-center gap-2.5 cursor-pointer ${
+                        isSelected
+                          ? lvlKey === 'starter'
+                            ? 'bg-emerald-600 text-white shadow-md'
+                            : lvlKey === 'confident'
+                            ? 'bg-amber-600 text-white shadow-md'
+                            : 'bg-indigo-600 text-white shadow-md'
+                          : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
+                      }`}
+                    >
+                      <span>{lvlData.label}</span>
+                      <span className={`text-[10px] font-black px-2 py-0.5 rounded-md ${
+                        isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'
+                      }`}>
+                        {lvlData.cefr}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Quick Starters / Conectores de apertura */}
+            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+              <div className="text-xs sm:text-sm font-black uppercase tracking-wider text-slate-600 mb-3 flex items-center gap-2">
+                <Zap className="w-5 h-5 text-amber-500" />
+                <span>Arranques conversacionales recomendados (Toca para escuchar entonación):</span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-3">
+                {blueprint.quickStarters.map((qs, qIdx) => {
+                  const isAudioPlaying = playingSnippet === `starter_${qIdx}`;
+                  return (
+                    <button
+                      key={qIdx}
+                      type="button"
+                      onClick={(e) => handlePlaySpeech(qs.en, `starter_${qIdx}`, e)}
+                      className={`group flex items-center justify-between gap-2 p-3 rounded-xl border transition-all text-left cursor-pointer ${
+                        isAudioPlaying
+                          ? 'bg-indigo-600 text-white border-indigo-600 shadow-md'
+                          : 'bg-white hover:bg-indigo-50 border-slate-200 text-slate-800 hover:border-indigo-200'
+                      }`}
+                    >
+                      <div className="flex flex-col">
+                        <span className="font-extrabold text-sm sm:text-base">"{qs.en}"</span>
+                        <span className={`text-xs font-medium ${
+                          isAudioPlaying ? 'text-indigo-100' : 'text-slate-500 group-hover:text-indigo-600'
+                        }`}>({qs.es})</span>
+                      </div>
+                      <Volume2 className={`w-4 h-4 flex-shrink-0 transition-transform ${
+                        isAudioPlaying ? 'text-white scale-110' : 'text-indigo-500 group-hover:scale-110'
+                      }`} />
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* 2-Column Guided Template & Solved Model Answer */}
+            {(() => {
+              const activeLvl = blueprint[selectedLevel];
+              const isAudioPlaying = playingSnippet === `full_${selectedLevel}`;
+
+              return (
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                  {/* Left Column (6 cols): Plantilla Guiada */}
+                  <div className="lg:col-span-6 flex flex-col gap-5 justify-between">
+                    <div>
+                      {/* Strategy Tip Banner */}
+                      <div className="rounded-2xl bg-amber-50 border border-amber-200 p-5 flex items-start gap-3.5 text-sm sm:text-base text-amber-950 font-medium mb-6">
+                        <Lightbulb className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <span className="font-black text-amber-950">Tip de Estrategia P.R.E.P.: </span>
+                          {activeLvl.strategyTip}
+                        </div>
+                      </div>
+
+                      {/* Scaffolded Template */}
+                      <div className="text-xs sm:text-sm font-black uppercase tracking-wider text-slate-500 mb-2 flex items-center gap-2">
+                        <BookOpen className="w-5 h-5 text-indigo-500" />
+                        <span>Fórmula Guiada (Llena los corchetes con tu respuesta):</span>
+                      </div>
+                      <div className="p-6 rounded-2xl bg-indigo-50/70 border-2 border-indigo-200 text-slate-900 text-lg sm:text-xl font-bold leading-relaxed">
+                        {activeLvl.templateEn}
+                      </div>
+                      <div className="mt-3 px-3 text-sm sm:text-base text-slate-600 font-medium italic">
+                        {activeLvl.templateEs}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Right Column (6 cols): Solved Model Answer */}
+                  <div className="lg:col-span-6 rounded-3xl bg-slate-900 p-6 sm:p-8 text-white shadow-xl flex flex-col justify-between border-2 border-slate-800">
+                    <div>
+                      <div className="flex items-center justify-between gap-3 mb-4">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm font-black uppercase tracking-wider text-cyan-300">
+                          <Sparkle className="w-5 h-5" />
+                          <span>Respuesta Modelo Completa ({activeLvl.label} • {activeLvl.cefr})</span>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={(e) => handlePlaySpeech(activeLvl.exampleFullEn, `full_${selectedLevel}`, e)}
+                          className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer shadow-md active:scale-95 ${
+                            isAudioPlaying
+                              ? 'bg-cyan-400 text-slate-950 animate-pulse'
+                              : 'bg-white/10 text-cyan-200 hover:bg-white/20'
+                          }`}
+                        >
+                          <Volume2 className="w-4 h-4" />
+                          <span>{isAudioPlaying ? 'Reproduciendo...' : 'Escuchar modelo'}</span>
+                        </button>
+                      </div>
+
+                      <div className="p-6 rounded-2xl bg-white/5 border border-white/10 text-lg sm:text-xl font-medium text-white/95 leading-relaxed">
+                        "{activeLvl.exampleFullEn}"
+                      </div>
+                    </div>
+
+                    <div className="mt-4 pt-3 border-t border-white/10 text-xs sm:text-sm text-slate-400 font-medium italic">
+                      💡 Escucha la entonación y trata de imitar el ritmo natural al responder en voz alta.
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
+          </div>
+        )}
+
+        {/* Pillar 3: Coach IA de Speaking con Tracker de Vocabulario en Vivo */}
+        {currentQuestion && (
+          <div className="w-full rounded-3xl bg-slate-950 p-6 sm:p-10 text-white shadow-2xl border-2 border-slate-800 text-left">
+            <div className="grid gap-8 lg:grid-cols-12 items-center">
+              <div className="lg:col-span-5 flex flex-col gap-4">
+                <div className="inline-flex items-center gap-2 rounded-full bg-cyan-300/20 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-cyan-200 border border-cyan-400/30 self-start">
+                  <Bot className="h-4 w-4" />
+                  Coach IA Integrado
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-black leading-tight text-white">
+                  Graba tu respuesta y recibe auditoría P.R.E.P. al instante.
+                </h3>
+                <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed">
+                  El evaluador detectará automáticamente si aplicaste las palabras clave sugeridas y qué tan bien estructuraste tu argumento.
+                </p>
+
+                {/* Target words preview chips */}
+                <div className="mt-2 rounded-2xl bg-white/10 p-5 border border-white/15">
+                  <div className="mb-2.5 flex items-center gap-2 text-xs font-black uppercase tracking-wider text-emerald-300">
+                    <Target className="h-4 w-4" />
+                    <span>Términos clave a incorporar:</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {(blueprint?.targetWords || []).map((w, wIdx) => (
+                      <span
+                        key={wIdx}
+                        className="px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold bg-white/10 border border-white/15 text-slate-200"
+                      >
+                        {w.word} <span className="text-xs text-slate-400">({w.translation})</span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:col-span-7">
                 <InlineAiSpeakingAssistant
                   title="Coach IA de Speaking Practice"
                   initialQuestion={currentQuestion.question}
                   candidateQuestions={aiCandidateQuestions}
+                  targetWords={(blueprint?.targetWords || []).map(w => w.word)}
                   mode="speaking"
                 />
               </div>
             </div>
-          )}
-
-          <div className="mt-10 flex justify-center">
-            <button
-              onClick={generateRandomQuestion}
-              className="group flex items-center gap-3 bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg hover:bg-indigo-700 transition-all active:scale-95"
-            >
-              <RefreshCw className="w-6 h-6 group-active:animate-spin" />
-              Siguiente Pregunta
-              <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
           </div>
+        )}
+
+        {/* Bottom Giant Next Question Button */}
+        <div className="py-6 flex justify-center">
+          <button
+            onClick={generateRandomQuestion}
+            className="group flex items-center gap-3.5 bg-indigo-600 hover:bg-indigo-700 text-white px-12 py-5 rounded-3xl font-black text-xl shadow-2xl hover:scale-105 active:scale-95 transition-all cursor-pointer"
+          >
+            <RefreshCw className="w-6 h-6 group-hover:rotate-180 transition-transform duration-500" />
+            <span>Siguiente Pregunta</span>
+            <ChevronRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
+
       </div>
     </div>
   );

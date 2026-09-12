@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
-import { Eye, Lightbulb, MessageCircle, Pencil, Play, Sparkles, Check } from 'lucide-react';
+import { Eye, Lightbulb, MessageCircle, Pencil, Play, Sparkles, Check, Copy } from 'lucide-react';
 import { ClassSlide, CurriculumClass } from '../types';
 import { resolveVideoHomeworkData } from '../lib/videoHomeworkResolver';
 import { getActiveStudentName } from '../lib/homeworkResolver';
@@ -20,6 +20,7 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
   const [answer1, setAnswer1] = useState('');
   const [answer2, setAnswer2] = useState('');
   const [copied, setCopied] = useState(false);
+  const [copiedText, setCopiedText] = useState(false);
 
   const data = resolveVideoHomeworkData(slide, cls);
   const activeStudent = studentName?.trim() || getActiveStudentName();
@@ -36,6 +37,23 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
     msg = `${greeting}${msg}`;
   }
   const whatsAppUrl = `https://wa.me/?text=${safeEncodeURIComponent(msg)}`;
+
+  const handleCopyText = async () => {
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      try {
+        await navigator.clipboard.writeText(msg);
+      } catch {
+        const textArea = document.createElement('textarea');
+        textArea.value = msg;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+      }
+    }
+    setCopiedText(true);
+    setTimeout(() => setCopiedText(false), 3000);
+  };
 
   const handleShareWhatsApp = () => {
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
@@ -162,12 +180,30 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
               </div>
             </div>
 
-            {/* WhatsApp Share Button & Doodle prompt */}
-            <div className="flex items-center justify-between gap-2 pt-1">
+            {/* WhatsApp Share Button, Copy Button & Doodle prompt */}
+            <div className="flex items-center gap-2 pt-1 flex-wrap">
+              <button
+                type="button"
+                onClick={handleCopyText}
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-xl sm:rounded-2xl bg-slate-800/90 hover:bg-slate-700/90 border border-slate-600 px-3 sm:px-4 py-2 text-xs sm:text-sm font-black text-white shadow-md transition hover:scale-105 active:scale-95 cursor-pointer"
+                title="Copiar texto de la tarea al portapapeles"
+              >
+                {copiedText ? (
+                  <>
+                    <Check className="h-4 w-4 text-emerald-400 stroke-[3]" />
+                    <span className="text-emerald-300">¡Copiado! ✅</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="h-4 w-4 text-cyan-300" />
+                    <span>Copiar</span>
+                  </>
+                )}
+              </button>
               <button
                 type="button"
                 onClick={handleShareWhatsApp}
-                className="inline-flex shrink-0 items-center gap-2 rounded-xl sm:rounded-2xl bg-emerald-500 px-4 sm:px-5 py-2 text-xs sm:text-sm font-black text-white shadow-lg shadow-emerald-500/30 transition hover:bg-emerald-400 hover:scale-105 active:scale-95"
+                className="inline-flex shrink-0 items-center gap-2 rounded-xl sm:rounded-2xl bg-emerald-500 px-4 sm:px-5 py-2 text-xs sm:text-sm font-black text-white shadow-lg shadow-emerald-500/30 transition hover:bg-emerald-400 hover:scale-105 active:scale-95 cursor-pointer"
               >
                 <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 fill-current" />
                 <span>{copied ? '¡Copiado! ✅' : 'Share via WhatsApp'}</span>
@@ -247,6 +283,25 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
               <Check className="h-4 w-4 sm:h-5 sm:w-5 stroke-[3]" />
             </button>
           )}
+
+          <button
+            type="button"
+            onClick={handleCopyText}
+            className="inline-flex shrink-0 items-center gap-2 rounded-xl sm:rounded-2xl bg-slate-800/90 hover:bg-slate-700/90 border border-slate-600 px-4 sm:px-5 py-2 text-xs sm:text-sm lg:text-base font-black text-white shadow-xl hover:scale-105 active:scale-95 transition-all cursor-pointer"
+            title="Copiar texto de la tarea al portapapeles"
+          >
+            {copiedText ? (
+              <>
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 stroke-[3]" />
+                <span className="text-emerald-300">¡Copiado al portapapeles! ✅</span>
+              </>
+            ) : (
+              <>
+                <Copy className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-300" />
+                <span>Copiar al portapapeles</span>
+              </>
+            )}
+          </button>
 
           <a
             href={whatsAppUrl}

@@ -7,7 +7,7 @@
  */
 import { useState, useEffect, useMemo, useCallback, useRef, lazy, Suspense } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { CheckCircle, Check, Play, ArrowRight, Target, BookOpen, Users, MessageSquare, HelpCircle, Sparkles, Eye, EyeOff, Zap, Volume2, RotateCcw, Layers3, Lightbulb, BookmarkPlus, CheckCircle2, ChevronRight, ChevronLeft, VolumeX, X, Maximize2, Star, LayoutGrid, Flame, Award } from 'lucide-react';
+import { CheckCircle, Check, Play, ArrowRight, Target, BookOpen, Users, MessageSquare, HelpCircle, Sparkles, Eye, EyeOff, Zap, Volume2, RotateCcw, Layers3, Lightbulb, BookmarkPlus, CheckCircle2, ChevronRight, ChevronLeft, VolumeX, X, Maximize2, Star, LayoutGrid, Flame, Award, Copy } from 'lucide-react';
 import { CurriculumClass, ClassSection, ClassSlide } from '../types';
 import { vocabService } from '../lib/vocabService';
 import { SpinningWheel } from './SpinningWheel';
@@ -992,6 +992,7 @@ export function SlideRenderer({
   const [grammarViewMode, setGrammarViewMode] = useState<'spotlight' | 'showcase'>('spotlight');
   const [activeFormulaToken, setActiveFormulaToken] = useState<number | null>(null);
   const [showGrammarTranslation, setShowGrammarTranslation] = useState(false);
+  const [copiedHomework, setCopiedHomework] = useState(false);
 
   useEffect(() => {
     setShowGrammarTranslation(false);
@@ -1075,6 +1076,7 @@ export function SlideRenderer({
     setGrammarViewMode('spotlight');
     setActiveFormulaToken(null);
     setShowGrammarTranslation(false);
+    setCopiedHomework(false);
   }, [slide.id]);
 
   // Compact scale: measure parent to scale 1280×720 into available space
@@ -4884,9 +4886,39 @@ export function SlideRenderer({
                   mode={isReadingPracticeSlide ? 'reading' : 'speaking'} />
               )}
 
-              {/* WhatsApp homework share */}
+              {/* WhatsApp homework share & Copy to clipboard */}
               {(slide.type === 'homework' || (slide.title || '').toLowerCase().includes('homework')) && (
-                <div className="mt-6 flex">
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const hw = slide.content ? slide.content.join('\n') : '';
+                      let vid = slide.videoUrl;
+                      if (vid?.includes('/embed/')) vid = vid.replace('/embed/', '/watch?v=');
+                      const vidText = vid ? `\n🎬 Video: ${vid}` : '';
+                      const msg = `📚 Tarea de la clase "${cls.title}":\n\n${slide.description}\n\n${hw}${vidText}\n\n¡Mucho éxito!`;
+                      if (typeof navigator !== 'undefined' && navigator.clipboard) {
+                        navigator.clipboard.writeText(msg).catch(() => {});
+                      }
+                      setCopiedHomework(true);
+                      setTimeout(() => setCopiedHomework(false), 3000);
+                    }}
+                    className="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg border border-slate-600 cursor-pointer hover:scale-105 active:scale-95"
+                    title="Copiar texto de la tarea al portapapeles"
+                  >
+                    {copiedHomework ? (
+                      <>
+                        <Check className="w-5 h-5 text-emerald-400 stroke-[3]" />
+                        <span className="text-emerald-300">¡Copiado al portapapeles! ✅</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-5 h-5 text-cyan-300" />
+                        <span>Copiar al portapapeles</span>
+                      </>
+                    )}
+                  </button>
+
                   <button onClick={() => {
                     const hw = slide.content ? slide.content.join('\n') : '';
                     let vid = slide.videoUrl;
@@ -4894,7 +4926,7 @@ export function SlideRenderer({
                     const vidText = vid ? `\n🎬 Video: ${vid}` : '';
                     const msg = `📚 Tarea de la clase "${cls.title}":\n\n${slide.description}\n\n${hw}${vidText}\n\n¡Mucho éxito!`;
                     window.open(`https://wa.me/?text=${safeEncodeURIComponent(msg)}`, '_blank');
-                  }} className="flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-3 px-6 rounded-xl transition-colors shadow-lg">
+                  }} className="flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg cursor-pointer hover:scale-105 active:scale-95">
                     <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
                       <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
                     </svg>

@@ -77,7 +77,7 @@ Expected text: ${expectedText}`;
 
 app.post('/api/free-speaking-assessment', async (req, res) => {
   try {
-    const { question, mode, audioBase64, mimeType } = req.body || {};
+    const { question, mode, audioBase64, mimeType, targetWords } = req.body || {};
     if (!question || !audioBase64 || !mimeType) {
       res.status(400).json({ error: 'Missing question, audioBase64, or mimeType.' });
       return;
@@ -90,6 +90,10 @@ app.post('/api/free-speaking-assessment', async (req, res) => {
     }
 
     const ai = new GoogleGenAI({ apiKey });
+    const targetWordsInstruction = Array.isArray(targetWords) && targetWords.length > 0
+      ? `\n- The student was challenged to use these target vocabulary words/phrases: ${targetWords.join(', ')}. In strengths, highlight which target words they successfully incorporated. In vocabularySuggestions, recommend any key target words they missed.`
+      : '';
+
     const prompt = mode === 'reading'
       ? `You are a specialized English reading-practice assistant.
 The student is reading the expected text aloud. Listen only for that reading task.
@@ -108,20 +112,20 @@ Rules:
 - score: 0-100 for accuracy against the expected text, pronunciation, rhythm, and clarity.
 - Do not evaluate free conversation, ideas, creativity, or grammar beyond the reading.
 Expected reading text: ${question}`
-      : `You are an expert English teacher evaluating a student's spoken answer.
+      : `You are an expert English teacher evaluating a student's spoken answer using the P.R.E.P. methodology (Point/Stance + Reason + Example + Point/Conclusion).
 Return only compact JSON with this exact shape:
 {"transcript":"","summary":"","strengths":[],"corrections":[],"grammarNotes":[],"vocabularySuggestions":[],"teacherNextSteps":[],"score":0}
 Rules:
 - Only analyze clearly audible speech.
 - If audio is silent or unclear, transcript "", score 0, and explain that no clear answer was detected.
 - transcript: what the student said, cleaned but faithful.
-- summary: Spanish summary, max 45 words.
-- strengths: max 5 short Spanish items.
+- summary: Spanish summary highlighting communicative clarity and P.R.E.P. structure, max 45 words.
+- strengths: max 5 short Spanish items. Acknowledge direct stance, clear reasons, examples given, and target vocabulary used.
 - corrections: max 6 short Spanish items with corrected English when useful.
 - grammarNotes: max 5 short Spanish items.
-- vocabularySuggestions: max 6 useful English phrases or words.
-- teacherNextSteps: max 4 concrete Spanish actions.
-- score: 0-100 for communication, grammar, vocabulary, and clarity.
+- vocabularySuggestions: max 6 useful English phrases or words to elevate their response.
+- teacherNextSteps: max 4 concrete Spanish actions.${targetWordsInstruction}
+- score: 0-100 based on structure, vocabulary richness, grammar, and fluency.
 Teacher question: ${question}`;
 
     const response = await ai.models.generateContent({

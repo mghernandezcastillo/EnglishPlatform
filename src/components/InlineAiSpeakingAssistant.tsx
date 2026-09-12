@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
-import { Bot, Mic, MonitorSpeaker, Sparkles, Square } from 'lucide-react';
+import { Bot, Mic, MonitorSpeaker, Sparkles, Square, Target } from 'lucide-react';
 
 interface InlineAiSpeakingAssistantProps {
   title?: string;
   initialQuestion?: string;
   candidateQuestions?: string[];
   mode?: 'speaking' | 'reading';
+  targetWords?: string[];
 }
 
 interface SpeakingResult {
@@ -72,6 +73,7 @@ export function InlineAiSpeakingAssistant({
   initialQuestion = '',
   candidateQuestions = [],
   mode: assistantMode = 'speaking',
+  targetWords = [],
 }: InlineAiSpeakingAssistantProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [question, setQuestion] = useState(initialQuestion);
@@ -265,6 +267,7 @@ export function InlineAiSpeakingAssistant({
           mode: assistantMode,
           audioBase64,
           mimeType: blob.type || 'audio/webm',
+          targetWords: targetWords || [],
         }),
       });
       const payload = await response.json();
@@ -401,6 +404,39 @@ export function InlineAiSpeakingAssistant({
                         </p>
                         <p className="mt-2 text-base font-semibold leading-relaxed text-white/90 sm:text-xl">{result.transcript || 'No hubo transcripcion clara.'}</p>
                       </div>
+
+                      {targetWords && targetWords.length > 0 && result.transcript && (
+                        <div className="rounded-2xl border border-cyan-400/30 bg-cyan-950/40 p-4">
+                          <div className="flex items-center justify-between gap-2 mb-2.5">
+                            <span className="text-xs font-black uppercase tracking-wider text-cyan-300 flex items-center gap-1.5">
+                              <Target className="h-4 w-4 text-cyan-400" />
+                              Vocabulario clave detectado:
+                            </span>
+                            <span className="text-xs font-bold text-cyan-200">
+                              {targetWords.filter(tw => new RegExp(`\\b${tw.replace(/[^a-zA-Z0-9]/g, '')}`, 'i').test(result.transcript)).length} de {targetWords.length} usadas
+                            </span>
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {targetWords.map(tw => {
+                              const isUsed = new RegExp(`\\b${tw.replace(/[^a-zA-Z0-9]/g, '')}`, 'i').test(result.transcript);
+                              return (
+                                <span
+                                  key={tw}
+                                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-bold border transition-all ${
+                                    isUsed
+                                      ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 font-black shadow-sm'
+                                      : 'bg-white/5 text-slate-400 border-white/10'
+                                  }`}
+                                >
+                                  <span>{isUsed ? '✅' : '○'}</span>
+                                  <span>{tw}</span>
+                                </span>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      )}
+
                       <ResultGroup title="Fortalezas" items={result.strengths} />
                       <ResultGroup title="Corregir" items={result.corrections} />
                       <ResultGroup title="Gramatica" items={result.grammarNotes} />
