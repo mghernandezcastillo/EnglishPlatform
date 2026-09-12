@@ -1182,6 +1182,39 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     confetti({ particleCount: 130, spread: 85, origin: { y: 0.62 }, colors: ['#22d3ee', '#fde047', '#a78bfa', '#34d399'] });
   };
 
+  const revealAnswer = () => {
+    if (!currentLine) return;
+
+    const targetBlocks = mode === 'expert'
+      ? currentLine.puzzle.hard_word_by_word
+      : (mode === 'medium'
+          ? currentLine.puzzle.medium_blocks
+          : (mode === 'hard'
+              ? currentLine.puzzle.hard_word_by_word
+              : currentLine.puzzle.easy_blocks));
+
+    const usedIndexes = new Set<number>();
+    const correctIndexes: number[] = [];
+
+    for (const block of targetBlocks) {
+      const matchIdx = shuffledTokens.findIndex(
+        (t, idx) => !usedIndexes.has(idx) && normalizeSentence(t.text) === normalizeSentence(block)
+      );
+      if (matchIdx !== -1) {
+        usedIndexes.add(matchIdx);
+        correctIndexes.push(matchIdx);
+      }
+    }
+
+    if (correctIndexes.length > 0) {
+      setSelectedTokenIndexes(correctIndexes);
+    }
+    setWordsRevealed(true);
+    setFeedback('correct');
+    setRevealedLineCount((current) => Math.max(current, lineIndex + 1));
+    speakEnglish();
+  };
+
   const continueStory = () => {
     if (!activeStory || !currentLine) return;
     if (lineIndex < activeStory.lines.length - 1) {
@@ -1695,7 +1728,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                 </div>
 
                 {selectedTokens.length > 0 && feedback !== 'correct' && (
-                  <div className="mt-3 flex justify-center">
+                  <div className="mt-3 flex flex-wrap items-center justify-center gap-3">
                     <button
                       type="button"
                       onClick={checkAnswer}
@@ -1704,20 +1737,42 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                       <Target className="h-6 w-6" />
                       <span>Comprobar Frase</span>
                     </button>
+                    <button
+                      type="button"
+                      onClick={revealAnswer}
+                      className="flex min-h-12 items-center gap-2 rounded-2xl border border-amber-300/40 bg-amber-400/20 hover:bg-amber-400 hover:text-slate-950 px-5 text-base font-black text-amber-200 shadow-lg transition active:scale-95 cursor-pointer"
+                      title="¿No logras descifrar la frase? Revela la respuesta correcta"
+                    >
+                      <Eye className="h-5 w-5" />
+                      <span>Revelar frase</span>
+                    </button>
                   </div>
                 )}
 
-                <div className="mt-3 flex items-center justify-between gap-2">
+                <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
                   <div className="text-xs font-black uppercase tracking-[0.2em] text-white/40">Banco de palabras</div>
-                  <motion.button
-                    type="button"
-                    onClick={() => setWordsRevealed((value) => !value)}
-                    animate={!wordsRevealed ? { opacity: [1, 0.35, 1] } : { opacity: 1 }}
-                    transition={!wordsRevealed ? { duration: 1.3, repeat: Infinity, ease: 'easeInOut' } : undefined}
-                    className={`flex min-h-9 items-center gap-2 rounded-full border px-3 text-xs font-black transition ${wordsRevealed ? 'border-white/15 bg-white/10 text-white/60 hover:bg-white/20' : 'border-yellow-300/40 bg-yellow-300/15 text-yellow-200 hover:bg-yellow-300 hover:text-yellow-950'}`}
-                  >
-                    {wordsRevealed ? <><EyeOff className="h-4 w-4" /> Ocultar palabras</> : <><Eye className="h-4 w-4" /> Mostrar palabras</>}
-                  </motion.button>
+                  <div className="flex items-center gap-2">
+                    {feedback !== 'correct' && (
+                      <button
+                        type="button"
+                        onClick={revealAnswer}
+                        className="flex min-h-9 items-center gap-1.5 rounded-full border border-amber-400/40 bg-amber-400/15 px-3.5 text-xs font-black text-amber-300 hover:bg-amber-400 hover:text-slate-950 transition cursor-pointer"
+                        title="Revelar la frase correcta"
+                      >
+                        <Eye className="h-3.5 w-3.5" />
+                        <span>Revelar frase</span>
+                      </button>
+                    )}
+                    <motion.button
+                      type="button"
+                      onClick={() => setWordsRevealed((value) => !value)}
+                      animate={!wordsRevealed ? { opacity: [1, 0.35, 1] } : { opacity: 1 }}
+                      transition={!wordsRevealed ? { duration: 1.3, repeat: Infinity, ease: 'easeInOut' } : undefined}
+                      className={`flex min-h-9 items-center gap-2 rounded-full border px-3 text-xs font-black transition ${wordsRevealed ? 'border-white/15 bg-white/10 text-white/60 hover:bg-white/20' : 'border-yellow-300/40 bg-yellow-300/15 text-yellow-200 hover:bg-yellow-300 hover:text-yellow-950'}`}
+                    >
+                      {wordsRevealed ? <><EyeOff className="h-4 w-4" /> Ocultar palabras</> : <><Eye className="h-4 w-4" /> Mostrar palabras</>}
+                    </motion.button>
+                  </div>
                 </div>
 
                 <div className="relative mt-2">
@@ -1749,7 +1804,29 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                 {hintIndex >= 0 && currentLine.hints.length > 0 && feedback !== 'correct' && (
                   <motion.div key={`hint-${hintIndex}`} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="rounded-2xl border border-yellow-300/30 bg-yellow-300 p-4 text-lg font-black text-yellow-950 shadow-xl"><div className="mb-1 flex items-center gap-2 text-xs uppercase tracking-widest opacity-65"><Lightbulb className="h-4 w-4" /> Pista {hintIndex + 1}</div>{currentLine.hints[Math.min(hintIndex, currentLine.hints.length - 1)]}</motion.div>
                 )}
-                {feedback === 'wrong-sentence' && <motion.div key="wrong-sentence" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="rounded-2xl border border-rose-300/30 bg-rose-500 p-4 text-center text-lg font-black text-white shadow-xl">La frase todavía no está completa o el orden no es correcto. Retira los bloques necesarios y vuelve a intentarlo.</motion.div>}
+                {feedback === 'wrong-sentence' && (
+                  <motion.div key="wrong-sentence" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="rounded-2xl border border-rose-300/30 bg-rose-600/95 p-4 text-center text-white shadow-xl">
+                    <p className="text-base sm:text-lg font-black">La frase todavía no está completa o el orden no es correcto.</p>
+                    <div className="mt-3 flex flex-wrap items-center justify-center gap-2.5">
+                      <button
+                        type="button"
+                        onClick={revealAnswer}
+                        className="flex min-h-11 items-center gap-2 rounded-xl bg-amber-300 px-5 text-sm font-black text-slate-950 shadow-md transition hover:bg-amber-200 active:scale-95 cursor-pointer"
+                      >
+                        <Eye className="h-4 w-4 text-slate-950" />
+                        <span>Revelar frase correcta</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={resetAnswer}
+                        className="flex min-h-11 items-center gap-2 rounded-xl border border-white/20 bg-slate-950/40 px-4 text-sm font-black text-white transition hover:bg-slate-950/70 active:scale-95 cursor-pointer"
+                      >
+                        <RotateCcw className="h-4 w-4" />
+                        <span>Reintentar</span>
+                      </button>
+                    </div>
+                  </motion.div>
+                )}
                 {feedback === 'correct' && (
                   <motion.div key="correct" initial={{ opacity: 0, scale: 0.94, y: 12 }} animate={{ opacity: 1, scale: 1, y: 0 }} className="overflow-hidden rounded-[1.75rem] border border-emerald-200/50 bg-gradient-to-r from-emerald-300 via-cyan-300 to-yellow-300 p-5 text-center text-slate-950 shadow-2xl sm:p-6">
                     <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-xl"><CheckCircle2 className="h-8 w-8 text-emerald-600" /></div>
@@ -1864,6 +1941,16 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
               <button type="button" disabled={!canGoToPreviousLine} onClick={goToPreviousLine} aria-label="Línea anterior" aria-keyshortcuts="ArrowLeft" className="flex min-h-12 items-center gap-2 rounded-xl bg-cyan-300/15 px-3 font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-cyan-950 disabled:cursor-not-allowed disabled:opacity-30" title="Línea anterior (←)"><ArrowLeft className="h-5 w-5" /><span className="hidden lg:inline">Anterior</span></button>
               <button type="button" disabled={feedback === 'correct'} onClick={resetAnswer} className="hidden min-h-12 items-center gap-2 rounded-xl bg-white/10 px-3 font-black transition hover:bg-white/20 disabled:opacity-40 sm:flex" title="Reiniciar respuesta"><RotateCcw className="h-5 w-5" /><span className="hidden lg:inline">Reiniciar</span></button>
               <button type="button" disabled={feedback === 'correct'} onClick={showHint} className="flex min-h-12 items-center gap-2 rounded-xl bg-yellow-300/15 px-3 font-black text-yellow-200 transition hover:bg-yellow-300 hover:text-yellow-950 disabled:opacity-40"><Lightbulb className="h-5 w-5" /><span className="hidden lg:inline">Pista</span></button>
+              <button
+                type="button"
+                disabled={feedback === 'correct'}
+                onClick={revealAnswer}
+                className="flex min-h-12 items-center gap-2 rounded-xl border border-amber-300/40 bg-amber-400/20 px-3 font-black text-amber-200 transition hover:bg-amber-400 hover:text-slate-950 disabled:opacity-40 cursor-pointer"
+                title="Revelar la frase correcta si no logras descifrarla"
+              >
+                <Eye className="h-5 w-5" />
+                <span className="hidden sm:inline">Revelar frase</span>
+              </button>
             </div>
             <div className="flex gap-2">
               {feedback !== 'correct' && lineIndex < highestReachableLineIndex && (

@@ -670,7 +670,10 @@ export default function App() {
             />
           </AppErrorBoundary>
         ) : currentView === 'speaking_practice' ? (
-          <SpeakingPractice onClose={() => setCurrentView('dashboard')} />
+          <SpeakingPractice 
+            onClose={() => setCurrentView('dashboard')} 
+            studentId={currentStudentId}
+          />
         ) : currentView === 'structure_mode' ? (
           <StructureMode
             onClose={() => setCurrentView('dashboard')}

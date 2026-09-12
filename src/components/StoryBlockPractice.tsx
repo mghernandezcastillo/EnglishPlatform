@@ -279,6 +279,34 @@ export const StoryBlockPractice: React.FC<StoryBlockPracticeProps> = ({
     }
   };
 
+  const handleRevealTranslationAnswer = () => {
+    if (!currentTranslationItem) return;
+    const targetTokens = useChunksMode
+      ? (currentTranslationItem.blocks && currentTranslationItem.blocks.length > 0
+          ? currentTranslationItem.blocks
+          : autoChunkSentence(currentTranslationItem.englishFull))
+      : currentTranslationItem.englishFull.split(' ');
+
+    const used = new Set<number>();
+    const correctIdxs: number[] = [];
+    for (const tok of targetTokens) {
+      const found = translationTokens.findIndex(
+        (t, i) => !used.has(i) && t.toLowerCase().replace(/[.,?!]/g, '').trim() === tok.toLowerCase().replace(/[.,?!]/g, '').trim()
+      );
+      if (found !== -1) {
+        used.add(found);
+        correctIdxs.push(found);
+      }
+    }
+    if (correctIdxs.length > 0) {
+      setSelectedTokenIndexes(correctIdxs);
+    }
+    setWordsRevealed(true);
+    setTranslationFeedback('correct');
+    playSound('reveal');
+    speakText(currentTranslationItem.englishFull);
+  };
+
   const handleSaveCustomWriting = () => {
     if (!userWritingInput.trim()) return;
     setCustomSentences((prev) => [userWritingInput.trim(), ...prev]);
@@ -574,17 +602,27 @@ export const StoryBlockPractice: React.FC<StoryBlockPracticeProps> = ({
               )}
             </div>
 
-            {/* Actions Bar: Comprobar & Save Word Modal */}
+            {/* Actions Bar: Comprobar, Revelar & Save Word Modal */}
             <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
               {translationFeedback === 'idle' && (
-                <button
-                  type="button"
-                  disabled={selectedTokenIndexes.length === 0}
-                  onClick={checkTranslationAnswer}
-                  className="flex items-center gap-2 rounded-2xl bg-emerald-500 hover:bg-emerald-400 px-8 py-3.5 text-lg font-black text-slate-950 shadow-xl transition disabled:opacity-40 cursor-pointer"
-                >
-                  <CheckCircle2 className="h-6 w-6" /> Comprobar Frase
-                </button>
+                <>
+                  <button
+                    type="button"
+                    disabled={selectedTokenIndexes.length === 0}
+                    onClick={checkTranslationAnswer}
+                    className="flex items-center gap-2 rounded-2xl bg-emerald-500 hover:bg-emerald-400 px-8 py-3.5 text-lg font-black text-slate-950 shadow-xl transition disabled:opacity-40 cursor-pointer"
+                  >
+                    <CheckCircle2 className="h-6 w-6" /> Comprobar Frase
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleRevealTranslationAnswer}
+                    className="flex items-center gap-2 rounded-2xl border border-amber-300/40 bg-amber-400/20 hover:bg-amber-400 hover:text-slate-950 px-5 py-3.5 text-base font-black text-amber-200 shadow-lg transition cursor-pointer"
+                    title="Revelar la frase correcta si no logras descifrarla"
+                  >
+                    <Eye className="h-5 w-5" /> Revelar Frase
+                  </button>
+                </>
               )}
 
               <button
@@ -612,8 +650,27 @@ export const StoryBlockPractice: React.FC<StoryBlockPracticeProps> = ({
               </div>
             )}
             {translationFeedback === 'wrong' && (
-              <div className="rounded-2xl border border-rose-400 bg-rose-600 p-4 text-center text-white font-bold shadow-xl">
-                Inténtalo de nuevo. Respuesta correcta: "{currentTranslationItem.englishFull}"
+              <div className="rounded-2xl border border-rose-400 bg-rose-600 p-4 text-center text-white font-bold shadow-xl space-y-3">
+                <p>Inténtalo de nuevo o revela la frase correcta.</p>
+                <div className="flex flex-wrap items-center justify-center gap-3">
+                  <button
+                    type="button"
+                    onClick={handleRevealTranslationAnswer}
+                    className="rounded-xl bg-amber-300 px-5 py-2.5 text-sm font-black text-slate-950 shadow hover:bg-amber-200 transition cursor-pointer flex items-center gap-2"
+                  >
+                    <Eye className="h-4 w-4" /> Revelar frase correcta
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setTranslationFeedback('idle');
+                      setSelectedTokenIndexes([]);
+                    }}
+                    className="rounded-xl border border-white/20 bg-black/40 px-4 py-2.5 text-sm font-black text-white hover:bg-black/60 transition cursor-pointer flex items-center gap-2"
+                  >
+                    <RotateCcw className="h-4 w-4" /> Reintentar
+                  </button>
+                </div>
               </div>
             )}
           </div>

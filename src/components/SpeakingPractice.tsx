@@ -1,11 +1,14 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Mic, RefreshCw, ChevronRight, MessageCircle, Sparkles, Languages, Bot, Target } from 'lucide-react';
+import { X, Mic, RefreshCw, ChevronRight, MessageCircle, Sparkles, Languages, Bot, Target, Bookmark, BookmarkCheck, Loader2 } from 'lucide-react';
 import { speakingQuestions, SpeakingQuestion } from '../data/speakingQuestions';
 import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
+import { vocabService } from '../lib/vocabService';
+import { storyDecoderDb } from '../lib/storyDecoderDb';
 
 interface SpeakingPracticeProps {
   onClose: () => void;
+  studentId?: string | null;
 }
 
 const VOCAB_TRANSLATIONS: Record<string, string> = {
@@ -270,12 +273,89 @@ const translateText = (text: string) => {
 
 const splitQuestion = (question: string) => question.match(/[A-Za-z']+|[^A-Za-z']+/g) || [question];
 
-export function SpeakingPractice({ onClose }: SpeakingPracticeProps) {
+export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) {
   const [currentQuestion, setCurrentQuestion] = useState<SpeakingQuestion | null>(null);
   const [isQuestionFlipped, setIsQuestionFlipped] = useState(false);
   const [flippedVocab, setFlippedVocab] = useState<Set<string>>(new Set());
   const [activeQuestionWord, setActiveQuestionWord] = useState<string | null>(null);
+  const [savedTerms, setSavedTerms] = useState<Set<string>>(new Set());
+  const [savingTerm, setSavingTerm] = useState<string | null>(null);
   const remainingQuestions = useRef<SpeakingQuestion[]>([]);
+
+  // Load saved vocabulary for the current student
+  useEffect(() => {
+    let isMounted = true;
+    vocabService.getItems(studentId).then((items) => {
+      if (!isMounted) return;
+      const terms = new Set<string>();
+      items.forEach((item) => {
+        if (item.term) terms.add(item.term.toLowerCase().trim());
+      });
+      setSavedTerms(terms);
+    }).catch((err) => {
+      console.warn('Error loading saved vocabulary for speaking practice:', err);
+    });
+    return () => {
+      isMounted = false;
+    };
+  }, [studentId]);
+
+  const handleToggleSaveVocab = async (word: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const clean = word.trim();
+    if (!clean || savingTerm) return;
+
+    const lower = clean.toLowerCase();
+    const isSaved = savedTerms.has(lower);
+    setSavingTerm(clean);
+
+    try {
+      if (isSaved) {
+        // Remove from VocabVault
+        const stableId = `term_${clean.toLowerCase().replace(/[^a-z0-9]/g, '_')}`;
+        await vocabService.deleteItem(stableId, studentId);
+        setSavedTerms(prev => {
+          const next = new Set(prev);
+          next.delete(lower);
+          return next;
+        });
+      } else {
+        // Save to VocabVault
+        const translation = getVocabTranslation(clean);
+        await vocabService.saveQuickTerm(
+          clean,
+          translation,
+          'general',
+          `🎙️ Speaking Practice: ${currentQuestion?.question || ''}`,
+          studentId
+        );
+
+        // Also persist to Supabase story_decoder_vocabulary
+        if (studentId) {
+          try {
+            const sdId = `sp_${clean.toLowerCase().replace(/[^a-z0-9]/g, '_')}`;
+            await storyDecoderDb.saveWord(studentId, {
+              id: sdId,
+              english: clean,
+              spanish: translation,
+              storyTitle: `Speaking Practice: ${currentQuestion?.topic || 'General'}`,
+              exampleEn: currentQuestion?.question || '',
+              exampleEs: translateText(currentQuestion?.question || ''),
+              addedAt: Date.now()
+            });
+          } catch (dbErr) {
+            console.warn('Error syncing word to storyDecoderDb:', dbErr);
+          }
+        }
+
+        setSavedTerms(prev => new Set(prev).add(lower));
+      }
+    } catch (err) {
+      console.error('Error toggling vocab save:', err);
+    } finally {
+      setSavingTerm(null);
+    }
+  };
 
   const aiCandidateQuestions = useMemo(() => {
     if (!currentQuestion) return [];
@@ -440,36 +520,77 @@ export function SpeakingPractice({ onClose }: SpeakingPracticeProps) {
                   </button>
 
                   <div className="w-full mt-8">
-                    <div className="flex items-center justify-center gap-2 mb-4 text-indigo-500 text-sm font-semibold uppercase tracking-wider">
-                      <MessageCircle className="w-4 h-4" />
-                      <span>Vocabulario util</span>
+                    <div className="flex flex-col items-center justify-center gap-1 mb-4">
+                      <div className="flex items-center gap-2 text-indigo-500 text-sm font-semibold uppercase tracking-wider">
+                        <MessageCircle className="w-4 h-4" />
+                        <span>Vocabulario util</span>
+                      </div>
+                      <span className="text-xs text-slate-400 font-medium">Toca para traducir • Guarda con 🔖 en Mi Vocabulario</span>
                     </div>
                     <div className="flex flex-wrap justify-center gap-3">
                       {currentQuestion.vocab.map((word, index) => {
                         const isFlipped = flippedVocab.has(word);
+                        const cleanWord = word.trim();
+                        const isSaved = savedTerms.has(cleanWord.toLowerCase());
+                        const isSaving = savingTerm === cleanWord;
+
                         return (
-                          <button
+                          <div
                             key={`${word}-${index}`}
-                            type="button"
-                            onClick={() => toggleVocab(word)}
-                            className="relative h-14 min-w-[130px] rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-100"
-                            aria-label={`Traducir ${word}`}
+                            className="relative group inline-flex items-center"
                           >
-                            <motion.span
-                              className="absolute inset-0 rounded-2xl border text-sm font-black shadow-sm flex items-center justify-center px-4"
-                              style={{ transformStyle: 'preserve-3d' }}
-                              animate={{ rotateY: isFlipped ? 180 : 0 }}
-                              transition={{ duration: 0.35 }}
+                            <button
+                              type="button"
+                              onClick={() => toggleVocab(word)}
+                              className="relative h-14 min-w-[145px] rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-100 pr-9 pl-3.5 transition-all shadow-sm active:scale-98 cursor-pointer"
+                              aria-label={`Traducir ${word}`}
                             >
-                              <span className="absolute inset-0 rounded-2xl border border-indigo-100 bg-indigo-50 text-indigo-700 flex items-center justify-center px-4 [backface-visibility:hidden]">
-                                {word}
-                              </span>
-                              <span className="absolute inset-0 rounded-2xl border border-emerald-100 bg-emerald-50 text-emerald-800 flex flex-col items-center justify-center px-3 [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                                <span className="text-[11px] uppercase tracking-wide text-emerald-500">ES</span>
-                                <span className="text-xs leading-tight">{getVocabTranslation(word)}</span>
-                              </span>
-                            </motion.span>
-                          </button>
+                              <motion.span
+                                className="absolute inset-0 rounded-2xl border text-sm font-black flex items-center justify-center pr-8 pl-3"
+                                style={{ transformStyle: 'preserve-3d' }}
+                                animate={{ rotateY: isFlipped ? 180 : 0 }}
+                                transition={{ duration: 0.35 }}
+                              >
+                                <span className={`absolute inset-0 rounded-2xl border flex items-center justify-center pr-8 pl-3 [backface-visibility:hidden] ${
+                                  isSaved
+                                    ? 'border-amber-200 bg-amber-50/70 text-amber-900'
+                                    : 'border-indigo-100 bg-indigo-50 text-indigo-700'
+                                }`}>
+                                  <span className="truncate max-w-[150px] font-bold">{word}</span>
+                                </span>
+                                <span className={`absolute inset-0 rounded-2xl border flex flex-col items-center justify-center pr-8 pl-3 [backface-visibility:hidden] [transform:rotateY(180deg)] ${
+                                  isSaved
+                                    ? 'border-amber-300 bg-amber-100/80 text-amber-950'
+                                    : 'border-emerald-100 bg-emerald-50 text-emerald-800'
+                                }`}>
+                                  <span className="text-[10px] uppercase font-bold tracking-wide text-emerald-600">ES</span>
+                                  <span className="text-xs font-bold leading-tight truncate max-w-[150px]">{getVocabTranslation(word)}</span>
+                                </span>
+                              </motion.span>
+                            </button>
+
+                            {/* Bookmark / Save to Mi Vocabulario Button */}
+                            <button
+                              type="button"
+                              onClick={(e) => handleToggleSaveVocab(word, e)}
+                              disabled={isSaving}
+                              className={`absolute right-2 top-1/2 -translate-y-1/2 z-20 h-7 w-7 rounded-xl flex items-center justify-center transition-all ${
+                                isSaved
+                                  ? 'bg-amber-500 text-white shadow hover:bg-amber-600 hover:scale-110 active:scale-95'
+                                  : 'bg-white/90 text-slate-400 hover:text-amber-500 hover:bg-amber-50 hover:scale-110 border border-slate-200 shadow-sm active:scale-95'
+                              }`}
+                              title={isSaved ? 'Guardado en Mi Vocabulario (Clic para quitar)' : 'Guardar en Mi Vocabulario'}
+                              aria-label={isSaved ? 'Guardado en Mi Vocabulario' : 'Guardar en Mi Vocabulario'}
+                            >
+                              {isSaving ? (
+                                <Loader2 className="w-3.5 h-3.5 animate-spin text-amber-500" />
+                              ) : isSaved ? (
+                                <BookmarkCheck className="w-3.5 h-3.5 fill-current" />
+                              ) : (
+                                <Bookmark className="w-3.5 h-3.5" />
+                              )}
+                            </button>
+                          </div>
                         );
                       })}
                     </div>
