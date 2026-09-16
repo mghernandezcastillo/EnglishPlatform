@@ -1,7 +1,7 @@
-import { useCallback, useState, useEffect } from 'react';
+import { useCallback, useState, useEffect, useRef } from 'react';
 import { CurriculumClass, CurriculumLevel, EvaluationRecord } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy, ClipboardCheck, Braces, Search, Mic2, RefreshCw, ExternalLink } from 'lucide-react';
+import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy, ClipboardCheck, Braces, Search, Mic2, RefreshCw, ExternalLink, MoreHorizontal, Compass } from 'lucide-react';
 import { studentConfig, avatars } from '../config';
 import { LibraryCategories } from './LibraryCategories';
 import { libraryLessons } from '../data/libraryLessons';
@@ -38,9 +38,10 @@ interface DashboardProps {
   onOpenVerbsGuide: () => void;
   onOpenVocabVault?: () => void;
   onOpenMissions?: () => void;
+  onOpenDeepTalk?: () => void;
 }
 
-export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, presentationMode, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryDecoder, onOpenStructureMode, onOpenVerbsGuide, onOpenVocabVault, onOpenMissions }: DashboardProps) {
+export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, presentationMode, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryDecoder, onOpenStructureMode, onOpenVerbsGuide, onOpenVocabVault, onOpenMissions, onOpenDeepTalk }: DashboardProps) {
   const [currentMode, setCurrentMode] = useState<'studio' | 'classic'>(presentationMode || (typeof window !== 'undefined' ? (localStorage.getItem('maven_presentation_mode') as 'studio' | 'classic') || 'studio' : 'studio'));
 
   useEffect(() => {
@@ -71,7 +72,23 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
   const [oralExamLevel, setOralExamLevel] = useState<CurriculumLevel | null>(null);
   const [evaluationRecords, setEvaluationRecords] = useState<EvaluationRecord[]>([]);
   const [isRefreshingEvaluations, setIsRefreshingEvaluations] = useState(false);
+  const [showMoreMenu, setShowMoreMenu] = useState(false);
+  const moreMenuRef = useRef<HTMLDivElement>(null);
   const { brand } = useBrand();
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (moreMenuRef.current && !moreMenuRef.current.contains(event.target as Node)) {
+        setShowMoreMenu(false);
+      }
+    };
+    if (showMoreMenu) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showMoreMenu]);
 
   const refreshEvaluations = useCallback(async () => {
     if (!studentName?.trim()) {
@@ -284,15 +301,15 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
           </div>
         </div>
 
-        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-7">
+        <div className="grid w-full grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 relative">
           <button
              onClick={onOpenMissions}
              className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 ring-2 ring-orange-300/50"
           >
              <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
-             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-3 text-center backdrop-blur-sm">
                <span className="text-lg">🚀</span>
-               <span className="font-bold text-white tracking-wide">Misiones</span>
+               <span className="font-bold text-white tracking-wide text-sm sm:text-base">Misiones</span>
              </div>
           </button>
           <button
@@ -300,9 +317,9 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
              className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500"
           >
              <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
-             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
-               <Sparkles className="w-5 h-5 text-white" />
-               <span className="font-bold text-white tracking-wide">Mi Vocabulario</span>
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-3 text-center backdrop-blur-sm">
+               <Sparkles className="w-5 h-5 text-white shrink-0" />
+               <span className="font-bold text-white tracking-wide text-sm sm:text-base">Mi Vocabulario</span>
              </div>
           </button>
           <button
@@ -310,38 +327,19 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
              className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-cyan-500 via-blue-600 to-slate-950"
           >
              <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
-             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
-               <Search className="w-5 h-5 text-white" />
-               <span className="font-bold text-white tracking-wide">Verb Guide</span>
-             </div>
-          </button>
-          <button
-             onClick={onOpenStructureMode}
-             className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-slate-950 via-indigo-700 to-cyan-500"
-          >
-             <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
-             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
-               <Braces className="w-5 h-5 text-white" />
-               <span className="font-bold text-white tracking-wide">Modo Estructuras</span>
-             </div>
-          </button>
-          <button
-             onClick={onOpenEntranceAssessment}
-             className={`group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 ${isKid ? 'bg-gradient-to-br from-lime-400 via-cyan-400 to-blue-500 hover:shadow-cyan-300/50' : isTeen ? 'bg-gradient-to-br from-violet-500 via-fuchsia-500 to-cyan-500' : 'bg-gradient-to-br from-slate-900 via-indigo-700 to-cyan-600'}`}
-          >
-             <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
-             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
-               <ClipboardCheck className="w-5 h-5 text-white" />
-               <span className="font-bold text-white tracking-wide">{isKid ? 'Examen de Ingreso Kids' : isTeen ? 'Examen de Ingreso Teens' : 'Examen de Ingreso'}</span>
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-3 text-center backdrop-blur-sm">
+               <Search className="w-5 h-5 text-white shrink-0" />
+               <span className="font-bold text-white tracking-wide text-sm sm:text-base">Verb Guide</span>
              </div>
           </button>
           <button 
              onClick={onOpenSpeakingPractice}
-             className={`relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 ${isKid ? 'bg-gradient-to-br from-cyan-400 to-blue-500 hover:shadow-cyan-300/50' : 'bg-gradient-to-br from-indigo-500 to-blue-600'}`}
+             className={`group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 ${isKid ? 'bg-gradient-to-br from-cyan-400 to-blue-500 hover:shadow-cyan-300/50' : 'bg-gradient-to-br from-indigo-500 to-blue-600'}`}
           >
-             <div className="absolute inset-0 bg-white/20 hover:bg-transparent transition-colors"></div>
-             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
-               <span className="font-bold text-white tracking-wide">{isKid ? '🎤 ¡Vamos a Hablar!' : '🎙️ Práctica Speaking'}</span>
+             <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-3 text-center backdrop-blur-sm">
+               <span className="text-lg shrink-0">{isKid ? '🎤' : '🎙️'}</span>
+               <span className="font-bold text-white tracking-wide text-sm sm:text-base">{isKid ? '¡A Hablar!' : 'Práctica Speaking'}</span>
              </div>
           </button>
           <button 
@@ -349,11 +347,96 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
              className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 via-indigo-700 to-cyan-600 p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95"
           >
              <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
-             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
-               <BookOpen className="w-5 h-5 text-white" />
-               <span className="font-bold text-white tracking-wide">Story Decoder</span>
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-3 text-center backdrop-blur-sm">
+               <BookOpen className="w-5 h-5 text-white shrink-0" />
+               <span className="font-bold text-white tracking-wide text-sm sm:text-base">Story Decoder</span>
              </div>
           </button>
+          <button 
+             onClick={onOpenDeepTalk}
+             className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-fuchsia-600 via-purple-700 to-indigo-800 p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 ring-2 ring-purple-400/40"
+          >
+             <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-3 text-center backdrop-blur-sm">
+               <Compass className="w-5 h-5 text-white shrink-0" />
+               <span className="font-bold text-white tracking-wide text-sm sm:text-base">Deep Talk</span>
+             </div>
+          </button>
+
+          {/* Más opciones dropdown */}
+          <div className="relative w-full" ref={moreMenuRef}>
+            <button
+              onClick={() => setShowMoreMenu(prev => !prev)}
+              className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950"
+              aria-expanded={showMoreMenu}
+              aria-haspopup="true"
+            >
+              <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
+              <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-3 text-center backdrop-blur-sm">
+                <MoreHorizontal className="w-5 h-5 text-white shrink-0" />
+                <span className="font-bold text-white tracking-wide text-sm sm:text-base">Más...</span>
+                <ChevronDown className={`w-4 h-4 text-white/80 transition-transform duration-200 shrink-0 ${showMoreMenu ? 'rotate-180' : ''}`} />
+              </div>
+            </button>
+
+            <AnimatePresence>
+              {showMoreMenu && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                  transition={{ duration: 0.15 }}
+                  className="absolute right-0 top-full mt-2 w-72 sm:w-80 z-50 rounded-2xl border border-slate-700/80 bg-slate-900/95 p-2 shadow-2xl backdrop-blur-xl ring-1 ring-white/10"
+                >
+                  <div className="px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-800/80 mb-1">
+                    Otras herramientas
+                  </div>
+
+                  <button
+                    onClick={() => {
+                      setShowMoreMenu(false);
+                      onOpenStructureMode();
+                    }}
+                    className="group flex w-full items-center gap-3 rounded-xl p-2.5 text-left transition hover:bg-white/10 active:scale-[0.98]"
+                  >
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-slate-950 via-indigo-700 to-cyan-500 text-white shadow-md">
+                      <Braces className="w-5 h-5" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="font-bold text-sm text-white group-hover:text-cyan-300 transition-colors">
+                        Modo Estructuras
+                      </div>
+                      <div className="text-xs text-slate-400 truncate">
+                        Fórmulas y gramática interactiva
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setShowMoreMenu(false);
+                      onOpenEntranceAssessment();
+                    }}
+                    className="group flex w-full items-center gap-3 rounded-xl p-2.5 text-left transition hover:bg-white/10 active:scale-[0.98]"
+                  >
+                    <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-white shadow-md ${
+                      isKid ? 'bg-gradient-to-br from-lime-400 via-cyan-400 to-blue-500' : isTeen ? 'bg-gradient-to-br from-violet-500 via-fuchsia-500 to-cyan-500' : 'bg-gradient-to-br from-slate-900 via-indigo-700 to-cyan-600'
+                    }`}>
+                      <ClipboardCheck className="w-5 h-5" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="font-bold text-sm text-white group-hover:text-emerald-300 transition-colors">
+                        {isKid ? 'Examen de Ingreso Kids' : isTeen ? 'Examen de Ingreso Teens' : 'Examen de Ingreso'}
+                      </div>
+                      <div className="text-xs text-slate-400 truncate">
+                        Prueba diagnóstica de nivel
+                      </div>
+                    </div>
+                  </button>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
         </div>
         </div>
       </div>
@@ -725,82 +808,79 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                                             Abrir banco de preguntas
                                           </button>
                                       </div>
-                                      <div className="mt-auto grid gap-2">
-                                          <button
-                                              type="button"
-                                              disabled={!areClassesCompleted}
-                                              onClick={() => setOralExamLevel(level)}
-                                              className="flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-3 text-base font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg disabled:cursor-not-allowed disabled:from-slate-300 disabled:to-slate-400 disabled:hover:translate-y-0"
-                                          >
-                                              <Mic2 className="h-5 w-5" />
-                                              {oralPassed ? 'Ver resultado oral' : areClassesCompleted ? 'Presentar examen oral' : 'Completa primero las clases'}
-                                          </button>
-                                          <button
-                                              onClick={() => {
-                                                  const qText = level.oralEvaluation?.map(q => `*${q.topic}*: ${q.question}`).join('\n\n');
-                                                  const msg = `Hola, quiero practicar las preguntas del examen oral de ${level.title}:\n\n${qText}`;
-                                                  window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
-                                              }}
-                                              className="flex w-full items-center justify-center gap-2 rounded-xl border border-amber-300 bg-white px-4 py-3 font-bold text-amber-800 transition hover:bg-amber-100"
-                                          >
-                                              <Share className="w-4 h-4" />
-                                              Compartir preguntas
-                                          </button>
-                                      </div>
-                                  </div>
-                              )}
+                                       <div className="mt-auto grid gap-2">
+                                           <button
+                                               type="button"
+                                               onClick={() => setOralExamLevel(level)}
+                                               className="flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-3 text-base font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
+                                           >
+                                               <Mic2 className="h-5 w-5" />
+                                               {oralPassed ? 'Ver resultado oral' : areClassesCompleted ? 'Presentar examen oral' : 'Presentar examen oral (Vista previa)'}
+                                           </button>
+                                           <button
+                                               onClick={() => {
+                                                   const qText = level.oralEvaluation?.map(q => `*${q.topic}*: ${q.question}`).join('\n\n');
+                                                   const msg = `Hola, quiero practicar las preguntas del examen oral de ${level.title}:\n\n${qText}`;
+                                                   window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+                                               }}
+                                               className="flex w-full items-center justify-center gap-2 rounded-xl border border-amber-300 bg-white px-4 py-3 font-bold text-amber-800 transition hover:bg-amber-100"
+                                           >
+                                               <Share className="w-4 h-4" />
+                                               Compartir preguntas
+                                           </button>
+                                       </div>
+                                   </div>
+                               )}
 
-                              {/* Virtual Evaluation Link */}
-                              <div className="bg-emerald-50 rounded-2xl border border-emerald-200 p-5 shadow-sm flex flex-col items-start justify-between">
-                                      <div className="w-full">
-                                          <div className="flex items-center gap-2 mb-4">
-                                              <div className="bg-emerald-100 p-2 rounded-lg">
-                                                  <BookOpen className="w-5 h-5 text-emerald-700" />
-                                              </div>
-                                              <h3 className="font-bold text-emerald-900 text-lg">Examen Virtual</h3>
-                                          </div>
-                                          <div className={`mb-4 inline-flex w-max items-center gap-2 rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-wider ${virtualPassed ? 'bg-emerald-200 text-emerald-900' : oralPassed ? 'bg-white text-emerald-800 ring-1 ring-emerald-200' : 'bg-slate-100 text-slate-500'}`}>
-                                              {virtualPassed ? <CheckCircle className="h-4 w-4" /> : <BookOpen className="h-4 w-4" />}
-                                              {virtualPassed ? 'Virtual aprobado' : oralPassed ? 'Siguiente paso' : 'Después del examen oral'}
-                                          </div>
-                                          <p className="text-sm text-emerald-800 mb-4 font-medium">Evalúa lo que aprendiste en este nivel respondiendo este cuestionario interactivo.</p>
-                                          <div className="mb-4 max-h-96 overflow-y-auto">
-                                            <VirtualEvaluationResult
-                                              evaluation={virtualResult}
-                                              questions={level.virtualEvaluation || []}
-                                            />
-                                          </div>
-                                          <button
-                                            type="button"
-                                            disabled={isRefreshingEvaluations}
-                                            onClick={refreshEvaluations}
-                                            className="mb-2 flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-emerald-300 bg-white px-4 font-black text-emerald-800 transition hover:bg-emerald-100 disabled:opacity-60"
-                                          >
-                                            <RefreshCw className={`h-4 w-4 ${isRefreshingEvaluations ? 'animate-spin' : ''}`} />
-                                            {isRefreshingEvaluations ? 'Consultando resultado...' : 'Actualizar resultado del estudiante'}
-                                          </button>
-                                      </div>
-                                      <div className="w-full flex gap-2 mt-4">
-                                          <button 
-                                              disabled={!oralPassed}
-                                              onClick={() => {
-                                                  window.open(`/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}&type=${encodeURIComponent(studentType || 'adulto')}${studentId ? `&studentId=${encodeURIComponent(studentId)}` : ''}`, '_blank');
-                                              }}
-                                              className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 font-bold text-white shadow-sm transition-all hover:bg-emerald-700 disabled:cursor-not-allowed disabled:bg-slate-300"
-                                          >
-                                              {virtualPassed ? 'Ver examen' : oralPassed ? 'Tomar examen' : 'Primero aprueba el oral'}
-                                              <Play className="w-4 h-4 fill-current" />
-                                          </button>
-                                          <button 
-                                              disabled={!oralPassed}
-                                              onClick={() => {
-                                                  const url = `${window.location.origin}/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}&type=${encodeURIComponent(studentType || 'adulto')}${studentId ? `&studentId=${encodeURIComponent(studentId)}` : ''}`;
-                                                  const msg = `Aquí está mi enlace para realizar el examen virtual de ${level.title}:\n\n${url}`;
-                                                  window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
-                                              }}
-                                              className="flex items-center justify-center rounded-xl bg-emerald-800 px-4 py-3 font-bold text-white shadow-sm transition-all hover:bg-emerald-900 disabled:cursor-not-allowed disabled:bg-slate-300"
-                                              title="Compartir enlace"
-                                          >
+                               {/* Virtual Evaluation Link */}
+                               <div className="bg-emerald-50 rounded-2xl border border-emerald-200 p-5 shadow-sm flex flex-col items-start justify-between">
+                                       <div className="w-full">
+                                           <div className="flex items-center gap-2 mb-4">
+                                               <div className="bg-emerald-100 p-2 rounded-lg">
+                                                   <BookOpen className="w-5 h-5 text-emerald-700" />
+                                               </div>
+                                               <h3 className="font-bold text-emerald-900 text-lg">Examen Virtual</h3>
+                                           </div>
+                                           <div className={`mb-4 inline-flex w-max items-center gap-2 rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-wider ${virtualPassed ? 'bg-emerald-200 text-emerald-900' : oralPassed ? 'bg-white text-emerald-800 ring-1 ring-emerald-200' : 'bg-slate-100 text-slate-500'}`}>
+                                               {virtualPassed ? <CheckCircle className="h-4 w-4" /> : <BookOpen className="h-4 w-4" />}
+                                               {virtualPassed ? 'Virtual aprobado' : oralPassed ? 'Siguiente paso' : 'Listo para presentar'}
+                                           </div>
+                                           <p className="text-sm text-emerald-800 mb-4 font-medium">Evalúa lo que aprendiste en este nivel respondiendo este cuestionario interactivo.</p>
+                                           <div className="mb-4 max-h-96 overflow-y-auto">
+                                             <VirtualEvaluationResult
+                                               evaluation={virtualResult}
+                                               questions={level.virtualEvaluation || []}
+                                             />
+                                           </div>
+                                           <button
+                                             type="button"
+                                             disabled={isRefreshingEvaluations}
+                                             onClick={refreshEvaluations}
+                                             className="mb-2 flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-emerald-300 bg-white px-4 font-black text-emerald-800 transition hover:bg-emerald-100 disabled:opacity-60"
+                                           >
+                                             <RefreshCw className={`h-4 w-4 ${isRefreshingEvaluations ? 'animate-spin' : ''}`} />
+                                             {isRefreshingEvaluations ? 'Consultando resultado...' : 'Actualizar resultado del estudiante'}
+                                           </button>
+                                       </div>
+                                       <div className="w-full flex gap-2 mt-4">
+                                           <button 
+                                               onClick={() => {
+                                                   window.open(`/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}&type=${encodeURIComponent(studentType || 'adulto')}${studentId ? `&studentId=${encodeURIComponent(studentId)}` : ''}`, '_blank');
+                                               }}
+                                               className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 font-bold text-white shadow-sm transition-all hover:bg-emerald-700"
+                                           >
+                                               {virtualPassed ? 'Ver examen' : oralPassed ? 'Tomar examen' : 'Tomar examen / Vista previa'}
+                                               <Play className="w-4 h-4 fill-current" />
+                                           </button>
+                                           <button 
+                                               onClick={() => {
+                                                   const url = `${window.location.origin}/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}&type=${encodeURIComponent(studentType || 'adulto')}${studentId ? `&studentId=${encodeURIComponent(studentId)}` : ''}`;
+                                                   const msg = `Aquí está mi enlace para realizar el examen virtual de ${level.title}:\n\n${url}`;
+                                                   window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+                                               }}
+                                               className="flex items-center justify-center rounded-xl bg-emerald-800 px-4 py-3 font-bold text-white shadow-sm transition-all hover:bg-emerald-900"
+                                               title="Compartir enlace"
+                                           >
                                               <Share className="w-5 h-5" />
                                           </button>
                                       </div>

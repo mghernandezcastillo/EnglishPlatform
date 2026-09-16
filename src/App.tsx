@@ -31,6 +31,7 @@ const VocabVault = lazy(() => import('./components/VocabVault').then(m => ({ def
 const CertificateView = lazy(() => import('./components/CertificateView').then(m => ({ default: m.CertificateView })));
 const OralQuestionBankView = lazy(() => import('./components/OralQuestionBankView').then(m => ({ default: m.OralQuestionBankView })));
 const MissionHub = lazy(() => import('./components/missions/MissionHub').then(m => ({ default: m.MissionHub })));
+const DeepTalk = lazy(() => import('./components/DeepTalk').then(m => ({ default: m.DeepTalk })));
 
 const LazyFallback = () => (
   <div className="fixed inset-0 z-50 bg-slate-900/80 flex items-center justify-center">
@@ -50,7 +51,7 @@ export default function App() {
 
   const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], approvedLevelIds: [], currentLessonId: '', level: 'Nivel Inicial' });
   const [isLoaded, setIsLoaded] = useState(false);
-  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'entrance_assessment' | 'speaking_practice' | 'story_decoder' | 'structure_mode' | 'verbs_guide' | 'verb_arena' | 'vocab_vault' | 'missions'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'entrance_assessment' | 'speaking_practice' | 'story_decoder' | 'structure_mode' | 'verbs_guide' | 'verb_arena' | 'vocab_vault' | 'missions' | 'deep_talk'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
   const [activeMissionParam, setActiveMissionParam] = useState<string | null>(null);
 
@@ -466,6 +467,11 @@ export default function App() {
     return <Suspense fallback={<LazyFallback />}><StoryDecoder onClose={() => { window.location.href = '/'; }} studentId={currentStudentId} /></Suspense>;
   }
 
+  if (path.startsWith('/deep-talk')) {
+    if (!isLoaded) return <LazyFallback />;
+    return <Suspense fallback={<LazyFallback />}><DeepTalk onBack={() => { window.location.href = '/'; }} studentId={currentStudentId} studentName={progress.studentName} /></Suspense>;
+  }
+
   if (!isLoaded || !authReady) {
     return <div className="min-h-screen flex items-center justify-center bg-slate-50"><div className="w-8 h-8 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin"></div></div>;
   }
@@ -592,7 +598,7 @@ export default function App() {
       )}
 
       {/* Header for Dashboard */}
-      {!activeLessonId && currentView !== 'missions' && (
+      {!activeLessonId && currentView !== 'missions' && currentView !== 'deep_talk' && (
         <header className="bg-white border-b border-gray-200 py-4 px-4 sm:px-6 sticky top-0 z-10 shadow-sm flex items-center justify-between">
           <div className="flex items-center gap-3 w-full max-w-5xl cursor-pointer" onClick={() => setRole('none')}>
             <div className="w-10 h-10 shrink-0 rounded-xl flex items-center justify-center overflow-hidden">
@@ -697,6 +703,21 @@ export default function App() {
             initialMissionClassId={activeMissionParam}
             onBack={() => setCurrentView('dashboard')}
           />
+        ) : currentView === 'deep_talk' ? (
+          <AppErrorBoundary fallbackMessage="Ocurrió un error en Deep Talk. Puedes reintentar o volver al panel del estudiante." onReset={() => setCurrentView('dashboard')}>
+            <DeepTalk
+              studentId={currentStudentId}
+              studentName={progress.studentName}
+              onBack={() => {
+                setCurrentView('dashboard');
+                try {
+                  const url = new URL(window.location.href);
+                  url.searchParams.delete('activity');
+                  window.history.replaceState({}, '', url.toString());
+                } catch {}
+              }}
+            />
+          </AppErrorBoundary>
         ) : (
             <Dashboard 
             completedLessonIds={progress.completedLessons}
@@ -718,11 +739,12 @@ export default function App() {
             onOpenVerbsGuide={handleOpenVerbsGuide}
             onOpenVocabVault={handleOpenVocabVault}
             onOpenMissions={() => setCurrentView('missions')}
+            onOpenDeepTalk={() => setCurrentView('deep_talk')}
           />
         )}
       </Suspense>
-      {currentView !== 'missions' && <FloatingControls studentId={currentStudentId} studentName={progress.studentName} />}
-      {currentView !== 'missions' && <Suspense fallback={null}><GlobalAiAssistant /></Suspense>}
+      {currentView !== 'missions' && currentView !== 'deep_talk' && <FloatingControls studentId={currentStudentId} studentName={progress.studentName} />}
+      {currentView !== 'missions' && currentView !== 'deep_talk' && <Suspense fallback={null}><GlobalAiAssistant /></Suspense>}
     </div>
   );
 }

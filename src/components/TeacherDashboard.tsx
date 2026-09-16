@@ -1,12 +1,12 @@
 import { lazy, Suspense, useState, useEffect } from 'react';
 import { dbAdmin } from '../lib/db';
 import { DbStudent, DbGroup, EvaluationRecord } from '../types';
-import { Users, UserPlus, BookOpen, CalendarDays, ChevronLeft, LogOut, Save, Target, ExternalLink, RefreshCw } from 'lucide-react';
+import { Users, UserPlus, BookOpen, CalendarDays, ChevronLeft, LogOut, Save, Target, ExternalLink, RefreshCw, Mic2, Share } from 'lucide-react';
 import { avatars } from '../config';
 import { CurriculumView } from './CurriculumView';
 import { useCurriculum } from '../hooks/useCurriculum';
 import { useBrand } from '../hooks/useBrand';
-import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds } from '../lib/levelApproval';
+import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds, findMatchingCurriculumLevel } from '../lib/levelApproval';
 import { evaluationExamType, evaluationPassed, evaluationPercentage, latestEvaluation, ORAL_PASS_PERCENT, VIRTUAL_PASS_PERCENT } from '../lib/evaluationResults';
 import { VirtualEvaluationResult } from './VirtualEvaluationResult';
 import { AdminSlideManager } from './admin/AdminSlideManager';
@@ -42,7 +42,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent, staffUser, onSignOu
   const [editingBrand, setEditingBrand] = useState(brand);
   const [toast, setToast] = useState<string | null>(null);
   // Curriculum for the currently selected student (only loads when a student is selected)
-  const { curriculumLevels: selectedStudentCurrLevels } = useCurriculum(selectedStudent?.type ?? undefined);
+  const { curriculumLevels: selectedStudentCurrLevels } = useCurriculum(selectedStudent?.type ?? undefined, selectedStudent?.presentation_mode);
 
   const showToast = (msg: string) => {
     setToast(msg);
@@ -120,14 +120,8 @@ export function TeacherDashboard({ onBack, onEnterAsStudent, staffUser, onSignOu
   if (selectedStudent) {
     const currLevels = selectedStudentCurrLevels;
     
-    // Find matching curriculum level (approximate match on title)
-    const stLevelTokens = (selectedStudent.level || '').toLowerCase().split(' ');
-    let currentLevelObj = currLevels.find(l => 
-        stLevelTokens.some(tok => l.title.toLowerCase().includes(tok))
-    );
-    if (!currentLevelObj) {
-        currentLevelObj = currLevels[0]; // fallback
-    }
+    // Find matching curriculum level
+    const currentLevelObj = findMatchingCurriculumLevel(currLevels, selectedStudent.level) || currLevels[0];
     const hasOralEvaluation = Boolean(currentLevelObj?.oralEvaluation?.length);
     const hasVirtualEvaluation = Boolean(currentLevelObj?.virtualEvaluation?.length);
     const approvedLevelIds = approvedLevelIdsForStudent(selectedStudent);
@@ -368,7 +362,6 @@ export function TeacherDashboard({ onBack, onEnterAsStudent, staffUser, onSignOu
                                 </p>
                                 <button
                                     type="button"
-                                    disabled={!classesCompleted}
                                     onClick={() => {
                                         sessionStorage.setItem('maven_open_oral_exam', currentLevelObj.id);
                                         localStorage.setItem('active_student_name', selectedStudent.name);
@@ -376,18 +369,29 @@ export function TeacherDashboard({ onBack, onEnterAsStudent, staffUser, onSignOu
                                         localStorage.setItem('active_student_profile', JSON.stringify(selectedStudent));
                                         onEnterAsStudent?.(selectedStudent);
                                     }}
-                                    className="mb-3 w-full rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-3 font-black text-white shadow-sm transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:from-slate-300 disabled:to-slate-400 disabled:hover:translate-y-0"
+                                    className="mb-3 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-3 font-black text-white shadow-sm transition hover:-translate-y-0.5"
                                 >
-                                    {classesCompleted ? 'Abrir presentación del examen oral' : 'Completa primero las clases'}
+                                    <Mic2 className="h-5 w-5" />
+                                    {classesCompleted ? 'Abrir presentación del examen oral' : 'Presentar examen oral (Vista previa)'}
                                 </button>
                                 <button
                                     onClick={() => {
                                         const url = `${window.location.origin}/?preguntasOrales=${encodeURIComponent(currentLevelObj.id)}&type=${encodeURIComponent(selectedStudent.type || 'adulto')}`;
                                         window.open(url, '_blank', 'noopener,noreferrer');
                                     }}
-                                    className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-amber-300 bg-white px-4 py-3 font-black text-amber-900 transition hover:bg-amber-100"
+                                    className="mb-2 flex w-full items-center justify-center gap-2 rounded-xl border-2 border-amber-300 bg-white px-4 py-3 font-black text-amber-900 transition hover:bg-amber-100"
                                 >
                                     <ExternalLink className="h-5 w-5" /> Abrir banco de preguntas
+                                </button>
+                                <button
+                                    onClick={() => {
+                                        const qText = currentLevelObj.oralEvaluation?.map(q => `*${q.topic}*: ${q.question}`).join('\n\n');
+                                        const msg = `¡Hola ${selectedStudent.name}! Aquí están las preguntas para practicar tu examen oral de ${currentLevelObj.title}:\n\n${qText}`;
+                                        window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+                                    }}
+                                    className="flex w-full items-center justify-center gap-2 rounded-xl border border-amber-300 bg-white px-4 py-3 font-bold text-amber-800 transition hover:bg-amber-100"
+                                >
+                                    <Share className="h-4 w-4" /> Compartir preguntas por WhatsApp
                                 </button>
                             </div>
                         )}

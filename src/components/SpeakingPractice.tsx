@@ -292,7 +292,7 @@ const renderHighlightedTemplate = (text: string, isSpanish = false) => {
         return (
           <span
             key={index}
-            className="inline-flex items-center px-2 py-0.5 mx-1 rounded-md bg-amber-400/15 text-amber-300 font-bold border border-amber-400/30 not-italic tracking-normal text-xs sm:text-sm"
+            className="inline-flex items-center px-1.5 py-0.5 mx-0.5 rounded-md bg-amber-400/15 text-amber-300 font-semibold border border-amber-400/30 not-italic tracking-normal text-[11px] sm:text-xs"
           >
             {inner}
           </span>
@@ -302,7 +302,7 @@ const renderHighlightedTemplate = (text: string, isSpanish = false) => {
       return (
         <span
           key={index}
-          className="inline-flex items-center px-2.5 py-1 mx-1.5 rounded-xl bg-amber-400/20 text-amber-300 font-black border-2 border-amber-400/50 shadow-md shadow-amber-950/40 tracking-normal text-base sm:text-lg lg:text-xl align-baseline"
+          className="inline-flex items-center px-2 py-0.5 mx-1 rounded-lg bg-amber-400/20 text-amber-300 font-bold border border-amber-400/50 shadow-sm tracking-normal text-xs sm:text-sm lg:text-base align-baseline"
         >
           {inner}
         </span>
@@ -321,6 +321,24 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
   const [selectedLevel, setSelectedLevel] = useState<'starter' | 'confident' | 'pro'>('starter');
   const [activeTab, setActiveTab] = useState<'prep' | 'coach'>('prep');
   const [playingSnippet, setPlayingSnippet] = useState<string | null>(null);
+  const [zoomLevel, setZoomLevel] = useState<number>(() => {
+    try {
+      const saved = localStorage.getItem('maven_speaking_practice_zoom');
+      if (saved) {
+        const parsed = Number(saved);
+        if ([67, 75, 85, 100].includes(parsed)) return parsed;
+      }
+    } catch {}
+    return 100;
+  });
+
+  const handleSetZoom = (lvl: number) => {
+    setZoomLevel(lvl);
+    try {
+      localStorage.setItem('maven_speaking_practice_zoom', String(lvl));
+    } catch {}
+  };
+
   const remainingQuestions = useRef<SpeakingQuestion[]>([]);
 
   // Cleanup audio on unmount
@@ -462,33 +480,62 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
   };
 
   return (
-    <div className="fixed inset-0 bg-slate-950 text-slate-100 z-50 flex flex-col h-screen max-h-screen overflow-hidden p-2.5 sm:p-4 select-none">
-      <div className="w-full max-w-[1760px] mx-auto h-full flex flex-col justify-between gap-2.5 sm:gap-3 overflow-hidden">
+    <div className="fixed inset-0 bg-slate-950 text-slate-100 z-50 flex flex-col h-screen max-h-screen overflow-hidden p-2 sm:p-3 select-none">
+      <div 
+        style={zoomLevel !== 100 ? {
+          zoom: `${zoomLevel}%`,
+          width: `${(10000 / zoomLevel).toFixed(2)}%`,
+          height: `${(10000 / zoomLevel).toFixed(2)}%`,
+        } : undefined}
+        className="w-full max-w-[1760px] mx-auto h-full flex flex-col justify-between gap-2 sm:gap-2.5 overflow-hidden"
+      >
         
-        {/* 1. Header Bar (Compact 48px, Zero Scroll) */}
-        <div className="h-12 flex-shrink-0 flex items-center justify-between px-4 bg-slate-900/90 rounded-2xl border border-slate-800 shadow-md">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center shadow-md shadow-indigo-500/20 flex-shrink-0">
-              <Mic className="w-4 h-4" />
+        {/* 1. Header Bar (Compact 44px - 48px, Zero Scroll) */}
+        <div className="h-11 sm:h-12 flex-shrink-0 flex items-center justify-between px-3.5 sm:px-4 bg-slate-900/90 rounded-2xl border border-slate-800 shadow-md">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center shadow-md shadow-indigo-500/20 flex-shrink-0">
+              <Mic className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </div>
             <div className="flex items-center gap-2">
-              <span className="font-black text-base sm:text-lg text-white tracking-tight">
+              <span className="font-black text-sm sm:text-base lg:text-lg text-white tracking-tight">
                 Speaking Studio
               </span>
               {currentQuestion && (
-                <span className="text-[11px] uppercase font-black px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 tracking-wider">
+                <span className="text-[10px] sm:text-[11px] uppercase font-black px-2 sm:px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 tracking-wider">
                   {currentQuestion.topic}
                 </span>
               )}
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            {/* Quick Zoom Controller */}
+            <div className="flex items-center gap-0.5 sm:gap-1 bg-slate-950/90 px-1.5 sm:px-2 py-1 rounded-xl border border-slate-800 shadow-inner">
+              <span className="text-[10px] sm:text-[11px] font-black uppercase text-slate-400 mr-1 hidden md:inline">
+                Zoom:
+              </span>
+              {[67, 75, 85, 100].map((lvl) => (
+                <button
+                  key={lvl}
+                  type="button"
+                  onClick={() => handleSetZoom(lvl)}
+                  className={`px-1.5 sm:px-2 py-0.5 rounded-lg text-[10px] sm:text-xs font-black transition-all cursor-pointer ${
+                    zoomLevel === lvl
+                      ? 'bg-indigo-600 text-white shadow-sm'
+                      : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                  }`}
+                  title={`Ajustar zoom de Speaking Studio al ${lvl}%`}
+                >
+                  {lvl}%
+                </button>
+              ))}
+            </div>
+
             {currentQuestion && (
               <button
                 type="button"
                 onClick={(e) => handlePlaySpeech(currentQuestion.question, 'q_speech', e)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer ${
+                className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer ${
                   playingSnippet === 'q_speech'
                     ? 'bg-indigo-600 text-white animate-pulse shadow-sm'
                     : 'bg-slate-800 text-indigo-300 hover:bg-slate-700 hover:text-white border border-slate-700'
@@ -502,10 +549,10 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
 
             <button
               onClick={generateRandomQuestion}
-              className="flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-500 text-white px-3.5 py-1.5 rounded-xl font-black text-xs sm:text-sm shadow-md transition-all active:scale-95 cursor-pointer"
+              className="flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-500 text-white px-3 sm:px-3.5 py-1.5 rounded-xl font-black text-xs sm:text-sm shadow-md transition-all active:scale-95 cursor-pointer"
             >
               <RefreshCw className="w-3.5 h-3.5" />
-              <span>Siguiente Pregunta</span>
+              <span className="hidden sm:inline">Siguiente Pregunta</span>
               <ChevronRight className="w-3.5 h-3.5" />
             </button>
 
@@ -519,30 +566,30 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
           </div>
         </div>
 
-        {/* 2. Hero Question Card (Expansive Typography, Zero Scroll) */}
+        {/* 2. Hero Question Card (Adaptive Height, Screen-Share Friendly) */}
         {currentQuestion && (
           <div
             onClick={() => {
               setIsQuestionFlipped(prev => !prev);
               setActiveQuestionWord(null);
             }}
-            className="h-32 sm:h-36 lg:h-40 flex-shrink-0 relative rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950/80 to-slate-900 border-2 border-indigo-500/40 shadow-2xl px-6 sm:px-10 py-3.5 sm:py-4 flex flex-col justify-between cursor-pointer group hover:border-indigo-400 transition-all"
+            className="min-h-[76px] sm:min-h-[88px] max-h-[120px] flex-shrink-0 relative rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950/80 to-slate-900 border border-indigo-500/40 shadow-xl px-4 sm:px-6 py-2 sm:py-2.5 flex flex-col justify-between cursor-pointer group hover:border-indigo-400 transition-all overflow-hidden"
           >
-            <div className="flex items-center justify-between text-xs sm:text-sm font-black uppercase tracking-wider">
-              <span className={`inline-flex items-center gap-2 px-3.5 py-1 rounded-full ${
+            <div className="flex items-center justify-between text-[11px] sm:text-xs font-black uppercase tracking-wider">
+              <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full ${
                 isQuestionFlipped ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30'
               }`}>
-                <Languages className="w-4 h-4" />
+                <Languages className="w-3.5 h-3.5" />
                 {isQuestionFlipped ? 'Español (Toca la tarjeta para volver a Inglés)' : 'English (Toca la tarjeta para ver en Español)'}
               </span>
-              <span className="text-slate-400 group-hover:text-indigo-300 transition-colors font-bold text-xs sm:text-sm">
+              <span className="text-slate-400 group-hover:text-indigo-300 transition-colors font-bold text-[11px] sm:text-xs">
                 {isQuestionFlipped ? 'Volver a inglés ↺' : 'Ver traducción en español ➔'}
               </span>
             </div>
 
-            <div className="py-1">
+            <div className="py-0.5">
               {!isQuestionFlipped ? (
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-tight tracking-tight">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-white leading-snug tracking-tight">
                   {splitQuestion(currentQuestion.question).map((part, index) => {
                     if (!/[A-Za-z']/.test(part)) return <span key={`${part}-${index}`}>{part}</span>;
                     const key = `${part}-${index}`;
@@ -554,12 +601,12 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                             event.stopPropagation();
                             setActiveQuestionWord(activeQuestionWord === key ? null : key);
                           }}
-                          className="mx-0.5 rounded-xl px-1.5 transition-colors hover:bg-amber-400 hover:text-slate-950 focus:bg-amber-400 focus:text-slate-950 focus:outline-none"
+                          className="mx-0.5 rounded-lg px-1 transition-colors hover:bg-amber-400 hover:text-slate-950 focus:bg-amber-400 focus:text-slate-950 focus:outline-none"
                         >
                           {part}
                         </button>
                         {activeQuestionWord === key && (
-                          <span className="absolute left-1/2 bottom-full z-30 mb-2 -translate-x-1/2 whitespace-nowrap rounded-xl border border-amber-300 bg-amber-100 px-4 py-2 text-base font-black text-amber-950 shadow-2xl">
+                          <span className="absolute left-1/2 bottom-full z-30 mb-1.5 -translate-x-1/2 whitespace-nowrap rounded-lg border border-amber-300 bg-amber-100 px-3 py-1 text-sm font-black text-amber-950 shadow-2xl">
                             {translateWord(part)}
                           </span>
                         )}
@@ -568,46 +615,46 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                   })}
                 </h2>
               ) : (
-                <p className="text-2xl sm:text-4xl lg:text-5xl font-black text-emerald-300 leading-tight tracking-tight">
+                <p className="text-lg sm:text-xl lg:text-2xl font-black text-emerald-300 leading-snug tracking-tight">
                   {currentQuestion.spanish || translateText(currentQuestion.question)}
                 </p>
               )}
             </div>
 
-            <div className="flex items-center justify-between text-xs sm:text-sm text-slate-400 font-medium">
-              <span className="italic">
+            <div className="flex items-center justify-between text-[11px] sm:text-xs text-slate-400 font-medium">
+              <span className="italic truncate mr-2">
                 {!isQuestionFlipped ? '💡 Toca cualquier palabra en inglés para ver su traducción instantánea.' : `Pregunta en inglés: "${currentQuestion.question}"`}
               </span>
-              <span className="font-bold text-slate-500 uppercase tracking-widest text-xs">
+              <span className="font-bold text-slate-500 uppercase tracking-widest text-[10px] sm:text-[11px] flex-shrink-0">
                 Maven Speaking Studio
               </span>
             </div>
           </div>
         )}
 
-        {/* 3. Main Workspace (Fits inside flex-1, Zero Window Scroll) */}
-        <div className="flex-1 min-h-0 grid grid-cols-12 gap-3 sm:gap-4 overflow-hidden">
+        {/* 3. Main Workspace */}
+        <div className="flex-1 min-h-0 grid grid-cols-12 gap-2.5 sm:gap-3 overflow-hidden">
           
           {/* Column 1: Palabras Clave Sugeridas (5 cols, Roomy 2x2 Grid) */}
-          <div className="col-span-12 lg:col-span-5 h-full flex flex-col bg-slate-900/90 rounded-2xl border border-slate-800 p-3.5 sm:p-4 overflow-hidden">
-            <div className="flex-shrink-0 flex items-center justify-between pb-2 border-b border-slate-800">
-              <div className="flex items-center gap-2.5">
-                <div className="h-8 w-8 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
-                  <Target className="w-4 h-4" />
+          <div className="col-span-12 lg:col-span-5 h-full flex flex-col bg-slate-900/90 rounded-2xl border border-slate-800 p-2.5 sm:p-3.5 overflow-hidden">
+            <div className="flex-shrink-0 flex items-center justify-between pb-1.5 border-b border-slate-800">
+              <div className="flex items-center gap-2">
+                <div className="h-7 w-7 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+                  <Target className="w-3.5 h-3.5" />
                 </div>
                 <div>
-                  <h3 className="text-sm sm:text-base font-black text-white uppercase tracking-wider">
+                  <h3 className="text-xs sm:text-sm font-black text-white uppercase tracking-wider">
                     Palabras Clave para Responder
                   </h3>
                 </div>
               </div>
-              <span className="text-xs sm:text-sm text-slate-400 font-bold">
+              <span className="text-[11px] sm:text-xs text-slate-400 font-bold">
                 Toca 🔊 o 🔖
               </span>
             </div>
 
             {/* 2x2 Clean Card Grid with Maximized Content */}
-            <div className="grid grid-cols-2 grid-rows-2 gap-3 flex-1 min-h-0 mt-2.5">
+            <div className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-2.5 flex-1 min-h-0 mt-2">
               {(blueprint?.targetWords || []).slice(0, 4).map((item, idx) => {
                 const cleanWord = item.word.trim();
                 const isSaved = savedTerms.has(cleanWord.toLowerCase());
@@ -625,37 +672,37 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                 return (
                   <div
                     key={`${cleanWord}-${idx}`}
-                    className={`rounded-2xl p-3.5 sm:p-4 border flex flex-col justify-between transition-all text-left ${
+                    className={`rounded-xl p-2.5 sm:p-3 border flex flex-col justify-between transition-all text-left overflow-hidden ${
                       isSaved
                         ? 'bg-amber-950/30 border-amber-500/60 shadow-md shadow-amber-950/20'
                         : 'bg-slate-950/90 border-slate-800 hover:border-indigo-500/50'
                     }`}
                   >
-                    <div>
-                      <div className="flex items-center justify-between gap-1 mb-1">
-                        <span className={`text-xs uppercase font-black px-2.5 py-0.5 rounded-full border ${config.badge}`}>
+                    <div className="min-h-0">
+                      <div className="flex items-center justify-between gap-1 mb-0.5">
+                        <span className={`text-[10px] uppercase font-black px-2 py-0.5 rounded-full border ${config.badge}`}>
                           {config.label}
                         </span>
 
-                        <div className="flex items-center gap-1.5">
+                        <div className="flex items-center gap-1">
                           <button
                             type="button"
                             onClick={(e) => handlePlaySpeech(cleanWord, `word_${cleanWord}`, e)}
-                            className={`p-2 sm:p-2.5 rounded-xl transition-all cursor-pointer ${
+                            className={`p-1.5 rounded-lg transition-all cursor-pointer ${
                               isAudioPlaying
                                 ? 'bg-indigo-600 text-white animate-pulse shadow-sm'
                                 : 'text-slate-400 hover:text-indigo-300 hover:bg-slate-800 bg-slate-900 border border-slate-700/60'
                             }`}
                             title={`Escuchar pronunciación de "${cleanWord}"`}
                           >
-                            <Volume2 className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+                            <Volume2 className="w-3.5 h-3.5" />
                           </button>
 
                           <button
                             type="button"
                             onClick={(e) => handleToggleSaveVocab(cleanWord, e)}
                             disabled={isSaving}
-                            className={`p-2 sm:p-2.5 rounded-xl transition-all cursor-pointer ${
+                            className={`p-1.5 rounded-lg transition-all cursor-pointer ${
                               isSaved
                                 ? 'text-amber-400 bg-amber-500/20 border border-amber-500/40'
                                 : 'text-slate-500 hover:text-amber-300 hover:bg-slate-800 bg-slate-900 border border-slate-700/60'
@@ -663,26 +710,26 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                             title={isSaved ? 'Guardado en Mi Vocabulario (Clic para quitar)' : 'Guardar en Mi Vocabulario'}
                           >
                             {isSaving ? (
-                              <Loader2 className="w-4 h-4 animate-spin text-amber-400" />
+                              <Loader2 className="w-3.5 h-3.5 animate-spin text-amber-400" />
                             ) : isSaved ? (
-                              <BookmarkCheck className="w-4 h-4 sm:w-4.5 sm:h-4.5 fill-current" />
+                              <BookmarkCheck className="w-3.5 h-3.5 fill-current" />
                             ) : (
-                              <Bookmark className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+                              <Bookmark className="w-3.5 h-3.5" />
                             )}
                           </button>
                         </div>
                       </div>
 
-                      <div className="font-black text-white text-2xl sm:text-3xl xl:text-4xl leading-tight tracking-tight mt-1">
+                      <div className="font-black text-white text-lg sm:text-xl lg:text-2xl leading-tight tracking-tight mt-0.5 truncate">
                         {cleanWord}
                       </div>
-                      <div className="text-base sm:text-lg font-bold text-indigo-300 mt-1">
+                      <div className="text-xs sm:text-sm font-bold text-indigo-300 truncate">
                         {item.translation}
                       </div>
                     </div>
 
                     {item.exampleSnippet && (
-                      <div className="mt-2 p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10 text-xs sm:text-sm lg:text-base text-slate-200 font-medium italic leading-snug">
+                      <div className="mt-1.5 p-1.5 sm:p-2 rounded-lg bg-white/5 border border-white/10 text-[11px] sm:text-xs text-slate-200 font-medium italic leading-snug line-clamp-2">
                         "{item.exampleSnippet}"
                       </div>
                     )}
@@ -692,13 +739,13 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
             </div>
           </div>
 
-          {/* Column 2: Estructura P.R.E.P. & Coach IA (7 cols, Expansive Text) */}
-          <div className="col-span-12 lg:col-span-7 h-full flex flex-col bg-slate-900/90 rounded-2xl border border-slate-800 p-3.5 sm:p-4 overflow-hidden justify-between">
+          {/* Column 2: Estructura P.R.E.P. & Coach IA (7 cols) */}
+          <div className="col-span-12 lg:col-span-7 h-full flex flex-col bg-slate-900/90 rounded-2xl border border-slate-800 p-2.5 sm:p-3.5 overflow-hidden justify-between">
             
             {/* Top Selector Bar */}
-            <div className="flex-shrink-0 flex items-center justify-between pb-2 border-b border-slate-800 gap-2">
+            <div className="flex-shrink-0 flex items-center justify-between pb-1.5 border-b border-slate-800 gap-2">
               {/* Level Selector Tabs */}
-              <div className="inline-flex rounded-xl bg-slate-950 p-1 border border-slate-800">
+              <div className="inline-flex rounded-xl bg-slate-950 p-0.5 sm:p-1 border border-slate-800">
                 {(['starter', 'confident', 'pro'] as const).map((lvlKey) => {
                   const lvlData = blueprint ? blueprint[lvlKey] : null;
                   const isSelected = selectedLevel === lvlKey;
@@ -710,7 +757,7 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                         setSelectedLevel(lvlKey);
                         setActiveTab('prep');
                       }}
-                      className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-black transition-all flex items-center gap-2 cursor-pointer ${
+                      className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-black transition-all flex items-center gap-1.5 cursor-pointer ${
                         isSelected && activeTab === 'prep'
                           ? lvlKey === 'starter'
                             ? 'bg-emerald-600 text-white shadow-md'
@@ -721,7 +768,7 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                       }`}
                     >
                       <span>{lvlData?.label || lvlKey}</span>
-                      <span className="text-[11px] opacity-75 font-extrabold px-1.5 py-0.5 rounded bg-white/10">
+                      <span className="text-[10px] sm:text-[11px] opacity-75 font-extrabold px-1 py-0.5 rounded bg-white/10">
                         {lvlData?.cefr}
                       </span>
                     </button>
@@ -730,37 +777,37 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
               </div>
 
               {/* View Switcher: PREP Studio vs Coach IA */}
-              <div className="inline-flex rounded-xl bg-slate-950 p-1 border border-slate-800">
+              <div className="inline-flex rounded-xl bg-slate-950 p-0.5 sm:p-1 border border-slate-800">
                 <button
                   type="button"
                   onClick={() => setActiveTab('prep')}
-                  className={`px-4 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-black transition-all flex items-center gap-2 cursor-pointer ${
+                  className={`px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-black transition-all flex items-center gap-1.5 cursor-pointer ${
                     activeTab === 'prep'
                       ? 'bg-indigo-600 text-white shadow-md'
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  <Layers className="w-4 h-4" />
+                  <Layers className="w-3.5 h-3.5" />
                   <span>Guía P.R.E.P.</span>
                 </button>
 
                 <button
                   type="button"
                   onClick={() => setActiveTab('coach')}
-                  className={`px-4 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-black transition-all flex items-center gap-2 cursor-pointer ${
+                  className={`px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-black transition-all flex items-center gap-1.5 cursor-pointer ${
                     activeTab === 'coach'
                       ? 'bg-cyan-600 text-white shadow-md'
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  <Bot className="w-4 h-4" />
+                  <Bot className="w-3.5 h-3.5" />
                   <span>Coach IA</span>
                 </button>
               </div>
             </div>
 
             {/* Content Area */}
-            <div className="flex-1 min-h-0 mt-2 overflow-hidden">
+            <div className="flex-1 min-h-0 mt-1.5 overflow-hidden">
               {activeTab === 'prep' && blueprint ? (
                 (() => {
                   const activeLvl = blueprint[selectedLevel];
@@ -769,12 +816,12 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                   return (
                     <div className="h-full flex flex-col justify-between gap-2 overflow-hidden">
                       {/* Quick Starters Row */}
-                      <div className="flex-shrink-0 flex items-center gap-2 py-0.5">
-                        <span className="text-xs sm:text-sm font-black uppercase text-amber-400 flex items-center gap-1.5 flex-shrink-0">
-                          <Zap className="w-4 h-4" />
+                      <div className="flex-shrink-0 flex items-center gap-1.5 py-0.5">
+                        <span className="text-xs font-black uppercase text-amber-400 flex items-center gap-1 flex-shrink-0">
+                          <Zap className="w-3.5 h-3.5" />
                           Conectores:
                         </span>
-                        <div className="flex items-center gap-2 flex-1 min-w-0">
+                        <div className="flex items-center gap-1.5 flex-1 min-w-0">
                           {blueprint.quickStarters.map((qs, qIdx) => {
                             const isPlaying = playingSnippet === `starter_${qIdx}`;
                             return (
@@ -782,14 +829,14 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                                 key={qIdx}
                                 type="button"
                                 onClick={(e) => handlePlaySpeech(qs.en, `starter_${qIdx}`, e)}
-                                className={`flex-1 min-w-0 flex items-center justify-between gap-1.5 px-3.5 py-2 rounded-xl border text-left transition-all cursor-pointer ${
+                                className={`flex-1 min-w-0 flex items-center justify-between gap-1 px-2.5 sm:px-3 py-1.5 rounded-xl border text-left transition-all cursor-pointer ${
                                   isPlaying
                                     ? 'bg-indigo-600 text-white border-indigo-500 shadow-sm'
                                     : 'bg-slate-950/80 hover:bg-slate-800 border-slate-800 text-slate-200'
                                 }`}
                               >
-                                <span className="font-black text-xs sm:text-sm lg:text-base truncate">"{qs.en}"</span>
-                                <Volume2 className={`w-4 h-4 flex-shrink-0 ${isPlaying ? 'text-white' : 'text-slate-400'}`} />
+                                <span className="font-black text-xs sm:text-sm truncate">"{qs.en}"</span>
+                                <Volume2 className={`w-3.5 h-3.5 flex-shrink-0 ${isPlaying ? 'text-white' : 'text-slate-400'}`} />
                               </button>
                             );
                           })}
@@ -797,57 +844,57 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                       </div>
 
                       {/* Plantilla Guiada P.R.E.P. */}
-                      <div className="flex-1 min-h-0 flex flex-col justify-center rounded-2xl bg-slate-950/80 p-4 sm:p-5 border border-slate-800 text-left">
-                        <div className="flex items-center gap-2 text-xs sm:text-sm font-black uppercase tracking-wider text-amber-300 mb-2">
-                          <Lightbulb className="w-4 h-4 text-amber-400" />
-                          <span>Tip de Estrategia P.R.E.P.: {activeLvl.strategyTip}</span>
+                      <div className="flex-1 min-h-0 flex flex-col justify-center rounded-xl bg-slate-950/80 p-3 sm:p-3.5 border border-slate-800 text-left overflow-y-auto custom-scrollbar">
+                        <div className="flex items-center gap-1.5 text-[11px] sm:text-xs font-black uppercase tracking-wider text-amber-300 mb-1 flex-shrink-0">
+                          <Lightbulb className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
+                          <span className="truncate">Tip de Estrategia P.R.E.P.: {activeLvl.strategyTip}</span>
                         </div>
-                        <div className="text-lg sm:text-xl lg:text-2xl font-black text-white leading-relaxed">
+                        <div className="text-sm sm:text-base lg:text-lg font-black text-white leading-normal">
                           {renderHighlightedTemplate(activeLvl.templateEn, false)}
                         </div>
-                        <div className="text-xs sm:text-sm lg:text-base text-slate-300 font-medium italic mt-2 leading-relaxed">
+                        <div className="text-xs sm:text-sm text-slate-300 font-medium italic mt-1 leading-normal">
                           {renderHighlightedTemplate(activeLvl.templateEs, true)}
                         </div>
                       </div>
 
                       {/* Respuesta Modelo Completa */}
-                      <div className="flex-1 min-h-0 flex flex-col justify-between rounded-2xl bg-gradient-to-br from-indigo-950/50 via-slate-950 to-slate-900 p-4 sm:p-5 border border-indigo-500/40 text-left text-white shadow-lg">
-                        <div className="flex items-center justify-between gap-2">
-                          <div className="flex items-center gap-2 text-xs sm:text-sm font-black uppercase tracking-wider text-cyan-300">
-                            <Sparkle className="w-4 h-4" />
+                      <div className="flex-1 min-h-0 flex flex-col justify-between rounded-xl bg-gradient-to-br from-indigo-950/50 via-slate-950 to-slate-900 p-3 sm:p-3.5 border border-indigo-500/40 text-left text-white shadow-md overflow-y-auto custom-scrollbar">
+                        <div className="flex items-center justify-between gap-2 flex-shrink-0">
+                          <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-cyan-300">
+                            <Sparkle className="w-3.5 h-3.5" />
                             <span>Respuesta Modelo Completa ({activeLvl.label} • {activeLvl.cefr})</span>
                           </div>
                           <button
                             type="button"
                             onClick={(e) => handlePlaySpeech(activeLvl.exampleFullEn, `full_${selectedLevel}`, e)}
-                            className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer shadow-md ${
+                            className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-black transition-all cursor-pointer shadow-sm ${
                               isAudioPlaying
                                 ? 'bg-cyan-400 text-slate-950 animate-pulse'
                                 : 'bg-cyan-500/20 text-cyan-200 hover:bg-cyan-500/30 border border-cyan-500/30'
                             }`}
                           >
-                            <Volume2 className="w-4 h-4" />
+                            <Volume2 className="w-3.5 h-3.5" />
                             <span>{isAudioPlaying ? 'Reproduciendo...' : 'Escuchar modelo'}</span>
                           </button>
                         </div>
 
-                        <div className="text-lg sm:text-xl lg:text-2xl font-bold text-white/95 leading-relaxed my-2">
+                        <div className="text-sm sm:text-base lg:text-lg font-bold text-white/95 leading-snug my-1.5">
                           "{activeLvl.exampleFullEn}"
                         </div>
 
-                        <div className="text-xs sm:text-sm text-slate-400 italic">
+                        <div className="text-[11px] sm:text-xs text-slate-400 italic flex-shrink-0">
                           💡 Escucha la entonación nativa y responde con la estructura P.R.E.P. en voz alta.
                         </div>
                       </div>
 
-                      {/* Bottom Action inside PREP (Centered Wide Button, avoids bottom-right widget) */}
-                      <div className="flex-shrink-0 pt-1">
+                      {/* Bottom Action inside PREP (Centered Wide Button) */}
+                      <div className="flex-shrink-0 pt-0.5">
                         <button
                           type="button"
                           onClick={() => setActiveTab('coach')}
-                          className="w-full flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-600 via-indigo-600 to-indigo-700 hover:from-cyan-500 hover:to-indigo-600 text-white font-black text-sm sm:text-base lg:text-lg shadow-lg transition-all cursor-pointer active:scale-98"
+                          className="w-full flex items-center justify-center gap-2 px-4 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-cyan-600 via-indigo-600 to-indigo-700 hover:from-cyan-500 hover:to-indigo-600 text-white font-black text-xs sm:text-sm shadow-md transition-all cursor-pointer active:scale-98"
                         >
-                          <Bot className="w-5 h-5" />
+                          <Bot className="w-4 h-4" />
                           <span>Practicar y Evaluar mi Respuesta con Coach IA</span>
                           <ChevronRight className="w-4 h-4" />
                         </button>
@@ -857,11 +904,11 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                 })()
               ) : (
                 /* Coach IA View */
-                <div className="h-full flex flex-col justify-between gap-2.5 overflow-hidden text-left">
-                  <div className="flex-shrink-0 flex items-center justify-between pb-1">
+                <div className="h-full flex flex-col justify-between gap-2 overflow-hidden text-left">
+                  <div className="flex-shrink-0 flex items-center justify-between pb-1 border-b border-slate-800">
                     <div className="flex items-center gap-2">
-                      <div className="h-7 w-7 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
-                        <Bot className="w-4 h-4" />
+                      <div className="h-6 w-6 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                        <Bot className="w-3.5 h-3.5" />
                       </div>
                       <span className="text-xs sm:text-sm font-black text-white uppercase tracking-wider">
                         Coach IA: Auditoría P.R.E.P. y Detección de Vocabulario
@@ -878,15 +925,15 @@ export function SpeakingPractice({ onClose, studentId }: SpeakingPracticeProps) 
                   </div>
 
                   {/* Target words mini-tracker */}
-                  <div className="flex-shrink-0 p-2.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center gap-2 flex-wrap">
-                    <span className="text-xs font-black uppercase text-emerald-400 flex items-center gap-1.5">
-                      <Target className="w-3.5 h-3.5" />
+                  <div className="flex-shrink-0 p-2 rounded-xl bg-slate-950 border border-slate-800 flex items-center gap-1.5 flex-wrap">
+                    <span className="text-[11px] font-black uppercase text-emerald-400 flex items-center gap-1">
+                      <Target className="w-3 h-3" />
                       Términos sugeridos a pronunciar:
                     </span>
                     {(blueprint?.targetWords || []).map((w, wIdx) => (
                       <span
                         key={wIdx}
-                        className="px-2.5 py-1 rounded-lg text-xs font-bold bg-white/10 text-slate-200 border border-white/10"
+                        className="px-2 py-0.5 rounded-md text-[11px] font-bold bg-white/10 text-slate-200 border border-white/10"
                       >
                         {w.word}
                       </span>

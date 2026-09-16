@@ -74,8 +74,8 @@ export function BrandWordmark({
                 <span
                   className={`relative bg-clip-text text-transparent ${
                     light
-                      ? 'bg-gradient-to-r from-white via-cyan-100 to-fuchsia-100'
-                      : 'bg-gradient-to-r from-indigo-950 via-blue-700 to-cyan-500'
+                      ? 'bg-gradient-to-r from-white via-sky-100 to-cyan-300'
+                      : 'bg-gradient-to-r from-slate-900 via-blue-800 to-cyan-600'
                   }`}
                 >
                   {word}
@@ -91,8 +91,8 @@ export function BrandWordmark({
             compact ? 'w-28 sm:w-36' : 'w-40 sm:w-56 md:w-72'
           } ${centered ? 'mx-auto' : ''} ${
             light
-              ? 'bg-gradient-to-r from-fuchsia-300 via-white to-cyan-300'
-              : 'bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500'
+              ? 'bg-gradient-to-r from-sky-400 via-cyan-300 to-blue-500'
+              : 'bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600'
           }`}
           animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
           transition={{ duration: 6, repeat: Infinity, ease: 'linear' }}

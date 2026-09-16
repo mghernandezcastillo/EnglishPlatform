@@ -27,24 +27,32 @@ export const getCurriculumForType = async (type?: string, modeOverride?: 'studio
 
   let base: CurriculumLevel[];
   if (track === 'niño') {
+    const { curriculumKidsLevels } = await import('./curriculumKids');
     if (mode === 'studio') {
       try {
         const { curriculumTeensStudioLevels } = await import('./curriculumTeensStudio');
-        base = curriculumTeensStudioLevels.map((lvl) => ({
-          ...lvl,
-          id: lvl.id.replace(/^teens-/, 'kids-'),
-          classes: lvl.classes.map(cls => ({
-            ...cls,
-            id: cls.id.replace(/^c-teens-/, 'c-kids-')
-          }))
-        }));
+        const studioLevelsMap = new Map<string, CurriculumLevel>();
+        curriculumTeensStudioLevels.forEach((lvl) => {
+          studioLevelsMap.set(lvl.id.replace(/^teens-/, 'kids-'), lvl);
+        });
+        base = curriculumKidsLevels.map((lvl) => {
+          const studioLvl = studioLevelsMap.get(lvl.id);
+          if (!studioLvl) return lvl;
+          return {
+            ...lvl,
+            classes: studioLvl.classes.map(cls => ({
+              ...cls,
+              id: cls.id.replace(/^c-teens-/, 'c-kids-')
+            })),
+            oralEvaluation: studioLvl.oralEvaluation || lvl.oralEvaluation,
+            virtualEvaluation: studioLvl.virtualEvaluation || lvl.virtualEvaluation,
+          };
+        });
       } catch (err) {
         console.warn('Fallback to classic kids curriculum:', err);
-        const { curriculumKidsLevels } = await import('./curriculumKids');
         base = curriculumKidsLevels;
       }
     } else {
-      const { curriculumKidsLevels } = await import('./curriculumKids');
       base = curriculumKidsLevels;
     }
   } else if (track === 'adolescente') {
@@ -58,7 +66,14 @@ export const getCurriculumForType = async (type?: string, modeOverride?: 'studio
         });
 
         base = curriculumTeensLevels.map((lvl) => {
-          return studioLevelsMap.get(lvl.id) || lvl;
+          const studioLvl = studioLevelsMap.get(lvl.id);
+          if (!studioLvl) return lvl;
+          return {
+            ...lvl,
+            ...studioLvl,
+            oralEvaluation: studioLvl.oralEvaluation || lvl.oralEvaluation,
+            virtualEvaluation: studioLvl.virtualEvaluation || lvl.virtualEvaluation,
+          };
         });
       } catch (err) {
         console.warn('Fallback to classic teens curriculum:', err);
@@ -69,24 +84,33 @@ export const getCurriculumForType = async (type?: string, modeOverride?: 'studio
     }
   } else {
     // Adults track
+    const { curriculumLevels } = await import('./curriculum');
     if (mode === 'studio') {
       try {
         const { curriculumTeensStudioLevels } = await import('./curriculumTeensStudio');
-        base = curriculumTeensStudioLevels.map((lvl) => ({
-          ...lvl,
-          id: lvl.id.replace(/^teens-/, 'adults-'),
-          classes: lvl.classes.map(cls => ({
-            ...cls,
-            id: cls.id.replace(/^c-teens-/, 'c-adults-')
-          }))
-        }));
+        const studioLevelsMap = new Map<string, CurriculumLevel>();
+        curriculumTeensStudioLevels.forEach((lvl) => {
+          studioLevelsMap.set(lvl.id.replace(/^teens-/, ''), lvl);
+          studioLevelsMap.set(lvl.id.replace(/^teens-/, 'adults-'), lvl);
+        });
+        base = curriculumLevels.map((lvl) => {
+          const studioLvl = studioLevelsMap.get(lvl.id) || studioLevelsMap.get(lvl.id.replace(/^adults-/, ''));
+          if (!studioLvl) return lvl;
+          return {
+            ...lvl,
+            classes: studioLvl.classes.map(cls => ({
+              ...cls,
+              id: cls.id.replace(/^c-teens-/, 'c-adults-')
+            })),
+            oralEvaluation: studioLvl.oralEvaluation || lvl.oralEvaluation,
+            virtualEvaluation: studioLvl.virtualEvaluation || lvl.virtualEvaluation,
+          };
+        });
       } catch (err) {
         console.warn('Fallback to classic adults curriculum:', err);
-        const { curriculumLevels } = await import('./curriculum');
         base = curriculumLevels;
       }
     } else {
-      const { curriculumLevels } = await import('./curriculum');
       base = curriculumLevels;
     }
   }

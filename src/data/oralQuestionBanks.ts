@@ -286,5 +286,12 @@ export function getOralQuestionBank(levelId: string, studentType?: string): Oral
       ? 'adolescente'
       : 'adulto';
 
-  return (banks[audience][levelId] || []).map(([topic, question]) => ({ topic, question }));
+  const bank = banks[audience] || {};
+  const cleanId = levelId.replace(/^(adults|teens|kids)-/, '');
+  const prefix = audience === 'adolescente' ? 'teens-' : audience === 'niño' ? 'kids-' : 'adults-';
+  const prefixedId = `${prefix}${cleanId}`;
+
+  const tuples = bank[levelId] || bank[cleanId] || bank[prefixedId] || [];
+  return tuples.map(([topic, question]) => ({ topic, question }));
 }
+
