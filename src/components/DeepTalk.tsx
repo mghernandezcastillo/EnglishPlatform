@@ -18,7 +18,8 @@ import {
   CheckCircle2,
   Lock,
   Layers,
-  Award
+  Award,
+  PenTool
 } from 'lucide-react';
 import { deepTalkQuestions, DeepTalkQuestion, DeepTalkFragment } from '../data/deepTalkQuestions';
 import { playAudio } from '../lib/audio';
@@ -259,28 +260,40 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
             </div>
           </div>
 
-          {/* Level Switcher */}
-          <div className="flex items-center bg-slate-900/90 p-1 rounded-xl border border-white/10 shadow-inner">
+          {/* Right Controls: Notes & Level Switcher */}
+          <div className="flex items-center gap-2">
             <button
-              onClick={() => handleSwitchLevel('intermediate')}
-              className={`px-3 py-1 text-xs font-black rounded-lg transition-all ${
-                selectedLevel === 'intermediate'
-                  ? 'bg-gradient-to-r from-indigo-500 to-cyan-500 text-white shadow-md'
-                  : 'text-slate-400 hover:text-white'
-              }`}
+              onClick={() => window.dispatchEvent(new CustomEvent('toggle-teacher-notes'))}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-600/30 hover:bg-indigo-600/60 border border-indigo-500/40 text-xs font-bold transition-all text-indigo-200 hover:text-white shadow-sm hover:scale-105 active:scale-95"
+              title="Abrir cuaderno de notas del profesor"
             >
-              Intermedio (A2-B1)
+              <PenTool className="w-3.5 h-3.5 text-indigo-300" />
+              <span>Notas</span>
             </button>
-            <button
-              onClick={() => handleSwitchLevel('advanced')}
-              className={`px-3 py-1 text-xs font-black rounded-lg transition-all ${
-                selectedLevel === 'advanced'
-                  ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md'
-                  : 'text-slate-400 hover:text-white'
-              }`}
-            >
-              Avanzado (B2-C1)
-            </button>
+
+            {/* Level Switcher */}
+            <div className="flex items-center bg-slate-900/90 p-1 rounded-xl border border-white/10 shadow-inner">
+              <button
+                onClick={() => handleSwitchLevel('intermediate')}
+                className={`px-3 py-1 text-xs font-black rounded-lg transition-all ${
+                  selectedLevel === 'intermediate'
+                    ? 'bg-gradient-to-r from-indigo-500 to-cyan-500 text-white shadow-md'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                Intermedio (A2-B1)
+              </button>
+              <button
+                onClick={() => handleSwitchLevel('advanced')}
+                className={`px-3 py-1 text-xs font-black rounded-lg transition-all ${
+                  selectedLevel === 'advanced'
+                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                Avanzado (B2-C1)
+              </button>
+            </div>
           </div>
         </div>
       </header>

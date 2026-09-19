@@ -23,6 +23,25 @@ export function FloatingControls({ studentId, studentName }: FloatingControlsPro
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
   }, []);
 
+  useEffect(() => {
+    const handleToggleNotes = () => {
+      setIsScratchpadOpen(prev => !prev);
+      setIsVerbsOpen(false);
+      setIsWhNexusOpen(false);
+    };
+    const handleOpenNotes = () => {
+      setIsScratchpadOpen(true);
+      setIsVerbsOpen(false);
+      setIsWhNexusOpen(false);
+    };
+    window.addEventListener('toggle-teacher-notes', handleToggleNotes);
+    window.addEventListener('open-teacher-notes', handleOpenNotes);
+    return () => {
+      window.removeEventListener('toggle-teacher-notes', handleToggleNotes);
+      window.removeEventListener('open-teacher-notes', handleOpenNotes);
+    };
+  }, []);
+
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen().catch(err => {

@@ -743,8 +743,8 @@ export default function App() {
           />
         )}
       </Suspense>
-      {currentView !== 'missions' && currentView !== 'deep_talk' && <FloatingControls studentId={currentStudentId} studentName={progress.studentName} />}
-      {currentView !== 'missions' && currentView !== 'deep_talk' && <Suspense fallback={null}><GlobalAiAssistant /></Suspense>}
+      {currentView !== 'missions' && <FloatingControls studentId={currentStudentId} studentName={progress.studentName} />}
+      {currentView !== 'missions' && <Suspense fallback={null}><GlobalAiAssistant /></Suspense>}
     </div>
   );
 }
