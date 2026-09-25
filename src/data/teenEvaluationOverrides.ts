@@ -7,7 +7,7 @@ import imgTeenBirthday from '../assets/images/teens_birthday_party_1782771276209
 import imgTeenQuiz from '../assets/images/teens_c5_quiz1_1783004350357.jpg';
 
 type TeenEvaluationOverride = {
-  oralEvaluation?: OralQuestion[];
+  oralEvaluation: OralQuestion[];
   virtualEvaluation: VirtualQuestion[];
 };
 
@@ -39,6 +39,14 @@ function multipleChoice(
 
 const evaluationOverrides: Record<string, TeenEvaluationOverride> = {
   'teens-basic-1': {
+    oralEvaluation: [
+      { topic: 'PERSONALITY & FRIENDS', question: 'Describe a close friend or classmate. What personality traits do they have, and how do they act?' },
+      { topic: 'FOOD & HEALTHY CHOICES', question: 'What food and drinks do you usually choose, and why are they good for your daily energy? Use because.' },
+      { topic: 'SCHOOL & SUBJECTS', question: 'What subjects do you study, which one do you prefer, and what is your favorite day at school?' },
+      { topic: 'DAILY ROUTINES', question: 'Describe your daily routine using frequency adverbs (always, usually, sometimes) and sequence words (first, then, finally).' },
+      { topic: 'SPORTS & HOBBIES', question: 'What sports and hobbies do you enjoy? Explain using play, go, and do correctly.' },
+      { topic: 'WEATHER, CLOTHES & CITY', question: 'Describe the weather today and what you are wearing. Then describe how to reach a place in your city using next to or across from.' },
+    ],
     virtualEvaluation: [
       multipleChoice('teens-basic-1-v2-personality', 'Choose the correct sentence about personality.', ['Liam has a friendly personality.', 'Liam have a friendly personality.', 'Liam is have a friendly personality.'], 'Liam has a friendly personality.', 0),
       multipleChoice('teens-basic-1-v2-healthy-energy', 'Complete the reason: I drink water every day ___ it gives me good energy.', ['because', 'but', 'so that'], 'because', 1),
@@ -355,9 +363,7 @@ export function applyTeenEvaluationOverrides(levels: CurriculumLevel[]) {
   for (const level of levels) {
     const override = evaluationOverrides[level.id];
     if (!override) continue;
-    if (override.oralEvaluation) {
-      level.oralEvaluation = override.oralEvaluation;
-    }
+    level.oralEvaluation = override.oralEvaluation;
     level.virtualEvaluation = override.virtualEvaluation;
   }
 }

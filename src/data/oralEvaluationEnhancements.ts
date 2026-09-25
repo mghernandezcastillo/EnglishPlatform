@@ -14,7 +14,7 @@ const evaluationSelections: Record<string, Record<string, number[]>> = {
   },
   adolescente: {
     'teens-basic-zero': [0, 1, 3, 4, 5, 7, 10, 14],
-    'teens-basic-1': [0, 1, 2, 4, 8, 9, 11],
+    'teens-basic-1': [0, 1, 3, 4, 6, 7, 11],
     'teens-basic-2': [0, 1, 3, 5, 7, 9],
     'teens-basic-3': [0, 1, 2, 4, 5, 7, 9],
     'teens-basic-4': [0, 1, 2, 4, 7, 8, 9],
