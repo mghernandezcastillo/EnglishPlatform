@@ -38,6 +38,39 @@ function multipleChoice(
 }
 
 const evaluationOverrides: Record<string, TeenEvaluationOverride> = {
+  'teens-basic-1': {
+    oralEvaluation: [
+      { topic: 'PERSONALITY & FRIENDS', question: 'Describe a close friend or classmate. What personality traits do they have, and how do they act?' },
+      { topic: 'FOOD & HEALTHY CHOICES', question: 'What food and drinks do you usually choose, and why are they good for your daily energy? Use because.' },
+      { topic: 'SCHOOL & SUBJECTS', question: 'What subjects do you study, which one do you prefer, and what is your favorite day at school?' },
+      { topic: 'DAILY ROUTINES', question: 'Describe your daily routine using frequency adverbs (always, usually, sometimes) and sequence words (first, then, finally).' },
+      { topic: 'SPORTS & HOBBIES', question: 'What sports and hobbies do you enjoy? Explain using play, go, and do correctly.' },
+      { topic: 'WEATHER, CLOTHES & CITY', question: 'Describe the weather today and what you are wearing. Then describe how to reach a place in your city using next to or across from.' },
+    ],
+    virtualEvaluation: [
+      multipleChoice('teens-basic-1-v2-personality', 'Choose the correct sentence about personality.', ['Liam has a friendly personality.', 'Liam have a friendly personality.', 'Liam is have a friendly personality.'], 'Liam has a friendly personality.', 0),
+      multipleChoice('teens-basic-1-v2-healthy-energy', 'Complete the reason: I drink water every day ___ it gives me good energy.', ['because', 'but', 'so that'], 'because', 1),
+      multipleChoice('teens-basic-1-v2-feelings-reasons', "Complete the conversation: '___ are you excited?' 'Because tomorrow is the concert!'", ['Why', 'Where', 'Who'], 'Why', 2),
+      multipleChoice('teens-basic-1-v2-school-subjects', 'Choose the correct sentence about school preferences.', ['She prefers science because she likes experiments.', 'She prefer science because likes experiments.', 'She is prefer science for experiments.'], 'She prefers science because she likes experiments.', 3),
+      multipleChoice('teens-basic-1-v2-routines-frequency', 'Choose the correct sentence with a frequency adverb.', ['I usually wake up at seven in the morning.', 'I wake up usually at seven in the morning.', 'Usually I am wake up at seven.'], 'I usually wake up at seven in the morning.', 4),
+      multipleChoice('teens-basic-1-v2-sports-play-go-do', 'Complete the hobbies sentence: On weekends, we ___ soccer and ___ swimming.', ['play / go', 'do / play', 'go / make'], 'play / go', 5),
+      multipleChoice('teens-basic-1-v2-weather-clothes', 'It is cold and rainy today. What is Mateo wearing?', ['Mateo is wearing a warm jacket and boots.', 'Mateo wearing a warm jacket and boots.', 'Mateo wears is a jacket warm.'], 'Mateo is wearing a warm jacket and boots.', 0),
+      multipleChoice('teens-basic-1-v2-city-directions', 'Which sentence gives clear directions to the library?', ['Go straight and turn left; the library is next to the park.', 'Go straight turning left for library next.', 'Straight go and left turn near park.'], 'Go straight and turn left; the library is next to the park.', 1),
+      multipleChoice('teens-basic-1-v2-tech-support', 'Your tablet battery is at two percent. What should you do?', ['You should connect the charger.', 'You can to connect charger.', 'You should connecting the charger.'], 'You should connect the charger.', 2),
+      multipleChoice('teens-basic-1-v2-polite-requests', 'Which is the most polite way to ask for information about the trip?', ['Could you repeat the meeting time, please?', 'Repeat the time now.', 'What time is saying you?'], 'Could you repeat the meeting time, please?', 3),
+      multipleChoice('teens-basic-1-v2-invitations', "Your friend asks: 'Would you like to come to my house this afternoon?' How do you accept politely?", ['I would love to, thank you!', 'Yes, I like.', 'No want.'], 'I would love to, thank you!', 4),
+      {
+        id: 'teens-basic-1-v2-listening-routine-place',
+        type: 'listening',
+        question: 'Listen. Where does Leo meet his friends this afternoon?',
+        options: ['At the park across from the bakery.', 'At the school cafeteria.', 'At the bus station.'],
+        correctAnswer: 'At the park across from the bakery.',
+        audioText: 'Hi! I am Leo. Today it is sunny and warm, so I am wearing my favorite t-shirt and sneakers. In the afternoon, I meet my friends at the park across from the bakery to play soccer.',
+        imageUrl: imgTeenSports,
+      },
+    ],
+  },
+
   'teens-basic-2': {
     oralEvaluation: [
       { topic: 'ANIMALS & HOMES', question: 'Describe an animal and its habitat, then describe your room using there is/are and a place word.' },
