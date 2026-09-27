@@ -1645,182 +1645,201 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-zero-10",
-    "badgeName": "Family & Friends",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "0-10-1",
-        "term": "Help",
-        "translation": "Ayudar",
-        "ipa": "/help/",
-        "audioText": "Help. I help my parents at home.",
-        "example": "I help my parents at home.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-10-2",
-        "term": "Share",
-        "translation": "Compartir",
-        "ipa": "/ʃer/",
-        "audioText": "Share. We share snacks with my brother.",
-        "example": "We share snacks with my brother.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-10-3",
-        "term": "Visit",
-        "translation": "Visitar",
-        "ipa": "/ˈvɪzɪt/",
-        "audioText": "Visit. I visit my grandparents on Sunday.",
-        "example": "I visit my grandparents on Sunday.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-10-4",
-        "term": "Care",
-        "translation": "Cuidar / Importar",
-        "ipa": "/ker/",
-        "audioText": "Care. We care for each other.",
-        "example": "We care for each other.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-10-5",
-        "term": "Love",
-        "translation": "Amar / Querer",
-        "ipa": "/lʌv/",
-        "audioText": "Love. I love my family deeply.",
-        "example": "I love my family deeply.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-10-6",
-        "term": "My brother",
-        "translation": "Usa 'his' para hombres y 'her' para mujeres.",
-        "ipa": "/my/",
-        "audioText": "This is my brother. His name is Mateo and he is fifteen years old.",
-        "example": "This is my brother. His name is Mateo and he is fifteen years old.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "0-10-7",
-        "term": "Our family",
-        "translation": "Our = de nosotros | Their = de ellos.",
-        "ipa": "/our/",
-        "audioText": "Our family loves gathering for traditional barbecue on Sundays.",
-        "example": "Our family loves gathering for traditional barbecue on Sundays.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "0-10-b1",
-        "prompt": "Este es mi hermano y su nombre es Mateo.",
-        "answer": "This is my brother and his name is Mateo",
-        "tokens": [
-          "This",
-          "is",
-          "my",
-          "brother",
-          "and",
-          "his",
-          "name",
-          "Mateo",
-          "sister",
-          "favorite"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "0-10-b2",
-        "prompt": "Ella no es mi hermana ella es mi prima favorita.",
-        "answer": "She is not my sister she is my favorite cousin",
-        "tokens": [
-          "She",
-          "is",
-          "not",
-          "my",
-          "sister",
-          "she",
-          "favorite",
-          "cousin",
-          "This",
-          "brother"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "0-10-b3",
-        "prompt": "¿Es ese chico alto con gorra tu hermano mayor?",
-        "answer": "Is that tall boy with the cap your older brother",
-        "tokens": [
-          "Is",
-          "that",
-          "tall",
-          "boy",
-          "with",
-          "the",
-          "cap",
-          "your",
-          "older",
-          "brother",
-          "This",
-          "name"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "0-10-e1",
-        "audioText": "My best friend is Sofia.",
-        "correctAnswer": "My best friend is Sofia.",
-        "options": [
-          "My best friend is Sofia.",
-          "Her favorite hobby is playing the acoustic guitar and our dream is to form a musical band together.",
-          "This is my brother and his name is Mateo."
-        ]
-      },
-      {
-        "id": "0-10-e2",
-        "audioText": "Her favorite hobby is playing the acoustic guitar and our dream is to form a musical band together.",
-        "correctAnswer": "Her favorite hobby is playing the acoustic guitar and our dream is to form a musical band together.",
-        "options": [
-          "This is my brother and his name is Mateo.",
-          "Her favorite hobby is playing the acoustic guitar and our dream is to form a musical band together.",
-          "She is not my sister she is my favorite cousin."
-        ]
-      },
-      {
-        "id": "0-10-e3",
-        "audioText": "This is my brother and his name is Mateo.",
-        "correctAnswer": "This is my brother and his name is Mateo.",
-        "options": [
-          "Is that tall boy with the cap your older brother?",
-          "She is not my sister she is my favorite cousin.",
-          "This is my brother and his name is Mateo."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-zero-10",
+      "badgeName": "Room Tour Architect",
+      "badgeEmoji": "🏠",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "z10-1",
+              "term": "Desk",
+              "translation": "escritorio de estudio",
+              "ipa": "/dɛsk/",
+              "audioText": "desk. My laptop and notebooks are on the study desk.",
+              "example": "My laptop and notebooks are on the study desk.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z10-2",
+              "term": "Next to",
+              "translation": "al lado de",
+              "ipa": "/nɛkst tuː/",
+              "audioText": "next to. The nightstand is next to the bed.",
+              "example": "The nightstand is next to the bed.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z10-3",
+              "term": "Under",
+              "translation": "debajo de",
+              "ipa": "/ˈʌndər/",
+              "audioText": "under. My skateboard and sneakers are under the bed.",
+              "example": "My skateboard and sneakers are under the bed.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z10-4",
+              "term": "Behind",
+              "translation": "detrás de",
+              "ipa": "/bɪˈhaɪnd/",
+              "audioText": "behind. My school backpack is behind the bedroom door.",
+              "example": "My school backpack is behind the bedroom door.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z10-5",
+              "term": "In front of",
+              "translation": "en frente de / delante de",
+              "ipa": "/ɪn frʌnt əv/",
+              "audioText": "in front of. The chair is in front of the computer desk.",
+              "example": "The chair is in front of the computer desk.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z10-6",
+              "term": "There is",
+              "translation": "hay (un solo objeto)",
+              "ipa": "/ðɛər ɪz/",
+              "audioText": "there is. There is a comfortable bed next to the window.",
+              "example": "There is a comfortable bed next to the window.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z10-7",
+              "term": "There are",
+              "translation": "hay (varios objetos)",
+              "ipa": "/ðɛər ɑːr/",
+              "audioText": "there are. There are two soft pillows on the bed.",
+              "example": "There are two soft pillows on the bed.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z10-8",
+              "term": "Wardrobe",
+              "translation": "armario o clóset de ropa",
+              "ipa": "/ˈwɔːrdroʊb/",
+              "audioText": "wardrobe. Sofia hangs her jacket inside the wooden wardrobe.",
+              "example": "Sofia hangs her jacket inside the wooden wardrobe.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "z10-b1",
+              "targetSentence": "There is a new white desk next to the window.",
+              "scrambledTokens": [
+                  "There",
+                  "is",
+                  "a",
+                  "new",
+                  "white",
+                  "desk",
+                  "next",
+                  "to",
+                  "the",
+                  "window.",
+                  "are",
+                  "under"
+              ],
+              "hints": [
+                  "Empieza con 'There is a new...'.",
+                  "Preposición de proximidad 'next to the window'."
+              ]
+          },
+          {
+              "id": "z10-b2",
+              "targetSentence": "My laptop is on the desk and my headphones are on the wall.",
+              "scrambledTokens": [
+                  "My",
+                  "laptop",
+                  "is",
+                  "on",
+                  "the",
+                  "desk",
+                  "and",
+                  "my",
+                  "headphones",
+                  "are",
+                  "on",
+                  "the",
+                  "wall.",
+                  "behind",
+                  "is"
+              ],
+              "hints": [
+                  "Laptop sobre el escritorio: 'is on the desk'.",
+                  "Audífonos plural: 'headphones are on the wall'."
+              ]
+          },
+          {
+              "id": "z10-b3",
+              "targetSentence": "My skateboard is under the bed and my sneakers are in front of the wardrobe.",
+              "scrambledTokens": [
+                  "My",
+                  "skateboard",
+                  "is",
+                  "under",
+                  "the",
+                  "bed",
+                  "and",
+                  "my",
+                  "sneakers",
+                  "are",
+                  "in",
+                  "front",
+                  "of",
+                  "the",
+                  "wardrobe.",
+                  "next",
+                  "behind"
+              ],
+              "hints": [
+                  "Debajo de la cama: 'under the bed'.",
+                  "Enfrente del armario: 'in front of the wardrobe'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "z10-e1",
+              "audioText": "Welcome to my room! There is a comfortable bed next to the window.",
+              "correctAnswer": "Welcome to my room! There is a comfortable bed next to the window.",
+              "options": [
+                  "Welcome to my room! There is a comfortable bed next to the window.",
+                  "Students eat delicious breakfast sandwiches before starting soccer practice.",
+                  "I play competitive video games with my squad on Saturday afternoon."
+              ]
+          },
+          {
+              "id": "z10-e2",
+              "audioText": "My laptop is on the desk, but my gaming headphones are under the bed.",
+              "correctAnswer": "My laptop is on the desk, but my gaming headphones are under the bed.",
+              "options": [
+                  "My laptop is on the desk, but my gaming headphones are under the bed.",
+                  "Can you lend me your colored markers for our geography project presentation?",
+                  "We buy ten red apples and artisan cheese at the neighborhood supermarket."
+              ]
+          },
+          {
+              "id": "z10-e3",
+              "audioText": "There are also cool anime posters on the wall!",
+              "correctAnswer": "There are also cool anime posters on the wall!",
+              "options": [
+                  "There are also cool anime posters on the wall!",
+                  "Teens do not watch horror movies late at night before school.",
+                  "My older brother rides his bicycle along the main avenue every Sunday."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-zero-11",
@@ -2183,186 +2202,196 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-zero-13",
-    "badgeName": "Clothes, Personal Style & Streetwear",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "0-13-1",
-        "term": "Wear",
-        "translation": "Llevar puesto / Vestir",
-        "ipa": "/wer/",
-        "audioText": "Wear. I am wearing a warm hoodie.",
-        "example": "I am wearing a warm hoodie.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-13-2",
-        "term": "Choose",
-        "translation": "Elegir / Escoger ropa",
-        "ipa": "/tʃuːz/",
-        "audioText": "Choose. She chose the red jacket.",
-        "example": "She chose the red jacket.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-13-3",
-        "term": "Match",
-        "translation": "Combinar / Hacer juego",
-        "ipa": "/mætʃ/",
-        "audioText": "Match. Your sneakers match your cap.",
-        "example": "Your sneakers match your cap.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-13-4",
-        "term": "Buy",
-        "translation": "Comprar ropa",
-        "ipa": "/baɪ/",
-        "audioText": "Buy. I bought cool skate shoes.",
-        "example": "I bought cool skate shoes.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-13-5",
-        "term": "Put on",
-        "translation": "Ponerse una prenda",
-        "ipa": "/pʊt ɑːn/",
-        "audioText": "Put on. Put on your jacket; it is cold.",
-        "example": "Put on your jacket; it is cold.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-13-6",
-        "term": "I am wearing a black hoodie",
-        "translation": "Sujeto + am/is/are + wearing + [Color] + [Prenda].",
-        "ipa": "/i/",
-        "audioText": "I am wearing an oversized black hoodie and comfortable white sneakers.",
-        "example": "I am wearing an oversized black hoodie and comfortable white sneakers.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "0-13-7",
-        "term": "Blue jeans (jeans)",
-        "translation": "NO llevan 'a' ni 'an' porque son plurales.",
-        "ipa": "/blue/",
-        "audioText": "My friend Mateo is wearing dark blue jeans and black sunglasses.",
-        "example": "My friend Mateo is wearing dark blue jeans and black sunglasses.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "0-13-b1",
-        "prompt": "Yo llevo puesto un buzo negro y tenis blancos cómodos.",
-        "answer": "I am wearing a black hoodie and comfortable white sneakers",
-        "tokens": [
-          "I",
-          "am",
-          "wearing",
-          "a",
-          "black",
-          "hoodie",
-          "and",
-          "comfortable",
-          "white",
-          "sneakers",
-          "formal",
-          "school"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "0-13-b2",
-        "prompt": "Yo no llevo puesto uniforme escolar formal los fines de semana.",
-        "answer": "I am not wearing a formal school uniform on weekends",
-        "tokens": [
-          "I",
-          "am",
-          "not",
-          "wearing",
-          "a",
-          "formal",
-          "school",
-          "uniform",
-          "on",
-          "weekends",
-          "black",
-          "hoodie"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "0-13-b3",
-        "prompt": "¿Qué ropa llevas puesta tú para ir a la fiesta hoy?",
-        "answer": "What clothes are you wearing to go to the party today",
-        "tokens": [
-          "What",
-          "clothes",
-          "are",
-          "you",
-          "wearing",
-          "to",
-          "go",
-          "the",
-          "party",
-          "today",
-          "black",
-          "hoodie"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "0-13-e1",
-        "audioText": "Today I am wearing a comfortable grey hoodie, dark blue jeans, and my favorite white athletic sneakers.",
-        "correctAnswer": "Today I am wearing a comfortable grey hoodie, dark blue jeans, and my favorite white athletic sneakers.",
-        "options": [
-          "Today I am wearing a comfortable grey hoodie, dark blue jeans, and my favorite white athletic sneakers.",
-          "I am wearing a black hoodie and comfortable white sneakers.",
-          "I am not wearing a formal school uniform on weekends."
-        ]
-      },
-      {
-        "id": "0-13-e2",
-        "audioText": "I am wearing a black hoodie and comfortable white sneakers.",
-        "correctAnswer": "I am wearing a black hoodie and comfortable white sneakers.",
-        "options": [
-          "I am not wearing a formal school uniform on weekends.",
-          "I am wearing a black hoodie and comfortable white sneakers.",
-          "What clothes are you wearing to go to the party today?"
-        ]
-      },
-      {
-        "id": "0-13-e3",
-        "audioText": "I am not wearing a formal school uniform on weekends.",
-        "correctAnswer": "I am not wearing a formal school uniform on weekends.",
-        "options": [
-          "I am not wearing a formal evening uniform on weekends.",
-          "What clothes are you wearing to go to the party today?",
-          "I am not wearing a formal school uniform on weekends."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-zero-13",
+      "badgeName": "Weather Forecaster Pro",
+      "badgeEmoji": "⛅",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "z13-1",
+              "term": "Sunny",
+              "translation": "soleado con cielo despejado",
+              "ipa": "/ˈsʌni/",
+              "audioText": "sunny. Today the weather is sunny and warm.",
+              "example": "Today the weather is sunny and warm.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z13-2",
+              "term": "Rainy",
+              "translation": "lluvioso o con llovizna",
+              "ipa": "/ˈreɪni/",
+              "audioText": "rainy. It is a rainy afternoon in the city.",
+              "example": "It is a rainy afternoon in the city.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z13-3",
+              "term": "Cloudy",
+              "translation": "nublado con nubes grises",
+              "ipa": "/ˈklaʊdi/",
+              "audioText": "cloudy. The sky is dark and cloudy before the storm.",
+              "example": "The sky is dark and cloudy before the storm.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z13-4",
+              "term": "Windy",
+              "translation": "ventoso o con brisa fuerte",
+              "ipa": "/ˈwɪndi/",
+              "audioText": "windy. It is very windy in the high mountains.",
+              "example": "It is very windy in the high mountains.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z13-5",
+              "term": "Umbrella",
+              "translation": "sombrilla para la lluvia",
+              "ipa": "/ʌmˈbrɛlə/",
+              "audioText": "umbrella. Never leave home without an umbrella in Bogotá.",
+              "example": "Never leave home without an umbrella in Bogotá.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z13-6",
+              "term": "Forecast",
+              "translation": "pronóstico del clima en la app",
+              "ipa": "/ˈfɔːrkæst/",
+              "audioText": "forecast. The weather forecast says it will rain at three.",
+              "example": "The weather forecast says it will rain at three.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z13-7",
+              "term": "Warm",
+              "translation": "cálido y agradable",
+              "ipa": "/wɔːrm/",
+              "audioText": "warm. It is sunny and warm, ideal for the pool.",
+              "example": "It is sunny and warm, ideal for the pool.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z13-8",
+              "term": "Waterproof jacket",
+              "translation": "chaqueta impermeable",
+              "ipa": "/ˈwɔːtərpruːf ˈdʒækɪt/",
+              "audioText": "waterproof jacket. Teens wear waterproof jackets to ride bikes in the rain.",
+              "example": "Teens wear waterproof jackets to ride bikes in the rain.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "z13-b1",
+              "targetSentence": "What is the weather like right now in your neighborhood?",
+              "scrambledTokens": [
+                  "What",
+                  "is",
+                  "the",
+                  "weather",
+                  "like",
+                  "right",
+                  "now",
+                  "in",
+                  "your",
+                  "neighborhood?",
+                  "how",
+                  "likes"
+              ],
+              "hints": [
+                  "Pregunta con 'What is the weather like...'.",
+                  "Termina con 'in your neighborhood?'."
+              ]
+          },
+          {
+              "id": "z13-b2",
+              "targetSentence": "Right now it is sunny and warm but dark clouds are coming.",
+              "scrambledTokens": [
+                  "Right",
+                  "now",
+                  "it",
+                  "is",
+                  "sunny",
+                  "and",
+                  "warm",
+                  "but",
+                  "dark",
+                  "clouds",
+                  "are",
+                  "coming.",
+                  "rain",
+                  "hot"
+              ],
+              "hints": [
+                  "Clima actual: 'it is sunny and warm'.",
+                  "Contraste con 'but dark clouds are coming'."
+              ]
+          },
+          {
+              "id": "z13-b3",
+              "targetSentence": "Do not forget to take your waterproof jacket and an umbrella.",
+              "scrambledTokens": [
+                  "Do",
+                  "not",
+                  "forget",
+                  "to",
+                  "take",
+                  "your",
+                  "waterproof",
+                  "jacket",
+                  "and",
+                  "an",
+                  "umbrella.",
+                  "a",
+                  "takes"
+              ],
+              "hints": [
+                  "Instrucción preventiva: 'Do not forget to take...'.",
+                  "Usa 'an umbrella' con vocal."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "z13-e1",
+              "audioText": "Good morning! What is the weather like today in our city?",
+              "correctAnswer": "Good morning! What is the weather like today in our city?",
+              "options": [
+                  "Good morning! What is the weather like today in our city?",
+                  "We prepare cheese sandwiches and fresh fruit juice for breakfast.",
+                  "My friends play basketball in the sports arena every Thursday."
+              ]
+          },
+          {
+              "id": "z13-e2",
+              "audioText": "Right now it is sunny and warm, but the forecast says it will be rainy.",
+              "correctAnswer": "Right now it is sunny and warm, but the forecast says it will be rainy.",
+              "options": [
+                  "Right now it is sunny and warm, but the forecast says it will be rainy.",
+                  "Can you lend me your dictionary for my English translation exam?",
+                  "Sofia cleans her bedroom and organizes her books on the shelf."
+              ]
+          },
+          {
+              "id": "z13-e3",
+              "audioText": "Do not forget to take your waterproof jacket and an umbrella when you leave for school!",
+              "correctAnswer": "Do not forget to take your waterproof jacket and an umbrella when you leave for school!",
+              "options": [
+                  "Do not forget to take your waterproof jacket and an umbrella when you leave for school!",
+                  "Students do not watch horror movies late at night before exams.",
+                  "My brother rides his electric scooter along the green bike path."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-zero-14",
@@ -2541,186 +2570,192 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-zero-15",
-    "badgeName": "Basic Daily Routine & Clock Time",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "0-15-1",
-        "term": "Wake up",
-        "translation": "Despertarse",
-        "ipa": "/weɪk ʌp/",
-        "audioText": "Wake up. I wake up at 6:30 AM.",
-        "example": "I wake up at 6:30 AM.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-15-2",
-        "term": "Have",
-        "translation": "Tomar comida (have breakfast/lunch)",
-        "ipa": "/hæv/",
-        "audioText": "Have. I have breakfast with my mom.",
-        "example": "I have breakfast with my mom.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-15-3",
-        "term": "Go",
-        "translation": "Ir al colegio / a la cama",
-        "ipa": "/ɡoʊ/",
-        "audioText": "Go. I go to school by bus.",
-        "example": "I go to school by bus.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-15-4",
-        "term": "Finish",
-        "translation": "Terminar tareas",
-        "ipa": "/ˈfɪnɪʃ/",
-        "audioText": "Finish. I finish homework early.",
-        "example": "I finish homework early.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-15-5",
-        "term": "Relax",
-        "translation": "Relajarse / Descansar",
-        "ipa": "/rɪˈlæks/",
-        "audioText": "Relax. I relax and play video games.",
-        "example": "I relax and play video games.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "0-15-6",
-        "term": "I wake up at 6:00 AM",
-        "translation": "Sujeto + Verbo de rutina en presente + at [Hora].",
-        "ipa": "/i/",
-        "audioText": "I wake up at 6:30 AM every morning and take a refreshing shower.",
-        "example": "I wake up at 6:30 AM every morning and take a refreshing shower.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "0-15-7",
-        "term": "He wakes up early",
-        "translation": "Agrega -s o -es al verbo (have ➔ has, go ➔ goes, do ➔ does).",
-        "ipa": "/he/",
-        "audioText": "My sister has lunch at 1:30 PM and finishes her homework in the afternoon.",
-        "example": "My sister has lunch at 1:30 PM and finishes her homework in the afternoon.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "0-15-b1",
-        "prompt": "Yo me despierto a las seis y media y tomo un desayuno delicioso.",
-        "answer": "I wake up at six thirty and have a delicious breakfast",
-        "tokens": [
-          "I",
-          "wake",
-          "up",
-          "at",
-          "six",
-          "thirty",
-          "and",
-          "have",
-          "a",
-          "delicious",
-          "breakfast",
-          "stay",
-          "late"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "0-15-b2",
-        "prompt": "Yo no me quedo despierto hasta tarde en noches de colegio.",
-        "answer": "I do not stay up late on school nights",
-        "tokens": [
-          "I",
-          "do",
-          "not",
-          "stay",
-          "up",
-          "late",
-          "on",
-          "school",
-          "nights",
-          "wake",
-          "thirty"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "0-15-b3",
-        "prompt": "¿A qué hora te vas a dormir tú usualmente los domingos?",
-        "answer": "What time do you usually go to sleep on Sundays",
-        "tokens": [
-          "What",
-          "time",
-          "do",
-          "you",
-          "usually",
-          "go",
-          "to",
-          "sleep",
-          "on",
-          "Sundays",
-          "wake",
-          "thirty"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "0-15-e1",
-        "audioText": "On school days, I wake up at 6:30 AM, attend classes until 2:30 PM, and have dinner with my family at 7:30 PM.",
-        "correctAnswer": "On school days, I wake up at 6:30 AM, attend classes until 2:30 PM, and have dinner with my family at 7:30 PM.",
-        "options": [
-          "On school days, I wake up at 6:30 AM, attend classes until 2:30 PM, and have dinner with my family at 7:30 PM.",
-          "I wake up at six thirty and have a delicious breakfast.",
-          "I do not stay up late on school nights."
-        ]
-      },
-      {
-        "id": "0-15-e2",
-        "audioText": "I wake up at six thirty and have a delicious breakfast.",
-        "correctAnswer": "I wake up at six thirty and have a delicious breakfast.",
-        "options": [
-          "I do not stay up late on school nights.",
-          "I wake up at six thirty and have a delicious breakfast.",
-          "What time do you usually go to sleep on Sundays?"
-        ]
-      },
-      {
-        "id": "0-15-e3",
-        "audioText": "I do not stay up late on school nights.",
-        "correctAnswer": "I do not stay up late on school nights.",
-        "options": [
-          "I do not stay up late on evening nights.",
-          "What time do you usually go to sleep on Sundays?",
-          "I do not stay up late on school nights."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-zero-15",
+      "badgeName": "Appearance Profile Master",
+      "badgeEmoji": "🧑‍🦱",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "z15-1",
+              "term": "Tall",
+              "translation": "alto de estatura",
+              "ipa": "/tɔːl/",
+              "audioText": "tall. My older brother is very tall.",
+              "example": "My older brother is very tall.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z15-2",
+              "term": "Athletic",
+              "translation": "de contextura atlética y deportiva",
+              "ipa": "/æθˈlɛtɪk/",
+              "audioText": "athletic. Daniel is tall and athletic because he plays basketball.",
+              "example": "Daniel is tall and athletic because he plays basketball.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z15-3",
+              "term": "Curly hair",
+              "translation": "cabello crespo o rizado",
+              "ipa": "/ˈkɜːrli hɛər/",
+              "audioText": "curly hair. Sofia has beautiful long curly hair.",
+              "example": "Sofia has beautiful long curly hair.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z15-4",
+              "term": "Straight hair",
+              "translation": "cabello liso",
+              "ipa": "/streɪt hɛər/",
+              "audioText": "straight hair. Mateo has short straight black hair.",
+              "example": "Mateo has short straight black hair.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z15-5",
+              "term": "Wears glasses",
+              "translation": "lleva puestas gafas o lentes",
+              "ipa": "/wɛərz ˈɡlæsɪz/",
+              "audioText": "wears glasses. He wears black glasses when he reads English books.",
+              "example": "He wears black glasses when he reads English books.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z15-6",
+              "term": "Friendly smile",
+              "translation": "sonrisa amigable y cálida",
+              "ipa": "/ˈfrɛndli smaɪl/",
+              "audioText": "friendly smile. Andrea always has a friendly smile on her face.",
+              "example": "Andrea always has a friendly smile on her face.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z15-7",
+              "term": "Brown eyes",
+              "translation": "ojos café o castaños",
+              "ipa": "/braʊn aɪz/",
+              "audioText": "brown eyes. Most teens in our school have dark brown eyes.",
+              "example": "Most teens in our school have dark brown eyes.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "z15-8",
+              "term": "Look like",
+              "translation": "verse o lucir físicamente",
+              "ipa": "/lʊk laɪk/",
+              "audioText": "look like. What does the new basketball coach look like?",
+              "example": "What does the new basketball coach look like?",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "z15-b1",
+              "targetSentence": "He is tall and athletic because he plays basketball.",
+              "scrambledTokens": [
+                  "He",
+                  "is",
+                  "tall",
+                  "and",
+                  "athletic",
+                  "because",
+                  "he",
+                  "plays",
+                  "basketball.",
+                  "has",
+                  "are"
+              ],
+              "hints": [
+                  "Estatura con 'He is tall...'.",
+                  "Razón con 'because he plays basketball.'."
+              ]
+          },
+          {
+              "id": "z15-b2",
+              "targetSentence": "He has short curly black hair and dark brown eyes.",
+              "scrambledTokens": [
+                  "He",
+                  "has",
+                  "short",
+                  "curly",
+                  "black",
+                  "hair",
+                  "and",
+                  "dark",
+                  "brown",
+                  "eyes.",
+                  "is",
+                  "have"
+              ],
+              "hints": [
+                  "Posesión de rasgos con 'He has...'.",
+                  "Orden: short curly black hair."
+              ]
+          },
+          {
+              "id": "z15-b3",
+              "targetSentence": "He wears black glasses and always has a friendly smile.",
+              "scrambledTokens": [
+                  "He",
+                  "wears",
+                  "black",
+                  "glasses",
+                  "and",
+                  "always",
+                  "has",
+                  "a",
+                  "friendly",
+                  "smile.",
+                  "uses",
+                  "is"
+              ],
+              "hints": [
+                  "Usa gafas: 'He wears black glasses'.",
+                  "Sonrisa: 'and always has a friendly smile.'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "z15-e1",
+              "audioText": "Let me introduce my friend Daniel. He is tall and athletic.",
+              "correctAnswer": "Let me introduce my friend Daniel. He is tall and athletic.",
+              "options": [
+                  "Let me introduce my friend Daniel. He is tall and athletic.",
+                  "We take the yellow school bus at seven in the morning.",
+                  "Today the weather forecast says it will rain heavily."
+              ]
+          },
+          {
+              "id": "z15-e2",
+              "audioText": "He has short curly black hair and dark brown eyes.",
+              "correctAnswer": "He has short curly black hair and dark brown eyes.",
+              "options": [
+                  "He has short curly black hair and dark brown eyes.",
+                  "My bedroom has a comfortable study desk next to the window.",
+                  "Teens do not drink soda before playing soccer matches."
+              ]
+          },
+          {
+              "id": "z15-e3",
+              "audioText": "He also wears black glasses when he studies and has a friendly smile.",
+              "correctAnswer": "He also wears black glasses when he studies and has a friendly smile.",
+              "options": [
+                  "He also wears black glasses when he studies and has a friendly smile.",
+                  "Can you buy an avocado and some fresh cheese at the grocery store?",
+                  "Students organize their colored markers inside the blue pencil case."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-zero-16",
@@ -3447,731 +3482,741 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-1-4",
-    "badgeName": "Academic Explorer",
-    "badgeEmoji": "🎓",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "1-4-1",
-        "term": "Learn",
-        "translation": "aprender materias",
-        "ipa": "/learn/",
-        "audioText": "learn. We learn exciting science facts in class.",
-        "example": "We learn exciting science facts in class.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-4-2",
-        "term": "Solve",
-        "translation": "resolver problemas y retos",
-        "ipa": "/solve/",
-        "audioText": "solve. I solve complex math equations with my team.",
-        "example": "I solve complex math equations with my team.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-4-3",
-        "term": "Present",
-        "translation": "exponer proyectos",
-        "ipa": "/present/",
-        "audioText": "present. We present our biology poster to the class.",
-        "example": "We present our biology poster to the class.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-4-4",
-        "term": "Memorize",
-        "translation": "memorizar conceptos",
-        "ipa": "/memorize/",
-        "audioText": "memorize. I memorize key vocabulary with flashcards.",
-        "example": "I memorize key vocabulary with flashcards.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-4-5",
-        "term": "Attend",
-        "translation": "asistir a clases y clubes",
-        "ipa": "/attend/",
-        "audioText": "attend. We attend robotics club on Tuesday.",
-        "example": "We attend robotics club on Tuesday.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-4-6",
-        "term": "I / We + love / enjoy + [Subject]",
-        "translation": "Verbos de preferencia en forma base con primera persona",
-        "ipa": "/i/",
-        "audioText": "I love Biology and Science because we do real experiments in the lab.",
-        "example": "I love Biology and Science because we do real experiments in the lab.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "1-4-7",
-        "term": "He / She + enjoys / prefers...",
-        "translation": "Verbos con '-s' (likes, enjoys, prefers) con He/She",
-        "ipa": "/he/",
-        "audioText": "Carlos prefers Geometry and Math because he loves solving logical puzzles.",
-        "example": "Carlos prefers Geometry and Math because he loves solving logical puzzles.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "1-4-b1",
-        "prompt": "Me encanta Informática porque construimos videojuegos geniales.'",
-        "answer": "I love Computer Science because we build awesome video games",
-        "tokens": [
-          "I",
-          "love",
-          "Computer",
-          "Science",
-          "because",
-          "we",
-          "build",
-          "awesome",
-          "video",
-          "games",
-          "like",
-          "History"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "1-4-b2",
-        "prompt": "No me gusta Historia porque memorizar fechas es difícil.'",
-        "answer": "I don t like History because memorizing dates is hard",
-        "tokens": [
-          "I",
-          "don",
-          "t",
-          "like",
-          "History",
-          "because",
-          "memorizing",
-          "dates",
-          "is",
-          "hard",
-          "love",
-          "Computer"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "1-4-b3",
-        "prompt": "¿Tienen laboratorio de Física el jueves por la mañana?'",
-        "answer": "Do you have Physics lab on Thursday morning",
-        "tokens": [
-          "Do",
-          "you",
-          "have",
-          "Physics",
-          "lab",
-          "on",
-          "Thursday",
-          "morning",
-          "love",
-          "Computer"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "1-4-e1",
-        "audioText": "My absolute favorite subject this semester is Computer Science because we learn how to code video games in the main computer lab on Wednesday mornings.",
-        "correctAnswer": "My absolute favorite subject this semester is Computer Science because we learn how to code video games in the main computer lab on Wednesday mornings.",
-        "options": [
-          "My absolute favorite subject this semester is Computer Science because we learn how to code video games in the main computer lab on Wednesday mornings.",
-          "Look at our new schedule! We have Computer Science on Wednesday morning!",
-          "Awesome! I love Computer Science because we code cool games in the lab."
-        ]
-      },
-      {
-        "id": "1-4-e2",
-        "audioText": "Look at our new schedule! We have Computer Science on Wednesday morning!",
-        "correctAnswer": "Look at our new schedule! We have Computer Science on Wednesday morning!",
-        "options": [
-          "Awesome! I love Computer Science because we code cool games in the lab.",
-          "Look at our new schedule! We have Computer Science on Wednesday morning!",
-          "And what about History? I don't like memorizing dates, but the teacher is fun."
-        ]
-      },
-      {
-        "id": "1-4-e3",
-        "audioText": "Awesome! I love Computer Science because we code cool games in the lab.",
-        "correctAnswer": "Awesome! I love Computer Science because we code cool games in the lab.",
-        "options": [
-          "Same! But we have PE right after recess on Friday, which is the best.",
-          "And what about History? I don't like memorizing dates, but the teacher is fun.",
-          "Awesome! I love Computer Science because we code cool games in the lab."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-1-4",
+      "badgeName": "Campus Schedule Master",
+      "badgeEmoji": "📚",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "1-4-1",
+              "term": "Start",
+              "translation": "empezar / dar inicio la clase",
+              "ipa": "/stɑːrt/",
+              "audioText": "start. Our first morning period starts at seven thirty sharp.",
+              "example": "Our first morning period starts at seven thirty sharp.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-4-2",
+              "term": "Finish",
+              "translation": "terminar / concluir la jornada",
+              "ipa": "/ˈfɪnɪʃ/",
+              "audioText": "finish. Students finish their chemistry quiz before the bell rings.",
+              "example": "Students finish their chemistry quiz before the bell rings.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-4-3",
+              "term": "Meet",
+              "translation": "reunirse / encontrarse con compañeros",
+              "ipa": "/miːt/",
+              "audioText": "meet. We meet in the central courtyard to eat lunch together.",
+              "example": "We meet in the central courtyard to eat lunch together.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-4-4",
+              "term": "Explain",
+              "translation": "explicar un concepto o lección",
+              "ipa": "/ɪkˈspleɪn/",
+              "audioText": "explain. The science teacher explains formulas with real experiments.",
+              "example": "The science teacher explains formulas with real experiments.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-4-5",
+              "term": "Attend",
+              "translation": "asistir a clase o taller",
+              "ipa": "/əˈtɛnd/",
+              "audioText": "attend. Valentina attends the robotics workshop every Tuesday.",
+              "example": "Valentina attends the robotics workshop every Tuesday.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-4-6",
+              "term": "WH- Questions inician con palabra interrogativa + DO / DOES + sujeto + verbo base.",
+              "translation": "Paso 1: Regla de Oro ⭐",
+              "ipa": "/wh-question/",
+              "audioText": "What time does your first morning class start at school?",
+              "example": "What time does your first morning class start at school?",
+              "type": "grammar",
+              "learned": false
+          },
+          {
+              "id": "1-4-7",
+              "term": "Con DOES (he/she/it), el verbo principal pierde la -s: 'Where does he study?'.",
+              "translation": "Paso 2: WH- con DOES",
+              "ipa": "/does/",
+              "audioText": "Where does the teacher leave the laboratory keys?",
+              "example": "Where does the teacher leave the laboratory keys?",
+              "type": "grammar",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "1-4-b1",
+              "prompt": "Los estudiantes se reúnen en el laboratorio de ciencias todos los martes a las ocho.",
+              "answer": "Students meet in the science laboratory every Tuesday at eight",
+              "tokens": [
+                  "Students",
+                  "meet",
+                  "in",
+                  "the",
+                  "science",
+                  "laboratory",
+                  "every",
+                  "Tuesday",
+                  "at",
+                  "eight",
+                  "starts",
+                  "finishes"
+              ],
+              "hints": [
+                  "Inicia con el sujeto 'Students meet in...'.",
+                  "Termina con el horario 'every Tuesday at eight'."
+              ]
+          },
+          {
+              "id": "1-4-b2",
+              "prompt": "Diego no almuerza en la cafetería concurrida porque es muy ruidosa.",
+              "answer": "Diego does not eat lunch in the crowded cafeteria because it is noisy",
+              "tokens": [
+                  "Diego",
+                  "does",
+                  "not",
+                  "eat",
+                  "lunch",
+                  "in",
+                  "the",
+                  "crowded",
+                  "cafeteria",
+                  "because",
+                  "it",
+                  "is",
+                  "noisy",
+                  "do",
+                  "meets"
+              ],
+              "hints": [
+                  "Usa 'does not eat' para la tercera persona Diego.",
+                  "Explica la razón con 'because it is noisy'."
+              ]
+          },
+          {
+              "id": "1-4-b3",
+              "prompt": "¿A qué hora empieza tu clase de química los jueves por la mañana?",
+              "answer": "What time does your chemistry class start on Thursday morning",
+              "tokens": [
+                  "What",
+                  "time",
+                  "does",
+                  "your",
+                  "chemistry",
+                  "class",
+                  "start",
+                  "on",
+                  "Thursday",
+                  "morning",
+                  "do",
+                  "starts"
+              ],
+              "hints": [
+                  "Inicia con la pregunta de hora 'What time does...'.",
+                  "El verbo 'start' va en forma base sin -s."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "1-4-e1",
+              "audioText": "Our morning bell rings at seven thirty, and students meet in the main courtyard.",
+              "correctAnswer": "Our morning bell rings at seven thirty, and students meet in the main courtyard.",
+              "options": [
+                  "Our morning bell rings at seven thirty, and students meet in the main courtyard.",
+                  "Most teenagers eat lunch in the quiet library with their study partners.",
+                  "We have history exams every Monday morning in the auditorium."
+              ]
+          },
+          {
+              "id": "1-4-e2",
+              "audioText": "Why do so many students love Friday afternoon? Because we have robotics workshops!",
+              "correctAnswer": "Why do so many students love Friday afternoon? Because we have robotics workshops!",
+              "options": [
+                  "Why do so many students love Friday afternoon? Because we have robotics workshops!",
+                  "What time does the chemistry laboratory close on Wednesday afternoons?",
+                  "Students do not bring heavy backpacks to physical education class."
+              ]
+          },
+          {
+              "id": "1-4-e3",
+              "audioText": "School life is all about daily organization and having a clear schedule.",
+              "correctAnswer": "School life is all about daily organization and having a clear schedule.",
+              "options": [
+                  "School life is all about daily organization and having a clear schedule.",
+                  "Valentina meets her homeroom teacher to ask about the science fair.",
+                  "Where do you usually study for math tests with your study buddy?"
+              ]
+          }
+      ]
   },
-  {
-    "classId": "c-teens-basic-1-5",
-    "badgeName": "Routine Master ⏰",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "1-5-1",
-        "term": "Wake",
-        "translation": "despertar / levantarse",
-        "ipa": "/wake/",
-        "audioText": "wake. I wake up at six thirty on weekdays.",
-        "example": "I wake up at six thirty on weekdays.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-5-2",
-        "term": "Organize",
-        "translation": "organizar horario y tareas",
-        "ipa": "/organize/",
-        "audioText": "organize. I organize my desk before studying.",
-        "example": "I organize my desk before studying.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-5-3",
-        "term": "Finish",
-        "translation": "terminar deberes a tiempo",
-        "ipa": "/finish/",
-        "audioText": "finish. We finish all our homework before dinner.",
-        "example": "We finish all our homework before dinner.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-5-4",
-        "term": "Unwind",
-        "translation": "desconectarse y descansar",
-        "ipa": "/unwind/",
-        "audioText": "unwind. I unwind with relaxing music after school.",
-        "example": "I unwind with relaxing music after school.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-5-5",
-        "term": "Maintain",
-        "translation": "mantener buenos hábitos",
-        "ipa": "/maintain/",
-        "audioText": "maintain. She maintains a consistent sleep schedule.",
-        "example": "She maintains a consistent sleep schedule.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-5-6",
-        "term": "I + always / usually + [Verbo]",
-        "translation": "Sujeto + Adverbio + Verbo principal + Complemento",
-        "ipa": "/i/",
-        "audioText": "I always pack my school backpack the night before to save time.",
-        "example": "I always pack my school backpack the night before to save time.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "1-5-7",
-        "term": "He / She + usually / often + [Verbo-s]",
-        "translation": "He/She + Adverbio + Verbo con '-s'",
-        "ipa": "/he/",
-        "audioText": "Lucas usually rides his bike to school and arrives ten minutes early.",
-        "example": "Lucas usually rides his bike to school and arrives ten minutes early.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "1-5-b1",
-        "prompt": "Siempre me despierto temprano y organizo mi horario de estudio.'",
-        "answer": "I always wake up early and organize my study schedule",
-        "tokens": [
-          "I",
-          "always",
-          "wake",
-          "up",
-          "early",
-          "and",
-          "organize",
-          "my",
-          "study",
-          "schedule",
-          "never",
-          "skip"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "1-5-b2",
-        "prompt": "Nunca me salto el desayuno porque necesito energía para las clases.'",
-        "answer": "I never skip breakfast because I need power for classes",
-        "tokens": [
-          "I",
-          "never",
-          "skip",
-          "breakfast",
-          "because",
-          "need",
-          "power",
-          "for",
-          "classes",
-          "always",
-          "wake"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "1-5-b3",
-        "prompt": "¿Con qué frecuencia estudias en la biblioteca después de clases?'",
-        "answer": "How often do you study in the library after school",
-        "tokens": [
-          "How",
-          "often",
-          "do",
-          "you",
-          "study",
-          "in",
-          "the",
-          "library",
-          "after",
-          "school",
-          "always",
-          "wake"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "1-5-e1",
-        "audioText": "Every morning, I always wake up at six fifteen.",
-        "correctAnswer": "Every morning, I always wake up at six fifteen.",
-        "options": [
-          "Every morning, I always wake up at six fifteen.",
-          "First, I take a quick shower, then I have fresh fruit and arepas for breakfast, and finally I review my English notes before leaving for school.",
-          "Manuela, how do you manage to finish all your homework so fast?"
-        ]
-      },
-      {
-        "id": "1-5-e2",
-        "audioText": "First, I take a quick shower, then I have fresh fruit and arepas for breakfast, and finally I review my English notes before leaving for school.",
-        "correctAnswer": "First, I take a quick shower, then I have fresh fruit and arepas for breakfast, and finally I review my English notes before leaving for school.",
-        "options": [
-          "Manuela, how do you manage to finish all your homework so fast?",
-          "First, I take a quick shower, then I have fresh fruit and arepas for breakfast, and finally I review my English notes before leaving for school.",
-          "First, I arrive home and have a healthy lunch. Then, I work on homework for one hour without distractions."
-        ]
-      },
-      {
-        "id": "1-5-e3",
-        "audioText": "Manuela, how do you manage to finish all your homework so fast?",
-        "correctAnswer": "Manuela, how do you manage to finish all your homework so fast?",
-        "options": [
-          "That is awesome! I never check my phone while doing math, and it saves so much time.",
-          "First, I arrive home and have a healthy lunch. Then, I work on homework for one hour without distractions.",
-          "Manuela, how do you manage to finish all your homework so fast?"
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-1-5",
+      "badgeName": "Study Skills Master",
+      "badgeEmoji": "💡",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "1-5-1",
+              "term": "Solve",
+              "translation": "resolver problemas o enigmas",
+              "ipa": "/sɒlv/",
+              "audioText": "solve. Mariana solves complex physics equations easily.",
+              "example": "Mariana solves complex physics equations easily.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-5-2",
+              "term": "Practice",
+              "translation": "practicar con constancia",
+              "ipa": "/ˈpræktɪs/",
+              "audioText": "practice. We practice conversational English daily to speak fluently.",
+              "example": "We practice conversational English daily to speak fluently.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-5-3",
+              "term": "Listen",
+              "translation": "escuchar con atención",
+              "ipa": "/ˈlɪsən/",
+              "audioText": "listen. Students listen quietly while the teacher explains laboratory safety.",
+              "example": "Students listen quietly while the teacher explains laboratory safety.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-5-4",
+              "term": "Speak",
+              "translation": "hablar con claridad o fluidez",
+              "ipa": "/spiːk/",
+              "audioText": "speak. Camilo speaks clearly during his oral presentations.",
+              "example": "Camilo speaks clearly during his oral presentations.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-5-5",
+              "term": "Concentrate",
+              "translation": "concentrarse profundamente",
+              "ipa": "/ˈkɒnsəntreɪt/",
+              "audioText": "concentrate. I concentrate deeply when studying in a quiet room.",
+              "example": "I concentrate deeply when studying in a quiet room.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-5-6",
+              "term": "Adverbs of Manner (-LY) describen CÓMO se realiza la acción: fluent ➔ fluently, careful ➔ carefully.",
+              "translation": "Paso 1: Regla de Oro ⭐",
+              "ipa": "/adverb/",
+              "audioText": "Sofia speaks English fluently and solves complex math equations easily.",
+              "example": "Sofia speaks English fluently and solves complex math equations easily.",
+              "type": "grammar",
+              "learned": false
+          },
+          {
+              "id": "1-5-7",
+              "term": "Adverbios irregulares: GOOD cambia a WELL, FAST se queda FAST, y HARD se queda HARD.",
+              "translation": "Paso 2: Irregulares",
+              "ipa": "/irregular/",
+              "audioText": "He plays soccer really well, runs very fast, and trains hard every day.",
+              "example": "He plays soccer really well, runs very fast, and trains hard every day.",
+              "type": "grammar",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "1-5-b1",
+              "prompt": "Sofía habla inglés con fluidez y resuelve ecuaciones matemáticas complejas fácilmente.",
+              "answer": "Sofia speaks English fluently and solves complex math equations easily",
+              "tokens": [
+                  "Sofia",
+                  "speaks",
+                  "English",
+                  "fluently",
+                  "and",
+                  "solves",
+                  "complex",
+                  "math",
+                  "equations",
+                  "easily",
+                  "fluent",
+                  "easy"
+              ],
+              "hints": [
+                  "Usa 'fluently' después de 'English'.",
+                  "Usa 'easily' al final de la oración."
+              ]
+          },
+          {
+              "id": "1-5-b2",
+              "prompt": "Lucas no escribe rápido en el teclado, pero trabaja con mucho cuidado.",
+              "answer": "Lucas does not type quickly on the keyboard but he works carefully",
+              "tokens": [
+                  "Lucas",
+                  "does",
+                  "not",
+                  "type",
+                  "quickly",
+                  "on",
+                  "the",
+                  "keyboard",
+                  "but",
+                  "he",
+                  "works",
+                  "carefully",
+                  "quick",
+                  "careful"
+              ],
+              "hints": [
+                  "Usa el adverbio 'quickly' para modificar a 'type'.",
+                  "Usa 'carefully' para modificar a 'works'."
+              ]
+          },
+          {
+              "id": "1-5-b3",
+              "prompt": "¿Repasas tus notas de estudio pacientemente antes de exámenes importantes?",
+              "answer": "Do you review your study notes patiently before important exams",
+              "tokens": [
+                  "Do",
+                  "you",
+                  "review",
+                  "your",
+                  "study",
+                  "notes",
+                  "patiently",
+                  "before",
+                  "important",
+                  "exams",
+                  "patient",
+                  "reviews"
+              ],
+              "hints": [
+                  "Inicia con 'Do you review your study notes...'.",
+                  "Coloca el adverbio 'patiently' antes de 'before important exams'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "1-5-e1",
+              "audioText": "They listen quietly in class and take notes carefully.",
+              "correctAnswer": "They listen quietly in class and take notes carefully.",
+              "options": [
+                  "They listen quietly in class and take notes carefully.",
+                  "Students rush through their homework and make careless mistakes.",
+                  "Camilo plays loud video games while trying to memorize historical dates."
+              ]
+          },
+          {
+              "id": "1-5-e2",
+              "audioText": "When preparing for exams, they review their flashcards patiently and practice problems hard.",
+              "correctAnswer": "When preparing for exams, they review their flashcards patiently and practice problems hard.",
+              "options": [
+                  "When preparing for exams, they review their flashcards patiently and practice problems hard.",
+                  "Mariana reads books slowly and skips difficult vocabulary exercises.",
+                  "Why do successful students sleep eight hours before important tournaments?"
+              ]
+          },
+          {
+              "id": "1-5-e3",
+              "audioText": "When you understand the core ideas, you can explain topics clearly and easily to your friends.",
+              "correctAnswer": "When you understand the core ideas, you can explain topics clearly and easily to your friends.",
+              "options": [
+                  "When you understand the core ideas, you can explain topics clearly and easily to your friends.",
+                  "You should solve math exercises quickly without checking your answers twice.",
+                  "Lucas trains thirty minutes every morning to develop his programming skills."
+              ]
+          }
+      ]
   },
-  {
-    "classId": "c-teens-basic-1-6",
-    "badgeName": "Sports & Hobbies Ace",
-    "badgeEmoji": "🏆",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "1-6-1",
-        "term": "Play",
-        "translation": "jugar deportes y videojuegos",
-        "ipa": "/play/",
-        "audioText": "play. We play soccer every Saturday at the park.",
-        "example": "We play soccer every Saturday at the park.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-6-2",
-        "term": "Join",
-        "translation": "unirse a un club o partida",
-        "ipa": "/join/",
-        "audioText": "join. I joined the school chess club this week.",
-        "example": "I joined the school chess club this week.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-6-3",
-        "term": "Practice",
-        "translation": "entrenar habilidades",
-        "ipa": "/practice/",
-        "audioText": "practice. I practice skateboarding tricks after school.",
-        "example": "I practice skateboarding tricks after school.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-6-4",
-        "term": "Create",
-        "translation": "crear arte y contenido",
-        "ipa": "/create/",
-        "audioText": "create. She creates digital animations for our channel.",
-        "example": "She creates digital animations for our channel.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-6-5",
-        "term": "Compete",
-        "translation": "competir en torneos",
-        "ipa": "/compete/",
-        "audioText": "compete. Our gaming team competed in the finals.",
-        "example": "Our gaming team competed in the finals.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-6-6",
-        "term": "I play / go / do + [Hobby]",
-        "translation": "PLAY (pelota/juegos) • GO (-ING) • DO (disciplinas)",
-        "ipa": "/i/",
-        "audioText": "On weekends, I play soccer with my squad and go cycling in the morning.",
-        "example": "On weekends, I play soccer with my squad and go cycling in the morning.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "1-6-7",
-        "term": "He / She + plays / goes / does...",
-        "translation": "Verbos con '-s' (plays, goes, does) con tercera persona",
-        "ipa": "/he/",
-        "audioText": "Paula does gymnastics and goes swimming twice a week at the sports club.",
-        "example": "Paula does gymnastics and goes swimming twice a week at the sports club.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "1-6-b1",
-        "prompt": "Los sábados monto bicicleta y juego fútbol con mi grupo de amigos.'",
-        "answer": "On Saturdays I go cycling and play soccer with my squad",
-        "tokens": [
-          "On",
-          "Saturdays",
-          "I",
-          "go",
-          "cycling",
-          "and",
-          "play",
-          "soccer",
-          "with",
-          "my",
-          "squad",
-          "video",
-          "games"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "1-6-b2",
-        "prompt": "No juego videojuegos porque prefiero la pintura y la música.'",
-        "answer": "I don t play video games because I prefer painting and music",
-        "tokens": [
-          "I",
-          "don",
-          "t",
-          "play",
-          "video",
-          "games",
-          "because",
-          "prefer",
-          "painting",
-          "and",
-          "music",
-          "Saturdays",
-          "cycling"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "1-6-b3",
-        "prompt": "¿Te gustaría unirte a nuestro partido de baloncesto esta tarde?'",
-        "answer": "Would you like to join our basketball match this afternoon",
-        "tokens": [
-          "Would",
-          "you",
-          "like",
-          "to",
-          "join",
-          "our",
-          "basketball",
-          "match",
-          "this",
-          "afternoon",
-          "Saturdays",
-          "cycling"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "1-6-e1",
-        "audioText": "On Saturday mornings, I always go cycling up the mountain with my cousin.",
-        "correctAnswer": "On Saturday mornings, I always go cycling up the mountain with my cousin.",
-        "options": [
-          "On Saturday mornings, I always go cycling up the mountain with my cousin.",
-          "Then in the afternoon, we play basketball at the local sports center.",
-          "Would you like to join us this weekend?"
-        ]
-      },
-      {
-        "id": "1-6-e2",
-        "audioText": "Then in the afternoon, we play basketball at the local sports center.",
-        "correctAnswer": "Then in the afternoon, we play basketball at the local sports center.",
-        "options": [
-          "Would you like to join us this weekend?",
-          "Then in the afternoon, we play basketball at the local sports center.",
-          "Then in the evening, we play basketball at the local sports center."
-        ]
-      },
-      {
-        "id": "1-6-e3",
-        "audioText": "Would you like to join us this weekend?",
-        "correctAnswer": "Would you like to join us this weekend?",
-        "options": [
-          "We practice speaking English every weekend with our squad.",
-          "rarely you like to join us this weekend?",
-          "Would you like to join us this weekend?"
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-1-6",
+      "badgeName": "Weekend Social Master",
+      "badgeEmoji": "🛹",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "1-6-1",
+              "term": "Invite",
+              "translation": "invitar a amigos o compañeros",
+              "ipa": "/ɪnˈvaɪt/",
+              "audioText": "invite. I want to invite my entire study group to my birthday.",
+              "example": "I want to invite my entire study group to my birthday.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-6-2",
+              "term": "Choose",
+              "translation": "elegir entre diferentes opciones",
+              "ipa": "/tʃuːz/",
+              "audioText": "choose. Teens choose between riding bikes or watching a movie.",
+              "example": "Teens choose between riding bikes or watching a movie.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-6-3",
+              "term": "Organize",
+              "translation": "organizar una salida o plan",
+              "ipa": "/ˈɔːrɡənaɪz/",
+              "audioText": "organize. Mateo organizes an online tournament for Friday evening.",
+              "example": "Mateo organizes an online tournament for Friday evening.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-6-4",
+              "term": "Join",
+              "translation": "unirse / sumarse a un grupo o plan",
+              "ipa": "/dʒɔɪn/",
+              "audioText": "join. Would you like to join our basketball practice at the park?",
+              "example": "Would you like to join our basketball practice at the park?",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-6-5",
+              "term": "Relax",
+              "translation": "relajarse / descansar la mente",
+              "ipa": "/rɪˈlæks/",
+              "audioText": "relax. On Sunday afternoons, I relax by listening to music.",
+              "example": "On Sunday afternoons, I relax by listening to music.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-6-6",
+              "term": "WANT TO expresa deseos personales y gustos. En tercera persona es WANTS TO.",
+              "translation": "Paso 1: Deseos con Want to",
+              "ipa": "/want/",
+              "audioText": "I want to ride my skateboard at the park with my friends.",
+              "example": "I want to ride my skateboard at the park with my friends.",
+              "type": "grammar",
+              "learned": false
+          },
+          {
+              "id": "1-6-7",
+              "term": "WOULD YOU LIKE TO se usa para invitaciones corteses con verbo en forma base.",
+              "translation": "Paso 2: Invitaciones",
+              "ipa": "/would-like/",
+              "audioText": "Would you like to join our gaming tournament at the tech lab on Saturday?",
+              "example": "Would you like to join our gaming tournament at the tech lab on Saturday?",
+              "type": "grammar",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "1-6-b1",
+              "prompt": "Quiero montar mi patineta en el parque, pero necesito terminar mi tarea primero.",
+              "answer": "I want to ride my skateboard at the park but I need to finish my homework first",
+              "tokens": [
+                  "I",
+                  "want",
+                  "to",
+                  "ride",
+                  "my",
+                  "skateboard",
+                  "at",
+                  "the",
+                  "park",
+                  "but",
+                  "need",
+                  "finish",
+                  "homework",
+                  "first",
+                  "needs",
+                  "wants"
+              ],
+              "hints": [
+                  "Inicia con 'I want to ride my skateboard...'.",
+                  "Contrasta con 'but I need to finish my homework first'."
+              ]
+          },
+          {
+              "id": "1-6-b2",
+              "prompt": "Sofía no quiere quedarse en casa todo el fin de semana.",
+              "answer": "Sofia does not want to stay home all weekend",
+              "tokens": [
+                  "Sofia",
+                  "does",
+                  "not",
+                  "want",
+                  "to",
+                  "stay",
+                  "home",
+                  "all",
+                  "weekend",
+                  "do",
+                  "wants",
+                  "staying"
+              ],
+              "hints": [
+                  "Usa 'does not want' para la tercera persona Sofía.",
+                  "El verbo después de TO va en forma base: 'to stay'."
+              ]
+          },
+          {
+              "id": "1-6-b3",
+              "prompt": "¿Te gustaría unirte a nuestro torneo de videojuegos el sábado?",
+              "answer": "Would you like to join our gaming tournament on Saturday",
+              "tokens": [
+                  "Would",
+                  "you",
+                  "like",
+                  "to",
+                  "join",
+                  "our",
+                  "gaming",
+                  "tournament",
+                  "on",
+                  "Saturday",
+                  "do",
+                  "joining"
+              ],
+              "hints": [
+                  "Inicia la invitación cortés con 'Would you like to...'.",
+                  "Termina con la fecha 'on Saturday'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "1-6-e1",
+              "audioText": "Planning the weekend with friends is all about balancing fun and responsibilities.",
+              "correctAnswer": "Planning the weekend with friends is all about balancing fun and responsibilities.",
+              "options": [
+                  "Planning the weekend with friends is all about balancing fun and responsibilities.",
+                  "Students do not want to study or do chores during the entire weekend.",
+                  "We prefer staying in bed until five in the evening on Saturdays."
+              ]
+          },
+          {
+              "id": "1-6-e2",
+              "audioText": "I want to ride my bike in the park on Saturday morning.",
+              "correctAnswer": "I want to ride my bike in the park on Saturday morning.",
+              "options": [
+                  "I want to ride my bike in the park on Saturday morning.",
+                  "Sofia needs to buy new rollerblades before joining the street race.",
+                  "Mateo invites his classmates to a competitive chess championship."
+              ]
+          },
+          {
+              "id": "1-6-e3",
+              "audioText": "Would you like to come with us to the picnic by the lake?",
+              "correctAnswer": "Would you like to come with us to the picnic by the lake?",
+              "options": [
+                  "Would you like to come with us to the picnic by the lake?",
+                  "Do you need to finish your physics presentation before lunch?",
+                  "I would like to practice electric guitar chords with my band."
+              ]
+          }
+      ]
   },
-  {
-    "classId": "c-teens-basic-1-7",
-    "badgeName": "Weather & Style Ace",
-    "badgeEmoji": "⛅",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "1-7-1",
-        "term": "Wear",
-        "translation": "llevar puesto / vestir ropa",
-        "ipa": "/wear/",
-        "audioText": "wear. I wear a cozy hoodie on chilly days.",
-        "example": "I wear a cozy hoodie on chilly days.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-7-2",
-        "term": "Rain",
-        "translation": "llover del cielo",
-        "ipa": "/rain/",
-        "audioText": "rain. It rains frequently in the mountains.",
-        "example": "It rains frequently in the mountains.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-7-3",
-        "term": "Shine",
-        "translation": "brillar el sol intensamente",
-        "ipa": "/shine/",
-        "audioText": "shine. The sun shines bright at the beach.",
-        "example": "The sun shines bright at the beach.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-7-4",
-        "term": "Change",
-        "translation": "cambiar el clima o de ropa",
-        "ipa": "/change/",
-        "audioText": "change. The weather changed suddenly to rainy.",
-        "example": "The weather changed suddenly to rainy.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-7-5",
-        "term": "Protect",
-        "translation": "protegerse del sol y lluvia",
-        "ipa": "/protect/",
-        "audioText": "protect. Sunscreen protects my skin from UV rays.",
-        "example": "Sunscreen protects my skin from UV rays.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-7-6",
-        "term": "It is [Clima]",
-        "translation": "It is + Adjetivo • I am wearing + Prendas",
-        "ipa": "/it/",
-        "audioText": "It is raining heavily outside, so I am wearing my waterproof jacket and boots.",
-        "example": "It is raining heavily outside, so I am wearing my waterproof jacket and boots.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "1-7-7",
-        "term": "He / She is wearing...",
-        "translation": "He/She is wearing + Prendas",
-        "ipa": "/he/",
-        "audioText": "Valeria is wearing sunglasses and a white t-shirt because it is hot and sunny.",
-        "example": "Valeria is wearing sunglasses and a white t-shirt because it is hot and sunny.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "1-7-b1",
-        "prompt": "Está lloviendo fuerte afuera, así que llevo puesto mi buzo abrigado.'",
-        "answer": "It is raining heavily outside so I am wearing my warm hoodie",
-        "tokens": [
-          "It",
-          "is",
-          "raining",
-          "heavily",
-          "outside",
-          "so",
-          "I",
-          "am",
-          "wearing",
-          "my",
-          "warm",
-          "hoodie",
-          "sandals",
-          "today"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "1-7-b2",
-        "prompt": "Hoy no llevo sandalias porque las calles están muy mojadas.'",
-        "answer": "I am not wearing sandals today because the streets are wet",
-        "tokens": [
-          "I",
-          "am",
-          "not",
-          "wearing",
-          "sandals",
-          "today",
-          "because",
-          "the",
-          "streets",
-          "are",
-          "wet",
-          "raining",
-          "heavily"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "1-7-b3",
-        "prompt": "¿Cómo está el clima en tu barrio ahora mismo?'",
-        "answer": "What is the weather like in your neighborhood right now",
-        "tokens": [
-          "What",
-          "is",
-          "the",
-          "weather",
-          "like",
-          "in",
-          "your",
-          "neighborhood",
-          "right",
-          "now",
-          "raining",
-          "heavily"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "1-7-e1",
-        "audioText": "It is raining heavily in the city right now.",
-        "correctAnswer": "It is raining heavily in the city right now.",
-        "options": [
-          "It is raining heavily in the city right now.",
-          "I am wearing a thick hoodie, waterproof boots, and carrying my umbrella.",
-          "What are you wearing today?"
-        ]
-      },
-      {
-        "id": "1-7-e2",
-        "audioText": "I am wearing a thick hoodie, waterproof boots, and carrying my umbrella.",
-        "correctAnswer": "I am wearing a thick hoodie, waterproof boots, and carrying my umbrella.",
-        "options": [
-          "What are you wearing today?",
-          "I am wearing a thick hoodie, waterproof boots, and carrying my umbrella.",
-          "We practice speaking English every weekend with our squad."
-        ]
-      },
-      {
-        "id": "1-7-e3",
-        "audioText": "What are you wearing today?",
-        "correctAnswer": "What are you wearing today?",
-        "options": [
-          "What are you wearing evening?",
-          "What rarely you wearing today?",
-          "What are you wearing today?"
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-1-7",
+      "badgeName": "Kitchen Master Chef",
+      "badgeEmoji": "🥑",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "1-7-1",
+              "term": "Buy",
+              "translation": "comprar en el supermercado",
+              "ipa": "/baɪ/",
+              "audioText": "buy. We need to buy some milk and bread at the supermarket.",
+              "example": "We need to buy some milk and bread at the supermarket.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-7-2",
+              "term": "Prepare",
+              "translation": "preparar una merienda o receta",
+              "ipa": "/prɪˈpeər/",
+              "audioText": "prepare. Andrea prepares avocado toast every Sunday morning.",
+              "example": "Andrea prepares avocado toast every Sunday morning.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-7-3",
+              "term": "Slice",
+              "translation": "rebanar / cortar en tajadas",
+              "ipa": "/slaɪs/",
+              "audioText": "slice. Daniel slices an apple and some cheese for the squad.",
+              "example": "Daniel slices an apple and some cheese for the squad.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-7-4",
+              "term": "Check",
+              "translation": "revisar la nevera o alacena",
+              "ipa": "/tʃɛk/",
+              "audioText": "check. Always check the fridge before writing your grocery list.",
+              "example": "Always check the fridge before writing your grocery list.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-7-5",
+              "term": "Pour",
+              "translation": "verter / servir un líquido",
+              "ipa": "/pɔːr/",
+              "audioText": "pour. Please pour some cold milk into the bowl of cereal.",
+              "example": "Please pour some cold milk into the bowl of cereal.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-7-6",
+              "term": "SOME se usa en afirmativo (some milk, some strawberries) y A/AN para unidades (an avocado).",
+              "translation": "Paso 1: Afirmativo con Some",
+              "ipa": "/some/",
+              "audioText": "We have some fresh strawberries, some artisan cheese, and an avocado.",
+              "example": "We have some fresh strawberries, some artisan cheese, and an avocado.",
+              "type": "grammar",
+              "learned": false
+          },
+          {
+              "id": "1-7-7",
+              "term": "ANY se usa en oraciones negativas (we don't have any eggs) y preguntas (do you have any bread?).",
+              "translation": "Paso 2: Negativo y Preguntas",
+              "ipa": "/any/",
+              "audioText": "There is not any milk in the fridge, and we do not have any eggs.",
+              "example": "There is not any milk in the fridge, and we do not have any eggs.",
+              "type": "grammar",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "1-7-b1",
+              "prompt": "Tenemos algunas fresas frescas, algo de queso artesanal y un aguacate.",
+              "answer": "We have some fresh strawberries some artisan cheese and an avocado",
+              "tokens": [
+                  "We",
+                  "have",
+                  "some",
+                  "fresh",
+                  "strawberries",
+                  "artisan",
+                  "cheese",
+                  "and",
+                  "an",
+                  "avocado",
+                  "any",
+                  "a"
+              ],
+              "hints": [
+                  "Usa 'some' con strawberries y cheese.",
+                  "Usa 'an' antes de avocado."
+              ]
+          },
+          {
+              "id": "1-7-b2",
+              "prompt": "No hay nada de leche en la nevera y no tenemos ningún huevo.",
+              "answer": "There is not any milk in the fridge and we do not have any eggs",
+              "tokens": [
+                  "There",
+                  "is",
+                  "not",
+                  "any",
+                  "milk",
+                  "in",
+                  "the",
+                  "fridge",
+                  "and",
+                  "we",
+                  "do",
+                  "have",
+                  "eggs",
+                  "some",
+                  "a"
+              ],
+              "hints": [
+                  "Usa 'any milk' en la cláusula negativa con There is not.",
+                  "Usa 'any eggs' después de do not have."
+              ]
+          },
+          {
+              "id": "1-7-b3",
+              "prompt": "¿Tenemos algo de pan y mantequilla para hacer sándwiches?",
+              "answer": "Do we have any bread and butter to make sandwiches",
+              "tokens": [
+                  "Do",
+                  "we",
+                  "have",
+                  "any",
+                  "bread",
+                  "and",
+                  "butter",
+                  "to",
+                  "make",
+                  "sandwiches",
+                  "some",
+                  "a"
+              ],
+              "hints": [
+                  "Pregunta con 'Do we have any...'.",
+                  "Bread y butter son incontables."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "1-7-e1",
+              "audioText": "We have some fresh strawberries, some artisan cheese, and an avocado on the counter.",
+              "correctAnswer": "We have some fresh strawberries, some artisan cheese, and an avocado on the counter.",
+              "options": [
+                  "We have some fresh strawberries, some artisan cheese, and an avocado on the counter.",
+                  "There are ten bags of chips and bottles of sweet soda in the kitchen pantry.",
+                  "Students do not eat fresh fruit before playing competitive soccer tournaments."
+              ]
+          },
+          {
+              "id": "1-7-e2",
+              "audioText": "However, we don't have any eggs or milk for our recipe.",
+              "correctAnswer": "However, we don't have any eggs or milk for our recipe.",
+              "options": [
+                  "However, we don't have any eggs or milk for our recipe.",
+                  "Can you buy a loaf of bread and three avocados at the corner shop?",
+                  "Always check the refrigerator before leaving for your basketball practice."
+              ]
+          },
+          {
+              "id": "1-7-e3",
+              "audioText": "Can you run to the grocery store and buy some milk?",
+              "correctAnswer": "Can you run to the grocery store and buy some milk?",
+              "options": [
+                  "Can you run to the grocery store and buy some milk?",
+                  "Do you have any butter to prepare afternoon toast for the squad?",
+                  "Daniel prepares cheese sandwiches while Andrea washes the vegetables."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-1-8",
@@ -4361,187 +4406,194 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-1-9",
-    "badgeName": "Tech Support Guru",
-    "badgeEmoji": "💻",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "1-9-1",
-        "term": "Connect",
-        "translation": "conectar a redes y bluetooth",
-        "ipa": "/connect/",
-        "audioText": "connect. I connect my headphones to my tablet.",
-        "example": "I connect my headphones to my tablet.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-9-2",
-        "term": "Charge",
-        "translation": "cargar la batería del equipo",
-        "ipa": "/charge/",
-        "audioText": "charge. I charge my phone every night before bed.",
-        "example": "I charge my phone every night before bed.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-9-3",
-        "term": "Restart",
-        "translation": "reiniciar el sistema o router",
-        "ipa": "/restart/",
-        "audioText": "restart. Restart your router if the WiFi drops.",
-        "example": "Restart your router if the WiFi drops.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-9-4",
-        "term": "Download",
-        "translation": "descargar apps y archivos",
-        "ipa": "/download/",
-        "audioText": "download. We downloaded the new video game update.",
-        "example": "We downloaded the new video game update.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-9-5",
-        "term": "Install",
-        "translation": "instalar programas y software",
-        "ipa": "/install/",
-        "audioText": "install. She installed the photo editing software.",
-        "example": "She installed the photo editing software.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "1-9-6",
-        "term": "You can + [Verbo base]",
-        "translation": "Sujeto + can + Verbo en forma base",
-        "ipa": "/you/",
-        "audioText": "You can connect your wireless earbuds easily by turning on Bluetooth in settings.",
-        "example": "You can connect your wireless earbuds easily by turning on Bluetooth in settings.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "1-9-7",
-        "term": "She can edit / This app can...",
-        "translation": "can no cambia con He/She (nunca digas 'cans')",
-        "ipa": "/she/",
-        "audioText": "Valeria can edit 4K TikTok videos on her tablet without any lag or delay.",
-        "example": "Valeria can edit 4K TikTok videos on her tablet without any lag or delay.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "1-9-b1",
-        "prompt": "Puedes conectar tus audífonos inalámbricos fácilmente por Bluetooth.'",
-        "answer": "You can connect your wireless earbuds easily through Bluetooth",
-        "tokens": [
-          "You",
-          "can",
-          "connect",
-          "your",
-          "wireless",
-          "earbuds",
-          "easily",
-          "through",
-          "Bluetooth",
-          "tablet",
-          "download"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "1-9-b2",
-        "prompt": "Mi tableta no puede descargar la actualización porque la memoria está llena.'",
-        "answer": "My tablet can t download the update because the storage is full",
-        "tokens": [
-          "My",
-          "tablet",
-          "can",
-          "t",
-          "download",
-          "the",
-          "update",
-          "because",
-          "storage",
-          "is",
-          "full",
-          "connect",
-          "your"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "1-9-b3",
-        "prompt": "¿Cómo puedo arreglar la señal débil de WiFi en mi habitación?'",
-        "answer": "How can I fix the weak WiFi signal in my bedroom",
-        "tokens": [
-          "How",
-          "can",
-          "I",
-          "fix",
-          "the",
-          "weak",
-          "WiFi",
-          "signal",
-          "in",
-          "my",
-          "bedroom",
-          "connect",
-          "your"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "1-9-e1",
-        "audioText": "If your smartphone battery is low, first plug in the fast charger using the USB-C cable.",
-        "correctAnswer": "If your smartphone battery is low, first plug in the fast charger using the USB-C cable.",
-        "options": [
-          "If your smartphone battery is low, first plug in the fast charger using the USB-C cable.",
-          "If the WiFi is not working, you should turn airplane mode on and off to reset the signal.",
-          "Guys, my editing app crashed and my phone says storage is completely full!"
-        ]
-      },
-      {
-        "id": "1-9-e2",
-        "audioText": "If the WiFi is not working, you should turn airplane mode on and off to reset the signal.",
-        "correctAnswer": "If the WiFi is not working, you should turn airplane mode on and off to reset the signal.",
-        "options": [
-          "Guys, my editing app crashed and my phone says storage is completely full!",
-          "If the WiFi is not working, you should turn airplane mode on and off to reset the signal.",
-          "Don't panic! You can connect your phone to my laptop and transfer the raw clips."
-        ]
-      },
-      {
-        "id": "1-9-e3",
-        "audioText": "Guys, my editing app crashed and my phone says storage is completely full!",
-        "correctAnswer": "Guys, my editing app crashed and my phone says storage is completely full!",
-        "options": [
-          "Also, you should delete the temporary cache files to free up two gigabytes.",
-          "Don't panic! You can connect your phone to my laptop and transfer the raw clips.",
-          "Guys, my editing app crashed and my phone says storage is completely full!"
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-1-9",
+      "badgeName": "Urban Navigator Master",
+      "badgeEmoji": "🛴",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "1-9-1",
+              "term": "Along",
+              "translation": "a lo largo de una vía o ciclorruta",
+              "ipa": "/əˈlɔːŋ/",
+              "audioText": "along. I ride my electric scooter along the green bike path.",
+              "example": "I ride my electric scooter along the green bike path.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-9-2",
+              "term": "Through",
+              "translation": "a través de un parque, túnel o multitud",
+              "ipa": "/θruː/",
+              "audioText": "through. We walk through the central park with Mateo.",
+              "example": "We walk through the central park with Mateo.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-9-3",
+              "term": "Across",
+              "translation": "de un lado a otro cruzando una calle o puente",
+              "ipa": "/əˈkrɔːs/",
+              "audioText": "across. Teens walk across the pedestrian bridge to cross the avenue.",
+              "example": "Teens walk across the pedestrian bridge to cross the avenue.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-9-4",
+              "term": "Past",
+              "translation": "pasar por delante de un lugar sin parar",
+              "ipa": "/pæs/",
+              "audioText": "past. Walk past the coffee shop and turn right at the corner.",
+              "example": "Walk past the coffee shop and turn right at the corner.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-9-5",
+              "term": "Towards",
+              "translation": "en dirección o rumbo hacia un punto",
+              "ipa": "/təˈwɔːrdz/",
+              "audioText": "towards. Head directly towards the soccer stadium lights.",
+              "example": "Head directly towards the soccer stadium lights.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-9-6",
+              "term": "Into",
+              "translation": "entrar a un edificio o estación (movimiento)",
+              "ipa": "/ˈɪn.tuː/",
+              "audioText": "into. Do not walk into dark alleys at night.",
+              "example": "Do not walk into dark alleys at night.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-9-7",
+              "term": "Out of",
+              "translation": "salir de adentro hacia afuera",
+              "ipa": "/aʊt əv/",
+              "audioText": "out of. Valeria just got out of the metro station.",
+              "example": "Valeria just got out of the metro station.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "1-9-8",
+              "term": "Pedestrian bridge",
+              "translation": "puente peatonal urbano",
+              "ipa": "/pəˈdɛstriən brɪdʒ/",
+              "audioText": "pedestrian bridge. Always cross the highway on the pedestrian bridge.",
+              "example": "Always cross the highway on the pedestrian bridge.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "1-9-b1",
+              "targetSentence": "I ride my electric scooter along the green bike path.",
+              "scrambledTokens": [
+                  "I",
+                  "ride",
+                  "my",
+                  "electric",
+                  "scooter",
+                  "along",
+                  "the",
+                  "green",
+                  "bike",
+                  "path.",
+                  "through",
+                  "across"
+              ],
+              "hints": [
+                  "Empieza con 'I ride my electric scooter...'.",
+                  "Usa 'along' para seguir la ciclorruta."
+              ]
+          },
+          {
+              "id": "1-9-b2",
+              "targetSentence": "Do not go through the crowded construction zone on the avenue.",
+              "scrambledTokens": [
+                  "Do",
+                  "not",
+                  "go",
+                  "through",
+                  "the",
+                  "crowded",
+                  "construction",
+                  "zone",
+                  "on",
+                  "the",
+                  "avenue.",
+                  "past",
+                  "towards"
+              ],
+              "hints": [
+                  "Instrucción preventiva con 'Do not go...'.",
+                  "Usa 'through' para atravesar la zona."
+              ]
+          },
+          {
+              "id": "1-9-b3",
+              "targetSentence": "Walk across the pedestrian bridge and head towards the stadium.",
+              "scrambledTokens": [
+                  "Walk",
+                  "across",
+                  "the",
+                  "pedestrian",
+                  "bridge",
+                  "and",
+                  "head",
+                  "towards",
+                  "the",
+                  "stadium.",
+                  "into",
+                  "out"
+              ],
+              "hints": [
+                  "Cruza de un lado al otro con 'across the pedestrian bridge'.",
+                  "Poner rumbo con 'head towards the stadium'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "1-9-e1",
+              "audioText": "To get to the new skatepark, ride your scooter along the bike path, go through the central park, and walk across the pedestrian bridge.",
+              "correctAnswer": "To get to the new skatepark, ride your scooter along the bike path, go through the central park, and walk across the pedestrian bridge.",
+              "options": [
+                  "To get to the new skatepark, ride your scooter along the bike path, go through the central park, and walk across the pedestrian bridge.",
+                  "Teens stay inside the air-conditioned classroom to study computer algorithms and math formulas.",
+                  "We prepare strawberry fruit bowls with chocolate syrup in the modern home kitchen."
+              ]
+          },
+          {
+              "id": "1-9-e2",
+              "audioText": "Do not go into the subway station because it is too crowded.",
+              "correctAnswer": "Do not go into the subway station because it is too crowded.",
+              "options": [
+                  "Do not go into the subway station because it is too crowded.",
+                  "Always buy fresh vegetables and artisan cheese at the supermarket counter.",
+                  "Daniel plays competitive video games with his friends on Saturday night."
+              ]
+          },
+          {
+              "id": "1-9-e3",
+              "audioText": "Just skate past the coffee shop and head towards the stadium!",
+              "correctAnswer": "Just skate past the coffee shop and head towards the stadium!",
+              "options": [
+                  "Just skate past the coffee shop and head towards the stadium!",
+                  "Can you lend me your new headphones to listen to my favorite rap podcast?",
+                  "Students complete their English homework carefully before going to sleep."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-1-10",
@@ -4729,183 +4781,185 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-2-1",
-    "badgeName": "Wildlife Explorer",
-    "badgeEmoji": "🐾",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "2-1-1",
-        "term": "Hunt",
-        "translation": "Verbo de acción",
-        "ipa": "/hʌnt/",
-        "audioText": "hunt. Jaguars hunt quietly at night in the jungle.",
-        "example": "Jaguars hunt quietly at night in the jungle.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-1-2",
-        "term": "Survive",
-        "translation": "Verbo de acción",
-        "ipa": "/sərˈvaɪv/",
-        "audioText": "survive. Camels can survive for weeks with very little water in the desert.",
-        "example": "Camels can survive for weeks with very little water in the desert.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-1-3",
-        "term": "Protect",
-        "translation": "Verbo de acción",
-        "ipa": "/prəˈtɛkt/",
-        "audioText": "protect. Mother bears protect their cubs fiercely from predators.",
-        "example": "Mother bears protect their cubs fiercely from predators.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-1-4",
-        "term": "Climb",
-        "translation": "Verbo de acción",
-        "ipa": "/klaɪm/",
-        "audioText": "climb. Monkeys climb tall rainforest trees with incredible agility.",
-        "example": "Monkeys climb tall rainforest trees with incredible agility.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-1-5",
-        "term": "Feed",
-        "translation": "Verbo de acción",
-        "ipa": "/fiːd/",
-        "audioText": "feed. Hummingbirds feed on sweet nectar from exotic mountain flowers.",
-        "example": "Hummingbirds feed on sweet nectar from exotic mountain flowers.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-1-6",
-        "term": "CAN expresa habilidad física ('puede') y CAN'T expresa incapacidad ('no puede'). ¡Nunca agregues -s al verbo después de can!",
-        "translation": "Paso 1: Regla de Oro ⭐",
-        "ipa": "/can/",
-        "audioText": "A cheetah can run up to 100 km/h, but it can't climb high trees easily.",
-        "example": "A cheetah can run up to 100 km/h, but it can't climb high trees easily.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "2-1-7",
-        "term": "Sujeto + can + verbo base para destacar superpoderes de la fauna.",
-        "translation": "Paso 2: Afirmativo (+)",
-        "ipa": "/sujeto/",
-        "audioText": "Jaguars can swim across rivers in the Amazon rainforest.",
-        "example": "Jaguars can swim across rivers in the Amazon rainforest.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "2-1-b1",
-        "prompt": "El cóndor andino puede volar a grandes alturas sobre las montañas.",
-        "answer": "The Andean condor can fly at high altitudes over mountains",
-        "tokens": [
-          "The",
-          "Andean",
-          "condor",
-          "can",
-          "fly",
-          "at",
-          "high",
-          "altitudes",
-          "over",
-          "mountains",
-          "Jaguars",
-          "cannot"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "2-1-b2",
-        "prompt": "Los jaguares no pueden sobrevivir si destruimos sus bosques naturales.",
-        "answer": "Jaguars cannot survive if we destroy their natural forests",
-        "tokens": [
-          "Jaguars",
-          "cannot",
-          "survive",
-          "if",
-          "we",
-          "destroy",
-          "their",
-          "natural",
-          "forests",
-          "Andean",
-          "condor"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "2-1-b3",
-        "prompt": "¿Dónde viven los delfines rosados en Colombia?",
-        "answer": "Where do pink river dolphins live in Colombia",
-        "tokens": [
-          "Where",
-          "do",
-          "pink",
-          "river",
-          "dolphins",
-          "live",
-          "in",
-          "Colombia",
-          "Andean",
-          "condor"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "2-1-e1",
-        "audioText": "The jaguar is the largest feline in the Americas.",
-        "correctAnswer": "The jaguar is the largest feline in the Americas.",
-        "options": [
-          "The jaguar is the largest feline in the Americas.",
-          "It lives in dense tropical rainforests and wetlands.",
-          "Unlike many other cats, the jaguar can swim very well and often hunts near rivers."
-        ]
-      },
-      {
-        "id": "2-1-e2",
-        "audioText": "It lives in dense tropical rainforests and wetlands.",
-        "correctAnswer": "It lives in dense tropical rainforests and wetlands.",
-        "options": [
-          "Unlike many other cats, the jaguar can swim very well and often hunts near rivers.",
-          "It lives in dense tropical rainforests and wetlands.",
-          "However, jaguars can't survive if we destroy their natural forest habitat, so environmental protection is essential."
-        ]
-      },
-      {
-        "id": "2-1-e3",
-        "audioText": "Unlike many other cats, the jaguar can swim very well and often hunts near rivers.",
-        "correctAnswer": "Unlike many other cats, the jaguar can swim very well and often hunts near rivers.",
-        "options": [
-          "We practice speaking English every weekend with our squad.",
-          "However, jaguars can't survive if we destroy their natural forest habitat, so environmental protection is essential.",
-          "Unlike many other cats, the jaguar can swim very well and often hunts near rivers."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-2-1",
+      "badgeName": "Wildlife Protector",
+      "badgeEmoji": "🐾",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "2-1-1",
+              "term": "Rescue",
+              "translation": "rescatar / salvar animales",
+              "ipa": "/ˈrɛskjuː/",
+              "audioText": "rescue. Volunteers rescue injured wildlife from poachers.",
+              "example": "Volunteers rescue injured wildlife from poachers.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-1-2",
+              "term": "Protect",
+              "translation": "proteger / resguardar",
+              "ipa": "/prəˈtɛkt/",
+              "audioText": "protect. National parks protect them from deforestation.",
+              "example": "National parks protect them from deforestation.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-1-3",
+              "term": "Feed",
+              "translation": "alimentar / dar de comer",
+              "ipa": "/fiːd/",
+              "audioText": "feed. Biologists feed it fresh fruits and clean water.",
+              "example": "Biologists feed it fresh fruits and clean water.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-1-4",
+              "term": "Release",
+              "translation": "liberar a su hábitat natural",
+              "ipa": "/rɪˈliːs/",
+              "audioText": "release. They rehabilitate the eagle and release it into the wild.",
+              "example": "They rehabilitate the eagle and release it into the wild.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-1-5",
+              "term": "Support",
+              "translation": "apoyar / respaldar conservación",
+              "ipa": "/səˈpɔːrt/",
+              "audioText": "support. Local communities support us in wildlife conservation.",
+              "example": "Local communities support us in wildlife conservation.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-1-6",
+              "term": "Object Pronouns (me, you, him, her, it, us, them) reciben la acción del verbo o van tras preposición.",
+              "translation": "Paso 1: Regla de Oro ⭐",
+              "ipa": "/pronoun/",
+              "audioText": "We protect them from harm, and scientists care for her at the sanctuary.",
+              "example": "We protect them from harm, and scientists care for her at the sanctuary.",
+              "type": "grammar",
+              "learned": false
+          },
+          {
+              "id": "2-1-7",
+              "term": "Reemplaza animales o cuidadores con el pronombre objeto correcto según singular o plural.",
+              "translation": "Paso 2: Afirmativo (+)",
+              "ipa": "/pronombre/",
+              "audioText": "The ranger showed us the condor nest and allowed me to photograph it.",
+              "example": "The ranger showed us the condor nest and allowed me to photograph it.",
+              "type": "grammar",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "2-1-b1",
+              "prompt": "Nosotros los protegemos de la caza ilegal en la selva.",
+              "answer": "We protect them from illegal poaching in the jungle",
+              "tokens": [
+                  "We",
+                  "protect",
+                  "them",
+                  "from",
+                  "illegal",
+                  "poaching",
+                  "in",
+                  "the",
+                  "jungle",
+                  "they",
+                  "us"
+              ],
+              "hints": [
+                  "Usa el pronombre objeto 'them' para referirte a los animales.",
+                  "El pronombre objeto va inmediatamente después del verbo 'protect'."
+              ]
+          },
+          {
+              "id": "2-1-b2",
+              "prompt": "Los cazadores no se preocupan por ella en su hábitat natural.",
+              "answer": "Poachers do not care about her in her natural habitat",
+              "tokens": [
+                  "Poachers",
+                  "do",
+                  "not",
+                  "care",
+                  "about",
+                  "her",
+                  "in",
+                  "her",
+                  "natural",
+                  "habitat",
+                  "she",
+                  "them"
+              ],
+              "hints": [
+                  "Usa 'care about her' (pronombre objeto después de la preposición).",
+                  "Estructura negativa con 'do not care'."
+              ]
+          },
+          {
+              "id": "2-1-b3",
+              "prompt": "¿Puedes mostrarnos el santuario de cóndores y ayudarnos?",
+              "answer": "Can you show us the condor sanctuary and help us",
+              "tokens": [
+                  "Can",
+                  "you",
+                  "show",
+                  "us",
+                  "the",
+                  "condor",
+                  "sanctuary",
+                  "and",
+                  "help",
+                  "us",
+                  "we",
+                  "me"
+              ],
+              "hints": [
+                  "Usa 'us' (a nosotros) como pronombre objeto de 'show' y 'help'.",
+                  "Pregunta cortés que inicia con 'Can you'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "2-1-e1",
+              "audioText": "We must rescue wounded animals and take them to certified sanctuaries.",
+              "correctAnswer": "We must rescue wounded animals and take them to certified sanctuaries.",
+              "options": [
+                  "We must rescue wounded animals and take them to certified sanctuaries.",
+                  "Poachers capture exotic birds and sell them in illegal markets.",
+                  "Volunteers feed the baby puma and return it to the wild."
+              ]
+          },
+          {
+              "id": "2-1-e2",
+              "audioText": "The park ranger showed us where the wild river dolphins swim.",
+              "correctAnswer": "The park ranger showed us where the wild river dolphins swim.",
+              "options": [
+                  "The park ranger showed us where the wild river dolphins swim.",
+                  "We photographed her from a safe distance near the river.",
+                  "Can you help me identify this endangered Amazon frog species?"
+              ]
+          },
+          {
+              "id": "2-1-e3",
+              "audioText": "Environmental teams work hard to protect them from extinction.",
+              "correctAnswer": "Environmental teams work hard to protect them from extinction.",
+              "options": [
+                  "Environmental teams work hard to protect them from extinction.",
+                  "They rescue wild condors and release them across the Andes.",
+                  "Visitors cannot touch him without special safety equipment."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-2-2",
@@ -5467,193 +5521,190 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-2-5",
-    "badgeName": "Talent Master",
-    "badgeEmoji": "⚡",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "2-5-1",
-        "term": "Perform",
-        "translation": "Verbo de acción",
-        "ipa": "/pərˈfɔːrm/",
-        "audioText": "perform. The youth rock band performs live songs at the school auditorium.",
-        "example": "The youth rock band performs live songs at the school auditorium.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-5-2",
-        "term": "Compose",
-        "translation": "Verbo de acción",
-        "ipa": "/kəmˈpoʊz/",
-        "audioText": "compose. Lucas composes original piano soundtracks for indie video games.",
-        "example": "Lucas composes original piano soundtracks for indie video games.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-5-3",
-        "term": "Skate",
-        "translation": "Verbo de acción",
-        "ipa": "/skeɪt/",
-        "audioText": "skate. Teenagers skate on urban ramps at the community sports park.",
-        "example": "Teenagers skate on urban ramps at the community sports park.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-5-4",
-        "term": "Code",
-        "translation": "Verbo de acción",
-        "ipa": "/koʊd/",
-        "audioText": "code. Students code interactive quiz games during computer science class.",
-        "example": "Students code interactive quiz games during computer science class.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-5-5",
-        "term": "Solve",
-        "translation": "Verbo de acción",
-        "ipa": "/sɑːlv/",
-        "audioText": "solve. She can solve difficult math equations in a matter of seconds.",
-        "example": "She can solve difficult math equations in a matter of seconds.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-5-6",
-        "term": "CAN va seguido de verbo en infinitivo sin 'to'. Los adverbios de grado (very well, fluently) van al final de la oración.",
-        "translation": "Paso 1: Regla de Oro ⭐",
-        "ipa": "/can/",
-        "audioText": "Lucas can play electric guitar very well, but he can't sing on pitch.",
-        "example": "Lucas can play electric guitar very well, but he can't sing on pitch.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "2-5-7",
-        "term": "Añade precisión a tu nivel de dominio en cualquier actividad.",
-        "translation": "Paso 2: Grados de Habilidad 📊",
-        "ipa": "/aade/",
-        "audioText": "I can edit TikTok videos easily using my phone.",
-        "example": "I can edit TikTok videos easily using my phone.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "2-5-b1",
-        "prompt": "Yo puedo tocar la guitarra eléctrica y programar luces reactivas muy bien.",
-        "answer": "I can play the electric guitar and code reactive lights very well",
-        "tokens": [
-          "I",
-          "can",
-          "play",
-          "the",
-          "electric",
-          "guitar",
-          "and",
-          "code",
-          "reactive",
-          "lights",
-          "very",
-          "well",
-          "sing",
-          "pitch"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "2-5-b2",
-        "prompt": "Ella puede cantar afinada, pero no puede tocar el teclado al mismo tiempo.",
-        "answer": "She can sing on pitch but she cannot play the keyboard at the same time",
-        "tokens": [
-          "She",
-          "can",
-          "sing",
-          "on",
-          "pitch",
-          "but",
-          "she",
-          "cannot",
-          "play",
-          "the",
-          "keyboard",
-          "at",
-          "same",
-          "time",
-          "electric",
-          "guitar"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "2-5-b3",
-        "prompt": "¿Puedes cantar el coro principal mientras toco la guitarra acústica?",
-        "answer": "Can you sing the lead chorus while I play the acoustic guitar",
-        "tokens": [
-          "Can",
-          "you",
-          "sing",
-          "the",
-          "lead",
-          "chorus",
-          "while",
-          "I",
-          "play",
-          "acoustic",
-          "guitar",
-          "electric",
-          "code"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "2-5-e1",
-        "audioText": "Everyone has a unique talent waiting to be developed.",
-        "correctAnswer": "Everyone has a unique talent waiting to be developed.",
-        "options": [
-          "Everyone has a unique talent waiting to be developed.",
-          "You might not be able to play an instrument today, but with dedicated practice, you can learn any creative skill.",
-          "Lucas can code interactive programs easily because he practices every weekend, while Sara trains her voice thirty minutes every morning."
-        ]
-      },
-      {
-        "id": "2-5-e2",
-        "audioText": "You might not be able to play an instrument today, but with dedicated practice, you can learn any creative skill.",
-        "correctAnswer": "You might not be able to play an instrument today, but with dedicated practice, you can learn any creative skill.",
-        "options": [
-          "Lucas can code interactive programs easily because he practices every weekend, while Sara trains her voice thirty minutes every morning.",
-          "You might not be able to play an instrument today, but with dedicated practice, you can learn any creative skill.",
-          "You might not be able to play an instrument evening, but with dedicated practice, you can learn any creative skill."
-        ]
-      },
-      {
-        "id": "2-5-e3",
-        "audioText": "Lucas can code interactive programs easily because he practices every weekend, while Sara trains her voice thirty minutes every morning.",
-        "correctAnswer": "Lucas can code interactive programs easily because he practices every weekend, while Sara trains her voice thirty minutes every morning.",
-        "options": [
-          "Lucas can code interactive programs easily because he practices every weekend, while Sara trains her voice thirty minutes every evening.",
-          "Lucas rarely code interactive programs easily because he practices every weekend, while Sara trains her voice thirty minutes every morning.",
-          "Lucas can code interactive programs easily because he practices every weekend, while Sara trains her voice thirty minutes every morning."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-2-5",
+      "badgeName": "Talent Evolution Master",
+      "badgeEmoji": "⚡",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "2-5-1",
+              "term": "Perform",
+              "translation": "presentarse en vivo / actuar",
+              "ipa": "/pərˈfɔːrm/",
+              "audioText": "perform. The youth rock band performed live songs at the auditorium.",
+              "example": "The youth rock band performed live songs at the auditorium.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-5-2",
+              "term": "Compose",
+              "translation": "componer canciones o melodías",
+              "ipa": "/kəmˈpoʊz/",
+              "audioText": "compose. She composed acoustic melodies when she was twelve.",
+              "example": "She composed acoustic melodies when she was twelve.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-5-3",
+              "term": "Code",
+              "translation": "programar / desarrollar código",
+              "ipa": "/koʊd/",
+              "audioText": "code. Lucas could code interactive apps two years ago.",
+              "example": "Lucas could code interactive apps two years ago.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-5-4",
+              "term": "Master",
+              "translation": "dominar con maestría una habilidad",
+              "ipa": "/ˈmæstər/",
+              "audioText": "master. With daily practice, he mastered complex guitar chords.",
+              "example": "With daily practice, he mastered complex guitar chords.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-5-5",
+              "term": "Train",
+              "translation": "entrenar / ejercitar la voz o cuerpo",
+              "ipa": "/treɪn/",
+              "audioText": "train. Vocalists train their voices thirty minutes every morning.",
+              "example": "Vocalists train their voices thirty minutes every morning.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-5-6",
+              "term": "COULD expresa habilidad pasada y COULDN'T incapacidad pasada. El verbo principal va en forma base.",
+              "translation": "Paso 1: Regla de Oro ⭐",
+              "ipa": "/kʊd/",
+              "audioText": "When Sara was ten years old, she could sing with natural pitch and rhythm.",
+              "example": "When Sara was ten years old, she could sing with natural pitch and rhythm.",
+              "type": "grammar",
+              "learned": false
+          },
+          {
+              "id": "2-5-7",
+              "term": "Contraste temporal: 'Three years ago I couldn't code, but now I can develop games.'",
+              "translation": "Paso 2: Contraste Pasado vs Presente",
+              "ipa": "/contrast/",
+              "audioText": "Three years ago I couldn't write code, but now I can build mobile apps.",
+              "example": "Three years ago I couldn't write code, but now I can build mobile apps.",
+              "type": "grammar",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "2-5-b1",
+              "prompt": "Cuando Sara tenía diez años, ella podía cantar con afinación natural.",
+              "answer": "When Sara was ten years old she could sing with natural pitch",
+              "tokens": [
+                  "When",
+                  "Sara",
+                  "was",
+                  "ten",
+                  "years",
+                  "old",
+                  "she",
+                  "could",
+                  "sing",
+                  "with",
+                  "natural",
+                  "pitch",
+                  "can",
+                  "cannot"
+              ],
+              "hints": [
+                  "Inicia con la cláusula de tiempo 'When Sara was ten years old'.",
+                  "Usa 'she could sing' para la habilidad pasada."
+              ]
+          },
+          {
+              "id": "2-5-b2",
+              "prompt": "Hace tres años yo no podía programar aplicaciones, pero ahora sí puedo.",
+              "answer": "Three years ago I could not code applications but now I can",
+              "tokens": [
+                  "Three",
+                  "years",
+                  "ago",
+                  "I",
+                  "could",
+                  "not",
+                  "code",
+                  "applications",
+                  "but",
+                  "now",
+                  "I",
+                  "can",
+                  "sing",
+                  "could"
+              ],
+              "hints": [
+                  "Usa 'could not code' para la incapacidad del pasado.",
+                  "Contrasta al final con 'but now I can'."
+              ]
+          },
+          {
+              "id": "2-5-b3",
+              "prompt": "¿Podías tocar un instrumento musical cuando tenías ocho años?",
+              "answer": "Could you play a musical instrument when you were eight",
+              "tokens": [
+                  "Could",
+                  "you",
+                  "play",
+                  "a",
+                  "musical",
+                  "instrument",
+                  "when",
+                  "you",
+                  "were",
+                  "eight",
+                  "can",
+                  "was"
+              ],
+              "hints": [
+                  "Inicia la pregunta por inversión con 'Could you play'.",
+                  "Termina con la cláusula de edad 'when you were eight'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "2-5-e1",
+              "audioText": "When Sara was ten years old, she could already sing with perfect pitch.",
+              "correctAnswer": "When Sara was ten years old, she could already sing with perfect pitch.",
+              "options": [
+                  "When Sara was ten years old, she could already sing with perfect pitch.",
+                  "Lucas trains thirty minutes every morning to develop his programming skills.",
+                  "Everyone has a unique superpower waiting to be unlocked through dedicated practice."
+              ]
+          },
+          {
+              "id": "2-5-e2",
+              "audioText": "Three years ago, Lucas couldn't program websites, but now he codes full games.",
+              "correctAnswer": "Three years ago, Lucas couldn't program websites, but now he codes full games.",
+              "options": [
+                  "Three years ago, Lucas couldn't program websites, but now he codes full games.",
+                  "Could you play the acoustic guitar when you were in elementary school?",
+                  "We performed live on stage during the annual youth music festival."
+              ]
+          },
+          {
+              "id": "2-5-e3",
+              "audioText": "Could you speak basic English before joining this academy?",
+              "correctAnswer": "Could you speak basic English before joining this academy?",
+              "options": [
+                  "Could you speak basic English before joining this academy?",
+                  "I could not ride a bicycle without support wheels until I was nine.",
+                  "With consistent discipline and guidance, you can master any creative art."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-2-6",
@@ -5840,189 +5891,191 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-2-7",
-    "badgeName": "Fitness Champion",
-    "badgeEmoji": "⚽",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "2-7-1",
-        "term": "Train",
-        "translation": "Verbo de acción",
-        "ipa": "/treɪn/",
-        "audioText": "train. Athletes train hard every afternoon to prepare for the championship.",
-        "example": "Athletes train hard every afternoon to prepare for the championship.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-7-2",
-        "term": "Stretch",
-        "translation": "Verbo de acción",
-        "ipa": "/strɛtʃ/",
-        "audioText": "stretch. I always stretch my legs and back to avoid muscle cramps.",
-        "example": "I always stretch my legs and back to avoid muscle cramps.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-7-3",
-        "term": "Hydrate",
-        "translation": "Verbo de acción",
-        "ipa": "/ˈhaɪ.dreɪt/",
-        "audioText": "hydrate. Remember to hydrate frequently during hot cycling rides.",
-        "example": "Remember to hydrate frequently during hot cycling rides.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-7-4",
-        "term": "Compete",
-        "translation": "Verbo de acción",
-        "ipa": "/kəmˈpiːt/",
-        "audioText": "compete. Our school soccer team competes in the regional youth tournament.",
-        "example": "Our school soccer team competes in the regional youth tournament.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-7-5",
-        "term": "Boost",
-        "translation": "Verbo de acción",
-        "ipa": "/buːst/",
-        "audioText": "boost. Morning workouts boost your brain power and daily productivity.",
-        "example": "Morning workouts boost your brain power and daily productivity.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "2-7-6",
-        "term": "Regla de Posición: Sujeto + Adverbio + Verbo Principal. (Excepción: con TO BE va después: 'I am always energized').",
-        "translation": "Paso 1: Regla de Oro ⭐",
-        "ipa": "/regla/",
-        "audioText": "I usually drink two liters of water every day, and I never skip breakfast.",
-        "example": "I usually drink two liters of water every day, and I never skip breakfast.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "2-7-7",
-        "term": "Combina deporte, frecuencia y beneficio para una oración fluida.",
-        "translation": "Paso 2: Afirmativo (+)",
-        "ipa": "/combina/",
-        "audioText": "I usually go cycling on Saturday mornings because it helps me build endurance.",
-        "example": "I usually go cycling on Saturday mornings because it helps me build endurance.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "2-7-b1",
-        "prompt": "Yo salgo a montar en bicicleta cuatro veces por semana y siempre tomo agua.",
-        "answer": "I usually go cycling four times a week and always drink water",
-        "tokens": [
-          "I",
-          "usually",
-          "go",
-          "cycling",
-          "four",
-          "times",
-          "a",
-          "week",
-          "and",
-          "always",
-          "drink",
-          "water",
-          "never",
-          "skip"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "2-7-b2",
-        "prompt": "Nosotros nunca nos saltamos los estiramientos después de jugar fútbol.",
-        "answer": "We never skip muscle stretching after playing intense soccer matches",
-        "tokens": [
-          "We",
-          "never",
-          "skip",
-          "muscle",
-          "stretching",
-          "after",
-          "playing",
-          "intense",
-          "soccer",
-          "matches",
-          "usually",
-          "cycling"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "2-7-b3",
-        "prompt": "¿Con qué frecuencia practicas deportes y cuánta agua tomas al día?",
-        "answer": "How often do you practice sports and how much water do you drink",
-        "tokens": [
-          "How",
-          "often",
-          "do",
-          "you",
-          "practice",
-          "sports",
-          "and",
-          "how",
-          "much",
-          "water",
-          "drink",
-          "usually",
-          "cycling"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "2-7-e1",
-        "audioText": "Maintaining a healthy lifestyle as a teenager is easier than you think.",
-        "correctAnswer": "Maintaining a healthy lifestyle as a teenager is easier than you think.",
-        "options": [
-          "Maintaining a healthy lifestyle as a teenager is easier than you think.",
-          "First, always drink at least two liters of fresh water daily, especially before and after workouts.",
-          "Second, athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory."
-        ]
-      },
-      {
-        "id": "2-7-e2",
-        "audioText": "First, always drink at least two liters of fresh water daily, especially before and after workouts.",
-        "correctAnswer": "First, always drink at least two liters of fresh water daily, especially before and after workouts.",
-        "options": [
-          "Second, athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory.",
-          "First, always drink at least two liters of fresh water daily, especially before and after workouts.",
-          "Finally, try to play a sport or walk outside at least three times a week."
-        ]
-      },
-      {
-        "id": "2-7-e3",
-        "audioText": "Second, athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory.",
-        "correctAnswer": "Second, athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory.",
-        "options": [
-          "Second, athletes should sleep eight hours every evening because deep rest recovers your muscles and boosts memory.",
-          "Finally, try to play a sport or walk outside at least three times a week.",
-          "Second, athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-2-7",
+      "badgeName": "Balanced Athlete Champion",
+      "badgeEmoji": "⚽",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "2-7-1",
+              "term": "Hydrate",
+              "translation": "hidratarse con agua limpia",
+              "ipa": "/ˈhaɪdreɪt/",
+              "audioText": "hydrate. Athletes hydrate with clean water before and during the match.",
+              "example": "Athletes hydrate with clean water before and during the match.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-7-2",
+              "term": "Recover",
+              "translation": "recuperar energía y músculos",
+              "ipa": "/rɪˈkʌvər/",
+              "audioText": "recover. Muscles recover when athletes get eight hours of deep sleep.",
+              "example": "Muscles recover when athletes get eight hours of deep sleep.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-7-3",
+              "term": "Balance",
+              "translation": "equilibrar actividades y nutrición",
+              "ipa": "/ˈbæləns/",
+              "audioText": "balance. Teenagers must balance academic study, exercise, and screen time.",
+              "example": "Teenagers must balance academic study, exercise, and screen time.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-7-4",
+              "term": "Stretch",
+              "translation": "estirar músculos y articulaciones",
+              "ipa": "/strɛtʃ/",
+              "audioText": "stretch. Always stretch your legs after cycling to avoid severe cramps.",
+              "example": "Always stretch your legs after cycling to avoid severe cramps.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-7-5",
+              "term": "Consume",
+              "translation": "consumir nutrientes o alimentos",
+              "ipa": "/kənˈsjuːm/",
+              "audioText": "consume. Do not consume too much refined sugar before athletic training.",
+              "example": "Do not consume too much refined sugar before athletic training.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "2-7-6",
+              "term": "TOO MUCH con incontables (sugar, screen time) y TOO MANY con contables plurales (hours, sodas).",
+              "translation": "Paso 1: Regla de Oro ⭐",
+              "ipa": "/quantifier/",
+              "audioText": "Drinking too much soda is harmful, but eating plenty of fruit gives steady energy.",
+              "example": "Drinking too much soda is harmful, but eating plenty of fruit gives steady energy.",
+              "type": "grammar",
+              "learned": false
+          },
+          {
+              "id": "2-7-7",
+              "term": "ENOUGH expresa cantidad justa: antes de sustantivo ('enough water') y tras adjetivo ('strong enough').",
+              "translation": "Paso 2: Balance con Enough",
+              "ipa": "/enough/",
+              "audioText": "Do you drink enough water and get plenty of rest before big tournaments?",
+              "example": "Do you drink enough water and get plenty of rest before big tournaments?",
+              "type": "grammar",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "2-7-b1",
+              "prompt": "Los atletas jóvenes necesitan abundante agua fresca y suficiente sueño cada noche.",
+              "answer": "Young athletes need plenty of fresh water and enough sleep every night",
+              "tokens": [
+                  "Young",
+                  "athletes",
+                  "need",
+                  "plenty",
+                  "of",
+                  "fresh",
+                  "water",
+                  "and",
+                  "enough",
+                  "sleep",
+                  "every",
+                  "night",
+                  "too",
+                  "many"
+              ],
+              "hints": [
+                  "Usa 'plenty of fresh water' para abundante agua.",
+                  "Usa 'enough sleep' para cantidad adecuada de sueño."
+              ]
+          },
+          {
+              "id": "2-7-b2",
+              "prompt": "No deberías tomar demasiadas bebidas energéticas azucaradas antes de un partido.",
+              "answer": "You should not drink too many sugary energy drinks before a match",
+              "tokens": [
+                  "You",
+                  "should",
+                  "not",
+                  "drink",
+                  "too",
+                  "many",
+                  "sugary",
+                  "energy",
+                  "drinks",
+                  "before",
+                  "a",
+                  "match",
+                  "much",
+                  "enough"
+              ],
+              "hints": [
+                  "Usa 'too many' porque 'energy drinks' es contable en plural.",
+                  "Consejo preventivo con 'You should not drink'."
+              ]
+          },
+          {
+              "id": "2-7-b3",
+              "prompt": "¿Consigues suficiente proteína y comida saludable para rendir bien?",
+              "answer": "Do you get enough protein and healthy food to perform well",
+              "tokens": [
+                  "Do",
+                  "you",
+                  "get",
+                  "enough",
+                  "protein",
+                  "and",
+                  "healthy",
+                  "food",
+                  "to",
+                  "perform",
+                  "well",
+                  "too",
+                  "many"
+              ],
+              "hints": [
+                  "Pregunta con 'Do you get enough protein'.",
+                  "Propósito final con 'to perform well'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "2-7-e1",
+              "audioText": "Maintaining peak athletic performance is all about daily balance.",
+              "correctAnswer": "Maintaining peak athletic performance is all about daily balance.",
+              "options": [
+                  "Maintaining peak athletic performance is all about daily balance.",
+                  "First, always drink at least two liters of fresh water daily.",
+                  "Athletes should sleep eight hours every night to recover properly."
+              ]
+          },
+          {
+              "id": "2-7-e2",
+              "audioText": "Make sure you drink enough water every day, because dehydration causes fatigue.",
+              "correctAnswer": "Make sure you drink enough water every day, because dehydration causes fatigue.",
+              "options": [
+                  "Make sure you drink enough water every day, because dehydration causes fatigue.",
+                  "Do you eat plenty of fruits and vegetables before competition?",
+                  "Too much sugar gives a quick spike, but not enough steady endurance."
+              ]
+          },
+          {
+              "id": "2-7-e3",
+              "audioText": "Don't consume too much junk food or drink too many sugary energy drinks.",
+              "correctAnswer": "Don't consume too much junk food or drink too many sugary energy drinks.",
+              "options": [
+                  "Don't consume too much junk food or drink too many sugary energy drinks.",
+                  "You should stretch your muscles after cycling to avoid injuries.",
+                  "Balance between study hours, gaming, and workouts is essential."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-2-8",
@@ -6585,367 +6638,382 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-3-1",
-    "badgeName": "Daily Routine & Time",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "3-1-1",
-        "term": "Wake up",
-        "translation": "Despertarse",
-        "ipa": "/weɪk ʌp/",
-        "audioText": "Wake up. I wake up at 6:00 AM every day.",
-        "example": "I wake up at 6:00 AM every day.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-1-2",
-        "term": "Leave",
-        "translation": "Salir de / Irse",
-        "ipa": "/liːv/",
-        "audioText": "Leave. She leaves home at 7:10 AM.",
-        "example": "She leaves home at 7:10 AM.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-1-3",
-        "term": "Study",
-        "translation": "Estudiar",
-        "ipa": "/ˈstʌdi/",
-        "audioText": "Study. We study English on weekday afternoons.",
-        "example": "We study English on weekday afternoons.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-1-4",
-        "term": "Exercise",
-        "translation": "Hacer ejercicio / Entrenar",
-        "ipa": "/ˈeksərsaɪz/",
-        "audioText": "Exercise. He exercises at the gym before dinner.",
-        "example": "He exercises at the gym before dinner.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-1-5",
-        "term": "Relax",
-        "translation": "Relajarse / Descansar",
-        "ipa": "/rɪˈlæks/",
-        "audioText": "Relax. I relax and listen to music in the evening.",
-        "example": "I relax and listen to music in the evening.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-1-6",
-        "term": "It is 7:00 (Seven o'clock)",
-        "translation": "Usa 'at' para horas exactas: 'My class starts at 7:30 AM'. Usa 'It is' para responder la hora actual.",
-        "ipa": "/it/",
-        "audioText": "My morning alarm rings at 6:15 AM every single day.",
-        "example": "My morning alarm rings at 6:15 AM every single day.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "3-1-7",
-        "term": "Always (100%)",
-        "translation": "Se colocan entre el Sujeto y el Verbo de acción: Sujeto + Adverbio + Verbo + Complemento.",
-        "ipa": "/always/",
-        "audioText": "Daniel always drinks chocolate milk before going to school.",
-        "example": "Daniel always drinks chocolate milk before going to school.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "3-1-b1",
-        "prompt": "Yo siempre me despierto a las seis y media de la mañana.",
-        "answer": "I always wake up at half past six in the morning",
-        "tokens": [
-          "I",
-          "always",
-          "wake",
-          "up",
-          "at",
-          "half",
-          "past",
-          "six",
-          "in",
-          "the",
-          "morning",
-          "Valentina",
-          "does"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "3-1-b2",
-        "prompt": "Valentina no se trasnocha los días de colegio.",
-        "answer": "Valentina does not stay up late on school nights",
-        "tokens": [
-          "Valentina",
-          "does",
-          "not",
-          "stay",
-          "up",
-          "late",
-          "on",
-          "school",
-          "nights",
-          "always",
-          "wake"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "3-1-b3",
-        "prompt": "¿A qué hora sales para el entrenamiento por la tarde?",
-        "answer": "What time do you leave for training in the afternoon",
-        "tokens": [
-          "What",
-          "time",
-          "do",
-          "you",
-          "leave",
-          "for",
-          "training",
-          "in",
-          "the",
-          "afternoon",
-          "always",
-          "wake"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "3-1-e1",
-        "audioText": "Our soccer training always starts at half past four in the afternoon.",
-        "correctAnswer": "Our soccer training always starts at half past four in the afternoon.",
-        "options": [
-          "Our soccer training always starts at half past four in the afternoon.",
-          "Please do not be late because we have a big match on Friday.",
-          "I always wake up at half past six in the morning."
-        ]
-      },
-      {
-        "id": "3-1-e2",
-        "audioText": "Please do not be late because we have a big match on Friday.",
-        "correctAnswer": "Please do not be late because we have a big match on Friday.",
-        "options": [
-          "I always wake up at half past six in the morning.",
-          "Please do not be late because we have a big match on Friday.",
-          "Valentina does not stay up late on school nights."
-        ]
-      },
-      {
-        "id": "3-1-e3",
-        "audioText": "I always wake up at half past six in the morning.",
-        "correctAnswer": "I always wake up at half past six in the morning.",
-        "options": [
-          "What time do you leave for training in the afternoon?",
-          "Valentina does not stay up late on school nights.",
-          "I always wake up at half past six in the morning."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-3-1",
+      "badgeName": "Tech Reviewer Pro",
+      "badgeEmoji": "⚡",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "3-1-1",
+              "term": "Faster than",
+              "translation": "más rápido que (adjetivo corto)",
+              "ipa": "/ˈfæstər ðæn/",
+              "audioText": "faster than. The Pro phone is faster than the older model.",
+              "example": "The Pro phone is faster than the older model.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-1-2",
+              "term": "Cheaper than",
+              "translation": "más barato que (adjetivo corto)",
+              "ipa": "/ˈtʃiːpər ðæn/",
+              "audioText": "cheaper than. The standard phone is much cheaper than the Ultra version.",
+              "example": "The standard phone is much cheaper than the Ultra version.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-1-3",
+              "term": "More expensive than",
+              "translation": "más costoso que (adjetivo largo)",
+              "ipa": "/mɔːr ɪkˈspɛnsɪv ðæn/",
+              "audioText": "more expensive than. Gaming laptops are more expensive than study tablets.",
+              "example": "Gaming laptops are more expensive than study tablets.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-1-4",
+              "term": "Better than",
+              "translation": "mejor que (irregular de good)",
+              "ipa": "/ˈbɛtər ðæn/",
+              "audioText": "better than. The camera on the new phone is definitely better than before.",
+              "example": "The camera on the new phone is definitely better than before.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-1-5",
+              "term": "Worse than",
+              "translation": "peor que (irregular de bad)",
+              "ipa": "/wɜːrs ðæn/",
+              "audioText": "worse than. High lag is worse than low graphics in competitive gaming.",
+              "example": "High lag is worse than low graphics in competitive gaming.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-1-6",
+              "term": "As long as",
+              "translation": "tan largo / dura tanto como (igualdad)",
+              "ipa": "/æz lɔːŋ æz/",
+              "audioText": "as long as. The standard battery lasts as long as the Pro model.",
+              "example": "The standard battery lasts as long as the Pro model.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-1-7",
+              "term": "Lighter than",
+              "translation": "más liviano o ligero que",
+              "ipa": "/ˈlaɪtər ðæn/",
+              "audioText": "lighter than. Wireless earbuds are lighter than overhead headphones.",
+              "example": "Wireless earbuds are lighter than overhead headphones.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-1-8",
+              "term": "More powerful than",
+              "translation": "más potente que",
+              "ipa": "/mɔːr ˈpaʊərfəl ðæn/",
+              "audioText": "more powerful than. Desktop PCs are more powerful than mobile devices.",
+              "example": "Desktop PCs are more powerful than mobile devices.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "3-1-b1",
+              "targetSentence": "The Pro model is faster and lighter than the standard phone.",
+              "scrambledTokens": [
+                  "The",
+                  "Pro",
+                  "model",
+                  "is",
+                  "faster",
+                  "and",
+                  "lighter",
+                  "than",
+                  "the",
+                  "standard",
+                  "phone.",
+                  "more",
+                  "fast"
+              ],
+              "hints": [
+                  "Comparativos cortos: faster and lighter.",
+                  "Conector comparativo: than the standard phone."
+              ]
+          },
+          {
+              "id": "3-1-b2",
+              "targetSentence": "The UltraPro camera is definitely better for nighttime photos.",
+              "scrambledTokens": [
+                  "The",
+                  "UltraPro",
+                  "camera",
+                  "is",
+                  "definitely",
+                  "better",
+                  "for",
+                  "nighttime",
+                  "photos.",
+                  "gooder",
+                  "best"
+              ],
+              "hints": [
+                  "Usa el irregular 'better' (nunca gooder).",
+                  "Termina con 'for nighttime photos.'."
+              ]
+          },
+          {
+              "id": "3-1-b3",
+              "targetSentence": "The standard phone battery lasts as long as the expensive model.",
+              "scrambledTokens": [
+                  "The",
+                  "standard",
+                  "phone",
+                  "battery",
+                  "lasts",
+                  "as",
+                  "long",
+                  "as",
+                  "the",
+                  "expensive",
+                  "model.",
+                  "longer",
+                  "than"
+              ],
+              "hints": [
+                  "Estructura de igualdad: 'as long as'.",
+                  "Compara con 'the expensive model.'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "3-1-e1",
+              "audioText": "The Pro model is faster and lighter than the standard version.",
+              "correctAnswer": "The Pro model is faster and lighter than the standard version.",
+              "options": [
+                  "The Pro model is faster and lighter than the standard version.",
+                  "Students do not eat sugar before playing basketball tournaments.",
+                  "We travel across the city by electric scooter every Monday morning."
+              ]
+          },
+          {
+              "id": "3-1-e2",
+              "audioText": "Its camera is definitely better for nighttime photos.",
+              "correctAnswer": "Its camera is definitely better for nighttime photos.",
+              "options": [
+                  "Its camera is definitely better for nighttime photos.",
+                  "Sofia cleans her bedroom and hangs anime posters on the wall.",
+                  "Do not forget to take your waterproof jacket and umbrella."
+              ]
+          },
+          {
+              "id": "3-1-e3",
+              "audioText": "The standard phone is much cheaper and its battery lasts as long as the expensive model!",
+              "correctAnswer": "The standard phone is much cheaper and its battery lasts as long as the expensive model!",
+              "options": [
+                  "The standard phone is much cheaper and its battery lasts as long as the expensive model!",
+                  "Can you buy some artisan cheese and fresh bread at the supermarket?",
+                  "Daniel prepares delicious avocado sandwiches for his friends."
+              ]
+          }
+      ]
   },
-  {
-    "classId": "c-teens-basic-3-2",
-    "badgeName": "Sports, Competitions & Teams",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "3-2-1",
-        "term": "Win",
-        "translation": "Ganar",
-        "ipa": "/wɪn/",
-        "audioText": "Win. Our team won the championship trophy.",
-        "example": "Our team won the championship trophy.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-2-2",
-        "term": "Lose",
-        "translation": "Perder",
-        "ipa": "/luːz/",
-        "audioText": "Lose. They lost the match but played bravely.",
-        "example": "They lost the match but played bravely.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-2-3",
-        "term": "Score",
-        "translation": "Anotar / Marcar (gol/punto)",
-        "ipa": "/skɔːr/",
-        "audioText": "Score. He scored a penalty in the last minute.",
-        "example": "He scored a penalty in the last minute.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-2-4",
-        "term": "Train",
-        "translation": "Entrenar",
-        "ipa": "/treɪn/",
-        "audioText": "Train. We train hard every weekday afternoon.",
-        "example": "We train hard every weekday afternoon.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-2-5",
-        "term": "Pass",
-        "translation": "Pasar (el balón)",
-        "ipa": "/pæs/",
-        "audioText": "Pass. Pass the ball quickly to the forward!",
-        "example": "Pass the ball quickly to the forward!",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-2-6",
-        "term": "Play soccer",
-        "translation": "Se usa siempre que haya un balón, raqueta o dos equipos compitiendo.",
-        "ipa": "/play/",
-        "audioText": "Santiago plays soccer for his school team every Saturday morning.",
-        "example": "Santiago plays soccer for his school team every Saturday morning.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "3-2-7",
-        "term": "Go swimming",
-        "translation": "Se usa cuando la actividad termina en -ING e implica desplazamiento o aire libre.",
-        "ipa": "/go/",
-        "audioText": "We go cycling on the Ciclovía every Sunday with the whole family.",
-        "example": "We go cycling on the Ciclovía every Sunday with the whole family.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "3-2-b1",
-        "prompt": "Nosotros jugamos fútbol todos los sábados en la cancha sintética.",
-        "answer": "We play soccer every Saturday on the artificial turf pitch",
-        "tokens": [
-          "We",
-          "play",
-          "soccer",
-          "every",
-          "Saturday",
-          "on",
-          "the",
-          "artificial",
-          "turf",
-          "pitch",
-          "brother",
-          "does"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "3-2-b2",
-        "prompt": "Mi hermano no hace karate pero va a nadar los domingos.",
-        "answer": "My brother does not do karate but goes swimming on Sundays",
-        "tokens": [
-          "My",
-          "brother",
-          "does",
-          "not",
-          "do",
-          "karate",
-          "but",
-          "goes",
-          "swimming",
-          "on",
-          "Sundays",
-          "play",
-          "soccer"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "3-2-b3",
-        "prompt": "¿Con qué frecuencia entrenas con tu equipo de voleibol?",
-        "answer": "How often do you train with your volleyball team",
-        "tokens": [
-          "How",
-          "often",
-          "do",
-          "you",
-          "train",
-          "with",
-          "your",
-          "volleyball",
-          "team",
-          "play",
-          "soccer"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "3-2-e1",
-        "audioText": "We need to pass the ball quickly, stay strong on defense, and support our striker.",
-        "correctAnswer": "We need to pass the ball quickly, stay strong on defense, and support our striker.",
-        "options": [
-          "We need to pass the ball quickly, stay strong on defense, and support our striker.",
-          "We can win this trophy together!",
-          "We play soccer every Saturday on the artificial turf pitch."
-        ]
-      },
-      {
-        "id": "3-2-e2",
-        "audioText": "We can win this trophy together!",
-        "correctAnswer": "We can win this trophy together!",
-        "options": [
-          "We play soccer every Saturday on the artificial turf pitch.",
-          "We can win this trophy together!",
-          "My brother does not do karate but goes swimming on Sundays."
-        ]
-      },
-      {
-        "id": "3-2-e3",
-        "audioText": "We play soccer every Saturday on the artificial turf pitch.",
-        "correctAnswer": "We play soccer every Saturday on the artificial turf pitch.",
-        "options": [
-          "How often do you train with your volleyball team?",
-          "My brother does not do karate but goes swimming on Sundays.",
-          "We play soccer every Saturday on the artificial turf pitch."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-3-2",
+      "badgeName": "Guinness Record Legend",
+      "badgeEmoji": "🏆",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "3-2-1",
+              "term": "The fastest",
+              "translation": "el más rápido de todos (superlativo)",
+              "ipa": "/ðə ˈfæstɪst/",
+              "audioText": "the fastest. Usain Bolt is the fastest runner in history.",
+              "example": "Usain Bolt is the fastest runner in history.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-2-2",
+              "term": "The deepest",
+              "translation": "el más profundo de todos",
+              "ipa": "/ðə ˈdiːpɪst/",
+              "audioText": "the deepest. The Mariana Trench is the deepest place in the ocean.",
+              "example": "The Mariana Trench is the deepest place in the ocean.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-2-3",
+              "term": "The most impressive",
+              "translation": "el más impresionante de todos",
+              "ipa": "/ðə moʊst ɪmˈprɛsɪv/",
+              "audioText": "the most impressive. This is the most impressive world record on Earth.",
+              "example": "This is the most impressive world record on Earth.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-2-4",
+              "term": "The best",
+              "translation": "el mejor de todos (irregular de good)",
+              "ipa": "/ðə bɛst/",
+              "audioText": "the best. Who is the best athlete of all time?",
+              "example": "Who is the best athlete of all time?",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-2-5",
+              "term": "The hottest",
+              "translation": "el más caliente (duplica consonant CVC)",
+              "ipa": "/ðə ˈhɒtɪst/",
+              "audioText": "the hottest. Death Valley is the hottest place recorded on Earth.",
+              "example": "Death Valley is the hottest place recorded on Earth.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-2-6",
+              "term": "Break a record",
+              "translation": "romper o superar un récord mundial",
+              "ipa": "/breɪk ə ˈrɛkərd/",
+              "audioText": "break a record. Athletes train every day to break a world record.",
+              "example": "Athletes train every day to break a world record.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-2-7",
+              "term": "The highest",
+              "translation": "el más alto o elevado (montañas)",
+              "ipa": "/ðə ˈhaɪɪst/",
+              "audioText": "the highest. Mount Everest is the highest mountain peak.",
+              "example": "Mount Everest is the highest mountain peak.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-2-8",
+              "term": "In the world",
+              "translation": "en el mundo (ámbito con in)",
+              "ipa": "/ɪn ðə wɜːrld/",
+              "audioText": "in the world. She is the most talented singer in the world.",
+              "example": "She is the most talented singer in the world.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "3-2-b1",
+              "targetSentence": "Usain Bolt is the fastest sprinter in human history.",
+              "scrambledTokens": [
+                  "Usain",
+                  "Bolt",
+                  "is",
+                  "the",
+                  "fastest",
+                  "sprinter",
+                  "in",
+                  "human",
+                  "history.",
+                  "faster",
+                  "most"
+              ],
+              "hints": [
+                  "Superlativo corto: 'the fastest sprinter'.",
+                  "Ámbito histórico: 'in human history.'."
+              ]
+          },
+          {
+              "id": "3-2-b2",
+              "targetSentence": "The Mariana Trench is the deepest place in the ocean.",
+              "scrambledTokens": [
+                  "The",
+                  "Mariana",
+                  "Trench",
+                  "is",
+                  "the",
+                  "deepest",
+                  "place",
+                  "in",
+                  "the",
+                  "ocean.",
+                  "deeper",
+                  "of"
+              ],
+              "hints": [
+                  "Superlativo de profundidad: 'the deepest place'.",
+                  "En el océano: 'in the ocean.'."
+              ]
+          },
+          {
+              "id": "3-2-b3",
+              "targetSentence": "Death Valley holds the record for the hottest temperature on Earth.",
+              "scrambledTokens": [
+                  "Death",
+                  "Valley",
+                  "holds",
+                  "the",
+                  "record",
+                  "for",
+                  "the",
+                  "hottest",
+                  "temperature",
+                  "on",
+                  "Earth.",
+                  "hotter",
+                  "in"
+              ],
+              "hints": [
+                  "Verbo de récord: 'holds the record for...'.",
+                  "Superlativo CVC: 'the hottest temperature on Earth.'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "3-2-e1",
+              "audioText": "Welcome to the Guinness World Records showcase!",
+              "correctAnswer": "Welcome to the Guinness World Records showcase!",
+              "options": [
+                  "Welcome to the Guinness World Records showcase!",
+                  "My brother rides an electric scooter through the city park.",
+                  "Students do not watch horror movies late on school nights."
+              ]
+          },
+          {
+              "id": "3-2-e2",
+              "audioText": "The fastest sprinter in history ran over forty-four kilometers per hour.",
+              "correctAnswer": "The fastest sprinter in history ran over forty-four kilometers per hour.",
+              "options": [
+                  "The fastest sprinter in history ran over forty-four kilometers per hour.",
+                  "We buy ten red apples and artisan cheese at the neighborhood market.",
+                  "Sofia organizes her study desk and hangs anime posters on the wall."
+              ]
+          },
+          {
+              "id": "3-2-e3",
+              "audioText": "The deepest underwater trench reaches eleven thousand meters!",
+              "correctAnswer": "The deepest underwater trench reaches eleven thousand meters!",
+              "options": [
+                  "The deepest underwater trench reaches eleven thousand meters!",
+                  "Can you lend me your colored markers for our geography project presentation?",
+                  "Daniel prepares delicious avocado sandwiches for his squad."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-3-3",
@@ -7125,537 +7193,570 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-3-4",
-    "badgeName": "Space, Science & Future",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "3-4-1",
-        "term": "Discover",
-        "translation": "Descubrir",
-        "ipa": "/dɪˈskʌvər/",
-        "audioText": "Discover. Scientists will discover new oceans on Jupiter's moons.",
-        "example": "Scientists will discover new oceans on Jupiter's moons.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-4-2",
-        "term": "Invent",
-        "translation": "Inventar",
-        "ipa": "/ɪnˈvent/",
-        "audioText": "Invent. Engineers will invent ultra-fast spacecraft.",
-        "example": "Engineers will invent ultra-fast spacecraft.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-4-3",
-        "term": "Explore",
-        "translation": "Explorar",
-        "ipa": "/ɪkˈsplɔːr/",
-        "audioText": "Explore. Robots will explore deep cosmic craters.",
-        "example": "Robots will explore deep cosmic craters.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-4-4",
-        "term": "Travel",
-        "translation": "Viajar",
-        "ipa": "/ˈtrævl/",
-        "audioText": "Travel. Humans will travel beyond our solar system.",
-        "example": "Humans will travel beyond our solar system.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-4-5",
-        "term": "Build",
-        "translation": "Construir",
-        "ipa": "/bɪld/",
-        "audioText": "Build. They will build colonies under glass domes.",
-        "example": "They will build colonies under glass domes.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-4-6",
-        "term": "I will ('ll)",
-        "translation": "El verbo que sigue a 'will' nunca lleva -s, -ed ni -ing. Se mantiene en forma base.",
-        "ipa": "/i/",
-        "audioText": "Astronauts will build research stations on the Moon very soon.",
-        "example": "Astronauts will build research stations on the Moon very soon.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "3-4-7",
-        "term": "I'll travel",
-        "translation": "En inglés hablado informal, casi siempre se contrae 'will' como 'll.",
-        "ipa": "/ill/",
-        "audioText": "Scientists believe we'll find clean renewable energy for all planets.",
-        "example": "Scientists believe we'll find clean renewable energy for all planets.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "3-4-b1",
-        "prompt": "Los astronautas construirán una base científica en la Luna.",
-        "answer": "Astronauts will build a scientific base on the Moon",
-        "tokens": [
-          "Astronauts",
-          "will",
-          "build",
-          "a",
-          "scientific",
-          "base",
-          "on",
-          "the",
-          "Moon",
-          "Future",
-          "cars"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "3-4-b2",
-        "prompt": "Los carros del futuro no usarán gasolina contaminante.",
-        "answer": "Future cars will not use polluting gasoline",
-        "tokens": [
-          "Future",
-          "cars",
-          "will",
-          "not",
-          "use",
-          "polluting",
-          "gasoline",
-          "Astronauts",
-          "build"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "3-4-b3",
-        "prompt": "¿Crees que los humanos descubrirán vida en otros planetas?",
-        "answer": "Do you think humans will discover life on other planets",
-        "tokens": [
-          "Do",
-          "you",
-          "think",
-          "humans",
-          "will",
-          "discover",
-          "life",
-          "on",
-          "other",
-          "planets",
-          "Astronauts",
-          "build"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "3-4-e1",
-        "audioText": "In the next thirty years, artificial intelligence will help humans discover clean fusion energy, but it will not replace human creativity or empathy.",
-        "correctAnswer": "In the next thirty years, artificial intelligence will help humans discover clean fusion energy, but it will not replace human creativity or empathy.",
-        "options": [
-          "In the next thirty years, artificial intelligence will help humans discover clean fusion energy, but it will not replace human creativity or empathy.",
-          "Astronauts will build a scientific base on the Moon.",
-          "Future cars will not use polluting gasoline."
-        ]
-      },
-      {
-        "id": "3-4-e2",
-        "audioText": "Astronauts will build a scientific base on the Moon.",
-        "correctAnswer": "Astronauts will build a scientific base on the Moon.",
-        "options": [
-          "Future cars will not use polluting gasoline.",
-          "Astronauts will build a scientific base on the Moon.",
-          "Do you think humans will discover life on other planets?"
-        ]
-      },
-      {
-        "id": "3-4-e3",
-        "audioText": "Future cars will not use polluting gasoline.",
-        "correctAnswer": "Future cars will not use polluting gasoline.",
-        "options": [
-          "We practice speaking English every weekend with our squad.",
-          "Do you think humans will discover life on other planets?",
-          "Future cars will not use polluting gasoline."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-3-4",
+      "badgeName": "Future Architect",
+      "badgeEmoji": "🚀",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "3-4-1",
+              "term": "I am going to",
+              "translation": "yo voy a (plan confirmado)",
+              "ipa": "/aɪ æm ˈɡoʊɪŋ tuː/",
+              "audioText": "I am going to. I am going to enroll in a digital design workshop.",
+              "example": "I am going to enroll in a digital design workshop.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-4-2",
+              "term": "She is going to",
+              "translation": "ella va a (tercera persona)",
+              "ipa": "/ʃiː ɪz ˈɡoʊɪŋ tuː/",
+              "audioText": "she is going to. She is going to travel to Santa Marta with her family.",
+              "example": "She is going to travel to Santa Marta with her family.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-4-3",
+              "term": "We are going to",
+              "translation": "nosotros vamos a (plural)",
+              "ipa": "/wiː ɑːr ˈɡoʊɪŋ tuː/",
+              "audioText": "we are going to. We are going to build a wooden skate ramp.",
+              "example": "We are going to build a wooden skate ramp.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-4-4",
+              "term": "It is going to rain",
+              "translation": "va a llover (predicción con evidencia)",
+              "ipa": "/ɪt ɪz ˈɡoʊɪŋ tuː reɪn/",
+              "audioText": "it is going to rain. Look at those dark clouds, it is going to rain!",
+              "example": "Look at those dark clouds, it is going to rain!",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-4-5",
+              "term": "Enroll in",
+              "translation": "inscribirse en un curso o taller",
+              "ipa": "/ɪnˈroʊl ɪn/",
+              "audioText": "enroll in. Are you going to enroll in the English immersion camp?",
+              "example": "Are you going to enroll in the English immersion camp?",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-4-6",
+              "term": "Save up",
+              "translation": "ahorrar dinero para una meta",
+              "ipa": "/seɪv ʌp/",
+              "audioText": "save up. I am going to save up for a new gaming headset.",
+              "example": "I am going to save up for a new gaming headset.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-4-7",
+              "term": "Upcoming break",
+              "translation": "próximo receso o vacaciones",
+              "ipa": "/ˈʌpkʌmɪŋ breɪk/",
+              "audioText": "upcoming break. What are your plans for the upcoming break?",
+              "example": "What are your plans for the upcoming break?",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-4-8",
+              "term": "Watch out",
+              "translation": "¡ojo! / ¡cuidado! (alerta de evidencia)",
+              "ipa": "/wɒtʃ aʊt/",
+              "audioText": "watch out. Watch out! You are going to drop your phone.",
+              "example": "Watch out! You are going to drop your phone.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "3-4-b1",
+              "targetSentence": "I am going to enroll in a digital design workshop.",
+              "scrambledTokens": [
+                  "I",
+                  "am",
+                  "going",
+                  "to",
+                  "enroll",
+                  "in",
+                  "a",
+                  "digital",
+                  "design",
+                  "workshop.",
+                  "will",
+                  "go"
+              ],
+              "hints": [
+                  "Fórmula con 'I am going to enroll...'.",
+                  "Termina con 'in a digital design workshop.'."
+              ]
+          },
+          {
+              "id": "3-4-b2",
+              "targetSentence": "Mateo and I are going to build a wooden skate ramp.",
+              "scrambledTokens": [
+                  "Mateo",
+                  "and",
+                  "I",
+                  "are",
+                  "going",
+                  "to",
+                  "build",
+                  "a",
+                  "wooden",
+                  "skate",
+                  "ramp.",
+                  "is",
+                  "building"
+              ],
+              "hints": [
+                  "Sujeto plural con 'are going to build...'.",
+                  "Objeto: 'a wooden skate ramp.'."
+              ]
+          },
+          {
+              "id": "3-4-b3",
+              "targetSentence": "Look at the dark clouds it is going to rain this afternoon.",
+              "scrambledTokens": [
+                  "Look",
+                  "at",
+                  "the",
+                  "dark",
+                  "clouds",
+                  "it",
+                  "is",
+                  "going",
+                  "to",
+                  "rain",
+                  "this",
+                  "afternoon.",
+                  "rains",
+                  "will"
+              ],
+              "hints": [
+                  "Evidencia: 'Look at the dark clouds...'.",
+                  "Predicción: 'it is going to rain this afternoon.'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "3-4-e1",
+              "audioText": "Hey guys! What are your plans for the upcoming school break?",
+              "correctAnswer": "Hey guys! What are your plans for the upcoming school break?",
+              "options": [
+                  "Hey guys! What are your plans for the upcoming school break?",
+                  "Students do not watch horror movies late on school nights.",
+                  "We take the yellow bus at seven o'clock every morning."
+              ]
+          },
+          {
+              "id": "3-4-e2",
+              "audioText": "I am going to enroll in a digital animation workshop.",
+              "correctAnswer": "I am going to enroll in a digital animation workshop.",
+              "options": [
+                  "I am going to enroll in a digital animation workshop.",
+                  "Sofia cleans her bedroom and hangs anime posters on the wall.",
+                  "My brother rides an electric scooter through the central park."
+              ]
+          },
+          {
+              "id": "3-4-e3",
+              "audioText": "Look at that dark sky, though—it is going to rain this afternoon!",
+              "correctAnswer": "Look at that dark sky, though—it is going to rain this afternoon!",
+              "options": [
+                  "Look at that dark sky, though—it is going to rain this afternoon!",
+                  "Can you buy an avocado and artisan cheese at the grocery store?",
+                  "Daniel prepares delicious sandwiches for his basketball squad."
+              ]
+          }
+      ]
   },
-  {
-    "classId": "c-teens-basic-3-5",
-    "badgeName": "Past To Be",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "3-5-1",
-        "term": "Be (Was/Were)",
-        "translation": "Ser / Estar",
-        "ipa": "/wʌz - wɜːr/",
-        "audioText": "Be (Was/Were). I was small and fast.",
-        "example": "I was small and fast.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-5-2",
-        "term": "Remember",
-        "translation": "Recordar",
-        "ipa": "/rɪˈmembər/",
-        "audioText": "Remember. I remembered my favorite toy car.",
-        "example": "I remembered my favorite toy car.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-5-3",
-        "term": "Grow up",
-        "translation": "Crecer / Criarse",
-        "ipa": "/ɡruː ʌp/",
-        "audioText": "Grow up. We grew up in a friendly neighborhood.",
-        "example": "We grew up in a friendly neighborhood.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-5-4",
-        "term": "Play",
-        "translation": "Jugar",
-        "ipa": "/pleɪd/",
-        "audioText": "Play. We played hide and seek in the yard.",
-        "example": "We played hide and seek in the yard.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-5-5",
-        "term": "Feel",
-        "translation": "Sentirse",
-        "ipa": "/felt/",
-        "audioText": "Feel. She felt happy on her birthday.",
-        "example": "She felt happy on her birthday.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-5-6",
-        "term": "I was",
-        "translation": "Significa 'yo era / yo estaba' o 'él/ella era / estaba'.",
-        "ipa": "/i/",
-        "audioText": "When I was six years old, I was very energetic and curious.",
-        "example": "When I was six years old, I was very energetic and curious.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "3-5-7",
-        "term": "You were",
-        "translation": "Significa 'tú eras/estabas' o 'nosotros/ellos eran/estaban'.",
-        "ipa": "/you/",
-        "audioText": "We were in the same classroom in third grade.",
-        "example": "We were in the same classroom in third grade.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "3-5-b1",
-        "prompt": "Cuando yo tenía siete años yo era muy curioso y juguetón.",
-        "answer": "When I was seven years old I was very curious and playful",
-        "tokens": [
-          "When",
-          "I",
-          "was",
-          "seven",
-          "years",
-          "old",
-          "very",
-          "curious",
-          "and",
-          "playful",
-          "were",
-          "primary"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "3-5-b2",
-        "prompt": "Nosotros no éramos tímidos en el salón de primaria.",
-        "answer": "We were not shy in our primary school classroom",
-        "tokens": [
-          "We",
-          "were",
-          "not",
-          "shy",
-          "in",
-          "our",
-          "primary",
-          "school",
-          "classroom",
-          "When",
-          "seven"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "3-5-b3",
-        "prompt": "¿Dónde estabas tú ayer por la tarde durante el partido?",
-        "answer": "Where were you yesterday afternoon during the match",
-        "tokens": [
-          "Where",
-          "were",
-          "you",
-          "yesterday",
-          "afternoon",
-          "during",
-          "the",
-          "match",
-          "When",
-          "seven"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "3-5-e1",
-        "audioText": "On my first day of primary school, I was very nervous because the school was huge, but my teacher was super friendly and welcoming.",
-        "correctAnswer": "On my first day of primary school, I was very nervous because the school was huge, but my teacher was super friendly and welcoming.",
-        "options": [
-          "On my first day of primary school, I was very nervous because the school was huge, but my teacher was super friendly and welcoming.",
-          "When I was seven years old I was very curious and playful.",
-          "We were not shy in our primary school classroom."
-        ]
-      },
-      {
-        "id": "3-5-e2",
-        "audioText": "When I was seven years old I was very curious and playful.",
-        "correctAnswer": "When I was seven years old I was very curious and playful.",
-        "options": [
-          "We were not shy in our primary school classroom.",
-          "When I was seven years old I was very curious and playful.",
-          "Where were you yesterday afternoon during the match?"
-        ]
-      },
-      {
-        "id": "3-5-e3",
-        "audioText": "We were not shy in our primary school classroom.",
-        "correctAnswer": "We were not shy in our primary school classroom.",
-        "options": [
-          "We were not shy in our primary evening classroom.",
-          "Where were you yesterday afternoon during the match?",
-          "We were not shy in our primary school classroom."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-3-5",
+      "badgeName": "Master Detective",
+      "badgeEmoji": "🕵️‍♂️",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "3-5-1",
+              "term": "Was studying",
+              "translation": "estaba estudiando (singular)",
+              "ipa": "/wəz ˈstʌdiɪŋ/",
+              "audioText": "was studying. Mateo was studying for his history exam.",
+              "example": "Mateo was studying for his history exam.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-5-2",
+              "term": "Were cooking",
+              "translation": "estaban cocinando (plural)",
+              "ipa": "/wər ˈkʊkɪŋ/",
+              "audioText": "were cooking. We were cooking dinner together in the kitchen.",
+              "example": "We were cooking dinner together in the kitchen.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-5-3",
+              "term": "Was chatting",
+              "translation": "estaba chateando o en llamada",
+              "ipa": "/wəz ˈtʃætɪŋ/",
+              "audioText": "was chatting. Sofia was chatting with her friends on Discord.",
+              "example": "Sofia was chatting with her friends on Discord.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-5-4",
+              "term": "Blackout",
+              "translation": "apagón o corte de energía",
+              "ipa": "/ˈblækaʊt/",
+              "audioText": "blackout. The entire neighborhood had a blackout at seven.",
+              "example": "The entire neighborhood had a blackout at seven.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-5-5",
+              "term": "While",
+              "translation": "mientras (acciones simultáneas)",
+              "ipa": "/waɪl/",
+              "audioText": "while. I was reading while my brother was sleeping.",
+              "example": "I was reading while my brother was sleeping.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-5-6",
+              "term": "At seven sharp",
+              "translation": "a las siete en punto exactas",
+              "ipa": "/æt ˈsɛvən ʃɑːrp/",
+              "audioText": "at seven sharp. The power went out yesterday at seven sharp.",
+              "example": "The power went out yesterday at seven sharp.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-5-7",
+              "term": "Alibi",
+              "translation": "coartada o prueba de inocencia",
+              "ipa": "/ˈæləbaɪ/",
+              "audioText": "alibi. He has an ironclad alibi for yesterday evening.",
+              "example": "He has an ironclad alibi for yesterday evening.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-5-8",
+              "term": "Was pouring",
+              "translation": "estaba lloviendo a cántaros",
+              "ipa": "/wəz ˈpɔːrɪŋ/",
+              "audioText": "was pouring. The rain was pouring and thunder was crashing.",
+              "example": "The rain was pouring and thunder was crashing.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "3-5-b1",
+              "targetSentence": "Mateo was studying for his history exam yesterday.",
+              "scrambledTokens": [
+                  "Mateo",
+                  "was",
+                  "studying",
+                  "for",
+                  "his",
+                  "history",
+                  "exam",
+                  "yesterday.",
+                  "were",
+                  "studied"
+              ],
+              "hints": [
+                  "Singular con 'Mateo was studying...'.",
+                  "Objetivo: 'for his history exam yesterday.'."
+              ]
+          },
+          {
+              "id": "3-5-b2",
+              "targetSentence": "Sofia was chatting with her friends on Discord.",
+              "scrambledTokens": [
+                  "Sofia",
+                  "was",
+                  "chatting",
+                  "with",
+                  "her",
+                  "friends",
+                  "on",
+                  "Discord.",
+                  "were",
+                  "chats"
+              ],
+              "hints": [
+                  "Singular con 'Sofia was chatting...'.",
+                  "Plataforma: 'on Discord.'."
+              ]
+          },
+          {
+              "id": "3-5-b3",
+              "targetSentence": "We were cooking dinner together in the kitchen.",
+              "scrambledTokens": [
+                  "We",
+                  "were",
+                  "cooking",
+                  "dinner",
+                  "together",
+                  "in",
+                  "the",
+                  "kitchen.",
+                  "was",
+                  "cook"
+              ],
+              "hints": [
+                  "Plural con 'We were cooking...'.",
+                  "Lugar: 'together in the kitchen.'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "3-5-e1",
+              "audioText": "Yesterday at seven in the evening, the entire neighborhood lost power.",
+              "correctAnswer": "Yesterday at seven in the evening, the entire neighborhood lost power.",
+              "options": [
+                  "Yesterday at seven in the evening, the entire neighborhood lost power.",
+                  "Teens do not eat sugar before playing soccer championship matches.",
+                  "We ride our bicycles along the green avenue every Sunday morning."
+              ]
+          },
+          {
+              "id": "3-5-e2",
+              "audioText": "Mateo was studying for his history exam, and Sofia was chatting with friends.",
+              "correctAnswer": "Mateo was studying for his history exam, and Sofia was chatting with friends.",
+              "options": [
+                  "Mateo was studying for his history exam, and Sofia was chatting with friends.",
+                  "Burj Khalifa is the tallest building on Earth with 828 meters of height.",
+                  "Do not forget to take your waterproof jacket and umbrella to school."
+              ]
+          },
+          {
+              "id": "3-5-e3",
+              "audioText": "I was cooking dinner with my parents in the dark!",
+              "correctAnswer": "I was cooking dinner with my parents in the dark!",
+              "options": [
+                  "I was cooking dinner with my parents in the dark!",
+                  "Can you buy an avocado and artisan bread at the grocery shop?",
+                  "Students complete their English homework carefully before going to bed."
+              ]
+          }
+      ]
   },
-  {
-    "classId": "c-teens-basic-3-6",
-    "badgeName": "Vacations, Travel & Anecdotes",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "3-6-1",
-        "term": "Visit",
-        "translation": "Visitar",
-        "ipa": "/ˈvɪzɪt - ˈvɪzɪtɪd/",
-        "audioText": "Visit. We visited the Gold Museum in Bogota.",
-        "example": "We visited the Gold Museum in Bogota.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-6-2",
-        "term": "Travel",
-        "translation": "Viajar",
-        "ipa": "/ˈtrævl - ˈtrævld/",
-        "audioText": "Travel. They traveled to the Amazon rainforest.",
-        "example": "They traveled to the Amazon rainforest.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-6-3",
-        "term": "Explore",
-        "translation": "Explorar / Conocer",
-        "ipa": "/ɪkˈsplɔːr - ɪkˈsplɔːrd/",
-        "audioText": "Explore. I explored ancient stone tunnels.",
-        "example": "I explored ancient stone tunnels.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-6-4",
-        "term": "Relax",
-        "translation": "Relajarse / Descansar",
-        "ipa": "/rɪˈlæks - rɪˈlækst/",
-        "audioText": "Relax. We relaxed on the sunny beach all day.",
-        "example": "We relaxed on the sunny beach all day.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-6-5",
-        "term": "Pack",
-        "translation": "Empacar",
-        "ipa": "/pæk - pækt/",
-        "audioText": "Pack. She packed her suitcase last night.",
-        "example": "She packed her suitcase last night.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "3-6-6",
-        "term": "Visit ➔ Visited",
-        "translation": "Añade -ed (o solo -d si ya termina en e: like ➔ liked).",
-        "ipa": "/visit/",
-        "audioText": "Last December, my family visited the beautiful beaches of Santa Marta.",
-        "example": "Last December, my family visited the beautiful beaches of Santa Marta.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "3-6-7",
-        "term": "Study ➔ Studied (consonante + y)",
-        "translation": "Si termina en consonante + y, cambia a -ied. Si es de 1 sílaba CVC, duplica la consonante final.",
-        "ipa": "/study/",
-        "audioText": "We planned the whole trip together and explored ancient stone forts.",
-        "example": "We planned the whole trip together and explored ancient stone forts.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "3-6-b1",
-        "prompt": "El año pasado nosotros visitamos las hermosas playas de Cartagena.",
-        "answer": "Last year we visited the beautiful beaches of Cartagena",
-        "tokens": [
-          "Last",
-          "year",
-          "we",
-          "visited",
-          "the",
-          "beautiful",
-          "beaches",
-          "of",
-          "Cartagena",
-          "stay",
-          "expensive"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "3-6-b2",
-        "prompt": "Nosotros no nos quedamos en un hotel caro.",
-        "answer": "We did not stay at an expensive hotel",
-        "tokens": [
-          "We",
-          "did",
-          "not",
-          "stay",
-          "at",
-          "an",
-          "expensive",
-          "hotel",
-          "Last",
-          "year"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "3-6-b3",
-        "prompt": "¿Disfrutaste tú la comida típica durante tus vacaciones?",
-        "answer": "Did you enjoy the local food during your vacation",
-        "tokens": [
-          "Did",
-          "you",
-          "enjoy",
-          "the",
-          "local",
-          "food",
-          "during",
-          "your",
-          "vacation",
-          "Last",
-          "year"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "3-6-e1",
-        "audioText": "Last summer we camped near the lake.",
-        "correctAnswer": "Last summer we camped near the lake.",
-        "options": [
-          "Last summer we camped near the lake.",
-          "At midnight it started to rain heavily, so we packed our sleeping bags and slept inside the car!",
-          "Last year we visited the beautiful beaches of Cartagena."
-        ]
-      },
-      {
-        "id": "3-6-e2",
-        "audioText": "At midnight it started to rain heavily, so we packed our sleeping bags and slept inside the car!",
-        "correctAnswer": "At midnight it started to rain heavily, so we packed our sleeping bags and slept inside the car!",
-        "options": [
-          "Last year we visited the beautiful beaches of Cartagena.",
-          "At midnight it started to rain heavily, so we packed our sleeping bags and slept inside the car!",
-          "We did not stay at an expensive hotel."
-        ]
-      },
-      {
-        "id": "3-6-e3",
-        "audioText": "Last year we visited the beautiful beaches of Cartagena.",
-        "correctAnswer": "Last year we visited the beautiful beaches of Cartagena.",
-        "options": [
-          "Did you enjoy the local food during your vacation?",
-          "We did not stay at an expensive hotel.",
-          "Last year we visited the beautiful beaches of Cartagena."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-3-6",
+      "badgeName": "Plot Twist Storyteller",
+      "badgeEmoji": "💥",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "3-6-1",
+              "term": "When",
+              "translation": "cuando (introduce acción corta en pasado simple)",
+              "ipa": "/wɛn/",
+              "audioText": "when. I was riding my scooter when my phone fell out.",
+              "example": "I was riding my scooter when my phone fell out.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-6-2",
+              "term": "While",
+              "translation": "mientras (introduce acción larga en pasado continuo)",
+              "ipa": "/waɪl/",
+              "audioText": "while. While I was searching the grass, a dog ran over.",
+              "example": "While I was searching the grass, a dog ran over.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-6-3",
+              "term": "Fell out",
+              "translation": "se cayó o resbaló de un bolsillo o maleta",
+              "ipa": "/fɛl aʊt/",
+              "audioText": "fell out. My phone fell out of my backpack on the street.",
+              "example": "My phone fell out of my backpack on the street.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-6-4",
+              "term": "Suddenly",
+              "translation": "de repente / de pronto",
+              "ipa": "/ˈsʌdənli/",
+              "audioText": "suddenly. Suddenly, the sky turned dark and thunder crashed.",
+              "example": "Suddenly, the sky turned dark and thunder crashed.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-6-5",
+              "term": "Picked it up",
+              "translation": "lo recogió del suelo",
+              "ipa": "/pɪkt ɪt ʌp/",
+              "audioText": "picked it up. A kind jogger picked it up and returned it.",
+              "example": "A kind jogger picked it up and returned it.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-6-6",
+              "term": "Completely intact",
+              "translation": "completamente sano y sin daños",
+              "ipa": "/kəmˈpliːtli ɪnˈtækt/",
+              "audioText": "completely intact. The screen was completely intact without scratches.",
+              "example": "The screen was completely intact without scratches.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-6-7",
+              "term": "Tripped",
+              "translation": "tropezó con un obstáculo",
+              "ipa": "/trɪpt/",
+              "audioText": "tripped. He was running when he tripped on a tree root.",
+              "example": "He was running when he tripped on a tree root.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "3-6-8",
+              "term": "Cut out",
+              "translation": "se cortó la energía o señal",
+              "ipa": "/kʌt aʊt/",
+              "audioText": "cut out. The electricity cut out while we were cooking.",
+              "example": "The electricity cut out while we were cooking.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "3-6-b1",
+              "targetSentence": "I was riding my electric scooter when my phone fell out.",
+              "scrambledTokens": [
+                  "I",
+                  "was",
+                  "riding",
+                  "my",
+                  "electric",
+                  "scooter",
+                  "when",
+                  "my",
+                  "phone",
+                  "fell",
+                  "out.",
+                  "while",
+                  "rode"
+              ],
+              "hints": [
+                  "Acción continua con 'I was riding my electric scooter...'.",
+                  "Interrupción con 'when my phone fell out.'."
+              ]
+          },
+          {
+              "id": "3-6-b2",
+              "targetSentence": "While I was searching the grass a dog ran towards me.",
+              "scrambledTokens": [
+                  "While",
+                  "I",
+                  "was",
+                  "searching",
+                  "the",
+                  "grass",
+                  "a",
+                  "dog",
+                  "ran",
+                  "towards",
+                  "me.",
+                  "when",
+                  "searched"
+              ],
+              "hints": [
+                  "Empieza con 'While I was searching...'.",
+                  "Acción corta: 'a dog ran towards me.'."
+              ]
+          },
+          {
+              "id": "3-6-b3",
+              "targetSentence": "While the dog was sniffing the phone a jogger picked it up.",
+              "scrambledTokens": [
+                  "While",
+                  "the",
+                  "dog",
+                  "was",
+                  "sniffing",
+                  "the",
+                  "phone",
+                  "a",
+                  "jogger",
+                  "picked",
+                  "it",
+                  "up.",
+                  "when",
+                  "sniffed"
+              ],
+              "hints": [
+                  "Acción continua: 'While the dog was sniffing the phone...'.",
+                  "Rescate: 'a jogger picked it up.'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "3-6-e1",
+              "audioText": "You will not believe what happened yesterday!",
+              "correctAnswer": "You will not believe what happened yesterday!",
+              "options": [
+                  "You will not believe what happened yesterday!",
+                  "Students eat fresh fruit before competitive sports tournaments.",
+                  "My bedroom has a comfortable study desk next to the window."
+              ]
+          },
+          {
+              "id": "3-6-e2",
+              "audioText": "I was riding my electric scooter through the main park when my smartphone fell out.",
+              "correctAnswer": "I was riding my electric scooter through the main park when my smartphone fell out.",
+              "options": [
+                  "I was riding my electric scooter through the main park when my smartphone fell out.",
+                  "Burj Khalifa is the tallest building on Earth with 828 meters of height.",
+                  "Do not forget to take your waterproof jacket and umbrella to school."
+              ]
+          },
+          {
+              "id": "3-6-e3",
+              "audioText": "A friendly dog was sniffing my phone on the grass when a jogger picked it up!",
+              "correctAnswer": "A friendly dog was sniffing my phone on the grass when a jogger picked it up!",
+              "options": [
+                  "A friendly dog was sniffing my phone on the grass when a jogger picked it up!",
+                  "Can you buy some fresh bread and cheese at the local grocery store?",
+                  "Sofia cleans her room and hangs anime posters on the bedroom wall."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-3-7",
@@ -9274,541 +9375,568 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-basic-4-6",
-    "badgeName": "Comparatives & Superlatives (Tech, Movies & Sports)",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "4-6-1",
-        "term": "Choose",
-        "translation": "Elegir / Escoger",
-        "ipa": "/tʃuːz - tʃoʊz - ˈtʃoʊzn/",
-        "audioText": "Choose. She chose the best wireless headphones. (The chosen device.)",
-        "example": "She chose the best wireless headphones. (The chosen device.)",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-6-2",
-        "term": "Buy",
-        "translation": "Comprar / Adquirir",
-        "ipa": "/baɪ - bɔːt/",
-        "audioText": "Buy. He bought the fastest smartphone. (Bought online.)",
-        "example": "He bought the fastest smartphone. (Bought online.)",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-6-3",
-        "term": "Compare",
-        "translation": "Comparar",
-        "ipa": "/kəmˈper/",
-        "audioText": "Compare. We compared both gaming consoles.",
-        "example": "We compared both gaming consoles.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-6-4",
-        "term": "Prefer",
-        "translation": "Preferir",
-        "ipa": "/prɪˈfɜːr/",
-        "audioText": "Prefer. I prefer PC gaming over consoles.",
-        "example": "I prefer PC gaming over consoles.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-6-5",
-        "term": "Outperform",
-        "translation": "Superar en rendimiento",
-        "ipa": "/ˌaʊtpərˈfɔːrm/",
-        "audioText": "Outperform. The new chip outperformed all rivals.",
-        "example": "The new chip outperformed all rivals.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-6-6",
-        "term": "Fast ➔ faster than",
-        "translation": "Agrega -er y la palabra 'than' para comparar dos elementos.",
-        "ipa": "/fast/",
-        "audioText": "Fiber-optic internet is much faster than standard mobile data connection.",
-        "example": "Fiber-optic internet is much faster than standard mobile data connection.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "4-6-7",
-        "term": "Expensive ➔ more expensive",
-        "translation": "Adjetivos de 2 o más sílabas no cambian de forma; llevan 'more' adelante.",
-        "ipa": "/expensive/",
-        "audioText": "High-end gaming laptops are more expensive than basic desktop computers.",
-        "example": "High-end gaming laptops are more expensive than basic desktop computers.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "4-6-b1",
-        "prompt": "El internet de fibra óptica es mucho más rápido que los datos móviles.",
-        "answer": "Fiber optic internet is much faster than mobile data",
-        "tokens": [
-          "Fiber",
-          "optic",
-          "internet",
-          "is",
-          "much",
-          "faster",
-          "than",
-          "mobile",
-          "data",
-          "This",
-          "movie"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "4-6-b2",
-        "prompt": "Esta película no es tan emocionante como la primera parte.",
-        "answer": "This movie is not as exciting as the first part",
-        "tokens": [
-          "This",
-          "movie",
-          "is",
-          "not",
-          "as",
-          "exciting",
-          "the",
-          "first",
-          "part",
-          "Fiber",
-          "optic"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "4-6-b3",
-        "prompt": "¿Cuál es el videojuego más popular del año en todo el mundo?",
-        "answer": "What is the most popular video game of the year in the whole world",
-        "tokens": [
-          "What",
-          "is",
-          "the",
-          "most",
-          "popular",
-          "video",
-          "game",
-          "of",
-          "year",
-          "in",
-          "whole",
-          "world",
-          "Fiber",
-          "optic"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "4-6-e1",
-        "audioText": "After testing both models for two weeks, the Pro Edition is clearly the most durable smartphone with the longest battery life on the market.",
-        "correctAnswer": "After testing both models for two weeks, the Pro Edition is clearly the most durable smartphone with the longest battery life on the market.",
-        "options": [
-          "After testing both models for two weeks, the Pro Edition is clearly the most durable smartphone with the longest battery life on the market.",
-          "Fiber optic internet is much faster than mobile data.",
-          "This movie is not as exciting as the first part."
-        ]
-      },
-      {
-        "id": "4-6-e2",
-        "audioText": "Fiber optic internet is much faster than mobile data.",
-        "correctAnswer": "Fiber optic internet is much faster than mobile data.",
-        "options": [
-          "This movie is not as exciting as the first part.",
-          "Fiber optic internet is much faster than mobile data.",
-          "What is the most popular video game of the year in the whole world?"
-        ]
-      },
-      {
-        "id": "4-6-e3",
-        "audioText": "This movie is not as exciting as the first part.",
-        "correctAnswer": "This movie is not as exciting as the first part.",
-        "options": [
-          "We practice speaking English every weekend with our squad.",
-          "What is the most popular video game of the year in the whole world?",
-          "This movie is not as exciting as the first part."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-4-6",
+      "badgeName": "Hypothetical Dreamer",
+      "badgeEmoji": "🔮",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "4-6-1",
+              "term": "If I won",
+              "translation": "si yo ganara (condición hipotética)",
+              "ipa": "/ɪf aɪ wʌn/",
+              "audioText": "if I won. If I won a million dollars, I would buy a house.",
+              "example": "If I won a million dollars, I would buy a house.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-6-2",
+              "term": "I would buy",
+              "translation": "yo compraría (resultado con would)",
+              "ipa": "/aɪ wʊd baɪ/",
+              "audioText": "I would buy. I would buy a modern gaming mansion for our squad.",
+              "example": "I would buy a modern gaming mansion for our squad.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-6-3",
+              "term": "If I were you",
+              "translation": "si yo fuera tú (subjuntivo formal)",
+              "ipa": "/ɪf aɪ wɜːr juː/",
+              "audioText": "if I were you. If I were you, I would return the lost phone.",
+              "example": "If I were you, I would return the lost phone.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-6-4",
+              "term": "Teleportation",
+              "translation": "teletransportación instantánea",
+              "ipa": "/ˌtɛləpɔːrˈteɪʃən/",
+              "audioText": "teleportation. If I had teleportation, I could travel to Tokyo in one second.",
+              "example": "If I had teleportation, I could travel to Tokyo in one second.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-6-5",
+              "term": "Invisibility",
+              "translation": "invisibilidad ante los ojos",
+              "ipa": "/ɪnˌvɪzəˈbɪlɪti/",
+              "audioText": "invisibility. If I had invisibility, I would explore secret vaults.",
+              "example": "If I had invisibility, I would explore secret vaults.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-6-6",
+              "term": "Without hesitation",
+              "translation": "sin dudarlo ni un momento",
+              "ipa": "/wɪˈðaʊt ˌhɛzɪˈteɪʃən/",
+              "audioText": "without hesitation. Without hesitation, I would choose the flight power.",
+              "example": "Without hesitation, I would choose the flight power.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-6-7",
+              "term": "What would you do",
+              "translation": "¿qué harías tú? (pregunta hipotética)",
+              "ipa": "/wɒt wʊd juː duː/",
+              "audioText": "what would you do. What would you do if you were invisible today?",
+              "example": "What would you do if you were invisible today?",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-6-8",
+              "term": "Secret vaults",
+              "translation": "bóvedas secretas o cámaras subterráneas",
+              "ipa": "/ˈsiːkrɪt vɔːlts/",
+              "audioText": "secret vaults. Historians explore secret vaults in old castles.",
+              "example": "Historians explore secret vaults in old castles.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "4-6-b1",
+              "targetSentence": "If I won a million dollars I would buy a house for my family.",
+              "scrambledTokens": [
+                  "If",
+                  "I",
+                  "won",
+                  "a",
+                  "million",
+                  "dollars",
+                  "I",
+                  "would",
+                  "buy",
+                  "a",
+                  "house",
+                  "for",
+                  "my",
+                  "family.",
+                  "win",
+                  "will"
+              ],
+              "hints": [
+                  "Condición hipotética con 'If I won a million dollars...'.",
+                  "Resultado con 'I would buy a house for my family.'."
+              ]
+          },
+          {
+              "id": "4-6-b2",
+              "targetSentence": "If I were invisible I would explore secret vaults in museums.",
+              "scrambledTokens": [
+                  "If",
+                  "I",
+                  "were",
+                  "invisible",
+                  "I",
+                  "would",
+                  "explore",
+                  "secret",
+                  "vaults",
+                  "in",
+                  "museums.",
+                  "was",
+                  "am"
+              ],
+              "hints": [
+                  "Subjuntivo con 'If I were invisible...'.",
+                  "Resultado con 'I would explore secret vaults in museums.'."
+              ]
+          },
+          {
+              "id": "4-6-b3",
+              "targetSentence": "If we had teleportation we could travel to Tokyo in one second.",
+              "scrambledTokens": [
+                  "If",
+                  "we",
+                  "had",
+                  "teleportation",
+                  "we",
+                  "could",
+                  "travel",
+                  "to",
+                  "Tokyo",
+                  "in",
+                  "one",
+                  "second.",
+                  "have",
+                  "traveled"
+              ],
+              "hints": [
+                  "Condición con 'If we had teleportation...'.",
+                  "Poder o habilidad: 'we could travel to Tokyo in one second.'."
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "4-6-e1",
+              "audioText": "If I won a million dollars tomorrow, I would definitely buy a modern house for my family.",
+              "correctAnswer": "If I won a million dollars tomorrow, I would definitely buy a modern house for my family.",
+              "options": [
+                  "If I won a million dollars tomorrow, I would definitely buy a modern house for my family.",
+                  "Students do not eat sweet cookies before running soccer tournaments.",
+                  "We ride our bicycles along the green avenue every Saturday morning."
+              ]
+          },
+          {
+              "id": "4-6-e2",
+              "audioText": "And travel around the world with my friends.",
+              "correctAnswer": "And travel around the world with my friends.",
+              "options": [
+                  "And travel around the world with my friends.",
+                  "Burj Khalifa is the tallest building on Earth with 828 meters of height.",
+                  "Do not forget to take your waterproof jacket and umbrella to school."
+              ]
+          },
+          {
+              "id": "4-6-e3",
+              "audioText": "What would you do if you had the superpower to fly or become invisible for one entire day?",
+              "correctAnswer": "What would you do if you had the superpower to fly or become invisible for one entire day?",
+              "options": [
+                  "What would you do if you had the superpower to fly or become invisible for one entire day?",
+                  "Can you buy an avocado and artisan bread at the grocery shop?",
+                  "Sofia organizes her study desk and hangs anime posters on the bedroom wall."
+              ]
+          }
+      ]
   },
-  {
-    "classId": "c-teens-basic-4-7",
-    "badgeName": "Too & Enough",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "4-7-1",
-        "term": "Spend",
-        "translation": "Gastar dinero / Pasar tiempo",
-        "ipa": "/spend - spent/",
-        "audioText": "Spend. I spent too much money on games. (Money spent.)",
-        "example": "I spent too much money on games. (Money spent.)",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-7-2",
-        "term": "Lose",
-        "translation": "Perder datos / Perder archivos",
-        "ipa": "/luːz - lɔːst/",
-        "audioText": "Lose. He lost his unsaved project. (A lost file.)",
-        "example": "He lost his unsaved project. (A lost file.)",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-7-3",
-        "term": "Fix",
-        "translation": "Arreglar / Reparar",
-        "ipa": "/fɪks/",
-        "audioText": "Fix. We fixed the audio problem quickly.",
-        "example": "We fixed the audio problem quickly.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-7-4",
-        "term": "Delete",
-        "translation": "Eliminar / Borrar",
-        "ipa": "/dɪˈliːt/",
-        "audioText": "Delete. Delete unused apps to free space.",
-        "example": "Delete unused apps to free space.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-7-5",
-        "term": "Charge",
-        "translation": "Cargar batería",
-        "ipa": "/tʃɑːrdʒ/",
-        "audioText": "Charge. Charge your device before the trip.",
-        "example": "Charge your device before the trip.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-7-6",
-        "term": "Too expensive",
-        "translation": "Indica que algo supera el límite aceptable o deseado.",
-        "ipa": "/too/",
-        "audioText": "This laptop is too expensive to buy with my current savings.",
-        "example": "This laptop is too expensive to buy with my current savings.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "4-7-7",
-        "term": "Fast enough",
-        "translation": "'Enough' se coloca DESPUÉS del adjetivo.",
-        "ipa": "/fast/",
-        "audioText": "Our internet connection is fast enough to stream video in 4K resolution.",
-        "example": "Our internet connection is fast enough to stream video in 4K resolution.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "4-7-b1",
-        "prompt": "Nuestra conexión de internet es suficientemente rápida para transmitir video.",
-        "answer": "Our internet connection is fast enough to stream video",
-        "tokens": [
-          "Our",
-          "internet",
-          "connection",
-          "is",
-          "fast",
-          "enough",
-          "to",
-          "stream",
-          "video",
-          "This",
-          "smartphone"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "4-7-b2",
-        "prompt": "Este celular es demasiado costoso para comprarlo con mis ahorros.",
-        "answer": "This smartphone is too expensive to buy with my savings",
-        "tokens": [
-          "This",
-          "smartphone",
-          "is",
-          "too",
-          "expensive",
-          "to",
-          "buy",
-          "with",
-          "my",
-          "savings",
-          "internet",
-          "connection"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "4-7-b3",
-        "prompt": "¿Tenemos nosotros suficiente tiempo para terminar la presentación?",
-        "answer": "Do we have enough time to finish the presentation",
-        "tokens": [
-          "Do",
-          "we",
-          "have",
-          "enough",
-          "time",
-          "to",
-          "finish",
-          "the",
-          "presentation",
-          "internet",
-          "connection"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "4-7-e1",
-        "audioText": "Your tablet cannot download this 4K video file because you do not have enough storage space on your device.",
-        "correctAnswer": "Your tablet cannot download this 4K video file because you do not have enough storage space on your device.",
-        "options": [
-          "Your tablet cannot download this 4K video file because you do not have enough storage space on your device.",
-          "Please delete five gigabytes of old photos first.",
-          "Our internet connection is fast enough to stream video."
-        ]
-      },
-      {
-        "id": "4-7-e2",
-        "audioText": "Please delete five gigabytes of old photos first.",
-        "correctAnswer": "Please delete five gigabytes of old photos first.",
-        "options": [
-          "Our internet connection is fast enough to stream video.",
-          "Please delete five gigabytes of old photos first.",
-          "This smartphone is too expensive to buy with my savings."
-        ]
-      },
-      {
-        "id": "4-7-e3",
-        "audioText": "Our internet connection is fast enough to stream video.",
-        "correctAnswer": "Our internet connection is fast enough to stream video.",
-        "options": [
-          "Do we have enough time to finish the presentation?",
-          "This smartphone is too expensive to buy with my savings.",
-          "Our internet connection is fast enough to stream video."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-4-7",
+      "badgeName": "Mystery Sleuth",
+      "badgeEmoji": "🕵️",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "4-7-1",
+              "term": "Someone",
+              "translation": "alguien (afirmaciones)",
+              "ipa": "/ˈsʌmwʌn/",
+              "audioText": "someone. Someone left a laptop on the desk.",
+              "example": "Someone left a laptop on the desk.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-7-2",
+              "term": "Anyone",
+              "translation": "alguien (preguntas) o nadie (negaciones)",
+              "ipa": "/ˈɛniwʌn/",
+              "audioText": "anyone. Did you see anyone in the hallway?",
+              "example": "Did you see anyone in the hallway?",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-7-3",
+              "term": "Nobody",
+              "translation": "nadie (con verbo afirmativo)",
+              "ipa": "/ˈnoʊbədi/",
+              "audioText": "nobody. There was nobody in the media lab.",
+              "example": "There was nobody in the media lab.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-7-4",
+              "term": "Something",
+              "translation": "algo (afirmaciones u ofrecimientos)",
+              "ipa": "/ˈsʌmθɪŋ/",
+              "audioText": "something. I found something valuable under the table.",
+              "example": "I found something valuable under the table.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-7-5",
+              "term": "Anything",
+              "translation": "nada (negación) o cualquier cosa",
+              "ipa": "/ˈɛniθɪŋ/",
+              "audioText": "anything. Don't touch anything in the room.",
+              "example": "Don't touch anything in the room.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-7-6",
+              "term": "Nothing",
+              "translation": "nada (con sentido negativo directo)",
+              "ipa": "/ˈnʌθɪŋ/",
+              "audioText": "nothing. There is nothing dangerous happening.",
+              "example": "There is nothing dangerous happening.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-7-7",
+              "term": "Somewhere",
+              "translation": "en algún lugar",
+              "ipa": "/ˈsʌmwɛər/",
+              "audioText": "somewhere. Let's travel somewhere quiet this weekend.",
+              "example": "Let's travel somewhere quiet this weekend.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-7-8",
+              "term": "Everywhere",
+              "translation": "en todas partes / por todos lados",
+              "ipa": "/ˈɛvriwɛər/",
+              "audioText": "everywhere. I searched everywhere for my keys.",
+              "example": "I searched everywhere for my keys.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "4-7-b1",
+              "targetSentence": "Someone left something valuable somewhere in the academy.",
+              "scrambledTokens": [
+                  "Someone",
+                  "left",
+                  "something",
+                  "valuable",
+                  "somewhere",
+                  "in",
+                  "the",
+                  "academy.",
+                  "Anyone",
+                  "leaves"
+              ],
+              "hints": [
+                  "Sujeto indefinido afirmativo: 'Someone...'",
+                  "Verbo y objeto: 'left something valuable somewhere in the academy.'"
+              ]
+          },
+          {
+              "id": "4-7-b2",
+              "targetSentence": "There is nobody in the hallway right now.",
+              "scrambledTokens": [
+                  "There",
+                  "is",
+                  "nobody",
+                  "in",
+                  "the",
+                  "hallway",
+                  "right",
+                  "now.",
+                  "are",
+                  "anybody"
+              ],
+              "hints": [
+                  "Concordancia singular con 'There is nobody...'",
+                  "Complemento de lugar y tiempo: 'in the hallway right now.'"
+              ]
+          },
+          {
+              "id": "4-7-b3",
+              "targetSentence": "Everyone is waiting outside in the courtyard for the festival.",
+              "scrambledTokens": [
+                  "Everyone",
+                  "is",
+                  "waiting",
+                  "outside",
+                  "in",
+                  "the",
+                  "courtyard",
+                  "for",
+                  "the",
+                  "festival.",
+                  "are",
+                  "wait"
+              ],
+              "hints": [
+                  "Regla de oro: 'Everyone is waiting...' (singular).",
+                  "Ubicación y motivo: 'outside in the courtyard for the festival.'"
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "4-7-e1",
+              "audioText": "Is there anyone in the classroom?",
+              "correctAnswer": "Is there anyone in the classroom?",
+              "options": [
+                  "Is there anyone in the classroom?",
+                  "Can you buy an avocado at the grocery shop?",
+                  "Students do not eat sweet cookies before soccer."
+              ]
+          },
+          {
+              "id": "4-7-e2",
+              "audioText": "I heard someone walking down the hallway, but there is nobody here!",
+              "correctAnswer": "I heard someone walking down the hallway, but there is nobody here!",
+              "options": [
+                  "I heard someone walking down the hallway, but there is nobody here!",
+                  "If I won a million dollars, I would buy a house.",
+                  "We ride our bicycles along the green avenue every morning."
+              ]
+          },
+          {
+              "id": "4-7-e3",
+              "audioText": "Everyone is waiting outside in the courtyard for the festival to start.",
+              "correctAnswer": "Everyone is waiting outside in the courtyard for the festival to start.",
+              "options": [
+                  "Everyone is waiting outside in the courtyard for the festival to start.",
+                  "Do not forget to take your waterproof jacket and umbrella.",
+                  "Sofia organizes her study desk and hangs anime posters."
+              ]
+          }
+      ]
   },
-  {
-    "classId": "c-teens-basic-4-8",
-    "badgeName": "Giving Advice to Friends (Should, Shouldn't & Ought to)",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "4-8-1",
-        "term": "Forgive",
-        "translation": "Perdonar",
-        "ipa": "/fərˈɡɪv - fərˈɡeɪv - fərˈɡɪvn/",
-        "audioText": "Forgive. She forgave her friend sincerely. (Forgiven completely.)",
-        "example": "She forgave her friend sincerely. (Forgiven completely.)",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-8-2",
-        "term": "Speak",
-        "translation": "Hablar / Expresarse con honestidad",
-        "ipa": "/spiːk - spoʊk - ˈspoʊkən/",
-        "audioText": "Speak. We spoke honestly about the issue. (Spoken words.)",
-        "example": "We spoke honestly about the issue. (Spoken words.)",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-8-3",
-        "term": "Apologize",
-        "translation": "Disculparse / Pedir perdón",
-        "ipa": "/əˈpɑːlədʒaɪz/",
-        "audioText": "Apologize. He apologized for being late.",
-        "example": "He apologized for being late.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-8-4",
-        "term": "Trust",
-        "translation": "Confiar en",
-        "ipa": "/trʌst/",
-        "audioText": "Trust. I trust my best friends completely.",
-        "example": "I trust my best friends completely.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-8-5",
-        "term": "Support",
-        "translation": "Apoyar / Respaldar",
-        "ipa": "/səˈpɔːrt/",
-        "audioText": "Support. We supported each other during finals.",
-        "example": "We supported each other during finals.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "4-8-6",
-        "term": "You ought to apologize",
-        "translation": "'Ought to' es sinónimo de should pero con peso ético o de lealtad.",
-        "ipa": "/you/",
-        "audioText": "You ought to apologize sincerely and explain that it was an honest mistake.",
-        "example": "You ought to apologize sincerely and explain that it was an honest mistake.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "4-8-7",
-        "term": "You'd better study",
-        "translation": "Indica urgencia o una consecuencia negativa si no se actúa ya.",
-        "ipa": "/youd/",
-        "audioText": "You had better talk to the teacher today before she enters the final grades.",
-        "example": "You had better talk to the teacher today before she enters the final grades.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "4-8-b1",
-        "prompt": "Tú deberías disculparte sinceramente para aclarar las cosas.",
-        "answer": "You ought to apologize sincerely to clear the air",
-        "tokens": [
-          "You",
-          "ought",
-          "to",
-          "apologize",
-          "sincerely",
-          "clear",
-          "the",
-          "air",
-          "better",
-          "spread"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "4-8-b2",
-        "prompt": "Más vale que no difundas rumores sobre tus compañeros.",
-        "answer": "You had better not spread rumors about your classmates",
-        "tokens": [
-          "You",
-          "had",
-          "better",
-          "not",
-          "spread",
-          "rumors",
-          "about",
-          "your",
-          "classmates",
-          "ought",
-          "apologize"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "4-8-b3",
-        "prompt": "¿Cómo podemos nosotros reconstruir la confianza después de un error?",
-        "answer": "How can we rebuild trust after a mistake",
-        "tokens": [
-          "How",
-          "can",
-          "we",
-          "rebuild",
-          "trust",
-          "after",
-          "a",
-          "mistake",
-          "ought",
-          "apologize"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "4-8-e1",
-        "audioText": "When you have an argument with a close friend, you ought to listen with empathy first and you had better not discuss your private issues in public group chats.",
-        "correctAnswer": "When you have an argument with a close friend, you ought to listen with empathy first and you had better not discuss your private issues in public group chats.",
-        "options": [
-          "When you have an argument with a close friend, you ought to listen with empathy first and you had better not discuss your private issues in public group chats.",
-          "You ought to apologize sincerely to clear the air.",
-          "You had better not spread rumors about your classmates."
-        ]
-      },
-      {
-        "id": "4-8-e2",
-        "audioText": "You ought to apologize sincerely to clear the air.",
-        "correctAnswer": "You ought to apologize sincerely to clear the air.",
-        "options": [
-          "You had better not spread rumors about your classmates.",
-          "You ought to apologize sincerely to clear the air.",
-          "How can we rebuild trust after a mistake?"
-        ]
-      },
-      {
-        "id": "4-8-e3",
-        "audioText": "You had better not spread rumors about your classmates.",
-        "correctAnswer": "You had better not spread rumors about your classmates.",
-        "options": [
-          "We practice speaking English every weekend with our squad.",
-          "How can we rebuild trust after a mistake?",
-          "You had better not spread rumors about your classmates."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-basic-4-8",
+      "badgeName": "Fair Play Referee",
+      "badgeEmoji": "⚖️",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "4-8-1",
+              "term": "Have to",
+              "translation": "tener que (obligación externa)",
+              "ipa": "/hæv tuː/",
+              "audioText": "have to. Players have to wear official jerseys.",
+              "example": "Players have to wear official jerseys.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-8-2",
+              "term": "Has to",
+              "translation": "tiene que (tercera persona)",
+              "ipa": "/hæz tuː/",
+              "audioText": "has to. The captain has to submit the roster.",
+              "example": "The captain has to submit the roster.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-8-3",
+              "term": "Must",
+              "translation": "deber (norma oficial solemne)",
+              "ipa": "/mʌst/",
+              "audioText": "must. You must respect the referee at all times.",
+              "example": "You must respect the referee at all times.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-8-4",
+              "term": "Mustn't",
+              "translation": "no debes (prohibición estricta)",
+              "ipa": "/ˈmʌsənt/",
+              "audioText": "mustn't. You mustn't use offensive language in chat.",
+              "example": "You mustn't use offensive language in chat.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-8-5",
+              "term": "Don't have to",
+              "translation": "no tener que (opcional, no obligatorio)",
+              "ipa": "/doʊnt hæv tuː/",
+              "audioText": "don't have to. You don't have to bring your own controllers.",
+              "example": "You don't have to bring your own controllers.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-8-6",
+              "term": "Doesn't have to",
+              "translation": "no tiene que (opcional en 3ra persona)",
+              "ipa": "/ˈdʌzənt hæv tuː/",
+              "audioText": "doesn't have to. She doesn't have to pay entry fees.",
+              "example": "She doesn't have to pay entry fees.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-8-7",
+              "term": "Obey",
+              "translation": "obedecer normas y reglamentos",
+              "ipa": "/oʊˈbeɪ/",
+              "audioText": "obey. All teams must obey tournament guidelines.",
+              "example": "All teams must obey tournament guidelines.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "4-8-8",
+              "term": "Ban",
+              "translation": "vetar o expulsar a infractores",
+              "ipa": "/bæn/",
+              "audioText": "ban. Admins ban players who cheat.",
+              "example": "Admins ban players who cheat.",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "4-8-b1",
+              "targetSentence": "All players have to wear their team jerseys on stage.",
+              "scrambledTokens": [
+                  "All",
+                  "players",
+                  "have",
+                  "to",
+                  "wear",
+                  "their",
+                  "team",
+                  "jerseys",
+                  "on",
+                  "stage.",
+                  "has",
+                  "wearing"
+              ],
+              "hints": [
+                  "Obligación con 'All players have to wear...'",
+                  "Complemento: 'their team jerseys on stage.'"
+              ]
+          },
+          {
+              "id": "4-8-b2",
+              "targetSentence": "You mustn't use offensive language in the chat.",
+              "scrambledTokens": [
+                  "You",
+                  "mustn't",
+                  "use",
+                  "offensive",
+                  "language",
+                  "in",
+                  "the",
+                  "chat.",
+                  "must to",
+                  "don't have"
+              ],
+              "hints": [
+                  "Prohibición estricta: 'You mustn't use...'",
+                  "Infracción: 'offensive language in the chat.'"
+              ]
+          },
+          {
+              "id": "4-8-b3",
+              "targetSentence": "We don't have to bring our own controllers.",
+              "scrambledTokens": [
+                  "We",
+                  "don't",
+                  "have",
+                  "to",
+                  "bring",
+                  "our",
+                  "own",
+                  "controllers.",
+                  "mustn't",
+                  "has"
+              ],
+              "hints": [
+                  "Ausencia de obligación (opcional): 'We don't have to bring...'",
+                  "Objeto: 'our own controllers.'"
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "4-8-e1",
+              "audioText": "All players have to wear their team jerseys, and you must respect the referee at all times.",
+              "correctAnswer": "All players have to wear their team jerseys, and you must respect the referee at all times.",
+              "options": [
+                  "All players have to wear their team jerseys, and you must respect the referee at all times.",
+                  "If I won a million dollars tomorrow, I would buy a modern house.",
+                  "Someone left a silver smartphone on the cafeteria table."
+              ]
+          },
+          {
+              "id": "4-8-e2",
+              "audioText": "You mustn't use offensive language in the chat.",
+              "correctAnswer": "You mustn't use offensive language in the chat.",
+              "options": [
+                  "You mustn't use offensive language in the chat.",
+                  "There is nobody in the hallway right now.",
+                  "We ride our bicycles along the green avenue every morning."
+              ]
+          },
+          {
+              "id": "4-8-e3",
+              "audioText": "You don't have to bring your own controllers.",
+              "correctAnswer": "You don't have to bring your own controllers.",
+              "options": [
+                  "You don't have to bring your own controllers.",
+                  "Do not forget to take your waterproof jacket to school.",
+                  "Everyone is waiting outside in the courtyard for the festival."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-basic-4-9",
@@ -10721,188 +10849,202 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       }
     ]
   },
-  {
-    "classId": "c-teens-inter-4",
-    "badgeName": "If I Ruled the World (Second Conditional)",
-    "badgeEmoji": "🌟",
-    "bonusChallenges": [],
-    "speedCards": [
-      {
-        "id": "inter-4-1",
-        "term": "Rule",
-        "translation": "Gobernar / Liderar",
-        "ipa": "/ruːl/",
-        "audioText": "Rule. If I ruled, I would help everyone.",
-        "example": "If I ruled, I would help everyone.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "inter-4-2",
-        "term": "Invent",
-        "translation": "Inventar soluciones",
-        "ipa": "/ɪnˈvent/",
-        "audioText": "Invent. I would invent a flying skateboard.",
-        "example": "I would invent a flying skateboard.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "inter-4-3",
-        "term": "Transform",
-        "translation": "Transformar el mundo",
-        "ipa": "/trænsˈfɔːrm/",
-        "audioText": "Transform. We would transform clean energy.",
-        "example": "We would transform clean energy.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "inter-4-4",
-        "term": "Eradicate",
-        "translation": "Erradicar problemas",
-        "ipa": "/ɪˈrædɪkeɪt/",
-        "audioText": "Eradicate. I would eradicate plastic waste.",
-        "example": "I would eradicate plastic waste.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "inter-4-5",
-        "term": "Protect",
-        "translation": "Proteger el medio ambiente",
-        "ipa": "/prəˈtekt/",
-        "audioText": "Protect. I would protect endangered animals.",
-        "example": "I would protect endangered animals.",
-        "type": "vocab",
-        "learned": false
-      },
-      {
-        "id": "inter-4-6",
-        "term": "If I won the lottery, I would travel",
-        "translation": "Condición imaginaria en pasado + consecuencia con would.",
-        "ipa": "/if/",
-        "audioText": "If I had the ability to teleport, I would have breakfast in Paris and lunch in Tokyo.",
-        "example": "If I had the ability to teleport, I would have breakfast in Paris and lunch in Tokyo.",
-        "type": "grammar",
-        "learned": false
-      },
-      {
-        "id": "inter-4-7",
-        "term": "If I were you, I would study",
-        "translation": "Usa 'were' formalmente con I, he, she, it en el condicional irreal.",
-        "ipa": "/if/",
-        "audioText": "If I were in your position, I would accept that international exchange scholarship.",
-        "example": "If I were in your position, I would accept that international exchange scholarship.",
-        "type": "grammar",
-        "learned": false
-      }
-    ],
-    "buildIt": [
-      {
-        "id": "inter-4-b1",
-        "prompt": "Si yo tuviera superpoderes yo protegería los océanos y los bosques.",
-        "answer": "If I had superpowers I would protect the oceans and forests",
-        "tokens": [
-          "If",
-          "I",
-          "had",
-          "superpowers",
-          "would",
-          "protect",
-          "the",
-          "oceans",
-          "and",
-          "forests",
-          "were",
-          "your"
-        ],
-        "hints": [
-          "Usa la estructura afirmativa (+) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "inter-4-b2",
-        "prompt": "Si yo estuviera en tu lugar yo no rechazaría esa gran oportunidad.",
-        "answer": "If I were in your place I wouldn t turn down that opportunity",
-        "tokens": [
-          "If",
-          "I",
-          "were",
-          "in",
-          "your",
-          "place",
-          "wouldn",
-          "t",
-          "turn",
-          "down",
-          "that",
-          "opportunity",
-          "superpowers",
-          "protect"
-        ],
-        "hints": [
-          "Usa la estructura negativa (−) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      },
-      {
-        "id": "inter-4-b3",
-        "prompt": "¿Qué harías tú si pudieras viajar en el tiempo al pasado?",
-        "answer": "What would you do if you could travel back in time",
-        "tokens": [
-          "What",
-          "would",
-          "you",
-          "do",
-          "if",
-          "could",
-          "travel",
-          "back",
-          "in",
-          "time",
-          "superpowers",
-          "protect"
-        ],
-        "hints": [
-          "Usa la estructura interrogativa (?) vista en clase.",
-          "Recuerda el orden correcto de las palabras y complementos."
-        ]
-      }
-    ],
-    "earCheck": [
-      {
-        "id": "inter-4-e1",
-        "audioText": "If I were the Minister of the Environment, I would immediately ban single-use plastics and plant one million native trees in Colombia.",
-        "correctAnswer": "If I were the Minister of the Environment, I would immediately ban single-use plastics and plant one million native trees in Colombia.",
-        "options": [
-          "If I were the Minister of the Environment, I would immediately ban single-use plastics and plant one million native trees in Colombia.",
-          "If I had superpowers I would protect the oceans and forests.",
-          "If I were in your place I wouldn't turn down that opportunity."
-        ]
-      },
-      {
-        "id": "inter-4-e2",
-        "audioText": "If I had superpowers I would protect the oceans and forests.",
-        "correctAnswer": "If I had superpowers I would protect the oceans and forests.",
-        "options": [
-          "If I were in your place I wouldn't turn down that opportunity.",
-          "If I had superpowers I would protect the oceans and forests.",
-          "What would you do if you could travel back in time?"
-        ]
-      },
-      {
-        "id": "inter-4-e3",
-        "audioText": "If I were in your place I wouldn't turn down that opportunity.",
-        "correctAnswer": "If I were in your place I wouldn't turn down that opportunity.",
-        "options": [
-          "We practice speaking English every weekend with our squad.",
-          "What would you do if you could travel back in time?",
-          "If I were in your place I wouldn't turn down that opportunity."
-        ]
-      }
-    ]
+    {
+      "classId": "c-teens-inter-4",
+      "badgeName": "Time Traveler & Third Conditional",
+      "badgeEmoji": "⏳",
+      "bonusChallenges": [],
+      "speedCards": [
+          {
+              "id": "inter-4-1",
+              "term": "If I had known",
+              "translation": "si yo hubiera sabido (condición en pasado perfecto)",
+              "ipa": "/ɪf aɪ hæd noʊn/",
+              "audioText": "if I had known. If I had known about the traffic, I would have taken the metro.",
+              "example": "If I had known about the traffic, I would have taken the metro.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "inter-4-2",
+              "term": "I would have taken",
+              "translation": "yo habría tomado (resultado hipotético pasado)",
+              "ipa": "/aɪ wʊd hæv ˈteɪkən/",
+              "audioText": "I would have taken. I would have taken the express train.",
+              "example": "I would have taken the express train.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "inter-4-3",
+              "term": "Turning point",
+              "translation": "punto de inflexión que cambió el desenlace",
+              "ipa": "/ˈtɜːrnɪŋ pɔɪnt/",
+              "audioText": "turning point. Diego's block was the turning point of the match.",
+              "example": "Diego's block was the turning point of the match.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "inter-4-4",
+              "term": "Butterfly effect",
+              "translation": "el efecto mariposa (pequeño cambio, gran impacto)",
+              "ipa": "/ˈbʌtərflaɪ ɪˈfɛkt/",
+              "audioText": "butterfly effect. A small decision triggered the butterfly effect.",
+              "example": "A small decision triggered the butterfly effect.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "inter-4-5",
+              "term": "If we hadn't lost",
+              "translation": "si nosotros no hubiéramos perdido",
+              "ipa": "/ɪf wiː ˈhædənt lɔːst/",
+              "audioText": "if we hadn't lost. If we hadn't lost, we wouldn't have learned this lesson.",
+              "example": "If we hadn't lost, we wouldn't have learned this lesson.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "inter-4-6",
+              "term": "Could have won",
+              "translation": "habríamos podido ganar (capacidad pasada)",
+              "ipa": "/kʊd hæv wʌn/",
+              "audioText": "could have won. With more practice, we could have won the cup.",
+              "example": "With more practice, we could have won the cup.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "inter-4-7",
+              "term": "In hindsight",
+              "translation": "en retrospectiva / mirando hacia atrás",
+              "ipa": "/ɪn ˈhaɪndsaɪt/",
+              "audioText": "in hindsight. In hindsight, that mistake was a blessing in disguise.",
+              "example": "In hindsight, that mistake was a blessing in disguise.",
+              "type": "vocab",
+              "learned": false
+          },
+          {
+              "id": "inter-4-8",
+              "term": "What would have happened",
+              "translation": "¿qué hubiera pasado si...? (pregunta contrafáctica)",
+              "ipa": "/wɒt wʊd hæv ˈhæpənd/",
+              "audioText": "what would have happened. What would have happened if smartphones had never existed?",
+              "example": "What would have happened if smartphones had never existed?",
+              "type": "vocab",
+              "learned": false
+          }
+      ],
+      "buildIt": [
+          {
+              "id": "inter-4-b1",
+              "targetSentence": "If I had known about the heavy traffic I would have taken the metro.",
+              "scrambledTokens": [
+                  "If",
+                  "I",
+                  "had",
+                  "known",
+                  "about",
+                  "the",
+                  "heavy",
+                  "traffic",
+                  "I",
+                  "would",
+                  "have",
+                  "taken",
+                  "the",
+                  "metro.",
+                  "knew",
+                  "took"
+              ],
+              "hints": [
+                  "Condición con 'If I had known about the heavy traffic...'",
+                  "Resultado con 'I would have taken the metro.'"
+              ]
+          },
+          {
+              "id": "inter-4-b2",
+              "targetSentence": "We would have arrived on time if our bus hadn't broken down.",
+              "scrambledTokens": [
+                  "We",
+                  "would",
+                  "have",
+                  "arrived",
+                  "on",
+                  "time",
+                  "if",
+                  "our",
+                  "bus",
+                  "hadn't",
+                  "broken",
+                  "down.",
+                  "didn't",
+                  "broke"
+              ],
+              "hints": [
+                  "Resultado pasado: 'We would have arrived on time...'",
+                  "Condición negativa: 'if our bus hadn't broken down.'"
+              ]
+          },
+          {
+              "id": "inter-4-b3",
+              "targetSentence": "If our team had practiced more consistently we would have won the championship.",
+              "scrambledTokens": [
+                  "If",
+                  "our",
+                  "team",
+                  "had",
+                  "practiced",
+                  "more",
+                  "consistently",
+                  "we",
+                  "would",
+                  "have",
+                  "won",
+                  "the",
+                  "championship.",
+                  "practiced",
+                  "win"
+              ],
+              "hints": [
+                  "Condición con 'If our team had practiced more consistently...'",
+                  "Resultado con 'we would have won the championship.'"
+              ]
+          }
+      ],
+      "earCheck": [
+          {
+              "id": "inter-4-e1",
+              "audioText": "If I had known about the heavy traffic on the highway this morning, I would have taken the metro instead!",
+              "correctAnswer": "If I had known about the heavy traffic on the highway this morning, I would have taken the metro instead!",
+              "options": [
+                  "If I had known about the heavy traffic on the highway this morning, I would have taken the metro instead!",
+                  "If I won a million dollars tomorrow, I would buy a modern house for my family.",
+                  "Someone left a silver smartphone on the cafeteria table."
+              ]
+          },
+          {
+              "id": "inter-4-e2",
+              "audioText": "We would have arrived on time for the championship match if our bus hadn't broken down.",
+              "correctAnswer": "We would have arrived on time for the championship match if our bus hadn't broken down.",
+              "options": [
+                  "We would have arrived on time for the championship match if our bus hadn't broken down.",
+                  "You mustn't use offensive language in the chat room.",
+                  "There is nobody in the hallway right now."
+              ]
+          },
+          {
+              "id": "inter-4-e3",
+              "audioText": "What would you have done differently if you could travel back in time to last week?",
+              "correctAnswer": "What would you have done differently if you could travel back in time to last week?",
+              "options": [
+                  "What would you have done differently if you could travel back in time to last week?",
+                  "You don't have to bring your own controllers to the tournament.",
+                  "Everyone is waiting outside in the courtyard for the festival."
+              ]
+          }
+      ]
   },
   {
     "classId": "c-teens-inter-5",

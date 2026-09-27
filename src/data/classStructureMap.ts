@@ -3730,35 +3730,30 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
       }
     ]
   },
-  "teens:c-teens-basic-zero-10": {
-    "patternName": "Clothes & Streetwear Style",
+    "teens:c-teens-basic-zero-10": {
+    "patternName": "My House & Room Layout (Prepositions of Place & There is/are)",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe streetwear outfits.",
-    "prompt": "He is wearing an oversized black hoodie today.",
-    "learningOpportunity": "Use be + wearing + adjective + noun to describe trendy streetwear.",
-    "difficulty": "easy",
-    "accentColor": "from-slate-600 to-indigo-700",
+    "instructions": "Put the blocks in order to describe objects and furniture in a bedroom.",
+    "prompt": "There is a comfortable bed next to the window, and my laptop is on the study desk.",
+    "learningOpportunity": "Use THERE IS for singular items and correct prepositions of place (next to, on).",
+    "difficulty": "medium",
+    "accentColor": "from-indigo-600 to-blue-700",
     "parts": [
       {
-        "label": "Subject",
-        "text": "He",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Continuous verb",
-        "text": "is wearing",
+        "label": "Singular existence + furniture",
+        "text": "There is a comfortable bed",
         "color": "bg-indigo-300"
       },
       {
-        "label": "Outfit",
-        "text": "an oversized black hoodie",
-        "color": "bg-yellow-300"
+        "label": "Preposition of proximity",
+        "text": "next to the window,",
+        "color": "bg-blue-300"
       },
       {
-        "label": "Time",
-        "text": "today.",
-        "color": "bg-orange-300"
+        "label": "Second object + preposition",
+        "text": "and my laptop is on the study desk.",
+        "color": "bg-cyan-300"
       }
     ]
   },
@@ -3826,30 +3821,30 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
       }
     ]
   },
-  "teens:c-teens-basic-zero-13": {
-    "patternName": "My City & Cool Hangout Spots",
+    "teens:c-teens-basic-zero-13": {
+    "patternName": "Weather Conditions & Daily Forecast (It is + Adjective)",
     "variant": "affirmative",
-    "title": "Build with There Is / There Are",
-    "instructions": "Put the blocks in order to recommend a popular skate park.",
-    "prompt": "There is a popular skate park downtown.",
-    "learningOpportunity": "Express urban places of interest using There is + a + noun + downtown.",
-    "difficulty": "easy",
-    "accentColor": "from-cyan-500 to-teal-600",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe the weather and climate gear.",
+    "prompt": "Right now the weather is sunny and warm, but dark rain clouds are coming.",
+    "learningOpportunity": "Use IT IS with weather adjectives and express cause and effect.",
+    "difficulty": "medium",
+    "accentColor": "from-amber-500 to-orange-600",
     "parts": [
       {
-        "label": "Starter",
-        "text": "There is",
-        "color": "bg-emerald-300"
+        "label": "Time marker + dummy subject",
+        "text": "Right now the weather is",
+        "color": "bg-amber-300"
       },
       {
-        "label": "Place",
-        "text": "a popular skate park",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "City location",
-        "text": "downtown.",
+        "label": "Weather adjectives",
+        "text": "sunny and warm,",
         "color": "bg-yellow-300"
+      },
+      {
+        "label": "Contrast + active forecast",
+        "text": "but dark rain clouds are coming.",
+        "color": "bg-sky-300"
       }
     ]
   },
@@ -3880,35 +3875,30 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
       }
     ]
   },
-  "teens:c-teens-basic-zero-15": {
-    "patternName": "Basic Zero Integrated Teen Review",
-    "variant": "question",
-    "title": "Build the Question / Arma la Pregunta",
-    "instructions": "Put the blocks in order to ask a friend about weekend gaming plans.",
-    "prompt": "What video games do you play with your friends?",
-    "learningOpportunity": "Form wh- questions with plural nouns: What + noun + do you + verb.",
-    "difficulty": "easy",
-    "accentColor": "from-indigo-500 to-blue-600",
+    "teens:c-teens-basic-zero-15": {
+    "patternName": "Physical Appearance (BE for build & HAVE/HAS for hair/eyes)",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe a person's height, hair, and eyes.",
+    "prompt": "My friend Daniel is tall and athletic, and he has short curly black hair.",
+    "learningOpportunity": "Use IS for height/build and HAS for hair texture and color.",
+    "difficulty": "medium",
+    "accentColor": "from-purple-600 to-indigo-700",
     "parts": [
       {
-        "label": "Question phrase",
-        "text": "What video games",
-        "color": "bg-emerald-300"
+        "label": "Subject + BE + height/build",
+        "text": "My friend Daniel is tall and athletic,",
+        "color": "bg-purple-300"
       },
       {
-        "label": "Auxiliary",
-        "text": "do",
+        "label": "Conjunction + Subject + HAS",
+        "text": "and he has short",
         "color": "bg-indigo-300"
       },
       {
-        "label": "Subject",
-        "text": "you",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Verb & complement",
-        "text": "play with your friends?",
-        "color": "bg-yellow-300"
+        "label": "Hair texture, color & noun",
+        "text": "curly black hair.",
+        "color": "bg-pink-300"
       }
     ]
   },
@@ -4035,111 +4025,111 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
       }
     ]
   },
-  "teens:c-teens-basic-1-4": {
-    "patternName": "School Subjects & Likes",
+    "teens:c-teens-basic-1-4": {
+    "patternName": "School Schedule & Information Questions (WH- with DO/DOES)",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe your favorite school class and why you enjoy it.",
-    "prompt": "I love Computer Science because we code awesome video games.",
-    "learningOpportunity": "Express subject preferences with I love/enjoy + subject + because + reason.",
-    "difficulty": "easy",
-    "accentColor": "from-blue-500 to-cyan-700",
+    "instructions": "Put the blocks in order to describe weekly class meetings and campus schedules.",
+    "prompt": "Students meet in the science laboratory every Tuesday at eight in the morning.",
+    "learningOpportunity": "Combine subject, action verb, school location, and precise schedule.",
+    "difficulty": "medium",
+    "accentColor": "from-blue-600 to-indigo-700",
     "parts": [
       {
-        "label": "Subject preference",
-        "text": "I love Computer Science",
+        "label": "Subject & verb",
+        "text": "Students meet in",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Causal connector",
-        "text": "because we code",
+        "label": "Campus space",
+        "text": "the science laboratory",
         "color": "bg-violet-300"
       },
       {
-        "label": "Lab activity",
-        "text": "awesome video games.",
+        "label": "Day & time",
+        "text": "every Tuesday at eight in the morning.",
         "color": "bg-emerald-300"
       }
     ]
   },
-  "teens:c-teens-basic-1-5": {
-    "patternName": "Daily Habits & Adverbs of Frequency",
+    "teens:c-teens-basic-1-5": {
+    "patternName": "Study Skills & Adverbs of Manner (-LY)",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to narrar a morning routine with ALWAYS.",
-    "prompt": "First I always wake up early and organize my study schedule.",
-    "learningOpportunity": "Use sequence words (First) and adverbs of frequency (always) before the main verb.",
-    "difficulty": "easy",
-    "accentColor": "from-amber-500 to-orange-700",
+    "instructions": "Put the blocks in order to describe academic performance and manner adverbs.",
+    "prompt": "Sofia speaks English fluently and solves complex math equations easily.",
+    "learningOpportunity": "Position adverbs of manner (fluently, easily) after verbs or objects.",
+    "difficulty": "medium",
+    "accentColor": "from-purple-600 to-indigo-700",
     "parts": [
       {
-        "label": "Sequence & frequency",
-        "text": "First I always wake up",
-        "color": "bg-amber-300"
+        "label": "Language skill & adverb",
+        "text": "Sofia speaks English fluently",
+        "color": "bg-cyan-300"
       },
       {
-        "label": "Time modifier",
-        "text": "early and organize",
-        "color": "bg-orange-300"
+        "label": "Academic action",
+        "text": "and solves complex math equations",
+        "color": "bg-violet-300"
       },
       {
-        "label": "Daily plan",
-        "text": "my study schedule.",
-        "color": "bg-yellow-300"
-      }
-    ]
-  },
-  "teens:c-teens-basic-1-6": {
-    "patternName": "Sports with Play, Go & Do",
-    "variant": "affirmative",
-    "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe your weekend sports activities.",
-    "prompt": "On Saturdays I go cycling and play soccer with my squad.",
-    "learningOpportunity": "Use GO with -ING activities and PLAY with ball sports and squads.",
-    "difficulty": "easy",
-    "accentColor": "from-emerald-500 to-teal-700",
-    "parts": [
-      {
-        "label": "Time & GO activity",
-        "text": "On Saturdays I go cycling",
+        "label": "Manner adverb",
+        "text": "easily.",
         "color": "bg-emerald-300"
-      },
-      {
-        "label": "PLAY sport",
-        "text": "and play soccer",
-        "color": "bg-teal-300"
-      },
-      {
-        "label": "Squad group",
-        "text": "with my squad.",
-        "color": "bg-cyan-300"
       }
     ]
   },
-  "teens:c-teens-basic-1-7": {
-    "patternName": "Weather & Streetwear Matching",
+    "teens:c-teens-basic-1-6": {
+    "patternName": "Weekend Desires & Commitments (Want to / Need to)",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to match your outfit to rainy weather.",
-    "prompt": "It is raining heavily outside, so I am wearing my warm hoodie.",
-    "learningOpportunity": "Connect weather conditions with present continuous outfit descriptions (I am wearing).",
-    "difficulty": "easy",
-    "accentColor": "from-sky-500 to-blue-700",
+    "instructions": "Put the blocks in order to balance free-time desires with school responsibilities.",
+    "prompt": "I want to ride my skateboard at the park, but I need to finish my homework first.",
+    "learningOpportunity": "Coordinate voluntary desires (want to) with required obligations (need to).",
+    "difficulty": "medium",
+    "accentColor": "from-amber-600 to-rose-700",
     "parts": [
       {
-        "label": "Weather condition",
-        "text": "It is raining heavily outside,",
-        "color": "bg-sky-300"
-      },
-      {
-        "label": "Connector & wearing",
-        "text": "so I am wearing",
-        "color": "bg-indigo-300"
-      },
-      {
-        "label": "Clothing item",
-        "text": "my warm hoodie.",
+        "label": "Desire clause",
+        "text": "I want to ride my skateboard at the park,",
         "color": "bg-cyan-300"
+      },
+      {
+        "label": "Contrast & duty",
+        "text": "but I need to finish",
+        "color": "bg-violet-300"
+      },
+      {
+        "label": "Responsibility & time",
+        "text": "my homework first.",
+        "color": "bg-emerald-300"
+      }
+    ]
+  },
+    "teens:c-teens-basic-1-7": {
+    "patternName": "Kitchen Pantry & Food Quantities (SOME, ANY, A/AN)",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe fresh food and pantry ingredients.",
+    "prompt": "We have some fresh strawberries, some artisan cheese, and an avocado.",
+    "learningOpportunity": "Use SOME with uncountables/plurals and AN with singular vowel nouns.",
+    "difficulty": "medium",
+    "accentColor": "from-emerald-600 to-teal-700",
+    "parts": [
+      {
+        "label": "Plural countable with SOME",
+        "text": "We have some fresh strawberries,",
+        "color": "bg-cyan-300"
+      },
+      {
+        "label": "Uncountable with SOME",
+        "text": "some artisan cheese,",
+        "color": "bg-violet-300"
+      },
+      {
+        "label": "Singular countable with AN",
+        "text": "and an avocado.",
+        "color": "bg-emerald-300"
       }
     ]
   },
@@ -4170,30 +4160,35 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
       }
     ]
   },
-  "teens:c-teens-basic-1-9": {
-    "patternName": "Tech Gadgets & Modals",
+    "teens:c-teens-basic-1-9": {
+    "patternName": "Urban Navigation & Movement (INTO, THROUGH, ACROSS, ALONG, PAST, TOWARDS)",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to explain how to connect earbuds with CAN.",
-    "prompt": "You can connect your wireless earbuds easily through Bluetooth.",
-    "learningOpportunity": "Use CAN + base verb + adverb to give clear digital instructions.",
-    "difficulty": "easy",
-    "accentColor": "from-teal-500 to-cyan-700",
+    "instructions": "Put the blocks in order to describe an urban route using prepositions of movement.",
+    "prompt": "I ride my electric scooter along the bike path, go through the park, and walk across the pedestrian bridge.",
+    "learningOpportunity": "Use ALONG for continuous paths, THROUGH for 3D enclosed spaces, and ACROSS for flat surfaces.",
+    "difficulty": "medium",
+    "accentColor": "from-sky-600 to-blue-700",
     "parts": [
       {
-        "label": "Modal CAN action",
-        "text": "You can connect",
+        "label": "Subject + Verb + Vehicle",
+        "text": "I ride my electric scooter",
+        "color": "bg-blue-300"
+      },
+      {
+        "label": "Preposition + Linear Path",
+        "text": "along the bike path,",
         "color": "bg-teal-300"
       },
       {
-        "label": "Digital gadget",
-        "text": "your wireless earbuds",
-        "color": "bg-cyan-300"
+        "label": "Preposition + 3D Space",
+        "text": "go through the park,",
+        "color": "bg-emerald-300"
       },
       {
-        "label": "Connectivity channel",
-        "text": "easily through Bluetooth.",
-        "color": "bg-blue-300"
+        "label": "Preposition + Flat Crossing",
+        "text": "and walk across the pedestrian bridge.",
+        "color": "bg-violet-300"
       }
     ]
   },
@@ -4225,29 +4220,34 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
     ]
   },
   "teens:c-teens-basic-2-1": {
-    "patternName": "Wildlife & Animal Abilities with CAN",
+    "patternName": "Wildlife Protection with Object Pronouns",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe an animal superpower and habitat.",
-    "prompt": "The Andean condor can fly at high altitudes over mountains.",
-    "learningOpportunity": "Express animal abilities with modal CAN + base verb.",
+    "instructions": "Put the blocks in order to describe animal care with object pronouns.",
+    "prompt": "Wildlife veterinarians feed them and care for them in the sanctuary.",
+    "learningOpportunity": "Use object pronouns (them, it) after action verbs to replace animals.",
     "difficulty": "medium",
     "accentColor": "from-teal-600 to-emerald-700",
     "parts": [
       {
-        "label": "Animal Subject",
-        "text": "The Andean condor",
+        "label": "Subject",
+        "text": "Wildlife veterinarians",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Ability with CAN",
-        "text": "can fly at high",
+        "label": "Verb + Object Pronoun",
+        "text": "feed them and",
         "color": "bg-emerald-300"
       },
       {
-        "label": "Altitude & habitat",
-        "text": "altitudes over mountains.",
-        "color": "bg-yellow-300"
+        "label": "Care + Object Pronoun",
+        "text": "care for them in",
+        "color": "bg-amber-300"
+      },
+      {
+        "label": "Habitat Sanctuary",
+        "text": "the sanctuary.",
+        "color": "bg-purple-300"
       }
     ]
   },
@@ -4333,28 +4333,28 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
     ]
   },
   "teens:c-teens-basic-2-5": {
-    "patternName": "Talents & Superpowers with Degree Adverbs",
+    "patternName": "Past Abilities with COULD & Milestones",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe musical and coding talents.",
-    "prompt": "Lucas can play the electric guitar and code reactive lights very well.",
-    "learningOpportunity": "Combine multiple CAN abilities with degree adverb very well.",
+    "instructions": "Put the blocks in order to describe early artistic milestones.",
+    "prompt": "When Sara was ten years old, she could sing with natural pitch.",
+    "learningOpportunity": "Use could + base verb to express past ability linked to an age milestone.",
     "difficulty": "medium",
     "accentColor": "from-fuchsia-600 to-pink-700",
     "parts": [
       {
-        "label": "Subject & musical ability",
-        "text": "Lucas can play the electric guitar",
+        "label": "Time clause / Milestone",
+        "text": "When Sara was ten years old,",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Digital ability",
-        "text": "and code reactive lights",
+        "label": "Past modal + verb",
+        "text": "she could sing",
         "color": "bg-indigo-300"
       },
       {
-        "label": "Degree adverb",
-        "text": "very well.",
+        "label": "Complement",
+        "text": "with natural pitch.",
         "color": "bg-yellow-300"
       }
     ]
@@ -4387,28 +4387,28 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
     ]
   },
   "teens:c-teens-basic-2-7": {
-    "patternName": "Healthy Routines with Adverbs of Frequency",
+    "patternName": "Healthy Lifestyle Quantifiers (Too much, Too many, Enough)",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe athletic habits and energy boost.",
-    "prompt": "I usually go cycling four times a week because it boosts my energy.",
-    "learningOpportunity": "Position frequency adverb (usually) before main verb + benefit clause.",
+    "instructions": "Put the blocks in order to describe healthy habits with quantifiers of balance.",
+    "prompt": "Young athletes need plenty of fresh water and enough sleep every night.",
+    "learningOpportunity": "Combine quantifiers of balance (plenty of, enough) with lifestyle nouns.",
     "difficulty": "medium",
     "accentColor": "from-teal-600 to-emerald-700",
     "parts": [
       {
-        "label": "Frequency & Sport",
-        "text": "I usually go cycling",
+        "label": "Subject & verb",
+        "text": "Young athletes need",
         "color": "bg-emerald-300"
       },
       {
-        "label": "Time expression",
-        "text": "four times a week",
+        "label": "Quantifier 1 + noun",
+        "text": "plenty of fresh water",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Benefit clause",
-        "text": "because it boosts my energy.",
+        "label": "Quantifier 2 + time",
+        "text": "and enough sleep every night.",
         "color": "bg-yellow-300"
       }
     ]
@@ -4494,57 +4494,57 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
       }
     ]
   },
-  "teens:c-teens-basic-3-1": {
-    "patternName": "Can / Could for Talents & Abilities",
+    "teens:c-teens-basic-3-1": {
+    "patternName": "Comparative Adjectives & Tech Battles (-ER, MORE THAN, BETTER)",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe creative software talents.",
-    "prompt": "I can create 3D animations, but I cannot edit audio yet.",
-    "learningOpportunity": "Contrast current capabilities using can vs cannot with yet.",
+    "instructions": "Put the blocks in order to compare two technological devices.",
+    "prompt": "The Pro model is faster and lighter than the standard phone, and its camera is better.",
+    "learningOpportunity": "Use -ER THAN with short adjectives and BETTER for irregular comparisons.",
     "difficulty": "medium",
-    "accentColor": "from-emerald-600 to-teal-800",
+    "accentColor": "from-blue-600 to-indigo-700",
     "parts": [
       {
-        "label": "Capability clause",
-        "text": "I can create 3D animations,",
-        "color": "bg-cyan-300"
+        "label": "Subject + BE + Short comparatives",
+        "text": "The Pro model is faster and lighter",
+        "color": "bg-blue-300"
       },
       {
-        "label": "Connector",
-        "text": "but",
-        "color": "bg-fuchsia-300"
+        "label": "THAN + Second device",
+        "text": "than the standard phone,",
+        "color": "bg-indigo-300"
       },
       {
-        "label": "Limitation clause",
-        "text": "I cannot edit audio yet.",
-        "color": "bg-yellow-300"
+        "label": "Conjunction + Irregular comparative",
+        "text": "and its camera is better.",
+        "color": "bg-violet-300"
       }
     ]
   },
-  "teens:c-teens-basic-3-2": {
-    "patternName": "Permits, Passwords & Online Safety",
+    "teens:c-teens-basic-3-2": {
+    "patternName": "Superlative Adjectives & World Records (THE -EST, THE MOST, THE BEST)",
     "variant": "affirmative",
-    "title": "Build Security Rule / Arma Regla de Seguridad",
-    "instructions": "Put the blocks in order to express online account safety rules.",
-    "prompt": "You must never share your private passwords with strangers.",
-    "learningOpportunity": "Use modal must never + base verb for strict digital protection.",
-    "difficulty": "easy",
-    "accentColor": "from-red-600 to-amber-700",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe an absolute world record.",
+    "prompt": "Usain Bolt is the fastest sprinter in history, and the Mariana Trench is the deepest place.",
+    "learningOpportunity": "Use THE with -EST for short superlatives and correct scope prepositions.",
+    "difficulty": "medium",
+    "accentColor": "from-amber-500 to-orange-600",
     "parts": [
       {
-        "label": "Subject & prohibition",
-        "text": "You must never share",
-        "color": "bg-rose-300"
+        "label": "Subject + BE + Short superlative",
+        "text": "Usain Bolt is the fastest sprinter",
+        "color": "bg-amber-300"
       },
       {
-        "label": "Sensitive object",
-        "text": "your private passwords",
-        "color": "bg-yellow-300"
-      },
-      {
-        "label": "Safety target",
-        "text": "with strangers.",
+        "label": "Scope preposition + time",
+        "text": "in human history,",
         "color": "bg-orange-300"
+      },
+      {
+        "label": "Second record + scope",
+        "text": "and the Mariana Trench is the deepest place.",
+        "color": "bg-rose-300"
       }
     ]
   },
@@ -4580,89 +4580,84 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
       }
     ]
   },
-  "teens:c-teens-basic-3-4": {
-    "patternName": "Space, Science & Future Technology",
+    "teens:c-teens-basic-3-4": {
+    "patternName": "Future Plans & Visual Evidence (BE GOING TO + Base Verb)",
     "variant": "affirmative",
-    "title": "Build Future with Will / Arma Futuro con Will",
-    "instructions": "Put the blocks in order to predict future Mars missions.",
-    "prompt": "Scientists will build autonomous research bases on Mars.",
-    "learningOpportunity": "Use will + base verb + location for scientific space predictions.",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe a confirmed future plan and intention.",
+    "prompt": "I am going to enroll in a digital animation workshop, and my family is going to travel.",
+    "learningOpportunity": "Use BE GOING TO for planned intentions and base form verbs.",
     "difficulty": "medium",
-    "accentColor": "from-indigo-600 to-violet-800",
+    "accentColor": "from-indigo-600 to-blue-700",
     "parts": [
       {
-        "label": "Subject",
-        "text": "Scientists",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Future verb",
-        "text": "will build",
+        "label": "Subject + BE GOING TO",
+        "text": "I am going to enroll",
         "color": "bg-indigo-300"
       },
       {
-        "label": "Object",
-        "text": "autonomous research bases",
-        "color": "bg-yellow-300"
+        "label": "Direct object + workshop",
+        "text": "in a digital animation workshop,",
+        "color": "bg-blue-300"
       },
       {
-        "label": "Planet location",
-        "text": "on Mars.",
+        "label": "Second plan with family",
+        "text": "and my family is going to travel.",
+        "color": "bg-cyan-300"
+      }
+    ]
+  },
+    "teens:c-teens-basic-3-5": {
+    "patternName": "Past Continuous & Simultaneous Actions (WAS/WERE + -ING)",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe actions in progress in the past.",
+    "prompt": "Mateo was studying for his history exam while his parents were cooking dinner.",
+    "learningOpportunity": "Use WAS with singular and WERE with plural in past progressive.",
+    "difficulty": "medium",
+    "accentColor": "from-indigo-700 to-purple-800",
+    "parts": [
+      {
+        "label": "Singular Subject + WAS + Verb-ING",
+        "text": "Mateo was studying",
+        "color": "bg-indigo-300"
+      },
+      {
+        "label": "Exam objective + WHILE",
+        "text": "for his history exam while",
+        "color": "bg-purple-300"
+      },
+      {
+        "label": "Plural Subject + WERE + Verb-ING",
+        "text": "his parents were cooking dinner.",
+        "color": "bg-pink-300"
+      }
+    ]
+  },
+    "teens:c-teens-basic-3-6": {
+    "patternName": "Interrupted Past with WHEN & WHILE (Past Simple vs Past Continuous)",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe an action interrupted by a sudden event.",
+    "prompt": "I was riding my electric scooter through the park when my phone fell out.",
+    "learningOpportunity": "Use Past Continuous for ongoing action and WHEN + Past Simple for interruption.",
+    "difficulty": "medium",
+    "accentColor": "from-amber-600 to-red-700",
+    "parts": [
+      {
+        "label": "Ongoing action: Past Continuous",
+        "text": "I was riding my electric scooter",
+        "color": "bg-amber-300"
+      },
+      {
+        "label": "Location phrase",
+        "text": "through the park",
         "color": "bg-orange-300"
-      }
-    ]
-  },
-  "teens:c-teens-basic-3-5": {
-    "patternName": "Past To Be: Was/Were & Childhood Memories",
-    "variant": "affirmative",
-    "title": "Build Past To Be / Arma To Be en Pasado",
-    "instructions": "Put the blocks in order to describe childhood passions.",
-    "prompt": "I was very curious about space when I was ten.",
-    "learningOpportunity": "Use was + adjective + when I was + age to share childhood memories.",
-    "difficulty": "medium",
-    "accentColor": "from-purple-600 to-pink-800",
-    "parts": [
-      {
-        "label": "Past memory clause",
-        "text": "I was very curious about space",
-        "color": "bg-cyan-300"
       },
       {
-        "label": "Time connector",
-        "text": "when",
-        "color": "bg-fuchsia-300"
-      },
-      {
-        "label": "Age clause",
-        "text": "I was ten.",
-        "color": "bg-yellow-300"
-      }
-    ]
-  },
-  "teens:c-teens-basic-3-6": {
-    "patternName": "Travel Stories with Key Past Verbs",
-    "variant": "affirmative",
-    "title": "Build Past Narrative / Arma Narrativa en Pasado",
-    "instructions": "Put the blocks in order to recount an exciting school trip.",
-    "prompt": "We traveled to the national park and camped under the stars.",
-    "learningOpportunity": "Chain regular and irregular past simple verbs with sequential and.",
-    "difficulty": "medium",
-    "accentColor": "from-teal-600 to-emerald-800",
-    "parts": [
-      {
-        "label": "Past action 1",
-        "text": "We traveled to the national park",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Connector",
-        "text": "and",
-        "color": "bg-fuchsia-300"
-      },
-      {
-        "label": "Past action 2",
-        "text": "camped under the stars.",
-        "color": "bg-yellow-300"
+        "label": "WHEN + Sudden Past Simple",
+        "text": "when my phone fell out.",
+        "color": "bg-rose-300"
       }
     ]
   },
@@ -4899,89 +4894,94 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
       }
     ]
   },
-  "teens:c-teens-basic-4-6": {
-    "patternName": "Comparatives & Superlatives in Tech & Gaming",
+    "teens:c-teens-basic-4-6": {
+    "patternName": "Second Conditional & Hypothetical Worlds (IF + Past, WOULD)",
     "variant": "affirmative",
-    "title": "Build Comparative / Arma el Comparativo",
-    "instructions": "Put the blocks in order to compare gaming graphics processors.",
-    "prompt": "This graphics card is much faster than the older model.",
-    "learningOpportunity": "Use modifier much + comparative faster than + benchmark.",
-    "difficulty": "medium",
-    "accentColor": "from-pink-600 to-rose-700",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe an imaginary dream or superpower.",
+    "prompt": "If I won a million dollars tomorrow, I would buy a modern house for my family.",
+    "learningOpportunity": "Use IF with Past Simple for condition and WOULD + Base Verb for result.",
+    "difficulty": "hard",
+    "accentColor": "from-purple-700 to-pink-700",
     "parts": [
       {
-        "label": "Subject",
-        "text": "This graphics card",
-        "color": "bg-cyan-300"
+        "label": "IF + Past Simple condition",
+        "text": "If I won a million dollars tomorrow,",
+        "color": "bg-purple-300"
       },
       {
-        "label": "To be",
-        "text": "is",
-        "color": "bg-indigo-300"
+        "label": "Subject + WOULD + Base Verb",
+        "text": "I would buy a modern house",
+        "color": "bg-pink-300"
       },
       {
-        "label": "Comparative phrase",
-        "text": "much faster than",
-        "color": "bg-violet-300"
-      },
-      {
-        "label": "Benchmark",
-        "text": "the older model.",
-        "color": "bg-yellow-300"
+        "label": "Beneficiary complement",
+        "text": "for my family.",
+        "color": "bg-rose-300"
       }
     ]
   },
-  "teens:c-teens-basic-4-7": {
-    "patternName": "Too & Enough: Problems and Solutions",
-    "variant": "negative",
-    "title": "Build with Enough / Arma con Enough",
-    "instructions": "Put the blocks in order to identify game storage limitations.",
-    "prompt": "We do not have enough storage space for this huge update.",
-    "learningOpportunity": "Place enough before nouns (enough space) to signal sufficiency/lack.",
+    "teens:c-teens-basic-4-7": {
+    "patternName": "Indefinite Pronouns: Someone, Anything, Nowhere",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe a mysterious lost item with indefinite pronouns.",
+    "prompt": "Someone left something valuable somewhere in the academy.",
+    "learningOpportunity": "Use indefinite pronouns (someone, something, somewhere) with singular verb agreement.",
     "difficulty": "medium",
-    "accentColor": "from-red-600 to-amber-700",
+    "accentColor": "from-blue-700 to-indigo-800",
     "parts": [
       {
-        "label": "Subject & negative",
-        "text": "We do not have",
-        "color": "bg-cyan-300"
+        "label": "Indefinite Subject (Person)",
+        "text": "Someone",
+        "color": "bg-blue-300"
       },
       {
-        "label": "Sufficiency object",
-        "text": "enough storage space",
-        "color": "bg-yellow-300"
-      },
-      {
-        "label": "Purpose",
-        "text": "for this huge update.",
-        "color": "bg-orange-300"
-      }
-    ]
-  },
-  "teens:c-teens-basic-4-8": {
-    "patternName": "Friendship Boundaries & Polite Requests",
-    "variant": "question",
-    "title": "Build Polite Request / Arma Petición Cortés",
-    "instructions": "Put the blocks in order to ask a friend to lend study notes politely.",
-    "prompt": "Could you please share your chemistry notes with me?",
-    "learningOpportunity": "Structure polite peer requests with Could you please + verb + object.",
-    "difficulty": "easy",
-    "accentColor": "from-emerald-600 to-teal-700",
-    "parts": [
-      {
-        "label": "Polite modal frame",
-        "text": "Could you please share",
+        "label": "Action Verb (Past)",
+        "text": "left",
         "color": "bg-emerald-300"
       },
       {
-        "label": "Object",
-        "text": "your chemistry notes",
-        "color": "bg-yellow-300"
+        "label": "Indefinite Object (Thing)",
+        "text": "something valuable",
+        "color": "bg-amber-300"
       },
       {
-        "label": "Recipient",
-        "text": "with me?",
-        "color": "bg-cyan-300"
+        "label": "Indefinite Place",
+        "text": "somewhere in the academy.",
+        "color": "bg-purple-300"
+      }
+    ]
+  },
+    "teens:c-teens-basic-4-8": {
+    "patternName": "Modals of Obligation & Prohibition (Have to, Must, Mustn't)",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to establish tournament fair play rules.",
+    "prompt": "All players have to wear team jerseys and they mustn't use toxic chat.",
+    "learningOpportunity": "Contrast HAVE TO for obligation with MUSTN'T for strict prohibition.",
+    "difficulty": "medium",
+    "accentColor": "from-indigo-700 to-purple-800",
+    "parts": [
+      {
+        "label": "Obligation Subject + Modal",
+        "text": "All players have to wear",
+        "color": "bg-indigo-300"
+      },
+      {
+        "label": "Object complement",
+        "text": "team jerseys",
+        "color": "bg-blue-300"
+      },
+      {
+        "label": "Contrast Connector",
+        "text": "and they",
+        "color": "bg-emerald-300"
+      },
+      {
+        "label": "Prohibition Modal + Action",
+        "text": "mustn't use toxic chat.",
+        "color": "bg-rose-300"
       }
     ]
   },
@@ -5110,25 +5110,30 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
       }
     ]
   },
-  "teens:c-teens-inter-4": {
-    "patternName": "Second Conditional (If I Ruled the World)",
+    "teens:c-teens-inter-4": {
+    "patternName": "Third Conditional & Past Regrets (IF + Had, WOULD HAVE)",
     "variant": "affirmative",
-    "title": "Build Second Conditional / Arma el Segundo Condicional",
-    "instructions": "Put the blocks in order to articulate hypothetical visionary ideas.",
-    "prompt": "If I created a social network, I would ban algorithmic manipulation.",
-    "learningOpportunity": "Structure Second Conditional: If + past simple, would + base verb.",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to articulate an alternate past condition and its result.",
+    "prompt": "If I had known about the heavy traffic, I would have taken the metro.",
+    "learningOpportunity": "Use IF + Had + Past Participle for past condition and WOULD HAVE + Past Participle for unchangeable result.",
     "difficulty": "hard",
-    "accentColor": "from-purple-600 to-rose-700",
+    "accentColor": "from-indigo-700 to-violet-800",
     "parts": [
       {
-        "label": "Hypothetical condition",
-        "text": "If I created a social network,",
-        "color": "bg-fuchsia-300"
+        "label": "IF + Past Perfect condition",
+        "text": "If I had known about the heavy traffic,",
+        "color": "bg-indigo-300"
       },
       {
-        "label": "Visionary result",
-        "text": "I would ban algorithmic manipulation.",
-        "color": "bg-yellow-300"
+        "label": "Subject + WOULD HAVE + Participle",
+        "text": "I would have taken",
+        "color": "bg-purple-300"
+      },
+      {
+        "label": "Direct Object complement",
+        "text": "the metro.",
+        "color": "bg-blue-300"
       }
     ]
   },

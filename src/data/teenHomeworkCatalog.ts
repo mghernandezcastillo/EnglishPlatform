@@ -307,37 +307,20 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "City Explorer 🏙️"
 },
   "c-teens-basic-zero-10": {
-    "task": "Escribe 3 oraciones sobre profesiones: tu sueño (+), el trabajo de un familiar (+), y una profesión difícil (−).",
-    "taskHighlights": [
-        "profesión soñada",
-        "familiar",
-        "profesión difícil"
+    "title": "My 3-Sentence Room Tour",
+    "instructions": "Escribe en tu cuaderno de inglés 3 oraciones completas describiendo tu habitación y la ubicación de tus objetos favoritos usando preposiciones de lugar:",
+    "modelExamples": [
+      "1. There is a comfortable bed next to the big window.",
+      "2. My laptop and notebooks are on the study desk.",
+      "3. My skateboard and sneakers are under the bed."
     ],
-    "exampleLines": [
-        "I want to be an innovative graphic designer. 🎨",
-        "My father works as an architect in an international firm. 📐",
-        "Being a deep sea diver is not an easy profession. 🌊"
+    "checklist": [
+      "Usa al menos 3 preposiciones de lugar diferentes (in, on, under, next to, in front of, behind).",
+      "Incluye 'There is' (singular) y 'There are' (plural).",
+      "Menciona objetos reales de tu cuarto o casa."
     ],
-    "whatToInclude": [
-        {
-            "icon": "🎨",
-            "label": "Profesión soñada con 'want to be' (+)"
-        },
-        {
-            "icon": "📐",
-            "label": "Trabajo de un conocido (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Profesión desafiante (−)"
-        }
-    ],
-    "tips": [
-        "Usa 'a' o 'an' antes de profesiones.",
-        "Recuerda mayúsculas."
-    ],
-    "badgeText": "Career Vision 💼"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 10 de Teens (Prepositions of Place & Room Tour):\n1. There is a comfortable bed next to the big window.\n2. My laptop and notebooks are on the study desk.\n3. My skateboard and sneakers are under the bed."
+  },
   "c-teens-basic-zero-11": {
     "task": "Escribe 3 oraciones sobre deportes y pasatiempos: tu deporte (+), una actividad que no practicas (−), y una pregunta (?).",
     "taskHighlights": [
@@ -403,37 +386,20 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Tech Master 📱"
 },
   "c-teens-basic-zero-13": {
-    "task": "Escribe 3 oraciones sobre clima y naturaleza: tu clima preferido (+), qué haces cuando llueve (+), y qué no te gusta (−).",
-    "taskHighlights": [
-        "clima preferido",
-        "día lluvioso",
-        "clima no deseado"
+    "title": "My 3-Sentence Weather & Plans Card",
+    "instructions": "Escribe en tu cuaderno de inglés 3 oraciones completas describiendo el clima y cómo influye en tus actividades:",
+    "modelExamples": [
+      "1. Today the weather is sunny and warm, so I ride my bike in the park.",
+      "2. When it is cloudy and rainy in the afternoon, my friends and I stay home to play video games.",
+      "3. I always check my weather app before leaving school to see if I need my umbrella."
     ],
-    "exampleLines": [
-        "I love cool and breezy autumn afternoons. 🍂",
-        "When it rains heavily, I stay inside and draw. 🌧️",
-        "I really dislike extremely hot and sticky days. 🥵"
+    "checklist": [
+      "Usa adjetivos del clima (sunny, rainy, cloudy, windy, hot, cold).",
+      "Incluye la fórmula 'The weather is...' o 'When it is...'.",
+      "Conecta el clima con una actividad o prenda de vestir."
     ],
-    "whatToInclude": [
-        {
-            "icon": "🍂",
-            "label": "Clima preferido (+)"
-        },
-        {
-            "icon": "🌧️",
-            "label": "Actividad de lluvia con 'When it rains...' (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Clima que te desagrada (−)"
-        }
-    ],
-    "tips": [
-        "Usa adjetivos del clima: 'breezy', 'sunny'.",
-        "Puntúa correctamente."
-    ],
-    "badgeText": "Nature Scout 🌲"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 13 de Teens (Weather & Seasons):\n1. Today the weather is sunny and warm, so I ride my bike in the park.\n2. When it is cloudy and rainy in the afternoon, my friends and I stay home to play video games.\n3. I always check my weather app before leaving school to see if I need my umbrella."
+  },
   "c-teens-basic-zero-14": {
     "task": "Escribe 3 oraciones sobre ropa y estaciones: qué vistes en frío (+), qué no usas en verano (−), y una pregunta (?).",
     "taskHighlights": [
@@ -467,37 +433,20 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Style Icon 🕶️"
 },
   "c-teens-basic-zero-15": {
-    "task": "Escribe 3 oraciones sobre festividades: tu celebración favorita (+), una tradición (+), y lo que no hacen (−).",
-    "taskHighlights": [
-        "festividad favorita",
-        "tradición",
-        "lo que no hacen"
+    "title": "My Best Friend's Physical Profile",
+    "instructions": "Escribe en tu cuaderno de inglés 3 oraciones completas describiendo la apariencia física de tu mejor amigo o celebridad favorita:",
+    "modelExamples": [
+      "1. My friend Mateo is tall and athletic because he plays soccer.",
+      "2. He has short curly black hair and dark brown eyes.",
+      "3. He wears stylish black glasses and always has a friendly smile."
     ],
-    "exampleLines": [
-        "My favorite holiday is New Year's Eve with my family. 🎆",
-        "We always cook traditional Colombian dishes together. 🍲",
-        "We never go to bed before midnight on that special night. ⏰"
+    "checklist": [
+      "Usa 'is' para estatura o complexión (tall, short, slim, athletic).",
+      "Usa 'has' para cabello (longitud, estilo, color) y ojos.",
+      "Menciona un rasgo único como gafas (glasses), pecas (freckles) o sonrisa (smile)."
     ],
-    "whatToInclude": [
-        {
-            "icon": "🎆",
-            "label": "Festividad favorita (+)"
-        },
-        {
-            "icon": "🍲",
-            "label": "Tradición familiar (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Algo que nunca hacen (−)"
-        }
-    ],
-    "tips": [
-        "Las festividades van en mayúscula.",
-        "Usa adverbios de frecuencia."
-    ],
-    "badgeText": "Festive Star 🎉"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 15 de Teens (Physical Appearance & Descriptions):\n1. My friend Mateo is tall and athletic because he plays soccer.\n2. He has short curly black hair and dark brown eyes.\n3. He wears stylish black glasses and always has a friendly smile."
+  },
   "c-teens-basic-zero-16": {
     "task": "Escribe 3 oraciones de graduación de Basic Zero: lo que puedes hacer (+), tu tema preferido (+), y tu meta en Level 1 (+).",
     "taskHighlights": [
@@ -627,133 +576,142 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Possessive Pro 🔑"
 },
   "c-teens-basic-1-4": {
-    "task": "Escribe 3 oraciones sobre La Hora y Rutinas: una afirmativa (+), una negativa (−), y una pregunta (?).",
+    "taskTitle": "My Campus Schedule & WH- Interview",
+    "taskSubtitle": "Escribe 3 oraciones completas sobre tu horario escolar y logística (+, −, ?):",
     "taskHighlights": [
-        "Hora exacta con 'at' (+)",
-        "Límite horario con 'do not' (−)",
-        "Pregunta con 'What time...?' (?)"
+      "3 oraciones (+, −, ?)",
+      "Pregunta informativa WH- (What time / Where / Who)",
+      "Auxiliares DO / DOES",
+      "Compartir por WhatsApp"
     ],
     "exampleLines": [
-        "I wake up at exactly six fifteen in the morning. ⏰",
-        "I do not do homework after nine o'clock at night. 🌙",
-        "What time do you usually finish your classes? 🕒"
+      "Students meet in the science laboratory every Tuesday at eight in the morning. 🔬 (+)",
+      "Diego does not eat lunch in the crowded cafeteria because it is noisy. 🥪 (−)",
+      "What time does your chemistry class start on Thursday morning? ⏰ (?)"
     ],
     "whatToInclude": [
-        {
-            "icon": "⏰",
-            "label": "Hora exacta con 'at' (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Límite horario con 'do not' (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta con 'What time...?' (?)"
-        }
+      {
+        "icon": "🏫",
+        "label": "Oración afirmativa con salón, día y hora exacta de clase (+)"
+      },
+      {
+        "icon": "🚫",
+        "label": "Oración negativa sobre una actividad escolar usando do not / does not (−)"
+      },
+      {
+        "icon": "❓",
+        "label": "Pregunta informativa con 'What time do/does...' o 'Where do/does...' (?)"
+      }
     ],
     "tips": [
-        "Usa las fórmulas vistas en clase.",
-        "Revisa la ortografía."
+      "Recuerda: en preguntas con DOES (he/she/it), el verbo principal pierde la -s: 'What time does class start?'.",
+      "Envía tus 3 oraciones por WhatsApp a tu profesor antes de la siguiente clase."
     ],
-    "badgeText": "Time Tracker 🕒"
-},
+    "badgeText": "Campus Schedule Master 📚"
+  },
   "c-teens-basic-1-5": {
-    "task": "Escribe 3 oraciones sobre Hábitos y Frecuencia: una afirmativa (+), una negativa (−), y una pregunta (?).",
+    "taskTitle": "My Skills & Study Habits Report",
+    "taskSubtitle": "Escribe 3 oraciones completas sobre cómo realizas tus actividades de estudio (+, −, ?):",
     "taskHighlights": [
-        "Hábito frecuente con 'always' (+)",
-        "Hábito que evitas con 'never' (−)",
-        "Pregunta de frecuencia con 'How often...?' (?)"
+      "3 oraciones (+, −, ?)",
+      "Adverbios en -LY (fluently, easily, carefully)",
+      "Irregulares (well, fast, hard)",
+      "Compartir por WhatsApp"
     ],
     "exampleLines": [
-        "First, I always wake up at six thirty and make my bed. 🛏️",
-        "I never check toxic social media while studying. 📱",
-        "How often do you go cycling on the weekend? 🚴"
+      "Sofia speaks English fluently and solves complex math equations easily. 🧠 (+)",
+      "Lucas does not type quickly on the keyboard, but he works carefully. ⌨️ (−)",
+      "Do you review your study notes patiently before important exams? 📖 (?)"
     ],
     "whatToInclude": [
-        {
-            "icon": "⏰",
-            "label": "Hábito frecuente con 'always' (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Hábito que evitas con 'never' (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta de frecuencia con 'How often...?' (?)"
-        }
+      {
+        "icon": "🧠",
+        "label": "Oración afirmativa con adverbio de modo (-ly o well/fast/hard) (+)"
+      },
+      {
+        "icon": "🚫",
+        "label": "Oración negativa contrastando rapidez con cuidado (carefully) (−)"
+      },
+      {
+        "icon": "❓",
+        "label": "Pregunta con 'Do you review/study...' y un adverbio de modo (?)"
+      }
     ],
     "tips": [
-        "Usa las fórmulas vistas en clase.",
-        "Revisa la ortografía."
+      "Recuerda: el adverbio va después del verbo o de su objeto: 'I speak English fluently' (no 'I speak fluently English').",
+      "Envía tus 3 oraciones por WhatsApp a tu profesor antes de la siguiente clase."
     ],
-    "badgeText": "Habit Builder 📅"
-},
+    "badgeText": "Study Skills Master 💡"
+  },
   "c-teens-basic-1-6": {
-    "task": "Escribe 3 oraciones sobre Deportes: Play / Go / Do: una afirmativa (+), una negativa (−), y una pregunta (?).",
+    "taskTitle": "My Weekend Squad Invitation Card",
+    "taskSubtitle": "Escribe 3 oraciones completas sobre tus planes de fin de semana e invitaciones (+, −, ?):",
     "taskHighlights": [
-        "Deporte con 'play' (+)",
-        "Actividad con 'go' o 'do' (+)",
-        "Invitación con 'Would you like to...?' (?)"
+      "3 oraciones (+, −, ?)",
+      "Uso de WANT TO y NEED TO",
+      "Invitación con WOULD YOU LIKE TO",
+      "Compartir por WhatsApp"
     ],
     "exampleLines": [
-        "I play volleyball with my classmates every Wednesday. 🏐",
-        "On Saturdays, I usually go swimming and do martial arts. 🏊",
-        "Would you like to come with us to the park? 🌳"
+      "I want to ride my skateboard at the park, but I need to finish my homework first. 🛹 (+)",
+      "Sofia does not want to stay home all weekend, so she plans an outdoor hangout. 🌤️ (−)",
+      "Would you like to join our gaming tournament at the tech lab on Saturday? 🎮 (?)"
     ],
     "whatToInclude": [
-        {
-            "icon": "🏐",
-            "label": "Deporte con 'play' (+)"
-        },
-        {
-            "icon": "🏊",
-            "label": "Actividad con 'go' o 'do' (+)"
-        },
-        {
-            "icon": "❓",
-            "label": "Invitación con 'Would you like to...?' (?)"
-        }
+      {
+        "icon": "🛹",
+        "label": "Oración afirmativa con 'want to' y 'need to' contrastados (+)"
+      },
+      {
+        "icon": "🚫",
+        "label": "Oración negativa con 'does not want to' o 'do not need to' (−)"
+      },
+      {
+        "icon": "💌",
+        "label": "Invitación cortés con 'Would you like to + verbo base...?' (?)"
+      }
     ],
     "tips": [
-        "Usa las fórmulas vistas en clase.",
-        "Revisa la ortografía."
+      "Recuerda: después de 'want to', 'need to' y 'would like to', el verbo va SIEMPRE en forma base.",
+      "Envía tus 3 oraciones por WhatsApp a tu profesor antes de la siguiente clase."
     ],
-    "badgeText": "Action Star 🏃"
-},
+    "badgeText": "Weekend Social Master 🛹"
+  },
   "c-teens-basic-1-7": {
-    "task": "Escribe 3 oraciones sobre Ropa y Estilo: una afirmativa (+), una negativa (−), y una pregunta (?).",
+    "taskTitle": "My Kitchen Pantry & Grocery Inventory",
+    "taskSubtitle": "Escribe 3 oraciones completas sobre tu nevera y lista de compras (+, −, ?):",
     "taskHighlights": [
-        "Prenda deseada con 'want to buy' (+)",
-        "Opinión sobre algo costoso (−)",
-        "Pregunta de compras (?)"
+      "3 oraciones (+, −, ?)",
+      "Uso de SOME (afirmativo)",
+      "Uso de ANY (negativo y pregunta)",
+      "Uso de A / AN (singular)",
+      "Compartir por WhatsApp"
     ],
     "exampleLines": [
-        "I want to buy a comfortable vintage jacket. 🧥",
-        "These designer brand shoes are not worth the high price. 👟",
-        "Where can I find affordable and trendy clothes? 🛍️"
+      "We have some fresh strawberries, some artisan cheese, and an avocado. 🥑 (+)",
+      "There is not any milk in the fridge, and we do not have any eggs. 🥛 (−)",
+      "Do we have any bread and butter to make sandwiches for the squad? 🥪 (?)"
     ],
     "whatToInclude": [
-        {
-            "icon": "🧥",
-            "label": "Prenda deseada con 'want to buy' (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Opinión sobre algo costoso (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta de compras (?)"
-        }
+      {
+        "icon": "🥑",
+        "label": "Oración afirmativa con 'some' y 'a/an' describiendo tu alacena (+)"
+      },
+      {
+        "icon": "🚫",
+        "label": "Oración negativa con 'any' sobre un ingrediente que falta en casa (−)"
+      },
+      {
+        "icon": "❓",
+        "label": "Pregunta de inventario con 'Do we have any...?' (?)"
+      }
     ],
     "tips": [
-        "Usa las fórmulas vistas en clase.",
-        "Revisa la ortografía."
+      "Recuerda: 'some' para oraciones afirmativas y 'any' para negativas y preguntas.",
+      "Envía tus 3 oraciones por WhatsApp a tu profesor antes de la siguiente clase."
     ],
-    "badgeText": "Trend Setter 👗"
-},
+    "badgeText": "Kitchen Master Chef 🥑"
+  },
   "c-teens-basic-1-8": {
     "task": "Escribe 3 oraciones sobre Restaurante y Pedidos: una afirmativa (+), una negativa (−), y una pregunta (?).",
     "taskHighlights": [
@@ -787,37 +745,20 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Dine & Order 🍽️"
 },
   "c-teens-basic-1-9": {
-    "task": "Escribe 3 oraciones sobre Vecindario y Direcciones: una afirmativa (+), una negativa (−), y una pregunta (?).",
-    "taskHighlights": [
-        "Lugar cercano con 'next to' (+)",
-        "Lugar que no hay con 'There are no...' (−)",
-        "Dirección con 'turn right / go straight' (+)"
+    "title": "My 3-Step City Commute Route",
+    "instructions": "Escribe en tu cuaderno de inglés 3 oraciones completas describiendo una ruta real en tu ciudad usando preposiciones de movimiento:",
+    "modelExamples": [
+      "1. I ride my bicycle along the Carrera 7 bike path every Saturday morning.",
+      "2. My friends and I walk through the central park and head towards the ice cream shop.",
+      "3. We don't walk across the busy highway because we always use the pedestrian bridge."
     ],
-    "exampleLines": [
-        "There is a great bakery right next to my building. 🥐",
-        "There are no movie theaters in my neighborhood. 🎬",
-        "To get to the station, go straight and turn right at the corner. 🧭"
+    "checklist": [
+      "Usa al menos 3 preposiciones de movimiento distintas (along, through, across, past, towards).",
+      "Incluye medios de transporte (bicycle, scooter, bus, on foot) o verbos dinámicos (ride, skate, walk).",
+      "Menciona lugares urbanos reales de tu ciudad o barrio (park, avenue, bridge, station)."
     ],
-    "whatToInclude": [
-        {
-            "icon": "🥐",
-            "label": "Lugar cercano con 'next to' (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Lugar que no hay con 'There are no...' (−)"
-        },
-        {
-            "icon": "🧭",
-            "label": "Dirección con 'turn right / go straight' (+)"
-        }
-    ],
-    "tips": [
-        "Usa las fórmulas vistas en clase.",
-        "Revisa la ortografía."
-    ],
-    "badgeText": "Navigator Pro 🧭"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 9 de Teens (Prepositions of Movement):\n1. I ride my bicycle along the Carrera 7 bike path every Saturday morning.\n2. My friends and I walk through the central park and head towards the ice cream shop.\n3. We don't walk across the busy highway because we always use the pedestrian bridge."
+  },
   "c-teens-basic-1-10": {
     "task": "Escribe 3 oraciones sobre Graduación Level 1: una afirmativa (+), una negativa (−), y una pregunta (?).",
     "taskHighlights": [
@@ -851,645 +792,574 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Level 1 Champion 🏆"
 },
   "c-teens-basic-2-1": {
-    "task": "Escribe 3 oraciones sobre 1: Animals, Habitats & Abilities: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
+    "task": "Escribe 3 oraciones en tu libreta sobre fauna y protección usando Pronombres Objeto (+, −, ?):",
     "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
+      "3 oraciones (+, −, ?)",
+      "Pronombres objeto (me, him, her, it, us, them)",
+      "Verbos de protección y rescate"
     ],
     "exampleLines": [
-        "Mastering 1: Animals, Habitats & Abilities allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 1: Animals, Habitats & Abilities to solve real-world communication challenges? 🌍"
+      "We protect them from illegal poaching and give them clean food every day. 🐾 (+)",
+      "Poachers do not care about her, so we rescue her and take her to the clinic. 🩺 (−)",
+      "Can you show me the tiger habitat and help us feed the endangered condors? 🐅 (?)"
     ],
     "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 1: Animals, Habitats & Abilities (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
+      {
+        "icon": "🐾",
+        "label": "Oración afirmativa con pronombre objeto (them / it / him / her) (+)"
+      },
+      {
+        "icon": "🚫",
+        "label": "Oración negativa sobre daño animal usando pronombre objeto (−)"
+      },
+      {
+        "icon": "❓",
+        "label": "Pregunta pidiendo ayuda con 'Can you help us / show me...?' (?)"
+      }
     ],
     "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
+      "Recuerda: los pronombres objeto van DESPUÉS del verbo principal o preposición: 'protect them', 'care about her'.",
+      "Envía tus 3 oraciones por WhatsApp a tu profesor antes de la siguiente clase."
     ],
-    "badgeText": "1 Master 🏆"
-},
+    "badgeText": "Wildlife Protector 🐾"
+  },
   "c-teens-basic-2-2": {
-    "task": "Escribe 3 oraciones sobre 2: My Room & Dream House: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 2: My Room & Dream House allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 2: My Room & Dream House to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 2: My Room & Dream House (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "2 Master 🏆"
-},
+      "task": "Escribe 3 oraciones completas en tu libreta describiendo tu habitación soñada con There is / There are y preposiciones de lugar (+, −, ?).",
+      "taskHighlights": [
+          "There is / There are",
+          "preposiciones de lugar",
+          "objetos de habitación (+, −, ?)"
+      ],
+      "exampleLines": [
+          "There is a large ergonomic desk next to the window with dual gaming monitors. 🖥️",
+          "There aren't any loud televisions in my bedroom because I value peace and quiet. 🤫",
+          "Are there any LED strip lights behind your bed or near the bookshelf? 💡"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🛏️",
+              "label": "Oración afirmativa con There is/are (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Oración negativa con There isn't/aren't (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta con Is there / Are there (?)"
+          }
+      ],
+      "tips": [
+          "Usa preposiciones como next to, behind, between y across from.",
+          "Revisa singular (there is a...) vs plural (there are three...)."
+      ],
+      "badgeText": "Room Designer 🏆",
+      "modelWhatsApp": "Teacher, aquí está mi tarea sobre mi cuarto soñado: There is a comfortable desk next to the window and there are two gaming chairs, but there isn't a TV!"
+  },
   "c-teens-basic-2-3": {
-    "task": "Escribe 3 oraciones sobre 3: Vehicles, Transport & City Commuting: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 3: Vehicles, Transport & City Commuting allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 3: Vehicles, Transport & City Commuting to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 3: Vehicles, Transport & City Commuting (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "3 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta sobre cómo te desplazas por tu ciudad, los medios de transporte y cómo llegar a tu lugar favorito (+, −, ?).",
+      "taskHighlights": [
+          "medios de transporte",
+          "tiempos y distancias",
+          "cómo llegar a lugares (+, −, ?)"
+      ],
+      "exampleLines": [
+          "I take the modern subway to reach the downtown library in fifteen minutes. 🚇",
+          "We do not drive during peak rush hours because the avenue is always jammed. 🚗",
+          "How long does it take you to get to school by bicycle every morning? 🚲"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🚇",
+              "label": "Oración afirmativa sobre tu ruta habitual (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Oración negativa sobre el tráfico o transporte (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta sobre tiempos de traslado (?)"
+          }
+      ],
+      "tips": [
+          "Usa verbos de transporte como take the bus, ride a bike, walk.",
+          "Expresa tiempos con 'It takes fifteen minutes to get there'."
+      ],
+      "badgeText": "City Navigator 🏆",
+      "modelWhatsApp": "Teacher, aquí está mi tarea de transporte: I take the bus to school every morning, but I don't take taxis because they are too expensive. How do you get to work?"
+  },
   "c-teens-basic-2-4": {
-    "task": "Escribe 3 oraciones sobre 4: Dream Jobs, Careers & Workplaces: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 4: Dream Jobs, Careers & Workplaces allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 4: Dream Jobs, Careers & Workplaces to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 4: Dream Jobs, Careers & Workplaces (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "4 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta sobre tu trabajo soñado, el lugar donde trabajarías y tus responsabilidades principales (+, −, ?).",
+      "taskHighlights": [
+          "profesión soñada",
+          "lugar de trabajo",
+          "responsabilidades (+, −, ?)"
+      ],
+      "exampleLines": [
+          "I want to become a software engineer and build innovative mobile apps in a tech hub. 💻",
+          "A game developer does not work in an emergency room or drive an ambulance. 🏥",
+          "Would you like to work remotely from home or in a creative international studio? 🌍"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "💼",
+              "label": "Oración afirmativa sobre tu profesión soñada (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Oración negativa sobre lo que no hace esa profesión (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta sobre preferencias laborales (?)"
+          }
+      ],
+      "tips": [
+          "Usa conectores de causa como 'because I love solving tech problems'.",
+          "Menciona lugares de trabajo: in a hospital, at a design studio, from home."
+      ],
+      "badgeText": "Career Visionary 🏆",
+      "modelWhatsApp": "Teacher, mi trabajo soñado: I want to be a digital animator in an international studio, I don't want a boring office job, and I would love to direct anime series!"
+  },
   "c-teens-basic-2-5": {
-    "task": "Escribe 3 oraciones sobre 5: Talents, Superpowers & Abilities: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
+    "task": "Escribe 3 oraciones en tu libreta sobre tu evolución de talentos con COULD / COULDN'T (+, −, ?):",
     "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
+      "3 oraciones (+, −, ?)",
+      "Uso de COULD / COULDN'T",
+      "Cláusula de tiempo (When I was...)",
+      "Contraste con el presente (Now I can...)"
     ],
     "exampleLines": [
-        "Mastering 5: Talents, Superpowers & Abilities allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 5: Talents, Superpowers & Abilities to solve real-world communication challenges? 🌍"
+      "When I was ten years old, I could sing with natural pitch and rhythm. 🎤 (+)",
+      "Three years ago, I couldn't write code or develop mobile apps, but now I can. 💻 (−)",
+      "Could you play a musical instrument or ride a bicycle when you were eight? 🚴 (?)"
     ],
     "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 5: Talents, Superpowers & Abilities (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
+      {
+        "icon": "⭐",
+        "label": "Oración afirmativa con 'could' y un hito de edad (When I was...) (+)"
+      },
+      {
+        "icon": "🚫",
+        "label": "Oración negativa con 'couldn't' contrastando con 'now I can' (−)"
+      },
+      {
+        "icon": "❓",
+        "label": "Pregunta de habilidad pasada con 'Could you... when you were...?' (?)"
+      }
     ],
     "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
+      "Recuerda: después de COULD y COULDN'T el verbo va SIEMPRE en su forma base: 'could sing', 'couldn't code'.",
+      "Envía tus 3 oraciones por WhatsApp a tu profesor antes de la siguiente clase."
     ],
-    "badgeText": "5 Master 🏆"
-},
+    "badgeText": "Talent Evolution Master ⚡"
+  },
   "c-teens-basic-2-6": {
-    "task": "Escribe 3 oraciones sobre 6: School & Lab Rules: Must, Have to, Should: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 6: School & Lab Rules: Must, Have to, Should allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 6: School & Lab Rules: Must, Have to, Should to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 6: School & Lab Rules: Must, Have to, Should (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "6 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta sobre las normas de tu colegio y de convivencia usando modales de obligación y consejo (+, −, ?).",
+      "taskHighlights": [
+          "Must / Have to",
+          "Mustn't / Shouldn't",
+          "normas de colegio (+, −, ?)"
+      ],
+      "exampleLines": [
+          "All students must arrive at the main gate before the morning bell rings. 🔔",
+          "You mustn't use smartphones during science exams without permission. 📵",
+          "Do we have to wear the physical education uniform every Wednesday? 🏃"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "📋",
+              "label": "Regla obligatoria con Must o Have to (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Prohibición clara con Mustn't (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta sobre un reglamento con Do you have to (?)"
+          }
+      ],
+      "tips": [
+          "Recuerda: Mustn't = prohibición estricta; Don't have to = opcional.",
+          "Usa verbos en su forma base después del modal."
+      ],
+      "badgeText": "Rule Master 🏆",
+      "modelWhatsApp": "Teacher, aquí están mis reglas: Students have to wear their student ID card, they mustn't eat inside the computer lab, and they should respect classmates at all times."
+  },
   "c-teens-basic-2-7": {
-    "task": "Escribe 3 oraciones sobre 7: Sports, Workouts & Healthy Habits: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
+    "task": "Escribe 3 oraciones en tu libreta sobre tu balance de salud con TOO MUCH, TOO MANY y ENOUGH (+, −, ?):",
     "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
+      "3 oraciones (+, −, ?)",
+      "Uso de TOO MUCH / TOO MANY",
+      "Uso de (NOT) ENOUGH / PLENTY OF"
     ],
     "exampleLines": [
-        "Mastering 7: Sports, Workouts & Healthy Habits allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 7: Sports, Workouts & Healthy Habits to solve real-world communication challenges? 🌍"
+      "I drink enough water and eat plenty of fresh fruit during my sports training. 🍎 (+)",
+      "I do not drink too many sugary sodas or spend too much screen time on weeknights. 📵 (−)",
+      "Do you get enough sleep and rest after playing intense soccer matches with friends? ⚽ (?)"
     ],
     "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 7: Sports, Workouts & Healthy Habits (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
+      {
+        "icon": "⚖️",
+        "label": "Oración afirmativa con 'enough' o 'plenty of' sobre un hábito saludable (+)"
+      },
+      {
+        "icon": "🚫",
+        "label": "Oración negativa con 'too much' (incontable) o 'too many' (contable) (−)"
+      },
+      {
+        "icon": "❓",
+        "label": "Pregunta de balance con 'Do you get/drink enough...?' (?)"
+      }
     ],
     "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
+      "Recuerda: 'too much' para incontables (sugar, water, soda) y 'too many' para contables plurales (hours, drinks).",
+      "Envía tus 3 oraciones por WhatsApp a tu profesor antes de la siguiente clase."
     ],
-    "badgeText": "7 Master 🏆"
-},
+    "badgeText": "Balanced Athlete Champion ⚽⚖️"
+  },
   "c-teens-basic-2-8": {
-    "task": "Escribe 3 oraciones sobre 8: City Outings, Hangouts & Weekend Plans: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 8: City Outings, Hangouts & Weekend Plans allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 8: City Outings, Hangouts & Weekend Plans to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 8: City Outings, Hangouts & Weekend Plans (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "8 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta organizando una salida de fin de semana con amigos: lugar, transporte, hora y punto de encuentro (+, −, ?).",
+      "taskHighlights": [
+          "punto de encuentro",
+          "hora y transporte",
+          "actividad de grupo (+, −, ?)"
+      ],
+      "exampleLines": [
+          "Let's meet at two forty-five in front of the central park fountain this Saturday. ⛲",
+          "We don't need to take a taxi because the museum is only two blocks away. 🚶",
+          "Would you like to grab artisan ice cream after visiting the art gallery? 🍦"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🗺️",
+              "label": "Propuesta de salida con punto de encuentro (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Aclaración sobre lo que no se necesita (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta invitando a tus amigos con Would you like (?)"
+          }
+      ],
+      "tips": [
+          "Usa expresiones de invitación: Let's meet at..., We can go to...",
+          "Incluye horas precisas: at 3:15 PM, around noon."
+      ],
+      "badgeText": "Social Planner 🏆",
+      "modelWhatsApp": "Teacher, aquí está mi plan: Let's meet at the cinema at 4 PM, we don't have to buy tickets in advance because we have digital passes, and would you like to get pizza afterwards?"
+  },
   "c-teens-basic-2-9": {
-    "task": "Escribe 3 oraciones sobre 9: Entertainment Reviews: Series, Movies & Games: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 9: Entertainment Reviews: Series, Movies & Games allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 9: Entertainment Reviews: Series, Movies & Games to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 9: Entertainment Reviews: Series, Movies & Games (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "9 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta recomendando tu película, serie o videojuego favorito usando conectores de justificación (+, −, ?).",
+      "taskHighlights": [
+          "reseña y recomendación",
+          "conectores and, but, because",
+          "opinión justificada (+, −, ?)"
+      ],
+      "exampleLines": [
+          "I love this sci-fi movie because the soundtrack and visual effects are breathtaking. 🎬",
+          "The main character is brave, but the ending leaves several mysterious questions open. ❓",
+          "Do you prefer fast-paced action shooters or narrative role-playing games? 🎮"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "⭐",
+              "label": "Opinión entusiasta con because (+)"
+          },
+          {
+              "icon": "⚖️",
+              "label": "Contraste constructivo con but (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta pidiendo la recomendación de otro (?)"
+          }
+      ],
+      "tips": [
+          "Usa adjetivos descriptivos: breathtaking, suspenseful, overrated, outstanding.",
+          "Conecta ideas usando and, but y because con naturalidad."
+      ],
+      "badgeText": "Critic & Reviewer 🏆",
+      "modelWhatsApp": "Teacher, mi reseña: I highly recommend Spider-Man because the animation is incredible, but the second movie ended on a cliffhanger. Have you seen it?"
+  },
   "c-teens-basic-2-10": {
-    "task": "Escribe 3 oraciones sobre 10: Level 2 Capstone: Teen Podcast & Grand Review: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 10: Level 2 Capstone: Teen Podcast & Grand Review allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 10: Level 2 Capstone: Teen Podcast & Grand Review to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 10: Level 2 Capstone: Teen Podcast & Grand Review (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "10 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta como síntesis de graduación del Nivel 2: tus logros, hábitos aprendidos y tu meta para Nivel 3 (+, −, ?).",
+      "taskHighlights": [
+          "logros del Nivel 2",
+          "hábitos y fluidez",
+          "visión hacia Nivel 3 (+, −, ?)"
+      ],
+      "exampleLines": [
+          "I can describe wildlife habitats, navigate city transit by subway, and review trending games with confidence. 🌟",
+          "We should never stop practicing because consistency is the key to English fluency. 🚀",
+          "Are you ready to conquer storytelling and international debates in Level 3? 🎓"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🎓",
+              "label": "Declaración de logro de Nivel 2 (+)"
+          },
+          {
+              "icon": "💪",
+              "label": "Compromiso de disciplina y práctica diaria (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta entusiasta hacia el Nivel 3 (?)"
+          }
+      ],
+      "tips": [
+          "Haz un balance de lo aprendido en el nivel.",
+          "Expresa orgullo por tu progreso comunicativo."
+      ],
+      "badgeText": "Level 2 Graduate 🏆",
+      "modelWhatsApp": "Teacher, ¡me gradué del Nivel 2! I can now speak about city transport, my dream career, and animal habitats in English. Ready for Level 3!"
+  },
   "c-teens-basic-3-1": {
-    "task": "Escribe 3 oraciones sobre 1: Daily Routine & Time: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
+    "title": "My 3-Point Tech Showdown Card",
+    "instructions": "Escribe en tu cuaderno de inglés 3 oraciones completas comparando dos dispositivos, consolas o videojuegos usando comparativos:",
+    "modelExamples": [
+      "1. The PlayStation 5 is faster and has better graphics than the older PlayStation 4.",
+      "2. Gaming laptops are more expensive and heavier than regular study tablets.",
+      "3. My wireless earbuds are not as loud as my gaming headset, but they are more comfortable."
     ],
-    "exampleLines": [
-        "Mastering 1: Daily Routine & Time allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 1: Daily Routine & Time to solve real-world communication challenges? 🌍"
+    "checklist": [
+      "Usa al menos un adjetivo comparativo corto (-er than: faster, cheaper, lighter).",
+      "Usa al menos un adjetivo comparativo largo (more than: more expensive, more comfortable).",
+      "Incluye un comparativo irregular (better/worse) o una estructura de igualdad (as...as)."
     ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 1: Daily Routine & Time (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "1 Master 🏆"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 1 de Teens Nivel 3 (Comparative Adjectives & Tech):\n1. The PlayStation 5 is faster and has better graphics than the older PlayStation 4.\n2. Gaming laptops are more expensive and heavier than regular study tablets.\n3. My wireless earbuds are not as loud as my gaming headset, but they are more comfortable."
+  },
   "c-teens-basic-3-2": {
-    "task": "Escribe 3 oraciones sobre 2: Sports, Competitions & Teams: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
+    "title": "My 3-Record World Showcase Card",
+    "instructions": "Escribe en tu cuaderno de inglés 3 oraciones completas describiendo récords mundiales reales usando adjetivos superlativos:",
+    "modelExamples": [
+      "1. The cheetah is the fastest land animal in the world, reaching over 100 kilometers per hour.",
+      "2. Burj Khalifa is the tallest building on Earth with 828 meters of height.",
+      "3. Formula 1 racing is one of the most exciting and expensive sports in history."
     ],
-    "exampleLines": [
-        "Mastering 2: Sports, Competitions & Teams allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 2: Sports, Competitions & Teams to solve real-world communication challenges? 🌍"
+    "checklist": [
+      "Usa al menos un superlativo corto con 'the + -est' (the fastest, the tallest, the highest).",
+      "Usa al menos un superlativo largo con 'the most' (the most exciting, the most dangerous).",
+      "Incluye un ámbito de comparación con 'in the world', 'on Earth' o 'in history'."
     ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 2: Sports, Competitions & Teams (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "2 Master 🏆"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 2 de Teens Nivel 3 (Superlative Adjectives & World Records):\n1. The cheetah is the fastest land animal in the world, reaching over 100 kilometers per hour.\n2. Burj Khalifa is the tallest building on Earth with 828 meters of height.\n3. Formula 1 racing is one of the most exciting and expensive sports in history."
+  },
   "c-teens-basic-3-3": {
-    "task": "Escribe 3 oraciones sobre 3: Holidays, Festivals & Traditions: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 3: Holidays, Festivals & Traditions allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 3: Holidays, Festivals & Traditions to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 3: Holidays, Festivals & Traditions (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "3 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta sobre tu celebración o tradición familiar favorita usando preposiciones de tiempo IN, ON y AT (+, −, ?).",
+      "taskHighlights": [
+          "preposiciones IN, ON, AT",
+          "tradiciones y celebraciones",
+          "comida y costumbres (+, −, ?)"
+      ],
+      "exampleLines": [
+          "In December, our entire extended family gathers to cook buñuelos and natilla. 🎄",
+          "On New Year's Eve, we do not stay inside because everyone watches fireworks at midnight. 🎆",
+          "What special traditional meal do you always eat at midnight on Christmas Eve? 🍽️"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🎉",
+              "label": "Oración afirmativa con IN o ON sobre tu fiesta favorita (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Oración negativa sobre lo que no hacen ese día (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta sobre costumbres festivas con AT (?)"
+          }
+      ],
+      "tips": [
+          "IN para meses y años (in October, in 2026).",
+          "ON para días y fechas (on Friday, on December 24th).",
+          "AT para horas y momentos exactos (at midnight, at 7 PM)."
+      ],
+      "badgeText": "Tradition Chronicler 🏆",
+      "modelWhatsApp": "Teacher, mi tradición familiar: In December, we celebrate Christmas together, on December 24th we open gifts at midnight, but we don't go to bed early!"
+  },
   "c-teens-basic-3-4": {
-    "task": "Escribe 3 oraciones sobre 4: Space, Science & Future: una condición afirmativa (+), una condición negativa (−), y una pregunta hipotética (?).",
-    "taskHighlights": [
-        "condición (+)",
-        "condición negativa (−)",
-        "pregunta (?)"
+    "title": "My 3-Goal Vacation Blueprint Card",
+    "instructions": "Escribe en tu cuaderno de inglés 3 oraciones completas sobre tus planes futuros usando BE GOING TO:",
+    "modelExamples": [
+      "1. I am going to practice skateboarding every morning at the central park.",
+      "2. My friends and I are going to build a new gaming setup for our streaming channel.",
+      "3. Look at my study schedule, I am going to ace all my final exams!"
     ],
-    "exampleLines": [
-        "If I finish my school project early, I will play online games. 🎮",
-        "If it rains tomorrow, we will not go cycling in the park. 🌧️",
-        "What will you do if you win the science competition? 🏆"
+    "checklist": [
+      "Usa 'am going to / is going to / are going to' con el verbo en forma base.",
+      "Incluye al menos un plan personal y un plan grupal con amigos o familia.",
+      "Menciona un marcador de tiempo futuro (next week, soon, this summer)."
     ],
-    "whatToInclude": [
-        {
-            "icon": "⚡",
-            "label": "Condición con 'If [presente], will [verbo]' (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Resultado negativo con 'will not / won't' (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta de consecuencia con 'What will you do if...?' (?)"
-        }
-    ],
-    "tips": [
-        "En la cláusula con IF se usa Presente Simple.",
-        "En el resultado se usa WILL / WON'T."
-    ],
-    "badgeText": "Conditionals Pro 🔮"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 4 de Teens Nivel 3 (BE GOING TO for Future Plans):\n1. I am going to practice skateboarding every morning at the central park.\n2. My friends and I are going to build a new gaming setup for our streaming channel.\n3. Look at my study schedule, I am going to ace all my final exams!"
+  },
   "c-teens-basic-3-5": {
-    "task": "Escribe 3 oraciones sobre 5: Past To Be: Was: una en pasado afirmativo (+), una en pasado negativo (−), y una pregunta en pasado (?).",
-    "taskHighlights": [
-        "pasado afirmativo (+)",
-        "pasado negativo (−)",
-        "pregunta en pasado (?)"
+    "title": "My 3-Time Snapshot Alibi Card",
+    "instructions": "Escribe en tu cuaderno de inglés 3 oraciones completas describiendo qué estabas haciendo tú y tus allegados en momentos específicos del pasado:",
+    "modelExamples": [
+      "1. Yesterday at 7:00 PM, I was doing my math homework on my study desk.",
+      "2. My brother was playing video games while my parents were cooking dinner.",
+      "3. At midnight, everyone in my house was sleeping peacefully."
     ],
-    "exampleLines": [
-        "Yesterday, I was at the city library studying for my science test. 📚",
-        "I was not at home during the afternoon blackout. ⚡",
-        "Where were you when the surprise party started? 🎉"
+    "checklist": [
+      "Usa 'was + -ing' para I/he/she y 'were + -ing' para you/we/they.",
+      "Incluye una hora o momento exacto del pasado (at 7:00 PM, yesterday afternoon, at midnight).",
+      "Describe al menos una acción simultánea con 'while'."
     ],
-    "whatToInclude": [
-        {
-            "icon": "📖",
-            "label": "Oración afirmativa en pasado con 'was / were / -ed' (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa en pasado con 'was not / didn't' (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta en pasado con 'Where were you / Did you...?' (?)"
-        }
-    ],
-    "tips": [
-        "Usa 'was' para I/he/she/it y 'were' para you/we/they.",
-        "No dupliques el pasado con 'didn't'."
-    ],
-    "badgeText": "Past Master ⏳"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 5 de Teens Nivel 3 (Past Continuous: WAS / WERE + -ING):\n1. Yesterday at 7:00 PM, I was doing my math homework on my study desk.\n2. My brother was playing video games while my parents were cooking dinner.\n3. At midnight, everyone in my house was sleeping peacefully."
+  },
   "c-teens-basic-3-6": {
-    "task": "Escribe 3 oraciones sobre 6: Vacations, Travel & Anecdotes: una en pasado afirmativo (+), una en pasado negativo (−), y una pregunta en pasado (?).",
-    "taskHighlights": [
-        "pasado afirmativo (+)",
-        "pasado negativo (−)",
-        "pregunta en pasado (?)"
+    "title": "My 3-Event Storyteller Card",
+    "instructions": "Escribe en tu cuaderno de inglés 3 oraciones completas narrando anécdotas con Pasado Continuo y Pasado Simple usando WHEN y WHILE:",
+    "modelExamples": [
+      "1. I was riding my bicycle in the park when suddenly it started to pour rain.",
+      "2. While my sister was studying for her chemistry exam, our pet cat knocked over a water glass.",
+      "3. My friends and I were playing video games online when the Wi-Fi connection died."
     ],
-    "exampleLines": [
-        "Yesterday, I was at the city library studying for my science test. 📚",
-        "I was not at home during the afternoon blackout. ⚡",
-        "Where were you when the surprise party started? 🎉"
+    "checklist": [
+      "Usa al menos una oración con 'was/were + -ing... WHEN + past simple'.",
+      "Usa al menos una oración con 'WHILE + was/were + -ing, past simple'.",
+      "Incluye conectores narrativos como 'suddenly' o 'all of a sudden'."
     ],
-    "whatToInclude": [
-        {
-            "icon": "📖",
-            "label": "Oración afirmativa en pasado con 'was / were / -ed' (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa en pasado con 'was not / didn't' (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta en pasado con 'Where were you / Did you...?' (?)"
-        }
-    ],
-    "tips": [
-        "Usa 'was' para I/he/she/it y 'were' para you/we/they.",
-        "No dupliques el pasado con 'didn't'."
-    ],
-    "badgeText": "Past Master ⏳"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 6 de Teens Nivel 3 (Past Simple vs Past Continuous with WHEN/WHILE):\n1. I was riding my bicycle in the park when suddenly it started to pour rain.\n2. While my sister was studying for her chemistry exam, our pet cat knocked over a water glass.\n3. My friends and I were playing video games online when the Wi-Fi connection died."
+  },
   "c-teens-basic-3-7": {
-    "task": "Escribe 3 oraciones sobre 7: Biographies of Artists, Athletes & Creators: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 7: Biographies of Artists, Athletes & Creators allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 7: Biographies of Artists, Athletes & Creators to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 7: Biographies of Artists, Athletes & Creators (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "7 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta narrando la biografía y logros de un personaje inspirador con verbos en pasado simple (+, −, ?).",
+      "taskHighlights": [
+          "verbos regulares e irregulares",
+          "fechas y logros pasados",
+          "resiliencia y legado (+, −, ?)"
+      ],
+      "exampleLines": [
+          "Luis Diaz was born in Barrancas, trained tirelessly, and won championships in Europe. ⚽",
+          "He did not give up on his dreams despite severe financial difficulties in his youth. 💪",
+          "When did your favorite singer or athlete achieve their first major international victory? 🏆"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "⭐",
+              "label": "Oración con verbos en pasado sobre logros de vida (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Oración negativa con didn't sobre obstáculos superados (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta biográfica con Did o When (?)"
+          }
+      ],
+      "tips": [
+          "Combina verbos regulares (trained, worked) e irregulares (won, was born, grew up).",
+          "Recuerda que con 'didn't' el verbo vuelve a su forma base."
+      ],
+      "badgeText": "Biographer 🏆",
+      "modelWhatsApp": "Teacher, aquí está mi biografía: Shakira was born in Barranquilla, she wrote her first song at age eight, and she didn't stop until she conquered global stages!"
+  },
   "c-teens-basic-3-8": {
-    "task": "Escribe 3 oraciones sobre 8: Storytelling Connectors: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 8: Storytelling Connectors allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 8: Storytelling Connectors to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 8: Storytelling Connectors (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "8 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta narrando una anécdota o contratiempo cotidiano y cómo lo resolviste usando conectores de secuencia (+, −, ?).",
+      "taskHighlights": [
+          "conectores First, Suddenly, Finally",
+          "verbos en pasado simple",
+          "anécdota y desenlace (+, −, ?)"
+      ],
+      "exampleLines": [
+          "First, we went to the cinema, but suddenly the power went out during the climax. ⚡",
+          "Fortunately, the technicians fixed the projector quickly, so we didn't miss the ending. 🎟️",
+          "What was the funniest unexpected surprise that happened to you on your last vacation? 😂"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "📖",
+              "label": "Inicio de la anécdota con First o Suddenly (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Desenlace positivo con Fortunately y negación (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta invitando al interlocutor a relatar su anécdota (?)"
+          }
+      ],
+      "tips": [
+          "Usa marcadores de tiempo: First, Suddenly, Fortunately, In the end.",
+          "Muestra contraste de emociones ante el imprevisto."
+      ],
+      "badgeText": "Storyteller 🏆",
+      "modelWhatsApp": "Teacher, mi anécdota: First, I left my homework on the dining table, but fortunately my brother brought it to school before class, so I didn't lose my points!"
+  },
   "c-teens-basic-3-9": {
-    "task": "Escribe 3 oraciones sobre 9: Everyday Problems & How to Explain Them: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 9: Everyday Problems & How to Explain Them allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 9: Everyday Problems & How to Explain Them to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 9: Everyday Problems & How to Explain Them (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "9 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta haciendo peticiones formales y amables ante problemas de tecnología o de clase con Could you y Would you (+, −, ?).",
+      "taskHighlights": [
+          "Could you please...",
+          "Would you mind...",
+          "peticiones corteses (+, −, ?)"
+      ],
+      "exampleLines": [
+          "Could you please explain that grammar rule one more time before the exam starts? 🙋",
+          "Would you mind lending me your laptop charger for ten minutes? 🔌",
+          "I am sorry to bother you, but could you show me where the science lab is located? 🧪"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🤝",
+              "label": "Petición muy educada con Could you please (+)"
+          },
+          {
+              "icon": "💡",
+              "label": "Solicitud con Would you mind (+ verbo con -ing) (+)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta cortés de ubicación o asistencia (?)"
+          }
+      ],
+      "tips": [
+          "Usa entonación suave: 'Could you please help me with this exercise?'.",
+          "Con 'Would you mind', el verbo debe llevar -ing: 'Would you mind sharing?'."
+      ],
+      "badgeText": "Diplomatic Speaker 🏆",
+      "modelWhatsApp": "Teacher, mis peticiones corteses: Could you please give me two minutes to check my microphone? Would you mind repeating the question, please? Thank you!"
+  },
   "c-teens-basic-3-10": {
-    "task": "Escribe 3 oraciones sobre 10: Irregular Verbs & -ed Endings (Video Project): una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 10: Irregular Verbs & -ed Endings (Video Project) allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 10: Irregular Verbs & -ed Endings (Video Project) to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 10: Irregular Verbs & -ed Endings (Video Project) (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "10 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta celebrando tu graduación del Nivel 3: narrando una anécdota pasada, tus logros y tus metas con Will (+, −, ?).",
+      "taskHighlights": [
+          "logros del Nivel 3",
+          "anécdota en pasado",
+          "predicciones futuras con will (+, −, ?)"
+      ],
+      "exampleLines": [
+          "I mastered past storytelling, world records with superlatives, and future plans with will! 🚀",
+          "I didn't think English could be this exciting until we started active speaking debates. 💬",
+          "Will you continue sharpening your communicative superpowers in Level 4? 🌟"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🎓",
+              "label": "Oración de orgullo sobre tus logros en Nivel 3 (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Reflexión sobre una dificultad que superaste (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta motivadora hacia el Nivel 4 (?)"
+          }
+      ],
+      "tips": [
+          "Combina pasado simple con planes futuros.",
+          "Proyecta tu siguiente meta lingüística."
+      ],
+      "badgeText": "Level 3 Master 🏆",
+      "modelWhatsApp": "Teacher, ¡graduado de Nivel 3! I mastered past continuous, comparatives, and storytelling. In Level 4, I will become a confident debate leader!"
+  },
   "c-teens-basic-4-1": {
     "task": "Escribe 3 oraciones sobre 1: My Opinions & Perspectives: un acuerdo formal (+), un desacuerdo respetuoso (−), y una pregunta para debatir (?).",
     "taskHighlights": [
@@ -1523,37 +1393,43 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Debate Master 🎙️"
 },
   "c-teens-basic-4-2": {
-    "task": "Escribe 3 oraciones sobre 2: Giving Good Advice: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 2: Giving Good Advice allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 2: Giving Good Advice to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 2: Giving Good Advice (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "2 Master 🏆"
-},
+      "task": "Escribe 4 oraciones en tu libreta dando consejos saludables de estudio y bienestar a un amigo estresado usando Should, Shouldn't y Why don't you.",
+      "taskHighlights": [
+          "You should...",
+          "You shouldn't...",
+          "Why don't you... / If I were you"
+      ],
+      "exampleLines": [
+          "You should create a weekly study schedule and take active ten-minute breaks. ⏰",
+          "You shouldn't check social media notifications while doing complex math homework. 📵",
+          "Why don't you practice speaking English with a classmate over Discord this afternoon? 🎧",
+          "If I were you, I would drink herbal tea and sleep eight full hours before the exam. 🫖"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "💡",
+              "label": "Consejo positivo con You should (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Advertencia contra malos hábitos con You shouldn't (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Sugerencia amigable con Why don't you (?)"
+          },
+          {
+              "icon": "🤝",
+              "label": "Consejo empático con If I were you (+)"
+          }
+      ],
+      "tips": [
+          "Usa verbos en forma base después de should y shouldn't.",
+          "'If I were you, I would...' da un tono maduro y respetuoso."
+      ],
+      "badgeText": "Wellness Mentor 🏆",
+      "modelWhatsApp": "Teacher, mis consejos para exámenes: You should sleep at least 8 hours, you shouldn't drink energy drinks late at night, and why don't you review key flashcards with a friend?"
+  },
   "c-teens-basic-4-3": {
     "task": "Escribe 3 oraciones sobre 3: Conditions & Scientific Facts (Zero Conditional): una condición afirmativa (+), una condición negativa (−), y una pregunta hipotética (?).",
     "taskHighlights": [
@@ -1587,37 +1463,38 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Conditionals Pro 🔮"
 },
   "c-teens-basic-4-4": {
-    "task": "Escribe 3 oraciones sobre 4: Messaging, Texting & Online Communication: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 4: Messaging, Texting & Online Communication allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 4: Messaging, Texting & Online Communication to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 4: Messaging, Texting & Online Communication (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "4 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta usando acrónimos y abreviaturas digitales comunes en inglés (TBH, IMO, BTW, BRB, RN, WDYT) con buena netiqueta.",
+      "taskHighlights": [
+          "acrónimos digitales (IMO, TBH, BTW)",
+          "netiqueta y tono casual",
+          "conversación online (+, −, ?)"
+      ],
+      "exampleLines": [
+          "TBH, learning English through online gaming servers is one of the most effective methods. 🎮",
+          "I am not online RN because my internet connection is dropping packets, BRB in five! 📶",
+          "BTW, WDYT about organizing a multiplayer practice session on Saturday evening? 💬"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "📱",
+              "label": "Opinión digital con TBH o IMO (+)"
+          },
+          {
+              "icon": "⏳",
+              "label": "Estado temporal con RN o BRB (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta de opinión con WDYT (?)"
+          }
+      ],
+      "tips": [
+          "TBH = To be honest / IMO = In my opinion / BTW = By the way.",
+          "BRB = Be right back / RN = Right now / WDYT = What do you think?"
+      ],
+      "badgeText": "Digital Native 🏆",
+      "modelWhatsApp": "Teacher, mi mensaje de chat: IMO, learning English on Discord is super fun. BTW, our group project is ready RN, WDYT about submitting it early?"
+  },
   "c-teens-basic-4-5": {
     "task": "Escribe 3 oraciones sobre 5: Future Possibilities & Consequences (First Conditional): una condición afirmativa (+), una condición negativa (−), y una pregunta hipotética (?).",
     "taskHighlights": [
@@ -1651,165 +1528,123 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Conditionals Pro 🔮"
 },
   "c-teens-basic-4-6": {
-    "task": "Escribe 3 oraciones sobre 6: Comparatives & Superlatives (Tech, Movies & Sports): una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
+    "title": "My 3-Dream Hypothetical Card",
+    "instructions": "Escribe en tu cuaderno de inglés 3 oraciones completas explorando situaciones hipotéticas usando el Segundo Condicional:",
+    "modelExamples": [
+      "1. If I won a million dollars, I would buy a modern house for my family and invest in tech startups.",
+      "2. If I had the power of teleportation, I would visit my best friends around the world every weekend.",
+      "3. If I were the school principal for one month, I would replace standard desks with ergonomic gaming chairs."
     ],
-    "exampleLines": [
-        "Mastering 6: Comparatives & Superlatives (Tech, Movies & Sports) allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 6: Comparatives & Superlatives (Tech, Movies & Sports) to solve real-world communication challenges? 🌍"
+    "checklist": [
+      "Usa 'If + past simple' en la cláusula de condición.",
+      "Usa 'would + base verb' (o could) en la cláusula de resultado.",
+      "Incluye la estructura formal 'If I were...' en al menos un ejemplo."
     ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 6: Comparatives & Superlatives (Tech, Movies & Sports) (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "6 Master 🏆"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 6 de Teens Nivel 4 (Second Conditional: IF + PAST, WOULD):\n1. If I won a million dollars, I would buy a modern house for my family and invest in tech startups.\n2. If I had the power of teleportation, I would visit my best friends around the world every weekend.\n3. If I were the school principal for one month, I would replace standard desks with ergonomic gaming chairs."
+  },
   "c-teens-basic-4-7": {
-    "task": "Escribe 3 oraciones sobre 7: Too & Enough: Problems and Solutions: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
+    "title": "The Mystery Detective Case File",
+    "instructions": "Escribe en tu cuaderno de inglés 4 oraciones completas de misterio escolar usando la regla de oro de pronombres indefinidos:",
+    "modelExamples": [
+      "1. Someone left a pair of black sunglasses in the cafeteria today, but nobody has claimed them.",
+      "2. I searched everywhere for my portable charger, but there was nothing inside my locker.",
+      "3. Did anyone notice something strange near the computer lab during the morning break?",
+      "4. Everyone in my English class was excited to solve the mysterious puzzle together."
     ],
-    "exampleLines": [
-        "Mastering 7: Too & Enough: Problems and Solutions allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 7: Too & Enough: Problems and Solutions to solve real-world communication challenges? 🌍"
+    "checklist": [
+      "Usa al menos 4 pronombres diferentes (someone, anything, nowhere, everyone).",
+      "Recuerda la regla de oro: verbo en singular (everyone IS, nobody KNOWS).",
+      "Cero dobles negaciones: no uses 'don't have nothing'."
     ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 7: Too & Enough: Problems and Solutions (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "7 Master 🏆"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 7 de Teens Nivel 4 (Indefinite Pronouns: Someone, Anything, Nowhere):\n1. Someone left a pair of black sunglasses in the cafeteria today, but nobody has claimed them.\n2. I searched everywhere for my portable charger, but there was nothing inside my locker.\n3. Did anyone notice something strange near the computer lab during the morning break?\n4. Everyone in my English class was excited to solve the mysterious puzzle together."
+  },
   "c-teens-basic-4-8": {
-    "task": "Escribe 3 oraciones sobre 8: Giving Advice to Friends (Should, Shouldn't & Ought to): una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
+    "title": "The Clan & Academy Code of Conduct",
+    "instructions": "Escribe en tu cuaderno de inglés 4 reglas claras para un torneo de esports o salón de clases usando la gama completa de modales:",
+    "modelExamples": [
+      "1. All tournament competitors have to wear official team jerseys and arrive 15 minutes before the match.",
+      "2. You must respect the referee's final decision without arguing or throwing temper tantrums.",
+      "3. Players mustn't use toxic language, cheat codes, or unauthorized mods in the server.",
+      "4. You don't have to bring your own PC or monitor because the gaming arena provides them."
     ],
-    "exampleLines": [
-        "Mastering 8: Giving Advice to Friends (Should, Shouldn't & Ought to) allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 8: Giving Advice to Friends (Should, Shouldn't & Ought to) to solve real-world communication challenges? 🌍"
+    "checklist": [
+      "Usa 'have to' para obligación externa y 'must' para regla oficial.",
+      "Usa 'mustn't' para prohibición absoluta (¡sin 'to'!).",
+      "Usa 'don't have to' para aclarar algo opcional que no es obligatorio."
     ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 8: Giving Advice to Friends (Should, Shouldn't & Ought to) (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "8 Master 🏆"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 8 de Teens Nivel 4 (Modals of Obligation & Prohibition: Must, Have to, Mustn't, Don't have to):\n1. All tournament competitors have to wear official team jerseys.\n2. You must respect the referee's final decision at all times.\n3. Players mustn't use toxic language or cheat codes in the match.\n4. You don't have to bring your own monitor to the tournament arena."
+  },
   "c-teens-basic-4-9": {
-    "task": "Escribe 3 oraciones sobre 9: Informal vs Formal Messages, Emails & Digital Tone: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 9: Informal vs Formal Messages, Emails & Digital Tone allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 9: Informal vs Formal Messages, Emails & Digital Tone to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 9: Informal vs Formal Messages, Emails & Digital Tone (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "9 Master 🏆"
-},
+      "task": "Escribe un borrador de correo formal para un profesor o director escolar pidiendo información o prórroga usando fórmulas de cortesía y registro profesional.",
+      "taskHighlights": [
+          "Dear Professor / Dear Ms.",
+          "I am writing to...",
+          "Could you please / Best regards"
+      ],
+      "exampleLines": [
+          "Dear Professor Martinez, I hope this email finds you well. 📧",
+          "I am writing to respectfully request additional feedback regarding my science presentation. 📑",
+          "Could you please let me know your office hours for this Thursday afternoon? 🕒",
+          "Thank you for your valuable guidance and consideration. Best regards, Santiago Morales. ✍️"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "✉️",
+              "label": "Saludo formal con Dear [Apellido]"
+          },
+          {
+              "icon": "🎯",
+              "label": "Propósito formal con I am writing to..."
+          },
+          {
+              "icon": "❓",
+              "label": "Petición cortés con Could you please..."
+          },
+          {
+              "icon": "🖋️",
+              "label": "Despedida profesional con Best regards"
+          }
+      ],
+      "tips": [
+          "Nunca uses slang ni contracciones (I'm -> I am) en un correo formal.",
+          "Termina siempre con una despedida respetuosa: Sincerely o Best regards."
+      ],
+      "badgeText": "Formal Diplomat 🏆",
+      "modelWhatsApp": "Teacher, mi correo formal: Dear Mr. Gomez, I am writing to request a meeting about the science club. Could you please let me know your availability? Best regards, Mateo."
+  },
   "c-teens-basic-4-10": {
-    "task": "Escribe 3 oraciones sobre 10: Teen Leadership, Customer Service & Capstone Review: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 10: Teen Leadership, Customer Service & Capstone Review allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 10: Teen Leadership, Customer Service & Capstone Review to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 10: Teen Leadership, Customer Service & Capstone Review (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "10 Master 🏆"
-},
+      "task": "Escribe 3 oraciones en tu libreta celebrando tu graduación del Nivel 4: tu manifiesto de liderazgo, tu postura en un debate y tu meta futura con First Conditional.",
+      "taskHighlights": [
+          "liderazgo juvenil y debate",
+          "postura crítica con In my opinion",
+          "condición futura (If I..., I will...) (+, −, ?)"
+      ],
+      "exampleLines": [
+          "In my opinion, young leaders have the responsibility to advocate for digital literacy worldwide. 🌍",
+          "I do not support unfair tournament rules because integrity and fair play define true champions. ⚖️",
+          "If I continue speaking English with discipline every day, I will qualify for international scholarships! 🎓"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🎙️",
+              "label": "Postura de liderazgo con In my opinion (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Argumento crítico con I do not support (−)"
+          },
+          {
+              "icon": "🌟",
+              "label": "Meta con First Conditional (If I..., I will...) (+)"
+          }
+      ],
+      "tips": [
+          "Muestra tu madurez comunicativa B1.",
+          "Demuestra la síntesis de opiniones, condicionales y debate."
+      ],
+      "badgeText": "Youth Leader 🏆",
+      "modelWhatsApp": "Teacher, ¡graduado de Nivel 4! In my opinion, effort creates success. If I keep studying with dedication, I will speak fluent English at university. Thank you!"
+  },
   "c-teens-inter-1": {
     "task": "Escribe 3 oraciones sobre 1: My Life Experiences (Present Perfect): una condición afirmativa (+), una condición negativa (−), y una pregunta hipotética (?).",
     "taskHighlights": [
@@ -1875,69 +1710,56 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Idiom & Slang Pro 💬"
 },
   "c-teens-inter-3": {
-    "task": "Escribe 3 oraciones sobre 3: Possibilities & Deductions (Must, Might, Can't): una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 3: Possibilities & Deductions (Must, Might, Can't) allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 3: Possibilities & Deductions (Must, Might, Can't) to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 3: Possibilities & Deductions (Must, Might, Can't) (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "3 Master 🏆"
-},
+      "task": "Escribe 4 oraciones en tu libreta resolviendo un misterio o deduciendo una situación incierta usando Modales de Deducción (Must be, Can't be, Might be, Could be).",
+      "taskHighlights": [
+          "Must be (99% seguro)",
+          "Can't be (0% imposible)",
+          "Might be / Could be (50% posible)"
+      ],
+      "exampleLines": [
+          "The classroom lights are off and the door is locked, so the teacher must be at the faculty meeting. 🔒",
+          "That strange silhouette can't be a burglar because it is just a coat hanging on the rack. 🧥",
+          "The parcel left on the porch might be the new gaming headset I ordered last Friday. 📦",
+          "Could that mysterious noise coming from the attic be a family of noisy birds? 🐦"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🔍",
+              "label": "Deducción casi segura con Must be (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Imposibilidad lógica con Can't be (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Posibilidad intermedia con Might be / Could be (?)"
+          }
+      ],
+      "tips": [
+          "Must be = Estás 99% seguro por la evidencia lógica.",
+          "Can't be = Es 100% imposible lógicamente.",
+          "Might / Could = Tienes dudas, hay un 50% de probabilidad."
+      ],
+      "badgeText": "Logic Sleuth 🏆",
+      "modelWhatsApp": "Teacher, mis deducciones lógicas: His backpack is still on his chair, so Mateo must be in the library. He can't be at home because his bike is outside. He might be talking to the principal!"
+  },
   "c-teens-inter-4": {
-    "task": "Escribe 3 oraciones sobre 4: If I Ruled the World (Second Conditional): una condición afirmativa (+), una condición negativa (−), y una pregunta hipotética (?).",
-    "taskHighlights": [
-        "condición (+)",
-        "condición negativa (−)",
-        "pregunta (?)"
+    "title": "The Butterfly Effect & Alternate History Card",
+    "instructions": "Escribe en tu cuaderno de inglés 4 oraciones completas explorando situaciones hipotéticas del pasado con el Tercer Condicional:",
+    "modelExamples": [
+      "1. If I had known about the heavy highway traffic this morning, I would have taken the metro instead.",
+      "2. We would have won the basketball championship if our team had practiced free throws more consistently.",
+      "3. If scientists hadn't discovered penicillin in 1928, millions of lives wouldn't have been saved.",
+      "4. What would you have done if you had found an abandoned puppy on the street yesterday?"
     ],
-    "exampleLines": [
-        "If I finish my school project early, I will play online games. 🎮",
-        "If it rains tomorrow, we will not go cycling in the park. 🌧️",
-        "What will you do if you win the science competition? 🏆"
+    "checklist": [
+      "Usa 'If + had + participio pasado' en la cláusula de condición.",
+      "Usa 'would have + participio pasado' (o could have) en la cláusula de resultado.",
+      "Incluye al menos un ejemplo con forma negativa ('hadn't' o 'wouldn't have')."
     ],
-    "whatToInclude": [
-        {
-            "icon": "⚡",
-            "label": "Condición con 'If [presente], will [verbo]' (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Resultado negativo con 'will not / won't' (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta de consecuencia con 'What will you do if...?' (?)"
-        }
-    ],
-    "tips": [
-        "En la cláusula con IF se usa Presente Simple.",
-        "En el resultado se usa WILL / WON'T."
-    ],
-    "badgeText": "Conditionals Pro 🔮"
-},
+    "whatsappShareText": "¡Hola Teacher! Aquí está mi tarea de la Clase 4 de Teens Inter (Third Conditional & Past Regrets: IF + PAST PERFECT, WOULD HAVE):\n1. If I had known about the highway traffic, I would have taken the metro.\n2. We would have won the championship if we had practiced free throws consistently.\n3. If scientists hadn't discovered penicillin, millions of lives wouldn't have been saved.\n4. If I had stayed home yesterday, I wouldn't have met my favorite music producer."
+  },
   "c-teens-inter-5": {
     "task": "Escribe 3 oraciones sobre 5: Agreeing & Disagreeing Respectfully: un acuerdo formal (+), un desacuerdo respetuoso (−), y una pregunta para debatir (?).",
     "taskHighlights": [
@@ -1971,69 +1793,82 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Debate Master 🎙️"
 },
   "c-teens-inter-6": {
-    "task": "Escribe 3 oraciones sobre 6: Podcast & Media Hosting Basics: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 6: Podcast & Media Hosting Basics allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 6: Podcast & Media Hosting Basics to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 6: Podcast & Media Hosting Basics (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "6 Master 🏆"
-},
+      "task": "Escribe un guion de 60 segundos para el gancho de apertura y presentación de un episodio de podcast en inglés con gancho (hook), tema e invitado especial.",
+      "taskHighlights": [
+          "gancho de apertura (hook)",
+          "presentación de tema e invitado",
+          "llamado a la acción (stay tuned)"
+      ],
+      "exampleLines": [
+          "Welcome back to Teen Tech Waves! Today we explore how artificial intelligence is reshaping digital creativity. 🎙️",
+          "Joining us in the studio today is Laura, an inspiring sixteen-year-old digital illustrator from Bogota. 🎨",
+          "What inspired you to start coding at such a young age, and what advice would you give fellow teens? 💡",
+          "Make sure to smash that subscribe button, share with your friends, and stay tuned for more epic talks! 🔔"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🎙️",
+              "label": "Gancho de apertura con el nombre del show"
+          },
+          {
+              "icon": "👥",
+              "label": "Presentación formal del invitado con credenciales"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta incisiva de entrevista"
+          },
+          {
+              "icon": "🔔",
+              "label": "Llamado a la acción y despedida (Stay tuned)"
+          }
+      ],
+      "tips": [
+          "Usa entonación dinámica de locutor.",
+          "Usa frases de transición como 'Without further ado' y 'Stay tuned'."
+      ],
+      "badgeText": "Podcast Host 🏆",
+      "modelWhatsApp": "Teacher, aquí está la intro de mi podcast: Welcome back to The Gamer Zone! Today we interview Carlos, a competitive esports captain. Stay tuned for his best tournament tips!"
+  },
   "c-teens-inter-7": {
-    "task": "Escribe 3 oraciones sobre 7: Present Perfect vs Present Perfect Continuous: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 7: Present Perfect vs Present Perfect Continuous allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 7: Present Perfect vs Present Perfect Continuous to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 7: Present Perfect vs Present Perfect Continuous (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "7 Master 🏆"
-},
+      "task": "Escribe 4 oraciones en tu libreta contrastando acciones completadas (Present Perfect) con actividades continuas en progreso (Present Perfect Continuous con For y Since).",
+      "taskHighlights": [
+          "Present Perfect (acción completada)",
+          "Present Perfect Continuous (acción en curso)",
+          "Uso de For y Since"
+      ],
+      "exampleLines": [
+          "I have read three fantasy novels this year, and I have been writing my own short story for two months. 📚",
+          "She is exhausted because she has been training for the national swimming championship since 6 AM. 🏊",
+          "We haven't finished the robotics prototype yet, but we have been testing the circuits all morning. 🤖",
+          "How long have you been learning to play the electric guitar with your band? 🎸"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "✅",
+              "label": "Present Perfect para resultado o logro completado (+)"
+          },
+          {
+              "icon": "⏳",
+              "label": "Present Perfect Continuous con For o Since (+)"
+          },
+          {
+              "icon": "🚫",
+              "label": "Negación con haven't / hasn't (−)"
+          },
+          {
+              "icon": "❓",
+              "label": "Pregunta con How long have you been...? (?)"
+          }
+      ],
+      "tips": [
+          "For para duración (for 3 hours, for 2 years).",
+          "Since para punto de partida (since 8 AM, since 2022).",
+          "Usa have/has been + verbo-ing para explicar el cansancio o estado actual."
+      ],
+      "badgeText": "Time Weaver 🏆",
+      "modelWhatsApp": "Teacher, mi contraste de tiempos: I have finished my math homework, and I have been practicing piano for two hours. How long have you been teaching English?"
+  },
   "c-teens-inter-8": {
     "task": "Escribe 3 oraciones sobre 8: Advanced Phrasal Verbs in Storytelling & Media: un phrasal verb en contexto (+), uno en forma negativa (−), y una pregunta con un idiom (?).",
     "taskHighlights": [
@@ -2163,37 +1998,44 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "badgeText": "Debate Master 🎙️"
 },
   "c-teens-inter-12": {
-    "task": "Escribe 3 oraciones sobre 12: Capstone Media Showcase & Scholarship Simulation: una afirmación estructurada (+), un contraste negativo (−), y una pregunta de análisis (?).",
-    "taskHighlights": [
-        "afirmación (+)",
-        "contraste (−)",
-        "pregunta (?)"
-    ],
-    "exampleLines": [
-        "Mastering 12: Capstone Media Showcase & Scholarship Simulation allows me to express nuanced ideas with precision. 🎯",
-        "I do not rely on simplistic translations when articulating complex arguments. 📖",
-        "How can we apply 12: Capstone Media Showcase & Scholarship Simulation to solve real-world communication challenges? 🌍"
-    ],
-    "whatToInclude": [
-        {
-            "icon": "🎯",
-            "label": "Oración afirmativa aplicando 12: Capstone Media Showcase & Scholarship Simulation (+)"
-        },
-        {
-            "icon": "🚫",
-            "label": "Oración negativa o contraste crítico (−)"
-        },
-        {
-            "icon": "❓",
-            "label": "Pregunta analítica o conversacional (?)"
-        }
-    ],
-    "tips": [
-        "Usa vocabulario formal y expresiones idiomáticas.",
-        "Revisa puntuación y coherencia."
-    ],
-    "badgeText": "12 Master 🏆"
-},
+      "task": "Escribe tu video pitch de graduación del Nivel Intermedio (B1+) simulando una entrevista de beca internacional con el método STAR y visión futura.",
+      "taskHighlights": [
+          "Método STAR (Situation, Task, Action, Result)",
+          "visión futura con Second Conditional",
+          "oratoria y liderazgo B1+"
+      ],
+      "exampleLines": [
+          "Hello distinguished committee! I am Santiago Morales, a motivated young innovator from Colombia. 🇨🇴",
+          "When our community faced a plastic waste problem, I organized a recycling drive that collected 500 kilograms. ♻️",
+          "If I were awarded this international scholarship, I would study environmental robotics to empower youth worldwide. 🌍",
+          "Thank you for this incredible opportunity to demonstrate leadership and bilingual dedication! 🎓"
+      ],
+      "whatToInclude": [
+          {
+              "icon": "🌟",
+              "label": "Saludo y presentación con propósito académico"
+          },
+          {
+              "icon": "🏆",
+              "label": "Logro concreto narrado con el método STAR"
+          },
+          {
+              "icon": "🔮",
+              "label": "Impacto futuro con Second Conditional (If I were awarded...)"
+          },
+          {
+              "icon": "🎓",
+              "label": "Cierre elocuente y agradecimiento formal"
+          }
+      ],
+      "tips": [
+          "STAR = Situation, Task, Action, Result.",
+          "Usa conectores avanzados: Furthermore, Consequently, In conclusion.",
+          "Proyecta seguridad y vocación de servicio."
+      ],
+      "badgeText": "Intermediate Scholar 🏆",
+      "modelWhatsApp": "Teacher, mi pitch de beca B1+: Hello committee! When our school club struggled with member engagement, I created an interactive podcast that grew our audience by 200%. If I were chosen, I would inspire youth across Latin America!"
+  },
   "c-teens-advanced-1": {
     "task": "Escribe 3 oraciones sobre 1: Breaking News & Campus Whispers (Reported Speech): un hecho en voz pasiva (+), algo que no fue descubierto (−), y una pregunta pasiva (?).",
     "taskHighlights": [
