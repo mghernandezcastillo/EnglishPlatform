@@ -102,8 +102,8 @@ export function resolveHomeworkData(slide: ClassSlide, cls?: CurriculumClass): H
   // 1. Raw content check
   const rawContent = Array.isArray(slide.content) && slide.content.length > 0
     ? slide.content
-    : (slide.homeworkData?.task
-        ? [slide.homeworkData.task]
+    : ((slide.homeworkData?.task || (slide.homeworkData as any)?.instructions)
+        ? [slide.homeworkData?.task || (slide.homeworkData as any).instructions]
         : (catalogEntry?.task ? [catalogEntry.task] : []));
 
   // 2. Parse Task Steps
@@ -122,8 +122,8 @@ export function resolveHomeworkData(slide: ClassSlide, cls?: CurriculumClass): H
   const extractedExamples = taskSteps.map(s => s.example).filter((ex): ex is string => Boolean(ex));
   if (extractedExamples.length >= 2) {
     exampleLines = extractedExamples;
-  } else if (slide.homeworkData?.exampleLines && slide.homeworkData.exampleLines.length > 0) {
-    exampleLines = slide.homeworkData.exampleLines;
+  } else if ((slide.homeworkData?.exampleLines || (slide.homeworkData as any)?.modelExamples) && (slide.homeworkData?.exampleLines?.length || (slide.homeworkData as any)?.modelExamples?.length)) {
+    exampleLines = slide.homeworkData.exampleLines || (slide.homeworkData as any).modelExamples;
   } else if (catalogEntry?.exampleLines && catalogEntry.exampleLines.length > 0) {
     exampleLines = catalogEntry.exampleLines;
   } else if (taskSteps.length > 0) {

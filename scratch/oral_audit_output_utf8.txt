@@ -1,0 +1,567 @@
+﻿=== AUDITING TEENS ORAL EVALUATION VS CLASSES ===
+
+
+======================================================
+LEVEL: teens-basic-zero - Level 0 - Teen Startup / Nivel 0 - Inicio adolescente
+======================================================
+--- CLASSES IN LEVEL (16) ---
+  Class 1 (c-teens-basic-zero-1): Class 1: Hello & Introductions / Saludos y Presentaciones
+  Class 2 (c-teens-basic-zero-2): Class 2: Numbers, Age & Birthdays / Números, Edad y Cumpleaños
+  Class 3 (c-teens-basic-zero-3): Class 3: Family & Squad / Mi Familia y Amigos
+  Class 4 (c-teens-basic-zero-4): Class 4: Food, Drinks & Snacks / Comidas, Bebidas y Antojos
+  Class 5 (c-teens-basic-zero-5): Class 5: Daily Routine & Time / Rutinas Diarias y Horarios
+  Class 6 (c-teens-basic-zero-6): Class 6: Clothes & Streetwear / Ropa, Outfits y Estilo
+  Class 7 (c-teens-basic-zero-7): Class 7: Tech, Social Media & Hobbies / Redes, Apps y Tecnología
+  Class 8 (c-teens-basic-zero-8): Class 8: Abilities & Sports / Talentos y Deportes (Can / Can't)
+  Class 9 (c-teens-basic-zero-9): Class 9: My Hobbies & Free Time / Mis Pasatiempos y Tiempo Libre
+  Class 10 (c-teens-basic-zero-10): Class 10: My House, Rooms & Furniture / Mi Casa, Habitaciones y Muebles (Prepositions of Place: IN, ON, UNDER, BEHIND, IN FRONT OF, NEXT TO)
+  Class 11 (c-teens-basic-zero-11): Class 11: Alphabet, Spelling & Social Usernames / Alfabeto, Deletreo y Usernames
+  Class 12 (c-teens-basic-zero-12): Class 12: Full Teen Profile: Age, Grade, City & Passions / Presentarse: Edad, Curso, Ciudad y Gustos
+  Class 13 (c-teens-basic-zero-13): Class 13: Weather, Seasons & What's It Like Outside? / Clima, Estaciones y el Pronóstico del Tiempo
+  Class 14 (c-teens-basic-zero-14): Class 14: School Subjects & Classroom Life / Escuela, Materias y Objetos del Salón
+  Class 15 (c-teens-basic-zero-15): Class 15: People, Appearance & Style / Descripción Física, Rasgos y Apariencia (BE vs HAVE/HAS for Appearance)
+  Class 16 (c-teens-basic-zero-16): Class 16: Level 0 Grand Review & Final Challenge 🏆 / Repaso General y Graduación
+
+--- ORAL QUESTION BANK (16 questions in getOralQuestionBank) ---
+  [Bank #0] Topic: "ABOUT YOU"
+      Q: "Tell me about yourself: What is your name, how old are you, where do you live, and what do you like to do in your free time?"
+  [Bank #1] Topic: "MORNING ROUTINE"
+      Q: "What do you usually do in the morning before school, and what time do you leave home?"
+  [Bank #2] Topic: "BEST FRIEND"
+      Q: "Describe your best friend. What is their name, how old are they, and what do they like?"
+  [Bank #3] Topic: "FAMILY"
+      Q: "Tell me about your family. Who do you live with, and what do you like to do together?"
+  [Bank #4] Topic: "CLOTHES"
+      Q: "What are you wearing today? Describe your clothes, their colors, and your shoes."
+  [Bank #5] Topic: "SCHOOL"
+      Q: "What is your favorite school subject, what supplies do you use in that class, and why do you like it?"
+  [Bank #6] Topic: "BACKPACK"
+      Q: "What is inside your backpack today? Name at least four things and describe one of them."
+  [Bank #7] Topic: "GADGETS"
+      Q: "What is your favorite gadget? What color is it, what do you use it for, and when do you usually use it?"
+  [Bank #8] Topic: "FOOD & DRINKS"
+      Q: "Tell me about your favorite food and drink. When do you usually have them, and who do you usually eat with?"
+  [Bank #9] Topic: "HOUSE & PREPOSITIONS"
+      Q: "Describe your room or house using there is, there are, and place prepositions (in, on, under, behind, next to)."
+  [Bank #10] Topic: "PETS"
+      Q: "Do you have a pet? If yes, describe it and say what it can do. If not, describe the pet you would like to have."
+  [Bank #11] Topic: "AFTER SCHOOL"
+      Q: "What do you usually do after school? Tell me three activities you do before you go to bed."
+  [Bank #12] Topic: "WEATHER & SEASONS"
+      Q: "What is the weather like in your city today, and what clothes do you wear when it is rainy or sunny?"
+  [Bank #13] Topic: "BIRTHDAY"
+      Q: "When is your birthday, how old will you be next time, and what food or activities do you like for your birthday?"
+  [Bank #14] Topic: "PEOPLE & APPEARANCE"
+      Q: "Describe someone in your family: what do they look like (eyes, hair, build) and what are they wearing?"
+  [Bank #15] Topic: "FINAL INTRODUCTION"
+      Q: "Imagine you meet a new student. Introduce yourself and talk about your age, city, family, favorite subject, hobbies, and favorite food."
+
+--- LIVE ORAL EXAM SLIDES (9 questions selected) ---
+  [Exam #1] Topic: "ABOUT YOU" -> Q: "Tell me about yourself: What is your name, how old are you, where do you live, and what do you like to do in your free time?"
+  [Exam #2] Topic: "MORNING ROUTINE" -> Q: "What do you usually do in the morning before school, and what time do you leave home?"
+  [Exam #3] Topic: "FAMILY" -> Q: "Tell me about your family. Who do you live with, and what do you like to do together?"
+  [Exam #4] Topic: "CLOTHES" -> Q: "What are you wearing today? Describe your clothes, their colors, and your shoes."
+  [Exam #5] Topic: "GADGETS" -> Q: "What is your favorite gadget? What color is it, what do you use it for, and when do you usually use it?"
+  [Exam #6] Topic: "HOUSE & PREPOSITIONS" -> Q: "Describe your room or house using there is, there are, and place prepositions (in, on, under, behind, next to)."
+  [Exam #7] Topic: "WEATHER & SEASONS" -> Q: "What is the weather like in your city today, and what clothes do you wear when it is rainy or sunny?"
+  [Exam #8] Topic: "PEOPLE & APPEARANCE" -> Q: "Describe someone in your family: what do they look like (eyes, hair, build) and what are they wearing?"
+  [Exam #9] Topic: "FINAL INTRODUCTION" -> Q: "Imagine you meet a new student. Introduce yourself and talk about your age, city, family, favorite subject, hobbies, and favorite food."
+
+--- VIRTUAL EVALUATION QUESTIONS (15 questions) ---
+  [Virtual #1] Q: "You meet a new classmate in the morning. Which greeting is appropriate?" -> Correct: "Good morning!"
+  [Virtual #2] Q: "Choose the correct answer to: How old are you?" -> Correct: "I'm fourteen years old."
+  [Virtual #3] Q: "Which sentence says that a person has the ability to swim?" -> Correct: "I can swim."
+  [Virtual #4] Q: "Choose the natural answer to: Do you have headphones?" -> Correct: "Yes, I do."
+  [Virtual #5] Q: "Which sentence means “No me gusta el refresco”?" -> Correct: "I don't like soda."
+  [Virtual #6] Q: "Choose the correct description for two red squares." -> Correct: "They are two red squares."
+  [Virtual #7] Q: "Complete the sentence: There ___ two notebooks in my backpack." -> Correct: "are"
+  [Virtual #8] Q: "Complete the sentence: My sister ___ a small cat." -> Correct: "has"
+  [Virtual #9] Q: "Complete the sentence: I like ___ video games in my free time." -> Correct: "playing"
+  [Virtual #10] Q: "My aunt's daughter is my ___." -> Correct: "cousin"
+  [Virtual #11] Q: "Which answer correctly spells the name Maya?" -> Correct: "It's M-A-Y-A."
+  [Virtual #12] Q: "Listen to Ana's introduction. Where does she live?" -> Correct: "She lives in Cali."
+  [Virtual #13] Q: "Complete the description: She ___ long curly hair and she is wearing a hoodie." -> Correct: "has"
+  [Virtual #14] Q: "The pencil is on top of the desk. Complete: The pencil is ___ the desk." -> Correct: "on"
+  [Virtual #15] Q: "Listen to Leo's routine. What time does he go to school?" -> Correct: "At seven thirty."
+
+======================================================
+LEVEL: teens-basic-1 - Level 1 - Teen Explorer / Nivel 1 - Explorador adolescente
+======================================================
+--- CLASSES IN LEVEL (10) ---
+  Class 1 (c-teens-basic-1-1): Class 1: People in Your Circle & Personality / Personas de tu Círculo y Personalidad
+  Class 2 (c-teens-basic-1-2): Class 2: Fast Food, Healthy Energy & Drinks / Comida Rápida y Energía Saludable
+  Class 3 (c-teens-basic-1-3): Class 3: Feelings, Emotions & Reasons / Emociones, Sentimientos y Razones
+  Class 4 (c-teens-basic-1-4): Class 4: School Schedule & Campus Logistics / Horario Escolar y Preguntas WH-
+  Class 5 (c-teens-basic-1-5): Class 5: Study Habits, Skills & Adverbs of Manner / Hábitos de Estudio y Adverbios de Modo (-LY)
+  Class 6 (c-teens-basic-1-6): Class 6: Weekend Plans & Social Invitations / Planes de Fin de Semana (Want to, Need to, Would like to)
+  Class 7 (c-teens-basic-1-7): Class 7: Food, Grocery Shopping & Kitchen Pantry / Comida, Alacena y Compras (SOME, ANY, A/AN)
+  Class 8 (c-teens-basic-1-8): Class 8: Places in Town & Directions / Lugares en la Ciudad y Direcciones
+  Class 9 (c-teens-basic-1-9): Class 9: Getting Around Town & Urban Commute / Moverse por la Ciudad (Prepositions of Movement: INTO, OUT OF, THROUGH, ACROSS, ALONG, PAST, TOWARDS)
+  Class 10 (c-teens-basic-1-10): Class 10: Event & Trip Planning Project / Proyecto de Eventos y Viajes (Nivel 1 Capstone)
+
+--- ORAL QUESTION BANK (12 questions in getOralQuestionBank) ---
+  [Bank #0] Topic: "PERSONALITY & FRIENDS"
+      Q: "Describe a close friend or classmate. What personality traits do they have, and how do they act?"
+  [Bank #1] Topic: "HEALTHY FOOD & HABITS"
+      Q: "What food and drinks do you usually choose, and why are they good for your daily energy? Use because."
+  [Bank #2] Topic: "FEELINGS & EMOTIONS"
+      Q: "Explain how you feel today and why. What makes you feel excited or stressed during the week?"
+  [Bank #3] Topic: "SCHOOL & SUBJECTS"
+      Q: "What subjects do you study, which one do you prefer, and what is your favorite day at school?"
+  [Bank #4] Topic: "DAILY ROUTINES"
+      Q: "Describe your daily routine using frequency adverbs (always, usually, sometimes) and sequence words (first, then, finally)."
+  [Bank #5] Topic: "SPORTS & HOBBIES"
+      Q: "What sports and hobbies do you enjoy? Explain using play, go, and do correctly."
+  [Bank #6] Topic: "WEATHER & STREETWEAR"
+      Q: "Describe the weather today and what clothes you are wearing right now."
+  [Bank #7] Topic: "CITY & DIRECTIONS"
+      Q: "Describe two places in your town and give directions to get there using next to, across from, or between."
+  [Bank #8] Topic: "TECH & TROUBLESHOOTING"
+      Q: "What device do you use daily? If your phone screen or battery fails, what should you do?"
+  [Bank #9] Topic: "INVITATIONS & PLANS"
+      Q: "Invite me to do an activity this weekend using would you like to. If I cannot go, suggest another time."
+  [Bank #10] Topic: "POLITE REQUESTS"
+      Q: "Role-play asking for information or help politely using could you and I would like."
+  [Bank #11] Topic: "FINAL CONVERSATION"
+      Q: "Describe your routine, your favorite hobbies, and the clothes you wear for your favorite activity."
+
+--- LIVE ORAL EXAM SLIDES (7 questions selected) ---
+  [Exam #1] Topic: "PERSONALITY & FRIENDS" -> Q: "Describe a close friend or classmate. What personality traits do they have, and how do they act?"
+  [Exam #2] Topic: "HEALTHY FOOD & HABITS" -> Q: "What food and drinks do you usually choose, and why are they good for your daily energy? Use because."
+  [Exam #3] Topic: "SCHOOL & SUBJECTS" -> Q: "What subjects do you study, which one do you prefer, and what is your favorite day at school?"
+  [Exam #4] Topic: "DAILY ROUTINES" -> Q: "Describe your daily routine using frequency adverbs (always, usually, sometimes) and sequence words (first, then, finally)."
+  [Exam #5] Topic: "WEATHER & STREETWEAR" -> Q: "Describe the weather today and what clothes you are wearing right now."
+  [Exam #6] Topic: "CITY & DIRECTIONS" -> Q: "Describe two places in your town and give directions to get there using next to, across from, or between."
+  [Exam #7] Topic: "FINAL CONVERSATION" -> Q: "Describe your routine, your favorite hobbies, and the clothes you wear for your favorite activity."
+
+--- VIRTUAL EVALUATION QUESTIONS (12 questions) ---
+  [Virtual #1] Q: "Choose the correct sentence about personality." -> Correct: "Liam has a friendly personality."
+  [Virtual #2] Q: "Complete the reason: I drink water every day ___ it gives me good energy." -> Correct: "because"
+  [Virtual #3] Q: "Complete the conversation: '___ are you excited?' 'Because tomorrow is the concert!'" -> Correct: "Why"
+  [Virtual #4] Q: "Choose the correct sentence about school preferences." -> Correct: "She prefers science because she likes experiments."
+  [Virtual #5] Q: "Choose the correct sentence with a frequency adverb." -> Correct: "I usually wake up at seven in the morning."
+  [Virtual #6] Q: "Complete the hobbies sentence: On weekends, we ___ soccer and ___ swimming." -> Correct: "play / go"
+  [Virtual #7] Q: "It is cold and rainy today. What is Mateo wearing?" -> Correct: "Mateo is wearing a warm jacket and boots."
+  [Virtual #8] Q: "Which sentence gives clear directions to the library?" -> Correct: "Go straight and turn left; the library is next to the park."
+  [Virtual #9] Q: "Your tablet battery is at two percent. What should you do?" -> Correct: "You should connect the charger."
+  [Virtual #10] Q: "Which is the most polite way to ask for information about the trip?" -> Correct: "Could you repeat the meeting time, please?"
+  [Virtual #11] Q: "Your friend asks: 'Would you like to come to my house this afternoon?' How do you accept politely?" -> Correct: "I would love to, thank you!"
+  [Virtual #12] Q: "Listen. Where does Leo meet his friends this afternoon?" -> Correct: "At the park across from the bakery."
+
+======================================================
+LEVEL: teens-basic-2 - Level 2 - Teen Adventurer / Nivel 2 - Aventurero adolescente
+======================================================
+--- CLASSES IN LEVEL (10) ---
+  Class 1 (c-teens-basic-2-1): Class 1: Animals, Habitats & Wildlife Protection / Animales, Hábitats y Pronombres Objeto
+  Class 2 (c-teens-basic-2-2): Class 2: My Room & Dream House / Mi Cuarto y Casa Soñada
+  Class 3 (c-teens-basic-2-3): Class 3: Vehicles, Transport & City Commuting / Transporte y Movilidad Urbana
+  Class 4 (c-teens-basic-2-4): Class 4: Dream Jobs, Careers & Workplaces / Profesiones y Lugares de Trabajo
+  Class 5 (c-teens-basic-2-5): Class 5: Talents, Evolution & Past Abilities / Talentos y Habilidades con Could y Couldn't
+  Class 6 (c-teens-basic-2-6): Class 6: School & Lab Rules: Must, Have to, Should / Reglas Escolares y Consejos
+  Class 7 (c-teens-basic-2-7): Class 7: Sports, Workouts & Healthy Habits / Deportes y Hábitos Saludables
+  Class 8 (c-teens-basic-2-8): Class 8: City Outings, Hangouts & Weekend Plans / Salidas y Planes de Fin de Semana
+  Class 9 (c-teens-basic-2-9): Class 9: Entertainment Reviews: Series, Movies & Games / Reseñas de Medios y Entretenimiento
+  Class 10 (c-teens-basic-2-10): Class 10: Level 2 Capstone: Teen Podcast & Grand Review / Gran Graduación y Repaso de Retos
+
+--- ORAL QUESTION BANK (10 questions in getOralQuestionBank) ---
+  [Bank #0] Topic: "ANIMAL"
+      Q: "Describe an animal, including its appearance, habitat, food, and one ability."
+  [Bank #1] Topic: "BEDROOM"
+      Q: "Describe your bedroom using there is, there are, and at least three place words."
+  [Bank #2] Topic: "CITY TRANSPORT"
+      Q: "How do you travel to school and to another place in your city?"
+  [Bank #3] Topic: "DREAM JOB"
+      Q: "What job would you like to have, where would you work, and why does it interest you?"
+  [Bank #4] Topic: "ABILITIES"
+      Q: "Name two things you can do well and one thing you cannot do yet."
+  [Bank #5] Topic: "SCHOOL RULES"
+      Q: "Explain three school rules using must, have to, or should."
+  [Bank #6] Topic: "HEALTH"
+      Q: "What healthy habits do you follow, and what advice would you give a tired student?"
+  [Bank #7] Topic: "CITY OUTING"
+      Q: "Organize an outing: choose the place, transport, meeting point, time, and one activity."
+  [Bank #8] Topic: "ENTERTAINMENT"
+      Q: "Recommend a movie, series, game, or song and support your opinion with details."
+  [Bank #9] Topic: "FINAL CONVERSATION"
+      Q: "Plan a healthy city outing with a friend and explain the transport, rules, abilities needed, and entertainment choice."
+
+--- LIVE ORAL EXAM SLIDES (6 questions selected) ---
+  [Exam #1] Topic: "ANIMAL" -> Q: "Describe an animal, including its appearance, habitat, food, and one ability."
+  [Exam #2] Topic: "BEDROOM" -> Q: "Describe your bedroom using there is, there are, and at least three place words."
+  [Exam #3] Topic: "DREAM JOB" -> Q: "What job would you like to have, where would you work, and why does it interest you?"
+  [Exam #4] Topic: "SCHOOL RULES" -> Q: "Explain three school rules using must, have to, or should."
+  [Exam #5] Topic: "CITY OUTING" -> Q: "Organize an outing: choose the place, transport, meeting point, time, and one activity."
+  [Exam #6] Topic: "FINAL CONVERSATION" -> Q: "Plan a healthy city outing with a friend and explain the transport, rules, abilities needed, and entertainment choice."
+
+--- VIRTUAL EVALUATION QUESTIONS (10 questions) ---
+  [Virtual #1] Q: "Which sentence correctly describes a camel's habitat?" -> Correct: "It lives in the desert."
+  [Virtual #2] Q: "Choose the correct sentence about a room with two chairs." -> Correct: "There are two chairs."
+  [Virtual #3] Q: "Listen. How does Mia go to school?" -> Correct: "By subway."
+  [Virtual #4] Q: "Which sentence correctly connects a dream job and a reason?" -> Correct: "I want to be a vet because I love animals."
+  [Virtual #5] Q: "Complete the ability sentence: Leo can ___ very well." -> Correct: "swim"
+  [Virtual #6] Q: "Which sentence expresses a strong school rule?" -> Correct: "Students must arrive on time."
+  [Virtual #7] Q: "Choose the correct sentence about a healthy habit." -> Correct: "I usually drink water after exercise."
+  [Virtual #8] Q: "Which sentence makes a natural suggestion for an outing?" -> Correct: "Let's meet at the park at five."
+  [Virtual #9] Q: "Which sentence gives and explains an entertainment preference?" -> Correct: "I prefer comedy because it is funny."
+  [Virtual #10] Q: "Listen. Which activity can the speaker NOT do?" -> Correct: "Skate."
+
+======================================================
+LEVEL: teens-basic-3 - Level 3 - Teen Champion / Nivel 3 - Campeón adolescente
+======================================================
+--- CLASSES IN LEVEL (10) ---
+  Class 1 (c-teens-basic-3-1): Class 1: Tech Battles & Gadgets / Batalla Tecnológica (Comparative Adjectives: -ER, MORE THAN, AS...AS)
+  Class 2 (c-teens-basic-3-2): Class 2: World Records & Peak Achievements / Récords Mundiales y Hazañas Extremas (Superlative Adjectives: -EST, THE MOST, THE BEST)
+  Class 3 (c-teens-basic-3-3): Class 3: Holidays, Festivals & Traditions / Días Festivos, Festivales y Tradiciones
+  Class 4 (c-teens-basic-3-4): Class 4: Future Plans, Intentions & Visual Clues / Planes Futuros y Evidencia (BE GOING TO)
+  Class 5 (c-teens-basic-3-5): Class 5: What Were You Doing? / ¿Qué Estabas Haciendo? (Past Continuous: WAS / WERE + -ING)
+  Class 6 (c-teens-basic-3-6): Class 6: Sudden Plot Twists & Accidents / Giros Inesperados (Past Simple vs Past Continuous with WHEN & WHILE)
+  Class 7 (c-teens-basic-3-7): Class 7: Biographies of Artists, Athletes & Creators / Biografías de Creadores y Atletas
+  Class 8 (c-teens-basic-3-8): Class 8: Storytelling Connectors / Conectores para Contar Historias
+  Class 9 (c-teens-basic-3-9): Class 9: Everyday Problems & How to Explain Them / Problemas Cotidianos y Soluciones
+  Class 10 (c-teens-basic-3-10): Class 10: Irregular Verbs & -ed Endings (Video Project) / Verbos Irregulares y Proyecto Final
+
+--- ORAL QUESTION BANK (10 questions in getOralQuestionBank) ---
+  [Bank #0] Topic: "COMPARATIVES"
+      Q: "Compare two smartphones, gaming consoles, or apps using comparative adjectives (-er, more than, better, as...as)."
+  [Bank #1] Topic: "SUPERLATIVES"
+      Q: "Talk about an extreme place, famous world record, or favorite video game using superlatives (the most, the best, the tallest)."
+  [Bank #2] Topic: "TRADITIONS"
+      Q: "Describe a holiday or family tradition, including clothes, special food, and activities, using prepositions in, on, and at."
+  [Bank #3] Topic: "BE GOING TO PLANS"
+      Q: "What are you going to do this weekend, and what is your family going to do next vacation? Use be going to."
+  [Bank #4] Topic: "PAST CONTINUOUS"
+      Q: "What were you and your friends doing yesterday at seven in the evening? Describe an alibi using was or were -ing."
+  [Bank #5] Topic: "INTERRUPTED PAST"
+      Q: "Tell a short story about an unexpected event that happened while you were doing something, using when and while."
+  [Bank #6] Topic: "BIOGRAPHY"
+      Q: "Give a short biography of a creator, athlete, or artist you admire using regular and irregular past verbs."
+  [Bank #7] Topic: "CHILDHOOD HABITS"
+      Q: "What games did you use to play, and what food did you use to like when you were a child? Use used to."
+  [Bank #8] Topic: "POLITE REQUESTS"
+      Q: "Roleplay asking for technical help or borrowing an item politely using could you please or would you mind."
+  [Bank #9] Topic: "FINAL CONVERSATION"
+      Q: "Tell a well-organized past story, compare it to your present life, and share an exciting future goal with be going to."
+
+--- LIVE ORAL EXAM SLIDES (8 questions selected) ---
+  [Exam #1] Topic: "COMPARATIVES" -> Q: "Compare two smartphones, gaming consoles, or apps using comparative adjectives (-er, more than, better, as...as)."
+  [Exam #2] Topic: "SUPERLATIVES" -> Q: "Talk about an extreme place, famous world record, or favorite video game using superlatives (the most, the best, the tallest)."
+  [Exam #3] Topic: "TRADITIONS" -> Q: "Describe a holiday or family tradition, including clothes, special food, and activities, using prepositions in, on, and at."
+  [Exam #4] Topic: "BE GOING TO PLANS" -> Q: "What are you going to do this weekend, and what is your family going to do next vacation? Use be going to."
+  [Exam #5] Topic: "PAST CONTINUOUS" -> Q: "What were you and your friends doing yesterday at seven in the evening? Describe an alibi using was or were -ing."
+  [Exam #6] Topic: "INTERRUPTED PAST" -> Q: "Tell a short story about an unexpected event that happened while you were doing something, using when and while."
+  [Exam #7] Topic: "CHILDHOOD HABITS" -> Q: "What games did you use to play, and what food did you use to like when you were a child? Use used to."
+  [Exam #8] Topic: "FINAL CONVERSATION" -> Q: "Tell a well-organized past story, compare it to your present life, and share an exciting future goal with be going to."
+
+--- VIRTUAL EVALUATION QUESTIONS (10 questions) ---
+  [Virtual #1] Q: "Choose the correct comparative sentence." -> Correct: "This smartphone is faster and lighter than the old model."
+  [Virtual #2] Q: "Choose the correct superlative sentence." -> Correct: "The blue whale is the largest animal on Earth."
+  [Virtual #3] Q: "Listen. What do families do during the festival?" -> Correct: "They share food and dance."
+  [Virtual #4] Q: "Complete the plan: Look at those dark clouds! It ___ rain." -> Correct: "is going to"
+  [Virtual #5] Q: "Complete the sentence: While Mateo was studying, the lights ___ out." -> Correct: "went"
+  [Virtual #6] Q: "Choose the sentence about a childhood habit." -> Correct: "I used to play with toy cars when I was seven."
+  [Virtual #7] Q: "Which sentence belongs in a biography?" -> Correct: "She was born in 2005 and became an athlete."
+  [Virtual #8] Q: "Choose the clearest sequence of connectors for a story." -> Correct: "First, then, finally"
+  [Virtual #9] Q: "Which is the most polite way to ask for assistance?" -> Correct: "Could you please lend me your charger?"
+  [Virtual #10] Q: "Listen. Which two past-tense verbs do you hear?" -> Correct: "went and watched"
+
+======================================================
+LEVEL: teens-basic-4 - Level 4 - Teen Pro / Nivel 4 - Adolescente Pro
+======================================================
+--- CLASSES IN LEVEL (10) ---
+  Class 1 (c-teens-basic-4-1): Class 1: My Opinions & Perspectives / Mis Opiniones y Perspectivas
+  Class 2 (c-teens-basic-4-2): Class 2: Giving Good Advice / Dar Buenos Consejos
+  Class 3 (c-teens-basic-4-3): Class 3: Conditions & Scientific Facts (Zero Conditional) / Hechos Científicos y Reglas
+  Class 4 (c-teens-basic-4-4): Class 4: Messaging, Texting & Online Communication / Mensajería y Texting
+  Class 5 (c-teens-basic-4-5): Class 5: Future Possibilities & Consequences (First Conditional) / Primer Condicional
+  Class 6 (c-teens-basic-4-6): Class 6: What If? Hypothetical Worlds & Dreams / Mundos Hipotéticos y Dilemas (Second Conditional: IF + PAST, WOULD)
+  Class 7 (c-teens-basic-4-7): Class 7: Mystery Solvers! Indefinite Pronouns / Pronombres Indefinidos: Someone, Anything, Nowhere
+  Class 8 (c-teens-basic-4-8): Class 8: Tournament Rules & Fair Play / Reglas de Torneos con Must, Have to & Mustn't
+  Class 9 (c-teens-basic-4-9): Class 9: Informal vs Formal Messages, Emails & Digital Tone / Tono Formal e Informal
+  Class 10 (c-teens-basic-4-10): Class 10: Teen Leadership, Customer Service & Capstone Review / Liderazgo Juvenil y Proyecto Capstone
+
+--- ORAL QUESTION BANK (10 questions in getOralQuestionBank) ---
+  [Bank #0] Topic: "OPINION"
+      Q: "Give your opinion about screen time or AI for teenagers and support it with two reasons using in my opinion."
+  [Bank #1] Topic: "ADVICE"
+      Q: "A friend feels stressed about exams. Ask one question and give three practical suggestions using should, shouldn't, and why don't you."
+  [Bank #2] Topic: "ZERO CONDITIONAL"
+      Q: "Explain what happens when water reaches 100 degrees Celsius or when ice melts using the zero conditional."
+  [Bank #3] Topic: "ONLINE MESSAGE"
+      Q: "Say a polite message to organize a group activity using netiquette and digital abbreviations (BTW, IMO, BRB)."
+  [Bank #4] Topic: "FIRST CONDITIONAL"
+      Q: "Explain what will happen if you study consistently and what you will celebrate if you pass all exams with honors."
+  [Bank #5] Topic: "SECOND CONDITIONAL"
+      Q: "What would you do if you won a million dollars tomorrow, or if you had the superpower of flight or invisibility?"
+  [Bank #6] Topic: "INDEFINITE PRONOUNS"
+      Q: "Describe a mysterious situation where someone left something valuable somewhere in your school."
+  [Bank #7] Topic: "OBLIGATION & PROHIBITION"
+      Q: "Explain the official rules of an esports or sports tournament using have to, must, mustn't, and don't have to."
+  [Bank #8] Topic: "FORMAL EMAIL"
+      Q: "Explain how you would politely write an academic email to a teacher requesting a deadline extension."
+  [Bank #9] Topic: "FINAL CONVERSATION"
+      Q: "Discuss a teen problem, propose a fair solution, defend your choice, and explain what would happen next."
+
+--- LIVE ORAL EXAM SLIDES (8 questions selected) ---
+  [Exam #1] Topic: "OPINION" -> Q: "Give your opinion about screen time or AI for teenagers and support it with two reasons using in my opinion."
+  [Exam #2] Topic: "ADVICE" -> Q: "A friend feels stressed about exams. Ask one question and give three practical suggestions using should, shouldn't, and why don't you."
+  [Exam #3] Topic: "ZERO CONDITIONAL" -> Q: "Explain what happens when water reaches 100 degrees Celsius or when ice melts using the zero conditional."
+  [Exam #4] Topic: "FIRST CONDITIONAL" -> Q: "Explain what will happen if you study consistently and what you will celebrate if you pass all exams with honors."
+  [Exam #5] Topic: "SECOND CONDITIONAL" -> Q: "What would you do if you won a million dollars tomorrow, or if you had the superpower of flight or invisibility?"
+  [Exam #6] Topic: "INDEFINITE PRONOUNS" -> Q: "Describe a mysterious situation where someone left something valuable somewhere in your school."
+  [Exam #7] Topic: "OBLIGATION & PROHIBITION" -> Q: "Explain the official rules of an esports or sports tournament using have to, must, mustn't, and don't have to."
+  [Exam #8] Topic: "FINAL CONVERSATION" -> Q: "Discuss a teen problem, propose a fair solution, defend your choice, and explain what would happen next."
+
+--- VIRTUAL EVALUATION QUESTIONS (10 questions) ---
+  [Virtual #1] Q: "Which phrase introduces a personal opinion clearly?" -> Correct: "In my opinion, schools should start later."
+  [Virtual #2] Q: "Your friend is stressed about an exam. What is the best advice?" -> Correct: "You should make a study plan and sleep well."
+  [Virtual #3] Q: "Choose the sentence with a logical condition and outcome (Zero Conditional)." -> Correct: "If you heat ice, it melts."
+  [Virtual #4] Q: "Which message is clear and polite using digital netiquette?" -> Correct: "Could you send me the address, please? BTW I am free RN."
+  [Virtual #5] Q: "Complete the first conditional: If it rains, we ___ at home." -> Correct: "will stay"
+  [Virtual #6] Q: "Choose the correct second conditional sentence." -> Correct: "If I won a million dollars, I would buy a modern house."
+  [Virtual #7] Q: "Choose the correct sentence with indefinite pronouns." -> Correct: "Someone left something valuable on the table."
+  [Virtual #8] Q: "Which sentence expresses a strict prohibition in an esports tournament?" -> Correct: "Players mustn't use toxic language in the chat."
+  [Virtual #9] Q: "Which opening is most appropriate for a formal email to a teacher?" -> Correct: "Dear Ms. Lopez,"
+  [Virtual #10] Q: "Listen. What solution does the customer request?" -> Correct: "A replacement."
+
+======================================================
+LEVEL: teens-inter - Intermediate - Teen Communicator / Intermedio - Comunicador adolescente
+======================================================
+--- CLASSES IN LEVEL (12) ---
+  Class 1 (c-teens-inter-1): Class 1: My Life Experiences (Present Perfect) / Experiencias de Vida y Present Perfect
+  Class 2 (c-teens-inter-2): Class 2: Teen Slang & Phrasal Verbs in Daily Conversations / Slang Juvenil y Phrasal Verbs
+  Class 3 (c-teens-inter-3): Class 3: Possibilities & Deductions (Must, Might, Can't) / Posibilidades y Deducciones con Modales
+  Class 4 (c-teens-inter-4): Class 4: What If History Changed? Third Conditional & Past Regrets / Tercer Condicional y Arrepentimientos Pasados
+  Class 5 (c-teens-inter-5): Class 5: Agreeing & Disagreeing Respectfully / Acuerdos y Desacuerdos Respetuosos en Debates
+  Class 6 (c-teens-inter-6): Class 6: Podcast & Media Hosting Basics / Fundamentos de Podcasting y Locución en Inglés
+  Class 7 (c-teens-inter-7): Class 7: Present Perfect vs Present Perfect Continuous / Present Perfect vs Present Perfect Continuous
+  Class 8 (c-teens-inter-8): Class 8: Advanced Phrasal Verbs in Storytelling & Media / Phrasal Verbs Avanzados en Narrativas y Medios
+  Class 9 (c-teens-inter-9): Class 9: Past Modals of Deduction / Modales de Deducción en Pasado
+  Class 10 (c-teens-inter-10): Class 10: Conditionals Synthesis & Time Clauses / Síntesis de Condicionales y Cláusulas Temporales
+  Class 11 (c-teens-inter-11): Class 11: Nuanced Opinions & Diplomacy in Debates / Opiniones Matizadas y Diplomacia en Debates
+  Class 12 (c-teens-inter-12): Class 12: Capstone Media Showcase & Scholarship Simulation / Proyecto Capstone y Simulación de Beca
+
+--- ORAL QUESTION BANK (12 questions in getOralQuestionBank) ---
+  [Bank #0] Topic: "LIFE EXPERIENCE"
+      Q: "Describe three meaningful life experiences you have already had, and one adventure you have never tried yet (Present Perfect)."
+  [Bank #1] Topic: "PHRASAL VERBS"
+      Q: "Tell a short story about an afternoon with friends naturally using at least three phrasal verbs (hang out, figure out, chill out)."
+  [Bank #2] Topic: "DEDUCTION"
+      Q: "A classroom is locked and dark, but a computer is on. Make logical deductions about what must, might, or cannot be true."
+  [Bank #3] Topic: "THIRD CONDITIONAL"
+      Q: "Reflect on an important decision in history or your life: what would have happened if things had occurred differently? (If I had..., I would have...)"
+  [Bank #4] Topic: "RESPECTFUL DEBATE"
+      Q: "State an opinion on a school debate topic, acknowledge the opposite view, and disagree respectfully with evidence."
+  [Bank #5] Topic: "PODCAST HOSTING"
+      Q: "Give a one-minute podcast episode intro: include a catchy hook, introduce your guest, ask a question, and close with stay tuned."
+  [Bank #6] Topic: "ONGOING PASSION"
+      Q: "Compare a completed achievement with an ongoing passion you have been practicing, using present perfect and present perfect continuous with for and since."
+  [Bank #7] Topic: "ADVANCED PHRASAL VERBS"
+      Q: "Tell an exciting story about overcoming an obstacle using advanced phrasal verbs like pull off, stand out, and end up."
+  [Bank #8] Topic: "PAST DEDUCTION"
+      Q: "A window was broken during the night. Deducing from the clues, explain what must have, might have, or couldn't have happened."
+  [Bank #9] Topic: "CONDITIONALS SYNTHESIS"
+      Q: "Explain a complex decision tree for an international project using condition connectors like unless, as soon as, and in case."
+  [Bank #10] Topic: "NUANCED DIPLOMACY"
+      Q: "Defend a balanced compromise on a controversial youth topic while recognizing valid points on both sides."
+  [Bank #11] Topic: "FINAL CONVERSATION"
+      Q: "Deliver a scholarship pitch using the STAR method (Situation, Task, Action, Result) with a strong opening and inspiring vision."
+
+--- LIVE ORAL EXAM SLIDES (8 questions selected) ---
+  [Exam #1] Topic: "LIFE EXPERIENCE" -> Q: "Describe three meaningful life experiences you have already had, and one adventure you have never tried yet (Present Perfect)."
+  [Exam #2] Topic: "PHRASAL VERBS" -> Q: "Tell a short story about an afternoon with friends naturally using at least three phrasal verbs (hang out, figure out, chill out)."
+  [Exam #3] Topic: "DEDUCTION" -> Q: "A classroom is locked and dark, but a computer is on. Make logical deductions about what must, might, or cannot be true."
+  [Exam #4] Topic: "THIRD CONDITIONAL" -> Q: "Reflect on an important decision in history or your life: what would have happened if things had occurred differently? (If I had..., I would have...)"
+  [Exam #5] Topic: "RESPECTFUL DEBATE" -> Q: "State an opinion on a school debate topic, acknowledge the opposite view, and disagree respectfully with evidence."
+  [Exam #6] Topic: "ONGOING PASSION" -> Q: "Compare a completed achievement with an ongoing passion you have been practicing, using present perfect and present perfect continuous with for and since."
+  [Exam #7] Topic: "PAST DEDUCTION" -> Q: "A window was broken during the night. Deducing from the clues, explain what must have, might have, or couldn't have happened."
+  [Exam #8] Topic: "FINAL CONVERSATION" -> Q: "Deliver a scholarship pitch using the STAR method (Situation, Task, Action, Result) with a strong opening and inspiring vision."
+
+--- VIRTUAL EVALUATION QUESTIONS (12 questions) ---
+  [Virtual #1] Q: "Choose the correct present perfect sentence about a life experience." -> Correct: "I have visited three countries."
+  [Virtual #2] Q: "What does “hang out” mean in: We hang out after school?" -> Correct: "Spend time together"
+  [Virtual #3] Q: "Sam is not answering, but his lights are on. Which is a reasonable possibility?" -> Correct: "He might be at home."
+  [Virtual #4] Q: "Complete the third conditional sentence: If I had known about the heavy traffic, I ___ the metro." -> Correct: "would have taken"
+  [Virtual #5] Q: "Which response disagrees respectfully?" -> Correct: "I see your point, but I have a different view."
+  [Virtual #6] Q: "Which sentence supports a debate claim with evidence?" -> Correct: "School clubs are useful because they help students build teamwork skills."
+  [Virtual #7] Q: "Complete the ongoing activity: She ___ for the podcast for three weeks." -> Correct: "has been preparing"
+  [Virtual #8] Q: "Complete the sentence: I did not know the word, so I ___ it ___." -> Correct: "looked / up"
+  [Virtual #9] Q: "The classroom is locked and dark. Which deduction is most logical?" -> Correct: "The teacher can't be inside."
+  [Virtual #10] Q: "Which sentence describes an unchangeable past situation using third conditional?" -> Correct: "If we had trained together, we would have won the match."
+  [Virtual #11] Q: "Choose the best phrase for challenging an opinion politely." -> Correct: "I understand your argument; however, the evidence suggests another conclusion."
+  [Virtual #12] Q: "Listen. Why does the speaker consider herself a strong candidate?" -> Correct: "She has teamwork experience and clear goals."
+
+======================================================
+LEVEL: teens-advanced - Advanced - Teen Leader / Avanzado - Líder adolescente
+======================================================
+--- CLASSES IN LEVEL (10) ---
+  Class 1 (c-teens-advanced-1): Class 1: Breaking News & Campus Whispers (Reported Speech) / Noticias de Última Hora y Reported Speech
+  Class 2 (c-teens-advanced-2): Class 2: Secret Interviews & Interrogations (Reported Questions) / Entrevistas Secretas y Reported Questions
+  Class 3 (c-teens-advanced-3): Class 3: Mastering Relative Clauses (Defining vs Non-Defining) / Dominando Relative Clauses
+  Class 4 (c-teens-advanced-4): Class 4: Tech Disruptions & Modern Inventions (Passive Voice) / Disrupciones Tecnológicas y Voz Pasiva
+  Class 5 (c-teens-advanced-5): Class 5: Global News Reports & Scientific Discoveries (Advanced Passive) / Reportes Globales y Voz Pasiva Avanzada
+  Class 6 (c-teens-advanced-6): Class 6: Authentic Teen Idioms & Expressions in Daily Contexts / Modismos y Expresiones Auténticas
+  Class 7 (c-teens-advanced-7): Class 7: Advanced Phrasal Verbs in High-Stakes Leadership & Problem Solving / Phrasal Verbs en Liderazgo y Crisis
+  Class 8 (c-teens-advanced-8): Class 8: The Great AI & Ethics Student Forum / El Gran Foro de IA y Ética
+  Class 9 (c-teens-advanced-9): Class 9: Crisis Management & Global Environmental Summits / Gestión de Crisis y Cumbres Ambientales
+  Class 10 (c-teens-advanced-10): Class 10: Level 8 Capstone: Global Youth NGO Leadership Pitch & Executive Interview / Proyecto Final: Pitch de ONG Juvenil
+
+--- ORAL QUESTION BANK (10 questions in getOralQuestionBank) ---
+  [Bank #0] Topic: "REPORTED NEWS"
+      Q: "Summarize a recent conversation or news item and accurately report what two people said."
+  [Bank #1] Topic: "REPORTED QUESTION"
+      Q: "Report three questions that someone asked during an interview or discussion."
+  [Bank #2] Topic: "RELATIVE CLAUSES"
+      Q: "Describe a person, place, and device using who, whose, which, and where."
+  [Bank #3] Topic: "PASSIVE VOICE"
+      Q: "Explain how a familiar technology is designed, produced, or used."
+  [Bank #4] Topic: "IDIOM"
+      Q: "Use an idiom or phrasal verb while discussing school, AI, or social media."
+  [Bank #5] Topic: "BALANCED DEBATE"
+      Q: "Discuss one advantage and one risk of artificial intelligence in education."
+  [Bank #6] Topic: "INTERVIEW"
+      Q: "Answer a leadership or teamwork interview question with a specific example."
+  [Bank #7] Topic: "PROBLEM SOLVING"
+      Q: "Analyze a realistic team problem and propose a clear step-by-step solution."
+  [Bank #8] Topic: "FOLLOW-UP"
+      Q: "Listen to a different opinion, ask a follow-up question, and respond respectfully."
+  [Bank #9] Topic: "FINAL CONVERSATION"
+      Q: "Present a current issue, report two perspectives, evaluate the evidence, and defend a practical solution."
+
+--- LIVE ORAL EXAM SLIDES (7 questions selected) ---
+  [Exam #1] Topic: "REPORTED NEWS" -> Q: "Summarize a recent conversation or news item and accurately report what two people said."
+  [Exam #2] Topic: "REPORTED QUESTION" -> Q: "Report three questions that someone asked during an interview or discussion."
+  [Exam #3] Topic: "RELATIVE CLAUSES" -> Q: "Describe a person, place, and device using who, whose, which, and where."
+  [Exam #4] Topic: "PASSIVE VOICE" -> Q: "Explain how a familiar technology is designed, produced, or used."
+  [Exam #5] Topic: "BALANCED DEBATE" -> Q: "Discuss one advantage and one risk of artificial intelligence in education."
+  [Exam #6] Topic: "PROBLEM SOLVING" -> Q: "Analyze a realistic team problem and propose a clear step-by-step solution."
+  [Exam #7] Topic: "FINAL CONVERSATION" -> Q: "Present a current issue, report two perspectives, evaluate the evidence, and defend a practical solution."
+
+--- VIRTUAL EVALUATION QUESTIONS (10 questions) ---
+  [Virtual #1] Q: "Mia said, “I am tired.” Choose the correct reported statement." -> Correct: "Mia said that she was tired."
+  [Virtual #2] Q: "Complete the sentence: The student ___ won the competition designed this app." -> Correct: "who"
+  [Virtual #3] Q: "Choose the correct passive sentence." -> Correct: "The device is powered by solar energy."
+  [Virtual #4] Q: "What does “break the ice” mean in a social situation?" -> Correct: "Make people feel more comfortable at the beginning"
+  [Virtual #5] Q: "Direct question: “Where do you live?” Choose the correct reported question." -> Correct: "She asked me where I lived."
+  [Virtual #6] Q: "Complete the sentence: That is the designer ___ ideas transformed the campaign." -> Correct: "whose"
+  [Virtual #7] Q: "Choose the most appropriate passive news sentence." -> Correct: "The results were announced this morning."
+  [Virtual #8] Q: "In “The students carried out a survey,” what does “carried out” mean?" -> Correct: "Conducted"
+  [Virtual #9] Q: "Which statement makes a balanced, evidence-based debate point?" -> Correct: "Although AI can support learning, schools need clear rules to protect independent thinking."
+  [Virtual #10] Q: "Listen. How did the speaker solve the team problem?" -> Correct: "She divided the work and added progress checks."
+
+======================================================
+LEVEL: teens-elite - Elite - Academic and Leadership English / Elite - Inglés académico y liderazgo
+======================================================
+--- CLASSES IN LEVEL (11) ---
+  Class 1 (c-teens-elite-1): Class 1: Future Milestones & Tech Forecasting / Hitos del Futuro y Pronósticos Tecnológicos
+  Class 2 (c-teens-elite-2): Class 2: High-Stakes Dilemmas & Complex Mixed Conditionals / Dilemas de Alto Impacto y Condicionales Mixtos
+  Class 3 (c-teens-elite-3): Class 3: Cleft Sentences & Emphatic Rhetoric / Oraciones Hendidas y Retórica Enfática
+  Class 4 (c-teens-elite-4): Class 4: Rhetorical Inversions & High-Impact Oratory / Inversiones Retóricas y Oratoria
+  Class 5 (c-teens-elite-5): Class 5: Diplomatic Softening, Hedging & Nuanced Negotiations / Suavización Diplomática y Negociación
+  Class 6 (c-teens-elite-6): Class 6: Advanced Discursive & Argumentative Essay Architecture / Arquitectura de Ensayos Argumentativos
+  Class 7 (c-teens-elite-7): Class 7: Empirical Research Abstracts & Academic Citations / Resúmenes de Investigación y Citas
+  Class 8 (c-teens-elite-8): Class 8: Executive Boardrooms, Parliamentary Procedure & Conflict Mediation / Juntas Directivas y Procedimiento Parlamentario
+  Class 9 (c-teens-elite-9): Class 9: Crisis Leadership, Hostile Press Conferences & PR Damage Control / Ruedas de Prensa Hostiles y Control de Daños
+  Class 10 (c-teens-elite-10): Class 10: Designing a Global Venture: Unit Economics & Value Proposition / Diseño de una Empresa Global
+  Class 11 (c-teens-elite-11): Class 11: Level 9 Grand Capstone: International Tech Venture Seed Pitch & Global Keynote / Gran Proyecto Final del Nivel 9
+
+--- ORAL QUESTION BANK (10 questions in getOralQuestionBank) ---
+  [Bank #0] Topic: "FUTURE GOALS"
+      Q: "Present a long-term goal and explain what you will be doing and will have achieved at two future points."
+  [Bank #1] Topic: "MIXED CONDITIONAL"
+      Q: "Reflect on a past decision and explain how a different choice could affect your life now."
+  [Bank #2] Topic: "DIPLOMACY"
+      Q: "Challenge a proposal respectfully while recognizing its strongest benefit."
+  [Bank #3] Topic: "EMPHASIS"
+      Q: "Use a cleft sentence or inversion to emphasize your main concern about a proposal."
+  [Bank #4] Topic: "ACADEMIC OPENING"
+      Q: "Introduce an academic topic with context, a clear thesis, and two supporting points."
+  [Bank #5] Topic: "EVIDENCE"
+      Q: "Support a claim with a relevant example and explain why that evidence matters."
+  [Bank #6] Topic: "LEADERSHIP"
+      Q: "Lead a short meeting: define the goal, invite ideas, and move the group toward a decision."
+  [Bank #7] Topic: "DELEGATION"
+      Q: "Assign project tasks according to team strengths and establish progress checks."
+  [Bank #8] Topic: "PITCH"
+      Q: "Pitch an app or project with a problem, solution, audience, evidence, and call to action."
+  [Bank #9] Topic: "FINAL CONVERSATION"
+      Q: "Defend a project proposal, respond diplomatically to objections, negotiate one change, and summarize the decision."
+
+--- LIVE ORAL EXAM SLIDES (7 questions selected) ---
+  [Exam #1] Topic: "FUTURE GOALS" -> Q: "Present a long-term goal and explain what you will be doing and will have achieved at two future points."
+  [Exam #2] Topic: "MIXED CONDITIONAL" -> Q: "Reflect on a past decision and explain how a different choice could affect your life now."
+  [Exam #3] Topic: "DIPLOMACY" -> Q: "Challenge a proposal respectfully while recognizing its strongest benefit."
+  [Exam #4] Topic: "ACADEMIC OPENING" -> Q: "Introduce an academic topic with context, a clear thesis, and two supporting points."
+  [Exam #5] Topic: "LEADERSHIP" -> Q: "Lead a short meeting: define the goal, invite ideas, and move the group toward a decision."
+  [Exam #6] Topic: "PITCH" -> Q: "Pitch an app or project with a problem, solution, audience, evidence, and call to action."
+  [Exam #7] Topic: "FINAL CONVERSATION" -> Q: "Defend a project proposal, respond diplomatically to objections, negotiate one change, and summarize the decision."
+
+--- VIRTUAL EVALUATION QUESTIONS (11 questions) ---
+  [Virtual #1] Q: "Which sentence presents a clear long-term goal?" -> Correct: "I intend to study environmental engineering and develop cleaner transport systems."
+  [Virtual #2] Q: "Choose the mixed conditional about a past decision with a present result." -> Correct: "If I had accepted the internship, I would have more experience now."
+  [Virtual #3] Q: "Which response expresses disagreement with appropriate nuance?" -> Correct: "I understand the proposal’s benefits; however, we may be underestimating the long-term cost."
+  [Virtual #4] Q: "Which sentence is the strongest academic thesis?" -> Correct: "Schools should teach media literacy because it strengthens source evaluation, responsible participation, and independent thought."
+  [Virtual #5] Q: "Which action best demonstrates effective team leadership?" -> Correct: "Define the goal, match tasks to strengths, and schedule progress checks."
+  [Virtual #6] Q: "Complete the goal: By next June, we ___ the first version of the app." -> Correct: "will have completed"
+  [Virtual #7] Q: "Choose the mixed conditional linking a present trait to a past result." -> Correct: "If I were more organized, I wouldn't have missed the deadline."
+  [Virtual #8] Q: "Which sentence correctly uses inversion for emphasis?" -> Correct: "Rarely have students faced such a complex decision."
+  [Virtual #9] Q: "Which opening is most effective for an academic presentation?" -> Correct: "Today I will argue that urban green spaces improve health, climate resilience, and community life."
+  [Virtual #10] Q: "Which phrase helps a chairperson move a meeting toward a decision?" -> Correct: "We have heard both options; shall we agree on the next step and assign responsibilities?"
+  [Virtual #11] Q: "Listen. What is the central value of the proposed app?" -> Correct: "It matches surplus cafeteria food with local community groups."
+
+======================================================
+LEVEL: teens-masters - Masters - Global and Academic Communication / Masters - Comunicación global y académica
+======================================================
+--- CLASSES IN LEVEL (10) ---
+  Class 1 (c-teens-masters-1): Class 1: Oxford-Union Parliamentary Debate & Dialectical Refutation / Debate Parlamentario Oxford-Union
+  Class 2 (c-teens-masters-2): Class 2: Pop Culture Semiotics, Media Ecology & Digital Memetics / Semiótica de la Cultura Pop y Ecología de Medios
+  Class 3 (c-teens-masters-3): Class 3: Ivy League Graduate Seminars & Socratic Cross-Examination / Seminarios Ivy League y Método Socrático
+  Class 4 (c-teens-masters-4): Class 4: TED Keynotes, High-Impact Storytelling & Thought Leadership / Conferencias TED y Liderazgo de Opinión
+  Class 5 (c-teens-masters-5): Class 5: Geopolitical Strategy, Bilateral Treaties & Multilateral Summits / Estrategia Geopolítica y Tratados
+  Class 6 (c-teens-masters-6): Class 6: Literary Critique, Cinematic Deconstruction & Aesthetic Analysis / Crítica Literaria y Deconstrucción Cinematográfica
+  Class 7 (c-teens-masters-7): Class 7: Rhodes & Fulbright International Fellowship Interviews / Entrevistas de Becas Rhodes y Fulbright
+  Class 8 (c-teens-masters-8): Class 8: Investigative Video Essays & Documentary Journalism / Videoensayos de Investigación y Periodismo
+  Class 9 (c-teens-masters-9): Class 9: Global Mega-Trends: Superintelligence, Bioethics & Climate / Superinteligencia, Bioética y Clima
+  Class 10 (c-teens-masters-10): Class 10: Level 10 Grand Masters Capstone: C2 Fluency Mastery & Global Leadership Summit / Gran Cierre de Maestría Nivel 10
+
+--- ORAL QUESTION BANK (10 questions in getOralQuestionBank) ---
+  [Bank #0] Topic: "CRITICAL THINKING"
+      Q: "Defend a position while identifying one assumption and one limitation in your own argument."
+  [Bank #1] Topic: "COUNTERARGUMENT"
+      Q: "Present the strongest argument against your view and rebut it fairly with evidence."
+  [Bank #2] Topic: "MEDIA FRAMING"
+      Q: "Analyze how a news story, film, or online trend frames an issue for a specific audience."
+  [Bank #3] Topic: "CULTURAL CONTEXT"
+      Q: "Explain how cultural context can change the meaning or reception of digital content."
+  [Bank #4] Topic: "ACADEMIC CAUTION"
+      Q: "Present a research-based claim using appropriate caution and distinguish evidence from opinion."
+  [Bank #5] Topic: "TED-STYLE TALK"
+      Q: "Open a short talk with a hook, establish one central idea, and connect it to a global issue."
+  [Bank #6] Topic: "ETHICAL TRADE-OFF"
+      Q: "Analyze an ethical trade-off involving technology, access, privacy, or the environment."
+  [Bank #7] Topic: "SYNTHESIS"
+      Q: "Compare two conflicting perspectives and synthesize the most useful elements of both."
+  [Bank #8] Topic: "CHALLENGING INTERVIEW"
+      Q: "Answer a difficult interview question with a concrete example, result, and lesson."
+  [Bank #9] Topic: "FINAL CONVERSATION"
+      Q: "Lead a rigorous discussion, evaluate competing evidence, respond to challenges, and state what could change your conclusion."
+
+--- LIVE ORAL EXAM SLIDES (7 questions selected) ---
+  [Exam #1] Topic: "CRITICAL THINKING" -> Q: "Defend a position while identifying one assumption and one limitation in your own argument."
+  [Exam #2] Topic: "COUNTERARGUMENT" -> Q: "Present the strongest argument against your view and rebut it fairly with evidence."
+  [Exam #3] Topic: "MEDIA FRAMING" -> Q: "Analyze how a news story, film, or online trend frames an issue for a specific audience."
+  [Exam #4] Topic: "ACADEMIC CAUTION" -> Q: "Present a research-based claim using appropriate caution and distinguish evidence from opinion."
+  [Exam #5] Topic: "ETHICAL TRADE-OFF" -> Q: "Analyze an ethical trade-off involving technology, access, privacy, or the environment."
+  [Exam #6] Topic: "CHALLENGING INTERVIEW" -> Q: "Answer a difficult interview question with a concrete example, result, and lesson."
+  [Exam #7] Topic: "FINAL CONVERSATION" -> Q: "Lead a rigorous discussion, evaluate competing evidence, respond to challenges, and state what could change your conclusion."
+
+--- VIRTUAL EVALUATION QUESTIONS (10 questions) ---
+  [Virtual #1] Q: "Which response demonstrates the strongest critical thinking?" -> Correct: "The proposal is promising, but its assumptions and long-term effects require independent evidence."
+  [Virtual #2] Q: "Which sentence analyzes media framing rather than merely summarizing content?" -> Correct: "By focusing on individual success stories, the documentary minimizes the structural causes of the problem."
+  [Virtual #3] Q: "Which sentence integrates a source with appropriate academic caution?" -> Correct: "The findings suggest that flexible schedules may improve participation, although further research is needed."
+  [Virtual #4] Q: "Which opening is the strongest hook for a TED-style presentation?" -> Correct: "What if the device you use every day could also help solve your city’s largest environmental problem?"
+  [Virtual #5] Q: "Which sentence offers a substantive rebuttal?" -> Correct: "The opposing argument identifies a real cost; however, it overlooks the savings produced over the full life of the program."
+  [Virtual #6] Q: "Which question best supports a deep analysis of digital culture?" -> Correct: "Whose interests are amplified by the platform’s algorithm, and whose perspectives remain less visible?"
+  [Virtual #7] Q: "Which sentence is most appropriate in a formal exchange-program email?" -> Correct: "I would appreciate clarification regarding the course requirements and application timeline."
+  [Virtual #8] Q: "Which structure creates the clearest analytical video essay?" -> Correct: "Central claim, contextual evidence, analysis, counterpoint, and conclusion"
+  [Virtual #9] Q: "Which statement best captures an ethical trade-off?" -> Correct: "The technology could reduce emissions, yet unequal access may deepen existing social disparities."
+  [Virtual #10] Q: "Listen. What makes the response effective?" -> Correct: "It gives a concrete example, result, and lesson."

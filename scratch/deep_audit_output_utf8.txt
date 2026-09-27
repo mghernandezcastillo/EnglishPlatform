@@ -1,0 +1,465 @@
+﻿=== VERIFYING ALL 68 TEEN STUDIO CLASSES SLIDE-BY-SLIDE ===
+
+
+======================================================================
+LEVEL: teens-basic-zero (16 classes)
+======================================================================
+✅ [c-teens-basic-zero-1] OK | Decoder (3 phrases): "Hello! I am Alex and I am very excited today." | "Hey Alex! I am not nervous; I am ready to learn." | "Are you the new student in our English class?"
+✅ [c-teens-basic-zero-2] OK | Decoder (3 phrases): "I am fifteen years old and my birthday is in October." | "I am not fourteen anymore; I turned fifteen last week." | "When is your birthday party and what date is it?"
+✅ [c-teens-basic-zero-3] OK | Decoder (3 phrases): "I live with my parents and my brother is super funny." | "She isn't my sister; she is my best friend Valentina." | "Who is that boy with the skateboard in your squad?"
+✅ [c-teens-basic-zero-4] OK | Decoder (3 phrases): "I love pepperoni pizza and I always drink cold lemonade." | "I don't like spicy food or extra onion on my burgers." | "Can I have one large combo with French fries, please?"
+✅ [c-teens-basic-zero-5] OK | Decoder (3 phrases): "I wake up at six thirty AM and study in the morning." | "I don't wake up early on Sundays; I sleep until ten o'clock." | "What time do you finish school and arrive back home?"
+✅ [c-teens-basic-zero-6] OK | Decoder (3 phrases): "I wear an oversized black hoodie and comfortable sneakers." | "I don't wear formal suits; I prefer casual streetwear." | "What are you wearing to the birthday party today?"
+✅ [c-teens-basic-zero-7] OK | Decoder (3 phrases): "I always connect to Discord and listen to music on Spotify." | "I never share my private passwords on social networks." | "How often do you post gaming clips on TikTok?"
+✅ [c-teens-basic-zero-8] OK | Decoder (3 phrases): "I can ride a bike fast and I can play soccer." | "I can't skateboard or surf yet, but I am learning every day." | "Can you speak English with confidence and fluency?"
+❌ [c-teens-basic-zero-9] Class 9: My Hobbies & Free Time / Mis Pasatiempos y Tiempo Libre
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-zero-10] Class 10: My House, Rooms & Furniture / Mi Casa, Habitaciones y Muebles (Prepositions of Place: IN, ON, UNDER, BEHIND, IN FRONT OF, NEXT TO)
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-zero-11] Class 11: Alphabet, Spelling & Social Usernames / Alfabeto, Deletreo y Usernames
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-zero-12] Class 12: Full Teen Profile: Age, Grade, City & Passions / Presentarse: Edad, Curso, Ciudad y Gustos
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-zero-13] Class 13: Weather, Seasons & What's It Like Outside? / Clima, Estaciones y el Pronóstico del Tiempo
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-zero-14] Class 14: School Subjects & Classroom Life / Escuela, Materias y Objetos del Salón
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-zero-15] Class 15: People, Appearance & Style / Descripción Física, Rasgos y Apariencia (BE vs HAVE/HAS for Appearance)
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-zero-16] Class 16: Level 0 Grand Review & Final Challenge 🏆 / Repaso General y Graduación
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+
+======================================================================
+LEVEL: teens-basic-1 (10 classes)
+======================================================================
+❌ [c-teens-basic-1-1] Class 1: People in Your Circle & Personality / Personas de tu Círculo y Personalidad
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-1-2] Class 2: Fast Food, Healthy Energy & Drinks / Comida Rápida y Energía Saludable
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-1-3] Class 3: Feelings, Emotions & Reasons / Emociones, Sentimientos y Razones
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-1-4] Class 4: School Schedule & Campus Logistics / Horario Escolar y Preguntas WH-
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-1-5] Class 5: Study Habits, Skills & Adverbs of Manner / Hábitos de Estudio y Adverbios de Modo (-LY)
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-1-6] Class 6: Weekend Plans & Social Invitations / Planes de Fin de Semana (Want to, Need to, Would like to)
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-1-7] Class 7: Food, Grocery Shopping & Kitchen Pantry / Comida, Alacena y Compras (SOME, ANY, A/AN)
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-1-8] Class 8: Places in Town & Directions / Lugares en la Ciudad y Direcciones
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-1-9] Class 9: Getting Around Town & Urban Commute / Moverse por la Ciudad (Prepositions of Movement: INTO, OUT OF, THROUGH, ACROSS, ALONG, PAST, TOWARDS)
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-1-10] Class 10: Event & Trip Planning Project / Proyecto de Eventos y Viajes (Nivel 1 Capstone)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+
+======================================================================
+LEVEL: teens-basic-2 (10 classes)
+======================================================================
+❌ [c-teens-basic-2-1] Class 1: Animals, Habitats & Wildlife Protection / Animales, Hábitats y Pronombres Objeto
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-2-2] Class 2: My Room & Dream House / Mi Cuarto y Casa Soñada
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-2-3] Class 3: Vehicles, Transport & City Commuting / Transporte y Movilidad Urbana
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-2-4] Class 4: Dream Jobs, Careers & Workplaces / Profesiones y Lugares de Trabajo
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-2-5] Class 5: Talents, Evolution & Past Abilities / Talentos y Habilidades con Could y Couldn't
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-2-6] Class 6: School & Lab Rules: Must, Have to, Should / Reglas Escolares y Consejos
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-2-7] Class 7: Sports, Workouts & Healthy Habits / Deportes y Hábitos Saludables
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-2-8] Class 8: City Outings, Hangouts & Weekend Plans / Salidas y Planes de Fin de Semana
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-2-9] Class 9: Entertainment Reviews: Series, Movies & Games / Reseñas de Medios y Entretenimiento
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-2-10] Class 10: Level 2 Capstone: Teen Podcast & Grand Review / Gran Graduación y Repaso de Retos
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+
+======================================================================
+LEVEL: teens-basic-3 (10 classes)
+======================================================================
+❌ [c-teens-basic-3-1] Class 1: Tech Battles & Gadgets / Batalla Tecnológica (Comparative Adjectives: -ER, MORE THAN, AS...AS)
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-3-2] Class 2: World Records & Peak Achievements / Récords Mundiales y Hazañas Extremas (Superlative Adjectives: -EST, THE MOST, THE BEST)
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-3-3] Class 3: Holidays, Festivals & Traditions / Días Festivos, Festivales y Tradiciones
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-3-4] Class 4: Future Plans, Intentions & Visual Clues / Planes Futuros y Evidencia (BE GOING TO)
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-3-5] Class 5: What Were You Doing? / ¿Qué Estabas Haciendo? (Past Continuous: WAS / WERE + -ING)
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-3-6] Class 6: Sudden Plot Twists & Accidents / Giros Inesperados (Past Simple vs Past Continuous with WHEN & WHILE)
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-3-7] Class 7: Biographies of Artists, Athletes & Creators / Biografías de Creadores y Atletas
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-3-8] Class 8: Storytelling Connectors / Conectores para Contar Historias
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-3-9] Class 9: Everyday Problems & How to Explain Them / Problemas Cotidianos y Soluciones
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-3-10] Class 10: Irregular Verbs & -ed Endings (Video Project) / Verbos Irregulares y Proyecto Final
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+
+======================================================================
+LEVEL: teens-basic-4 (10 classes)
+======================================================================
+❌ [c-teens-basic-4-1] Class 1: My Opinions & Perspectives / Mis Opiniones y Perspectivas
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-4-2] Class 2: Giving Good Advice / Dar Buenos Consejos
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-4-3] Class 3: Conditions & Scientific Facts (Zero Conditional) / Hechos Científicos y Reglas
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-4-4] Class 4: Messaging, Texting & Online Communication / Mensajería y Texting
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-4-5] Class 5: Future Possibilities & Consequences (First Conditional) / Primer Condicional
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-4-6] Class 6: What If? Hypothetical Worlds & Dreams / Mundos Hipotéticos y Dilemas (Second Conditional: IF + PAST, WOULD)
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-4-7] Class 7: Mystery Solvers! Indefinite Pronouns / Pronombres Indefinidos: Someone, Anything, Nowhere
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-4-8] Class 8: Tournament Rules & Fair Play / Reglas de Torneos con Must, Have to & Mustn't
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-4-9] Class 9: Informal vs Formal Messages, Emails & Digital Tone / Tono Formal e Informal
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-basic-4-10] Class 10: Teen Leadership, Customer Service & Capstone Review / Liderazgo Juvenil y Proyecto Capstone
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+
+======================================================================
+LEVEL: teens-inter (12 classes)
+======================================================================
+❌ [c-teens-inter-1] Class 1: My Life Experiences (Present Perfect) / Experiencias de Vida y Present Perfect
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-2] Class 2: Teen Slang & Phrasal Verbs in Daily Conversations / Slang Juvenil y Phrasal Verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-3] Class 3: Possibilities & Deductions (Must, Might, Can't) / Posibilidades y Deducciones con Modales
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-4] Class 4: What If History Changed? Third Conditional & Past Regrets / Tercer Condicional y Arrepentimientos Pasados
+      -> Slide 4 (Grammar Studio 1) has 0 structures (expected >= 3)
+      -> Slide 5 (Grammar Studio 2) has 0 structures (expected >= 3)
+      -> Slide 6 (Verb Arena) has 0 verbs
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 9 (Story Decoder) has 0 lines
+      -> Slide 11 (Speaking) has 0 questions
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-5] Class 5: Agreeing & Disagreeing Respectfully / Acuerdos y Desacuerdos Respetuosos en Debates
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-6] Class 6: Podcast & Media Hosting Basics / Fundamentos de Podcasting y Locución en Inglés
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-7] Class 7: Present Perfect vs Present Perfect Continuous / Present Perfect vs Present Perfect Continuous
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-8] Class 8: Advanced Phrasal Verbs in Storytelling & Media / Phrasal Verbs Avanzados en Narrativas y Medios
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-9] Class 9: Past Modals of Deduction / Modales de Deducción en Pasado
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-10] Class 10: Conditionals Synthesis & Time Clauses / Síntesis de Condicionales y Cláusulas Temporales
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-11] Class 11: Nuanced Opinions & Diplomacy in Debates / Opiniones Matizadas y Diplomacia en Debates
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-inter-12] Class 12: Capstone Media Showcase & Scholarship Simulation / Proyecto Capstone y Simulación de Beca
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+
+======================================================================
+LEVEL: teens-advanced (10 classes)
+======================================================================
+❌ [c-teens-advanced-1] Class 1: Breaking News & Campus Whispers (Reported Speech) / Noticias de Última Hora y Reported Speech
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-advanced-2] Class 2: Secret Interviews & Interrogations (Reported Questions) / Entrevistas Secretas y Reported Questions
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-advanced-3] Class 3: Mastering Relative Clauses (Defining vs Non-Defining) / Dominando Relative Clauses
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-advanced-4] Class 4: Tech Disruptions & Modern Inventions (Passive Voice) / Disrupciones Tecnológicas y Voz Pasiva
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-advanced-5] Class 5: Global News Reports & Scientific Discoveries (Advanced Passive) / Reportes Globales y Voz Pasiva Avanzada
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-advanced-6] Class 6: Authentic Teen Idioms & Expressions in Daily Contexts / Modismos y Expresiones Auténticas
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-advanced-7] Class 7: Advanced Phrasal Verbs in High-Stakes Leadership & Problem Solving / Phrasal Verbs en Liderazgo y Crisis
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-advanced-8] Class 8: The Great AI & Ethics Student Forum / El Gran Foro de IA y Ética
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-advanced-9] Class 9: Crisis Management & Global Environmental Summits / Gestión de Crisis y Cumbres Ambientales
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-advanced-10] Class 10: Level 8 Capstone: Global Youth NGO Leadership Pitch & Executive Interview / Proyecto Final: Pitch de ONG Juvenil
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+
+======================================================================
+LEVEL: teens-elite (11 classes)
+======================================================================
+❌ [c-teens-elite-1] Class 1: Future Milestones & Tech Forecasting / Hitos del Futuro y Pronósticos Tecnológicos
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-elite-2] Class 2: High-Stakes Dilemmas & Complex Mixed Conditionals / Dilemas de Alto Impacto y Condicionales Mixtos
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-elite-3] Class 3: Cleft Sentences & Emphatic Rhetoric / Oraciones Hendidas y Retórica Enfática
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-elite-4] Class 4: Rhetorical Inversions & High-Impact Oratory / Inversiones Retóricas y Oratoria
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-elite-5] Class 5: Diplomatic Softening, Hedging & Nuanced Negotiations / Suavización Diplomática y Negociación
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-elite-6] Class 6: Advanced Discursive & Argumentative Essay Architecture / Arquitectura de Ensayos Argumentativos
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-elite-7] Class 7: Empirical Research Abstracts & Academic Citations / Resúmenes de Investigación y Citas
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-elite-8] Class 8: Executive Boardrooms, Parliamentary Procedure & Conflict Mediation / Juntas Directivas y Procedimiento Parlamentario
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-elite-9] Class 9: Crisis Leadership, Hostile Press Conferences & PR Damage Control / Ruedas de Prensa Hostiles y Control de Daños
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-elite-10] Class 10: Designing a Global Venture: Unit Economics & Value Proposition / Diseño de una Empresa Global
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-elite-11] Class 11: Level 9 Grand Capstone: International Tech Venture Seed Pitch & Global Keynote / Gran Proyecto Final del Nivel 9
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+
+======================================================================
+LEVEL: teens-masters (10 classes)
+======================================================================
+❌ [c-teens-masters-1] Class 1: Oxford-Union Parliamentary Debate & Dialectical Refutation / Debate Parlamentario Oxford-Union
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-masters-2] Class 2: Pop Culture Semiotics, Media Ecology & Digital Memetics / Semiótica de la Cultura Pop y Ecología de Medios
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-masters-3] Class 3: Ivy League Graduate Seminars & Socratic Cross-Examination / Seminarios Ivy League y Método Socrático
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-masters-4] Class 4: TED Keynotes, High-Impact Storytelling & Thought Leadership / Conferencias TED y Liderazgo de Opinión
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-masters-5] Class 5: Geopolitical Strategy, Bilateral Treaties & Multilateral Summits / Estrategia Geopolítica y Tratados
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-masters-6] Class 6: Literary Critique, Cinematic Deconstruction & Aesthetic Analysis / Crítica Literaria y Deconstrucción Cinematográfica
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-masters-7] Class 7: Rhodes & Fulbright International Fellowship Interviews / Entrevistas de Becas Rhodes y Fulbright
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-masters-8] Class 8: Investigative Video Essays & Documentary Journalism / Videoensayos de Investigación y Periodismo
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-masters-9] Class 9: Global Mega-Trends: Superintelligence, Bioethics & Climate / Superinteligencia, Bioética y Clima
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+❌ [c-teens-masters-10] Class 10: Level 10 Grand Masters Capstone: C2 Fluency Mastery & Global Leadership Summit / Gran Cierre de Maestría Nivel 10
+      -> Slide 2 (Objectives) missing objectives
+      -> Slide 7 (Reading) has 0 dialogue lines
+      -> Slide 10 (Writing) has 0 cards (expected 3: +, -, ?)
+      -> Slide 13 (Homework) incomplete task or < 2 example lines
+
+======================================================================
+AUDIT RESULTS: 99 classes audited.
+CLASSES WITH ISSUES: 91
+======================================================================

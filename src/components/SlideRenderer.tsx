@@ -148,12 +148,28 @@ export function resolveGoalsList(slide: ClassSlide, cls?: CurriculumClass): stri
 
 export function resolveStoryDecoderLines(slide?: ClassSlide | null): any[] {
   if (!slide) return [];
-  const data = slide.storyDecoderData;
-  if (!data) return [];
-  if (Array.isArray(data.lines) && data.lines.length > 0) return data.lines;
-  if (Array.isArray((data as any).sentences) && (data as any).sentences.length > 0) return (data as any).sentences;
-  if (Array.isArray(data) && data.length > 0) return data;
-  return [];
+  const raw = slide.storyDecoderData?.lines ||
+    (slide.storyDecoderData as any)?.sentences ||
+    (slide as any).sentences ||
+    (Array.isArray(slide.storyDecoderData) ? slide.storyDecoderData : []);
+
+  if (!Array.isArray(raw) || raw.length === 0) return [];
+
+  return raw.map((item: any, idx: number) => {
+    const en = item.en || item.targetSentence || item.sentence || '';
+    const es = item.es || item.translation || item.spanish || '';
+    const tokens = item.puzzle?.easy_blocks || item.tokens || item.scrambledTokens || (en ? chunkSentenceIntoBlocks(en) : []);
+    return {
+      id: item.id || `dec-${idx}`,
+      en,
+      es,
+      preferred_answer: item.preferred_answer || en,
+      tokens,
+      puzzle: {
+        easy_blocks: tokens
+      }
+    };
+  });
 }
 
 export function resolveVerbArenaPool(slide?: ClassSlide | null): any[] | undefined {
@@ -312,6 +328,23 @@ export function resolveGrammarData(slide?: ClassSlide | null): {
   if (!slide) return null;
   if (slide.grammarData && Array.isArray(slide.grammarData.structures) && slide.grammarData.structures.length > 0) {
     return slide.grammarData as any;
+  }
+  const sc = (slide as any).studioConfig;
+  if (sc && Array.isArray(sc.steps) && sc.steps.length > 0) {
+    return {
+      goldenRule: sc.subtitle || sc.title || (slide.description || "Regla de Oro de la Lección"),
+      proTip: sc.subtitle || (slide.description || "Aplica la fórmula y practica en voz alta."),
+      structures: sc.steps.map((step: any, i: number) => ({
+        label: step.badge || step.title || `Paso ${i + 1}`,
+        subject: step.title || `Estructura ${i + 1}`,
+        formula: step.formula || '',
+        example: step.examples?.[0]?.en || step.formula || '',
+        exampleEs: step.examples?.[0]?.es || step.explanation || '',
+        explanation: step.explanation || step.keyTip || '',
+        rule: step.explanation || step.keyTip || '',
+        audio: step.examples?.[0]?.en || '',
+      }))
+    };
   }
   const gsd = (slide as any).grammarStudioData;
   if (gsd && Array.isArray(gsd.tabs) && gsd.tabs.length > 0) {
@@ -772,9 +805,9 @@ export function renderColoredGrammarSentence(text?: string | null, activeHighlig
 
 export function resolveReadingLines(slide?: ClassSlide | null): { speaker?: string; text: string; cleanText?: string; es?: string }[] {
   if (!slide) return [];
-  const rd = (slide as any).readingData;
-  if (rd && Array.isArray(rd.dialogue) && rd.dialogue.length > 0) {
-    return rd.dialogue.map((d: any) => {
+  const rawDialogue = (slide as any).dialogue || (slide as any).readingData?.dialogue;
+  if (Array.isArray(rawDialogue) && rawDialogue.length > 0) {
+    return rawDialogue.map((d: any) => {
       if (typeof d === 'string') {
         const match = d.match(/^([A-Za-zÁÉÍÓÚáéíóúñÑ0-9\s]+):\s*(?:['"“](.*)['"”]|(.*))$/);
         if (match) {
@@ -1147,14 +1180,14 @@ export function SlideRenderer({
     !isSpeakingBossBattle &&
     !isRoleplaySlide &&
     (
-      slide.type === 'grammar-studio' || Boolean(slide.grammarData) ||
-      slide.type === 'verb-arena-embedded' || Boolean(slide.verbArenaData) || Boolean((slide as any).verbsData) || /verb arena|reto de vocabulario/i.test(slide.title || '') ||
-      slide.type === 'story-decoder-embedded' || Boolean(slide.storyDecoderData) || /story decoder|descodificador/i.test(slide.title || '') ||
+      slide.type === 'grammar-studio' || Boolean(slide.grammarData) || Boolean((slide as any).studioConfig) || Boolean((slide as any).grammarStudioData) ||
+      slide.type === 'verb-arena-embedded' || Boolean(slide.verbArenaData) || Boolean((slide as any).verbsData) || Boolean((slide as any).verbs) || Boolean(slide.vocabularyCards) || /verb arena|reto de vocabulario/i.test(slide.title || '') ||
+      slide.type === 'story-decoder-embedded' || Boolean(slide.storyDecoderData) || Boolean((slide as any).sentences) || /story decoder|descodificador/i.test(slide.title || '') ||
       slide.type === 'listening-audio-teacher' || Boolean(slide.listeningData) || /listening.*audio|audio.*listening|listening:/i.test(slide.title || '') ||
       slide.type === 'writing-guided' || Boolean(slide.writingData) || Boolean((slide as any).writingPrompts) || /writing studio|producci[oó]n escrita|guided writing/i.test(slide.title || '') ||
       slide.type === 'objectives-animated' || /today.*mission|nuestra misi[oó]n/i.test(slide.title || '') ||
-      slide.type === 'reading' || Boolean((slide as any).readingData) || /reading practice|reading studio/i.test(slide.title || '') ||
-      (slide.type === 'speaking' && Boolean(slide.content))
+      slide.type === 'reading' || Boolean((slide as any).readingData) || Boolean((slide as any).dialogue) || /reading practice|reading studio/i.test(slide.title || '') ||
+      (slide.type === 'speaking' && (Boolean(slide.content) || Boolean((slide as any).speakingPrompts)))
     );
 
   const isOptionExerciseSlide =

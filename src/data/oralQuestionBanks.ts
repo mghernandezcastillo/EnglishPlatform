@@ -145,7 +145,7 @@ const teenBanks: Record<string, QuestionTuple[]> = {
     ['BEDROOM', 'Describe your bedroom using there is, there are, and at least three place words.'],
     ['CITY TRANSPORT', 'How do you travel to school and to another place in your city?'],
     ['DREAM JOB', 'What job would you like to have, where would you work, and why does it interest you?'],
-    ['ABILITIES', 'Name two things you can do well and one thing you cannot do yet.'],
+    ['ABILITIES', 'Name two things you can do well now and one thing you could or could not do when you were a child (use could / couldn\'t).'],
     ['SCHOOL RULES', 'Explain three school rules using must, have to, or should.'],
     ['HEALTH', 'What healthy habits do you follow, and what advice would you give a tired student?'],
     ['CITY OUTING', 'Organize an outing: choose the place, transport, meeting point, time, and one activity.'],
