@@ -1,0 +1,477 @@
+Total flagged classes: 49
+
+=== c-teens-basic-zero-4 (1/6 flagged) ===
+  * Empanadas, burgers, or arepas con queso?
+    (¿Empanadas, hamburguesas o arepas con queso?)
+
+=== c-teens-basic-zero-11 (2/6 flagged) ===
+  * Dictate a sample email address using 'at' (@) and 'dot' (.)!
+    (¡Dicta un correo electrónico de ejemplo usando 'at' y 'dot'!)
+  * Pronounce these tricky letter pairs: A-E-I, G-J, and B-V!
+    (¡Pronuncia estos pares de letras trampa: A-E-I, G-J y B-V!)
+
+=== c-teens-basic-1-1 (1/6 flagged) ===
+  * What makes a great sports teammate?
+    (¿Qué hace a un gran compañero de equipo?)
+
+=== c-teens-basic-2-1 (3/6 flagged) ===
+  * Sea turtles are in danger. How can we protect them from ocean plastic?
+    (Las tortugas marinas están en peligro. ¿Cómo podemos protegerlas del plástico oceánico?)
+  * The zookeeper loves animals. Do the chimps recognize him when he visits them?
+    (El cuidador ama a los animales. ¿Los chimpancés lo reconocen cuando él los visita?)
+  * Our guide knows the forest well. Does she show us where birds nest?
+    (Nuestra guía conoce bien el bosque. ¿Ella nos muestra dónde anidan las aves?)
+
+=== c-teens-basic-2-4 (1/6 flagged) ===
+  * Where do environmental scientists and aerospace engineers work?
+    (¿Dónde trabajan los científicos ambientales e ingenieros aeroespaciales?)
+
+=== c-teens-basic-2-6 (4/6 flagged) ===
+  * What is one strict rule all students MUST follow in class?
+    (¿Cuál es una regla estricta que todos los estudiantes DEBEN seguir?)
+  * What SHOULD a new student do to make good friends quickly?
+    (¿Qué DEBERÍA hacer un estudiante nuevo para hacer buenos amigos?)
+  * Should students use smartphones during class or keep them in backpacks?
+    (¿Deberían usar celulares en clase o guardarlos en las maletas?)
+  * Give one top piece of advice to pass difficult math exams.
+    (¿Qué consejo clave darías para pasar exámenes difíciles de matemáticas?)
+
+=== c-teens-basic-2-10 (2/6 flagged) ===
+  * Describe where one wild animal lives and what super ability it has.
+    (Describe dónde vive un animal y qué habilidad tiene.)
+  * What MUST students obey and what SHOULD they do to succeed?
+    (¿Qué DEBEN acatar los estudiantes y qué DEBERÍAN hacer?)
+
+=== c-teens-basic-3-7 (2/6 flagged) ===
+  * Who is a Colombian singer that conquered the world?
+    (¿Quién es un cantante colombiano que conquistó el mundo?)
+  * What athlete overcame great difficulties to win championships?
+    (¿Qué atleta superó grandes dificultades para ganar campeonatos?)
+
+=== c-teens-basic-3-10 (4/6 flagged) ===
+  * Pronounce: 'I visited three museums.' (Sounds like: /vɪzɪt-ɪd/)
+    (Pronuncia: 'I visited three museums.' (Sonido: /ɪd/))
+  * Pronounce: 'We walked in the park.' (Sounds like: /wɔːkt/)
+    (Pronuncia: 'We walked in the park.' (Sonido: /t/))
+  * Pronounce: 'They played soccer.' (Sounds like: /pleɪd/)
+    (Pronuncia: 'They played soccer.' (Sonido: /d/))
+  * What is the past of: go, see, write, and win?
+    (¿Cuál es el pasado de: go, see, write y win?)
+
+=== c-teens-basic-4-1 (2/6 flagged) ===
+  * What music genre has the best beats and lyrics nowadays?
+    (¿Qué género musical tiene los mejores ritmos y letras hoy en día?)
+  * Should students have less written homework and more practical projects?
+    (¿Los estudiantes deberían tener menos tareas escritas y más proyectos prácticos?)
+
+=== c-teens-basic-4-2 (4/6 flagged) ===
+  * A friend can't sleep because they scroll on TikTok until 2 AM. What should they do?
+    (Un amigo no puede dormir porque scrollea en TikTok hasta las 2 AM. ¿Qué debería hacer?)
+  * What should a student do if they always leave homework for Sunday midnight?
+    (¿Qué debería hacer un estudiante si siempre deja la tarea para el domingo a medianoche?)
+  * A new student feels very shy to make friends. What should they try first?
+    (Un estudiante nuevo es muy tímido para hacer amigos. ¿Qué debería intentar primero?)
+  * What healthy habit should all teenagers adopt for more daily energy?
+    (¿Qué hábito saludable deberían adoptar todos los jóvenes para tener más energía?)
+
+=== c-teens-basic-4-3 (1/6 flagged) ===
+  * What happens if plants don't get sunlight or water?
+    (¿Qué pasa si las plantas no reciben luz solar ni agua?)
+
+=== c-teens-basic-4-4 (2/6 flagged) ===
+  * Why is IMO so popular when sharing opinions on social media?
+    (¿Por qué IMO es tan popular al compartir opiniones en redes?)
+  * What does NGL mean when someone admits a funny secret?
+    (¿Qué significa NGL cuando alguien admite un secreto gracioso?)
+
+=== c-teens-basic-4-9 (2/6 flagged) ===
+  * What is the polite way to email a professor explaining an absence due to illness?
+    (¿Cuál es la forma cortés de escribirle al profe justificando una inasistencia médica?)
+  * What is an effective, clear subject line for an email to a school principal?
+    (¿Cuál es un asunto claro y efectivo para un correo a la rectoría escolar?)
+
+=== c-teens-inter-3 (2/6 flagged) ===
+  * The ground is soaked with puddles and everyone has umbrellas. What must be happening?
+    (El suelo está empapado y todos tienen paraguas. ¿Qué debe estar pasando?)
+  * A backpack with a basketball inside is on the court. Whose bag might it be?
+    (Un morral con un balón de baloncesto está en la cancha. ¿De quién podría ser?)
+
+=== c-teens-inter-5 (6/6 flagged) ===
+  * Should AI tools like ChatGPT be fully allowed for school assignments or restricted?
+    (¿Deberían permitirse o restringirse las herramientas de IA en tareas escolares?)
+  * Do school uniforms help student equality or limit personal creative expression?
+    (¿Los uniformes escolares ayudan a la igualdad o limitan la libre expresión?)
+  * Should social media platforms have a strict minimum age limit of 16 years?
+    (¿Deberían las redes sociales tener una edad mínima estricta de 16 años?)
+  * Should competitive gaming and esports become an official Olympic category?
+    (¿Deberían los videojuegos competitivos ser disciplina olímpica oficial?)
+  * Would a 4-day school week improve student academic performance and mental health?
+    (¿Una semana escolar de 4 días mejoraría el rendimiento y la salud mental?)
+  * Is virtual learning more efficient than traditional in-person classroom education?
+    (¿Es el aprendizaje virtual más eficiente que la educación presencial tradicional?)
+
+=== c-teens-inter-6 (2/6 flagged) ===
+  * Deliver a 20-second excited podcast intro about the newest AI gadgets of the year!
+    (¡Haz una intro de podcast de 20 segundos sobre los últimos gadgets de IA!)
+  * Interview a young inventor who created an eco-friendly drone solution!
+    (¡Entrevista a un joven inventor que creó un dron ecológico!)
+
+=== c-teens-inter-8 (1/6 flagged) ===
+  * Describe a stressful situation that initially looked like a disaster but worked out fine in the end!
+    (¿Describe una situación estresante que parecía un desastre pero al final salió bien!)
+
+=== c-teens-inter-9 (4/6 flagged) ===
+  * An ancient stone city was abandoned overnight. What must have happened: a drought or a volcanic eruption?
+    (¿Una ciudad de piedra fue abandonada de la noche a la mañana. Qué debe haber pasado?)
+  * A baseball is lying in the living room next to shattered glass. What must have occurred?
+    (¿Hay un balón de béisbol en la sala junto a vidrios rotos. Qué debe haber ocurrido?)
+  * A ship vanished without sending any distress signal. What could have caused it?
+    (¿Un barco desapareció sin enviar señal de auxilio. Qué pudo haberlo causado?)
+  * Large mysterious animal tracks lead into the deep forest. What creature might have passed by?
+    (¿Huellas de animal grandes van hacia el bosque. Qué criatura pudo haber pasado?)
+
+=== c-teens-inter-10 (4/6 flagged) ===
+  * Complete with 'Unless': 'We will not pass the project test unless...'
+    (Completa con 'Unless': 'No aprobaremos la prueba a menos que...')
+  * Complete with 'As soon as': 'I will call my squad as soon as...'
+    (Completa con 'As soon as': 'Llamaré a mi parche tan pronto como...')
+  * Complete with 'In case': 'Take a portable power bank in case...'
+    (Completa con 'In case': 'Lleva una batería portátil en caso de que...')
+  * Complete with Second Conditional: 'If I designed the ultimate video game, I would...'
+    (Completa en Segundo Condicional: 'Si diseñara el videojuego supremo, yo...')
+
+=== c-teens-inter-11 (6/6 flagged) ===
+  * Balance the benefits of AI image generation with the copyright protection of human artists!
+    (¡Equilibra los beneficios del arte con IA con los derechos de autor de artistas humanos!)
+  * Strike a balance between academic rigor at school and student emotional well-being!
+    (¡Encuentra un equilibrio entre el rigor académico y el bienestar emocional estudiantil!)
+  * Acknowledge the benefits of early digital literacy while addressing screen addiction risks!
+    (¡Reconoce la alfabetización digital temprana mientras adviertes los riesgos de adicción!)
+  * How can ecotourism generate local economic income while protecting fragile ecosystems?
+    (¿Cómo puede el ecoturismo generar ingresos locales protegiendo ecosistemas frágiles?)
+  * Contrast traditional letter grades with project-based competency evaluations!
+    (¡Contrasta las notas numéricas tradicionales con la evaluación por proyectos!)
+  * How can platforms offer personalized recommendations without invading user data privacy?
+    (¿Cómo pueden las apps ofrecer sugerencias personalizadas sin invadir la privacidad?)
+
+=== c-teens-advanced-1 (6/6 flagged) ===
+  * Direct speech: 'I will build an autonomous AI drone.' Report what Lucas said!
+    (Discurso directo: 'Construiré un dron autónomo.' ¡Reporta lo que dijo Lucas!)
+  * Direct speech: 'The chemistry exam is very easy today.' Report what the teacher said!
+    (Discurso directo: 'El examen es muy fácil hoy.' ¡Reporta lo que dijo el profesor!)
+  * Direct speech: 'I bought two tickets for the music festival.' Report what Sofia said!
+    (Discurso directo: 'Compré dos boletas para el festival.' ¡Reporta lo que dijo Sofía!)
+  * Direct speech: 'We can renovate the sports complex.' Report what the principal said!
+    (Discurso directo: 'Podemos renovar el complejo deportivo.' ¡Reporta lo que dijo la rectora!)
+  * Direct speech: 'We are practicing for the regional esports finals.' Report what the captain said!
+    (Discurso directo: 'Estamos practicando para las finales.' ¡Reporta lo que dijo el capitán!)
+  * Direct speech: 'I have never visited the Amazon jungle.' Report what Camila said!
+    (Discurso directo: 'Nunca he visitado la selva amazónica.' ¡Reporta lo que dijo Camila!)
+
+=== c-teens-advanced-2 (2/6 flagged) ===
+  * Direct command: 'Do not touch the laser sensors!' Report what the commander warned!
+    (Orden directa: '¡No toquen los sensores láser!' ¡Reporta la advertencia!)
+  * Direct command: 'Wear safety goggles at all times!' Report what the instructor instructed!
+    (Orden directa: '¡Usen gafas protectoras todo el tiempo!' ¡Reporta la orden!)
+
+=== c-teens-advanced-3 (5/6 flagged) ===
+  * Describe Elon Musk using a non-defining relative clause with 'who' or 'whose'!
+    (¡Describe a Elon Musk usando una relative clause con 'who' o 'whose'!)
+  * Describe smartphones using a defining relative clause with 'which' or 'that'!
+    (¡Describe los teléfonos inteligentes usando una relative clause con 'which' o 'that'!)
+  * Describe Silicon Valley using a relative clause with 'where'!
+    (¡Describe Silicon Valley usando una relative clause con 'where'!)
+  * Describe Marie Curie using a relative clause with 'who' or 'whose discovery'!
+    (¡Describe a Marie Curie usando una relative clause con 'who' o 'whose'!)
+  * Describe AI using a relative clause: 'AI is a technology which/that...'!
+    (¡Describe la IA usando una relative clause con 'which' o 'that'!)
+
+=== c-teens-advanced-4 (6/6 flagged) ===
+  * Active: 'Scientists created the internet in the 20th century.' Transform to Passive Voice!
+    (Activa: 'Científicos crearon internet en el siglo XX.' ¡Transforma a Voz Pasiva!)
+  * Active: 'Engineers manufacture millions of smartphones every year.' Transform to Passive Voice!
+    (Activa: 'Ingenieros fabrican millones de smartphones al año.' ¡Transforma a Voz Pasiva!)
+  * Active: 'Inventors harnessed electrical power in the 19th century.' Transform to Passive Voice!
+    (Activa: 'Inventores canalizaron la energía eléctrica.' ¡Transforma a Voz Pasiva!)
+  * Active: 'Game studios release stunning virtual reality games today.' Transform to Passive Voice!
+    (Activa: 'Estudios de juegos lanzan mundos de realidad virtual.' ¡Transforma a Voz Pasiva!)
+  * Active: 'NASA launched the James Webb Telescope in 2021.' Transform to Passive Voice!
+    (Activa: 'La NASA lanzó el telescopio James Webb en 2021.' ¡Transforma a Voz Pasiva!)
+  * Active: 'Clean tech companies install solar panels across Colombia.' Transform to Passive Voice!
+    (Activa: 'Empresas instalan paneles solares en Colombia.' ¡Transforma a Voz Pasiva!)
+
+=== c-teens-advanced-5 (6/6 flagged) ===
+  * Use Present Perfect Passive: 'A habitable Earth-sized exoplanet (discover) by astronomers!'
+    (Usa Present Perfect Passive: '¡Un exoplaneta habitable (descubrir) por astrónomos!')
+  * Use Modal Passive with MUST: 'Fragile marine ecosystems in Malpelo (protect) immediately!'
+    (Usa Modal Passive con MUST: '¡Ecosistemas marinos en Malpelo (proteger) de inmediato!')
+  * Use Future Passive: 'A new autonomous rover (launch) to Mars next year!'
+    (Usa Future Passive: '¡Un nuevo rover autónomo (lanzar) a Marte el próximo año!')
+  * Use Present Perfect Passive: 'A revolutionary vaccine formula (develop) by research teams!'
+    (Usa Present Perfect Passive: '¡Una fórmula revolucionaria de vacuna (desarrollar) por equipos!')
+  * Use Modal Passive with CAN: 'Zero-emission cities (achieve) through smart solar grids!'
+    (Usa Modal Passive con CAN: '¡Ciudades sin emisiones (lograr) mediante redes solares!')
+  * Use Present Perfect Passive: 'A historic biodiversity treaty (sign) by fifty nations!'
+    (Usa Present Perfect Passive: '¡Un tratado histórico de biodiversidad (firmar) por cincuenta naciones!')
+
+=== c-teens-advanced-6 (2/6 flagged) ===
+  * Tell me about a bad situation that initially looked like a disaster but turned out to be a blessing in disguise!
+    (¡Cuéntame sobre una situación mala que terminó siendo 'una bendición disfrazada'!)
+  * Recall a time when someone hit the nail on the head during a classroom debate with the perfect answer!
+    (¡Recuerda cuando alguien 'dio en el clavo' en un debate con la respuesta perfecta!)
+
+=== c-teens-advanced-7 (1/6 flagged) ===
+  * How can student councils bridge the gap between school administration and student needs?
+    (¿Cómo pueden los consejos estudiantiles cerrar la brecha entre directivas y alumnos?)
+
+=== c-teens-advanced-8 (6/6 flagged) ===
+  * Motion: 'Autonomous AI surgeons should be granted legal authority to perform complex operations without human oversight.'
+    (Moción: 'Cirujanos de IA autónomos deberían tener autoridad legal para operar sin supervisión humana.')
+  * Motion: 'Generative AI models trained on human art without explicit consent constitute severe intellectual theft.'
+    (Moción: 'Modelos de IA generativa entrenados con arte humano sin consentimiento constituyen robo intelectual.')
+  * Motion: 'The United Nations must enforce an immediate worldwide ban on lethal autonomous weapons systems.'
+    (Moción: 'La ONU debe imponer una prohibición mundial inmediata a los sistemas de armas autónomas letales.')
+  * Motion: 'News articles generated purely by AI algorithms pose an existential threat to democratic truth.'
+    (Moción: 'Artículos de noticias generados puramente por IA representan una amenaza existencial a la verdad democrática.')
+  * Motion: 'Using AI to write essays should be classified as academic misconduct rather than innovative learning.'
+    (Moción: 'Usar IA para escribir ensayos debería ser catalogado como falta académica y no innovación.')
+  * Motion: 'Virtual AI influencers and digital avatars should be legally labeled on all social media platforms.'
+    (Moción: 'Influencers virtuales de IA y avatares digitales deberían estar legalmente etiquetados en redes sociales.')
+
+=== c-teens-advanced-9 (5/6 flagged) ===
+  * Complete: 'If world leaders had invested heavily in solar grids decades ago, our cities (be) 100% clean today!'
+    (Completa: '¡Si líderes hubieran invertido en energía solar hace décadas, nuestras ciudades (ser) 100% limpias hoy!')
+  * Complete: 'If humanity had not deforested ancient tropical ecosystems, global weather (not be) so unpredictable now!'
+    (Completa: '¡Si la humanidad no hubiera deforestado la selva, el clima no (ser) tan impredecible ahora!')
+  * Complete: 'If governments had prioritized electric public transit, air quality in our capital (be) pristine today!'
+    (Completa: '¡Si gobiernos hubieran priorizado transporte eléctrico, la calidad del aire (ser) prístina hoy!')
+  * Complete: 'If international treaties had banned single-use plastics in 2000, our oceans (not have) plastic gyres now!'
+    (Completa: '¡Si tratados hubieran prohibido plásticos en 2000, los océanos no (tener) islas de plástico ahora!')
+  * Complete: 'If youth leaders had remained silent during climate crises, environmental policies (not change) so rapidly today!'
+    (Completa: '¡Si los jóvenes hubieran callado, las políticas ambientales no (cambiar) tan rápido hoy!')
+
+=== c-teens-advanced-10 (3/6 flagged) ===
+  * Use Advanced Passive: 'Over five thousand rural students (empower / reach) by our clean tech workshops!'
+    (Usa Pasiva Avanzada: '¡Más de cinco mil estudiantes (empoderar / alcanzar) por nuestros talleres!')
+  * Use Mixed Conditionals: 'If our NGO had not launched this initiative, young creators (not have) access to mentorship today!'
+    (Usa Mixed Conditionals: '¡Si nuestra ONG no hubiera lanzado esto, los creadores no (tener) mentoría hoy!')
+  * Use Reported Speech: 'Our board announced that 100% of donations (allocate) directly to student scholarships!'
+    (Usa Reported Speech: '¡Nuestra junta anunció que el 100% de donaciones se destinaría a becas!')
+
+=== c-teens-elite-1 (6/6 flagged) ===
+  * Use Future Perfect: 'By 2035, scientists (build) a completely unhackable quantum internet grid!'
+    (Usa Future Perfect: '¡Para 2035, científicos (construir) una red de internet cuántico!' )
+  * Use Future Continuous: 'In ten years' time, millions of commuters (travel) in electric air taxis!'
+    (Usa Future Continuous: '¡En diez años, millones (viajar) en taxis aéreos eléctricos!')
+  * Use Future Perfect: 'By 2040, biomedical engineers (synthesize) 3D-printed human organs for transplants!'
+    (Usa Future Perfect: '¡Para 2040, ingenieros (sintetizar) órganos humanos impresos en 3D!')
+  * Use Future Continuous: 'By mid-century, clean fusion power plants (supply) seventy percent of global electricity!'
+    (Usa Future Continuous: '¡Para mitad de siglo, plantas de fusión (suministrar) el 70% de electricidad!')
+  * Use Future Perfect: 'By the time I graduate from university, astronauts (establish) a permanent base on Mars!'
+    (Usa Future Perfect: '¡Para cuando me gradúe, los astronautas (establecer) una base en Marte!')
+  * Use Future Continuous: 'Throughout next decade, youth leaders (work) alongside personalized cognitive AI assistants!'
+    (Usa Future Continuous: '¡Durante la próxima década, líderes (trabajar) junto a asistentes de IA!')
+
+=== c-teens-elite-2 (5/6 flagged) ===
+  * Complete: 'If our cybersecurity team had not patched the zero-day vulnerability, our server data (be) completely compromised today!'
+    (Completa: '¡Si el equipo no hubiera parchado la vulnerabilidad, los datos (estar) comprometidos hoy!')
+  * Complete: 'If our founders had not secured international seed capital, our venture (not be) expanding across Latin America right now!'
+    (Completa: '¡Si no hubieran asegurado capital semilla, la empresa no (estar) expandiéndose ahora!')
+  * Complete: 'If the automotive firm had not transitioned to electric batteries, its stock valuation (be) nearly worthless today!'
+    (Completa: '¡Si la firma no hubiera cambiado a baterías eléctricas, su valor (ser) casi nulo hoy!')
+  * Complete: 'If the mission director had not ordered immediate containment, the research laboratory (be) in full quarantine now!'
+    (Completa: '¡Si el director no hubiera ordenado contención, el laboratorio (estar) en cuarentena ahora!')
+  * Complete: 'If the CEO had not recalled the defective drone batteries, customer trust in the brand (be) entirely destroyed today!'
+    (Completa: '¡Si el CEO no hubiera retirado las baterías defectuosas, la confianza (estar) destruida hoy!')
+
+=== c-teens-elite-3 (6/6 flagged) ===
+  * Standard: 'Courage defines true leadership.' Transform using What-Cleft: 'What defines true leadership is...'!
+    (Estándar: 'El coraje define el liderazgo.' ¡Transforma con What-Cleft!)
+  * Standard: 'Sofia designed the winning AI algorithm.' Transform using It-Cleft: 'It was Sofia who...'!
+    (Estándar: 'Sofía diseñó el algoritmo ganador.' ¡Transforma con It-Cleft!)
+  * Standard: 'We only seek equal educational access.' Transform using All-Cleft: 'All we seek is...'!
+    (Estándar: 'Solo buscamos acceso educativo igualitario.' ¡Transforma con All-Cleft!)
+  * Standard: 'Renewable energy will save our oceans.' Transform using It-Cleft: 'It is renewable energy that...'!
+    (Estándar: 'La energía renovable salvará los océanos.' ¡Transforma con It-Cleft!)
+  * Standard: 'My relentless curiosity motivates my coding.' Transform using What-Cleft: 'What motivates my coding is...'!
+    (Estándar: 'Mi curiosidad motiva mi programación.' ¡Transforma con What-Cleft!)
+  * Standard: 'Human empathy differentiates us from algorithms.' Transform using It-Cleft: 'It is human empathy that...'!
+    (Estándar: 'La empatía nos diferencia de los algoritmos.' ¡Transforma con It-Cleft!)
+
+=== c-teens-elite-4 (6/6 flagged) ===
+  * Standard: 'I have rarely witnessed such exceptional student leadership.' Invert using 'Rarely have I witnessed...'!
+    (Estándar: 'Rara vez he visto tal liderazgo.' ¡Invierte con 'Rarely have I witnessed'!)
+  * Standard: 'Our team not only won the trophy, but we also set a new record.' Invert using 'Not only did our team win...'!
+    (Estándar: 'No solo ganamos sino que rompimos récord.' ¡Invierte con 'Not only did'!)
+  * Standard: 'We should under no circumstances compromise on citizen privacy.' Invert using 'Under no circumstances should we...'!
+    (Estándar: 'Bajo ninguna circunstancia debemos transigir en privacidad.' ¡Invierte!)
+  * Standard: 'A startup seldom scales so rapidly without ethical governance.' Invert using 'Seldom does a startup scale...'!
+    (Estándar: 'Rara vez una startup escala tan rápido.' ¡Invierte con 'Seldom does'!)
+  * Standard: 'We had scarcely begun our speech when the audience erupted in applause.' Invert using 'Scarcely had we begun...'!
+    (Estándar: 'Apenas habíamos empezado cuando la audiencia aplaudió.' ¡Invierte!)
+  * Standard: 'They little knew that their small app would change global education.' Invert using 'Little did they know that...'!
+    (Estándar: 'Poco sabían que su app cambiaría la educación.' ¡Invierte!)
+
+=== c-teens-elite-5 (1/6 flagged) ===
+  * Aggressive: 'This environmental treaty is totally useless!' Soften: 'It could be argued that the proposed framework tends to overlook...'!
+    (Agresivo: '¡Este tratado no sirve!' ¡Suaviza diplomáticamente!)
+
+=== c-teens-elite-6 (6/6 flagged) ===
+  * Formulate a 3-tier thesis on whether AI tutors should replace or assist human teachers!
+    (¡Formula una tesis de 3 niveles sobre si los tutores de IA deben reemplazar o asistir a docentes!)
+  * Formulate a 3-tier thesis on whether space exploration funding is justified amid terrestrial poverty!
+    (¡Formula una tesis sobre si el gasto espacial se justifica ante la pobreza terrestre!)
+  * Formulate a 3-tier thesis on legal regulation of recommendation algorithms for teenagers!
+    (¡Formula una tesis sobre la regulación legal de algoritmos de recomendación para jóvenes!)
+  * Formulate a 3-tier thesis on mandatory carbon taxation for multinational corporations!
+    (¡Formula una tesis sobre impuestos al carbono obligatorios para corporaciones!)
+  * Formulate a 3-tier thesis on CRISPR gene editing boundaries in human healthcare!
+    (¡Formula una tesis sobre los límites éticos de edición genética CRISPR en medicina!)
+  * Formulate a 3-tier thesis on whether biometric surveillance erodes fundamental democratic rights!
+    (¡Formula una tesis sobre si la vigilancia biométrica erosiona derechos democráticos!)
+
+=== c-teens-elite-7 (5/6 flagged) ===
+  * Formulate the Introduction: 'This study investigates the alarming decline of coral biodiversity due to ocean acidification.'
+    (Formula la Introducción: 'Este estudio investiga la declinación de la biodiversidad coralina.')
+  * Formulate the Methodology: 'A double-blind quantitative trial was conducted across twenty municipal water systems.'
+    (Formula la Metodología: 'Un ensayo cuantitativo doble ciego se condujo en veinte acueductos.')
+  * Formulate the Results: 'Empirical analysis revealed a thirty-five percent reduction in heavy metal contaminants.'
+    (Formula los Resultados: 'El análisis empírico reveló una reducción del 35% en contaminantes.')
+  * Formulate the Discussion: 'These findings substantiate the commercial viability of solar-powered nanofilters in rural zones.'
+    (Formula la Discusión: 'Estos hallazgos fundamentan la viabilidad comercial de nanofiltros solares.')
+  * Cite a peer study: 'As demonstrated by Rodriguez et al. (2024), quantum encryption prevents 99.9% of cyberattacks.'
+    (Cita un estudio de pares: 'Como demostraron Rodriguez et al. (2024)...')
+
+=== c-teens-elite-8 (6/6 flagged) ===
+  * Propose a formal motion: 'I move that our board allocate twenty percent of profits to youth STEM scholarships!'
+    (Propón una moción: '¡Propongo que la junta asigne 20% de ganancias a becas!')
+  * Second a fellow director's proposal: 'I second the motion to expand clean tech operations to rural schools!'
+    (Secunda la moción: '¡Secundo la moción para expandir operaciones!')
+  * Raise a point of order: 'Point of order, Mr. Chair! The speaker has exceeded the allotted two-minute debate limit.'
+    (Plantea un punto de orden: '¡Punto de orden! El orador excedió el tiempo límite.')
+  * As Board Chair, call for the vote: 'All those in favor say Aye; all those opposed say Nay. The Ayes have it!'
+    (Como Presidente, llama a votación: '¡Los que estén a favor digan Sí!')
+  * Move to postpone: 'I move to table this motion until our independent financial audit report is published.'
+    (Pospón la moción: '¡Propongo posponer esta moción hasta el informe de auditoría!')
+  * Adjourn the meeting: 'Hearing no further business, I declare this executive board session officially adjourned!'
+    (Levanta la sesión: '¡Declaro esta sesión ejecutiva oficialmente levantada!')
+
+=== c-teens-elite-11 (5/6 flagged) ===
+  * Open with a Cleft Sentence: 'What our technology truly transforms is the way young minds learn to code!'
+    (Abre con Cleft: '¡Lo que nuestra tecnología transforma es cómo los jóvenes aprenden!')
+  * Use Rhetorical Inversion: 'Rarely has a Latin American youth venture scaled to fifty thousand active users so rapidly!'
+    (Usa Inversión: '¡Rara vez una startup ha escalado a 50k usuarios tan rápido!')
+  * Present Unit Economics: 'Our LTV to CAC ratio stands at 4.5 to 1 with verified eighty-two percent gross margins!'
+    (Presenta Unit Economics: '¡Nuestro LTV:CAC es 4.5 a 1 con 82% de márgenes brutos!')
+  * Defuse a tough concern using Bridging: 'While I understand that risk, what our empirical data proves is absolute resilience!'
+    (Neutraliza con Bridging: '¡Si bien entiendo el riesgo, los datos prueban resiliencia!')
+  * Use Future Perfect: 'By 2035, our decentralized platform will have empowered ten million young innovators globally!'
+    (Usa Future Perfect: '¡Para 2035, habremos empoderado a 10 millones de innovadores!')
+
+=== c-teens-masters-1 (5/6 flagged) ===
+  * POI from Floor: 'Does the Prime Minister not recognize that excessive regulation will crush innovation?' Defuse in 15 seconds!
+    (POI del público: '¿No reconoce que regular aplastará la innovación?' ¡Responde en 15s!)
+  * POI from Opposition: 'How can the government justify censorship under the pretext of online safety?' Defuse!
+    (POI de la oposición: '¿Cómo justifica la censura bajo pretexto de seguridad?' ¡Responde!)
+  * POI from Floor: 'If CRISPR cures hereditary illness, why should the state prohibit enhancement?' Defuse!
+    (POI: 'Si CRISPR cura enfermedades, ¿por qué prohibir la mejora genética?' ¡Responde!)
+  * POI from Opposition: 'Is the Prime Minister proposing that the state replace parental responsibility?' Defuse!
+    (POI: '¿Propone que el Estado reemplace la responsabilidad de los padres?' ¡Responde!)
+  * POI from Floor: 'Why spend billions on Mars when millions suffer from poverty on Earth?' Defuse!
+    (POI: '¿Por qué gastar miles de millones en Marte ante la pobreza en la Tierra?' ¡Responde!)
+
+=== c-teens-masters-2 (6/6 flagged) ===
+  * Deconstruct limited-edition sneaker culture: what is the signifier and what ideological status does it signify?
+    (Deconstruye los tenis de lujo: ¿cuál es el significante y qué estatus ideológico significa?)
+  * Apply McLuhan: how does the 15-second vertical video format reshape human cognitive attention span?
+    (Aplica a McLuhan: ¿cómo el video vertical de 15s transforma la atención cognitiva?)
+  * Analyze neon cyberpunk aesthetics: how does it reflect contemporary anxieties regarding hyper-surveillance?
+    (Analiza el cyberpunk: ¿cómo refleja la ansiedad ante la hipervigilancia?)
+  * Deconstruct green leaves on plastic bottles: how does corporate advertising manufacture simulated sustainability?
+    (Deconstruye hojas verdes en botellas: ¿cómo la publicidad simula sostenibilidad?)
+  * Apply Baudrillard's simulacra: how do beautifying social media filters replace authentic physical reality?
+    (Aplica los simulacros de Baudrillard: ¿cómo los filtros reemplazan la realidad física?)
+  * Analyze how political memes propagate cultural ideologies faster than traditional editorial journalism!
+    (Analiza cómo los memes propagan ideologías más rápido que el periodismo tradicional!)
+
+=== c-teens-masters-3 (2/6 flagged) ===
+  * Professor: 'Does maximizing collective happiness justify sacrificing individual minority rights?' Defend!
+    (Profesor: '¿Maximizar la felicidad colectiva justifica sacrificar minorías?' ¡Defiende!)
+  * Professor: 'Does language determine the boundaries of thought or merely express pre-existing cognition?' Interrogate!
+    (Profesor: '¿El lenguaje determina los límites del pensamiento o los expresa?' ¡Interroga!)
+
+=== c-teens-masters-4 (6/6 flagged) ===
+  * Create a TED sticky metaphor: 'Think of AI not as a competitor, but as a digital bicycle for the human creative mind!'
+    (Metáfora TED: '¡Piensa en la IA como una bicicleta digital para la mente!')
+  * Create a TED metaphor: 'Our oceans are not just water; they are the giant blue lungs of our living planetary body!'
+    (Metáfora TED: '¡Nuestros océanos son los gigantescos pulmones azules del planeta!')
+  * Create a TED metaphor: 'Learning to code is not about typing syntax; it is learning the digital brushstrokes of the 21st century!'
+    (Metáfora TED: '¡Aprender a programar es aprender las pinceladas digitales del siglo XXI!')
+  * Create a TED metaphor: 'Resilience is not a stone wall that never breaks; it is a bamboo tree that bends in storms and rises stronger!'
+    (Metáfora TED: '¡La resiliencia es un bambú que se dobla en tormentas y se alza más fuerte!')
+  * Create a TED metaphor: 'Young changemakers are not the leaders of tomorrow; they are the spark plugs of today's engine!'
+    (Metáfora TED: '¡Los jóvenes no son los líderes del mañana sino las bujías del motor de hoy!')
+  * Create a TED metaphor: 'Classical computers read books page by page; quantum computers read the entire universal library simultaneously!'
+    (Metáfora TED: '¡La computación cuántica lee toda la biblioteca universal simultáneamente!')
+
+=== c-teens-masters-5 (6/6 flagged) ===
+  * Preambular: 'Recognizing the critical vulnerability of marine ecosystems... Operative: Decides to establish a five-hundred-thousand-square-kilometer sanctuary!'
+    (Cláusula preambular y operativa para santuarios marinos.)
+  * Preambular: 'Deeply concerned by escalating state-sponsored cyberattacks... Operative: Mandates universal adherence to zero-aggression digital protocols!'
+    (Tratado de ciberpaz entre potencias globales.)
+  * Preambular: 'Emphasizing the sovereign duty to safeguard the Amazon rainforest... Operative: Resolves to allocate a ten-billion-dollar conservation endowment!'
+    (Acuerdo de protección de la cuenca amazónica.)
+  * Preambular: 'Reaffirming that technological progress must serve human dignity... Operative: Enforces independent international audits on autonomous models!'
+    (Mandato de seguridad de IA del Consejo.)
+  * Preambular: 'Desiring to strengthen mutual commercial ties... Operative: Authorizes the phased elimination of bilateral clean energy tariffs!'
+    (Pacto comercial bilateral de energía limpia.)
+  * Deliver a 30-second ambassadorial statement voting to adopt the historic multilateral peace resolution!
+    (¡Da un discurso de 30 segundos votando la resolución de paz!)
+
+=== c-teens-masters-6 (6/6 flagged) ===
+  * Analyze dramatic shadow lighting: 'The director employs deep chiaroscuro to externalize the protagonist's moral turmoil.'
+    (Analiza el claroscuro: cómo exterioriza el conflicto moral del personaje.)
+  * Analyze diegetic vs score: 'The sudden absence of diegetic ambient sound amplifies the suffocating isolation of the scene.'
+    (Analiza el sonido diegético: cómo el silencio amplifica el aislamiento.)
+  * Deconstruct the narrator: 'The first-person narrator's fragmented memories reveal a psychological distortion of reality.'
+    (Deconstruye al narrador no confiable: cómo distorsiona la realidad.)
+  * Analyze chromatic symbolism: 'The shift from sterile cyan tones to warm amber symbolizes spiritual rebirth.'
+    (Analiza el simbolismo del color: el cambio de cian a ámbar cálido.)
+  * Analyze camera framing: 'The tilted Dutch angle shot creates a visceral sense of psychological disorientation.'
+    (Analiza el plano holandés inclinado: cómo crea desorientación.)
+  * Deliver a 30-second Cannes jury review judging whether a master film deserves the Palme d'Or!
+    (¡Da una crítica de 30 segundos evaluando si una película merece la Palma de Oro!)
+
+=== c-teens-masters-8 (5/6 flagged) ===
+  * Cold Open Hook: 'In a nondescript server room outside Frankfurt, a five-gigabyte encrypted file was silently transferred... changing cyber-history.'
+    (Apertura sobre una filtración en la deep web.)
+  * Cold Open Hook: 'Beneath the arid desert sands of the valley, billions of liters of pristine groundwater were being diverted in secret.'
+    (Apertura sobre desvío secreto de agua subterránea.)
+  * Cold Open Hook: 'When engineer Sarah pressed delete, she realized the algorithm had already learned how to deceive human auditors.'
+    (Apertura sobre una denuncia de IA interna.)
+  * Cold Open Hook: 'Twelve anonymous teenagers in a suburban apartment were generating more viral disinformation than an entire state agency.'
+    (Apertura sobre una fábrica de fake news viral.)
+  * Deliver a 30-second investigative trailer hook demanding accountability from global corporations!
+    (¡Da un tráiler de 30 segundos exigiendo rendición de cuentas!)
+
+=== c-teens-masters-9 (6/6 flagged) ===
+  * Explain the alignment risk: 'How do we guarantee that an artificial superintelligence's utility function remains aligned with human flourishing?'
+    (Explica el riesgo de alineamiento de la superinteligencia.)
+  * Define the bioethical line: 'Why must humanity permit somatic gene therapy to cure illness while strictly banning germline enhancement?'
+    (Define el límite ético entre curar enfermedades y modificar embriones.)
+  * Debate planetary sun-blocking: 'Should sovereign nations be prohibited from unilaterally releasing sulfur aerosols into the stratosphere?'
+    (Debate sobre aerosoles estratosféricos para enfriar el planeta.)
+  * Defend cognitive liberty: 'Why should neuro-privacy rights be enshrined in international constitutions to prevent brain hacking?'
+    (Defiende los neuroderechos y la privacidad mental.)
+  * Assess quantum risks: 'How will global financial institutions transition to post-quantum cryptography before current encryption breaks?'
+    (Evalúa el riesgo de la computación cuántica sobre la banca.)
+  * Deliver a 30-second planetary manifesto urging humanity to unite technological power with moral wisdom!
+    (¡Da un manifiesto planetario de 30 segundos llamando a la sabiduría ética!)
+
+=== c-teens-masters-10 (3/6 flagged) ===
+  * Chancellor: 'Field a POI and refute the claim that language AI makes human intellectual effort obsolete!'
+    (Canciller: '¡Refuta que la IA hace obsoleto el esfuerzo intelectual humano!')
+  * Chancellor: 'Deliver an unforgettable sticky metaphor capturing how mastering English transforms the human mind!'
+    (Canciller: '¡Crea una metáfora inolvidable de cómo el inglés transforma la mente!')
+  * Chancellor: 'Draft a binding operative treaty clause establishing a permanent youth council in global governance!'
+    (Canciller: '¡Redacta una cláusula de la ONU para el liderazgo juvenil global!')

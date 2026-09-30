@@ -1,0 +1,2396 @@
+{
+  "c-teens-basic-zero-4": [
+    {
+      "label": "Favorite Fast Food",
+      "color": "#EF4444",
+      "prompt": "What is your all-time favorite fast food: burgers, pizza, or hot dogs?",
+      "es": "¿Cuál es tu comida rápida favorita de todas: hamburguesa, pizza o perros calientes?"
+    },
+    {
+      "label": "Colombian Snack",
+      "color": "#F59E0B",
+      "prompt": "Do you prefer eating warm empanadas, cheesy arepas, or crispy pandebonos?",
+      "es": "¿Prefieres comer empanadas calientes, arepas con queso o pandebonos crocantes?"
+    },
+    {
+      "label": "Sweet or Salty",
+      "color": "#10B981",
+      "prompt": "When you watch a movie, do you choose sweet candy or salty popcorn?",
+      "es": "¿Cuando ves una película, eliges dulces o palomitas de maíz saladas?"
+    },
+    {
+      "label": "Drink Choice",
+      "color": "#3B82F6",
+      "prompt": "What do you love drinking on a sunny afternoon: fruit juice, soda, or iced tea?",
+      "es": "¿Qué te encanta tomar en una tarde soleada: jugo de fruta, gaseosa o té helado?"
+    },
+    {
+      "label": "Ice Cream Flavor",
+      "color": "#8B5CF6",
+      "prompt": "What is your absolute favorite ice cream flavor: chocolate, vanilla, or oreo?",
+      "es": "¿Cuál es tu sabor de helado favorito absoluto: chocolate, vainilla u oreo?"
+    },
+    {
+      "label": "Food Dilemma",
+      "color": "#EC4899",
+      "prompt": "If you could eat only one Colombian meal for a whole week, what would you pick?",
+      "es": "¿Si pudieras comer un solo plato colombiano durante toda una semana, cuál elegirías?"
+    }
+  ],
+  "c-teens-basic-zero-10": [
+    {
+      "label": "Dream Bedroom",
+      "color": "#EF4444",
+      "prompt": "What is the coolest thing inside your bedroom right now?",
+      "es": "¿Qué es lo más genial dentro de tu habitación ahora mismo?"
+    },
+    {
+      "label": "Chill Spot",
+      "color": "#F59E0B",
+      "prompt": "Where in your house do you love to relax: in bed, on the sofa, or at your desk?",
+      "es": "¿En qué lugar de tu casa te encanta descansar: en la cama, en el sofá o en tu escritorio?"
+    },
+    {
+      "label": "Lost Objects",
+      "color": "#10B981",
+      "prompt": "Where do you usually lose your phone: under your pillow, on the couch, or on a table?",
+      "es": "¿Dónde sueles perder tu celular: debajo de la almohada, en el sofá o en la mesa?"
+    },
+    {
+      "label": "Secret Gaming Room",
+      "color": "#3B82F6",
+      "prompt": "If you could build a secret game room in your house, what would you put inside it?",
+      "es": "¿Si pudieras construir una sala secreta de juegos en tu casa, qué le pondrías adentro?"
+    },
+    {
+      "label": "Wall Color",
+      "color": "#8B5CF6",
+      "prompt": "What color are the walls of your bedroom, and do you like that color?",
+      "es": "¿De qué color son las paredes de tu habitación y te gusta ese color?"
+    },
+    {
+      "label": "Kitchen Raids",
+      "color": "#EC4899",
+      "prompt": "Do you often visit the kitchen late at night to find a delicious midnight snack?",
+      "es": "¿Sueles ir a la cocina tarde en la noche a buscar un snack delicioso?"
+    }
+  ],
+  "c-teens-basic-zero-11": [
+    {
+      "label": "Your Nickname",
+      "color": "#EF4444",
+      "prompt": "Do your friends or family have a fun nickname for you?",
+      "es": "¿Tus amigos o familia tienen un apodo divertido para ti?"
+    },
+    {
+      "label": "Social Username",
+      "color": "#F59E0B",
+      "prompt": "What was the very first username or gamer tag you ever created?",
+      "es": "¿Cuál fue el primer nombre de usuario o gamer tag que creaste en tu vida?"
+    },
+    {
+      "label": "Favorite Singer",
+      "color": "#10B981",
+      "prompt": "Who is your favorite singer or streamer, and what letter does their name start with?",
+      "es": "¿Quién es tu cantante o streamer favorito y con qué letra empieza su nombre?"
+    },
+    {
+      "label": "Cool Words",
+      "color": "#3B82F6",
+      "prompt": "What is one English word you think sounds super cool when people say it?",
+      "es": "¿Cuál es una palabra en inglés que te parece que suena súper genial cuando la dicen?"
+    },
+    {
+      "label": "Short Message",
+      "color": "#8B5CF6",
+      "prompt": "When you text friends, do you type full sentences or use funny abbreviations?",
+      "es": "¿Cuando chateas con amigos, escribes oraciones completas o usas abreviaturas graciosas?"
+    },
+    {
+      "label": "Language Goal",
+      "color": "#EC4899",
+      "prompt": "Why do you want to learn English: for gaming, traveling, music, or future studies?",
+      "es": "¿Por qué quieres aprender inglés: para videojuegos, viajar, música o tus estudios?"
+    }
+  ],
+  "c-teens-basic-zero-13": [
+    {
+      "label": "Sunny or Rainy",
+      "color": "#EF4444",
+      "prompt": "Do you prefer bright sunny days for outdoor sports or rainy days for staying in bed?",
+      "es": "¿Prefieres días soleados para salir o días lluviosos para quedarte en la cama?"
+    },
+    {
+      "label": "Today's Sky",
+      "color": "#F59E0B",
+      "prompt": "How is the weather outside your window right now: sunny, cloudy, or raining?",
+      "es": "¿Cómo está el clima afuera de tu ventana en este momento: soleado, nublado o lloviendo?"
+    },
+    {
+      "label": "Cold Weather Vibe",
+      "color": "#10B981",
+      "prompt": "When it gets super cold, do you wear a hoodie or drink hot chocolate?",
+      "es": "¿Cuando hace mucho frío, te pones un buzo con capota o tomas chocolate caliente?"
+    },
+    {
+      "label": "Vacation Climate",
+      "color": "#3B82F6",
+      "prompt": "What is your favorite vacation weather: a warm sunny beach or cool mountain breeze?",
+      "es": "¿Cuál es tu clima favorito para vacaciones: playa soleada y cálida o brisa fresca de montaña?"
+    },
+    {
+      "label": "Rainy Day Activity",
+      "color": "#8B5CF6",
+      "prompt": "What is your favorite thing to do on a thunderstorm afternoon with friends or family?",
+      "es": "¿Qué es lo que más te gusta hacer en una tarde de tormenta con amigos o familia?"
+    },
+    {
+      "label": "Hot Weather Treat",
+      "color": "#EC4899",
+      "prompt": "When it is boiling hot outside, what ice cold drink saves your day?",
+      "es": "¿Cuando hace un calor sofocante afuera, qué bebida bien fría te salva el día?"
+    }
+  ],
+  "c-teens-basic-zero-15": [
+    {
+      "label": "Hair Style",
+      "color": "#EF4444",
+      "prompt": "Do you have short, medium, or long hair, and do you like styling it?",
+      "es": "¿Tienes el cabello corto, mediano o largo, y te gusta peinarlo?"
+    },
+    {
+      "label": "Eye Color",
+      "color": "#F59E0B",
+      "prompt": "What color are your eyes: dark brown, light brown, hazel, or green?",
+      "es": "¿De qué color son tus ojos: café oscuro, café claro, avellana o verdes?"
+    },
+    {
+      "label": "Style Vibe",
+      "color": "#10B981",
+      "prompt": "What kind of clothing style represents you the best: sporty, casual, or streetwear?",
+      "es": "¿Qué estilo de ropa te representa mejor: deportivo, casual o streetwear urbano?"
+    },
+    {
+      "label": "Favorite Accessory",
+      "color": "#3B82F6",
+      "prompt": "Do you wear glasses, a watch, bracelets, or a cool cap every day?",
+      "es": "¿Usas gafas, reloj, manillas o una gorra bacana todos los días?"
+    },
+    {
+      "label": "Height & Sports",
+      "color": "#8B5CF6",
+      "prompt": "Are you tall, medium, or short among your classmates at school?",
+      "es": "¿Eres alto, de estatura media o bajo entre tus compañeros de colegio?"
+    },
+    {
+      "label": "Celebrity Style",
+      "color": "#EC4899",
+      "prompt": "Which famous artist, athlete, or YouTuber has a fashion style you love?",
+      "es": "¿Qué artista, deportista o YouTuber famoso tiene un estilo de moda que te encanta?"
+    }
+  ],
+  "c-teens-basic-zero-16": [
+    {
+      "label": "Biggest Win",
+      "color": "#EF4444",
+      "prompt": "What was the most fun topic or English word you learned in this entire Level 0?",
+      "es": "¿Cuál fue el tema o palabra en inglés más divertida que aprendiste en todo el Nivel 0?"
+    },
+    {
+      "label": "English Confidence",
+      "color": "#F59E0B",
+      "prompt": "How do you feel about speaking English now compared to your very first day?",
+      "es": "¿Cómo te sientes hablando inglés ahora en comparación con tu primer día?"
+    },
+    {
+      "label": "Favorite Hobby",
+      "color": "#10B981",
+      "prompt": "What is your number one hobby that you can now talk about with international friends?",
+      "es": "¿Cuál es tu pasatiempo número uno del que ahora puedes hablar con amigos del mundo?"
+    },
+    {
+      "label": "Next Dream Trip",
+      "color": "#3B82F6",
+      "prompt": "If you could take an airplane anywhere tomorrow, what English-speaking city would you visit?",
+      "es": "¿Si pudieras tomar un avión mañana, qué ciudad de habla inglesa visitarías?"
+    },
+    {
+      "label": "Celebration Plan",
+      "color": "#8B5CF6",
+      "prompt": "How will you celebrate graduating from Teen Level 0 today?",
+      "es": "¿Cómo vas a celebrar graduarte hoy del Nivel 0 de Teens?"
+    },
+    {
+      "label": "Gamer English",
+      "color": "#EC4899",
+      "prompt": "Have you tried playing online games or watching YouTube videos in English yet?",
+      "es": "¿Ya has intentado jugar online o ver videos de YouTube en inglés?"
+    }
+  ],
+  "c-teens-basic-1-1": [
+    {
+      "label": "Best Friend",
+      "color": "#EF4444",
+      "prompt": "What is your best friend's personality like: funny, loyal, quiet, or super energetic?",
+      "es": "¿Cómo es la personalidad de tu mejor amigo: divertido, leal, tranquilo o súper enérgico?"
+    },
+    {
+      "label": "Squad Vibe",
+      "color": "#F59E0B",
+      "prompt": "How many close friends are in your core squad that you hang out with every week?",
+      "es": "¿Cuántos amigos cercanos hay en tu grupo principal con los que sales cada semana?"
+    },
+    {
+      "label": "Introvert or Extrovert",
+      "color": "#10B981",
+      "prompt": "Do you get energy from hanging out with huge crowds or chilling with one good friend?",
+      "es": "¿Te recargas con multitudes de personas o relajándote con un solo buen amigo?"
+    },
+    {
+      "label": "Weekend Hangout",
+      "color": "#3B82F6",
+      "prompt": "Where do you and your friends love spending free time: at the mall, park, or playing games?",
+      "es": "¿Dónde les encanta pasar el tiempo libre a tus amigos y a ti: en el centro comercial, el parque o jugando?"
+    },
+    {
+      "label": "Loyal Friend",
+      "color": "#8B5CF6",
+      "prompt": "What quality do you value most in a friendship: honesty, humor, or trust?",
+      "es": "¿Qué cualidad valoras más en una amistad: la honestidad, el humor o la confianza?"
+    },
+    {
+      "label": "Teammate Vibe",
+      "color": "#EC4899",
+      "prompt": "When you play sports or group games, are you competitive or do you just play for laughs?",
+      "es": "¿Cuando juegas deportes o juegos grupales, eres competitivo o juegas solo para reírte?"
+    }
+  ],
+  "c-teens-basic-1-9": [
+    {
+      "label": "School Commute",
+      "color": "#EF4444",
+      "prompt": "How do you travel to school every morning: walking, on a bike, in a car, or on the bus?",
+      "es": "¿Cómo te vas al colegio cada mañana: caminando, en cicla, en carro o en bus?"
+    },
+    {
+      "label": "Bike Ride",
+      "color": "#F59E0B",
+      "prompt": "Do you like riding a bike or skate around your neighborhood on weekend mornings?",
+      "es": "¿Te gusta montar en cicla o patineta por tu barrio los fines de semana en la mañana?"
+    },
+    {
+      "label": "City Transit",
+      "color": "#10B981",
+      "prompt": "Have you ever traveled on the TransMilenio, Metro, or a cable car in Colombia?",
+      "es": "¿Alguna vez has viajado en TransMilenio, Metro o cable aéreo en Colombia?"
+    },
+    {
+      "label": "Walking Around",
+      "color": "#3B82F6",
+      "prompt": "Do you enjoy walking around your town with headphones listening to your favorite playlist?",
+      "es": "¿Te gusta caminar por tu ciudad con audífonos escuchando tu playlist favorita?"
+    },
+    {
+      "label": "Getting Lost",
+      "color": "#8B5CF6",
+      "prompt": "Have you or your family ever gotten lost in a big city or shopping center?",
+      "es": "¿Alguna vez tú o tu familia se han perdido en una gran ciudad o centro comercial?"
+    },
+    {
+      "label": "Dream Vehicle",
+      "color": "#EC4899",
+      "prompt": "If you could drive any vehicle in the world in the future, what would your dream ride be?",
+      "es": "¿Si pudieras manejar cualquier vehículo del mundo en el futuro, cuál sería el de tus sueños?"
+    }
+  ],
+  "c-teens-basic-2-1": [
+    {
+      "label": "Sanctuary Volunteer",
+      "color": "#EF4444",
+      "prompt": "If you could volunteer for a weekend at a wildlife sanctuary, which animal would you love to care for?",
+      "es": "¿Si pudieras ser voluntario un fin de semana en un refugio, qué animal te encantaría cuidar?"
+    },
+    {
+      "label": "Adopt a Pet",
+      "color": "#F59E0B",
+      "prompt": "Do you currently have a pet at home, or what kind of animal would you love to adopt?",
+      "es": "¿Tienes mascota actualmente en casa o qué tipo de animal te encantaría adoptar?"
+    },
+    {
+      "label": "Wild Safari",
+      "color": "#10B981",
+      "prompt": "Which wild animal would you love to see in person on an African safari: lions, giraffes, or elephants?",
+      "es": "¿Qué animal salvaje te encantaría ver en persona en un safari: leones, jirafas o elefantes?"
+    },
+    {
+      "label": "Animal Rescue",
+      "color": "#3B82F6",
+      "prompt": "Have you ever rescued a street dog, kitten, or lost bird in your neighborhood?",
+      "es": "¿Alguna vez has rescatado a un perrito de la calle, gatito o ave perdida en tu barrio?"
+    },
+    {
+      "label": "Ocean Life",
+      "color": "#8B5CF6",
+      "prompt": "Which sea creature fascinates you the most: playful dolphins, giant whales, or deep sea sharks?",
+      "es": "¿Qué criatura marina te fascina más: delfines juguetones, ballenas gigantes o tiburones?"
+    },
+    {
+      "label": "Creepy Crawlies",
+      "color": "#EC4899",
+      "prompt": "Are you afraid of creepy insects like big spiders and scorpions, or do you find them cool?",
+      "es": "¿Te dan miedo los bichos como arañas gigantes y escorpiones, o te parecen bacanos?"
+    }
+  ],
+  "c-teens-basic-2-4": [
+    {
+      "label": "Dream Career",
+      "color": "#EF4444",
+      "prompt": "What job or career sounds super exciting to you for your future?",
+      "es": "¿Qué trabajo o profesión te suena súper emocionante para tu futuro?"
+    },
+    {
+      "label": "Dream Workplace",
+      "color": "#F59E0B",
+      "prompt": "Would you rather work in a modern tech office, from home in your pajamas, or traveling the world?",
+      "es": "¿Preferirías trabajar en una oficina tech moderna, desde casa en pijama o viajando por el mundo?"
+    },
+    {
+      "label": "Tech or Art",
+      "color": "#10B981",
+      "prompt": "Are you more drawn to creative careers like design and music, or science and engineering?",
+      "es": "¿Te llaman más la atención las carreras creativas como diseño y música, o la ciencia e ingeniería?"
+    },
+    {
+      "label": "Dream Salary",
+      "color": "#3B82F6",
+      "prompt": "What is the very first thing you would buy with your first big paycheck in your life?",
+      "es": "¿Qué es lo primero que te comprarías con tu primer gran sueldo en la vida?"
+    },
+    {
+      "label": "Science & Space",
+      "color": "#8B5CF6",
+      "prompt": "Would you ever want to work as an astronaut exploring space or a marine biologist exploring oceans?",
+      "es": "¿Te gustaría trabajar como astronauta explorando el espacio o biólogo marino explorando océanos?"
+    },
+    {
+      "label": "Entrepreneur Vibe",
+      "color": "#EC4899",
+      "prompt": "Would you prefer starting your own company with friends or working for a famous brand like Google or Nike?",
+      "es": "¿Preferirías montar tu propia empresa con amigos o trabajar para una marca famosa como Google o Nike?"
+    }
+  ],
+  "c-teens-basic-2-6": [
+    {
+      "label": "Strict Rules",
+      "color": "#EF4444",
+      "prompt": "What is one school rule that you think is completely unnecessary or annoying?",
+      "es": "¿Cuál es una regla escolar que te parece completamente innecesaria o cansona?"
+    },
+    {
+      "label": "Phone Policy",
+      "color": "#F59E0B",
+      "prompt": "Do your teachers let you use your smartphone during breaks, or must you keep it in your backpack?",
+      "es": "¿Tus profesores te dejan usar el celular en los descansos o debes guardarlo en la maleta?"
+    },
+    {
+      "label": "Exam Advice",
+      "color": "#10B981",
+      "prompt": "What is your personal secret tip to stay calm and pass tough exams?",
+      "es": "¿Cuál es tu tip secreto personal para mantener la calma y pasar exámenes difíciles?"
+    },
+    {
+      "label": "Making Friends",
+      "color": "#3B82F6",
+      "prompt": "If a new student asks for your advice on their first day of school, what tip do you give them?",
+      "es": "¿Si un estudiante nuevo te pide un consejo en su primer día de colegio, qué tip le das?"
+    },
+    {
+      "label": "Morning Habit",
+      "color": "#8B5CF6",
+      "prompt": "What is one healthy habit you know you should do every morning before class?",
+      "es": "¿Cuál es un hábito saludable que sabes que deberías hacer cada mañana antes de clase?"
+    },
+    {
+      "label": "Lab Safety",
+      "color": "#EC4899",
+      "prompt": "Have you ever done a crazy science experiment at school that almost caused a disaster?",
+      "es": "¿Alguna vez has hecho un experimento de ciencias loco en el colegio que casi causa un desastre?"
+    }
+  ],
+  "c-teens-basic-2-10": [
+    {
+      "label": "Wild Superpower",
+      "color": "#EF4444",
+      "prompt": "If you could borrow the super ability of any wild animal for 24 hours, what would you choose?",
+      "es": "¿Si pudieras pedir prestada la habilidad de cualquier animal salvaje por 24 horas, cuál elegirías?"
+    },
+    {
+      "label": "Future Podcast",
+      "color": "#F59E0B",
+      "prompt": "If you started a teen podcast tomorrow with your best friend, what would you talk about?",
+      "es": "¿Si empezaras un podcast juvenil mañana con tu mejor amigo, de qué hablarían?"
+    },
+    {
+      "label": "Teen Life Hacks",
+      "color": "#10B981",
+      "prompt": "What is the best piece of life advice an older friend or family member ever gave you?",
+      "es": "¿Cuál es el mejor consejo de vida que un amigo mayor o familiar te ha dado?"
+    },
+    {
+      "label": "Dream Vacation",
+      "color": "#3B82F6",
+      "prompt": "If money were not an issue, what country would you visit with your friends next summer?",
+      "es": "¿Si el dinero no fuera un problema, qué país visitarías con tus amigos el próximo verano?"
+    },
+    {
+      "label": "Best Level 2 Win",
+      "color": "#8B5CF6",
+      "prompt": "What was your favorite topic or challenge you conquered in Level 2?",
+      "es": "¿Cuál fue tu tema o reto favorito que conquistaste en este Nivel 2?"
+    },
+    {
+      "label": "Celebration Mode",
+      "color": "#EC4899",
+      "prompt": "How are you going to celebrate finishing this milestone level today?",
+      "es": "¿Cómo vas a celebrar haber terminado este nivel hoy?"
+    }
+  ],
+  "c-teens-basic-3-1": [
+    {
+      "label": "Phone Battle",
+      "color": "#EF4444",
+      "prompt": "iPhone vs Android: which one do you personally think is better and why?",
+      "es": "iPhone vs Android: ¿cuál crees personalmente que es mejor y por qué?"
+    },
+    {
+      "label": "Gaming Platform",
+      "color": "#F59E0B",
+      "prompt": "Do you prefer gaming on a PC, a console like PlayStation, or your smartphone?",
+      "es": "¿Prefieres jugar en PC, consola como PlayStation o en tu celular?"
+    },
+    {
+      "label": "Social Apps",
+      "color": "#10B981",
+      "prompt": "Which app is more fun for you: TikTok, Instagram Reels, or YouTube?",
+      "es": "¿Qué app te parece más entretenida: TikTok, Instagram Reels o YouTube?"
+    },
+    {
+      "label": "Headphones Dilemma",
+      "color": "#3B82F6",
+      "prompt": "Do you like wireless earbuds or big over-ear headphones when you listen to music?",
+      "es": "¿Te gustan audífonos inalámbricos pequeños o audífonos grandes de diadema al escuchar música?"
+    },
+    {
+      "label": "Tech Speed",
+      "color": "#8B5CF6",
+      "prompt": "What annoys you more: a dead phone battery or super slow Wi-Fi?",
+      "es": "¿Qué te da más rabia: quedarte sin batería en el celular o un Wi-Fi súper lento?"
+    },
+    {
+      "label": "Future Gadget",
+      "color": "#EC4899",
+      "prompt": "What futuristic gadget would you love to own: VR goggles or a flying skateboard?",
+      "es": "¿Qué aparato futurista te encantaría tener: gafas de realidad virtual o una patineta voladora?"
+    }
+  ],
+  "c-teens-basic-3-2": [
+    {
+      "label": "Extreme Records",
+      "color": "#EF4444",
+      "prompt": "What Guinness World Record would you love to try breaking with your friends?",
+      "es": "¿Qué Récord Guinness mundial te encantaría intentar romper con tus amigos?"
+    },
+    {
+      "label": "Best Athlete",
+      "color": "#F59E0B",
+      "prompt": "Who is the greatest athlete of all time in your opinion: Messi, Ronaldo, LeBron, or someone else?",
+      "es": "¿Quién es el mejor deportista de todos los tiempos en tu opinión: Messi, Ronaldo, LeBron u otro?"
+    },
+    {
+      "label": "Rollercoasters",
+      "color": "#10B981",
+      "prompt": "What is the tallest, fastest, or craziest amusement park ride you have ever ridden?",
+      "es": "¿Cuál es la atracción de parque más alta, rápida o loca a la que te has subido?"
+    },
+    {
+      "label": "Peak Food",
+      "color": "#3B82F6",
+      "prompt": "What is the tastiest meal you have ever eaten in your entire life?",
+      "es": "¿Cuál es la comida más deliciosa que has probado en toda tu vida?"
+    },
+    {
+      "label": "Scariest Challenge",
+      "color": "#8B5CF6",
+      "prompt": "What is the most extreme or daring thing you have ever dared to do?",
+      "es": "¿Qué es lo más extremo o atrevido que te has animado a hacer?"
+    },
+    {
+      "label": "Best Video Game",
+      "color": "#EC4899",
+      "prompt": "What is the greatest video game you have ever played in terms of graphics and fun?",
+      "es": "¿Cuál es el mejor videojuego que has jugado en cuanto a gráficos y diversión?"
+    }
+  ],
+  "c-teens-basic-3-4": [
+    {
+      "label": "Weekend Plans",
+      "color": "#EF4444",
+      "prompt": "What are you going to do this upcoming weekend with your friends or family?",
+      "es": "¿Qué vas a hacer este próximo fin de semana con tus amigos o familia?"
+    },
+    {
+      "label": "Next Movie",
+      "color": "#F59E0B",
+      "prompt": "What movie or new series are you planning to watch soon?",
+      "es": "¿Qué película o serie nueva planeas ver pronto?"
+    },
+    {
+      "label": "Vacation Forecast",
+      "color": "#10B981",
+      "prompt": "Where are you going to travel on your next school vacation?",
+      "es": "¿A dónde vas a viajar en tus próximas vacaciones del colegio?"
+    },
+    {
+      "label": "Shopping Goal",
+      "color": "#3B82F6",
+      "prompt": "What is the next piece of clothing, sneakers, or gadget you are going to buy?",
+      "es": "¿Cuál es la próxima prenda, tenis o aparato que te vas a comprar?"
+    },
+    {
+      "label": "Dinner Plans",
+      "color": "#8B5CF6",
+      "prompt": "What are you going to have for dinner tonight after your classes?",
+      "es": "¿Qué vas a cenar esta noche después de tus clases?"
+    },
+    {
+      "label": "Future Goal",
+      "color": "#EC4899",
+      "prompt": "What new talent or sport are you going to learn before the end of this year?",
+      "es": "¿Qué nuevo talento o deporte vas a aprender antes de que termine este año?"
+    }
+  ],
+  "c-teens-basic-3-5": [
+    {
+      "label": "Yesterday 8 PM",
+      "color": "#EF4444",
+      "prompt": "What were you doing yesterday at 8 PM: having dinner, doing homework, or gaming?",
+      "es": "¿Qué estabas haciendo ayer a las 8 PM: cenando, haciendo tareas o jugando videojuegos?"
+    },
+    {
+      "label": "Power Outage",
+      "color": "#F59E0B",
+      "prompt": "What were you doing the last time the electricity suddenly went out in your home?",
+      "es": "¿Qué estabas haciendo la última vez que se fue la luz de repente en tu casa?"
+    },
+    {
+      "label": "Sunday Afternoon",
+      "color": "#10B981",
+      "prompt": "What were you doing last Sunday afternoon: relaxing, hanging out with friends, or sleeping?",
+      "es": "¿Qué estabas haciendo el domingo pasado por la tarde: descansando, con amigos o durmiendo?"
+    },
+    {
+      "label": "Secret Gaming",
+      "color": "#3B82F6",
+      "prompt": "Have you ever been caught gaming when you were supposed to be studying?",
+      "es": "¿Alguna vez te han pillado jugando cuando se suponía que debías estar estudiando?"
+    },
+    {
+      "label": "Rainy Moment",
+      "color": "#8B5CF6",
+      "prompt": "What were you doing when the last heavy rainstorm hit your city?",
+      "es": "¿Qué estabas haciendo cuando cayó el último aguacero fuerte en tu ciudad?"
+    },
+    {
+      "label": "Late Night Scroll",
+      "color": "#EC4899",
+      "prompt": "Were you scrolling on social media late last night, or did you sleep early?",
+      "es": "¿Estabas scrolleando en redes anoche hasta tarde o te dormiste temprano?"
+    }
+  ],
+  "c-teens-basic-3-6": [
+    {
+      "label": "Funny Accidents",
+      "color": "#EF4444",
+      "prompt": "Have you ever tripped or dropped your phone while you were looking at something else?",
+      "es": "¿Alguna vez te has tropezado o se te ha caído el celular mientras mirabas otra cosa?"
+    },
+    {
+      "label": "Plot Twist Day",
+      "color": "#F59E0B",
+      "prompt": "Tell me about a day in your life that started completely normal and ended with a crazy surprise!",
+      "es": "¿Cuéntame sobre un día en tu vida que empezó normal y terminó con una sorpresa loca!"
+    },
+    {
+      "label": "Sudden Rain",
+      "color": "#10B981",
+      "prompt": "Were you ever walking outside without an umbrella when it suddenly started pouring rain?",
+      "es": "¿Alguna vez estabas caminando sin paraguas cuando de repente empezó a llover a cántaros?"
+    },
+    {
+      "label": "Surprise Reunion",
+      "color": "#3B82F6",
+      "prompt": "Have you ever bumped into a school friend while you were walking in an unexpected place?",
+      "es": "¿Alguna vez te cruzaste a un amigo del colegio mientras caminabas en un lugar inesperado?"
+    },
+    {
+      "label": "Spilled Drink",
+      "color": "#8B5CF6",
+      "prompt": "What were you doing the last time you accidentally knocked over a cup of soda or juice?",
+      "es": "¿Qué estabas haciendo la última vez que regaste sin querer un vaso de gaseosa o jugo?"
+    },
+    {
+      "label": "Scare Pranks",
+      "color": "#EC4899",
+      "prompt": "Has a friend ever jumped out to scare you while you were quietly walking into a room?",
+      "es": "¿Algún amigo te ha asustado saltando de repente mientras entrabas tranquilo a un cuarto?"
+    }
+  ],
+  "c-teens-basic-3-7": [
+    {
+      "label": "Inspiring Idol",
+      "color": "#EF4444",
+      "prompt": "Who is a singer, athlete, or creator whose life story inspires you the most?",
+      "es": "¿Quién es un cantante, atleta o creador cuya historia de vida te inspira más?"
+    },
+    {
+      "label": "Colombian Pride",
+      "color": "#F59E0B",
+      "prompt": "Which Colombian icon do you admire: Shakira, Karol G, Luis Díaz, or Egan Bernal?",
+      "es": "¿A qué ícono colombiano admiras: Shakira, Karol G, Luis Díaz o Egan Bernal?"
+    },
+    {
+      "label": "Childhood Dream",
+      "color": "#10B981",
+      "prompt": "What did you dream of becoming when you were five or six years old?",
+      "es": "¿Qué soñabas ser cuando tenías cinco o seis años?"
+    },
+    {
+      "label": "Creative Talent",
+      "color": "#3B82F6",
+      "prompt": "If you could master any artistic skill overnight, would you choose singing, drawing, or acting?",
+      "es": "¿Si pudieras dominar un talento artístico de la noche a la mañana, elegirías cantar, dibujar o actuar?"
+    },
+    {
+      "label": "Overcoming Odds",
+      "color": "#8B5CF6",
+      "prompt": "Tell me about a time you practiced hard and succeeded at something that seemed very difficult!",
+      "es": "¿Cuéntame de una ocasión en que practicaste duro y lograste algo que parecía muy difícil!"
+    },
+    {
+      "label": "Legacy Goal",
+      "color": "#EC4899",
+      "prompt": "What is something memorable you would love people to know you for in the future?",
+      "es": "¿Por qué cosa memorable te encantaría que la gente te reconociera en el futuro?"
+    }
+  ],
+  "c-teens-basic-3-10": [
+    {
+      "label": "Best Trip Memory",
+      "color": "#EF4444",
+      "prompt": "What was the most exciting trip you ever took in the past with your family or friends?",
+      "es": "¿Cuál fue el viaje más emocionante que hiciste en el pasado con tu familia o amigos?"
+    },
+    {
+      "label": "Memorable Gift",
+      "color": "#F59E0B",
+      "prompt": "What was the coolest birthday gift you ever received in your life?",
+      "es": "¿Cuál fue el regalo de cumpleaños más bacano que recibiste en tu vida?"
+    },
+    {
+      "label": "Favorite Meal Ever",
+      "color": "#10B981",
+      "prompt": "What was the tastiest meal you ate last week: home food, burgers, or pizza?",
+      "es": "¿Cuál fue la comida más rica que comiste la semana pasada: comida de casa, hamburguesas o pizza?"
+    },
+    {
+      "label": "First Movie Theater",
+      "color": "#3B82F6",
+      "prompt": "Do you remember the first movie you ever watched in a cinema on the big screen?",
+      "es": "¿Recuerdas la primera película que viste en un cine en pantalla gigante?"
+    },
+    {
+      "label": "Past Weekend Win",
+      "color": "#8B5CF6",
+      "prompt": "What was the most fun thing you did last Saturday with your squad?",
+      "es": "¿Qué fue lo más divertido que hiciste el sábado pasado con tu parche?"
+    },
+    {
+      "label": "Level 3 Victory",
+      "color": "#EC4899",
+      "prompt": "How do you feel right now having mastered so much English storytelling in Level 3?",
+      "es": "¿Cómo te sientes ahora mismo habiendo dominado tantas historias en inglés en el Nivel 3?"
+    }
+  ],
+  "c-teens-basic-4-1": [
+    {
+      "label": "Music Beats",
+      "color": "#EF4444",
+      "prompt": "In your opinion, which music artist currently produces the best beats and tracks?",
+      "es": "En tu opinión, ¿qué artista musical produce actualmente los mejores ritmos y canciones?"
+    },
+    {
+      "label": "Movie Debate",
+      "color": "#F59E0B",
+      "prompt": "Do you believe Marvel superhero movies are still exciting, or have they become boring?",
+      "es": "¿Crees que las películas de Marvel siguen siendo emocionantes o ya se volvieron aburridas?"
+    },
+    {
+      "label": "Homework Balance",
+      "color": "#10B981",
+      "prompt": "Do you think schools should replace traditional written homework with practical group projects?",
+      "es": "¿Crees que los colegios deberían cambiar las tareas escritas por proyectos prácticos en grupo?"
+    },
+    {
+      "label": "Social Media Vibes",
+      "color": "#3B82F6",
+      "prompt": "In your view, does Instagram or TikTok have a better creative vibe for teenagers?",
+      "es": "¿A tu parecer, Instagram o TikTok tiene una vibra creativa mejor para los jóvenes?"
+    },
+    {
+      "label": "Gaming Passion",
+      "color": "#8B5CF6",
+      "prompt": "What is your honest opinion on mobile gaming compared to gaming on a PC or PlayStation?",
+      "es": "¿Cuál es tu opinión sincera sobre los juegos de celular comparados con jugar en PC o PlayStation?"
+    },
+    {
+      "label": "Street Style",
+      "color": "#EC4899",
+      "prompt": "Do you believe expensive branded sneakers are worth the money, or is comfort more important?",
+      "es": "¿Crees que los tenis de marca cara valen la pena o es más importante la comodidad?"
+    }
+  ],
+  "c-teens-basic-4-2": [
+    {
+      "label": "Night Owl Fix",
+      "color": "#EF4444",
+      "prompt": "What advice would you give a classmate who cannot sleep because they scroll TikTok until 2 AM?",
+      "es": "¿Qué consejo le darías a un compañero que no puede dormir por scrollear en TikTok hasta las 2 AM?"
+    },
+    {
+      "label": "Procrastination",
+      "color": "#F59E0B",
+      "prompt": "What would you tell your best friend if they always leave their big school presentations for Sunday midnight?",
+      "es": "¿Qué le dirías a tu mejor amigo si siempre deja sus exposiciones importantes para el domingo a medianoche?"
+    },
+    {
+      "label": "New Student Tips",
+      "color": "#10B981",
+      "prompt": "What advice do you have for a new shy student who wants to make friends in your classroom?",
+      "es": "¿Qué consejo tienes para un estudiante nuevo tímido que quiere hacer amigos en tu salón?"
+    },
+    {
+      "label": "Daily Energy Hack",
+      "color": "#3B82F6",
+      "prompt": "What healthy habit should you adopt to have maximum energy during boring morning classes?",
+      "es": "¿Qué hábito saludable deberías adoptar para tener máxima energía en las clases aburridas de la mañana?"
+    },
+    {
+      "label": "Exam Stress",
+      "color": "#8B5CF6",
+      "prompt": "How do you advise someone to calm down when they feel super nervous before a math test?",
+      "es": "¿Cómo le aconsejas a alguien calmarse cuando siente muchos nervios antes de un examen de matemáticas?"
+    },
+    {
+      "label": "Friend Drama",
+      "color": "#EC4899",
+      "prompt": "What do you do when you and a close friend have a silly disagreement over a video game?",
+      "es": "¿Qué haces tú cuando tú y un amigo cercano tienen un desacuerdo bobo por un videojuego?"
+    }
+  ],
+  "c-teens-basic-4-3": [
+    {
+      "label": "Screen Time Effect",
+      "color": "#EF4444",
+      "prompt": "What happens to your mood and eyes if you stare at your smartphone screen for six hours straight?",
+      "es": "¿Qué le pasa a tu estado de ánimo y a tus ojos si miras la pantalla del celular por 6 horas seguidas?"
+    },
+    {
+      "label": "Coffee or Energy",
+      "color": "#F59E0B",
+      "prompt": "If you drink an energy drink or sugary soda late in the evening, do you stay awake all night?",
+      "es": "¿Si tomas una bebida energizante o gaseosa en la noche, te quedas despierto toda la noche?"
+    },
+    {
+      "label": "Rainy Afternoon",
+      "color": "#10B981",
+      "prompt": "When heavy rain starts falling in your city, do you automatically feel like eating something sweet?",
+      "es": "¿Cuando empieza a llover fuerte en tu ciudad, te dan ganas automáticas de comer algo dulce?"
+    },
+    {
+      "label": "Skipping Breakfast",
+      "color": "#3B82F6",
+      "prompt": "What happens to your concentration at school if you leave home without eating breakfast?",
+      "es": "¿Qué le pasa a tu concentración en el colegio si sales de casa sin desayunar?"
+    },
+    {
+      "label": "Sports Sweat",
+      "color": "#8B5CF6",
+      "prompt": "If you train hard in gym or soccer practice, how do you reward yourself afterwards?",
+      "es": "¿Si entrenas duro en el gimnasio o en fútbol, cómo te premias después?"
+    },
+    {
+      "label": "Music & Focus",
+      "color": "#EC4899",
+      "prompt": "If you listen to instrumental lo-fi beats while studying, does it help you focus better?",
+      "es": "¿Si escuchas ritmos lo-fi instrumentales mientras estudias, te ayuda a concentrarte mejor?"
+    }
+  ],
+  "c-teens-basic-4-4": [
+    {
+      "label": "Audio vs Text",
+      "color": "#EF4444",
+      "prompt": "Do you prefer sending five-minute voice notes on WhatsApp or typing quick text messages?",
+      "es": "¿Prefieres mandar audios de cinco minutos por WhatsApp o escribir mensajes de texto rápidos?"
+    },
+    {
+      "label": "Favorite Emojis",
+      "color": "#F59E0B",
+      "prompt": "What are your top three most used emojis on your keyboard right now?",
+      "es": "¿Cuáles son tus tres emojis más usados en tu teclado ahora mismo?"
+    },
+    {
+      "label": "Online Acronyms",
+      "color": "#10B981",
+      "prompt": "Do you and your friends use slang like LOL, POV, or TBH when texting in Spanish or English?",
+      "es": "¿Tus amigos y tú usan expresiones como LOL, POV o TBH cuando chatean?"
+    },
+    {
+      "label": "Left on Read",
+      "color": "#3B82F6",
+      "prompt": "How do you feel when someone leaves your message on read with blue checkmarks for hours?",
+      "es": "¿Qué sientes cuando alguien te deja en visto con el chulito azul durante horas?"
+    },
+    {
+      "label": "Group Chat Chaos",
+      "color": "#8B5CF6",
+      "prompt": "Are you an active chatter in school WhatsApp groups, or do you keep notifications muted?",
+      "es": "¿Participas mucho en los grupos de WhatsApp del colegio o mantienes las notificaciones silenciadas?"
+    },
+    {
+      "label": "Meme Sharing",
+      "color": "#EC4899",
+      "prompt": "What is your favorite type of meme to send your best friend to make them laugh out loud?",
+      "es": "¿Qué tipo de meme te gusta mandarle a tu mejor amigo para hacerlo reír a carcajadas?"
+    }
+  ],
+  "c-teens-basic-4-6": [
+    {
+      "label": "Lottery Millions",
+      "color": "#EF4444",
+      "prompt": "If you won ten million dollars tomorrow, what is the very first thing you would buy for yourself?",
+      "es": "¿Si te ganaras diez millones de dólares mañana, qué sería lo primero que te comprarías?"
+    },
+    {
+      "label": "Chosen Superpower",
+      "color": "#F59E0B",
+      "prompt": "If you could pick one superpower between invisibility, flying, or teleportation, which would you pick?",
+      "es": "¿Si pudieras elegir un superpoder entre invisibilidad, volar o teletransportación, cuál escogerías?"
+    },
+    {
+      "label": "Time Machine",
+      "color": "#10B981",
+      "prompt": "If you had a time machine, would you travel back to meet dinosaurs or travel into the year 3000?",
+      "es": "¿Si tuvieras una máquina del tiempo, viajarías al pasado con dinosaurios o al año 3000?"
+    },
+    {
+      "label": "Zombie Apocalypse",
+      "color": "#3B82F6",
+      "prompt": "If a zombie outbreak happened right now, which two school friends would you recruit to survive?",
+      "es": "¿Si hubiera un apocalipsis zombi ahora, a cuáles dos amigos del colegio reclutarías para sobrevivir?"
+    },
+    {
+      "label": "Celebrity Dinner",
+      "color": "#8B5CF6",
+      "prompt": "If you could have dinner with any living celebrity tonight, who would you invite?",
+      "es": "¿Si pudieras cenar con cualquier celebridad viva esta noche, a quién invitarías?"
+    },
+    {
+      "label": "Invisibility Prank",
+      "color": "#EC4899",
+      "prompt": "If you were completely invisible for one hour, what harmless prank would you pull on your squad?",
+      "es": "¿Si fueras invisible por una hora, qué broma inofensiva le harías a tu parche?"
+    }
+  ],
+  "c-teens-basic-4-7": [
+    {
+      "label": "Lost in Backpack",
+      "color": "#EF4444",
+      "prompt": "Have you ever lost something super important inside the mysterious bottom of your school backpack?",
+      "es": "¿Alguna vez has perdido algo súper importante en el fondo misterioso de tu maleta escolar?"
+    },
+    {
+      "label": "Mysterious Noises",
+      "color": "#F59E0B",
+      "prompt": "When you hear a weird noise in your house at night, do you investigate or hide under blankets?",
+      "es": "¿Cuando escuchas un ruido raro en tu casa de noche, vas a investigar o te tapas con las cobijas?"
+    },
+    {
+      "label": "Unexpected Gift",
+      "color": "#10B981",
+      "prompt": "If an anonymous package arrived at your door with your name on it, would you open it immediately?",
+      "es": "¿Si llegara un paquete anónimo a tu puerta con tu nombre, lo abrirías de inmediato?"
+    },
+    {
+      "label": "Detective Game",
+      "color": "#3B82F6",
+      "prompt": "Do you enjoy playing detective mystery games like Among Us or solving mystery escape rooms?",
+      "es": "¿Te gustan los juegos de detectives y misterio como Among Us o salas de escape?"
+    },
+    {
+      "label": "Secret Talent",
+      "color": "#8B5CF6",
+      "prompt": "Is there someone in your classroom who has an unexpected secret talent nobody knew about?",
+      "es": "¿Hay alguien en tu salón que tenga un talento secreto inesperado que nadie conocía?"
+    },
+    {
+      "label": "Weird Coincidence",
+      "color": "#EC4899",
+      "prompt": "Have you ever thought about someone, and literally seconds later they texted or called you?",
+      "es": "¿Alguna vez pensaste en alguien y literalmente segundos después te escribió o te llamó?"
+    }
+  ],
+  "c-teens-basic-4-8": [
+    {
+      "label": "Gaming Fair Play",
+      "color": "#EF4444",
+      "prompt": "What do you think of players who use cheat codes or aimbots in competitive online games?",
+      "es": "¿Qué opinas de los jugadores que usan trampas o hacks en juegos online competitivos?"
+    },
+    {
+      "label": "Referee Call",
+      "color": "#F59E0B",
+      "prompt": "Have you ever played a soccer or basketball match where the referee made a totally unfair decision?",
+      "es": "¿Alguna vez has jugado un partido de fútbol o básquet donde el árbitro pitó algo súper injusto?"
+    },
+    {
+      "label": "Rage Quitting",
+      "color": "#10B981",
+      "prompt": "Have you ever felt so frustrated during a video game match that you turned off the console?",
+      "es": "¿Alguna vez te dio tanta rabia en una partida de videojuegos que apagaste la consola?"
+    },
+    {
+      "label": "Winning vs Fun",
+      "color": "#3B82F6",
+      "prompt": "When you play tournaments with friends, is winning the trophy everything, or just having fun?",
+      "es": "¿Cuando juegas torneos con amigos, ganar el trofeo lo es todo o solo divertirse?"
+    },
+    {
+      "label": "Strict Coach",
+      "color": "#8B5CF6",
+      "prompt": "Do you prefer a friendly, relaxed sports coach or a super strict coach who demands perfection?",
+      "es": "¿Prefieres un entrenador deportivo amigable y relajado o uno súper estricto y exigente?"
+    },
+    {
+      "label": "Celebration Dance",
+      "color": "#EC4899",
+      "prompt": "What is your signature victory celebration move when your team wins an epic game?",
+      "es": "¿Cuál es tu celebración característica cuando tu equipo gana un partido épico?"
+    }
+  ],
+  "c-teens-basic-4-9": [
+    {
+      "label": "Emailing Teachers",
+      "color": "#EF4444",
+      "prompt": "Do you feel nervous when you have to write a formal email to a school teacher or principal?",
+      "es": "¿Te sientes nervioso cuando tienes que redactar un correo formal a un profe o a la rectora?"
+    },
+    {
+      "label": "Professional Username",
+      "color": "#F59E0B",
+      "prompt": "Do you use a professional email address for school or still use your funny gamer nickname?",
+      "es": "¿Usas un correo formal para el colegio o todavía usas tu apodo gamer chistoso?"
+    },
+    {
+      "label": "Texting Parents",
+      "color": "#10B981",
+      "prompt": "How do you text your parents when you need permission to go out: sweet and formal, or casual?",
+      "es": "¿Cómo le escribes a tus papás cuando necesitas permiso para salir: formal y cariñoso o casual?"
+    },
+    {
+      "label": "Greeting Style",
+      "color": "#3B82F6",
+      "prompt": "When you start a formal message, what greeting do you like using: 'Dear', 'Hello', or 'Good day'?",
+      "es": "¿Cuando comienzas un mensaje formal, qué saludo te gusta usar: 'Apreciado', 'Hola' o 'Buen día'?"
+    },
+    {
+      "label": "Apology Message",
+      "color": "#8B5CF6",
+      "prompt": "If you arrive late to an important meeting or class, how do you politely apologize in writing?",
+      "es": "¿Si llegas tarde a una clase o reunión importante, cómo te disculpas educadamente por escrito?"
+    },
+    {
+      "label": "Voice vs Email",
+      "color": "#EC4899",
+      "prompt": "Would you rather send a two-minute formal audio explanation or write a polished four-line email?",
+      "es": "¿Preferirías mandar un audio formal de dos minutos o escribir un correo impecable de cuatro líneas?"
+    }
+  ],
+  "c-teens-inter-3": [
+    {
+      "label": "Strange Coincidence",
+      "color": "#EF4444",
+      "prompt": "Have you ever experienced a strange coincidence that made you think: 'This can't be real'?",
+      "es": "¿Alguna vez viviste una coincidencia tan extraña que pensaste: 'Esto no puede ser real'?"
+    },
+    {
+      "label": "Mystery Clues",
+      "color": "#F59E0B",
+      "prompt": "If you found an abandoned vintage diary on a park bench, what would you think happened?",
+      "es": "¿Si encontraras un diario antiguo abandonado en una banca de parque, qué deducirías que pasó?"
+    },
+    {
+      "label": "Late Friend",
+      "color": "#10B981",
+      "prompt": "If your best friend is one hour late and their phone is off, what is your first deduction?",
+      "es": "¿Si tu mejor amigo llega una hora tarde y tiene el celular apagado, qué es lo primero que piensas?"
+    },
+    {
+      "label": "Urban Legends",
+      "color": "#3B82F6",
+      "prompt": "Is there a famous mysterious legend or haunted house story in your town or school?",
+      "es": "¿Hay alguna leyenda misteriosa o historia de casa embrujada famosa en tu ciudad o colegio?"
+    },
+    {
+      "label": "Unexplained Photo",
+      "color": "#8B5CF6",
+      "prompt": "Have you ever taken a photo where a weird reflection or shadow looked like a ghost?",
+      "es": "¿Alguna vez tomaste una foto donde un reflejo o sombra extraña parecía un fantasma?"
+    },
+    {
+      "label": "Sherlock Instinct",
+      "color": "#EC4899",
+      "prompt": "Are you good at guessing the killer or plot twist before the end of a mystery movie?",
+      "es": "¿Eres bueno adivinando al culpable o el giro inesperado antes de que termine una película de misterio?"
+    }
+  ],
+  "c-teens-inter-4": [
+    {
+      "label": "Different School",
+      "color": "#EF4444",
+      "prompt": "If your family had enrolled you in a different school, how would your friend circle be different?",
+      "es": "¿Si tu familia te hubiera matriculado en otro colegio, cómo sería de diferente tu grupo de amigos?"
+    },
+    {
+      "label": "World Without Internet",
+      "color": "#F59E0B",
+      "prompt": "If the internet had never been invented, what hobbies do you think you would have today?",
+      "es": "¿Si internet nunca se hubiera inventado, qué pasatiempos crees que tendrías hoy?"
+    },
+    {
+      "label": "Past Regret",
+      "color": "#10B981",
+      "prompt": "What is one funny or silly decision from your past that you wish you could undo?",
+      "es": "¿Cuál es una decisión chistosa o boba de tu pasado que desearías poder cambiar?"
+    },
+    {
+      "label": "Alternate Talent",
+      "color": "#3B82F6",
+      "prompt": "If you had started practicing music or martial arts as a young child, what would you be good at now?",
+      "es": "¿Si hubieras empezado a practicar música o artes marciales de niño, en qué serías bueno ahora?"
+    },
+    {
+      "label": "Historic Meeting",
+      "color": "#8B5CF6",
+      "prompt": "If you could change the outcome of one historic sports match in Colombian history, which one?",
+      "es": "¿Si pudieras cambiar el resultado de un partido histórico del deporte colombiano, cuál sería?"
+    },
+    {
+      "label": "Best Past Choice",
+      "color": "#EC4899",
+      "prompt": "What is the best personal choice you have made in the last two years that paid off big time?",
+      "es": "¿Cuál es la mejor decisión personal que has tomado en los últimos dos años que dio grandes frutos?"
+    }
+  ],
+  "c-teens-inter-5": [
+    {
+      "label": "AI in Homework",
+      "color": "#EF4444",
+      "prompt": "Do you believe using ChatGPT for school assignments helps students learn or makes them lazy?",
+      "es": "¿Crees que usar ChatGPT para tareas ayuda a aprender o vuelve perezosos a los estudiantes?"
+    },
+    {
+      "label": "School Uniforms",
+      "color": "#F59E0B",
+      "prompt": "Do you think school uniforms promote equality, or should students express themselves in streetwear?",
+      "es": "¿Crees que el uniforme promueve la igualdad o los estudiantes deberían expresarse con su ropa?"
+    },
+    {
+      "label": "Social Media Age",
+      "color": "#10B981",
+      "prompt": "Do you agree or disagree that social media should have a strict age minimum of 16 years?",
+      "es": "¿Estás de acuerdo o en desacuerdo con que las redes sociales tengan una edad mínima de 16 años?"
+    },
+    {
+      "label": "Esports in Olympics",
+      "color": "#3B82F6",
+      "prompt": "Do you think competitive gaming like League of Legends or Valorant should be in your Olympic Games?",
+      "es": "¿Crees que los videojuegos competitivos como League of Legends o Valorant deberían estar en tus Juegos Olímpicos?"
+    },
+    {
+      "label": "Four-Day Week",
+      "color": "#8B5CF6",
+      "prompt": "Would a 4-day school week with longer weekends improve your academic focus and mental health?",
+      "es": "¿Una semana escolar de 4 días con fines de semana más largos mejoraría tu enfoque y salud mental?"
+    },
+    {
+      "label": "Virtual vs Classroom",
+      "color": "#EC4899",
+      "prompt": "Do you learn faster in traditional in-person classrooms or through interactive digital learning?",
+      "es": "¿Aprendes más rápido en clases presenciales tradicionales o con aprendizaje digital interactivo?"
+    }
+  ],
+  "c-teens-inter-6": [
+    {
+      "label": "Podcast Theme",
+      "color": "#EF4444",
+      "prompt": "If you created your own podcast tomorrow, what topic would you dedicate it to?",
+      "es": "¿Si crearas tu propio podcast mañana, a qué tema se lo dedicarías?"
+    },
+    {
+      "label": "Dream Guest",
+      "color": "#F59E0B",
+      "prompt": "Who is the number one creator, athlete, or artist you would love to interview on your show?",
+      "es": "¿Quién es el creador, deportista o artista número uno que te encantaría entrevistar en tu programa?"
+    },
+    {
+      "label": "Catchy Podcast Name",
+      "color": "#10B981",
+      "prompt": "What catchy, cool name would you give your podcast to attract thousands of teen listeners?",
+      "es": "¿Qué nombre llamativo le pondrías a tu podcast para atraer a miles de oyentes jóvenes?"
+    },
+    {
+      "label": "Studio Setup",
+      "color": "#3B82F6",
+      "prompt": "Would you rather record your episodes in a professional studio or in a cozy bedroom with neon lights?",
+      "es": "¿Preferirías grabar en un estudio profesional o en una habitación acogedora con luces de neón?"
+    },
+    {
+      "label": "Difficult Questions",
+      "color": "#8B5CF6",
+      "prompt": "As an interviewer, do you prefer asking fun casual questions or deep philosophical questions?",
+      "es": "¿Como entrevistador, prefieres hacer preguntas casuales divertidas o preguntas filosóficas profundas?"
+    },
+    {
+      "label": "Podcast Intro Hook",
+      "color": "#EC4899",
+      "prompt": "How would you deliver an energetic 10-second welcome hook to kick off your premiere episode?",
+      "es": "¿Cómo darías una intro energética de 10 segundos para arrancar tu primer episodio?"
+    }
+  ],
+  "c-teens-inter-8": [
+    {
+      "label": "Turned Out Great",
+      "color": "#EF4444",
+      "prompt": "Tell me about a day in your life that started like a complete mess but turned out to be an awesome memory!",
+      "es": "¿Cuéntame sobre un día en tu vida que empezó como un desastre pero terminó siendo un recuerdo genial!"
+    },
+    {
+      "label": "Giving Up Never",
+      "color": "#F59E0B",
+      "prompt": "What is a challenging hobby or game where you refused to give up until you mastered it?",
+      "es": "¿Cuál es un pasatiempo o juego difícil en el que te negaste a rendirte hasta dominarlo?"
+    },
+    {
+      "label": "Catching Up",
+      "color": "#10B981",
+      "prompt": "When you catch up with a childhood friend you haven't seen in months, what do you talk about first?",
+      "es": "¿Cuando te pones al día con un amigo de la infancia que no veías hace meses, de qué hablan primero?"
+    },
+    {
+      "label": "Looking Forward",
+      "color": "#3B82F6",
+      "prompt": "What upcoming concert, vacation, or video game release are you looking forward to the most?",
+      "es": "¿Qué concierto, vacaciones o estreno de videojuego es lo que más esperas con ansias?"
+    },
+    {
+      "label": "Working Out Stress",
+      "color": "#8B5CF6",
+      "prompt": "When school or life stresses you out, what activity helps you blow off steam and reset?",
+      "es": "¿Cuando el colegio o la vida te estresan, qué actividad te ayuda a liberar tensión y resetearte?"
+    },
+    {
+      "label": "Finding Out Secrets",
+      "color": "#EC4899",
+      "prompt": "Have you ever found out about a surprise party or gift before people were able to surprise you?",
+      "es": "¿Alguna vez te enteraste de una fiesta o regalo sorpresa antes de que lograran sorprenderte?"
+    }
+  ],
+  "c-teens-inter-9": [
+    {
+      "label": "Lost Valuables",
+      "color": "#EF4444",
+      "prompt": "You walk into your room and your phone is gone. What is your first theory about what happened?",
+      "es": "¿Entras a tu cuarto y no está tu celular. ¿Cuál es tu primera teoría sobre lo que pasó?"
+    },
+    {
+      "label": "Late Night Clues",
+      "color": "#F59E0B",
+      "prompt": "If you woke up and found wet footprints in your living room, who in your house must have made them?",
+      "es": "¿Si te despertaras y vieras huellas mojadas en la sala, quién en tu casa debe haberlas dejado?"
+    },
+    {
+      "label": "Unanswered Calls",
+      "color": "#10B981",
+      "prompt": "If your best friend usually replies in 5 seconds and is silent for 10 hours, what could have happened?",
+      "es": "¿Si tu mejor amigo responde en 5 segundos y lleva 10 horas en silencio, qué pudo haber pasado?"
+    },
+    {
+      "label": "Broken Gadget",
+      "color": "#3B82F6",
+      "prompt": "Have you ever returned to your desk and found your headphones or charger strangely damaged?",
+      "es": "¿Alguna vez volviste a tu escritorio y encontraste tus audífonos o cargador dañados misteriosamente?"
+    },
+    {
+      "label": "Vanishing Snacks",
+      "color": "#8B5CF6",
+      "prompt": "If a delicious chocolate you hid in the fridge disappeared, who must have eaten it?",
+      "es": "¿Si un chocolate delicioso que escondiste en la nevera desapareció, quién se lo tuvo que haber comido?"
+    },
+    {
+      "label": "Mystery Text",
+      "color": "#EC4899",
+      "prompt": "If you received a text from an unknown number saying 'I know your secret', what would you think?",
+      "es": "¿Si te llegara un mensaje de un número desconocido diciendo 'Sé tu secreto', qué pensarías?"
+    }
+  ],
+  "c-teens-inter-10": [
+    {
+      "label": "Emergency Plan B",
+      "color": "#EF4444",
+      "prompt": "What is your backup plan if it suddenly rains on the afternoon you organized outdoor sports?",
+      "es": "¿Cuál es tu plan de respaldo si llueve la tarde en que organizaste deportes al aire libre?"
+    },
+    {
+      "label": "Essential Gadget",
+      "color": "#F59E0B",
+      "prompt": "What item do you always carry in your backpack in case your phone battery dies during the day?",
+      "es": "¿Qué llevas siempre en tu maleta por si se te apaga el celular durante el día?"
+    },
+    {
+      "label": "Squad Promise",
+      "color": "#10B981",
+      "prompt": "What condition do you always establish with friends before lending them your favorite clothes or game?",
+      "es": "¿Qué condición les pones siempre a tus amigos antes de prestarles tu ropa o juego favorito?"
+    },
+    {
+      "label": "Crucial Test",
+      "color": "#3B82F6",
+      "prompt": "How many days in advance do you start studying when an exam is crucial for passing the grade?",
+      "es": "¿Con cuántos días de anticipación empiezas a estudiar cuando un examen es crucial para pasar el año?"
+    },
+    {
+      "label": "Dream Career If",
+      "color": "#8B5CF6",
+      "prompt": "If every career paid exactly the same salary, what passion would you dedicate your life to?",
+      "es": "¿Si todas las carreras pagaran exactamente el mismo sueldo, a qué pasión te dedicarías?"
+    },
+    {
+      "label": "Next Milestone",
+      "color": "#EC4899",
+      "prompt": "As soon as you finish today's English lesson, what fun reward are you going to enjoy?",
+      "es": "¿Tan pronto como termines la lección de inglés de hoy, qué recompensa vas a disfrutar?"
+    }
+  ],
+  "c-teens-inter-11": [
+    {
+      "label": "AI & Human Artists",
+      "color": "#EF4444",
+      "prompt": "How do you view AI art: is it an inspiring tool for creators or unfair to traditional human artists?",
+      "es": "¿Cómo ves el arte con IA: es una herramienta inspiradora o injusta para los artistas humanos?"
+    },
+    {
+      "label": "Study vs Social Life",
+      "color": "#F59E0B",
+      "prompt": "How do you balance demanding school homework with having fun and relaxing with friends?",
+      "es": "¿Cómo equilibras las tareas exigentes del colegio con divertirte y relajarte con amigos?"
+    },
+    {
+      "label": "Online Privacy",
+      "color": "#10B981",
+      "prompt": "Do you care if apps track your browsing data to give personalized ads, or does it bother you?",
+      "es": "¿Te importa que las apps rastreen tus datos para darte anuncios personalizados o te molesta?"
+    },
+    {
+      "label": "Ecotourism vs Nature",
+      "color": "#3B82F6",
+      "prompt": "In your view, does tourism help protect beautiful Colombian natural parks or damage them?",
+      "es": "¿A tu parecer, el turismo ayuda a proteger los parques naturales de Colombia o los deteriora?"
+    },
+    {
+      "label": "Grades vs Skills",
+      "color": "#8B5CF6",
+      "prompt": "Do you think school report cards accurately measure your intelligence and practical skills?",
+      "es": "¿Crees que las notas escolares miden con precisión tu inteligencia y talentos prácticos?"
+    },
+    {
+      "label": "Digital Detox",
+      "color": "#EC4899",
+      "prompt": "Could you survive an entire 48-hour weekend without touching your phone or social media?",
+      "es": "¿Podrías sobrevivir un fin de semana entero de 48 horas sin tocar tu celular ni redes sociales?"
+    }
+  ],
+  "c-teens-advanced-1": [
+    {
+      "label": "Campus Rumors",
+      "color": "#EF4444",
+      "prompt": "What is the funniest or craziest rumor you ever heard circulating around your school?",
+      "es": "¿Cuál es el rumor más chistoso o loco que has escuchado circular por tu colegio?"
+    },
+    {
+      "label": "Breaking News",
+      "color": "#F59E0B",
+      "prompt": "What surprising piece of local or global news caught your attention this week?",
+      "es": "¿Qué noticia sorprendente local o mundial llamó tu atención esta semana?"
+    },
+    {
+      "label": "Gossip Speed",
+      "color": "#10B981",
+      "prompt": "How fast does juicy news or secrets travel through your class WhatsApp groups?",
+      "es": "¿Qué tan rápido viajan los chismes o secretos en los grupos de WhatsApp de tu salón?"
+    },
+    {
+      "label": "Secret Keeper",
+      "color": "#3B82F6",
+      "prompt": "Are you the friend people trust with deep secrets, or do you find it hard to keep quiet?",
+      "es": "¿Eres el amigo al que le confían secretos profundos o te cuesta quedarte callado?"
+    },
+    {
+      "label": "Fact Checking",
+      "color": "#8B5CF6",
+      "prompt": "When someone tells you a wild story, do you believe them immediately or verify the facts?",
+      "es": "¿Cuando alguien te cuenta una historia loca, le crees de inmediato o verificas los hechos?"
+    },
+    {
+      "label": "Viral Trend",
+      "color": "#EC4899",
+      "prompt": "What viral trend or news story had everyone in your school talking about it non-stop?",
+      "es": "¿Qué tendencia o noticia viral tuvo a todo tu colegio hablando sin parar?"
+    }
+  ],
+  "c-teens-advanced-2": [
+    {
+      "label": "Tough Questions",
+      "color": "#EF4444",
+      "prompt": "What is the hardest or most unexpected question a teacher or parent ever asked you?",
+      "es": "¿Cuál es la pregunta más difícil o inesperada que un profe o papá te ha hecho?"
+    },
+    {
+      "label": "Lie Detector",
+      "color": "#F59E0B",
+      "prompt": "If your parents put you on a real lie detector test, would you pass with a 100% score?",
+      "es": "¿Si tus papás te pusieran un detector de mentiras real, pasarías con puntaje perfecto?"
+    },
+    {
+      "label": "Detective Instinct",
+      "color": "#10B981",
+      "prompt": "Can you tell when a friend is not telling you the whole truth just by looking at their eyes?",
+      "es": "¿Puedes notar cuando un amigo no te dice toda la verdad con solo mirarlo a los ojos?"
+    },
+    {
+      "label": "Celebrity Interview",
+      "color": "#3B82F6",
+      "prompt": "If you had five minutes to interrogate your favorite musician, what secret would you ask them?",
+      "es": "¿Si tuvieras cinco minutos para interrogar a tu músico favorito, qué secreto le preguntarías?"
+    },
+    {
+      "label": "Deep Conversations",
+      "color": "#8B5CF6",
+      "prompt": "Do you prefer late-night deep conversations about life goals or quick casual daily chats?",
+      "es": "¿Prefieres conversaciones nocturnas profundas sobre la vida o charlas rápidas casuales?"
+    },
+    {
+      "label": "Curious Minds",
+      "color": "#EC4899",
+      "prompt": "What is a mystery about the universe or history that you are dying to know the real answer to?",
+      "es": "¿Qué misterio del universo o de la historia te mueres por saber la respuesta real?"
+    }
+  ],
+  "c-teens-advanced-3": [
+    {
+      "label": "Admired Mentor",
+      "color": "#EF4444",
+      "prompt": "Who is a person in your life that you admire deeply, and what makes them so special?",
+      "es": "¿Quién es una persona en tu vida a quien admiras profundamente y qué la hace tan especial?"
+    },
+    {
+      "label": "Essential Gadget",
+      "color": "#F59E0B",
+      "prompt": "What is a piece of technology that you use every day which you could never live without?",
+      "es": "¿Cuál es un aparato de tecnología que usas a diario y del cual no podrías prescindir jamás?"
+    },
+    {
+      "label": "Peaceful Spot",
+      "color": "#10B981",
+      "prompt": "What is a place in Colombia where you feel completely relaxed, happy, and energized?",
+      "es": "¿Cuál es un lugar de Colombia donde te sientes completamente relajado, feliz y con energía?"
+    },
+    {
+      "label": "Inspiring Creator",
+      "color": "#3B82F6",
+      "prompt": "Who is an artist, gamer, or director whose creative work always blows your mind?",
+      "es": "¿Quién es un artista, gamer o director cuyo trabajo creativo siempre te deja asombrado?"
+    },
+    {
+      "label": "School Subject Love",
+      "color": "#8B5CF6",
+      "prompt": "Which teacher or class made you fall in love with a subject that you used to find boring?",
+      "es": "¿Qué profesor o clase hizo que te enamoraras de una materia que antes te parecía aburrida?"
+    },
+    {
+      "label": "Dream Home",
+      "color": "#EC4899",
+      "prompt": "What is a feature in your future dream house that you consider an absolute must-have?",
+      "es": "¿Qué detalle en la casa de tus sueños consideras una necesidad absoluta?"
+    }
+  ],
+  "c-teens-advanced-4": [
+    {
+      "label": "Essential Inventions",
+      "color": "#EF4444",
+      "prompt": "Which modern invention do you think has changed teenage daily life more than anything else?",
+      "es": "¿Qué invento moderno crees que ha cambiado la vida de los jóvenes más que cualquier otro?"
+    },
+    {
+      "label": "Awaiting Tech",
+      "color": "#F59E0B",
+      "prompt": "What futuristic invention are you impatiently waiting for scientists to create and release?",
+      "es": "¿Qué invento futurista estás esperando con ansias a que los científicos creen?"
+    },
+    {
+      "label": "AI in Everyday Life",
+      "color": "#10B981",
+      "prompt": "How do you feel when you see videos or photos completely generated by artificial intelligence?",
+      "es": "¿Qué sientes cuando ves videos o fotos completamente creados por inteligencia artificial?"
+    },
+    {
+      "label": "Video Game Graphics",
+      "color": "#3B82F6",
+      "prompt": "In your experience, do ultra-realistic graphics make video games better or does gameplay matter more to you?",
+      "es": "¿En tu experiencia, los gráficos ultra-realistas hacen mejores a los videojuegos o la jugabilidad te importa más?"
+    },
+    {
+      "label": "Green Energy Tech",
+      "color": "#8B5CF6",
+      "prompt": "Do you see electric cars, bikes, and solar panels becoming normal in your hometown soon?",
+      "es": "¿Ves los carros eléctricos, ciclas y paneles solares volviéndose normales en tu ciudad pronto?"
+    },
+    {
+      "label": "Old School Tech",
+      "color": "#EC4899",
+      "prompt": "Do you find vintage technology like vinyl records, cassette tapes, or wired earphones charming?",
+      "es": "¿Te parece atractiva la tecnología retro como discos de vinilo, casetes o audífonos de cable?"
+    }
+  ],
+  "c-teens-advanced-5": [
+    {
+      "label": "Space vs Ocean",
+      "color": "#EF4444",
+      "prompt": "Would you rather explore distant alien planets in deep space or uncharted deep ocean trenches?",
+      "es": "¿Preferirías explorar planetas extraterrestres en el espacio profundo o fosas del océano?"
+    },
+    {
+      "label": "Mind-Blowing Discovery",
+      "color": "#F59E0B",
+      "prompt": "What scientific discovery or space photo in recent years gave you chills of wonder?",
+      "es": "¿Qué descubrimiento científico o foto del espacio en años recientes te puso la piel de gallina?"
+    },
+    {
+      "label": "Future Medicine",
+      "color": "#10B981",
+      "prompt": "If medical tech could grant humans the ability to live in peak health to 150, would you want that?",
+      "es": "¿Si la medicina le permitiera a los humanos vivir sanos hasta los 150 años, te gustaría?"
+    },
+    {
+      "label": "Clean Planet Solutions",
+      "color": "#3B82F6",
+      "prompt": "What innovative clean tech solution would you love to see implemented in Colombian cities?",
+      "es": "¿Qué solución de tecnología limpia te encantaría ver implementada en las ciudades colombianas?"
+    },
+    {
+      "label": "Alien Life",
+      "color": "#8B5CF6",
+      "prompt": "Do you personally believe complex intelligent life exists in other galaxies right now?",
+      "es": "¿Crees personalmente que existe vida inteligente compleja en otras galaxias ahora mismo?"
+    },
+    {
+      "label": "Curiosity Fuel",
+      "color": "#EC4899",
+      "prompt": "What is one scientific question about our universe that keeps you awake thinking at night?",
+      "es": "¿Cuál es una pregunta científica sobre nuestro universo que te quita el sueño pensando en la noche?"
+    }
+  ],
+  "c-teens-advanced-6": [
+    {
+      "label": "Blessing in Disguise",
+      "color": "#EF4444",
+      "prompt": "Tell me about a bad situation in your past that unexpectedly turned out to be a blessing in disguise!",
+      "es": "¿Cuéntame sobre una mala situación en tu pasado que inesperadamente resultó ser una bendición disfrazada!"
+    },
+    {
+      "label": "Hitting the Bullseye",
+      "color": "#F59E0B",
+      "prompt": "Have you ever given a brilliant answer in class that made everyone, including your teacher, stop and applaud?",
+      "es": "¿Alguna vez diste una respuesta brillante en clase que hizo que todos, incluido el profe, aplaudieran?"
+    },
+    {
+      "label": "Breaking the Ice",
+      "color": "#10B981",
+      "prompt": "What is your go-to question or joke to break the ice when you enter a room full of new people?",
+      "es": "¿Cuál es tu pregunta o chiste de confianza para romper el hielo en un salón de personas nuevas?"
+    },
+    {
+      "label": "Bite the Bullet",
+      "color": "#3B82F6",
+      "prompt": "What was a scary or uncomfortable challenge you finally decided to face head-on?",
+      "es": "¿Cuál fue un reto incómodo o de miedo que finalmente decidiste encarar de frente?"
+    },
+    {
+      "label": "Piece of Cake",
+      "color": "#8B5CF6",
+      "prompt": "What school exam or challenge did everyone think was impossible, but for you was a piece of cake?",
+      "es": "¿Qué examen o reto escolar todos creían imposible pero para ti fue pan comido?"
+    },
+    {
+      "label": "Under the Weather",
+      "color": "#EC4899",
+      "prompt": "When you feel under the weather or exhausted, what is your ultimate comfort food and movie combo?",
+      "es": "¿Cuando te sientes indispuesto o agotado, cuál es tu combinación favorita de comida y película?"
+    }
+  ],
+  "c-teens-advanced-7": [
+    {
+      "label": "Leading Under Pressure",
+      "color": "#EF4444",
+      "prompt": "Have you ever had to step up and lead a group project when nobody else took responsibility?",
+      "es": "¿Alguna vez tuviste que dar un paso al frente y liderar un proyecto escolar cuando nadie más lo hacía?"
+    },
+    {
+      "label": "Friendship Mediator",
+      "color": "#F59E0B",
+      "prompt": "Are you good at stepping into friend drama to help both sides calm down and resolve things?",
+      "es": "¿Eres bueno interviniendo en los problemas de amigos para ayudarlos a calmarse y solucionar?"
+    },
+    {
+      "label": "Admirable Leader",
+      "color": "#10B981",
+      "prompt": "What qualities do you admire most in leaders: quiet humility, bold confidence, or great listening?",
+      "es": "¿Qué cualidades admiras más en un líder: la humildad tranquila, la confianza audaz o saber escuchar?"
+    },
+    {
+      "label": "Team Chemistry",
+      "color": "#3B82F6",
+      "prompt": "How do you handle team members who slack off and don't do their part of the work?",
+      "es": "¿Cómo manejas a compañeros de equipo que se relajan y no hacen su parte del trabajo?"
+    },
+    {
+      "label": "Crisis Calmness",
+      "color": "#8B5CF6",
+      "prompt": "When unexpected chaos happens, are you the person who panics or the person who stays chill?",
+      "es": "¿Cuando ocurre un caos inesperado, eres de los que entra en pánico o de los que mantiene la calma?"
+    },
+    {
+      "label": "Student Council",
+      "color": "#EC4899",
+      "prompt": "If you were elected student president of your school tomorrow, what is the first change you would order?",
+      "es": "¿Si fueras elegido personero estudiantil mañana, cuál sería el primer cambio que ordenarías?"
+    }
+  ],
+  "c-teens-advanced-8": [
+    {
+      "label": "AI in Creative Arts",
+      "color": "#EF4444",
+      "prompt": "Do you think music, screenplays, and books written by AI can ever carry true human soul?",
+      "es": "¿Crees que la música, guiones y libros escritos por IA puedan tener una verdadera alma humana?"
+    },
+    {
+      "label": "AI Companions",
+      "color": "#F59E0B",
+      "prompt": "Would you ever talk to an AI virtual friend if you felt lonely, or does that feel strange to you?",
+      "es": "¿Hablarías con un amigo virtual de IA si te sintieras solo o te parece algo extraño?"
+    },
+    {
+      "label": "Autonomous Safety",
+      "color": "#10B981",
+      "prompt": "Would you trust a fully autonomous self-driving car to drive you through chaotic rush hour traffic?",
+      "es": "¿Confiarías en un carro autónomo sin conductor para llevarte en medio del trancón de hora pico?"
+    },
+    {
+      "label": "Deepfake Detection",
+      "color": "#3B82F6",
+      "prompt": "How worried are you about hyper-realistic AI deepfakes tricking people on social media?",
+      "es": "¿Qué tan preocupado estás por los deepfakes hiperrealistas que engañan a la gente en redes?"
+    },
+    {
+      "label": "AI Homework Rule",
+      "color": "#8B5CF6",
+      "prompt": "How do you personally find an ethical, fair balance when using AI tools for your school studies?",
+      "es": "¿Cómo encuentras tú personalmente un equilibrio ético y justo al usar herramientas de IA en tus estudios escolares?"
+    },
+    {
+      "label": "Future Workforce",
+      "color": "#EC4899",
+      "prompt": "Are you excited or nervous about how AI will reshape the future job market for your generation?",
+      "es": "¿Te entusiasma o te asusta cómo la IA va a transformar el mercado laboral de tu generación?"
+    }
+  ],
+  "c-teens-advanced-9": [
+    {
+      "label": "Personal Eco-Habits",
+      "color": "#EF4444",
+      "prompt": "What small ecological habit do you practice every single day to protect the environment?",
+      "es": "¿Qué pequeño hábito ecológico practicas a diario para cuidar el medio ambiente?"
+    },
+    {
+      "label": "City Recycling",
+      "color": "#F59E0B",
+      "prompt": "How well does your school and neighborhood separate and recycle plastic, glass, and paper?",
+      "es": "¿Qué tan bien separan y reciclan el plástico, vidrio y papel en tu colegio y tu barrio?"
+    },
+    {
+      "label": "Single-Use Plastics",
+      "color": "#10B981",
+      "prompt": "Do you support strict bans on single-use plastic cups, bags, and straws across cities?",
+      "es": "¿Apoyas la prohibición estricta de bolsas, vasos y pitillos plásticos de un solo uso en las ciudades?"
+    },
+    {
+      "label": "Colombian Paramos",
+      "color": "#3B82F6",
+      "prompt": "Have you ever visited a Colombian páramo or misty mountain wetland that supplies our fresh water?",
+      "es": "¿Alguna vez has visitado un páramo colombiano que abastece de agua pura a nuestras ciudades?"
+    },
+    {
+      "label": "Youth Climate Action",
+      "color": "#8B5CF6",
+      "prompt": "Do you believe youth protests and digital campaigns truly influence government environmental policy?",
+      "es": "¿Crees que las campañas y protestas de jóvenes realmente influyen en las políticas ambientales?"
+    },
+    {
+      "label": "Clean Commute",
+      "color": "#EC4899",
+      "prompt": "Would you prefer walking or cycling everywhere if your city built safe, connected green bikeways?",
+      "es": "¿Preferirías caminar o ir en cicla a todas partes si tu ciudad tuviera ciclorrutas verdes seguras?"
+    }
+  ],
+  "c-teens-advanced-10": [
+    {
+      "label": "Dream NGO Cause",
+      "color": "#EF4444",
+      "prompt": "If you launched your own non-profit youth organization, what social problem would you fight?",
+      "es": "¿Si crearas tu propia organización juvenil sin ánimo de lucro, qué problema social combatirías?"
+    },
+    {
+      "label": "Youth Empowerment",
+      "color": "#F59E0B",
+      "prompt": "Why do you think teenagers and youth bring more innovative ideas to social change than politicians?",
+      "es": "¿Por qué crees que los jóvenes aportan ideas más innovadoras al cambio social que los políticos?"
+    },
+    {
+      "label": "Public Speaking Confidence",
+      "color": "#10B981",
+      "prompt": "How confident do you feel presenting an important social initiative to an audience of adults?",
+      "es": "¿Qué tan seguro te sientes presentando una iniciativa social importante ante un público de adultos?"
+    },
+    {
+      "label": "Inspiring Campaign",
+      "color": "#3B82F6",
+      "prompt": "What is an unforgettable digital awareness campaign that made you think or act differently?",
+      "es": "¿Cuál es una campaña digital inolvidable que te hizo reflexionar o actuar diferente?"
+    },
+    {
+      "label": "Building a Team",
+      "color": "#8B5CF6",
+      "prompt": "If you had to recruit three friends for a leadership initiative, who would you choose and why?",
+      "es": "¿Si tuvieras que reclutar a tres amigos para una iniciativa de liderazgo, a quiénes elegirías?"
+    },
+    {
+      "label": "Grand Graduation Win",
+      "color": "#EC4899",
+      "prompt": "Looking back at Advanced Level, what is the biggest communication skill you gained?",
+      "es": "¿Mirando hacia atrás en este Nivel Avanzado, cuál es la habilidad comunicativa más grande que ganaste?"
+    }
+  ],
+  "c-teens-elite-1": [
+    {
+      "label": "Your 2035 Life",
+      "color": "#EF4444",
+      "prompt": "When you picture your personal and professional life in the year 2035, where do you see yourself living?",
+      "es": "¿Cuando imaginas tu vida personal y profesional en el año 2035, dónde te ves viviendo?"
+    },
+    {
+      "label": "Future Tech Normal",
+      "color": "#F59E0B",
+      "prompt": "What futuristic technology do you believe will become as common as smartphones by the time you turn 30?",
+      "es": "¿Qué tecnología futurista crees que será tan común como los celulares para cuando cumplas 30 años?"
+    },
+    {
+      "label": "Dream Career Peak",
+      "color": "#10B981",
+      "prompt": "What major project or milestone do you want to have accomplished by your mid-twenties?",
+      "es": "¿Qué gran proyecto o logro quieres haber alcanzado a mediados de tus veinte años?"
+    },
+    {
+      "label": "Human vs Robot",
+      "color": "#3B82F6",
+      "prompt": "Would you welcome a humanoid AI robot as a helper inside your home by 2040, or does that creep you out?",
+      "es": "¿Le darías la bienvenida a un robot humanoide de IA como ayudante en tu casa para 2040 o te daría miedo?"
+    },
+    {
+      "label": "City of Tomorrow",
+      "color": "#8B5CF6",
+      "prompt": "How do you imagine cities will look in thirty years: flying public transit or green walkable metropolises?",
+      "es": "¿Cómo imaginas las ciudades en treinta años: transporte volador o metrópolis verdes y peatonales?"
+    },
+    {
+      "label": "Future Global Goal",
+      "color": "#EC4899",
+      "prompt": "What is one global challenge you hope your generation will have completely solved by 2050?",
+      "es": "¿Cuál es un desafío global que esperas que tu generación haya resuelto completamente para 2050?"
+    }
+  ],
+  "c-teens-elite-2": [
+    {
+      "label": "Passion vs Security",
+      "color": "#EF4444",
+      "prompt": "If you had to choose between pursuing your wildest creative passion or a stable corporate career, which would you pick?",
+      "es": "¿Si tuvieras que elegir entre seguir tu pasión creativa o una carrera corporativa segura, cuál escogerías?"
+    },
+    {
+      "label": "High-Pressure Pivot",
+      "color": "#F59E0B",
+      "prompt": "Tell me about a high-pressure moment where you had to make a split-second decision with no time to overthink!",
+      "es": "¿Cuéntame de un momento de mucha presión en el que tuviste que tomar una decisión en un segundo sin dudar!"
+    },
+    {
+      "label": "Calculated Risk",
+      "color": "#10B981",
+      "prompt": "Are you someone who prefers playing it safe with predictable outcomes or taking bold calculated risks?",
+      "es": "¿Eres alguien que prefiere ir a lo seguro con resultados predecibles o tomar riesgos audaces calculados?"
+    },
+    {
+      "label": "Tough Dilemma",
+      "color": "#3B82F6",
+      "prompt": "If a classmate asked you to share exam answers, would you prioritize helping them or academic honesty?",
+      "es": "¿Si un compañero te pide las respuestas de un examen, priorizarías ayudarlo o la honestidad académica?"
+    },
+    {
+      "label": "Emergency Mindset",
+      "color": "#8B5CF6",
+      "prompt": "When everything around you goes off-track, what mental anchor keeps you grounded and sharp?",
+      "es": "¿Cuando todo a tu alrededor se descarrila, qué ancla mental te mantiene enfocado y tranquilo?"
+    },
+    {
+      "label": "Regret or Lesson",
+      "color": "#EC4899",
+      "prompt": "Do you believe mistakes in life should be viewed with regret or celebrated as essential learning curves?",
+      "es": "¿Crees que los errores en la vida deben verse con arrepentimiento o celebrarse como lecciones esenciales?"
+    }
+  ],
+  "c-teens-elite-3": [
+    {
+      "label": "Core Values",
+      "color": "#EF4444",
+      "prompt": "What single core value defines your identity and moral compass above everything else?",
+      "es": "¿Qué valor fundamental define tu identidad y tu brújula moral por encima de todo?"
+    },
+    {
+      "label": "Standout Spark",
+      "color": "#F59E0B",
+      "prompt": "What makes your perspective on life and learning unique compared to mainstream teenagers?",
+      "es": "¿Qué hace que tu perspectiva sobre la vida y el aprendizaje sea única frente a la mayoría de jóvenes?"
+    },
+    {
+      "label": "Passionate Cause",
+      "color": "#10B981",
+      "prompt": "What topic can you talk about with unstoppable fire and excitement for hours on end?",
+      "es": "¿De qué tema puedes hablar con una emoción y fuego imparable durante horas y horas?"
+    },
+    {
+      "label": "Authentic Self",
+      "color": "#3B82F6",
+      "prompt": "How do you resist the urge to blend in with peer pressure and remain true to your authentic style?",
+      "es": "¿Cómo resistes la presión de encajar con los demás y te mantienes fiel a tu estilo auténtico?"
+    },
+    {
+      "label": "Unshakable Drive",
+      "color": "#8B5CF6",
+      "prompt": "When everyone doubts an ambitious idea you have, what gives you the courage to keep building it?",
+      "es": "¿Cuando todos dudan de una idea ambiciosa que tienes, qué te da el coraje de seguir adelante?"
+    },
+    {
+      "label": "Inspiring Impact",
+      "color": "#EC4899",
+      "prompt": "What mark or legacy do you want your actions and words to leave on the people around you?",
+      "es": "¿Qué huella o legado quieres que tus acciones y palabras dejen en las personas a tu alrededor?"
+    }
+  ],
+  "c-teens-elite-4": [
+    {
+      "label": "Microphone to the World",
+      "color": "#EF4444",
+      "prompt": "If you were handed a live microphone broadcasting to one million teenagers worldwide, what would your message be?",
+      "es": "¿Si te dieran un micrófono en vivo transmitiendo a un millón de jóvenes en el mundo, cuál sería tu mensaje?"
+    },
+    {
+      "label": "Memorable Speech",
+      "color": "#F59E0B",
+      "prompt": "Have you ever heard a speech or talk that moved you so deeply you still remember the exact feeling?",
+      "es": "¿Alguna vez has escuchado un discurso que te conmovió tanto que aún recuerdas la emoción exacta?"
+    },
+    {
+      "label": "Stage Presence",
+      "color": "#10B981",
+      "prompt": "What is your secret ritual to eliminate stage fright and speak with commanding authority before a crowd?",
+      "es": "¿Cuál es tu ritual para eliminar el pánico escénico y hablar con autoridad ante el público?"
+    },
+    {
+      "label": "Power of Tone",
+      "color": "#3B82F6",
+      "prompt": "Why do you think emotional tone and pacing matter more in persuasion than just reading facts from a screen?",
+      "es": "¿Por qué crees que el tono emocional y el ritmo importan más al convencer que solo leer datos?"
+    },
+    {
+      "label": "Unforgettable Hook",
+      "color": "#8B5CF6",
+      "prompt": "How do you capture an audience's complete attention within the first fifteen seconds of your presentation?",
+      "es": "¿Cómo capturas la total atención de una audiencia en los primeros quince segundos de tu exposición?"
+    },
+    {
+      "label": "Oratory Hero",
+      "color": "#EC4899",
+      "prompt": "Who is a public speaker, political figure, or presenter whose confidence you aspire to emulate?",
+      "es": "¿Quién es un orador, figura pública o conferencista cuya seguridad te inspira?"
+    }
+  ],
+  "c-teens-elite-5": [
+    {
+      "label": "Handling Criticism",
+      "color": "#EF4444",
+      "prompt": "When someone strongly criticizes your work, how do you handle it without taking it personally?",
+      "es": "¿Cuando alguien critica fuerte tu trabajo, cómo lo manejas sin tomártelo como algo personal?"
+    },
+    {
+      "label": "Parent Negotiations",
+      "color": "#F59E0B",
+      "prompt": "What is your diplomatic strategy when negotiating extended curfew or permissions with your parents?",
+      "es": "¿Cuál es tu estrategia diplomática cuando negocias permisos u horarios con tus papás?"
+    },
+    {
+      "label": "Agreeing to Disagree",
+      "color": "#10B981",
+      "prompt": "How do you maintain a close friendship with someone who holds completely opposite views on big issues?",
+      "es": "¿Cómo mantienes una amistad cercana con alguien que piensa totalmente opuesto a ti en temas grandes?"
+    },
+    {
+      "label": "Constructive Feedback",
+      "color": "#3B82F6",
+      "prompt": "How do you tell a teammate their idea needs work without hurting their feelings or confidence?",
+      "es": "¿Cómo le dices a un compañero que su idea necesita mejoras sin lastimar sus sentimientos ni su confianza?"
+    },
+    {
+      "label": "De-escalating Heat",
+      "color": "#8B5CF6",
+      "prompt": "What is your best phrase to cool down an argument when voices start getting too loud?",
+      "es": "¿Cuál es tu mejor frase para calmar una discusión cuando los ánimos empiezan a subir de tono?"
+    },
+    {
+      "label": "Win-Win Mindset",
+      "color": "#EC4899",
+      "prompt": "Do you believe a successful negotiation means winning completely, or finding a solution where both win?",
+      "es": "¿Crees que una negociación exitosa significa ganar por completo o encontrar una solución donde ambos ganen?"
+    }
+  ],
+  "c-teens-elite-6": [
+    {
+      "label": "University Dilemma",
+      "color": "#EF4444",
+      "prompt": "In the modern AI age, do you believe a four-year college degree is still essential for building wealth?",
+      "es": "¿En la era de la IA, crees que un título universitario de 4 años sigue siendo esencial para crear riqueza?"
+    },
+    {
+      "label": "Standardized Testing",
+      "color": "#F59E0B",
+      "prompt": "Do you feel standardized entrance exams truly reflect your human intelligence, or just test stress?",
+      "es": "¿Sientes que los exámenes de estado realmente reflejan tu inteligencia o solo miden el estrés?"
+    },
+    {
+      "label": "Screen Time Limits",
+      "color": "#10B981",
+      "prompt": "How would you react if the government imposed a mandatory digital curfew on your smartphone?",
+      "es": "¿Cómo reaccionarías si el gobierno impusiera un toque de queda digital obligatorio a tu celular?"
+    },
+    {
+      "label": "Fast Fashion Ethics",
+      "color": "#3B82F6",
+      "prompt": "Do you personally consider environmental impact before buying clothes from fast-fashion apps?",
+      "es": "¿Consideras tú personalmente el impacto ambiental antes de comprar ropa en apps de moda rápida?"
+    },
+    {
+      "label": "Space Spending",
+      "color": "#8B5CF6",
+      "prompt": "In your view, should billions of dollars be invested in Mars exploration or helping citizens on your planet?",
+      "es": "¿A tu parecer, deberían invertirse miles de millones en explorar Marte o en ayudar a los ciudadanos de tu planeta?"
+    },
+    {
+      "label": "Artistic Boundaries",
+      "color": "#EC4899",
+      "prompt": "Do you think comedy and artistic expression should have boundaries, or should your creative freedom be absolute?",
+      "es": "¿Crees que la comedia y la expresión artística deberían tener límites o tu libertad creativa debe ser absoluta?"
+    }
+  ],
+  "c-teens-elite-7": [
+    {
+      "label": "Obsessive Rabbit Hole",
+      "color": "#EF4444",
+      "prompt": "What historical mystery, scientific question, or bizarre rabbit hole could you research online for hours?",
+      "es": "¿Qué misterio histórico, enigma científico o tema curioso podrías investigar en internet durante horas?"
+    },
+    {
+      "label": "Source Sleuth",
+      "color": "#F59E0B",
+      "prompt": "How do you distinguish authentic peer-reviewed facts from polished fake news on TikTok and Twitter?",
+      "es": "¿Cómo distingues datos científicos reales de noticias falsas bien vestidas en TikTok y Twitter?"
+    },
+    {
+      "label": "Fascinating Brain",
+      "color": "#10B981",
+      "prompt": "Does human psychology and neuroscience fascinate you, especially why people behave the way they do?",
+      "es": "¿Te fascina la psicología y neurociencia, especialmente entender por qué la gente actúa como actúa?"
+    },
+    {
+      "label": "Historical What If",
+      "color": "#3B82F6",
+      "prompt": "What period of world history do you find so intriguing that you would write a whole documentary on it?",
+      "es": "¿Qué época de la historia mundial te parece tan intrigante que harías todo un documental sobre ella?"
+    },
+    {
+      "label": "Research Passion",
+      "color": "#8B5CF6",
+      "prompt": "If you were awarded a research grant to investigate any issue in Colombia, what would your study focus on?",
+      "es": "¿Si te dieran una beca para investigar cualquier problema en Colombia, en qué se enfocaría tu estudio?"
+    },
+    {
+      "label": "The Power of Proof",
+      "color": "#EC4899",
+      "prompt": "Why do you think having solid data and clear evidence makes someone's opinions ten times more persuasive?",
+      "es": "¿Por qué crees que tener datos sólidos y evidencia clara hace que tus opiniones sean diez veces más convincentes?"
+    }
+  ],
+  "c-teens-elite-9": [
+    {
+      "label": "First Impression Charm",
+      "color": "#EF4444",
+      "prompt": "What is your personal secret to making an unforgettable positive first impression in an interview?",
+      "es": "¿Cuál es tu secreto personal para causar una primera impresión positiva e inolvidable en una entrevista?"
+    },
+    {
+      "label": "Body Language Power",
+      "color": "#F59E0B",
+      "prompt": "How do you manage your posture, eye contact, and body language when you want to look super confident?",
+      "es": "¿Cómo manejas tu postura, contacto visual y lenguaje corporal cuando quieres lucir súper seguro?"
+    },
+    {
+      "label": "Greatest Weakness",
+      "color": "#10B981",
+      "prompt": "How do you honestly answer the classic question 'What is your greatest weakness?' without sounding fake?",
+      "es": "¿Cómo respondes con sinceridad a la clásica pregunta '¿Cuál es tu mayor debilidad?' sin sonar falso?"
+    },
+    {
+      "label": "Storytelling Technique",
+      "color": "#3B82F6",
+      "prompt": "What vivid personal story would you share in an interview to prove your resilience?",
+      "es": "¿Qué historia personal vívida compartirías en una entrevista para demostrar tu resiliencia?"
+    },
+    {
+      "label": "Asking the Interviewer",
+      "color": "#8B5CF6",
+      "prompt": "What is an impressive, smart question you would ask an admissions officer or CEO interviewing you?",
+      "es": "¿Cuál es una pregunta inteligente e impresionante que le harías a un director de admisiones o CEO que te entrevista?"
+    },
+    {
+      "label": "Authentic Polish",
+      "color": "#EC4899",
+      "prompt": "How do you strike the perfect balance between sounding thoroughly prepared and completely natural?",
+      "es": "¿Cómo logras el equilibrio perfecto entre sonar bien preparado y completamente natural y espontáneo?"
+    }
+  ],
+  "c-teens-elite-10": [
+    {
+      "label": "Global Youth Vision",
+      "color": "#EF4444",
+      "prompt": "What is your boldest vision for how teenagers around the globe will collaborate to transform society?",
+      "es": "¿Cuál es tu visión más audaz de cómo los jóvenes del mundo colaborarán para transformar la sociedad?"
+    },
+    {
+      "label": "Bilingual Superpower",
+      "color": "#F59E0B",
+      "prompt": "How has unlocking fluent English transformed your personal confidence, world view, and future opportunities?",
+      "es": "¿Cómo ha transformado dominar el inglés fluido tu confianza personal, visión del mundo y oportunidades?"
+    },
+    {
+      "label": "Leadership Milestone",
+      "color": "#10B981",
+      "prompt": "Looking back at your Elite Teen journey, what was the proudest moment of personal growth you achieved?",
+      "es": "¿Mirando hacia atrás en tu camino Elite, cuál fue el momento de crecimiento personal del que más te enorgulleces?"
+    },
+    {
+      "label": "Breaking Barriers",
+      "color": "#3B82F6",
+      "prompt": "What advice would you give to a younger student who is terrified of speaking English in public?",
+      "es": "¿Qué consejo le darías a un estudiante más joven que le tiene pánico a hablar en inglés en público?"
+    },
+    {
+      "label": "Next Horizon",
+      "color": "#8B5CF6",
+      "prompt": "What is the very next ambitious intellectual or career mountain you are preparing to conquer?",
+      "es": "¿Cuál es la siguiente montaña intelectual o profesional ambiciosa que te estás preparando para conquistar?"
+    },
+    {
+      "label": "Elite Graduation Toast",
+      "color": "#EC4899",
+      "prompt": "Deliver a short, heartfelt graduation statement sharing your proudest milestone and your future dreams!",
+      "es": "¿Da un brindis de graduación breve y emotivo compartiendo tu mayor logro y tus sueños futuros!"
+    }
+  ],
+  "c-teens-masters-2": [
+    {
+      "label": "Viral Culture",
+      "color": "#EF4444",
+      "prompt": "Why do you think ridiculous memes and short video trends spread ten times faster than serious journalism?",
+      "es": "¿Por qué crees que los memes absurdos y videos cortos se vuelven virales diez veces más rápido que las noticias serias?"
+    },
+    {
+      "label": "Curated Reality",
+      "color": "#F59E0B",
+      "prompt": "How much of what people post on Instagram and TikTok do you believe reflects their genuine everyday life?",
+      "es": "¿Qué tanto de lo que la gente publica en redes crees que refleja su vida cotidiana genuina?"
+    },
+    {
+      "label": "Filter Bubble",
+      "color": "#10B981",
+      "prompt": "Do recommendation algorithms show you diverse worldviews or lock you into an echo chamber of your own tastes?",
+      "es": "¿Los algoritmos de recomendación te muestran perspectivas diversas o te encierran en una burbuja de tus gustos?"
+    },
+    {
+      "label": "Digital Detox Reality",
+      "color": "#3B82F6",
+      "prompt": "Have you ever tried completely disconnecting from social media notifications for a weekend, and how did it feel?",
+      "es": "¿Alguna vez intentaste desconectarte por completo de las redes durante un fin de semana y qué sentiste?"
+    },
+    {
+      "label": "Meme Power",
+      "color": "#8B5CF6",
+      "prompt": "In your opinion, can internet humor and viral satire influence politics and social change more than speeches?",
+      "es": "¿En tu opinión, puede el humor de internet y la sátira viral influir en la política más que los discursos?"
+    },
+    {
+      "label": "Authentic Connection",
+      "color": "#EC4899",
+      "prompt": "For you personally, what is the biggest difference between chatting with someone online versus looking them in the eye face-to-face?",
+      "es": "¿Para ti personalmente, cuál es la mayor diferencia entre chatear con alguien por internet y mirarlo a los ojos cara a cara?"
+    }
+  ],
+  "c-teens-masters-3": [
+    {
+      "label": "Trolley Dilemma",
+      "color": "#EF4444",
+      "prompt": "In the famous trolley moral dilemma, would you pull the lever to sacrifice one life to save five strangers?",
+      "es": "¿En el famoso dilema del tranvía, jalarías la palanca para sacrificar una vida y salvar a cinco desconocidos?"
+    },
+    {
+      "label": "Brutal Truth or Kindness",
+      "color": "#F59E0B",
+      "prompt": "When a friend asks for honest feedback on something they love, do you tell the brutal truth or protect their feelings?",
+      "es": "¿Cuando un amigo te pide una opinión sincera sobre algo que ama, dices la verdad cruda o cuidas sus sentimientos?"
+    },
+    {
+      "label": "Boundaries of Thought",
+      "color": "#10B981",
+      "prompt": "Do you believe learning fluent English expands the concepts you can think about, or does thought exist before words?",
+      "es": "¿Crees que dominar el inglés expande los conceptos en los que puedes pensar o el pensamiento existe antes de las palabras?"
+    },
+    {
+      "label": "Ship of Theseus",
+      "color": "#3B82F6",
+      "prompt": "If every single habit, idea, and cell of your body changes over ten years, are you still the exact same person?",
+      "es": "¿Si cada hábito, idea y célula de tu cuerpo cambia en diez años, sigues siendo exactamente la misma persona?"
+    },
+    {
+      "label": "Sacrifice vs Collective",
+      "color": "#8B5CF6",
+      "prompt": "In your philosophical view, could you ever justify sacrificing one person's happiness for the majority?",
+      "es": "¿Desde tu visión filosófica, podrías justificar alguna vez sacrificar la felicidad de una persona por la mayoría?"
+    },
+    {
+      "label": "Moral Instinct",
+      "color": "#EC4899",
+      "prompt": "Do you make important life decisions following strict cold logic or deep emotional intuition in your gut?",
+      "es": "¿Tomas decisiones importantes siguiendo la lógica fría y estricta o tu intuición emocional profunda?"
+    }
+  ],
+  "c-teens-masters-4": [
+    {
+      "label": "Life Metaphor",
+      "color": "#EF4444",
+      "prompt": "If you had to describe your personal life journey so far using a single vivid metaphor, what would it be?",
+      "es": "¿Si tuvieras que describir tu camino de vida hasta hoy con una sola metáfora vívida, cuál sería?"
+    },
+    {
+      "label": "Inspiring TED Talk",
+      "color": "#F59E0B",
+      "prompt": "What is an unforgettable speech, TED talk, or presentation that permanently reshaped how you think about success?",
+      "es": "¿Cuál es una charla TED, discurso o conferencia inolvidable que cambió para siempre tu forma de ver el éxito?"
+    },
+    {
+      "label": "Sticky Ideas",
+      "color": "#10B981",
+      "prompt": "Why do you think people remember emotional stories and analogies ten times longer than dry lists of statistics?",
+      "es": "¿Por qué crees que la gente recuerda las historias emotivas y analogías diez veces más que las estadísticas frías?"
+    },
+    {
+      "label": "Captivating Opening",
+      "color": "#3B82F6",
+      "prompt": "What opening line would you deliver on a keynote stage to hook an audience of two thousand executives instantly?",
+      "es": "¿Qué frase inicial dirías en un escenario para atrapar la atención de dos mil ejecutivos al instante?"
+    },
+    {
+      "label": "Youth Spark",
+      "color": "#8B5CF6",
+      "prompt": "In your own inspiring words, complete this sentence: 'Right now, my generation represents the...'?",
+      "es": "¿En tus propias palabras inspiradoras, completa esta frase: 'Ahora mismo, mi generación representa el/la...'?"
+    },
+    {
+      "label": "Storytelling Superpower",
+      "color": "#EC4899",
+      "prompt": "Which creator, filmmaker, or author do you consider an absolute master of emotional storytelling?",
+      "es": "¿Qué creador, director de cine o escritor consideras un maestro absoluto de la narración emotiva?"
+    }
+  ],
+  "c-teens-masters-5": [
+    {
+      "label": "UN Youth Ambassador",
+      "color": "#EF4444",
+      "prompt": "If you were appointed Youth Ambassador to the United Nations General Assembly, what historic resolution would you present?",
+      "es": "¿Si fueras nombrado Embajador Juvenil ante la ONU, qué resolución histórica presentarías?"
+    },
+    {
+      "label": "Soft Power vs Might",
+      "color": "#F59E0B",
+      "prompt": "In your assessment of global influence, what impresses you more: cultural soft power or military muscle?",
+      "es": "¿En tu evaluación de la influencia global, qué te impresiona más: el poder blando cultural o el poder militar?"
+    },
+    {
+      "label": "Protecting the Amazon",
+      "color": "#10B981",
+      "prompt": "Do you believe your Amazon rainforest should be protected under shared international environmental treaties?",
+      "es": "¿Crees que la selva amazónica de tu región debería ser protegida bajo tratados ambientales internacionales?"
+    },
+    {
+      "label": "Global Peace Pact",
+      "color": "#3B82F6",
+      "prompt": "If you could force world leaders to sign one binding treaty before 2030, what would your treaty mandate?",
+      "es": "¿Si pudieras obligar a los líderes del mundo a firmar un tratado vinculante antes de 2030, qué ordenaría tu tratado?"
+    },
+    {
+      "label": "Diplomatic Compromise",
+      "color": "#8B5CF6",
+      "prompt": "When negotiating a dispute between opposing factions, how do you persuade both sides to accept a compromise?",
+      "es": "¿Al mediar en un conflicto entre bandos opuestos, cómo logras que ambas partes acepten un acuerdo?"
+    },
+    {
+      "label": "Citizen of the World",
+      "color": "#EC4899",
+      "prompt": "Do you see yourself primarily as a citizen of Colombia, or as a global citizen responsible for the planet?",
+      "es": "¿Te consideras principalmente ciudadano de Colombia o un ciudadano global responsable del planeta?"
+    }
+  ],
+  "c-teens-masters-6": [
+    {
+      "label": "Visual Masterpiece",
+      "color": "#EF4444",
+      "prompt": "Which film or visual series has imagery and cinematography that completely took your breath away?",
+      "es": "¿Qué película o serie tiene una fotografía y estética visual que te dejó totalmente sin aliento?"
+    },
+    {
+      "label": "Soundtrack Goosebumps",
+      "color": "#F59E0B",
+      "prompt": "What musical score or movie soundtrack gives you instant chills every time you listen to it with headphones?",
+      "es": "¿Qué banda sonora o música de película te pone la piel de gallina cada vez que la escuchas con audífonos?"
+    },
+    {
+      "label": "Unforgettable Ending",
+      "color": "#10B981",
+      "prompt": "What movie ending or plot twist left you sitting in silence staring at the screen for ten minutes afterwards?",
+      "es": "¿Qué final de película o giro inesperado te dejó sentado en silencio mirando la pantalla durante diez minutos?"
+    },
+    {
+      "label": "Directing Your Story",
+      "color": "#3B82F6",
+      "prompt": "If a Hollywood director made a movie based on your teenage life, what genre and visual aesthetic would it have?",
+      "es": "¿Si un director de Hollywood hiciera una película de tu vida juvenil, qué género y estética visual tendría?"
+    },
+    {
+      "label": "The Power of Silence",
+      "color": "#8B5CF6",
+      "prompt": "Why do you think sudden complete silence in a dramatic film scene can feel ten times louder than explosive sound effects?",
+      "es": "¿Por qué crees que el silencio total en una escena dramática de cine puede sentirse más potente que las explosiones?"
+    },
+    {
+      "label": "Master Performance",
+      "color": "#EC4899",
+      "prompt": "Which actor or actress delivered a performance so raw and convincing that you forgot they were acting?",
+      "es": "¿Qué actor o actriz dio una actuación tan visceral y convincente que olvidaste que estaba actuando?"
+    }
+  ],
+  "c-teens-masters-7": [
+    {
+      "label": "Public Apology",
+      "color": "#EF4444",
+      "prompt": "When a public figure makes an apology, what convinces you that they are truly sincere?",
+      "es": "¿Cuando una figura pública pide perdón, qué te convence de que es sincera de verdad?"
+    },
+    {
+      "label": "Brand PR Disaster",
+      "color": "#F59E0B",
+      "prompt": "Can you recall a hilarious or disastrous marketing blunder where an ad campaign completely backfired on a brand?",
+      "es": "¿Recuerdas alguna metida de pata épica de mercadeo donde una campaña publicitaria le salió al revés a una marca?"
+    },
+    {
+      "label": "Crisis Coolness",
+      "color": "#10B981",
+      "prompt": "When a massive misunderstanding happens in your friend group, what is your step-by-step strategy to defuse the drama?",
+      "es": "¿Cuando hay un gran malentendido en tu grupo de amigos, cuál es tu estrategia paso a paso para calmar el drama?"
+    },
+    {
+      "label": "Cancel Culture",
+      "color": "#3B82F6",
+      "prompt": "In your view, does social media cancellation encourage accountability, or does it prevent honest personal growth?",
+      "es": "¿En tu opinión, la cultura de la cancelación fomenta la responsabilidad o impide el crecimiento personal honesto?"
+    },
+    {
+      "label": "Transparency Wins",
+      "color": "#8B5CF6",
+      "prompt": "Have you ever made a mistake and immediately owned up to it, and how did that protect your integrity?",
+      "es": "¿Alguna vez cometiste un error y lo asumiste de inmediato, y cómo protegió eso tu integridad?"
+    },
+    {
+      "label": "Reputation Armor",
+      "color": "#EC4899",
+      "prompt": "What personal ethical principles guide you when your reputation or decisions are questioned?",
+      "es": "¿Qué principios éticos personales te guían cuando se cuestiona tu reputación o decisiones?"
+    }
+  ],
+  "c-teens-masters-8": [
+    {
+      "label": "Unsolved Enigma",
+      "color": "#EF4444",
+      "prompt": "What unsolved historical mystery, disappearance, or cyber anomaly do you find endlessly fascinating?",
+      "es": "¿Qué misterio histórico sin resolver, desaparición o enigma digital te parece infinitamente fascinante?"
+    },
+    {
+      "label": "Investigative Courage",
+      "color": "#F59E0B",
+      "prompt": "What do you think motivates investigative journalists to risk their personal safety to uncover global corruption?",
+      "es": "¿Qué crees que motiva a los periodistas de investigación a arriesgar su seguridad para destapar la corrupción?"
+    },
+    {
+      "label": "Deepfake Sleuthing",
+      "color": "#10B981",
+      "prompt": "What mental checklist do you personally use when evaluating whether a viral video is authentic or AI-generated?",
+      "es": "¿Qué lista mental usas tú personalmente para evaluar si un video viral es real o generado con IA?"
+    },
+    {
+      "label": "Whistleblower Ethics",
+      "color": "#3B82F6",
+      "prompt": "Would you ever leak confidential documents if you discovered your employer was harming the public?",
+      "es": "¿Filtrarías documentos confidenciales si descubrieras que la empresa donde trabajas le hace daño a la gente?"
+    },
+    {
+      "label": "Digital Footprint",
+      "color": "#8B5CF6",
+      "prompt": "How conscious are you of the digital trail of data and search history you leave behind on the internet every day?",
+      "es": "¿Qué tan consciente eres del rastro digital de datos e historial de búsqueda que dejas en internet cada día?"
+    },
+    {
+      "label": "The Value of Truth",
+      "color": "#EC4899",
+      "prompt": "In your eyes, why is having uncensored independent journalism so vital for your future freedom?",
+      "es": "¿A tus ojos, por qué tener un periodismo independiente sin censura es tan vital para tu libertad futura?"
+    }
+  ],
+  "c-teens-masters-9": [
+    {
+      "label": "Brain-Computer Link",
+      "color": "#EF4444",
+      "prompt": "Would you ever consider getting a Neuralink-style brain chip if it allowed you to instantly download languages?",
+      "es": "¿Considerarías ponerte un chip cerebral tipo Neuralink si te permitiera descargar idiomas al instante?"
+    },
+    {
+      "label": "Eternal Digital Avatar",
+      "color": "#F59E0B",
+      "prompt": "How do you feel about the idea of AI avatars preserving people's voices, personalities, and memories forever?",
+      "es": "¿Qué opinas sobre avatares de IA que preserven la voz, personalidad y recuerdos de las personas para siempre?"
+    },
+    {
+      "label": "Algorithmic Intuition",
+      "color": "#10B981",
+      "prompt": "Are you comfortable with music and video apps knowing your emotional mood better than your friends do?",
+      "es": "¿Te sientes cómodo con que las apps conozcan tu estado de ánimo mejor que tus propios amigos?"
+    },
+    {
+      "label": "Synthetic Biology Line",
+      "color": "#3B82F6",
+      "prompt": "Where would you draw the ethical boundary between curing genetic diseases and editing human designer babies?",
+      "es": "¿Dónde trazarías tú el límite ético entre curar enfermedades genéticas y diseñar bebés a la carta?"
+    },
+    {
+      "label": "Superintelligent Future",
+      "color": "#8B5CF6",
+      "prompt": "Do you believe artificial superintelligence will ultimately liberate humanity from mundane work or pose an existential crisis?",
+      "es": "¿Crees que la superinteligencia artificial liberará a la humanidad de tareas monótonas o planteará una crisis existencial?"
+    },
+    {
+      "label": "Human Essence",
+      "color": "#EC4899",
+      "prompt": "In your view, what is the single human emotion or experience that an algorithm could never replicate in you?",
+      "es": "¿A tu parecer, cuál es la emoción o experiencia humana que un algoritmo jamás podrá replicar en ti?"
+    }
+  ],
+  "c-teens-masters-10": [
+    {
+      "label": "Unconventional Conviction",
+      "color": "#EF4444",
+      "prompt": "What is your most unconventional personal conviction that you are fully prepared to defend with passion?",
+      "es": "¿Cuál es tu convicción personal más poco común que estás totalmente preparado para defender con pasión?"
+    },
+    {
+      "label": "The Power of Fluency",
+      "color": "#F59E0B",
+      "prompt": "How has achieving full mastery and rhetorical fluency in English expanded your global identity and ambition?",
+      "es": "¿Cómo ha expandido tu identidad global y tu ambición haber alcanzado el dominio fluido del inglés?"
+    },
+    {
+      "label": "Oratory Mastery",
+      "color": "#10B981",
+      "prompt": "What is the difference between simply speaking English correctly and moving people's hearts with your words?",
+      "es": "¿Cuál es la diferencia entre solo hablar inglés correctamente y conmover los corazones con tus palabras?"
+    },
+    {
+      "label": "The Ultimate Challenge",
+      "color": "#3B82F6",
+      "prompt": "Looking back at the entire Masters curriculum, which intellectual debate pushed you the most out of your comfort zone?",
+      "es": "¿Mirando todo el currículo de Masters, qué debate intelectual te sacó más de tu zona de confort?"
+    },
+    {
+      "label": "Leading the Future",
+      "color": "#8B5CF6",
+      "prompt": "What leadership responsibility do you feel toward inspiring other young Colombians to master English and dream big?",
+      "es": "¿Qué responsabilidad de liderazgo sientes hacia inspirar a otros jóvenes a dominar el inglés y soñar en grande?"
+    },
+    {
+      "label": "Grand Graduation Manifesto",
+      "color": "#EC4899",
+      "prompt": "Deliver a 30-second triumphant statement marking your ultimate graduation from the Teen English Studio!",
+      "es": "¿Da una declaración triunfal de 30 segundos sellando tu graduación definitiva del Teen English Studio!"
+    }
+  ]
+}

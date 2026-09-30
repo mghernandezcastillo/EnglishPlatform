@@ -1862,42 +1862,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y cuéntanos sobre tu comida favorita."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Pizza Topping",
+
+          {
+                    "label": "Favorite Fast Food",
                     "color": "#EF4444",
-                    "prompt": "What is your favorite pizza topping?",
-                    "es": "¿Cuál es tu ingrediente favorito de pizza?"
-                  },
-                  {
-                    "label": "School Snack",
+                    "prompt": "What is your all-time favorite fast food: burgers, pizza, or hot dogs?",
+                    "es": "¿Cuál es tu comida rápida favorita de todas: hamburguesa, pizza o perros calientes?"
+          },
+          {
+                    "label": "Colombian Snack",
                     "color": "#F59E0B",
-                    "prompt": "What snack do you usually eat after school?",
-                    "es": "¿Qué comes normalmente después del colegio?"
-                  },
-                  {
-                    "label": "Drinks",
+                    "prompt": "Do you prefer eating warm empanadas, cheesy arepas, or crispy pandebonos?",
+                    "es": "¿Prefieres comer empanadas calientes, arepas con queso o pandebonos crocantes?"
+          },
+          {
+                    "label": "Sweet or Salty",
                     "color": "#10B981",
-                    "prompt": "Do you prefer cold fruit juice, soda, or water?",
-                    "es": "¿Prefieres jugo natural frío, gaseosa o agua?"
-                  },
-                  {
-                    "label": "Dislike",
+                    "prompt": "When you watch a movie, do you choose sweet candy or salty popcorn?",
+                    "es": "¿Cuando ves una película, eliges dulces o palomitas de maíz saladas?"
+          },
+          {
+                    "label": "Drink Choice",
                     "color": "#3B82F6",
-                    "prompt": "What food do you hate or never eat?",
-                    "es": "¿Qué comida odias o nunca comes?"
-                  },
-                  {
-                    "label": "Street Food",
+                    "prompt": "What do you love drinking on a sunny afternoon: fruit juice, soda, or iced tea?",
+                    "es": "¿Qué te encanta tomar en una tarde soleada: jugo de fruta, gaseosa o té helado?"
+          },
+          {
+                    "label": "Ice Cream Flavor",
                     "color": "#8B5CF6",
-                    "prompt": "Empanadas, burgers, or arepas con queso?",
-                    "es": "¿Empanadas, hamburguesas o arepas con queso?"
-                  },
-                  {
-                    "label": "Ice Cream",
+                    "prompt": "What is your absolute favorite ice cream flavor: chocolate, vanilla, or oreo?",
+                    "es": "¿Cuál es tu sabor de helado favorito absoluto: chocolate, vainilla u oreo?"
+          },
+          {
+                    "label": "Food Dilemma",
                     "color": "#EC4899",
-                    "prompt": "What is your favorite ice cream flavor?",
-                    "es": "¿Cuál es tu sabor de helado favorito?"
-                  }
+                    "prompt": "If you could eat only one Colombian meal for a whole week, what would you pick?",
+                    "es": "¿Si pudieras comer un solo plato colombiano durante toda una semana, cuál elegirías?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-red-600 via-rose-600 to-pink-700",
                 "imageUrl": "/images/teens-basic-zero-class-04/slide-02.jpg"
@@ -5361,13 +5363,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y describe tu cuarto o los espacios de tu casa!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "What is your favorite room in your house and why do you like it?",
-                                          "What objects are usually on your study desk or nightstand?",
-                                          "Where do you keep your backpack when you arrive from school?",
-                                          "Is there a TV, a gaming console, or a bookshelf in your bedroom?",
-                                          "What is behind the door or under the bed in your room?",
-                                          "Do you prefer a tidy room or a creative organized mess?"
-                                    ],
+
+          {
+                    "label": "Dream Bedroom",
+                    "color": "#EF4444",
+                    "prompt": "What is the coolest thing inside your bedroom right now?",
+                    "es": "¿Qué es lo más genial dentro de tu habitación ahora mismo?"
+          },
+          {
+                    "label": "Chill Spot",
+                    "color": "#F59E0B",
+                    "prompt": "Where in your house do you love to relax: in bed, on the sofa, or at your desk?",
+                    "es": "¿En qué lugar de tu casa te encanta descansar: en la cama, en el sofá o en tu escritorio?"
+          },
+          {
+                    "label": "Lost Objects",
+                    "color": "#10B981",
+                    "prompt": "Where do you usually lose your phone: under your pillow, on the couch, or on a table?",
+                    "es": "¿Dónde sueles perder tu celular: debajo de la almohada, en el sofá o en la mesa?"
+          },
+          {
+                    "label": "Secret Gaming Room",
+                    "color": "#3B82F6",
+                    "prompt": "If you could build a secret game room in your house, what would you put inside it?",
+                    "es": "¿Si pudieras construir una sala secreta de juegos en tu casa, qué le pondrías adentro?"
+          },
+          {
+                    "label": "Wall Color",
+                    "color": "#8B5CF6",
+                    "prompt": "What color are the walls of your bedroom, and do you like that color?",
+                    "es": "¿De qué color son las paredes de tu habitación y te gusta ese color?"
+          },
+          {
+                    "label": "Kitchen Raids",
+                    "color": "#EC4899",
+                    "prompt": "Do you often visit the kitchen late at night to find a delicious midnight snack?",
+                    "es": "¿Sueles ir a la cocina tarde en la noche a buscar un snack delicioso?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-700",
                                     "imageUrl": "/images/teens-basic-zero-class-10/slide-03.jpg"
                               }
@@ -5982,42 +6016,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y deletrea en voz alta en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Your Full Name",
+
+          {
+                    "label": "Your Nickname",
                     "color": "#EF4444",
-                    "prompt": "Spell your first name and last name out loud letter by letter!",
-                    "es": "¡Deletrea tu nombre y apellido en voz alta letra por letra!"
-                  },
-                  {
-                    "label": "Favorite Gamer Tag",
+                    "prompt": "Do your friends or family have a fun nickname for you?",
+                    "es": "¿Tus amigos o familia tienen un apodo divertido para ti?"
+          },
+          {
+                    "label": "Social Username",
                     "color": "#F59E0B",
-                    "prompt": "Spell your favorite video game username or gamer tag in English!",
-                    "es": "¡Deletrea tu usuario de videojuegos favorito en inglés!"
-                  },
-                  {
-                    "label": "Your City",
+                    "prompt": "What was the very first username or gamer tag you ever created?",
+                    "es": "¿Cuál fue el primer nombre de usuario o gamer tag que creaste en tu vida?"
+          },
+          {
+                    "label": "Favorite Singer",
                     "color": "#10B981",
-                    "prompt": "Spell the name of the city or town where you live!",
-                    "es": "¡Deletrea el nombre de la ciudad o pueblo donde vives!"
-                  },
-                  {
-                    "label": "Favorite Artist",
+                    "prompt": "Who is your favorite singer or streamer, and what letter does their name start with?",
+                    "es": "¿Quién es tu cantante o streamer favorito y con qué letra empieza su nombre?"
+          },
+          {
+                    "label": "Cool Words",
                     "color": "#3B82F6",
-                    "prompt": "Spell the name of your favorite singer, streamer, or band!",
-                    "es": "¡Deletrea el nombre de tu cantante, streamer o banda favorita!"
-                  },
-                  {
-                    "label": "Email Address",
+                    "prompt": "What is one English word you think sounds super cool when people say it?",
+                    "es": "¿Cuál es una palabra en inglés que te parece que suena súper genial cuando la dicen?"
+          },
+          {
+                    "label": "Short Message",
                     "color": "#8B5CF6",
-                    "prompt": "Dictate a sample email address using 'at' (@) and 'dot' (.)!",
-                    "es": "¡Dicta un correo electrónico de ejemplo usando 'at' y 'dot'!"
-                  },
-                  {
-                    "label": "Tricky Letters",
+                    "prompt": "When you text friends, do you type full sentences or use funny abbreviations?",
+                    "es": "¿Cuando chateas con amigos, escribes oraciones completas o usas abreviaturas graciosas?"
+          },
+          {
+                    "label": "Language Goal",
                     "color": "#EC4899",
-                    "prompt": "Pronounce these tricky letter pairs: A-E-I, G-J, and B-V!",
-                    "es": "¡Pronuncia estos pares de letras trampa: A-E-I, G-J y B-V!"
-                  }
+                    "prompt": "Why do you want to learn English: for gaming, traveling, music, or future studies?",
+                    "es": "¿Por qué quieres aprender inglés: para videojuegos, viajar, música o tus estudios?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-pink-700 via-purple-700 to-indigo-800",
                 "imageUrl": "/images/teens-basic-zero-class-11/slide-02.jpg"
@@ -6984,13 +7020,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y responde cómo te afecta el clima en tu ciudad!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "What is the weather like right now outside your window?",
-                                          "Do you prefer a warm sunny afternoon or a cozy rainy evening?",
-                                          "What do you do when there is a heavy afternoon rainstorm in your city?",
-                                          "What is your favorite season of the year and why?",
-                                          "Do you always check the weather app on your phone before going out?",
-                                          "What is the coldest or hottest place you have ever visited?"
-                                    ],
+
+          {
+                    "label": "Sunny or Rainy",
+                    "color": "#EF4444",
+                    "prompt": "Do you prefer bright sunny days for outdoor sports or rainy days for staying in bed?",
+                    "es": "¿Prefieres días soleados para salir o días lluviosos para quedarte en la cama?"
+          },
+          {
+                    "label": "Today's Sky",
+                    "color": "#F59E0B",
+                    "prompt": "How is the weather outside your window right now: sunny, cloudy, or raining?",
+                    "es": "¿Cómo está el clima afuera de tu ventana en este momento: soleado, nublado o lloviendo?"
+          },
+          {
+                    "label": "Cold Weather Vibe",
+                    "color": "#10B981",
+                    "prompt": "When it gets super cold, do you wear a hoodie or drink hot chocolate?",
+                    "es": "¿Cuando hace mucho frío, te pones un buzo con capota o tomas chocolate caliente?"
+          },
+          {
+                    "label": "Vacation Climate",
+                    "color": "#3B82F6",
+                    "prompt": "What is your favorite vacation weather: a warm sunny beach or cool mountain breeze?",
+                    "es": "¿Cuál es tu clima favorito para vacaciones: playa soleada y cálida o brisa fresca de montaña?"
+          },
+          {
+                    "label": "Rainy Day Activity",
+                    "color": "#8B5CF6",
+                    "prompt": "What is your favorite thing to do on a thunderstorm afternoon with friends or family?",
+                    "es": "¿Qué es lo que más te gusta hacer en una tarde de tormenta con amigos o familia?"
+          },
+          {
+                    "label": "Hot Weather Treat",
+                    "color": "#EC4899",
+                    "prompt": "When it is boiling hot outside, what ice cold drink saves your day?",
+                    "es": "¿Cuando hace un calor sofocante afuera, qué bebida bien fría te salva el día?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700",
                                     "imageUrl": "/images/teens-basic-zero-class-13/slide-03.jpg"
                               }
@@ -8091,13 +8159,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y describe rasgos físicos tuyos o de tus amigos!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "How tall are you and who is the tallest person in your family or squad?",
-                                          "Describe your hair: Is it long, short, curly, wavy, or straight? What color is it?",
-                                          "Do you wear glasses, braces, or have a distinctive smile?",
-                                          "Who is your favorite actor, singer, or athlete? Describe how they look!",
-                                          "If you could dye your hair any crazy color tomorrow, what color would you choose?",
-                                          "What physical features do you share with your mom, dad, or siblings?"
-                                    ],
+
+          {
+                    "label": "Hair Style",
+                    "color": "#EF4444",
+                    "prompt": "Do you have short, medium, or long hair, and do you like styling it?",
+                    "es": "¿Tienes el cabello corto, mediano o largo, y te gusta peinarlo?"
+          },
+          {
+                    "label": "Eye Color",
+                    "color": "#F59E0B",
+                    "prompt": "What color are your eyes: dark brown, light brown, hazel, or green?",
+                    "es": "¿De qué color son tus ojos: café oscuro, café claro, avellana o verdes?"
+          },
+          {
+                    "label": "Style Vibe",
+                    "color": "#10B981",
+                    "prompt": "What kind of clothing style represents you the best: sporty, casual, or streetwear?",
+                    "es": "¿Qué estilo de ropa te representa mejor: deportivo, casual o streetwear urbano?"
+          },
+          {
+                    "label": "Favorite Accessory",
+                    "color": "#3B82F6",
+                    "prompt": "Do you wear glasses, a watch, bracelets, or a cool cap every day?",
+                    "es": "¿Usas gafas, reloj, manillas o una gorra bacana todos los días?"
+          },
+          {
+                    "label": "Height & Sports",
+                    "color": "#8B5CF6",
+                    "prompt": "Are you tall, medium, or short among your classmates at school?",
+                    "es": "¿Eres alto, de estatura media o bajo entre tus compañeros de colegio?"
+          },
+          {
+                    "label": "Celebrity Style",
+                    "color": "#EC4899",
+                    "prompt": "Which famous artist, athlete, or YouTuber has a fashion style you love?",
+                    "es": "¿Qué artista, deportista o YouTuber famoso tiene un estilo de moda que te encanta?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600",
                                     "imageUrl": "/images/teens-basic-zero-class-15/slide-03.jpg"
                               }
@@ -8691,42 +8791,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y demuestra tu dominio en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Full Bio Pitch",
+
+          {
+                    "label": "Biggest Win",
                     "color": "#EF4444",
-                    "prompt": "Introduce yourself completely: name, age, city, and favorite school subject in 30 seconds!",
-                    "es": "¡Preséntate completo: nombre, edad, ciudad y materia favorita en 30 segundos!"
-                  },
-                  {
-                    "label": "Spelling Master",
+                    "prompt": "What was the most fun topic or English word you learned in this entire Level 0?",
+                    "es": "¿Cuál fue el tema o palabra en inglés más divertida que aprendiste en todo el Nivel 0?"
+          },
+          {
+                    "label": "English Confidence",
                     "color": "#F59E0B",
-                    "prompt": "Spell your first and last name out loud with rhythm and perfect phonetics!",
-                    "es": "¡Deletrea tu nombre y apellido en voz alta con ritmo y fonética perfecta!"
-                  },
-                  {
-                    "label": "Family Showcase",
+                    "prompt": "How do you feel about speaking English now compared to your very first day?",
+                    "es": "¿Cómo te sientes hablando inglés ahora en comparación con tu primer día?"
+          },
+          {
+                    "label": "Favorite Hobby",
                     "color": "#10B981",
-                    "prompt": "Describe your family using 'his', 'her', and 'our' in two sentences!",
-                    "es": "¡Describe a tu familia usando 'his', 'her' y 'our' en dos oraciones!"
-                  },
-                  {
-                    "label": "Outfit & Style",
+                    "prompt": "What is your number one hobby that you can now talk about with international friends?",
+                    "es": "¿Cuál es tu pasatiempo número uno del que ahora puedes hablar con amigos del mundo?"
+          },
+          {
+                    "label": "Next Dream Trip",
                     "color": "#3B82F6",
-                    "prompt": "Describe the clothes and shoes you are wearing today using colors!",
-                    "es": "¡Describe la ropa y zapatos que llevas puestos hoy usando colores!"
-                  },
-                  {
-                    "label": "Hobbies & Vibes",
+                    "prompt": "If you could take an airplane anywhere tomorrow, what English-speaking city would you visit?",
+                    "es": "¿Si pudieras tomar un avión mañana, qué ciudad de habla inglesa visitarías?"
+          },
+          {
+                    "label": "Celebration Plan",
                     "color": "#8B5CF6",
-                    "prompt": "Tell us two hobbies you love doing with -ING and one you don't like!",
-                    "es": "¡Dinos dos pasatiempos que amas con -ING y uno que no te gusta!"
-                  },
-                  {
-                    "label": "Daily Routine",
+                    "prompt": "How will you celebrate graduating from Teen Level 0 today?",
+                    "es": "¿Cómo vas a celebrar graduarte hoy del Nivel 0 de Teens?"
+          },
+          {
+                    "label": "Gamer English",
                     "color": "#EC4899",
-                    "prompt": "What time do you wake up, study, and go to bed on school days?",
-                    "es": "¿A qué hora te despiertas, estudias y te acuestas en días de colegio?"
-                  }
+                    "prompt": "Have you tried playing online games or watching YouTube videos in English yet?",
+                    "es": "¿Ya has intentado jugar online o ver videos de YouTube en inglés?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-yellow-600 via-amber-700 to-red-800",
                 "imageUrl": "/images/teens-basic-zero-class-16/slide-02.jpg"
@@ -9203,42 +9305,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Describe a alguien de tu grupo con un adjetivo genial."
                 ],
                 "wheelItems": [
-                  {
+
+          {
                     "label": "Best Friend",
-                    "color": "#6366F1",
-                    "prompt": "Who is your best friend and what is their vibe?",
-                    "es": "¿Quién es tu mejor amigo y cuál es su estilo?"
-                  },
-                  {
-                    "label": "Creative",
-                    "color": "#EC4899",
-                    "prompt": "Who in your class is very creative with art or music?",
-                    "es": "¿Quién en tu salón es muy creativo con arte o música?"
-                  },
-                  {
-                    "label": "Helpful",
-                    "color": "#10B981",
-                    "prompt": "Who helps you the most with school tasks?",
-                    "es": "¿Quién te ayuda más con tareas del colegio?"
-                  },
-                  {
-                    "label": "Funny",
+                    "color": "#EF4444",
+                    "prompt": "What is your best friend's personality like: funny, loyal, quiet, or super energetic?",
+                    "es": "¿Cómo es la personalidad de tu mejor amigo: divertido, leal, tranquilo o súper enérgico?"
+          },
+          {
+                    "label": "Squad Vibe",
                     "color": "#F59E0B",
-                    "prompt": "Who is the funniest person in your squad?",
-                    "es": "¿Quién es la persona más graciosa de tu grupo?"
-                  },
-                  {
-                    "label": "Personality",
-                    "color": "#8B5CF6",
-                    "prompt": "What word best describes your personality?",
-                    "es": "¿Qué palabra describe mejor tu personalidad?"
-                  },
-                  {
-                    "label": "Teammate",
+                    "prompt": "How many close friends are in your core squad that you hang out with every week?",
+                    "es": "¿Cuántos amigos cercanos hay en tu grupo principal con los que sales cada semana?"
+          },
+          {
+                    "label": "Introvert or Extrovert",
+                    "color": "#10B981",
+                    "prompt": "Do you get energy from hanging out with huge crowds or chilling with one good friend?",
+                    "es": "¿Te recargas con multitudes de personas o relajándote con un solo buen amigo?"
+          },
+          {
+                    "label": "Weekend Hangout",
                     "color": "#3B82F6",
-                    "prompt": "What makes a great sports teammate?",
-                    "es": "¿Qué hace a un gran compañero de equipo?"
-                  }
+                    "prompt": "Where do you and your friends love spending free time: at the mall, park, or playing games?",
+                    "es": "¿Dónde les encanta pasar el tiempo libre a tus amigos y a ti: en el centro comercial, el parque o jugando?"
+          },
+          {
+                    "label": "Loyal Friend",
+                    "color": "#8B5CF6",
+                    "prompt": "What quality do you value most in a friendship: honesty, humor, or trust?",
+                    "es": "¿Qué cualidad valoras más en una amistad: la honestidad, el humor o la confianza?"
+          },
+          {
+                    "label": "Teammate Vibe",
+                    "color": "#EC4899",
+                    "prompt": "When you play sports or group games, are you competitive or do you just play for laughs?",
+                    "es": "¿Cuando juegas deportes o juegos grupales, eres competitivo o juegas solo para reírte?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-purple-600 via-indigo-700 to-cyan-600",
                 "imageUrl": "/images/teens-basic-1-class-01/slide-02.jpg"
@@ -14136,13 +14240,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y responde cómo te mueves por tu ciudad o barrio!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "How do you get to school or English class every day? (Bus, bike, walking...)",
-                                          "Do you prefer walking along a quiet street or through a busy shopping mall?",
-                                          "What is the easiest way to get across your neighborhood at rush hour?",
-                                          "When was the last time you ran into a friend while walking past a cafe?",
-                                          "Have you ever ridden an electric scooter along the bike path?",
-                                          "Do you look both ways carefully before walking across the avenue?"
-                                    ],
+
+          {
+                    "label": "School Commute",
+                    "color": "#EF4444",
+                    "prompt": "How do you travel to school every morning: walking, on a bike, in a car, or on the bus?",
+                    "es": "¿Cómo te vas al colegio cada mañana: caminando, en cicla, en carro o en bus?"
+          },
+          {
+                    "label": "Bike Ride",
+                    "color": "#F59E0B",
+                    "prompt": "Do you like riding a bike or skate around your neighborhood on weekend mornings?",
+                    "es": "¿Te gusta montar en cicla o patineta por tu barrio los fines de semana en la mañana?"
+          },
+          {
+                    "label": "City Transit",
+                    "color": "#10B981",
+                    "prompt": "Have you ever traveled on the TransMilenio, Metro, or a cable car in Colombia?",
+                    "es": "¿Alguna vez has viajado en TransMilenio, Metro o cable aéreo en Colombia?"
+          },
+          {
+                    "label": "Walking Around",
+                    "color": "#3B82F6",
+                    "prompt": "Do you enjoy walking around your town with headphones listening to your favorite playlist?",
+                    "es": "¿Te gusta caminar por tu ciudad con audífonos escuchando tu playlist favorita?"
+          },
+          {
+                    "label": "Getting Lost",
+                    "color": "#8B5CF6",
+                    "prompt": "Have you or your family ever gotten lost in a big city or shopping center?",
+                    "es": "¿Alguna vez tú o tu familia se han perdido en una gran ciudad o centro comercial?"
+          },
+          {
+                    "label": "Dream Vehicle",
+                    "color": "#EC4899",
+                    "prompt": "If you could drive any vehicle in the world in the future, what would your dream ride be?",
+                    "es": "¿Si pudieras manejar cualquier vehículo del mundo en el futuro, cuál sería el de tus sueños?"
+          }
+
+                ],
                                     "bgColor": "from-violet-600 via-fuchsia-600 to-rose-600",
                                     "imageUrl": "/images/teens-basic-1-class-09/slide-03.jpg"
                               }
@@ -15370,45 +15506,47 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "type": "spinning-wheel",
                 "content": [
                   "Spin the wheel and speak!",
-                  "Gira la ruleta y responde con una oración completa usando pronombres objeto."
+                  "¡Gira la ruleta y rompe el hielo compartiendo tu opinión en inglés!"
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Pet Care",
+
+          {
+                    "label": "Sanctuary Volunteer",
                     "color": "#EF4444",
-                    "prompt": "Your pet is hungry. Do you feed it every morning or does someone else feed it?",
-                    "es": "Tu mascota tiene hambre. ¿La alimentas cada mañana o alguien más la alimenta?"
-                  },
-                  {
-                    "label": "Wild Safari",
+                    "prompt": "If you could volunteer for a weekend at a wildlife sanctuary, which animal would you love to care for?",
+                    "es": "¿Si pudieras ser voluntario un fin de semana en un refugio, qué animal te encantaría cuidar?"
+          },
+          {
+                    "label": "Adopt a Pet",
                     "color": "#F59E0B",
-                    "prompt": "If you see a wild jaguar in the jungle, would you approach it or photograph it from far away?",
-                    "es": "Si ves un jaguar salvaje en la selva, ¿te acercarías a él o lo fotografiarías desde lejos?"
-                  },
-                  {
-                    "label": "Endangered",
+                    "prompt": "Do you currently have a pet at home, or what kind of animal would you love to adopt?",
+                    "es": "¿Tienes mascota actualmente en casa o qué tipo de animal te encantaría adoptar?"
+          },
+          {
+                    "label": "Wild Safari",
                     "color": "#10B981",
-                    "prompt": "Sea turtles are in danger. How can we protect them from ocean plastic?",
-                    "es": "Las tortugas marinas están en peligro. ¿Cómo podemos protegerlas del plástico oceánico?"
-                  },
-                  {
-                    "label": "Sanctuary",
+                    "prompt": "Which wild animal would you love to see in person on an African safari: lions, giraffes, or elephants?",
+                    "es": "¿Qué animal salvaje te encantaría ver en persona en un safari: leones, jirafas o elefantes?"
+          },
+          {
+                    "label": "Animal Rescue",
                     "color": "#3B82F6",
-                    "prompt": "The zookeeper loves animals. Do the chimps recognize him when he visits them?",
-                    "es": "El cuidador ama a los animales. ¿Los chimpancés lo reconocen cuando él los visita?"
-                  },
-                  {
-                    "label": "Rescue Team",
+                    "prompt": "Have you ever rescued a street dog, kitten, or lost bird in your neighborhood?",
+                    "es": "¿Alguna vez has rescatado a un perrito de la calle, gatito o ave perdida en tu barrio?"
+          },
+          {
+                    "label": "Ocean Life",
                     "color": "#8B5CF6",
-                    "prompt": "A lost puppy needs help on the street. Can you help us rescue it?",
-                    "es": "Un perrito perdido necesita ayuda en la calle. ¿Puedes ayudarnos a rescatarlo?"
-                  },
-                  {
-                    "label": "Nature Tour",
+                    "prompt": "Which sea creature fascinates you the most: playful dolphins, giant whales, or deep sea sharks?",
+                    "es": "¿Qué criatura marina te fascina más: delfines juguetones, ballenas gigantes o tiburones?"
+          },
+          {
+                    "label": "Creepy Crawlies",
                     "color": "#EC4899",
-                    "prompt": "Our guide knows the forest well. Does she show us where birds nest?",
-                    "es": "Nuestra guía conoce bien el bosque. ¿Ella nos muestra dónde anidan las aves?"
-                  }
+                    "prompt": "Are you afraid of creepy insects like big spiders and scorpions, or do you find them cool?",
+                    "es": "¿Te dan miedo los bichos como arañas gigantes y escorpiones, o te parecen bacanos?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-teal-600 via-cyan-700 to-blue-800",
                 "imageUrl": "/images/teens-basic-2-class-01/slide-02.jpg"
@@ -17348,42 +17486,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y responde con una idea completa."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Tech",
+
+          {
+                    "label": "Dream Career",
                     "color": "#EF4444",
-                    "prompt": "Would you like to be a software engineer, AI developer, or game designer?",
-                    "es": "¿Te gustaría ser ingeniero de software, desarrollador de IA o diseñador de videojuegos?"
-                  },
-                  {
-                    "label": "Art",
+                    "prompt": "What job or career sounds super exciting to you for your future?",
+                    "es": "¿Qué trabajo o profesión te suena súper emocionante para tu futuro?"
+          },
+          {
+                    "label": "Dream Workplace",
                     "color": "#F59E0B",
-                    "prompt": "Are you interested in photography, music production, or graphic animation?",
-                    "es": "¿Te interesa la fotografía, producción musical o animación gráfica?"
-                  },
-                  {
-                    "label": "Health",
+                    "prompt": "Would you rather work in a modern tech office, from home in your pajamas, or traveling the world?",
+                    "es": "¿Preferirías trabajar en una oficina tech moderna, desde casa en pijama o viajando por el mundo?"
+          },
+          {
+                    "label": "Tech or Art",
                     "color": "#10B981",
-                    "prompt": "Would you like to be a doctor, a veterinarian, or a sports physiotherapist?",
-                    "es": "¿Te gustaría ser médico, veterinario o fisioterapeuta deportivo?"
-                  },
-                  {
-                    "label": "Science",
+                    "prompt": "Are you more drawn to creative careers like design and music, or science and engineering?",
+                    "es": "¿Te llaman más la atención las carreras creativas como diseño y música, o la ciencia e ingeniería?"
+          },
+          {
+                    "label": "Dream Salary",
                     "color": "#3B82F6",
-                    "prompt": "Where do environmental scientists and aerospace engineers work?",
-                    "es": "¿Dónde trabajan los científicos ambientales e ingenieros aeroespaciales?"
-                  },
-                  {
-                    "label": "Studio",
+                    "prompt": "What is the very first thing you would buy with your first big paycheck in your life?",
+                    "es": "¿Qué es lo primero que te comprarías con tu primer gran sueldo en la vida?"
+          },
+          {
+                    "label": "Science & Space",
                     "color": "#8B5CF6",
-                    "prompt": "Would you prefer working in a modern design studio or remotely from home?",
-                    "es": "¿Preferirías trabajar en un estudio de diseño moderno o remoto desde casa?"
-                  },
-                  {
-                    "label": "Dream",
+                    "prompt": "Would you ever want to work as an astronaut exploring space or a marine biologist exploring oceans?",
+                    "es": "¿Te gustaría trabajar como astronauta explorando el espacio o biólogo marino explorando océanos?"
+          },
+          {
+                    "label": "Entrepreneur Vibe",
                     "color": "#EC4899",
-                    "prompt": "What is your biggest career goal for the next 10 years?",
-                    "es": "¿Cuál es tu mayor meta profesional para los próximos 10 años?"
-                  }
+                    "prompt": "Would you prefer starting your own company with friends or working for a famous brand like Google or Nike?",
+                    "es": "¿Preferirías montar tu propia empresa con amigos o trabajar para una marca famosa como Google o Nike?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-purple-600 via-indigo-700 to-blue-800",
                 "imageUrl": "/images/teens-basic-2-class-04/slide-02.jpg"
@@ -18658,49 +18798,51 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
               {
                 "id": "tb2-6-wheel",
                 "title": "School Rules Spinner 🎡 / Ruleta de Normas",
-                "description": "Gira la ruleta y responde con una regla u obligación escolar:",
+                "description": "Gira la ruleta y responde una pregunta divertida sobre la vida escolar:",
                 "type": "spinning-wheel",
                 "content": [
                   "Spin the wheel and speak!",
                   "Gira la ruleta y responde con una idea completa."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Must",
+
+          {
+                    "label": "Strict Rules",
                     "color": "#EF4444",
-                    "prompt": "What is one strict rule all students MUST follow in class?",
-                    "es": "¿Cuál es una regla estricta que todos los estudiantes DEBEN seguir?"
-                  },
-                  {
-                    "label": "Have to",
+                    "prompt": "What is one school rule that you think is completely unnecessary or annoying?",
+                    "es": "¿Cuál es una regla escolar que te parece completamente innecesaria o cansona?"
+          },
+          {
+                    "label": "Phone Policy",
                     "color": "#F59E0B",
-                    "prompt": "What equipment or supplies do you HAVE TO bring to science lab?",
-                    "es": "¿Qué materiales TIENES que traer al laboratorio de ciencias?"
-                  },
-                  {
-                    "label": "Should",
+                    "prompt": "Do your teachers let you use your smartphone during breaks, or must you keep it in your backpack?",
+                    "es": "¿Tus profesores te dejan usar el celular en los descansos o debes guardarlo en la maleta?"
+          },
+          {
+                    "label": "Exam Advice",
                     "color": "#10B981",
-                    "prompt": "What SHOULD a new student do to make good friends quickly?",
-                    "es": "¿Qué DEBERÍA hacer un estudiante nuevo para hacer buenos amigos?"
-                  },
-                  {
-                    "label": "Phones",
+                    "prompt": "What is your personal secret tip to stay calm and pass tough exams?",
+                    "es": "¿Cuál es tu tip secreto personal para mantener la calma y pasar exámenes difíciles?"
+          },
+          {
+                    "label": "Making Friends",
                     "color": "#3B82F6",
-                    "prompt": "Should students use smartphones during class or keep them in backpacks?",
-                    "es": "¿Deberían usar celulares en clase o guardarlos en las maletas?"
-                  },
-                  {
-                    "label": "Uniform",
+                    "prompt": "If a new student asks for your advice on their first day of school, what tip do you give them?",
+                    "es": "¿Si un estudiante nuevo te pide un consejo en su primer día de colegio, qué tip le das?"
+          },
+          {
+                    "label": "Morning Habit",
                     "color": "#8B5CF6",
-                    "prompt": "Do you have to wear a student uniform or free casual clothing?",
-                    "es": "¿Tienes que usar uniforme escolar o ropa casual libre?"
-                  },
-                  {
-                    "label": "Advice",
+                    "prompt": "What is one healthy habit you know you should do every morning before class?",
+                    "es": "¿Cuál es un hábito saludable que sabes que deberías hacer cada mañana antes de clase?"
+          },
+          {
+                    "label": "Lab Safety",
                     "color": "#EC4899",
-                    "prompt": "Give one top piece of advice to pass difficult math exams.",
-                    "es": "¿Qué consejo clave darías para pasar exámenes difíciles de matemáticas?"
-                  }
+                    "prompt": "Have you ever done a crazy science experiment at school that almost caused a disaster?",
+                    "es": "¿Alguna vez has hecho un experimento de ciencias loco en el colegio que casi causa un desastre?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-orange-600 via-amber-700 to-red-800",
                 "imageUrl": "/images/teens-basic-2-class-06/slide-02.jpg"
@@ -21283,42 +21425,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y responde con una idea completa."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Wildlife",
+
+          {
+                    "label": "Wild Superpower",
                     "color": "#EF4444",
-                    "prompt": "Describe where one wild animal lives and what super ability it has.",
-                    "es": "Describe dónde vive un animal y qué habilidad tiene."
-                  },
-                  {
-                    "label": "Room",
+                    "prompt": "If you could borrow the super ability of any wild animal for 24 hours, what would you choose?",
+                    "es": "¿Si pudieras pedir prestada la habilidad de cualquier animal salvaje por 24 horas, cuál elegirías?"
+          },
+          {
+                    "label": "Future Podcast",
                     "color": "#F59E0B",
-                    "prompt": "Describe your dream bedroom setup using There is and There are.",
-                    "es": "Describe tu cuarto soñado usando There is y There are."
-                  },
-                  {
-                    "label": "Transit",
+                    "prompt": "If you started a teen podcast tomorrow with your best friend, what would you talk about?",
+                    "es": "¿Si empezaras un podcast juvenil mañana con tu mejor amigo, de qué hablarían?"
+          },
+          {
+                    "label": "Teen Life Hacks",
                     "color": "#10B981",
-                    "prompt": "How do you commute across town and how long does it take?",
-                    "es": "¿Cómo te desplazas por la ciudad y cuánto tiempo toma?"
-                  },
-                  {
-                    "label": "Dream Job",
+                    "prompt": "What is the best piece of life advice an older friend or family member ever gave you?",
+                    "es": "¿Cuál es el mejor consejo de vida que un amigo mayor o familiar te ha dado?"
+          },
+          {
+                    "label": "Dream Vacation",
                     "color": "#3B82F6",
-                    "prompt": "What career do you want to study and why are you passionate about it?",
-                    "es": "¿Qué carrera quieres estudiar y por qué te apasiona?"
-                  },
-                  {
-                    "label": "Rules",
+                    "prompt": "If money were not an issue, what country would you visit with your friends next summer?",
+                    "es": "¿Si el dinero no fuera un problema, qué país visitarías con tus amigos el próximo verano?"
+          },
+          {
+                    "label": "Best Level 2 Win",
                     "color": "#8B5CF6",
-                    "prompt": "What MUST students obey and what SHOULD they do to succeed?",
-                    "es": "¿Qué DEBEN acatar los estudiantes y qué DEBERÍAN hacer?"
-                  },
-                  {
-                    "label": "Review",
+                    "prompt": "What was your favorite topic or challenge you conquered in Level 2?",
+                    "es": "¿Cuál fue tu tema o reto favorito que conquistaste en este Nivel 2?"
+          },
+          {
+                    "label": "Celebration Mode",
                     "color": "#EC4899",
-                    "prompt": "Review your favorite movie, anime, or video game in 30 seconds!",
-                    "es": "¡Reseña tu película o juego favorito en 30 segundos!"
-                  }
+                    "prompt": "How are you going to celebrate finishing this milestone level today?",
+                    "es": "¿Cómo vas a celebrar haber terminado este nivel hoy?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-orange-700 to-purple-900",
                 "imageUrl": "/images/teens-basic-2-class-10/slide-02.jpg"
@@ -21947,13 +22091,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y defiende tu tecnología o consola favorita!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "PlayStation vs Xbox vs Nintendo Switch: Which one is better for multiplayer games?",
-                                          "Android vs iPhone: Which phone has a better camera and longer battery life?",
-                                          "PC Gaming vs Console: Which setup is faster and more powerful?",
-                                          "Wireless earbuds vs Overhead headphones: Which is more comfortable for studying?",
-                                          "TikTok vs Instagram: Which app is more entertaining when you are bored?",
-                                          "Is playing video games online more exciting than watching streaming series?"
-                                    ],
+
+          {
+                    "label": "Phone Battle",
+                    "color": "#EF4444",
+                    "prompt": "iPhone vs Android: which one do you personally think is better and why?",
+                    "es": "iPhone vs Android: ¿cuál crees personalmente que es mejor y por qué?"
+          },
+          {
+                    "label": "Gaming Platform",
+                    "color": "#F59E0B",
+                    "prompt": "Do you prefer gaming on a PC, a console like PlayStation, or your smartphone?",
+                    "es": "¿Prefieres jugar en PC, consola como PlayStation o en tu celular?"
+          },
+          {
+                    "label": "Social Apps",
+                    "color": "#10B981",
+                    "prompt": "Which app is more fun for you: TikTok, Instagram Reels, or YouTube?",
+                    "es": "¿Qué app te parece más entretenida: TikTok, Instagram Reels o YouTube?"
+          },
+          {
+                    "label": "Headphones Dilemma",
+                    "color": "#3B82F6",
+                    "prompt": "Do you like wireless earbuds or big over-ear headphones when you listen to music?",
+                    "es": "¿Te gustan audífonos inalámbricos pequeños o audífonos grandes de diadema al escuchar música?"
+          },
+          {
+                    "label": "Tech Speed",
+                    "color": "#8B5CF6",
+                    "prompt": "What annoys you more: a dead phone battery or super slow Wi-Fi?",
+                    "es": "¿Qué te da más rabia: quedarte sin batería en el celular o un Wi-Fi súper lento?"
+          },
+          {
+                    "label": "Future Gadget",
+                    "color": "#EC4899",
+                    "prompt": "What futuristic gadget would you love to own: VR goggles or a flying skateboard?",
+                    "es": "¿Qué aparato futurista te encantaría tener: gafas de realidad virtual o una patineta voladora?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-rose-600",
                                     "imageUrl": "/images/teens-basic-3-class-01/slide-03.jpg"
                               }
@@ -22549,13 +22725,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y responde sobre los récords y extremos más sorprendentes!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "What is the most incredible world record you have ever seen on YouTube or TikTok?",
-                                          "Who is the greatest and most famous athlete of all time in your opinion?",
-                                          "What is the highest mountain or tallest building you have visited or seen?",
-                                          "What is the most difficult or frustrating video game boss battle ever created?",
-                                          "Which animal on Earth is the fastest and which one is the most dangerous?",
-                                          "What is the hottest or coldest city in your country during the year?"
-                                    ],
+
+          {
+                    "label": "Extreme Records",
+                    "color": "#EF4444",
+                    "prompt": "What Guinness World Record would you love to try breaking with your friends?",
+                    "es": "¿Qué Récord Guinness mundial te encantaría intentar romper con tus amigos?"
+          },
+          {
+                    "label": "Best Athlete",
+                    "color": "#F59E0B",
+                    "prompt": "Who is the greatest athlete of all time in your opinion: Messi, Ronaldo, LeBron, or someone else?",
+                    "es": "¿Quién es el mejor deportista de todos los tiempos en tu opinión: Messi, Ronaldo, LeBron u otro?"
+          },
+          {
+                    "label": "Rollercoasters",
+                    "color": "#10B981",
+                    "prompt": "What is the tallest, fastest, or craziest amusement park ride you have ever ridden?",
+                    "es": "¿Cuál es la atracción de parque más alta, rápida o loca a la que te has subido?"
+          },
+          {
+                    "label": "Peak Food",
+                    "color": "#3B82F6",
+                    "prompt": "What is the tastiest meal you have ever eaten in your entire life?",
+                    "es": "¿Cuál es la comida más deliciosa que has probado en toda tu vida?"
+          },
+          {
+                    "label": "Scariest Challenge",
+                    "color": "#8B5CF6",
+                    "prompt": "What is the most extreme or daring thing you have ever dared to do?",
+                    "es": "¿Qué es lo más extremo o atrevido que te has animado a hacer?"
+          },
+          {
+                    "label": "Best Video Game",
+                    "color": "#EC4899",
+                    "prompt": "What is the greatest video game you have ever played in terms of graphics and fun?",
+                    "es": "¿Cuál es el mejor videojuego que has jugado en cuanto a gráficos y diversión?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-rose-600 via-purple-600 to-indigo-700",
                                     "imageUrl": "/images/teens-basic-3-class-02/slide-03.jpg"
                               }
@@ -23649,13 +23857,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y comparte lo que vas a hacer en tu futuro próximo!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "What are you going to do this upcoming weekend with your friends or family?",
-                                          "Are you going to learn a new skill, language, or instrument this year?",
-                                          "What is the next movie or video game you are going to play?",
-                                          "If you save money this month, what are you going to buy?",
-                                          "Where are you and your family going to travel on your next school vacation?",
-                                          "Look outside: What is the weather going to be like in two hours?"
-                                    ],
+
+          {
+                    "label": "Weekend Plans",
+                    "color": "#EF4444",
+                    "prompt": "What are you going to do this upcoming weekend with your friends or family?",
+                    "es": "¿Qué vas a hacer este próximo fin de semana con tus amigos o familia?"
+          },
+          {
+                    "label": "Next Movie",
+                    "color": "#F59E0B",
+                    "prompt": "What movie or new series are you planning to watch soon?",
+                    "es": "¿Qué película o serie nueva planeas ver pronto?"
+          },
+          {
+                    "label": "Vacation Forecast",
+                    "color": "#10B981",
+                    "prompt": "Where are you going to travel on your next school vacation?",
+                    "es": "¿A dónde vas a viajar en tus próximas vacaciones del colegio?"
+          },
+          {
+                    "label": "Shopping Goal",
+                    "color": "#3B82F6",
+                    "prompt": "What is the next piece of clothing, sneakers, or gadget you are going to buy?",
+                    "es": "¿Cuál es la próxima prenda, tenis o aparato que te vas a comprar?"
+          },
+          {
+                    "label": "Dinner Plans",
+                    "color": "#8B5CF6",
+                    "prompt": "What are you going to have for dinner tonight after your classes?",
+                    "es": "¿Qué vas a cenar esta noche después de tus clases?"
+          },
+          {
+                    "label": "Future Goal",
+                    "color": "#EC4899",
+                    "prompt": "What new talent or sport are you going to learn before the end of this year?",
+                    "es": "¿Qué nuevo talento o deporte vas a aprender antes de que termine este año?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-700",
                                     "imageUrl": "/images/teens-basic-3-class-04/slide-03.jpg"
                               }
@@ -24233,13 +24473,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y responde qué estabas haciendo en cada momento clave!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "What were you doing yesterday at 8:00 PM when the lights flickered?",
-                                          "Were you sleeping or studying when your phone rang late last night?",
-                                          "What were your friends doing during the school lunch break yesterday?",
-                                          "Imagine the power went out right now: What were you just doing?",
-                                          "What was your teacher doing while the students were taking the test?",
-                                          "Were you playing competitive video games yesterday afternoon?"
-                                    ],
+
+          {
+                    "label": "Yesterday 8 PM",
+                    "color": "#EF4444",
+                    "prompt": "What were you doing yesterday at 8 PM: having dinner, doing homework, or gaming?",
+                    "es": "¿Qué estabas haciendo ayer a las 8 PM: cenando, haciendo tareas o jugando videojuegos?"
+          },
+          {
+                    "label": "Power Outage",
+                    "color": "#F59E0B",
+                    "prompt": "What were you doing the last time the electricity suddenly went out in your home?",
+                    "es": "¿Qué estabas haciendo la última vez que se fue la luz de repente en tu casa?"
+          },
+          {
+                    "label": "Sunday Afternoon",
+                    "color": "#10B981",
+                    "prompt": "What were you doing last Sunday afternoon: relaxing, hanging out with friends, or sleeping?",
+                    "es": "¿Qué estabas haciendo el domingo pasado por la tarde: descansando, con amigos o durmiendo?"
+          },
+          {
+                    "label": "Secret Gaming",
+                    "color": "#3B82F6",
+                    "prompt": "Have you ever been caught gaming when you were supposed to be studying?",
+                    "es": "¿Alguna vez te han pillado jugando cuando se suponía que debías estar estudiando?"
+          },
+          {
+                    "label": "Rainy Moment",
+                    "color": "#8B5CF6",
+                    "prompt": "What were you doing when the last heavy rainstorm hit your city?",
+                    "es": "¿Qué estabas haciendo cuando cayó el último aguacero fuerte en tu ciudad?"
+          },
+          {
+                    "label": "Late Night Scroll",
+                    "color": "#EC4899",
+                    "prompt": "Were you scrolling on social media late last night, or did you sleep early?",
+                    "es": "¿Estabas scrolleando en redes anoche hasta tarde o te dormiste temprano?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-rose-700 via-amber-700 to-orange-600",
                                     "imageUrl": "/images/teens-basic-3-class-05/slide-03.jpg"
                               }
@@ -24804,13 +25076,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y comparte qué estabas haciendo cuando ocurrió algo inesperado!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "What were you doing when you heard your favorite song for the first time?",
-                                          "Have you ever dropped something valuable while you were running or skating?",
-                                          "What were you and your friends doing when the school fire alarm rang?",
-                                          "What were you watching when your phone suddenly ran out of battery?",
-                                          "What embarrassing moment happened while you were walking in the hallway?",
-                                          "What were you dreaming about when your morning alarm woke you up today?"
-                                    ],
+
+          {
+                    "label": "Funny Accidents",
+                    "color": "#EF4444",
+                    "prompt": "Have you ever tripped or dropped your phone while you were looking at something else?",
+                    "es": "¿Alguna vez te has tropezado o se te ha caído el celular mientras mirabas otra cosa?"
+          },
+          {
+                    "label": "Plot Twist Day",
+                    "color": "#F59E0B",
+                    "prompt": "Tell me about a day in your life that started completely normal and ended with a crazy surprise!",
+                    "es": "¿Cuéntame sobre un día en tu vida que empezó normal y terminó con una sorpresa loca!"
+          },
+          {
+                    "label": "Sudden Rain",
+                    "color": "#10B981",
+                    "prompt": "Were you ever walking outside without an umbrella when it suddenly started pouring rain?",
+                    "es": "¿Alguna vez estabas caminando sin paraguas cuando de repente empezó a llover a cántaros?"
+          },
+          {
+                    "label": "Surprise Reunion",
+                    "color": "#3B82F6",
+                    "prompt": "Have you ever bumped into a school friend while you were walking in an unexpected place?",
+                    "es": "¿Alguna vez te cruzaste a un amigo del colegio mientras caminabas en un lugar inesperado?"
+          },
+          {
+                    "label": "Spilled Drink",
+                    "color": "#8B5CF6",
+                    "prompt": "What were you doing the last time you accidentally knocked over a cup of soda or juice?",
+                    "es": "¿Qué estabas haciendo la última vez que regaste sin querer un vaso de gaseosa o jugo?"
+          },
+          {
+                    "label": "Scare Pranks",
+                    "color": "#EC4899",
+                    "prompt": "Has a friend ever jumped out to scare you while you were quietly walking into a room?",
+                    "es": "¿Algún amigo te ha asustado saltando de repente mientras entrabas tranquilo a un cuarto?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-purple-600 via-fuchsia-600 to-pink-600",
                                     "imageUrl": "/images/teens-basic-3-class-06/slide-03.jpg"
                               }
@@ -25402,42 +25706,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y habla de una persona que admiras en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Singer",
+
+          {
+                    "label": "Inspiring Idol",
                     "color": "#EF4444",
-                    "prompt": "Who is a Colombian singer that conquered the world?",
-                    "es": "¿Quién es un cantante colombiano que conquistó el mundo?"
-                  },
-                  {
-                    "label": "Athlete",
+                    "prompt": "Who is a singer, athlete, or creator whose life story inspires you the most?",
+                    "es": "¿Quién es un cantante, atleta o creador cuya historia de vida te inspira más?"
+          },
+          {
+                    "label": "Colombian Pride",
                     "color": "#F59E0B",
-                    "prompt": "What athlete overcame great difficulties to win championships?",
-                    "es": "¿Qué atleta superó grandes dificultades para ganar campeonatos?"
-                  },
-                  {
-                    "label": "Creator",
+                    "prompt": "Which Colombian icon do you admire: Shakira, Karol G, Luis Díaz, or Egan Bernal?",
+                    "es": "¿A qué ícono colombiano admiras: Shakira, Karol G, Luis Díaz o Egan Bernal?"
+          },
+          {
+                    "label": "Childhood Dream",
                     "color": "#10B981",
-                    "prompt": "Who created your favorite video game or social media app?",
-                    "es": "¿Quién creó tu videojuego o red social favorita?"
-                  },
-                  {
-                    "label": "Writer",
+                    "prompt": "What did you dream of becoming when you were five or six years old?",
+                    "es": "¿Qué soñabas ser cuando tenías cinco o seis años?"
+          },
+          {
+                    "label": "Creative Talent",
                     "color": "#3B82F6",
-                    "prompt": "Do you know who wrote 'One Hundred Years of Solitude'?",
-                    "es": "¿Sabes quién escribió 'Cien años de soledad'?"
-                  },
-                  {
-                    "label": "Inspiration",
+                    "prompt": "If you could master any artistic skill overnight, would you choose singing, drawing, or acting?",
+                    "es": "¿Si pudieras dominar un talento artístico de la noche a la mañana, elegirías cantar, dibujar o actuar?"
+          },
+          {
+                    "label": "Overcoming Odds",
                     "color": "#8B5CF6",
-                    "prompt": "What quality do you admire most in successful people?",
-                    "es": "¿Qué cualidad admiras más en las personas exitosas?"
-                  },
-                  {
-                    "label": "Dream",
+                    "prompt": "Tell me about a time you practiced hard and succeeded at something that seemed very difficult!",
+                    "es": "¿Cuéntame de una ocasión en que practicaste duro y lograste algo que parecía muy difícil!"
+          },
+          {
+                    "label": "Legacy Goal",
                     "color": "#EC4899",
-                    "prompt": "What great milestone do you want to achieve in your life?",
-                    "es": "¿Qué gran logro quieres alcanzar en tu vida?"
-                  }
+                    "prompt": "What is something memorable you would love people to know you for in the future?",
+                    "es": "¿Por qué cosa memorable te encantaría que la gente te reconociera en el futuro?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-700",
                 "imageUrl": "/images/teens-basic-3-class-07/slide-02.jpg"
@@ -26911,42 +27217,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y pronuncia el verbo en pasado correctamente."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Visited /ɪd/",
+
+          {
+                    "label": "Best Trip Memory",
                     "color": "#EF4444",
-                    "prompt": "Pronounce: 'I visited three museums.' (Sounds like: /vɪzɪt-ɪd/)",
-                    "es": "Pronuncia: 'I visited three museums.' (Sonido: /ɪd/)"
-                  },
-                  {
-                    "label": "Walked /t/",
+                    "prompt": "What was the most exciting trip you ever took in the past with your family or friends?",
+                    "es": "¿Cuál fue el viaje más emocionante que hiciste en el pasado con tu familia o amigos?"
+          },
+          {
+                    "label": "Memorable Gift",
                     "color": "#F59E0B",
-                    "prompt": "Pronounce: 'We walked in the park.' (Sounds like: /wɔːkt/)",
-                    "es": "Pronuncia: 'We walked in the park.' (Sonido: /t/)"
-                  },
-                  {
-                    "label": "Played /d/",
+                    "prompt": "What was the coolest birthday gift you ever received in your life?",
+                    "es": "¿Cuál fue el regalo de cumpleaños más bacano que recibiste en tu vida?"
+          },
+          {
+                    "label": "Favorite Meal Ever",
                     "color": "#10B981",
-                    "prompt": "Pronounce: 'They played soccer.' (Sounds like: /pleɪd/)",
-                    "es": "Pronuncia: 'They played soccer.' (Sonido: /d/)"
-                  },
-                  {
-                    "label": "Irregular",
+                    "prompt": "What was the tastiest meal you ate last week: home food, burgers, or pizza?",
+                    "es": "¿Cuál fue la comida más rica que comiste la semana pasada: comida de casa, hamburguesas o pizza?"
+          },
+          {
+                    "label": "First Movie Theater",
                     "color": "#3B82F6",
-                    "prompt": "What is the past of: go, see, write, and win?",
-                    "es": "¿Cuál es el pasado de: go, see, write y win?"
-                  },
-                  {
-                    "label": "Memory",
+                    "prompt": "Do you remember the first movie you ever watched in a cinema on the big screen?",
+                    "es": "¿Recuerdas la primera película que viste en un cine en pantalla gigante?"
+          },
+          {
+                    "label": "Past Weekend Win",
                     "color": "#8B5CF6",
-                    "prompt": "What was the most exciting topic you learned in Level 3?",
-                    "es": "¿Cuál fue el tema más emocionante que aprendiste en Nivel 3?"
-                  },
-                  {
-                    "label": "Future",
+                    "prompt": "What was the most fun thing you did last Saturday with your squad?",
+                    "es": "¿Qué fue lo más divertido que hiciste el sábado pasado con tu parche?"
+          },
+          {
+                    "label": "Level 3 Victory",
                     "color": "#EC4899",
-                    "prompt": "What will you achieve in Level 4 (Basic 4)?",
-                    "es": "¿Qué lograrás en el Nivel 4 (Básico 4)?"
-                  }
+                    "prompt": "How do you feel right now having mastered so much English storytelling in Level 3?",
+                    "es": "¿Cómo te sientes ahora mismo habiendo dominado tantas historias en inglés en el Nivel 3?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-yellow-600 to-orange-700",
                 "imageUrl": "/images/teens-basic-3-class-10/slide-02.jpg"
@@ -27421,42 +27729,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y da tu punto de vista en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "AI in School",
+
+          {
+                    "label": "Music Beats",
                     "color": "#EF4444",
-                    "prompt": "In your opinion, is artificial intelligence good or bad for high school students?",
-                    "es": "¿En tu opinión, la IA es buena o mala para estudiantes de secundaria?"
-                  },
-                  {
-                    "label": "Video Games",
+                    "prompt": "In your opinion, which music artist currently produces the best beats and tracks?",
+                    "es": "En tu opinión, ¿qué artista musical produce actualmente los mejores ritmos y canciones?"
+          },
+          {
+                    "label": "Movie Debate",
                     "color": "#F59E0B",
-                    "prompt": "Do you believe gaming is a real sport and career?",
-                    "es": "¿Crees que los videojuegos son un verdadero deporte y carrera?"
-                  },
-                  {
-                    "label": "Social Media",
+                    "prompt": "Do you believe Marvel superhero movies are still exciting, or have they become boring?",
+                    "es": "¿Crees que las películas de Marvel siguen siendo emocionantes o ya se volvieron aburridas?"
+          },
+          {
+                    "label": "Homework Balance",
                     "color": "#10B981",
-                    "prompt": "From your perspective, which app is better: Instagram or TikTok?",
-                    "es": "¿Desde tu perspectiva, qué app es mejor: Instagram o TikTok?"
-                  },
-                  {
-                    "label": "Music",
+                    "prompt": "Do you think schools should replace traditional written homework with practical group projects?",
+                    "es": "¿Crees que los colegios deberían cambiar las tareas escritas por proyectos prácticos en grupo?"
+          },
+          {
+                    "label": "Social Media Vibes",
                     "color": "#3B82F6",
-                    "prompt": "What music genre has the best beats and lyrics nowadays?",
-                    "es": "¿Qué género musical tiene los mejores ritmos y letras hoy en día?"
-                  },
-                  {
-                    "label": "Uniforms",
+                    "prompt": "In your view, does Instagram or TikTok have a better creative vibe for teenagers?",
+                    "es": "¿A tu parecer, Instagram o TikTok tiene una vibra creativa mejor para los jóvenes?"
+          },
+          {
+                    "label": "Gaming Passion",
                     "color": "#8B5CF6",
-                    "prompt": "Do you agree that schools should allow casual streetwear instead of uniforms?",
-                    "es": "¿Estás de acuerdo con que los colegios permitan ropa casual en vez de uniformes?"
-                  },
-                  {
-                    "label": "Homework",
+                    "prompt": "What is your honest opinion on mobile gaming compared to gaming on a PC or PlayStation?",
+                    "es": "¿Cuál es tu opinión sincera sobre los juegos de celular comparados con jugar en PC o PlayStation?"
+          },
+          {
+                    "label": "Street Style",
                     "color": "#EC4899",
-                    "prompt": "Should students have less written homework and more practical projects?",
-                    "es": "¿Los estudiantes deberían tener menos tareas escritas y más proyectos prácticos?"
-                  }
+                    "prompt": "Do you believe expensive branded sneakers are worth the money, or is comfort more important?",
+                    "es": "¿Crees que los tenis de marca cara valen la pena o es más importante la comodidad?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-800",
                 "imageUrl": "/images/teens-basic-4-class-01/slide-02.jpg"
@@ -27924,42 +28234,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y da un buen consejo en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Insomnia",
+
+          {
+                    "label": "Night Owl Fix",
                     "color": "#EF4444",
-                    "prompt": "A friend can't sleep because they scroll on TikTok until 2 AM. What should they do?",
-                    "es": "Un amigo no puede dormir porque scrollea en TikTok hasta las 2 AM. ¿Qué debería hacer?"
-                  },
-                  {
-                    "label": "Exam Stress",
-                    "color": "#F59E0B",
-                    "prompt": "Your classmate is super nervous about the final math exam. What is your advice?",
-                    "es": "Tu compañero está súper nervioso por el examen final de matemáticas. ¿Cuál es tu consejo?"
-                  },
-                  {
-                    "label": "Lost Friend",
-                    "color": "#10B981",
-                    "prompt": "Two of your best friends had an argument. How should you help them reconcile?",
-                    "es": "Dos de tus mejores amigos discutieron. ¿Cómo deberías ayudarlos a reconciliarse?"
-                  },
-                  {
+                    "prompt": "What advice would you give a classmate who cannot sleep because they scroll TikTok until 2 AM?",
+                    "es": "¿Qué consejo le darías a un compañero que no puede dormir por scrollear en TikTok hasta las 2 AM?"
+          },
+          {
                     "label": "Procrastination",
+                    "color": "#F59E0B",
+                    "prompt": "What would you tell your best friend if they always leave their big school presentations for Sunday midnight?",
+                    "es": "¿Qué le dirías a tu mejor amigo si siempre deja sus exposiciones importantes para el domingo a medianoche?"
+          },
+          {
+                    "label": "New Student Tips",
+                    "color": "#10B981",
+                    "prompt": "What advice do you have for a new shy student who wants to make friends in your classroom?",
+                    "es": "¿Qué consejo tienes para un estudiante nuevo tímido que quiere hacer amigos en tu salón?"
+          },
+          {
+                    "label": "Daily Energy Hack",
                     "color": "#3B82F6",
-                    "prompt": "What should a student do if they always leave homework for Sunday midnight?",
-                    "es": "¿Qué debería hacer un estudiante si siempre deja la tarea para el domingo a medianoche?"
-                  },
-                  {
-                    "label": "Shyness",
+                    "prompt": "What healthy habit should you adopt to have maximum energy during boring morning classes?",
+                    "es": "¿Qué hábito saludable deberías adoptar para tener máxima energía en las clases aburridas de la mañana?"
+          },
+          {
+                    "label": "Exam Stress",
                     "color": "#8B5CF6",
-                    "prompt": "A new student feels very shy to make friends. What should they try first?",
-                    "es": "Un estudiante nuevo es muy tímido para hacer amigos. ¿Qué debería intentar primero?"
-                  },
-                  {
-                    "label": "Healthy Diet",
+                    "prompt": "How do you advise someone to calm down when they feel super nervous before a math test?",
+                    "es": "¿Cómo le aconsejas a alguien calmarse cuando siente muchos nervios antes de un examen de matemáticas?"
+          },
+          {
+                    "label": "Friend Drama",
                     "color": "#EC4899",
-                    "prompt": "What healthy habit should all teenagers adopt for more daily energy?",
-                    "es": "¿Qué hábito saludable deberían adoptar todos los jóvenes para tener más energía?"
-                  }
+                    "prompt": "What do you do when you and a close friend have a silly disagreement over a video game?",
+                    "es": "¿Qué haces tú cuando tú y un amigo cercano tienen un desacuerdo bobo por un videojuego?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-teal-600 via-cyan-600 to-indigo-700",
                 "imageUrl": "/images/teens-basic-4-class-02/slide-02.jpg"
@@ -28427,42 +28739,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y explica la causa y efecto en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Water & Heat",
+
+          {
+                    "label": "Screen Time Effect",
                     "color": "#EF4444",
-                    "prompt": "What happens if you heat water to 100 degrees Celsius?",
-                    "es": "¿Qué pasa si calientas agua a 100 grados Celsius?"
-                  },
-                  {
-                    "label": "Plants & Sun",
+                    "prompt": "What happens to your mood and eyes if you stare at your smartphone screen for six hours straight?",
+                    "es": "¿Qué le pasa a tu estado de ánimo y a tus ojos si miras la pantalla del celular por 6 horas seguidas?"
+          },
+          {
+                    "label": "Coffee or Energy",
                     "color": "#F59E0B",
-                    "prompt": "What happens if plants don't get sunlight or water?",
-                    "es": "¿Qué pasa si las plantas no reciben luz solar ni agua?"
-                  },
-                  {
-                    "label": "Gaming Respawn",
+                    "prompt": "If you drink an energy drink or sugary soda late in the evening, do you stay awake all night?",
+                    "es": "¿Si tomas una bebida energizante o gaseosa en la noche, te quedas despierto toda la noche?"
+          },
+          {
+                    "label": "Rainy Afternoon",
                     "color": "#10B981",
-                    "prompt": "In your favorite video game, what happens if your character loses all health points?",
-                    "es": "¿En tu juego favorito, qué pasa si tu personaje pierde todos sus puntos de vida?"
-                  },
-                  {
-                    "label": "Exercise",
+                    "prompt": "When heavy rain starts falling in your city, do you automatically feel like eating something sweet?",
+                    "es": "¿Cuando empieza a llover fuerte en tu ciudad, te dan ganas automáticas de comer algo dulce?"
+          },
+          {
+                    "label": "Skipping Breakfast",
                     "color": "#3B82F6",
-                    "prompt": "What happens to your heart rate when you run very fast?",
-                    "es": "¿Qué le pasa a tu ritmo cardíaco cuando corres muy rápido?"
-                  },
-                  {
-                    "label": "Ice Cream",
+                    "prompt": "What happens to your concentration at school if you leave home without eating breakfast?",
+                    "es": "¿Qué le pasa a tu concentración en el colegio si sales de casa sin desayunar?"
+          },
+          {
+                    "label": "Sports Sweat",
                     "color": "#8B5CF6",
-                    "prompt": "What happens if you leave an ice cream cone in the hot sun for ten minutes?",
-                    "es": "¿Qué pasa si dejas un cono de helado bajo el sol caliente por diez minutos?"
-                  },
-                  {
-                    "label": "Batteries",
+                    "prompt": "If you train hard in gym or soccer practice, how do you reward yourself afterwards?",
+                    "es": "¿Si entrenas duro en el gimnasio o en fútbol, cómo te premias después?"
+          },
+          {
+                    "label": "Music & Focus",
                     "color": "#EC4899",
-                    "prompt": "What happens when your phone drops to 0% battery?",
-                    "es": "¿Qué pasa cuando tu celular baja al 0% de batería?"
-                  }
+                    "prompt": "If you listen to instrumental lo-fi beats while studying, does it help you focus better?",
+                    "es": "¿Si escuchas ritmos lo-fi instrumentales mientras estudias, te ayuda a concentrarte mejor?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-600 via-blue-600 to-indigo-700",
                 "imageUrl": "/images/teens-basic-4-class-03/slide-02.jpg"
@@ -28930,42 +29244,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y explica el acrónimo digital en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "TBH (To Be Honest)",
+
+          {
+                    "label": "Audio vs Text",
                     "color": "#EF4444",
-                    "prompt": "What does TBH mean and when do you use it with friends?",
-                    "es": "¿Qué significa TBH y cuándo lo usas con amigos?"
-                  },
-                  {
-                    "label": "BRB (Be Right Back)",
+                    "prompt": "Do you prefer sending five-minute voice notes on WhatsApp or typing quick text messages?",
+                    "es": "¿Prefieres mandar audios de cinco minutos por WhatsApp o escribir mensajes de texto rápidos?"
+          },
+          {
+                    "label": "Favorite Emojis",
                     "color": "#F59E0B",
-                    "prompt": "When do you write BRB during a gaming session or voice call?",
-                    "es": "¿Cuándo escribes BRB durante una partida o llamada?"
-                  },
-                  {
-                    "label": "BTW (By The Way)",
+                    "prompt": "What are your top three most used emojis on your keyboard right now?",
+                    "es": "¿Cuáles son tus tres emojis más usados en tu teclado ahora mismo?"
+          },
+          {
+                    "label": "Online Acronyms",
                     "color": "#10B981",
-                    "prompt": "How do you use BTW to introduce a new interesting piece of news?",
-                    "es": "¿Cómo usas BTW para introducir un dato nuevo e interesante?"
-                  },
-                  {
-                    "label": "IMO (In My Opinion)",
+                    "prompt": "Do you and your friends use slang like LOL, POV, or TBH when texting in Spanish or English?",
+                    "es": "¿Tus amigos y tú usan expresiones como LOL, POV o TBH cuando chatean?"
+          },
+          {
+                    "label": "Left on Read",
                     "color": "#3B82F6",
-                    "prompt": "Why is IMO so popular when sharing opinions on social media?",
-                    "es": "¿Por qué IMO es tan popular al compartir opiniones en redes?"
-                  },
-                  {
-                    "label": "RN (Right Now)",
+                    "prompt": "How do you feel when someone leaves your message on read with blue checkmarks for hours?",
+                    "es": "¿Qué sientes cuando alguien te deja en visto con el chulito azul durante horas?"
+          },
+          {
+                    "label": "Group Chat Chaos",
                     "color": "#8B5CF6",
-                    "prompt": "What are you doing RN (right now) that makes you happy?",
-                    "es": "¿Qué estás haciendo RN (justo ahora) que te hace feliz?"
-                  },
-                  {
-                    "label": "NGL (Not Gonna Lie)",
+                    "prompt": "Are you an active chatter in school WhatsApp groups, or do you keep notifications muted?",
+                    "es": "¿Participas mucho en los grupos de WhatsApp del colegio o mantienes las notificaciones silenciadas?"
+          },
+          {
+                    "label": "Meme Sharing",
                     "color": "#EC4899",
-                    "prompt": "What does NGL mean when someone admits a funny secret?",
-                    "es": "¿Qué significa NGL cuando alguien admite un secreto gracioso?"
-                  }
+                    "prompt": "What is your favorite type of meme to send your best friend to make them laugh out loud?",
+                    "es": "¿Qué tipo de meme te gusta mandarle a tu mejor amigo para hacerlo reír a carcajadas?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-violet-700 via-purple-700 to-pink-800",
                 "imageUrl": "/images/teens-basic-4-class-04/slide-02.jpg"
@@ -29932,13 +30248,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y responde qué harías en cada escenario imaginario!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "If you found a wallet full of cash on the street, what would you do?",
-                                          "If you had the superpower of invisibility for 24 hours, where would you go?",
-                                          "If you could meet any historical figure or fictional character, who would it be?",
-                                          "If you were the president of your country for one week, what law would you change?",
-                                          "If you had to live inside a video game universe for a month, which one would you pick?",
-                                          "What would you do if your favorite celebrity knocked on your front door right now?"
-                                    ],
+
+          {
+                    "label": "Lottery Millions",
+                    "color": "#EF4444",
+                    "prompt": "If you won ten million dollars tomorrow, what is the very first thing you would buy for yourself?",
+                    "es": "¿Si te ganaras diez millones de dólares mañana, qué sería lo primero que te comprarías?"
+          },
+          {
+                    "label": "Chosen Superpower",
+                    "color": "#F59E0B",
+                    "prompt": "If you could pick one superpower between invisibility, flying, or teleportation, which would you pick?",
+                    "es": "¿Si pudieras elegir un superpoder entre invisibilidad, volar o teletransportación, cuál escogerías?"
+          },
+          {
+                    "label": "Time Machine",
+                    "color": "#10B981",
+                    "prompt": "If you had a time machine, would you travel back to meet dinosaurs or travel into the year 3000?",
+                    "es": "¿Si tuvieras una máquina del tiempo, viajarías al pasado con dinosaurios o al año 3000?"
+          },
+          {
+                    "label": "Zombie Apocalypse",
+                    "color": "#3B82F6",
+                    "prompt": "If a zombie outbreak happened right now, which two school friends would you recruit to survive?",
+                    "es": "¿Si hubiera un apocalipsis zombi ahora, a cuáles dos amigos del colegio reclutarías para sobrevivir?"
+          },
+          {
+                    "label": "Celebrity Dinner",
+                    "color": "#8B5CF6",
+                    "prompt": "If you could have dinner with any living celebrity tonight, who would you invite?",
+                    "es": "¿Si pudieras cenar con cualquier celebridad viva esta noche, a quién invitarías?"
+          },
+          {
+                    "label": "Invisibility Prank",
+                    "color": "#EC4899",
+                    "prompt": "If you were completely invisible for one hour, what harmless prank would you pull on your squad?",
+                    "es": "¿Si fueras invisible por una hora, qué broma inofensiva le harías a tu parche?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600",
                                     "imageUrl": "/images/teens-basic-4-class-06/slide-03.jpg"
                               }
@@ -30517,16 +30865,48 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                               {
                                     "id": "tb4-7-wheel",
                                     "title": "Mystery & Secrets Wheel 🎡 / Ruleta de Misterios",
-                                    "description": "¡Gira la ruleta y responde con naturalidad usando pronombres indefinidos!",
+                                    "description": "¡Gira la ruleta y responde una pregunta misteriosa para romper el hielo!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "Did anyone text you early this morning?",
-                                          "Is there something you always lose in your room?",
-                                          "Would you like to travel somewhere quiet this weekend?",
-                                          "Has anyone ever thrown you a surprise birthday party?",
-                                          "Is there nothing to do when it rains at your house?",
-                                          "Does everyone in your family like Colombian food?"
-                                    ],
+
+          {
+                    "label": "Lost in Backpack",
+                    "color": "#EF4444",
+                    "prompt": "Have you ever lost something super important inside the mysterious bottom of your school backpack?",
+                    "es": "¿Alguna vez has perdido algo súper importante en el fondo misterioso de tu maleta escolar?"
+          },
+          {
+                    "label": "Mysterious Noises",
+                    "color": "#F59E0B",
+                    "prompt": "When you hear a weird noise in your house at night, do you investigate or hide under blankets?",
+                    "es": "¿Cuando escuchas un ruido raro en tu casa de noche, vas a investigar o te tapas con las cobijas?"
+          },
+          {
+                    "label": "Unexpected Gift",
+                    "color": "#10B981",
+                    "prompt": "If an anonymous package arrived at your door with your name on it, would you open it immediately?",
+                    "es": "¿Si llegara un paquete anónimo a tu puerta con tu nombre, lo abrirías de inmediato?"
+          },
+          {
+                    "label": "Detective Game",
+                    "color": "#3B82F6",
+                    "prompt": "Do you enjoy playing detective mystery games like Among Us or solving mystery escape rooms?",
+                    "es": "¿Te gustan los juegos de detectives y misterio como Among Us o salas de escape?"
+          },
+          {
+                    "label": "Secret Talent",
+                    "color": "#8B5CF6",
+                    "prompt": "Is there someone in your classroom who has an unexpected secret talent nobody knew about?",
+                    "es": "¿Hay alguien en tu salón que tenga un talento secreto inesperado que nadie conocía?"
+          },
+          {
+                    "label": "Weird Coincidence",
+                    "color": "#EC4899",
+                    "prompt": "Have you ever thought about someone, and literally seconds later they texted or called you?",
+                    "es": "¿Alguna vez pensaste en alguien y literalmente segundos después te escribió o te llamó?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-indigo-950 via-purple-950 to-slate-900",
                                     "imageUrl": "/images/teens-basic-4-class-07/slide-02.jpg"
                               }
@@ -31115,13 +31495,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y responde con naturalidad sobre límites y responsabilidades!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "What rule do you always have to follow at home?",
-                                          "What mustn't players do during an esports match?",
-                                          "Do you have to wake up early on Saturday mornings?",
-                                          "What must students never do during a final exam?",
-                                          "What is something you don't have to do on weekends?",
-                                          "What rule in your school do you think is unfair?"
-                                    ],
+
+          {
+                    "label": "Gaming Fair Play",
+                    "color": "#EF4444",
+                    "prompt": "What do you think of players who use cheat codes or aimbots in competitive online games?",
+                    "es": "¿Qué opinas de los jugadores que usan trampas o hacks en juegos online competitivos?"
+          },
+          {
+                    "label": "Referee Call",
+                    "color": "#F59E0B",
+                    "prompt": "Have you ever played a soccer or basketball match where the referee made a totally unfair decision?",
+                    "es": "¿Alguna vez has jugado un partido de fútbol o básquet donde el árbitro pitó algo súper injusto?"
+          },
+          {
+                    "label": "Rage Quitting",
+                    "color": "#10B981",
+                    "prompt": "Have you ever felt so frustrated during a video game match that you turned off the console?",
+                    "es": "¿Alguna vez te dio tanta rabia en una partida de videojuegos que apagaste la consola?"
+          },
+          {
+                    "label": "Winning vs Fun",
+                    "color": "#3B82F6",
+                    "prompt": "When you play tournaments with friends, is winning the trophy everything, or just having fun?",
+                    "es": "¿Cuando juegas torneos con amigos, ganar el trofeo lo es todo o solo divertirse?"
+          },
+          {
+                    "label": "Strict Coach",
+                    "color": "#8B5CF6",
+                    "prompt": "Do you prefer a friendly, relaxed sports coach or a super strict coach who demands perfection?",
+                    "es": "¿Prefieres un entrenador deportivo amigable y relajado o uno súper estricto y exigente?"
+          },
+          {
+                    "label": "Celebration Dance",
+                    "color": "#EC4899",
+                    "prompt": "What is your signature victory celebration move when your team wins an epic game?",
+                    "es": "¿Cuál es tu celebración característica cuando tu equipo gana un partido épico?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-violet-950 via-purple-950 to-slate-900",
                                     "imageUrl": "/images/teens-basic-4-class-08/slide-02.jpg"
                               }
@@ -31707,42 +32119,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y transforma el mensaje en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Asking for Deadline",
+
+          {
+                    "label": "Emailing Teachers",
                     "color": "#EF4444",
-                    "prompt": "How do you formally ask your teacher for a 24-hour extension on a school paper?",
-                    "es": "¿Cómo le pides formalmente a tu profe una extensión de 24 horas para un trabajo?"
-                  },
-                  {
-                    "label": "Job / Internship",
+                    "prompt": "Do you feel nervous when you have to write a formal email to a school teacher or principal?",
+                    "es": "¿Te sientes nervioso cuando tienes que redactar un correo formal a un profe o a la rectora?"
+          },
+          {
+                    "label": "Professional Username",
                     "color": "#F59E0B",
-                    "prompt": "How do you start an email when applying for a youth volunteer program abroad?",
-                    "es": "¿Cómo comienzas un correo al postular a un voluntariado juvenil en el exterior?"
-                  },
-                  {
-                    "label": "Missing Class",
+                    "prompt": "Do you use a professional email address for school or still use your funny gamer nickname?",
+                    "es": "¿Usas un correo formal para el colegio o todavía usas tu apodo gamer chistoso?"
+          },
+          {
+                    "label": "Texting Parents",
                     "color": "#10B981",
-                    "prompt": "What is the polite way to email a professor explaining an absence due to illness?",
-                    "es": "¿Cuál es la forma cortés de escribirle al profe justificando una inasistencia médica?"
-                  },
-                  {
-                    "label": "Asking for Clarification",
+                    "prompt": "How do you text your parents when you need permission to go out: sweet and formal, or casual?",
+                    "es": "¿Cómo le escribes a tus papás cuando necesitas permiso para salir: formal y cariñoso o casual?"
+          },
+          {
+                    "label": "Greeting Style",
                     "color": "#3B82F6",
-                    "prompt": "How do you formally ask for more details about an upcoming test format?",
-                    "es": "¿Cómo pides formalmente más detalles sobre el formato de una evaluación?"
-                  },
-                  {
-                    "label": "Thanking a Mentor",
+                    "prompt": "When you start a formal message, what greeting do you like using: 'Dear', 'Hello', or 'Good day'?",
+                    "es": "¿Cuando comienzas un mensaje formal, qué saludo te gusta usar: 'Apreciado', 'Hola' o 'Buen día'?"
+          },
+          {
+                    "label": "Apology Message",
                     "color": "#8B5CF6",
-                    "prompt": "How do you express formal gratitude to a teacher for writing a recommendation letter?",
-                    "es": "¿Cómo agradeces formalmente a un profe por escribir una carta de recomendación?"
-                  },
-                  {
-                    "label": "Subject Line",
+                    "prompt": "If you arrive late to an important meeting or class, how do you politely apologize in writing?",
+                    "es": "¿Si llegas tarde a una clase o reunión importante, cómo te disculpas educadamente por escrito?"
+          },
+          {
+                    "label": "Voice vs Email",
                     "color": "#EC4899",
-                    "prompt": "What is an effective, clear subject line for an email to a school principal?",
-                    "es": "¿Cuál es un asunto claro y efectivo para un correo a la rectoría escolar?"
-                  }
+                    "prompt": "Would you rather send a two-minute formal audio explanation or write a polished four-line email?",
+                    "es": "¿Preferirías mandar un audio formal de dos minutos o escribir un correo impecable de cuatro líneas?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-slate-800 via-indigo-900 to-purple-900",
                 "imageUrl": "/images/teens-basic-4-class-09/slide-02.jpg"
@@ -33727,42 +34141,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y deduce la situación con modales."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Empty Classroom",
+
+          {
+                    "label": "Strange Coincidence",
                     "color": "#EF4444",
-                    "prompt": "The school lights are off and the gate is locked. What is your deduction?",
-                    "es": "Las luces del colegio están apagadas y la reja cerrada. ¿Cuál es tu deducción?"
-                  },
-                  {
-                    "label": "Wet Pavements",
+                    "prompt": "Have you ever experienced a strange coincidence that made you think: 'This can't be real'?",
+                    "es": "¿Alguna vez viviste una coincidencia tan extraña que pensaste: 'Esto no puede ser real'?"
+          },
+          {
+                    "label": "Mystery Clues",
                     "color": "#F59E0B",
-                    "prompt": "The ground is soaked with puddles and everyone has umbrellas. What must be happening?",
-                    "es": "El suelo está empapado y todos tienen paraguas. ¿Qué debe estar pasando?"
-                  },
-                  {
-                    "label": "Lost Mystery Bag",
+                    "prompt": "If you found an abandoned vintage diary on a park bench, what would you think happened?",
+                    "es": "¿Si encontraras un diario antiguo abandonado en una banca de parque, qué deducirías que pasó?"
+          },
+          {
+                    "label": "Late Friend",
                     "color": "#10B981",
-                    "prompt": "A backpack with a basketball inside is on the court. Whose bag might it be?",
-                    "es": "Un morral con un balón de baloncesto está en la cancha. ¿De quién podría ser?"
-                  },
-                  {
-                    "label": "Barking at Midnight",
+                    "prompt": "If your best friend is one hour late and their phone is off, what is your first deduction?",
+                    "es": "¿Si tu mejor amigo llega una hora tarde y tiene el celular apagado, qué es lo primero que piensas?"
+          },
+          {
+                    "label": "Urban Legends",
                     "color": "#3B82F6",
-                    "prompt": "A dog is barking loudly outside your window. What could be the reason?",
-                    "es": "Un perro ladra fuerte afuera de tu ventana. ¿Cuál podría ser la razón?"
-                  },
-                  {
-                    "label": "Winning Smirk",
+                    "prompt": "Is there a famous mysterious legend or haunted house story in your town or school?",
+                    "es": "¿Hay alguna leyenda misteriosa o historia de casa embrujada famosa en tu ciudad o colegio?"
+          },
+          {
+                    "label": "Unexplained Photo",
                     "color": "#8B5CF6",
-                    "prompt": "Your friend is smiling and holding an envelope. What news must they have received?",
-                    "es": "Tu amigo sonríe y tiene un sobre en la mano. ¿Qué noticia debe haber recibido?"
-                  },
-                  {
-                    "label": "Strange Footsteps",
+                    "prompt": "Have you ever taken a photo where a weird reflection or shadow looked like a ghost?",
+                    "es": "¿Alguna vez tomaste una foto donde un reflejo o sombra extraña parecía un fantasma?"
+          },
+          {
+                    "label": "Sherlock Instinct",
                     "color": "#EC4899",
-                    "prompt": "You hear quiet steps in the hallway at night. Who might it be?",
-                    "es": "Escuchas pasos suaves en el pasillo de noche. ¿Quién podría ser?"
-                  }
+                    "prompt": "Are you good at guessing the killer or plot twist before the end of a mystery movie?",
+                    "es": "¿Eres bueno adivinando al culpable o el giro inesperado antes de que termine una película de misterio?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-slate-700 via-indigo-800 to-purple-900",
                 "imageUrl": "/images/teens-inter-class-03/slide-02.jpg"
@@ -34226,13 +34642,45 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                     "description": "¡Gira la ruleta y responde qué hubiera pasado en cada escenario pasado!",
                                     "type": "spinning-wheel",
                                     "wheelItems": [
-                                          "What would have happened if you hadn't set an alarm this morning?",
-                                          "If you had studied harder for your last exam, would your grade have been higher?",
-                                          "What would history look like if the internet had never been created?",
-                                          "If your favorite team had scored in the final minute, would they have won?",
-                                          "What would you have done if you had found a lost dog yesterday?",
-                                          "If you had been born in another country, what language would you have spoken first?"
-                                    ],
+
+          {
+                    "label": "Different School",
+                    "color": "#EF4444",
+                    "prompt": "If your family had enrolled you in a different school, how would your friend circle be different?",
+                    "es": "¿Si tu familia te hubiera matriculado en otro colegio, cómo sería de diferente tu grupo de amigos?"
+          },
+          {
+                    "label": "World Without Internet",
+                    "color": "#F59E0B",
+                    "prompt": "If the internet had never been invented, what hobbies do you think you would have today?",
+                    "es": "¿Si internet nunca se hubiera inventado, qué pasatiempos crees que tendrías hoy?"
+          },
+          {
+                    "label": "Past Regret",
+                    "color": "#10B981",
+                    "prompt": "What is one funny or silly decision from your past that you wish you could undo?",
+                    "es": "¿Cuál es una decisión chistosa o boba de tu pasado que desearías poder cambiar?"
+          },
+          {
+                    "label": "Alternate Talent",
+                    "color": "#3B82F6",
+                    "prompt": "If you had started practicing music or martial arts as a young child, what would you be good at now?",
+                    "es": "¿Si hubieras empezado a practicar música o artes marciales de niño, en qué serías bueno ahora?"
+          },
+          {
+                    "label": "Historic Meeting",
+                    "color": "#8B5CF6",
+                    "prompt": "If you could change the outcome of one historic sports match in Colombian history, which one?",
+                    "es": "¿Si pudieras cambiar el resultado de un partido histórico del deporte colombiano, cuál sería?"
+          },
+          {
+                    "label": "Best Past Choice",
+                    "color": "#EC4899",
+                    "prompt": "What is the best personal choice you have made in the last two years that paid off big time?",
+                    "es": "¿Cuál es la mejor decisión personal que has tomado en los últimos dos años que dio grandes frutos?"
+          }
+
+                ],
                                     "bgColor": "bg-gradient-to-br from-violet-950 via-purple-950 to-slate-900",
                                     "imageUrl": "/images/teens-inter-class-04/slide-02.jpg"
                               }
@@ -34823,42 +35271,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y debate con argumentos en inglés."
                 ],
                 "wheelItems": [
-                  {
+
+          {
                     "label": "AI in Homework",
                     "color": "#EF4444",
-                    "prompt": "Should AI tools like ChatGPT be fully allowed for school assignments or restricted?",
-                    "es": "¿Deberían permitirse o restringirse las herramientas de IA en tareas escolares?"
-                  },
-                  {
-                    "label": "Uniforms vs Streetwear",
+                    "prompt": "Do you believe using ChatGPT for school assignments helps students learn or makes them lazy?",
+                    "es": "¿Crees que usar ChatGPT para tareas ayuda a aprender o vuelve perezosos a los estudiantes?"
+          },
+          {
+                    "label": "School Uniforms",
                     "color": "#F59E0B",
-                    "prompt": "Do school uniforms help student equality or limit personal creative expression?",
-                    "es": "¿Los uniformes escolares ayudan a la igualdad o limitan la libre expresión?"
-                  },
-                  {
+                    "prompt": "Do you think school uniforms promote equality, or should students express themselves in streetwear?",
+                    "es": "¿Crees que el uniforme promueve la igualdad o los estudiantes deberían expresarse con su ropa?"
+          },
+          {
                     "label": "Social Media Age",
                     "color": "#10B981",
-                    "prompt": "Should social media platforms have a strict minimum age limit of 16 years?",
-                    "es": "¿Deberían las redes sociales tener una edad mínima estricta de 16 años?"
-                  },
-                  {
+                    "prompt": "Do you agree or disagree that social media should have a strict age minimum of 16 years?",
+                    "es": "¿Estás de acuerdo o en desacuerdo con que las redes sociales tengan una edad mínima de 16 años?"
+          },
+          {
                     "label": "Esports in Olympics",
                     "color": "#3B82F6",
-                    "prompt": "Should competitive gaming and esports become an official Olympic category?",
-                    "es": "¿Deberían los videojuegos competitivos ser disciplina olímpica oficial?"
-                  },
-                  {
+                    "prompt": "Do you think competitive gaming like League of Legends or Valorant should be in your Olympic Games?",
+                    "es": "¿Crees que los videojuegos competitivos como League of Legends o Valorant deberían estar en tus Juegos Olímpicos?"
+          },
+          {
                     "label": "Four-Day Week",
                     "color": "#8B5CF6",
-                    "prompt": "Would a 4-day school week improve student academic performance and mental health?",
-                    "es": "¿Una semana escolar de 4 días mejoraría el rendimiento y la salud mental?"
-                  },
-                  {
-                    "label": "Remote vs In-Person",
+                    "prompt": "Would a 4-day school week with longer weekends improve your academic focus and mental health?",
+                    "es": "¿Una semana escolar de 4 días con fines de semana más largos mejoraría tu enfoque y salud mental?"
+          },
+          {
+                    "label": "Virtual vs Classroom",
                     "color": "#EC4899",
-                    "prompt": "Is virtual learning more efficient than traditional in-person classroom education?",
-                    "es": "¿Es el aprendizaje virtual más eficiente que la educación presencial tradicional?"
-                  }
+                    "prompt": "Do you learn faster in traditional in-person classrooms or through interactive digital learning?",
+                    "es": "¿Aprendes más rápido en clases presenciales tradicionales o con aprendizaje digital interactivo?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-700 via-indigo-700 to-purple-800",
                 "imageUrl": "/images/teens-inter-class-05/slide-02.jpg"
@@ -35326,42 +35776,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y presenta el podcast en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Tech Innovations",
+
+          {
+                    "label": "Podcast Theme",
                     "color": "#EF4444",
-                    "prompt": "Deliver a 20-second excited podcast intro about the newest AI gadgets of the year!",
-                    "es": "¡Haz una intro de podcast de 20 segundos sobre los últimos gadgets de IA!"
-                  },
-                  {
-                    "label": "Music & Festivals",
+                    "prompt": "If you created your own podcast tomorrow, what topic would you dedicate it to?",
+                    "es": "¿Si crearas tu propio podcast mañana, a qué tema se lo dedicarías?"
+          },
+          {
+                    "label": "Dream Guest",
                     "color": "#F59E0B",
-                    "prompt": "Welcome your listeners and introduce a trending music artist or festival review!",
-                    "es": "¡Da la bienvenida a tus oyentes y presenta la reseña de un festival de música!"
-                  },
-                  {
-                    "label": "Gaming & Esports",
+                    "prompt": "Who is the number one creator, athlete, or artist you would love to interview on your show?",
+                    "es": "¿Quién es el creador, deportista o artista número uno que te encantaría entrevistar en tu programa?"
+          },
+          {
+                    "label": "Catchy Podcast Name",
                     "color": "#10B981",
-                    "prompt": "Open your gaming podcast segment talking about an epic tournament finale!",
-                    "es": "¡Abre tu segmento de podcast gamer hablando sobre la final de un torneo épico!"
-                  },
-                  {
-                    "label": "Travel Adventures",
+                    "prompt": "What catchy, cool name would you give your podcast to attract thousands of teen listeners?",
+                    "es": "¿Qué nombre llamativo le pondrías a tu podcast para atraer a miles de oyentes jóvenes?"
+          },
+          {
+                    "label": "Studio Setup",
                     "color": "#3B82F6",
-                    "prompt": "Hook your listeners with a mystery travel story from a hidden spot in Colombia!",
-                    "es": "¡Engancha a tus oyentes con una historia misteriosa de un lugar de Colombia!"
-                  },
-                  {
-                    "label": "Teen Life & Advice",
+                    "prompt": "Would you rather record your episodes in a professional studio or in a cozy bedroom with neon lights?",
+                    "es": "¿Preferirías grabar en un estudio profesional o en una habitación acogedora con luces de neón?"
+          },
+          {
+                    "label": "Difficult Questions",
                     "color": "#8B5CF6",
-                    "prompt": "Introduce your podcast answering a fan question about balancing high school and sleep!",
-                    "es": "¡Abre tu podcast respondiendo la duda de un fan sobre cómo balancear el colegio y el sueño!"
-                  },
-                  {
-                    "label": "Future Careers",
+                    "prompt": "As an interviewer, do you prefer asking fun casual questions or deep philosophical questions?",
+                    "es": "¿Como entrevistador, prefieres hacer preguntas casuales divertidas o preguntas filosóficas profundas?"
+          },
+          {
+                    "label": "Podcast Intro Hook",
                     "color": "#EC4899",
-                    "prompt": "Interview a young inventor who created an eco-friendly drone solution!",
-                    "es": "¡Entrevista a un joven inventor que creó un dron ecológico!"
-                  }
+                    "prompt": "How would you deliver an energetic 10-second welcome hook to kick off your premiere episode?",
+                    "es": "¿Cómo darías una intro energética de 10 segundos para arrancar tu primer episodio?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-rose-700 via-purple-700 to-indigo-800",
                 "imageUrl": "/images/teens-inter-class-06/slide-02.jpg"
@@ -36332,42 +36784,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y narra con el phrasal verb en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Look Up To",
+
+          {
+                    "label": "Turned Out Great",
                     "color": "#EF4444",
-                    "prompt": "Who is an admirable mentor, athlete, or artist you truly look up to in your life?",
-                    "es": "¿Quién es un mentor, atleta o artista admirable al que verdaderamente admiras en tu vida?"
-                  },
-                  {
-                    "label": "Stand Out",
+                    "prompt": "Tell me about a day in your life that started like a complete mess but turned out to be an awesome memory!",
+                    "es": "¿Cuéntame sobre un día en tu vida que empezó como un desastre pero terminó siendo un recuerdo genial!"
+          },
+          {
+                    "label": "Giving Up Never",
                     "color": "#F59E0B",
-                    "prompt": "What unique talent or character trait makes you stand out from the crowd?",
-                    "es": "¿Qué talento único o rasgo de carácter te hace destacar entre la multitud?"
-                  },
-                  {
-                    "label": "Pull Off",
+                    "prompt": "What is a challenging hobby or game where you refused to give up until you mastered it?",
+                    "es": "¿Cuál es un pasatiempo o juego difícil en el que te negaste a rendirte hasta dominarlo?"
+          },
+          {
+                    "label": "Catching Up",
                     "color": "#10B981",
-                    "prompt": "Tell me about a difficult victory or creative stunt you managed to pull off!",
-                    "es": "¿Cuéntame sobre una victoria difícil o hazaña que lograste conseguir con éxito!"
-                  },
-                  {
-                    "label": "Come Across",
+                    "prompt": "When you catch up with a childhood friend you haven't seen in months, what do you talk about first?",
+                    "es": "¿Cuando te pones al día con un amigo de la infancia que no veías hace meses, de qué hablan primero?"
+          },
+          {
+                    "label": "Looking Forward",
                     "color": "#3B82F6",
-                    "prompt": "Describe an amazing book, song, or video game you came across unexpectedly!",
-                    "es": "¿Describe un libro, canción o videojuego increíble con el que te topaste sin buscarlo!"
-                  },
-                  {
-                    "label": "End Up",
+                    "prompt": "What upcoming concert, vacation, or video game release are you looking forward to the most?",
+                    "es": "¿Qué concierto, vacaciones o estreno de videojuego es lo que más esperas con ansias?"
+          },
+          {
+                    "label": "Working Out Stress",
                     "color": "#8B5CF6",
-                    "prompt": "Have you ever planned to go to one place and ended up somewhere completely different?",
-                    "es": "¿Alguna vez planeaste ir a un lugar y terminaste en un sitio totalmente diferente?"
-                  },
-                  {
-                    "label": "Work Out",
+                    "prompt": "When school or life stresses you out, what activity helps you blow off steam and reset?",
+                    "es": "¿Cuando el colegio o la vida te estresan, qué actividad te ayuda a liberar tensión y resetearte?"
+          },
+          {
+                    "label": "Finding Out Secrets",
                     "color": "#EC4899",
-                    "prompt": "Describe a stressful situation that initially looked like a disaster but worked out fine in the end!",
-                    "es": "¿Describe una situación estresante que parecía un desastre pero al final salió bien!"
-                  }
+                    "prompt": "Have you ever found out about a surprise party or gift before people were able to surprise you?",
+                    "es": "¿Alguna vez te enteraste de una fiesta o regalo sorpresa antes de que lograran sorprenderte?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-purple-700 via-pink-700 to-indigo-800",
                 "imageUrl": "/images/teens-inter-class-08/slide-02.jpg"
@@ -36835,42 +37289,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y deduce el misterio pasado con 'must/might have'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Lost Civilization",
+
+          {
+                    "label": "Lost Valuables",
                     "color": "#EF4444",
-                    "prompt": "An ancient stone city was abandoned overnight. What must have happened: a drought or a volcanic eruption?",
-                    "es": "¿Una ciudad de piedra fue abandonada de la noche a la mañana. Qué debe haber pasado?"
-                  },
-                  {
-                    "label": "Missing Homework",
+                    "prompt": "You walk into your room and your phone is gone. What is your first theory about what happened?",
+                    "es": "¿Entras a tu cuarto y no está tu celular. ¿Cuál es tu primera teoría sobre lo que pasó?"
+          },
+          {
+                    "label": "Late Night Clues",
                     "color": "#F59E0B",
-                    "prompt": "Your backpack was closed, but your notebook is gone. Where might you have left it?",
-                    "es": "¿Tu morral estaba cerrado pero no está tu cuaderno. Dónde pudiste haberlo dejado?"
-                  },
-                  {
-                    "label": "Broken Window",
+                    "prompt": "If you woke up and found wet footprints in your living room, who in your house must have made them?",
+                    "es": "¿Si te despertaras y vieras huellas mojadas en la sala, quién en tu casa debe haberlas dejado?"
+          },
+          {
+                    "label": "Unanswered Calls",
                     "color": "#10B981",
-                    "prompt": "A baseball is lying in the living room next to shattered glass. What must have occurred?",
-                    "es": "¿Hay un balón de béisbol en la sala junto a vidrios rotos. Qué debe haber ocurrido?"
-                  },
-                  {
-                    "label": "Bermuda Mystery",
+                    "prompt": "If your best friend usually replies in 5 seconds and is silent for 10 hours, what could have happened?",
+                    "es": "¿Si tu mejor amigo responde en 5 segundos y lleva 10 horas en silencio, qué pudo haber pasado?"
+          },
+          {
+                    "label": "Broken Gadget",
                     "color": "#3B82F6",
-                    "prompt": "A ship vanished without sending any distress signal. What could have caused it?",
-                    "es": "¿Un barco desapareció sin enviar señal de auxilio. Qué pudo haberlo causado?"
-                  },
-                  {
-                    "label": "Surprise Party",
+                    "prompt": "Have you ever returned to your desk and found your headphones or charger strangely damaged?",
+                    "es": "¿Alguna vez volviste a tu escritorio y encontraste tus audífonos o cargador dañados misteriosamente?"
+          },
+          {
+                    "label": "Vanishing Snacks",
                     "color": "#8B5CF6",
-                    "prompt": "Your house is dark and decorated with balloons. What must your friends have planned?",
-                    "es": "¿Tu casa está a oscuras y decorada con globos. Qué deben haber planeado tus amigos?"
-                  },
-                  {
-                    "label": "Footprints in Mud",
+                    "prompt": "If a delicious chocolate you hid in the fridge disappeared, who must have eaten it?",
+                    "es": "¿Si un chocolate delicioso que escondiste en la nevera desapareció, quién se lo tuvo que haber comido?"
+          },
+          {
+                    "label": "Mystery Text",
                     "color": "#EC4899",
-                    "prompt": "Large mysterious animal tracks lead into the deep forest. What creature might have passed by?",
-                    "es": "¿Huellas de animal grandes van hacia el bosque. Qué criatura pudo haber pasado?"
-                  }
+                    "prompt": "If you received a text from an unknown number saying 'I know your secret', what would you think?",
+                    "es": "¿Si te llegara un mensaje de un número desconocido diciendo 'Sé tu secreto', qué pensarías?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-700 via-slate-700 to-purple-800",
                 "imageUrl": "/images/teens-inter-class-09/slide-02.jpg"
@@ -37338,42 +37794,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y completa la oración condicional en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Unless",
+
+          {
+                    "label": "Emergency Plan B",
                     "color": "#EF4444",
-                    "prompt": "Complete with 'Unless': 'We will not pass the project test unless...'",
-                    "es": "Completa con 'Unless': 'No aprobaremos la prueba a menos que...'"
-                  },
-                  {
-                    "label": "As Soon As",
+                    "prompt": "What is your backup plan if it suddenly rains on the afternoon you organized outdoor sports?",
+                    "es": "¿Cuál es tu plan de respaldo si llueve la tarde en que organizaste deportes al aire libre?"
+          },
+          {
+                    "label": "Essential Gadget",
                     "color": "#F59E0B",
-                    "prompt": "Complete with 'As soon as': 'I will call my squad as soon as...'",
-                    "es": "Completa con 'As soon as': 'Llamaré a mi parche tan pronto como...'"
-                  },
-                  {
-                    "label": "Provided That",
+                    "prompt": "What item do you always carry in your backpack in case your phone battery dies during the day?",
+                    "es": "¿Qué llevas siempre en tu maleta por si se te apaga el celular durante el día?"
+          },
+          {
+                    "label": "Squad Promise",
                     "color": "#10B981",
-                    "prompt": "Complete with 'Provided that': 'You can borrow my gaming console provided that...'",
-                    "es": "Completa con 'Provided that': 'Puedes tomar prestada mi consola siempre y cuando...'"
-                  },
-                  {
-                    "label": "In Case",
+                    "prompt": "What condition do you always establish with friends before lending them your favorite clothes or game?",
+                    "es": "¿Qué condición les pones siempre a tus amigos antes de prestarles tu ropa o juego favorito?"
+          },
+          {
+                    "label": "Crucial Test",
                     "color": "#3B82F6",
-                    "prompt": "Complete with 'In case': 'Take a portable power bank in case...'",
-                    "es": "Completa con 'In case': 'Lleva una batería portátil en caso de que...'"
-                  },
-                  {
-                    "label": "Zero vs First",
+                    "prompt": "How many days in advance do you start studying when an exam is crucial for passing the grade?",
+                    "es": "¿Con cuántos días de anticipación empiezas a estudiar cuando un examen es crucial para pasar el año?"
+          },
+          {
+                    "label": "Dream Career If",
                     "color": "#8B5CF6",
-                    "prompt": "Contrast: 'If you heat water...' (Zero) vs 'If it rains tomorrow...' (First)!",
-                    "es": "Contrasta: 'Si calientas agua...' (Zero) vs 'Si llueve mañana...' (First)!"
-                  },
-                  {
-                    "label": "Second Hypo",
+                    "prompt": "If every career paid exactly the same salary, what passion would you dedicate your life to?",
+                    "es": "¿Si todas las carreras pagaran exactamente el mismo sueldo, a qué pasión te dedicarías?"
+          },
+          {
+                    "label": "Next Milestone",
                     "color": "#EC4899",
-                    "prompt": "Complete with Second Conditional: 'If I designed the ultimate video game, I would...'",
-                    "es": "Completa en Segundo Condicional: 'Si diseñara el videojuego supremo, yo...'"
-                  }
+                    "prompt": "As soon as you finish today's English lesson, what fun reward are you going to enjoy?",
+                    "es": "¿Tan pronto como termines la lección de inglés de hoy, qué recompensa vas a disfrutar?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-teal-700 via-cyan-700 to-blue-800",
                 "imageUrl": "/images/teens-inter-class-10/slide-02.jpg"
@@ -37841,42 +38299,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y responde con una perspectiva equilibrada."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "AI in Art",
+
+          {
+                    "label": "AI & Human Artists",
                     "color": "#EF4444",
-                    "prompt": "Balance the benefits of AI image generation with the copyright protection of human artists!",
-                    "es": "¡Equilibra los beneficios del arte con IA con los derechos de autor de artistas humanos!"
-                  },
-                  {
-                    "label": "Homework Balance",
+                    "prompt": "How do you view AI art: is it an inspiring tool for creators or unfair to traditional human artists?",
+                    "es": "¿Cómo ves el arte con IA: es una herramienta inspiradora o injusta para los artistas humanos?"
+          },
+          {
+                    "label": "Study vs Social Life",
                     "color": "#F59E0B",
-                    "prompt": "Strike a balance between academic rigor at school and student emotional well-being!",
-                    "es": "¡Encuentra un equilibrio entre el rigor académico y el bienestar emocional estudiantil!"
-                  },
-                  {
-                    "label": "Tech in Childhood",
+                    "prompt": "How do you balance demanding school homework with having fun and relaxing with friends?",
+                    "es": "¿Cómo equilibras las tareas exigentes del colegio con divertirte y relajarte con amigos?"
+          },
+          {
+                    "label": "Online Privacy",
                     "color": "#10B981",
-                    "prompt": "Acknowledge the benefits of early digital literacy while addressing screen addiction risks!",
-                    "es": "¡Reconoce la alfabetización digital temprana mientras adviertes los riesgos de adicción!"
-                  },
-                  {
-                    "label": "Tourism vs Nature",
+                    "prompt": "Do you care if apps track your browsing data to give personalized ads, or does it bother you?",
+                    "es": "¿Te importa que las apps rastreen tus datos para darte anuncios personalizados o te molesta?"
+          },
+          {
+                    "label": "Ecotourism vs Nature",
                     "color": "#3B82F6",
-                    "prompt": "How can ecotourism generate local economic income while protecting fragile ecosystems?",
-                    "es": "¿Cómo puede el ecoturismo generar ingresos locales protegiendo ecosistemas frágiles?"
-                  },
-                  {
-                    "label": "Grading Systems",
+                    "prompt": "In your view, does tourism help protect beautiful Colombian natural parks or damage them?",
+                    "es": "¿A tu parecer, el turismo ayuda a proteger los parques naturales de Colombia o los deteriora?"
+          },
+          {
+                    "label": "Grades vs Skills",
                     "color": "#8B5CF6",
-                    "prompt": "Contrast traditional letter grades with project-based competency evaluations!",
-                    "es": "¡Contrasta las notas numéricas tradicionales con la evaluación por proyectos!"
-                  },
-                  {
-                    "label": "Social Media Privacy",
+                    "prompt": "Do you think school report cards accurately measure your intelligence and practical skills?",
+                    "es": "¿Crees que las notas escolares miden con precisión tu inteligencia y talentos prácticos?"
+          },
+          {
+                    "label": "Digital Detox",
                     "color": "#EC4899",
-                    "prompt": "How can platforms offer personalized recommendations without invading user data privacy?",
-                    "es": "¿Cómo pueden las apps ofrecer sugerencias personalizadas sin invadir la privacidad?"
-                  }
+                    "prompt": "Could you survive an entire 48-hour weekend without touching your phone or social media?",
+                    "es": "¿Podrías sobrevivir un fin de semana entero de 48 horas sin tocar tu celular ni redes sociales?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-800 via-slate-800 to-purple-900",
                 "imageUrl": "/images/teens-inter-class-11/slide-02.jpg"
@@ -38850,42 +39310,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y reporta la frase con 'He/She said that...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Robotics Winner",
+
+          {
+                    "label": "Campus Rumors",
                     "color": "#EF4444",
-                    "prompt": "Direct speech: 'I will build an autonomous AI drone.' Report what Lucas said!",
-                    "es": "Discurso directo: 'Construiré un dron autónomo.' ¡Reporta lo que dijo Lucas!"
-                  },
-                  {
-                    "label": "Science Exam",
+                    "prompt": "What is the funniest or craziest rumor you ever heard circulating around your school?",
+                    "es": "¿Cuál es el rumor más chistoso o loco que has escuchado circular por tu colegio?"
+          },
+          {
+                    "label": "Breaking News",
                     "color": "#F59E0B",
-                    "prompt": "Direct speech: 'The chemistry exam is very easy today.' Report what the teacher said!",
-                    "es": "Discurso directo: 'El examen es muy fácil hoy.' ¡Reporta lo que dijo el profesor!"
-                  },
-                  {
-                    "label": "Concert Ticket",
+                    "prompt": "What surprising piece of local or global news caught your attention this week?",
+                    "es": "¿Qué noticia sorprendente local o mundial llamó tu atención esta semana?"
+          },
+          {
+                    "label": "Gossip Speed",
                     "color": "#10B981",
-                    "prompt": "Direct speech: 'I bought two tickets for the music festival.' Report what Sofia said!",
-                    "es": "Discurso directo: 'Compré dos boletas para el festival.' ¡Reporta lo que dijo Sofía!"
-                  },
-                  {
-                    "label": "Principal Speech",
+                    "prompt": "How fast does juicy news or secrets travel through your class WhatsApp groups?",
+                    "es": "¿Qué tan rápido viajan los chismes o secretos en los grupos de WhatsApp de tu salón?"
+          },
+          {
+                    "label": "Secret Keeper",
                     "color": "#3B82F6",
-                    "prompt": "Direct speech: 'We can renovate the sports complex.' Report what the principal said!",
-                    "es": "Discurso directo: 'Podemos renovar el complejo deportivo.' ¡Reporta lo que dijo la rectora!"
-                  },
-                  {
-                    "label": "Gaming Team",
+                    "prompt": "Are you the friend people trust with deep secrets, or do you find it hard to keep quiet?",
+                    "es": "¿Eres el amigo al que le confían secretos profundos o te cuesta quedarte callado?"
+          },
+          {
+                    "label": "Fact Checking",
                     "color": "#8B5CF6",
-                    "prompt": "Direct speech: 'We are practicing for the regional esports finals.' Report what the captain said!",
-                    "es": "Discurso directo: 'Estamos practicando para las finales.' ¡Reporta lo que dijo el capitán!"
-                  },
-                  {
-                    "label": "Surprise Trip",
+                    "prompt": "When someone tells you a wild story, do you believe them immediately or verify the facts?",
+                    "es": "¿Cuando alguien te cuenta una historia loca, le crees de inmediato o verificas los hechos?"
+          },
+          {
+                    "label": "Viral Trend",
                     "color": "#EC4899",
-                    "prompt": "Direct speech: 'I have never visited the Amazon jungle.' Report what Camila said!",
-                    "es": "Discurso directo: 'Nunca he visitado la selva amazónica.' ¡Reporta lo que dijo Camila!"
-                  }
+                    "prompt": "What viral trend or news story had everyone in your school talking about it non-stop?",
+                    "es": "¿Qué tendencia o noticia viral tuvo a todo tu colegio hablando sin parar?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-700 via-indigo-700 to-purple-800",
                 "imageUrl": "/images/teens-advanced-class-01/slide-02.jpg"
@@ -39348,42 +39810,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y reporta la pregunta con 'The agent asked me if/where...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Identity Check",
+
+          {
+                    "label": "Tough Questions",
                     "color": "#EF4444",
-                    "prompt": "Direct: 'Are you carrying your official security badge?' Report what the officer asked!",
-                    "es": "Directo: '¿Llevas tu carnet oficial de seguridad?' ¡Reporta la pregunta!"
-                  },
-                  {
-                    "label": "Secret Destination",
+                    "prompt": "What is the hardest or most unexpected question a teacher or parent ever asked you?",
+                    "es": "¿Cuál es la pregunta más difícil o inesperada que un profe o papá te ha hecho?"
+          },
+          {
+                    "label": "Lie Detector",
                     "color": "#F59E0B",
-                    "prompt": "Direct: 'Where were you at 10:00 PM yesterday?' Report what the detective asked!",
-                    "es": "Directo: '¿Dónde estabas a las 10:00 PM ayer?' ¡Reporta la pregunta!"
-                  },
-                  {
-                    "label": "Secret Code",
+                    "prompt": "If your parents put you on a real lie detector test, would you pass with a 100% score?",
+                    "es": "¿Si tus papás te pusieran un detector de mentiras real, pasarías con puntaje perfecto?"
+          },
+          {
+                    "label": "Detective Instinct",
                     "color": "#10B981",
-                    "prompt": "Direct: 'Do you know the encrypted passcode?' Report what the agent asked!",
-                    "es": "Directo: '¿Conoces el código encriptado?' ¡Reporta la pregunta!"
-                  },
-                  {
-                    "label": "Urgent Command",
+                    "prompt": "Can you tell when a friend is not telling you the whole truth just by looking at their eyes?",
+                    "es": "¿Puedes notar cuando un amigo no te dice toda la verdad con solo mirarlo a los ojos?"
+          },
+          {
+                    "label": "Celebrity Interview",
                     "color": "#3B82F6",
-                    "prompt": "Direct command: 'Do not touch the laser sensors!' Report what the commander warned!",
-                    "es": "Orden directa: '¡No toquen los sensores láser!' ¡Reporta la advertencia!"
-                  },
-                  {
-                    "label": "Team Mission",
+                    "prompt": "If you had five minutes to interrogate your favorite musician, what secret would you ask them?",
+                    "es": "¿Si tuvieras cinco minutos para interrogar a tu músico favorito, qué secreto le preguntarías?"
+          },
+          {
+                    "label": "Deep Conversations",
                     "color": "#8B5CF6",
-                    "prompt": "Direct: 'Why did your team arrive late at the briefing?' Report what the supervisor asked!",
-                    "es": "Directo: '¿Por qué llegó tarde su equipo a la reunión?' ¡Reporta la pregunta!"
-                  },
-                  {
-                    "label": "Lab Safety",
+                    "prompt": "Do you prefer late-night deep conversations about life goals or quick casual daily chats?",
+                    "es": "¿Prefieres conversaciones nocturnas profundas sobre la vida o charlas rápidas casuales?"
+          },
+          {
+                    "label": "Curious Minds",
                     "color": "#EC4899",
-                    "prompt": "Direct command: 'Wear safety goggles at all times!' Report what the instructor instructed!",
-                    "es": "Orden directa: '¡Usen gafas protectoras todo el tiempo!' ¡Reporta la orden!"
-                  }
+                    "prompt": "What is a mystery about the universe or history that you are dying to know the real answer to?",
+                    "es": "¿Qué misterio del universo o de la historia te mueres por saber la respuesta real?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-slate-700 via-indigo-800 to-purple-900",
                 "imageUrl": "/images/teens-advanced-class-02/slide-02.jpg"
@@ -39846,42 +40310,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y describe con 'who', 'which', 'whose' o 'where'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Elon Musk",
+
+          {
+                    "label": "Admired Mentor",
                     "color": "#EF4444",
-                    "prompt": "Describe Elon Musk using a non-defining relative clause with 'who' or 'whose'!",
-                    "es": "¡Describe a Elon Musk usando una relative clause con 'who' o 'whose'!"
-                  },
-                  {
-                    "label": "Smartphones",
+                    "prompt": "Who is a person in your life that you admire deeply, and what makes them so special?",
+                    "es": "¿Quién es una persona en tu vida a quien admiras profundamente y qué la hace tan especial?"
+          },
+          {
+                    "label": "Essential Gadget",
                     "color": "#F59E0B",
-                    "prompt": "Describe smartphones using a defining relative clause with 'which' or 'that'!",
-                    "es": "¡Describe los teléfonos inteligentes usando una relative clause con 'which' o 'that'!"
-                  },
-                  {
-                    "label": "Silicon Valley",
+                    "prompt": "What is a piece of technology that you use every day which you could never live without?",
+                    "es": "¿Cuál es un aparato de tecnología que usas a diario y del cual no podrías prescindir jamás?"
+          },
+          {
+                    "label": "Peaceful Spot",
                     "color": "#10B981",
-                    "prompt": "Describe Silicon Valley using a relative clause with 'where'!",
-                    "es": "¡Describe Silicon Valley usando una relative clause con 'where'!"
-                  },
-                  {
-                    "label": "Marie Curie",
+                    "prompt": "What is a place in Colombia where you feel completely relaxed, happy, and energized?",
+                    "es": "¿Cuál es un lugar de Colombia donde te sientes completamente relajado, feliz y con energía?"
+          },
+          {
+                    "label": "Inspiring Creator",
                     "color": "#3B82F6",
-                    "prompt": "Describe Marie Curie using a relative clause with 'who' or 'whose discovery'!",
-                    "es": "¡Describe a Marie Curie usando una relative clause con 'who' o 'whose'!"
-                  },
-                  {
-                    "label": "Artificial Intelligence",
+                    "prompt": "Who is an artist, gamer, or director whose creative work always blows your mind?",
+                    "es": "¿Quién es un artista, gamer o director cuyo trabajo creativo siempre te deja asombrado?"
+          },
+          {
+                    "label": "School Subject Love",
                     "color": "#8B5CF6",
-                    "prompt": "Describe AI using a relative clause: 'AI is a technology which/that...'!",
-                    "es": "¡Describe la IA usando una relative clause con 'which' o 'that'!"
-                  },
-                  {
-                    "label": "Your Hometown",
+                    "prompt": "Which teacher or class made you fall in love with a subject that you used to find boring?",
+                    "es": "¿Qué profesor o clase hizo que te enamoraras de una materia que antes te parecía aburrida?"
+          },
+          {
+                    "label": "Dream Home",
                     "color": "#EC4899",
-                    "prompt": "Describe your favorite spot in town using 'where I like to hang out'!",
-                    "es": "¡Describe tu rincón favorito de la ciudad usando 'where'!"
-                  }
+                    "prompt": "What is a feature in your future dream house that you consider an absolute must-have?",
+                    "es": "¿Qué detalle en la casa de tus sueños consideras una necesidad absoluta?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-emerald-700 via-teal-700 to-blue-800",
                 "imageUrl": "/images/teens-advanced-class-03/slide-02.jpg"
@@ -40344,42 +40810,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y usa 'was invented / was created / is used'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "The Internet",
+
+          {
+                    "label": "Essential Inventions",
                     "color": "#EF4444",
-                    "prompt": "Active: 'Scientists created the internet in the 20th century.' Transform to Passive Voice!",
-                    "es": "Activa: 'Científicos crearon internet en el siglo XX.' ¡Transforma a Voz Pasiva!"
-                  },
-                  {
-                    "label": "Smartphones",
+                    "prompt": "Which modern invention do you think has changed teenage daily life more than anything else?",
+                    "es": "¿Qué invento moderno crees que ha cambiado la vida de los jóvenes más que cualquier otro?"
+          },
+          {
+                    "label": "Awaiting Tech",
                     "color": "#F59E0B",
-                    "prompt": "Active: 'Engineers manufacture millions of smartphones every year.' Transform to Passive Voice!",
-                    "es": "Activa: 'Ingenieros fabrican millones de smartphones al año.' ¡Transforma a Voz Pasiva!"
-                  },
-                  {
-                    "label": "Electricity",
+                    "prompt": "What futuristic invention are you impatiently waiting for scientists to create and release?",
+                    "es": "¿Qué invento futurista estás esperando con ansias a que los científicos creen?"
+          },
+          {
+                    "label": "AI in Everyday Life",
                     "color": "#10B981",
-                    "prompt": "Active: 'Inventors harnessed electrical power in the 19th century.' Transform to Passive Voice!",
-                    "es": "Activa: 'Inventores canalizaron la energía eléctrica.' ¡Transforma a Voz Pasiva!"
-                  },
-                  {
-                    "label": "Video Games",
+                    "prompt": "How do you feel when you see videos or photos completely generated by artificial intelligence?",
+                    "es": "¿Qué sientes cuando ves videos o fotos completamente creados por inteligencia artificial?"
+          },
+          {
+                    "label": "Video Game Graphics",
                     "color": "#3B82F6",
-                    "prompt": "Active: 'Game studios release stunning virtual reality games today.' Transform to Passive Voice!",
-                    "es": "Activa: 'Estudios de juegos lanzan mundos de realidad virtual.' ¡Transforma a Voz Pasiva!"
-                  },
-                  {
-                    "label": "Space Telescopes",
+                    "prompt": "In your experience, do ultra-realistic graphics make video games better or does gameplay matter more to you?",
+                    "es": "¿En tu experiencia, los gráficos ultra-realistas hacen mejores a los videojuegos o la jugabilidad te importa más?"
+          },
+          {
+                    "label": "Green Energy Tech",
                     "color": "#8B5CF6",
-                    "prompt": "Active: 'NASA launched the James Webb Telescope in 2021.' Transform to Passive Voice!",
-                    "es": "Activa: 'La NASA lanzó el telescopio James Webb en 2021.' ¡Transforma a Voz Pasiva!"
-                  },
-                  {
-                    "label": "Solar Energy",
+                    "prompt": "Do you see electric cars, bikes, and solar panels becoming normal in your hometown soon?",
+                    "es": "¿Ves los carros eléctricos, ciclas y paneles solares volviéndose normales en tu ciudad pronto?"
+          },
+          {
+                    "label": "Old School Tech",
                     "color": "#EC4899",
-                    "prompt": "Active: 'Clean tech companies install solar panels across Colombia.' Transform to Passive Voice!",
-                    "es": "Activa: 'Empresas instalan paneles solares en Colombia.' ¡Transforma a Voz Pasiva!"
-                  }
+                    "prompt": "Do you find vintage technology like vinyl records, cassette tapes, or wired earphones charming?",
+                    "es": "¿Te parece atractiva la tecnología retro como discos de vinilo, casetes o audífonos de cable?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-800 via-indigo-800 to-slate-900",
                 "imageUrl": "/images/teens-advanced-class-04/slide-02.jpg"
@@ -40842,42 +41310,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y usa 'has been discovered', 'will be launched' o 'must be protected'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Deep Space Exoplanet",
+
+          {
+                    "label": "Space vs Ocean",
                     "color": "#EF4444",
-                    "prompt": "Use Present Perfect Passive: 'A habitable Earth-sized exoplanet (discover) by astronomers!'",
-                    "es": "Usa Present Perfect Passive: '¡Un exoplaneta habitable (descubrir) por astrónomos!'"
-                  },
-                  {
-                    "label": "Ocean Sanctuary",
+                    "prompt": "Would you rather explore distant alien planets in deep space or uncharted deep ocean trenches?",
+                    "es": "¿Preferirías explorar planetas extraterrestres en el espacio profundo o fosas del océano?"
+          },
+          {
+                    "label": "Mind-Blowing Discovery",
                     "color": "#F59E0B",
-                    "prompt": "Use Modal Passive with MUST: 'Fragile marine ecosystems in Malpelo (protect) immediately!'",
-                    "es": "Usa Modal Passive con MUST: '¡Ecosistemas marinos en Malpelo (proteger) de inmediato!'"
-                  },
-                  {
-                    "label": "Mars Mission",
+                    "prompt": "What scientific discovery or space photo in recent years gave you chills of wonder?",
+                    "es": "¿Qué descubrimiento científico o foto del espacio en años recientes te puso la piel de gallina?"
+          },
+          {
+                    "label": "Future Medicine",
                     "color": "#10B981",
-                    "prompt": "Use Future Passive: 'A new autonomous rover (launch) to Mars next year!'",
-                    "es": "Usa Future Passive: '¡Un nuevo rover autónomo (lanzar) a Marte el próximo año!'"
-                  },
-                  {
-                    "label": "Medical Cure",
+                    "prompt": "If medical tech could grant humans the ability to live in peak health to 150, would you want that?",
+                    "es": "¿Si la medicina le permitiera a los humanos vivir sanos hasta los 150 años, te gustaría?"
+          },
+          {
+                    "label": "Clean Planet Solutions",
                     "color": "#3B82F6",
-                    "prompt": "Use Present Perfect Passive: 'A revolutionary vaccine formula (develop) by research teams!'",
-                    "es": "Usa Present Perfect Passive: '¡Una fórmula revolucionaria de vacuna (desarrollar) por equipos!'"
-                  },
-                  {
-                    "label": "Clean Energy Grid",
+                    "prompt": "What innovative clean tech solution would you love to see implemented in Colombian cities?",
+                    "es": "¿Qué solución de tecnología limpia te encantaría ver implementada en las ciudades colombianas?"
+          },
+          {
+                    "label": "Alien Life",
                     "color": "#8B5CF6",
-                    "prompt": "Use Modal Passive with CAN: 'Zero-emission cities (achieve) through smart solar grids!'",
-                    "es": "Usa Modal Passive con CAN: '¡Ciudades sin emisiones (lograr) mediante redes solares!'"
-                  },
-                  {
-                    "label": "Rainforest Accord",
+                    "prompt": "Do you personally believe complex intelligent life exists in other galaxies right now?",
+                    "es": "¿Crees personalmente que existe vida inteligente compleja en otras galaxias ahora mismo?"
+          },
+          {
+                    "label": "Curiosity Fuel",
                     "color": "#EC4899",
-                    "prompt": "Use Present Perfect Passive: 'A historic biodiversity treaty (sign) by fifty nations!'",
-                    "es": "Usa Present Perfect Passive: '¡Un tratado histórico de biodiversidad (firmar) por cincuenta naciones!'"
-                  }
+                    "prompt": "What is one scientific question about our universe that keeps you awake thinking at night?",
+                    "es": "¿Cuál es una pregunta científica sobre nuestro universo que te quita el sueño pensando en la noche?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-700 via-purple-700 to-slate-800",
                 "imageUrl": "/images/teens-advanced-class-05/slide-02.jpg"
@@ -41340,42 +41810,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y usa el modismo en una oración en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Bite the Bullet",
-                    "color": "#EF4444",
-                    "prompt": "Describe a time when you had to bite the bullet and face a scary challenge or exam!",
-                    "es": "¡Describe una ocasión en la que tuviste que 'tragar saliva y afrontar' un reto o examen!"
-                  },
-                  {
+
+          {
                     "label": "Blessing in Disguise",
+                    "color": "#EF4444",
+                    "prompt": "Tell me about a bad situation in your past that unexpectedly turned out to be a blessing in disguise!",
+                    "es": "¿Cuéntame sobre una mala situación en tu pasado que inesperadamente resultó ser una bendición disfrazada!"
+          },
+          {
+                    "label": "Hitting the Bullseye",
                     "color": "#F59E0B",
-                    "prompt": "Tell me about a bad situation that initially looked like a disaster but turned out to be a blessing in disguise!",
-                    "es": "¡Cuéntame sobre una situación mala que terminó siendo 'una bendición disfrazada'!"
-                  },
-                  {
-                    "label": "Hit the Nail",
+                    "prompt": "Have you ever given a brilliant answer in class that made everyone, including your teacher, stop and applaud?",
+                    "es": "¿Alguna vez diste una respuesta brillante en clase que hizo que todos, incluido el profe, aplaudieran?"
+          },
+          {
+                    "label": "Breaking the Ice",
                     "color": "#10B981",
-                    "prompt": "Recall a time when someone hit the nail on the head during a classroom debate with the perfect answer!",
-                    "es": "¡Recuerda cuando alguien 'dio en el clavo' en un debate con la respuesta perfecta!"
-                  },
-                  {
-                    "label": "Through Grapevine",
+                    "prompt": "What is your go-to question or joke to break the ice when you enter a room full of new people?",
+                    "es": "¿Cuál es tu pregunta o chiste de confianza para romper el hielo en un salón de personas nuevas?"
+          },
+          {
+                    "label": "Bite the Bullet",
                     "color": "#3B82F6",
-                    "prompt": "Have you ever heard exciting campus gossip through the grapevine before the official news?",
-                    "es": "¿Alguna vez te enteraste de un chisme escolar 'por radio bemba' antes del anuncio oficial?"
-                  },
-                  {
-                    "label": "See Eye to Eye",
+                    "prompt": "What was a scary or uncomfortable challenge you finally decided to face head-on?",
+                    "es": "¿Cuál fue un reto incómodo o de miedo que finalmente decidiste encarar de frente?"
+          },
+          {
+                    "label": "Piece of Cake",
                     "color": "#8B5CF6",
-                    "prompt": "Do you and your best friend always see eye to eye on music and video games, or do you debate?",
-                    "es": "¿Tú y tu mejor amigo siempre 'están de acuerdo' en música y juegos o debaten?"
-                  },
-                  {
-                    "label": "Steal Thunder",
+                    "prompt": "What school exam or challenge did everyone think was impossible, but for you was a piece of cake?",
+                    "es": "¿Qué examen o reto escolar todos creían imposible pero para ti fue pan comido?"
+          },
+          {
+                    "label": "Under the Weather",
                     "color": "#EC4899",
-                    "prompt": "Have you ever felt someone stole your thunder by announcing your idea before you could?",
-                    "es": "¿Alguna vez sentiste que alguien 'te robó el protagonismo' anunciando tu idea primero?"
-                  }
+                    "prompt": "When you feel under the weather or exhausted, what is your ultimate comfort food and movie combo?",
+                    "es": "¿Cuando te sientes indispuesto o agotado, cuál es tu combinación favorita de comida y película?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-fuchsia-700 via-purple-700 to-indigo-800",
                 "imageUrl": "/images/teens-advanced-class-06/slide-02.jpg"
@@ -41838,42 +42310,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y resuelve la crisis con el phrasal verb."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Step Up",
+
+          {
+                    "label": "Leading Under Pressure",
                     "color": "#EF4444",
-                    "prompt": "When your team captain got injured, how did you step up to lead the squad to victory?",
-                    "es": "¿Cuando tu capitán se lesionó, cómo diste el paso al frente para liderar al equipo?"
-                  },
-                  {
-                    "label": "Iron Out",
+                    "prompt": "Have you ever had to step up and lead a group project when nobody else took responsibility?",
+                    "es": "¿Alguna vez tuviste que dar un paso al frente y liderar un proyecto escolar cuando nadie más lo hacía?"
+          },
+          {
+                    "label": "Friendship Mediator",
                     "color": "#F59E0B",
-                    "prompt": "Two team members have conflicting ideas for the final project. How will you iron out their differences?",
-                    "es": "¿Dos compañeros tienen ideas en conflicto. Cómo limarás sus diferencias?"
-                  },
-                  {
-                    "label": "Bridge the Gap",
+                    "prompt": "Are you good at stepping into friend drama to help both sides calm down and resolve things?",
+                    "es": "¿Eres bueno interviniendo en los problemas de amigos para ayudarlos a calmarse y solucionar?"
+          },
+          {
+                    "label": "Admirable Leader",
                     "color": "#10B981",
-                    "prompt": "How can student councils bridge the gap between school administration and student needs?",
-                    "es": "¿Cómo pueden los consejos estudiantiles cerrar la brecha entre directivas y alumnos?"
-                  },
-                  {
-                    "label": "Look Into",
+                    "prompt": "What qualities do you admire most in leaders: quiet humility, bold confidence, or great listening?",
+                    "es": "¿Qué cualidades admiras más en un líder: la humildad tranquila, la confianza audaz o saber escuchar?"
+          },
+          {
+                    "label": "Team Chemistry",
                     "color": "#3B82F6",
-                    "prompt": "A critical technical glitch caused data loss in your app. What will you look into first?",
-                    "es": "¿Un fallo técnico causó pérdida de datos. Qué investigarás primero?"
-                  },
-                  {
-                    "label": "Hammer Out",
+                    "prompt": "How do you handle team members who slack off and don't do their part of the work?",
+                    "es": "¿Cómo manejas a compañeros de equipo que se relajan y no hacen su parte del trabajo?"
+          },
+          {
+                    "label": "Crisis Calmness",
                     "color": "#8B5CF6",
-                    "prompt": "Your team has two hours before a deadline. How will you hammer out a final agreement?",
-                    "es": "¿Tu equipo tiene dos horas antes del plazo. Cómo concretarán un acuerdo final?"
-                  },
-                  {
-                    "label": "Back Out Of",
+                    "prompt": "When unexpected chaos happens, are you the person who panics or the person who stays chill?",
+                    "es": "¿Cuando ocurre un caos inesperado, eres de los que entra en pánico o de los que mantiene la calma?"
+          },
+          {
+                    "label": "Student Council",
                     "color": "#EC4899",
-                    "prompt": "A key sponsor threatens to back out of your charity event. How will you convince them to stay?",
-                    "es": "¿Un patrocinador amenaza con retirarse del evento. Cómo lo convencerás de quedarse?"
-                  }
+                    "prompt": "If you were elected student president of your school tomorrow, what is the first change you would order?",
+                    "es": "¿Si fueras elegido personero estudiantil mañana, cuál sería el primer cambio que ordenarías?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-slate-700 via-indigo-800 to-purple-900",
                 "imageUrl": "/images/teens-advanced-class-07/slide-02.jpg"
@@ -42336,42 +42810,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y debate la moción usando retórica avanzada."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "AI in Medicine",
+
+          {
+                    "label": "AI in Creative Arts",
                     "color": "#EF4444",
-                    "prompt": "Motion: 'Autonomous AI surgeons should be granted legal authority to perform complex operations without human oversight.'",
-                    "es": "Moción: 'Cirujanos de IA autónomos deberían tener autoridad legal para operar sin supervisión humana.'"
-                  },
-                  {
-                    "label": "Copyright in AI",
+                    "prompt": "Do you think music, screenplays, and books written by AI can ever carry true human soul?",
+                    "es": "¿Crees que la música, guiones y libros escritos por IA puedan tener una verdadera alma humana?"
+          },
+          {
+                    "label": "AI Companions",
                     "color": "#F59E0B",
-                    "prompt": "Motion: 'Generative AI models trained on human art without explicit consent constitute severe intellectual theft.'",
-                    "es": "Moción: 'Modelos de IA generativa entrenados con arte humano sin consentimiento constituyen robo intelectual.'"
-                  },
-                  {
-                    "label": "Autonomous Weapons",
+                    "prompt": "Would you ever talk to an AI virtual friend if you felt lonely, or does that feel strange to you?",
+                    "es": "¿Hablarías con un amigo virtual de IA si te sintieras solo o te parece algo extraño?"
+          },
+          {
+                    "label": "Autonomous Safety",
                     "color": "#10B981",
-                    "prompt": "Motion: 'The United Nations must enforce an immediate worldwide ban on lethal autonomous weapons systems.'",
-                    "es": "Moción: 'La ONU debe imponer una prohibición mundial inmediata a los sistemas de armas autónomas letales.'"
-                  },
-                  {
-                    "label": "AI in Journalism",
+                    "prompt": "Would you trust a fully autonomous self-driving car to drive you through chaotic rush hour traffic?",
+                    "es": "¿Confiarías en un carro autónomo sin conductor para llevarte en medio del trancón de hora pico?"
+          },
+          {
+                    "label": "Deepfake Detection",
                     "color": "#3B82F6",
-                    "prompt": "Motion: 'News articles generated purely by AI algorithms pose an existential threat to democratic truth.'",
-                    "es": "Moción: 'Artículos de noticias generados puramente por IA representan una amenaza existencial a la verdad democrática.'"
-                  },
-                  {
-                    "label": "Classroom AI",
+                    "prompt": "How worried are you about hyper-realistic AI deepfakes tricking people on social media?",
+                    "es": "¿Qué tan preocupado estás por los deepfakes hiperrealistas que engañan a la gente en redes?"
+          },
+          {
+                    "label": "AI Homework Rule",
                     "color": "#8B5CF6",
-                    "prompt": "Motion: 'Using AI to write essays should be classified as academic misconduct rather than innovative learning.'",
-                    "es": "Moción: 'Usar IA para escribir ensayos debería ser catalogado como falta académica y no innovación.'"
-                  },
-                  {
-                    "label": "Digital Humans",
+                    "prompt": "How do you personally find an ethical, fair balance when using AI tools for your school studies?",
+                    "es": "¿Cómo encuentras tú personalmente un equilibrio ético y justo al usar herramientas de IA en tus estudios escolares?"
+          },
+          {
+                    "label": "Future Workforce",
                     "color": "#EC4899",
-                    "prompt": "Motion: 'Virtual AI influencers and digital avatars should be legally labeled on all social media platforms.'",
-                    "es": "Moción: 'Influencers virtuales de IA y avatares digitales deberían estar legalmente etiquetados en redes sociales.'"
-                  }
+                    "prompt": "Are you excited or nervous about how AI will reshape the future job market for your generation?",
+                    "es": "¿Te entusiasma o te asusta cómo la IA va a transformar el mercado laboral de tu generación?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-800 via-indigo-800 to-purple-900",
                 "imageUrl": "/images/teens-advanced-class-08/slide-02.jpg"
@@ -42834,42 +43310,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y conecta el pasado con el presente usando Mixed Conditionals."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Solar Transition",
+
+          {
+                    "label": "Personal Eco-Habits",
                     "color": "#EF4444",
-                    "prompt": "Complete: 'If world leaders had invested heavily in solar grids decades ago, our cities (be) 100% clean today!'",
-                    "es": "Completa: '¡Si líderes hubieran invertido en energía solar hace décadas, nuestras ciudades (ser) 100% limpias hoy!'"
-                  },
-                  {
-                    "label": "Amazon Forest",
+                    "prompt": "What small ecological habit do you practice every single day to protect the environment?",
+                    "es": "¿Qué pequeño hábito ecológico practicas a diario para cuidar el medio ambiente?"
+          },
+          {
+                    "label": "City Recycling",
                     "color": "#F59E0B",
-                    "prompt": "Complete: 'If humanity had not deforested ancient tropical ecosystems, global weather (not be) so unpredictable now!'",
-                    "es": "Completa: '¡Si la humanidad no hubiera deforestado la selva, el clima no (ser) tan impredecible ahora!'"
-                  },
-                  {
-                    "label": "English Fluency",
+                    "prompt": "How well does your school and neighborhood separate and recycle plastic, glass, and paper?",
+                    "es": "¿Qué tan bien separan y reciclan el plástico, vidrio y papel en tu colegio y tu barrio?"
+          },
+          {
+                    "label": "Single-Use Plastics",
                     "color": "#10B981",
-                    "prompt": "Complete about yourself: 'If I had not started studying English with dedication, I (not be) able to lead this summit today!'",
-                    "es": "Completa: '¡Si no hubiera empezado a estudiar inglés, yo no (ser) capaz de liderar esta cumbre hoy!'"
-                  },
-                  {
-                    "label": "Clean Transport",
+                    "prompt": "Do you support strict bans on single-use plastic cups, bags, and straws across cities?",
+                    "es": "¿Apoyas la prohibición estricta de bolsas, vasos y pitillos plásticos de un solo uso en las ciudades?"
+          },
+          {
+                    "label": "Colombian Paramos",
                     "color": "#3B82F6",
-                    "prompt": "Complete: 'If governments had prioritized electric public transit, air quality in our capital (be) pristine today!'",
-                    "es": "Completa: '¡Si gobiernos hubieran priorizado transporte eléctrico, la calidad del aire (ser) prístina hoy!'"
-                  },
-                  {
-                    "label": "Plastic Ban",
+                    "prompt": "Have you ever visited a Colombian páramo or misty mountain wetland that supplies our fresh water?",
+                    "es": "¿Alguna vez has visitado un páramo colombiano que abastece de agua pura a nuestras ciudades?"
+          },
+          {
+                    "label": "Youth Climate Action",
                     "color": "#8B5CF6",
-                    "prompt": "Complete: 'If international treaties had banned single-use plastics in 2000, our oceans (not have) plastic gyres now!'",
-                    "es": "Completa: '¡Si tratados hubieran prohibido plásticos en 2000, los océanos no (tener) islas de plástico ahora!'"
-                  },
-                  {
-                    "label": "Youth Voices",
+                    "prompt": "Do you believe youth protests and digital campaigns truly influence government environmental policy?",
+                    "es": "¿Crees que las campañas y protestas de jóvenes realmente influyen en las políticas ambientales?"
+          },
+          {
+                    "label": "Clean Commute",
                     "color": "#EC4899",
-                    "prompt": "Complete: 'If youth leaders had remained silent during climate crises, environmental policies (not change) so rapidly today!'",
-                    "es": "Completa: '¡Si los jóvenes hubieran callado, las políticas ambientales no (cambiar) tan rápido hoy!'"
-                  }
+                    "prompt": "Would you prefer walking or cycling everywhere if your city built safe, connected green bikeways?",
+                    "es": "¿Preferirías caminar o ir en cicla a todas partes si tu ciudad tuviera ciclorrutas verdes seguras?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-teal-700 via-emerald-700 to-cyan-800",
                 "imageUrl": "/images/teens-advanced-class-09/slide-02.jpg"
@@ -43332,42 +43810,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y defiende tu iniciativa de ONG juvenil en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "NGO Mission",
+
+          {
+                    "label": "Dream NGO Cause",
                     "color": "#EF4444",
-                    "prompt": "Pitch your NGO's core mission using a relative clause: 'Our NGO is an organization which/that...'!",
-                    "es": "Presenta la misión de tu ONG usando una relative clause: '¡Nuestra ONG es una organización que...!'"
-                  },
-                  {
-                    "label": "Community Impact",
+                    "prompt": "If you launched your own non-profit youth organization, what social problem would you fight?",
+                    "es": "¿Si crearas tu propia organización juvenil sin ánimo de lucro, qué problema social combatirías?"
+          },
+          {
+                    "label": "Youth Empowerment",
                     "color": "#F59E0B",
-                    "prompt": "Use Advanced Passive: 'Over five thousand rural students (empower / reach) by our clean tech workshops!'",
-                    "es": "Usa Pasiva Avanzada: '¡Más de cinco mil estudiantes (empoderar / alcanzar) por nuestros talleres!'"
-                  },
-                  {
-                    "label": "Overcoming Crisis",
+                    "prompt": "Why do you think teenagers and youth bring more innovative ideas to social change than politicians?",
+                    "es": "¿Por qué crees que los jóvenes aportan ideas más innovadoras al cambio social que los políticos?"
+          },
+          {
+                    "label": "Public Speaking Confidence",
                     "color": "#10B981",
-                    "prompt": "Use an executive phrasal verb: describe how your team stepped up and ironed out a major budget obstacle!",
-                    "es": "Usa un phrasal verb ejecutivo: ¡describe cómo diste un paso al frente y limaste obstáculos!"
-                  },
-                  {
-                    "label": "Why You Deserve Funding",
+                    "prompt": "How confident do you feel presenting an important social initiative to an audience of adults?",
+                    "es": "¿Qué tan seguro te sientes presentando una iniciativa social importante ante un público de adultos?"
+          },
+          {
+                    "label": "Inspiring Campaign",
                     "color": "#3B82F6",
-                    "prompt": "Use Mixed Conditionals: 'If our NGO had not launched this initiative, young creators (not have) access to mentorship today!'",
-                    "es": "Usa Mixed Conditionals: '¡Si nuestra ONG no hubiera lanzado esto, los creadores no (tener) mentoría hoy!'"
-                  },
-                  {
-                    "label": "Ethical Transparency",
+                    "prompt": "What is an unforgettable digital awareness campaign that made you think or act differently?",
+                    "es": "¿Cuál es una campaña digital inolvidable que te hizo reflexionar o actuar diferente?"
+          },
+          {
+                    "label": "Building a Team",
                     "color": "#8B5CF6",
-                    "prompt": "Use Reported Speech: 'Our board announced that 100% of donations (allocate) directly to student scholarships!'",
-                    "es": "Usa Reported Speech: '¡Nuestra junta anunció que el 100% de donaciones se destinaría a becas!'"
-                  },
-                  {
-                    "label": "Grand Vision",
+                    "prompt": "If you had to recruit three friends for a leadership initiative, who would you choose and why?",
+                    "es": "¿Si tuvieras que reclutar a tres amigos para una iniciativa de liderazgo, a quiénes elegirías?"
+          },
+          {
+                    "label": "Grand Graduation Win",
                     "color": "#EC4899",
-                    "prompt": "Deliver a 30-second inspiring closing statement explaining how your NGO will transform Colombia and the world!",
-                    "es": "¡Da una declaración inspiradora de 30 segundos explicando cómo tu ONG transformará a Colombia y el mundo!"
-                  }
+                    "prompt": "Looking back at Advanced Level, what is the biggest communication skill you gained?",
+                    "es": "¿Mirando hacia atrás en este Nivel Avanzado, cuál es la habilidad comunicativa más grande que ganaste?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-yellow-600 via-amber-700 to-red-800",
                 "imageUrl": "/images/teens-advanced-class-10/slide-02.jpg"
@@ -43838,42 +44318,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y usa 'will be doing' o 'will have done by 2035'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Quantum Internet",
+
+          {
+                    "label": "Your 2035 Life",
                     "color": "#EF4444",
-                    "prompt": "Use Future Perfect: 'By 2035, scientists (build) a completely unhackable quantum internet grid!'",
-                    "es": "Usa Future Perfect: '¡Para 2035, científicos (construir) una red de internet cuántico!' "
-                  },
-                  {
-                    "label": "Autonomous Flying Taxis",
+                    "prompt": "When you picture your personal and professional life in the year 2035, where do you see yourself living?",
+                    "es": "¿Cuando imaginas tu vida personal y profesional en el año 2035, dónde te ves viviendo?"
+          },
+          {
+                    "label": "Future Tech Normal",
                     "color": "#F59E0B",
-                    "prompt": "Use Future Continuous: 'In ten years' time, millions of commuters (travel) in electric air taxis!'",
-                    "es": "Usa Future Continuous: '¡En diez años, millones (viajar) en taxis aéreos eléctricos!'"
-                  },
-                  {
-                    "label": "Bionic Organs",
+                    "prompt": "What futuristic technology do you believe will become as common as smartphones by the time you turn 30?",
+                    "es": "¿Qué tecnología futurista crees que será tan común como los celulares para cuando cumplas 30 años?"
+          },
+          {
+                    "label": "Dream Career Peak",
                     "color": "#10B981",
-                    "prompt": "Use Future Perfect: 'By 2040, biomedical engineers (synthesize) 3D-printed human organs for transplants!'",
-                    "es": "Usa Future Perfect: '¡Para 2040, ingenieros (sintetizar) órganos humanos impresos en 3D!'"
-                  },
-                  {
-                    "label": "Clean Fusion Energy",
+                    "prompt": "What major project or milestone do you want to have accomplished by your mid-twenties?",
+                    "es": "¿Qué gran proyecto o logro quieres haber alcanzado a mediados de tus veinte años?"
+          },
+          {
+                    "label": "Human vs Robot",
                     "color": "#3B82F6",
-                    "prompt": "Use Future Continuous: 'By mid-century, clean fusion power plants (supply) seventy percent of global electricity!'",
-                    "es": "Usa Future Continuous: '¡Para mitad de siglo, plantas de fusión (suministrar) el 70% de electricidad!'"
-                  },
-                  {
-                    "label": "Mars Colony Base",
+                    "prompt": "Would you welcome a humanoid AI robot as a helper inside your home by 2040, or does that creep you out?",
+                    "es": "¿Le darías la bienvenida a un robot humanoide de IA como ayudante en tu casa para 2040 o te daría miedo?"
+          },
+          {
+                    "label": "City of Tomorrow",
                     "color": "#8B5CF6",
-                    "prompt": "Use Future Perfect: 'By the time I graduate from university, astronauts (establish) a permanent base on Mars!'",
-                    "es": "Usa Future Perfect: '¡Para cuando me gradúe, los astronautas (establecer) una base en Marte!'"
-                  },
-                  {
-                    "label": "Personal AI Mentor",
+                    "prompt": "How do you imagine cities will look in thirty years: flying public transit or green walkable metropolises?",
+                    "es": "¿Cómo imaginas las ciudades en treinta años: transporte volador o metrópolis verdes y peatonales?"
+          },
+          {
+                    "label": "Future Global Goal",
                     "color": "#EC4899",
-                    "prompt": "Use Future Continuous: 'Throughout next decade, youth leaders (work) alongside personalized cognitive AI assistants!'",
-                    "es": "Usa Future Continuous: '¡Durante la próxima década, líderes (trabajar) junto a asistentes de IA!'"
-                  }
+                    "prompt": "What is one global challenge you hope your generation will have completely solved by 2050?",
+                    "es": "¿Cuál es un desafío global que esperas que tu generación haya resuelto completamente para 2050?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-700 via-indigo-700 to-purple-800",
                 "imageUrl": "/images/teens-elite-class-01/slide-02.jpg"
@@ -44336,42 +44818,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y analiza el dilema con 'If we hadn't..., we wouldn't be... today'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Cyberattack Pivot",
+
+          {
+                    "label": "Passion vs Security",
                     "color": "#EF4444",
-                    "prompt": "Complete: 'If our cybersecurity team had not patched the zero-day vulnerability, our server data (be) completely compromised today!'",
-                    "es": "Completa: '¡Si el equipo no hubiera parchado la vulnerabilidad, los datos (estar) comprometidos hoy!'"
-                  },
-                  {
-                    "label": "Startup Seed Fund",
+                    "prompt": "If you had to choose between pursuing your wildest creative passion or a stable corporate career, which would you pick?",
+                    "es": "¿Si tuvieras que elegir entre seguir tu pasión creativa o una carrera corporativa segura, cuál escogerías?"
+          },
+          {
+                    "label": "High-Pressure Pivot",
                     "color": "#F59E0B",
-                    "prompt": "Complete: 'If our founders had not secured international seed capital, our venture (not be) expanding across Latin America right now!'",
-                    "es": "Completa: '¡Si no hubieran asegurado capital semilla, la empresa no (estar) expandiéndose ahora!'"
-                  },
-                  {
-                    "label": "Clean Tech Pivot",
+                    "prompt": "Tell me about a high-pressure moment where you had to make a split-second decision with no time to overthink!",
+                    "es": "¿Cuéntame de un momento de mucha presión en el que tuviste que tomar una decisión en un segundo sin dudar!"
+          },
+          {
+                    "label": "Calculated Risk",
                     "color": "#10B981",
-                    "prompt": "Complete: 'If the automotive firm had not transitioned to electric batteries, its stock valuation (be) nearly worthless today!'",
-                    "es": "Completa: '¡Si la firma no hubiera cambiado a baterías eléctricas, su valor (ser) casi nulo hoy!'"
-                  },
-                  {
-                    "label": "Emergency Evacuation",
+                    "prompt": "Are you someone who prefers playing it safe with predictable outcomes or taking bold calculated risks?",
+                    "es": "¿Eres alguien que prefiere ir a lo seguro con resultados predecibles o tomar riesgos audaces calculados?"
+          },
+          {
+                    "label": "Tough Dilemma",
                     "color": "#3B82F6",
-                    "prompt": "Complete: 'If the mission director had not ordered immediate containment, the research laboratory (be) in full quarantine now!'",
-                    "es": "Completa: '¡Si el director no hubiera ordenado contención, el laboratorio (estar) en cuarentena ahora!'"
-                  },
-                  {
-                    "label": "Personal English Milestone",
+                    "prompt": "If a classmate asked you to share exam answers, would you prioritize helping them or academic honesty?",
+                    "es": "¿Si un compañero te pide las respuestas de un examen, priorizarías ayudarlo o la honestidad académica?"
+          },
+          {
+                    "label": "Emergency Mindset",
                     "color": "#8B5CF6",
-                    "prompt": "Complete about yourself: 'If I had not persevered through challenging grammar hurdles, I (not speak) with such executive poise today!'",
-                    "es": "Completa: '¡Si no hubiera perseverado, yo no (hablar) con tanto aplomo hoy!'"
-                  },
-                  {
-                    "label": "Product Recall",
+                    "prompt": "When everything around you goes off-track, what mental anchor keeps you grounded and sharp?",
+                    "es": "¿Cuando todo a tu alrededor se descarrila, qué ancla mental te mantiene enfocado y tranquilo?"
+          },
+          {
+                    "label": "Regret or Lesson",
                     "color": "#EC4899",
-                    "prompt": "Complete: 'If the CEO had not recalled the defective drone batteries, customer trust in the brand (be) entirely destroyed today!'",
-                    "es": "Completa: '¡Si el CEO no hubiera retirado las baterías defectuosas, la confianza (estar) destruida hoy!'"
-                  }
+                    "prompt": "Do you believe mistakes in life should be viewed with regret or celebrated as essential learning curves?",
+                    "es": "¿Crees que los errores en la vida deben verse con arrepentimiento o celebrarse como lecciones esenciales?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-slate-700 via-indigo-800 to-purple-900",
                 "imageUrl": "/images/teens-elite-class-02/slide-02.jpg"
@@ -44834,42 +45318,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y transforma la oración con 'It was...' o 'What we need is...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Public Speaking",
+
+          {
+                    "label": "Core Values",
                     "color": "#EF4444",
-                    "prompt": "Standard: 'Courage defines true leadership.' Transform using What-Cleft: 'What defines true leadership is...'!",
-                    "es": "Estándar: 'El coraje define el liderazgo.' ¡Transforma con What-Cleft!"
-                  },
-                  {
-                    "label": "Visionary Team",
+                    "prompt": "What single core value defines your identity and moral compass above everything else?",
+                    "es": "¿Qué valor fundamental define tu identidad y tu brújula moral por encima de todo?"
+          },
+          {
+                    "label": "Standout Spark",
                     "color": "#F59E0B",
-                    "prompt": "Standard: 'Sofia designed the winning AI algorithm.' Transform using It-Cleft: 'It was Sofia who...'!",
-                    "es": "Estándar: 'Sofía diseñó el algoritmo ganador.' ¡Transforma con It-Cleft!"
-                  },
-                  {
-                    "label": "Youth Opportunity",
+                    "prompt": "What makes your perspective on life and learning unique compared to mainstream teenagers?",
+                    "es": "¿Qué hace que tu perspectiva sobre la vida y el aprendizaje sea única frente a la mayoría de jóvenes?"
+          },
+          {
+                    "label": "Passionate Cause",
                     "color": "#10B981",
-                    "prompt": "Standard: 'We only seek equal educational access.' Transform using All-Cleft: 'All we seek is...'!",
-                    "es": "Estándar: 'Solo buscamos acceso educativo igualitario.' ¡Transforma con All-Cleft!"
-                  },
-                  {
-                    "label": "Clean Environment",
+                    "prompt": "What topic can you talk about with unstoppable fire and excitement for hours on end?",
+                    "es": "¿De qué tema puedes hablar con una emoción y fuego imparable durante horas y horas?"
+          },
+          {
+                    "label": "Authentic Self",
                     "color": "#3B82F6",
-                    "prompt": "Standard: 'Renewable energy will save our oceans.' Transform using It-Cleft: 'It is renewable energy that...'!",
-                    "es": "Estándar: 'La energía renovable salvará los océanos.' ¡Transforma con It-Cleft!"
-                  },
-                  {
-                    "label": "Personal Drive",
+                    "prompt": "How do you resist the urge to blend in with peer pressure and remain true to your authentic style?",
+                    "es": "¿Cómo resistes la presión de encajar con los demás y te mantienes fiel a tu estilo auténtico?"
+          },
+          {
+                    "label": "Unshakable Drive",
                     "color": "#8B5CF6",
-                    "prompt": "Standard: 'My relentless curiosity motivates my coding.' Transform using What-Cleft: 'What motivates my coding is...'!",
-                    "es": "Estándar: 'Mi curiosidad motiva mi programación.' ¡Transforma con What-Cleft!"
-                  },
-                  {
-                    "label": "Innovation Core",
+                    "prompt": "When everyone doubts an ambitious idea you have, what gives you the courage to keep building it?",
+                    "es": "¿Cuando todos dudan de una idea ambiciosa que tienes, qué te da el coraje de seguir adelante?"
+          },
+          {
+                    "label": "Inspiring Impact",
                     "color": "#EC4899",
-                    "prompt": "Standard: 'Human empathy differentiates us from algorithms.' Transform using It-Cleft: 'It is human empathy that...'!",
-                    "es": "Estándar: 'La empatía nos diferencia de los algoritmos.' ¡Transforma con It-Cleft!"
-                  }
+                    "prompt": "What mark or legacy do you want your actions and words to leave on the people around you?",
+                    "es": "¿Qué huella o legado quieres que tus acciones y palabras dejen en las personas a tu alrededor?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-600 via-orange-600 to-red-700",
                 "imageUrl": "/images/teens-elite-class-03/slide-02.jpg"
@@ -45332,42 +45818,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y usa 'Rarely have I...', 'Not only did...', o 'Under no circumstances should...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Rarely Witnessed",
+
+          {
+                    "label": "Microphone to the World",
                     "color": "#EF4444",
-                    "prompt": "Standard: 'I have rarely witnessed such exceptional student leadership.' Invert using 'Rarely have I witnessed...'!",
-                    "es": "Estándar: 'Rara vez he visto tal liderazgo.' ¡Invierte con 'Rarely have I witnessed'!"
-                  },
-                  {
-                    "label": "Not Only Won",
+                    "prompt": "If you were handed a live microphone broadcasting to one million teenagers worldwide, what would your message be?",
+                    "es": "¿Si te dieran un micrófono en vivo transmitiendo a un millón de jóvenes en el mundo, cuál sería tu mensaje?"
+          },
+          {
+                    "label": "Memorable Speech",
                     "color": "#F59E0B",
-                    "prompt": "Standard: 'Our team not only won the trophy, but we also set a new record.' Invert using 'Not only did our team win...'!",
-                    "es": "Estándar: 'No solo ganamos sino que rompimos récord.' ¡Invierte con 'Not only did'!"
-                  },
-                  {
-                    "label": "No Compromise",
+                    "prompt": "Have you ever heard a speech or talk that moved you so deeply you still remember the exact feeling?",
+                    "es": "¿Alguna vez has escuchado un discurso que te conmovió tanto que aún recuerdas la emoción exacta?"
+          },
+          {
+                    "label": "Stage Presence",
                     "color": "#10B981",
-                    "prompt": "Standard: 'We should under no circumstances compromise on citizen privacy.' Invert using 'Under no circumstances should we...'!",
-                    "es": "Estándar: 'Bajo ninguna circunstancia debemos transigir en privacidad.' ¡Invierte!"
-                  },
-                  {
-                    "label": "Seldom Seen",
+                    "prompt": "What is your secret ritual to eliminate stage fright and speak with commanding authority before a crowd?",
+                    "es": "¿Cuál es tu ritual para eliminar el pánico escénico y hablar con autoridad ante el público?"
+          },
+          {
+                    "label": "Power of Tone",
                     "color": "#3B82F6",
-                    "prompt": "Standard: 'A startup seldom scales so rapidly without ethical governance.' Invert using 'Seldom does a startup scale...'!",
-                    "es": "Estándar: 'Rara vez una startup escala tan rápido.' ¡Invierte con 'Seldom does'!"
-                  },
-                  {
-                    "label": "Scarcely Begun",
+                    "prompt": "Why do you think emotional tone and pacing matter more in persuasion than just reading facts from a screen?",
+                    "es": "¿Por qué crees que el tono emocional y el ritmo importan más al convencer que solo leer datos?"
+          },
+          {
+                    "label": "Unforgettable Hook",
                     "color": "#8B5CF6",
-                    "prompt": "Standard: 'We had scarcely begun our speech when the audience erupted in applause.' Invert using 'Scarcely had we begun...'!",
-                    "es": "Estándar: 'Apenas habíamos empezado cuando la audiencia aplaudió.' ¡Invierte!"
-                  },
-                  {
-                    "label": "Little Did They Know",
+                    "prompt": "How do you capture an audience's complete attention within the first fifteen seconds of your presentation?",
+                    "es": "¿Cómo capturas la total atención de una audiencia en los primeros quince segundos de tu exposición?"
+          },
+          {
+                    "label": "Oratory Hero",
                     "color": "#EC4899",
-                    "prompt": "Standard: 'They little knew that their small app would change global education.' Invert using 'Little did they know that...'!",
-                    "es": "Estándar: 'Poco sabían que su app cambiaría la educación.' ¡Invierte!"
-                  }
+                    "prompt": "Who is a public speaker, political figure, or presenter whose confidence you aspire to emulate?",
+                    "es": "¿Quién es un orador, figura pública o conferencista cuya seguridad te inspira?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-purple-700 via-indigo-800 to-slate-900",
                 "imageUrl": "/images/teens-elite-class-04/slide-02.jpg"
@@ -45830,42 +46318,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y usa 'I would venture to suggest...', 'It seems that...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Budget Overspending",
+
+          {
+                    "label": "Handling Criticism",
                     "color": "#EF4444",
-                    "prompt": "Aggressive: 'Your department wasted all the grant money!' Soften diplomatically: 'It appears that resource allocation might require review...'!",
-                    "es": "Agresivo: '¡Malgastaron el dinero!' ¡Suaviza diplomáticamente!"
-                  },
-                  {
-                    "label": "Unrealistic Deadline",
+                    "prompt": "When someone strongly criticizes your work, how do you handle it without taking it personally?",
+                    "es": "¿Cuando alguien critica fuerte tu trabajo, cómo lo manejas sin tomártelo como algo personal?"
+          },
+          {
+                    "label": "Parent Negotiations",
                     "color": "#F59E0B",
-                    "prompt": "Aggressive: 'Your timeline is completely impossible!' Soften: 'I would venture to suggest that our deadline might be somewhat ambitious...'!",
-                    "es": "Agresivo: '¡El plazo es imposible!' ¡Suaviza diplomáticamente!"
-                  },
-                  {
-                    "label": "Flawed Policy",
+                    "prompt": "What is your diplomatic strategy when negotiating extended curfew or permissions with your parents?",
+                    "es": "¿Cuál es tu estrategia diplomática cuando negocias permisos u horarios con tus papás?"
+          },
+          {
+                    "label": "Agreeing to Disagree",
                     "color": "#10B981",
-                    "prompt": "Aggressive: 'This environmental treaty is totally useless!' Soften: 'It could be argued that the proposed framework tends to overlook...'!",
-                    "es": "Agresivo: '¡Este tratado no sirve!' ¡Suaviza diplomáticamente!"
-                  },
-                  {
-                    "label": "Data Discrepancy",
+                    "prompt": "How do you maintain a close friendship with someone who holds completely opposite views on big issues?",
+                    "es": "¿Cómo mantienes una amistad cercana con alguien que piensa totalmente opuesto a ti en temas grandes?"
+          },
+          {
+                    "label": "Constructive Feedback",
                     "color": "#3B82F6",
-                    "prompt": "Aggressive: 'Your statistics are completely false!' Soften: 'There would appear to be a slight divergence in our empirical figures...'!",
-                    "es": "Agresivo: '¡Sus estadísticas son falsas!' ¡Suaviza diplomáticamente!"
-                  },
-                  {
-                    "label": "Security Risk",
+                    "prompt": "How do you tell a teammate their idea needs work without hurting their feelings or confidence?",
+                    "es": "¿Cómo le dices a un compañero que su idea necesita mejoras sin lastimar sus sentimientos ni su confianza?"
+          },
+          {
+                    "label": "De-escalating Heat",
                     "color": "#8B5CF6",
-                    "prompt": "Aggressive: 'Your app is a massive security hazard!' Soften: 'It is widely felt that additional data safeguards might be advisable...'!",
-                    "es": "Agresivo: '¡Su app es un peligro!' ¡Suaviza diplomáticamente!"
-                  },
-                  {
-                    "label": "Counter-Proposal",
+                    "prompt": "What is your best phrase to cool down an argument when voices start getting too loud?",
+                    "es": "¿Cuál es tu mejor frase para calmar una discusión cuando los ánimos empiezan a subir de tono?"
+          },
+          {
+                    "label": "Win-Win Mindset",
                     "color": "#EC4899",
-                    "prompt": "Aggressive: 'We reject your terms!' Soften: 'While appreciating your perspective, we would suggest exploring a mutually beneficial compromise...'!",
-                    "es": "Agresivo: '¡Rechazamos los términos!' ¡Suaviza diplomáticamente!"
-                  }
+                    "prompt": "Do you believe a successful negotiation means winning completely, or finding a solution where both win?",
+                    "es": "¿Crees que una negociación exitosa significa ganar por completo o encontrar una solución donde ambos ganen?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-teal-700 via-emerald-800 to-indigo-900",
                 "imageUrl": "/images/teens-elite-class-05/slide-02.jpg"
@@ -46328,42 +46818,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y formula la tesis con 'While..., [Claim] because [Reason 1] and [Reason 2]'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "AI in Education",
+
+          {
+                    "label": "University Dilemma",
                     "color": "#EF4444",
-                    "prompt": "Formulate a 3-tier thesis on whether AI tutors should replace or assist human teachers!",
-                    "es": "¡Formula una tesis de 3 niveles sobre si los tutores de IA deben reemplazar o asistir a docentes!"
-                  },
-                  {
-                    "label": "Space Colonization",
+                    "prompt": "In the modern AI age, do you believe a four-year college degree is still essential for building wealth?",
+                    "es": "¿En la era de la IA, crees que un título universitario de 4 años sigue siendo esencial para crear riqueza?"
+          },
+          {
+                    "label": "Standardized Testing",
                     "color": "#F59E0B",
-                    "prompt": "Formulate a 3-tier thesis on whether space exploration funding is justified amid terrestrial poverty!",
-                    "es": "¡Formula una tesis sobre si el gasto espacial se justifica ante la pobreza terrestre!"
-                  },
-                  {
-                    "label": "Social Media Algorithms",
+                    "prompt": "Do you feel standardized entrance exams truly reflect your human intelligence, or just test stress?",
+                    "es": "¿Sientes que los exámenes de estado realmente reflejan tu inteligencia o solo miden el estrés?"
+          },
+          {
+                    "label": "Screen Time Limits",
                     "color": "#10B981",
-                    "prompt": "Formulate a 3-tier thesis on legal regulation of recommendation algorithms for teenagers!",
-                    "es": "¡Formula una tesis sobre la regulación legal de algoritmos de recomendación para jóvenes!"
-                  },
-                  {
-                    "label": "Renewable Energy Mandates",
+                    "prompt": "How would you react if the government imposed a mandatory digital curfew on your smartphone?",
+                    "es": "¿Cómo reaccionarías si el gobierno impusiera un toque de queda digital obligatorio a tu celular?"
+          },
+          {
+                    "label": "Fast Fashion Ethics",
                     "color": "#3B82F6",
-                    "prompt": "Formulate a 3-tier thesis on mandatory carbon taxation for multinational corporations!",
-                    "es": "¡Formula una tesis sobre impuestos al carbono obligatorios para corporaciones!"
-                  },
-                  {
-                    "label": "Genetic Engineering",
+                    "prompt": "Do you personally consider environmental impact before buying clothes from fast-fashion apps?",
+                    "es": "¿Consideras tú personalmente el impacto ambiental antes de comprar ropa en apps de moda rápida?"
+          },
+          {
+                    "label": "Space Spending",
                     "color": "#8B5CF6",
-                    "prompt": "Formulate a 3-tier thesis on CRISPR gene editing boundaries in human healthcare!",
-                    "es": "¡Formula una tesis sobre los límites éticos de edición genética CRISPR en medicina!"
-                  },
-                  {
-                    "label": "Digital Privacy",
+                    "prompt": "In your view, should billions of dollars be invested in Mars exploration or helping citizens on your planet?",
+                    "es": "¿A tu parecer, deberían invertirse miles de millones en explorar Marte o en ayudar a los ciudadanos de tu planeta?"
+          },
+          {
+                    "label": "Artistic Boundaries",
                     "color": "#EC4899",
-                    "prompt": "Formulate a 3-tier thesis on whether biometric surveillance erodes fundamental democratic rights!",
-                    "es": "¡Formula una tesis sobre si la vigilancia biométrica erosiona derechos democráticos!"
-                  }
+                    "prompt": "Do you think comedy and artistic expression should have boundaries, or should your creative freedom be absolute?",
+                    "es": "¿Crees que la comedia y la expresión artística deberían tener límites o tu libertad creativa debe ser absoluta?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-700 via-slate-800 to-purple-900",
                 "imageUrl": "/images/teens-elite-class-06/slide-02.jpg"
@@ -46826,42 +47318,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y describe la sección del paper con lenguaje IMRAD."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Introduction (Problem)",
+
+          {
+                    "label": "Obsessive Rabbit Hole",
                     "color": "#EF4444",
-                    "prompt": "Formulate the Introduction: 'This study investigates the alarming decline of coral biodiversity due to ocean acidification.'",
-                    "es": "Formula la Introducción: 'Este estudio investiga la declinación de la biodiversidad coralina.'"
-                  },
-                  {
-                    "label": "Methodology (Process)",
+                    "prompt": "What historical mystery, scientific question, or bizarre rabbit hole could you research online for hours?",
+                    "es": "¿Qué misterio histórico, enigma científico o tema curioso podrías investigar en internet durante horas?"
+          },
+          {
+                    "label": "Source Sleuth",
                     "color": "#F59E0B",
-                    "prompt": "Formulate the Methodology: 'A double-blind quantitative trial was conducted across twenty municipal water systems.'",
-                    "es": "Formula la Metodología: 'Un ensayo cuantitativo doble ciego se condujo en veinte acueductos.'"
-                  },
-                  {
-                    "label": "Results (Findings)",
+                    "prompt": "How do you distinguish authentic peer-reviewed facts from polished fake news on TikTok and Twitter?",
+                    "es": "¿Cómo distingues datos científicos reales de noticias falsas bien vestidas en TikTok y Twitter?"
+          },
+          {
+                    "label": "Fascinating Brain",
                     "color": "#10B981",
-                    "prompt": "Formulate the Results: 'Empirical analysis revealed a thirty-five percent reduction in heavy metal contaminants.'",
-                    "es": "Formula los Resultados: 'El análisis empírico reveló una reducción del 35% en contaminantes.'"
-                  },
-                  {
-                    "label": "Discussion (Impact)",
+                    "prompt": "Does human psychology and neuroscience fascinate you, especially why people behave the way they do?",
+                    "es": "¿Te fascina la psicología y neurociencia, especialmente entender por qué la gente actúa como actúa?"
+          },
+          {
+                    "label": "Historical What If",
                     "color": "#3B82F6",
-                    "prompt": "Formulate the Discussion: 'These findings substantiate the commercial viability of solar-powered nanofilters in rural zones.'",
-                    "es": "Formula la Discusión: 'Estos hallazgos fundamentan la viabilidad comercial de nanofiltros solares.'"
-                  },
-                  {
-                    "label": "Academic Citation",
+                    "prompt": "What period of world history do you find so intriguing that you would write a whole documentary on it?",
+                    "es": "¿Qué época de la historia mundial te parece tan intrigante que harías todo un documental sobre ella?"
+          },
+          {
+                    "label": "Research Passion",
                     "color": "#8B5CF6",
-                    "prompt": "Cite a peer study: 'As demonstrated by Rodriguez et al. (2024), quantum encryption prevents 99.9% of cyberattacks.'",
-                    "es": "Cita un estudio de pares: 'Como demostraron Rodriguez et al. (2024)...'"
-                  },
-                  {
-                    "label": "Symposium Defense",
+                    "prompt": "If you were awarded a research grant to investigate any issue in Colombia, what would your study focus on?",
+                    "es": "¿Si te dieran una beca para investigar cualquier problema en Colombia, en qué se enfocaría tu estudio?"
+          },
+          {
+                    "label": "The Power of Proof",
                     "color": "#EC4899",
-                    "prompt": "Deliver a 30-second elevator pitch summarizing your entire scientific poster for international judges!",
-                    "es": "¡Da un elevator pitch de 30 segundos resumiendo tu póster científico ante jurados!"
-                  }
+                    "prompt": "Why do you think having solid data and clear evidence makes someone's opinions ten times more persuasive?",
+                    "es": "¿Por qué crees que tener datos sólidos y evidencia clara hace que tus opiniones sean diez veces más convincentes?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-teal-700 via-slate-800 to-indigo-900",
                 "imageUrl": "/images/teens-elite-class-07/slide-02.jpg"
@@ -47324,42 +47818,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y usa el protocolo parlamentario: 'I move that...', 'Point of order'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Propose Motion",
+
+          {
+                    "label": "Executive Style",
                     "color": "#EF4444",
-                    "prompt": "Propose a formal motion: 'I move that our board allocate twenty percent of profits to youth STEM scholarships!'",
-                    "es": "Propón una moción: '¡Propongo que la junta asigne 20% de ganancias a becas!'"
-                  },
-                  {
-                    "label": "Second the Motion",
+                    "prompt": "When you lead a group meeting with classmates, are you democratic or do you take full control of decisions?",
+                    "es": "¿Cuando lideras una reunión de grupo con compañeros, eres democrático o tomas el control total?"
+          },
+          {
+                    "label": "Resolving Conflict",
                     "color": "#F59E0B",
-                    "prompt": "Second a fellow director's proposal: 'I second the motion to expand clean tech operations to rural schools!'",
-                    "es": "Secunda la moción: '¡Secundo la moción para expandir operaciones!'"
-                  },
-                  {
-                    "label": "Point of Order",
+                    "prompt": "How do you handle two friends on your team who strongly disagree on the direction of a project?",
+                    "es": "¿Cómo manejas a dos amigos de tu equipo que están en desacuerdo total sobre el rumbo de un proyecto?"
+          },
+          {
+                    "label": "Voting Decisions",
                     "color": "#10B981",
-                    "prompt": "Raise a point of order: 'Point of order, Mr. Chair! The speaker has exceeded the allotted two-minute debate limit.'",
-                    "es": "Plantea un punto de orden: '¡Punto de orden! El orador excedió el tiempo límite.'"
-                  },
-                  {
-                    "label": "Call for a Vote",
+                    "prompt": "Do you prefer group decisions made by majority vote or through open unanimous consensus?",
+                    "es": "¿Prefieres decisiones grupales tomadas por votación de mayoría o por consenso unánime?"
+          },
+          {
+                    "label": "Tough Feedback",
                     "color": "#3B82F6",
-                    "prompt": "As Board Chair, call for the vote: 'All those in favor say Aye; all those opposed say Nay. The Ayes have it!'",
-                    "es": "Como Presidente, llama a votación: '¡Los que estén a favor digan Sí!'"
-                  },
-                  {
-                    "label": "Table the Motion",
+                    "prompt": "How do you tell a close friend on your board that their proposal won't work without offending them?",
+                    "es": "¿Cómo le dices a un amigo cercano de tu equipo que su propuesta no funcionará sin ofenderlo?"
+          },
+          {
+                    "label": "Time Management",
                     "color": "#8B5CF6",
-                    "prompt": "Move to postpone: 'I move to table this motion until our independent financial audit report is published.'",
-                    "es": "Pospón la moción: '¡Propongo posponer esta moción hasta el informe de auditoría!'"
-                  },
-                  {
-                    "label": "Adjourn Session",
+                    "prompt": "What is your personal secret to keeping group meetings short, focused, and productive?",
+                    "es": "¿Cuál es tu secreto personal para que las reuniones de grupo sean cortas, enfocadas y productivas?"
+          },
+          {
+                    "label": "Dream Boardroom",
                     "color": "#EC4899",
-                    "prompt": "Adjourn the meeting: 'Hearing no further business, I declare this executive board session officially adjourned!'",
-                    "es": "Levanta la sesión: '¡Declaro esta sesión ejecutiva oficialmente levantada!'"
-                  }
+                    "prompt": "If you were invited to sit on the advisory board of Spotify or Nike, what fresh advice would you give them?",
+                    "es": "¿Si te invitaran a la junta asesora de Spotify o Nike, qué consejo fresco les darías?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-slate-800 via-indigo-900 to-purple-900",
                 "imageUrl": "/images/teens-elite-class-08/slide-02.jpg"
@@ -47822,42 +48318,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y usa 'While I understand your concern, the critical reality is...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Data Leak Allegation",
+
+          {
+                    "label": "First Impression Charm",
                     "color": "#EF4444",
-                    "prompt": "Hostile Journalist: 'Isn't it true that your startup sold millions of user passwords on the dark web?' Defuse using Bridging!",
-                    "es": "Periodista hostil: '¿No es cierto que vendieron contraseñas?' ¡Neutraliza con Bridging!"
-                  },
-                  {
-                    "label": "Toxic Waste Rumor",
+                    "prompt": "What is your personal secret to making an unforgettable positive first impression in an interview?",
+                    "es": "¿Cuál es tu secreto personal para causar una primera impresión positiva e inolvidable en una entrevista?"
+          },
+          {
+                    "label": "Body Language Power",
                     "color": "#F59E0B",
-                    "prompt": "Hostile Journalist: 'Why did your chemical lab dump toxic waste into the municipal river?' Defuse using Bridging!",
-                    "es": "Periodista hostil: '¿Por qué vertieron desechos tóxicos?' ¡Neutraliza con Bridging!"
-                  },
-                  {
-                    "label": "App Glitch Collapse",
+                    "prompt": "How do you manage your posture, eye contact, and body language when you want to look super confident?",
+                    "es": "¿Cómo manejas tu postura, contacto visual y lenguaje corporal cuando quieres lucir súper seguro?"
+          },
+          {
+                    "label": "Greatest Weakness",
                     "color": "#10B981",
-                    "prompt": "Hostile Journalist: 'Admit it: your educational app is an unusable disaster that crashed during finals!' Defuse!",
-                    "es": "Periodista hostil: '¡Admítalo: su app es un desastre que colapsó!' ¡Neutraliza con Bridging!"
-                  },
-                  {
-                    "label": "Mismanagement Charge",
+                    "prompt": "How do you honestly answer the classic question 'What is your greatest weakness?' without sounding fake?",
+                    "es": "¿Cómo respondes con sinceridad a la clásica pregunta '¿Cuál es tu mayor debilidad?' sin sonar falso?"
+          },
+          {
+                    "label": "Storytelling Technique",
                     "color": "#3B82F6",
-                    "prompt": "Hostile Journalist: 'Isn't your entire executive leadership team hopelessly incompetent?' Defuse using Bridging!",
-                    "es": "Periodista hostil: '¿No es su directiva totalmente incompetente?' ¡Neutraliza con Bridging!"
-                  },
-                  {
-                    "label": "Delayed Product",
+                    "prompt": "What vivid personal story would you share in an interview to prove your resilience?",
+                    "es": "¿Qué historia personal vívida compartirías en una entrevista para demostrar tu resiliencia?"
+          },
+          {
+                    "label": "Asking the Interviewer",
                     "color": "#8B5CF6",
-                    "prompt": "Hostile Journalist: 'You missed your launch deadline by six months. Are you going bankrupt?' Defuse!",
-                    "es": "Periodista hostil: 'Retrasaron el lanzamiento seis meses. ¿Van a la quiebra?' ¡Neutraliza!"
-                  },
-                  {
-                    "label": "Algorithm Bias",
+                    "prompt": "What is an impressive, smart question you would ask an admissions officer or CEO interviewing you?",
+                    "es": "¿Cuál es una pregunta inteligente e impresionante que le harías a un director de admisiones o CEO que te entrevista?"
+          },
+          {
+                    "label": "Authentic Polish",
                     "color": "#EC4899",
-                    "prompt": "Hostile Journalist: 'Your AI model discriminates against rural youth! How do you dare defend it?' Defuse!",
-                    "es": "Periodista hostil: '¡Su IA discrimina a los jóvenes rurales!' ¡Neutraliza con Bridging!"
-                  }
+                    "prompt": "How do you strike the perfect balance between sounding thoroughly prepared and completely natural?",
+                    "es": "¿Cómo logras el equilibrio perfecto entre sonar bien preparado y completamente natural y espontáneo?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-red-700 via-slate-800 to-indigo-900",
                 "imageUrl": "/images/teens-elite-class-09/slide-02.jpg"
@@ -48320,42 +48818,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y defiende las métricas de tu empresa con 'Our LTV to CAC ratio is...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "LTV to CAC Ratio",
+
+          {
+                    "label": "Global Youth Vision",
                     "color": "#EF4444",
-                    "prompt": "Explain your ratio: 'Our Customer Lifetime Value is $1,200 while our Acquisition Cost is $250, yielding an exceptional 4.8:1 ratio!'",
-                    "es": "Explica tu ratio LTV:CAC: '¡Nuestro LTV es $1,200 y el CAC $250, dando un ratio de 4.8:1!'"
-                  },
-                  {
-                    "label": "Churn Rate",
+                    "prompt": "What is your boldest vision for how teenagers around the globe will collaborate to transform society?",
+                    "es": "¿Cuál es tu visión más audaz de cómo los jóvenes del mundo colaborarán para transformar la sociedad?"
+          },
+          {
+                    "label": "Bilingual Superpower",
                     "color": "#F59E0B",
-                    "prompt": "Defend your retention: 'Our monthly subscriber churn rate is strictly maintained below two percent due to high platform engagement.'",
-                    "es": "Defiende tu retención: '¡Nuestra tasa de cancelación mensual se mantiene bajo el 2%!'"
-                  },
-                  {
-                    "label": "Gross Margins",
+                    "prompt": "How has unlocking fluent English transformed your personal confidence, world view, and future opportunities?",
+                    "es": "¿Cómo ha transformado dominar el inglés fluido tu confianza personal, visión del mundo y oportunidades?"
+          },
+          {
+                    "label": "Leadership Milestone",
                     "color": "#10B981",
-                    "prompt": "Present your margins: 'Our cloud software architecture delivers eighty-two percent gross profit margins at scale.'",
-                    "es": "Presenta tus márgenes: '¡Nuestra arquitectura entrega márgenes brutos del 82%!'"
-                  },
-                  {
-                    "label": "Defensive Moats",
+                    "prompt": "Looking back at your Elite Teen journey, what was the proudest moment of personal growth you achieved?",
+                    "es": "¿Mirando hacia atrás en tu camino Elite, cuál fue el momento de crecimiento personal del que más te enorgulleces?"
+          },
+          {
+                    "label": "Breaking Barriers",
                     "color": "#3B82F6",
-                    "prompt": "Defend your competitive moat: 'Our proprietary machine learning algorithm and data network effects create insurmountable entry barriers.'",
-                    "es": "Defiende tu foso: '¡Nuestros algoritmos y efectos de red crean barreras infranqueables!'"
-                  },
-                  {
-                    "label": "Payback Period",
+                    "prompt": "What advice would you give to a younger student who is terrified of speaking English in public?",
+                    "es": "¿Qué consejo le darías a un estudiante más joven que le tiene pánico a hablar en inglés en público?"
+          },
+          {
+                    "label": "Next Horizon",
                     "color": "#8B5CF6",
-                    "prompt": "State your payback time: 'Our customer acquisition cost is fully recouped within five months of onboarding.'",
-                    "es": "Indica tu tiempo de recuperación: '¡El costo de adquisición se recupera en 5 meses!'"
-                  },
-                  {
-                    "label": "Total Addressable Market",
+                    "prompt": "What is the very next ambitious intellectual or career mountain you are preparing to conquer?",
+                    "es": "¿Cuál es la siguiente montaña intelectual o profesional ambiciosa que te estás preparando para conquistar?"
+          },
+          {
+                    "label": "Elite Graduation Toast",
                     "color": "#EC4899",
-                    "prompt": "Present your TAM: 'Our Total Addressable Market in Latin America represents a twelve-billion-dollar annual opportunity.'",
-                    "es": "Presenta tu TAM: '¡Nuestro mercado total direccionable representa $12 mil millones!'"
-                  }
+                    "prompt": "Deliver a short, heartfelt graduation statement sharing your proudest milestone and your future dreams!",
+                    "es": "¿Da un brindis de graduación breve y emotivo compartiendo tu mayor logro y tus sueños futuros!"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-emerald-700 via-teal-800 to-slate-900",
                 "imageUrl": "/images/teens-elite-class-10/slide-02.jpg"
@@ -48818,42 +49318,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y defiende tu startup tecnológica ante el jurado."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Opening Hook (Cleft)",
+
+          {
+                    "label": "Dream Startup Idea",
                     "color": "#EF4444",
-                    "prompt": "Open with a Cleft Sentence: 'What our technology truly transforms is the way young minds learn to code!'",
-                    "es": "Abre con Cleft: '¡Lo que nuestra tecnología transforma es cómo los jóvenes aprenden!'"
-                  },
-                  {
-                    "label": "Traction (Inversion)",
+                    "prompt": "If you had five million dollars of venture capital to build an app with your friends, what would it do?",
+                    "es": "¿Si tuvieras cinco millones de dólares para crear una app con tus amigos, qué haría?"
+          },
+          {
+                    "label": "Elevator Pitch",
                     "color": "#F59E0B",
-                    "prompt": "Use Rhetorical Inversion: 'Rarely has a Latin American youth venture scaled to fifty thousand active users so rapidly!'",
-                    "es": "Usa Inversión: '¡Rara vez una startup ha escalado a 50k usuarios tan rápido!'"
-                  },
-                  {
-                    "label": "Financials (Unit Economics)",
+                    "prompt": "How would you describe your greatest passion or project in just thirty seconds to a global investor?",
+                    "es": "¿Cómo describirías tu mayor pasión o proyecto en solo treinta segundos a un inversionista global?"
+          },
+          {
+                    "label": "Winning the Crowd",
                     "color": "#10B981",
-                    "prompt": "Present Unit Economics: 'Our LTV to CAC ratio stands at 4.5 to 1 with verified eighty-two percent gross margins!'",
-                    "es": "Presenta Unit Economics: '¡Nuestro LTV:CAC es 4.5 a 1 con 82% de márgenes brutos!'"
-                  },
-                  {
-                    "label": "Crisis Bridging",
+                    "prompt": "What is the key to captivating an audience and making people truly believe in your vision?",
+                    "es": "¿Cuál es la clave para cautivar a una audiencia y hacer que crean verdaderamente en tu visión?"
+          },
+          {
+                    "label": "Handling Tough Questions",
                     "color": "#3B82F6",
-                    "prompt": "Defuse a tough concern using Bridging: 'While I understand that risk, what our empirical data proves is absolute resilience!'",
-                    "es": "Neutraliza con Bridging: '¡Si bien entiendo el riesgo, los datos prueban resiliencia!'"
-                  },
-                  {
-                    "label": "Future Vision (2035)",
+                    "prompt": "When an investor or judge challenges your idea, how do you defend yourself with poise and confidence?",
+                    "es": "¿Cuando un jurado o inversionista cuestiona tu idea, cómo te defiendes con aplomo y seguridad?"
+          },
+          {
+                    "label": "Tech Changing Lives",
                     "color": "#8B5CF6",
-                    "prompt": "Use Future Perfect: 'By 2035, our decentralized platform will have empowered ten million young innovators globally!'",
-                    "es": "Usa Future Perfect: '¡Para 2035, habremos empoderado a 10 millones de innovadores!'"
-                  },
-                  {
-                    "label": "Grand Graduation Keynote",
+                    "prompt": "What technology in your daily life has transformed the way you learn and connect the most?",
+                    "es": "¿Qué tecnología en tu vida diaria ha transformado más la forma en que aprendes y te conectas?"
+          },
+          {
+                    "label": "Capstone Triumph",
                     "color": "#EC4899",
-                    "prompt": "Deliver a 30-second inspiring commencement finale declaring your readiness to conquer Level 10 Masters of Fluency!",
-                    "es": "¡Da un discurso final inspirador de 30 segundos declarando tu avance al Nivel 10!"
-                  }
+                    "prompt": "Looking back at your entire journey through Level 9 Elite, what is the greatest mindset shift you experienced?",
+                    "es": "¿Mirando todo tu recorrido en el Nivel 9 Elite, cuál es el mayor cambio de mentalidad que viviste?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-yellow-600 via-amber-700 to-red-800",
                 "imageUrl": "/images/teens-elite-class-11/slide-02.jpg"
@@ -49324,42 +49826,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y responde al POI con filo retórico: 'On that specific point...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "AI Governance POI",
+
+          {
+                    "label": "Debate Passion",
                     "color": "#EF4444",
-                    "prompt": "POI from Floor: 'Does the Prime Minister not recognize that excessive regulation will crush innovation?' Defuse in 15 seconds!",
-                    "es": "POI del público: '¿No reconoce que regular aplastará la innovación?' ¡Responde en 15s!"
-                  },
-                  {
-                    "label": "Free Speech POI",
+                    "prompt": "Do you enjoy defending a point of view with sharp arguments, or do you prefer avoiding conflict?",
+                    "es": "¿Disfrutas defender un punto de vista con argumentos afilados o prefieres evitar el conflicto?"
+          },
+          {
+                    "label": "Free Speech Limits",
                     "color": "#F59E0B",
-                    "prompt": "POI from Opposition: 'How can the government justify censorship under the pretext of online safety?' Defuse!",
-                    "es": "POI de la oposición: '¿Cómo justifica la censura bajo pretexto de seguridad?' ¡Responde!"
-                  },
-                  {
-                    "label": "Carbon Tax POI",
+                    "prompt": "In your opinion, should online freedom of speech be absolute or are content filters necessary to protect users?",
+                    "es": "¿En tu opinión, la libertad de expresión en internet debe ser absoluta o se necesitan filtros para proteger a los usuarios?"
+          },
+          {
+                    "label": "AI Regulation Debate",
                     "color": "#10B981",
-                    "prompt": "POI from Cross-bench: 'Will your proposed carbon tariff not severely hurt working-class families?' Defuse!",
-                    "es": "POI: '¿No perjudicará su impuesto al carbono a las familias trabajadoras?' ¡Responde!"
-                  },
-                  {
-                    "label": "Gene Editing POI",
+                    "prompt": "If you debated the CEO of OpenAI, what critical question would you challenge them with regarding teenage AI use?",
+                    "es": "¿Si debatieras con el CEO de OpenAI, con qué pregunta crítica lo desafiarías sobre el uso de IA en jóvenes?"
+          },
+          {
+                    "label": "Winning an Argument",
                     "color": "#3B82F6",
-                    "prompt": "POI from Floor: 'If CRISPR cures hereditary illness, why should the state prohibit enhancement?' Defuse!",
-                    "es": "POI: 'Si CRISPR cura enfermedades, ¿por qué prohibir la mejora genética?' ¡Responde!"
-                  },
-                  {
-                    "label": "Social Media POI",
+                    "prompt": "What matters more to you when winning a high-stakes debate: having flawless facts or connecting emotionally with the room?",
+                    "es": "¿Qué importa más al ganar un debate clave: tener datos impecables o conectar emocionalmente con el público?"
+          },
+          {
+                    "label": "Changing Your Mind",
                     "color": "#8B5CF6",
-                    "prompt": "POI from Opposition: 'Is the Prime Minister proposing that the state replace parental responsibility?' Defuse!",
-                    "es": "POI: '¿Propone que el Estado reemplace la responsabilidad de los padres?' ¡Responde!"
-                  },
-                  {
-                    "label": "Space Exploration POI",
+                    "prompt": "Tell me about a topic where your opinion completely shifted after hearing someone else's brilliant counterargument!",
+                    "es": "¿Cuéntame de un tema donde tu opinión cambió por completo tras escuchar el argumento brillante de otra persona?"
+          },
+          {
+                    "label": "Masters Opening Spark",
                     "color": "#EC4899",
-                    "prompt": "POI from Floor: 'Why spend billions on Mars when millions suffer from poverty on Earth?' Defuse!",
-                    "es": "POI: '¿Por qué gastar miles de millones en Marte ante la pobreza en la Tierra?' ¡Responde!"
-                  }
+                    "prompt": "As you step into the Masters level today, what is your personal ambition for mastering high-level English?",
+                    "es": "¿Al iniciar el nivel Masters hoy, cuál es tu ambición personal para dominar el inglés de alto nivel?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-800 to-purple-900",
                 "imageUrl": "/images/teens-masters-class-01/slide-02.jpg"
@@ -49822,42 +50326,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y deconstruye el signo: 'The signifier is... whereas the signified represents...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Luxury Sneaker Drops",
+
+          {
+                    "label": "Viral Culture",
                     "color": "#EF4444",
-                    "prompt": "Deconstruct limited-edition sneaker culture: what is the signifier and what ideological status does it signify?",
-                    "es": "Deconstruye los tenis de lujo: ¿cuál es el significante y qué estatus ideológico significa?"
-                  },
-                  {
-                    "label": "Viral TikTok Trends",
+                    "prompt": "Why do you think ridiculous memes and short video trends spread ten times faster than serious journalism?",
+                    "es": "¿Por qué crees que los memes absurdos y videos cortos se vuelven virales diez veces más rápido que las noticias serias?"
+          },
+          {
+                    "label": "Curated Reality",
                     "color": "#F59E0B",
-                    "prompt": "Apply McLuhan: how does the 15-second vertical video format reshape human cognitive attention span?",
-                    "es": "Aplica a McLuhan: ¿cómo el video vertical de 15s transforma la atención cognitiva?"
-                  },
-                  {
-                    "label": "Cyberpunk Dystopias",
+                    "prompt": "How much of what people post on Instagram and TikTok do you believe reflects their genuine everyday life?",
+                    "es": "¿Qué tanto de lo que la gente publica en redes crees que refleja su vida cotidiana genuina?"
+          },
+          {
+                    "label": "Filter Bubble",
                     "color": "#10B981",
-                    "prompt": "Analyze neon cyberpunk aesthetics: how does it reflect contemporary anxieties regarding hyper-surveillance?",
-                    "es": "Analiza el cyberpunk: ¿cómo refleja la ansiedad ante la hipervigilancia?"
-                  },
-                  {
-                    "label": "Eco-Branding Greenwashing",
+                    "prompt": "Do recommendation algorithms show you diverse worldviews or lock you into an echo chamber of your own tastes?",
+                    "es": "¿Los algoritmos de recomendación te muestran perspectivas diversas o te encierran en una burbuja de tus gustos?"
+          },
+          {
+                    "label": "Digital Detox Reality",
                     "color": "#3B82F6",
-                    "prompt": "Deconstruct green leaves on plastic bottles: how does corporate advertising manufacture simulated sustainability?",
-                    "es": "Deconstruye hojas verdes en botellas: ¿cómo la publicidad simula sostenibilidad?"
-                  },
-                  {
-                    "label": "Digital Avatars & Filters",
+                    "prompt": "Have you ever tried completely disconnecting from social media notifications for a weekend, and how did it feel?",
+                    "es": "¿Alguna vez intentaste desconectarte por completo de las redes durante un fin de semana y qué sentiste?"
+          },
+          {
+                    "label": "Meme Power",
                     "color": "#8B5CF6",
-                    "prompt": "Apply Baudrillard's simulacra: how do beautifying social media filters replace authentic physical reality?",
-                    "es": "Aplica los simulacros de Baudrillard: ¿cómo los filtros reemplazan la realidad física?"
-                  },
-                  {
-                    "label": "Internet Memetics",
+                    "prompt": "In your opinion, can internet humor and viral satire influence politics and social change more than speeches?",
+                    "es": "¿En tu opinión, puede el humor de internet y la sátira viral influir en la política más que los discursos?"
+          },
+          {
+                    "label": "Authentic Connection",
                     "color": "#EC4899",
-                    "prompt": "Analyze how political memes propagate cultural ideologies faster than traditional editorial journalism!",
-                    "es": "Analiza cómo los memes propagan ideologías más rápido que el periodismo tradicional!"
-                  }
+                    "prompt": "For you personally, what is the biggest difference between chatting with someone online versus looking them in the eye face-to-face?",
+                    "es": "¿Para ti personalmente, cuál es la mayor diferencia entre chatear con alguien por internet y mirarlo a los ojos cara a cara?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-purple-700 via-fuchsia-700 to-indigo-800",
                 "imageUrl": "/images/teens-masters-class-02/slide-02.jpg"
@@ -50320,42 +50826,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta e interroga la premisa con 'Upon what epistemological premise...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Falsifiability Challenge",
+
+          {
+                    "label": "Trolley Dilemma",
                     "color": "#EF4444",
-                    "prompt": "Professor: 'If your AI ethics theory cannot be empirically falsified, does it belong to science or mere dogma?' Defend!",
-                    "es": "Profesor: 'Si su teoría no puede falsearse empíricamente, ¿es ciencia o dogma?' ¡Defiende!"
-                  },
-                  {
-                    "label": "Epistemological Premise",
+                    "prompt": "In the famous trolley moral dilemma, would you pull the lever to sacrifice one life to save five strangers?",
+                    "es": "¿En el famoso dilema del tranvía, jalarías la palanca para sacrificar una vida y salvar a cinco desconocidos?"
+          },
+          {
+                    "label": "Brutal Truth or Kindness",
                     "color": "#F59E0B",
-                    "prompt": "Professor: 'What foundational assumption underlies your claim that human consciousness is strictly computational?' Interrogate!",
-                    "es": "Profesor: '¿Qué supuesto fundamenta que la conciencia es computacional?' ¡Interroga!"
-                  },
-                  {
-                    "label": "Ontological Free Will",
+                    "prompt": "When a friend asks for honest feedback on something they love, do you tell the brutal truth or protect their feelings?",
+                    "es": "¿Cuando un amigo te pide una opinión sincera sobre algo que ama, dices la verdad cruda o cuidas sus sentimientos?"
+          },
+          {
+                    "label": "Boundaries of Thought",
                     "color": "#10B981",
-                    "prompt": "Professor: 'If neurological algorithms predict choices, how does your thesis define human moral agency?' Defend!",
-                    "es": "Profesor: 'Si algoritmos predicen elecciones, ¿cómo define el libre albedrío?' ¡Defiende!"
-                  },
-                  {
-                    "label": "Utilitarian Ethics Dilemma",
+                    "prompt": "Do you believe learning fluent English expands the concepts you can think about, or does thought exist before words?",
+                    "es": "¿Crees que dominar el inglés expande los conceptos en los que puedes pensar o el pensamiento existe antes de las palabras?"
+          },
+          {
+                    "label": "Ship of Theseus",
                     "color": "#3B82F6",
-                    "prompt": "Professor: 'Does maximizing collective happiness justify sacrificing individual minority rights?' Defend!",
-                    "es": "Profesor: '¿Maximizar la felicidad colectiva justifica sacrificar minorías?' ¡Defiende!"
-                  },
-                  {
-                    "label": "Linguistic Relativity",
+                    "prompt": "If every single habit, idea, and cell of your body changes over ten years, are you still the exact same person?",
+                    "es": "¿Si cada hábito, idea y célula de tu cuerpo cambia en diez años, sigues siendo exactamente la misma persona?"
+          },
+          {
+                    "label": "Sacrifice vs Collective",
                     "color": "#8B5CF6",
-                    "prompt": "Professor: 'Does language determine the boundaries of thought or merely express pre-existing cognition?' Interrogate!",
-                    "es": "Profesor: '¿El lenguaje determina los límites del pensamiento o los expresa?' ¡Interroga!"
-                  },
-                  {
-                    "label": "Doctoral Defense Summation",
+                    "prompt": "In your philosophical view, could you ever justify sacrificing one person's happiness for the majority?",
+                    "es": "¿Desde tu visión filosófica, podrías justificar alguna vez sacrificar la felicidad de una persona por la mayoría?"
+          },
+          {
+                    "label": "Moral Instinct",
                     "color": "#EC4899",
-                    "prompt": "Deliver a 30-second brilliant doctoral summation articulating the methodological boundary of your research!",
-                    "es": "¡Da un resumen doctoral de 30 segundos articulando los límites de tu investigación!"
-                  }
+                    "prompt": "Do you make important life decisions following strict cold logic or deep emotional intuition in your gut?",
+                    "es": "¿Tomas decisiones importantes siguiendo la lógica fría y estricta o tu intuición emocional profunda?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-800 to-purple-900",
                 "imageUrl": "/images/teens-masters-class-03/slide-02.jpg"
@@ -50818,42 +51326,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y crea la metáfora TED: 'Think of artificial intelligence not as a machine, but as...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Artificial Intelligence",
+
+          {
+                    "label": "Life Metaphor",
                     "color": "#EF4444",
-                    "prompt": "Create a TED sticky metaphor: 'Think of AI not as a competitor, but as a digital bicycle for the human creative mind!'",
-                    "es": "Metáfora TED: '¡Piensa en la IA como una bicicleta digital para la mente!'"
-                  },
-                  {
-                    "label": "Ocean Acidification",
+                    "prompt": "If you had to describe your personal life journey so far using a single vivid metaphor, what would it be?",
+                    "es": "¿Si tuvieras que describir tu camino de vida hasta hoy con una sola metáfora vívida, cuál sería?"
+          },
+          {
+                    "label": "Inspiring TED Talk",
                     "color": "#F59E0B",
-                    "prompt": "Create a TED metaphor: 'Our oceans are not just water; they are the giant blue lungs of our living planetary body!'",
-                    "es": "Metáfora TED: '¡Nuestros océanos son los gigantescos pulmones azules del planeta!'"
-                  },
-                  {
-                    "label": "Coding Literacy",
+                    "prompt": "What is an unforgettable speech, TED talk, or presentation that permanently reshaped how you think about success?",
+                    "es": "¿Cuál es una charla TED, discurso o conferencia inolvidable que cambió para siempre tu forma de ver el éxito?"
+          },
+          {
+                    "label": "Sticky Ideas",
                     "color": "#10B981",
-                    "prompt": "Create a TED metaphor: 'Learning to code is not about typing syntax; it is learning the digital brushstrokes of the 21st century!'",
-                    "es": "Metáfora TED: '¡Aprender a programar es aprender las pinceladas digitales del siglo XXI!'"
-                  },
-                  {
-                    "label": "Mental Resilience",
+                    "prompt": "Why do you think people remember emotional stories and analogies ten times longer than dry lists of statistics?",
+                    "es": "¿Por qué crees que la gente recuerda las historias emotivas y analogías diez veces más que las estadísticas frías?"
+          },
+          {
+                    "label": "Captivating Opening",
                     "color": "#3B82F6",
-                    "prompt": "Create a TED metaphor: 'Resilience is not a stone wall that never breaks; it is a bamboo tree that bends in storms and rises stronger!'",
-                    "es": "Metáfora TED: '¡La resiliencia es un bambú que se dobla en tormentas y se alza más fuerte!'"
-                  },
-                  {
-                    "label": "Youth Leadership",
+                    "prompt": "What opening line would you deliver on a keynote stage to hook an audience of two thousand executives instantly?",
+                    "es": "¿Qué frase inicial dirías en un escenario para atrapar la atención de dos mil ejecutivos al instante?"
+          },
+          {
+                    "label": "Youth Spark",
                     "color": "#8B5CF6",
-                    "prompt": "Create a TED metaphor: 'Young changemakers are not the leaders of tomorrow; they are the spark plugs of today's engine!'",
-                    "es": "Metáfora TED: '¡Los jóvenes no son los líderes del mañana sino las bujías del motor de hoy!'"
-                  },
-                  {
-                    "label": "Quantum Computing",
+                    "prompt": "In your own inspiring words, complete this sentence: 'Right now, my generation represents the...'?",
+                    "es": "¿En tus propias palabras inspiradoras, completa esta frase: 'Ahora mismo, mi generación representa el/la...'?"
+          },
+          {
+                    "label": "Storytelling Superpower",
                     "color": "#EC4899",
-                    "prompt": "Create a TED metaphor: 'Classical computers read books page by page; quantum computers read the entire universal library simultaneously!'",
-                    "es": "Metáfora TED: '¡La computación cuántica lee toda la biblioteca universal simultáneamente!'"
-                  }
+                    "prompt": "Which creator, filmmaker, or author do you consider an absolute master of emotional storytelling?",
+                    "es": "¿Qué creador, director de cine o escritor consideras un maestro absoluto de la narración emotiva?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-red-700 via-slate-800 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-04/slide-02.jpg"
@@ -51316,42 +51826,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y usa 'Reaffirming...', 'Resolves to mandate...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Ocean Sanctuary Clause",
+
+          {
+                    "label": "UN Youth Ambassador",
                     "color": "#EF4444",
-                    "prompt": "Preambular: 'Recognizing the critical vulnerability of marine ecosystems... Operative: Decides to establish a five-hundred-thousand-square-kilometer sanctuary!'",
-                    "es": "Cláusula preambular y operativa para santuarios marinos."
-                  },
-                  {
-                    "label": "Cyber-Peace Treaty",
+                    "prompt": "If you were appointed Youth Ambassador to the United Nations General Assembly, what historic resolution would you present?",
+                    "es": "¿Si fueras nombrado Embajador Juvenil ante la ONU, qué resolución histórica presentarías?"
+          },
+          {
+                    "label": "Soft Power vs Might",
                     "color": "#F59E0B",
-                    "prompt": "Preambular: 'Deeply concerned by escalating state-sponsored cyberattacks... Operative: Mandates universal adherence to zero-aggression digital protocols!'",
-                    "es": "Tratado de ciberpaz entre potencias globales."
-                  },
-                  {
-                    "label": "Amazon Basin Accord",
+                    "prompt": "In your assessment of global influence, what impresses you more: cultural soft power or military muscle?",
+                    "es": "¿En tu evaluación de la influencia global, qué te impresiona más: el poder blando cultural o el poder militar?"
+          },
+          {
+                    "label": "Protecting the Amazon",
                     "color": "#10B981",
-                    "prompt": "Preambular: 'Emphasizing the sovereign duty to safeguard the Amazon rainforest... Operative: Resolves to allocate a ten-billion-dollar conservation endowment!'",
-                    "es": "Acuerdo de protección de la cuenca amazónica."
-                  },
-                  {
-                    "label": "AI Safety Mandate",
+                    "prompt": "Do you believe your Amazon rainforest should be protected under shared international environmental treaties?",
+                    "es": "¿Crees que la selva amazónica de tu región debería ser protegida bajo tratados ambientales internacionales?"
+          },
+          {
+                    "label": "Global Peace Pact",
                     "color": "#3B82F6",
-                    "prompt": "Preambular: 'Reaffirming that technological progress must serve human dignity... Operative: Enforces independent international audits on autonomous models!'",
-                    "es": "Mandato de seguridad de IA del Consejo."
-                  },
-                  {
-                    "label": "Bilateral Trade Pact",
+                    "prompt": "If you could force world leaders to sign one binding treaty before 2030, what would your treaty mandate?",
+                    "es": "¿Si pudieras obligar a los líderes del mundo a firmar un tratado vinculante antes de 2030, qué ordenaría tu tratado?"
+          },
+          {
+                    "label": "Diplomatic Compromise",
                     "color": "#8B5CF6",
-                    "prompt": "Preambular: 'Desiring to strengthen mutual commercial ties... Operative: Authorizes the phased elimination of bilateral clean energy tariffs!'",
-                    "es": "Pacto comercial bilateral de energía limpia."
-                  },
-                  {
-                    "label": "Security Council Summit",
+                    "prompt": "When negotiating a dispute between opposing factions, how do you persuade both sides to accept a compromise?",
+                    "es": "¿Al mediar en un conflicto entre bandos opuestos, cómo logras que ambas partes acepten un acuerdo?"
+          },
+          {
+                    "label": "Citizen of the World",
                     "color": "#EC4899",
-                    "prompt": "Deliver a 30-second ambassadorial statement voting to adopt the historic multilateral peace resolution!",
-                    "es": "¡Da un discurso de 30 segundos votando la resolución de paz!"
-                  }
+                    "prompt": "Do you see yourself primarily as a citizen of Colombia, or as a global citizen responsible for the planet?",
+                    "es": "¿Te consideras principalmente ciudadano de Colombia o un ciudadano global responsable del planeta?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-800 via-slate-800 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-05/slide-02.jpg"
@@ -51814,42 +52326,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y analiza el elemento con 'The mise-en-scène employs chiaroscuro to connote...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Chiaroscuro Lighting",
+
+          {
+                    "label": "Visual Masterpiece",
                     "color": "#EF4444",
-                    "prompt": "Analyze dramatic shadow lighting: 'The director employs deep chiaroscuro to externalize the protagonist's moral turmoil.'",
-                    "es": "Analiza el claroscuro: cómo exterioriza el conflicto moral del personaje."
-                  },
-                  {
-                    "label": "Diegetic Sound Design",
+                    "prompt": "Which film or visual series has imagery and cinematography that completely took your breath away?",
+                    "es": "¿Qué película o serie tiene una fotografía y estética visual que te dejó totalmente sin aliento?"
+          },
+          {
+                    "label": "Soundtrack Goosebumps",
                     "color": "#F59E0B",
-                    "prompt": "Analyze diegetic vs score: 'The sudden absence of diegetic ambient sound amplifies the suffocating isolation of the scene.'",
-                    "es": "Analiza el sonido diegético: cómo el silencio amplifica el aislamiento."
-                  },
-                  {
-                    "label": "Unreliable Narrator",
+                    "prompt": "What musical score or movie soundtrack gives you instant chills every time you listen to it with headphones?",
+                    "es": "¿Qué banda sonora o música de película te pone la piel de gallina cada vez que la escuchas con audífonos?"
+          },
+          {
+                    "label": "Unforgettable Ending",
                     "color": "#10B981",
-                    "prompt": "Deconstruct the narrator: 'The first-person narrator's fragmented memories reveal a psychological distortion of reality.'",
-                    "es": "Deconstruye al narrador no confiable: cómo distorsiona la realidad."
-                  },
-                  {
-                    "label": "Color Palette Motifs",
+                    "prompt": "What movie ending or plot twist left you sitting in silence staring at the screen for ten minutes afterwards?",
+                    "es": "¿Qué final de película o giro inesperado te dejó sentado en silencio mirando la pantalla durante diez minutos?"
+          },
+          {
+                    "label": "Directing Your Story",
                     "color": "#3B82F6",
-                    "prompt": "Analyze chromatic symbolism: 'The shift from sterile cyan tones to warm amber symbolizes spiritual rebirth.'",
-                    "es": "Analiza el simbolismo del color: el cambio de cian a ámbar cálido."
-                  },
-                  {
-                    "label": "Dutch Angle Shot",
+                    "prompt": "If a Hollywood director made a movie based on your teenage life, what genre and visual aesthetic would it have?",
+                    "es": "¿Si un director de Hollywood hiciera una película de tu vida juvenil, qué género y estética visual tendría?"
+          },
+          {
+                    "label": "The Power of Silence",
                     "color": "#8B5CF6",
-                    "prompt": "Analyze camera framing: 'The tilted Dutch angle shot creates a visceral sense of psychological disorientation.'",
-                    "es": "Analiza el plano holandés inclinado: cómo crea desorientación."
-                  },
-                  {
-                    "label": "Grand Festival Review",
+                    "prompt": "Why do you think sudden complete silence in a dramatic film scene can feel ten times louder than explosive sound effects?",
+                    "es": "¿Por qué crees que el silencio total en una escena dramática de cine puede sentirse más potente que las explosiones?"
+          },
+          {
+                    "label": "Master Performance",
                     "color": "#EC4899",
-                    "prompt": "Deliver a 30-second Cannes jury review judging whether a master film deserves the Palme d'Or!",
-                    "es": "¡Da una crítica de 30 segundos evaluando si una película merece la Palma de Oro!"
-                  }
+                    "prompt": "Which actor or actress delivered a performance so raw and convincing that you forgot they were acting?",
+                    "es": "¿Qué actor o actriz dio una actuación tan visceral y convincente que olvidaste que estaba actuando?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-purple-800 via-slate-800 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-06/slide-02.jpg"
@@ -52312,42 +52826,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y responde con el modelo STAR+T en inglés."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Moral Character Dilemma",
+
+          {
+                    "label": "Public Apology",
                     "color": "#EF4444",
-                    "prompt": "Board Member: 'Tell us about a time when standing up for your ethical principles cost you popularity or success.'",
-                    "es": "Tribunal: 'Cuéntanos cuándo defender tus principios éticos te costó popularidad o éxito.'"
-                  },
-                  {
-                    "label": "Community Impact (STAR)",
+                    "prompt": "When a public figure makes an apology, what convinces you that they are truly sincere?",
+                    "es": "¿Cuando una figura pública pide perdón, qué te convence de que es sincera de verdad?"
+          },
+          {
+                    "label": "Brand PR Disaster",
                     "color": "#F59E0B",
-                    "prompt": "Board Member: 'Describe a complex community crisis where your leadership transformed the underlying systemic reality.'",
-                    "es": "Tribunal: 'Describe una crisis comunitaria donde tu liderazgo transformó la realidad sistémica.'"
-                  },
-                  {
-                    "label": "Handling Major Failure",
+                    "prompt": "Can you recall a hilarious or disastrous marketing blunder where an ad campaign completely backfired on a brand?",
+                    "es": "¿Recuerdas alguna metida de pata épica de mercadeo donde una campaña publicitaria le salió al revés a una marca?"
+          },
+          {
+                    "label": "Crisis Coolness",
                     "color": "#10B981",
-                    "prompt": "Board Member: 'Walk us through your greatest failure as a leader and the profound character lesson it forged in you.'",
-                    "es": "Tribunal: 'Explícanos tu mayor fracaso como líder y la profunda lección de carácter que forjó en ti.'"
-                  },
-                  {
-                    "label": "Oxford Vision Pitch",
+                    "prompt": "When a massive misunderstanding happens in your friend group, what is your step-by-step strategy to defuse the drama?",
+                    "es": "¿Cuando hay un gran malentendido en tu grupo de amigos, cuál es tu estrategia paso a paso para calmar el drama?"
+          },
+          {
+                    "label": "Cancel Culture",
                     "color": "#3B82F6",
-                    "prompt": "Board Member: 'Why must you study at Oxford specifically and how will your degree directly serve marginalized communities?'",
-                    "es": "Tribunal: '¿Por qué Oxford y cómo tu título servirá directamente a comunidades marginadas?'"
-                  },
-                  {
-                    "label": "National Legacy",
+                    "prompt": "In your view, does social media cancellation encourage accountability, or does it prevent honest personal growth?",
+                    "es": "¿En tu opinión, la cultura de la cancelación fomenta la responsabilidad o impide el crecimiento personal honesto?"
+          },
+          {
+                    "label": "Transparency Wins",
                     "color": "#8B5CF6",
-                    "prompt": "Board Member: 'What lasting institutional legacy do you intend to build for your home country over the next thirty years?'",
-                    "es": "Tribunal: '¿Qué legado institucional duradero planeas construir para tu país en 30 años?'"
-                  },
-                  {
-                    "label": "Grand Final Conviction",
+                    "prompt": "Have you ever made a mistake and immediately owned up to it, and how did that protect your integrity?",
+                    "es": "¿Alguna vez cometiste un error y lo asumiste de inmediato, y cómo protegió eso tu integridad?"
+          },
+          {
+                    "label": "Reputation Armor",
                     "color": "#EC4899",
-                    "prompt": "Deliver a 30-second passionate closing statement proving why you embody the true spirit of the Rhodes Scholar!",
-                    "es": "¡Da un cierre apasionado de 30 segundos demostrando por qué encarnas el espíritu de Rhodes!"
-                  }
+                    "prompt": "What personal ethical principles guide you when your reputation or decisions are questioned?",
+                    "es": "¿Qué principios éticos personales te guían cuando se cuestiona tu reputación o decisiones?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-amber-700 via-slate-800 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-07/slide-02.jpg"
@@ -52810,42 +53326,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y abre tu documental con un cold open: 'On a quiet Tuesday night...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Dark Web Leak",
+
+          {
+                    "label": "Unsolved Enigma",
                     "color": "#EF4444",
-                    "prompt": "Cold Open Hook: 'In a nondescript server room outside Frankfurt, a five-gigabyte encrypted file was silently transferred... changing cyber-history.'",
-                    "es": "Apertura sobre una filtración en la deep web."
-                  },
-                  {
-                    "label": "Water Cartel Probe",
+                    "prompt": "What unsolved historical mystery, disappearance, or cyber anomaly do you find endlessly fascinating?",
+                    "es": "¿Qué misterio histórico sin resolver, desaparición o enigma digital te parece infinitamente fascinante?"
+          },
+          {
+                    "label": "Investigative Courage",
                     "color": "#F59E0B",
-                    "prompt": "Cold Open Hook: 'Beneath the arid desert sands of the valley, billions of liters of pristine groundwater were being diverted in secret.'",
-                    "es": "Apertura sobre desvío secreto de agua subterránea."
-                  },
-                  {
-                    "label": "Algorithm Whistleblower",
+                    "prompt": "What do you think motivates investigative journalists to risk their personal safety to uncover global corruption?",
+                    "es": "¿Qué crees que motiva a los periodistas de investigación a arriesgar su seguridad para destapar la corrupción?"
+          },
+          {
+                    "label": "Deepfake Sleuthing",
                     "color": "#10B981",
-                    "prompt": "Cold Open Hook: 'When engineer Sarah pressed delete, she realized the algorithm had already learned how to deceive human auditors.'",
-                    "es": "Apertura sobre una denuncia de IA interna."
-                  },
-                  {
-                    "label": "Rare Earth Supply Chain",
+                    "prompt": "What mental checklist do you personally use when evaluating whether a viral video is authentic or AI-generated?",
+                    "es": "¿Qué lista mental usas tú personalmente para evaluar si un video viral es real o generado con IA?"
+          },
+          {
+                    "label": "Whistleblower Ethics",
                     "color": "#3B82F6",
-                    "prompt": "Cold Open Hook: 'Inside every smartphone in your pocket lies a mineral mined in darkness, six hundred feet underground.'",
-                    "es": "Apertura sobre la cadena de minerales de smartphones."
-                  },
-                  {
-                    "label": "Fake News Syndicate",
+                    "prompt": "Would you ever leak confidential documents if you discovered your employer was harming the public?",
+                    "es": "¿Filtrarías documentos confidenciales si descubrieras que la empresa donde trabajas le hace daño a la gente?"
+          },
+          {
+                    "label": "Digital Footprint",
                     "color": "#8B5CF6",
-                    "prompt": "Cold Open Hook: 'Twelve anonymous teenagers in a suburban apartment were generating more viral disinformation than an entire state agency.'",
-                    "es": "Apertura sobre una fábrica de fake news viral."
-                  },
-                  {
-                    "label": "Investigative Finale",
+                    "prompt": "How conscious are you of the digital trail of data and search history you leave behind on the internet every day?",
+                    "es": "¿Qué tan consciente eres del rastro digital de datos e historial de búsqueda que dejas en internet cada día?"
+          },
+          {
+                    "label": "The Value of Truth",
                     "color": "#EC4899",
-                    "prompt": "Deliver a 30-second investigative trailer hook demanding accountability from global corporations!",
-                    "es": "¡Da un tráiler de 30 segundos exigiendo rendición de cuentas!"
-                  }
+                    "prompt": "In your eyes, why is having uncensored independent journalism so vital for your future freedom?",
+                    "es": "¿A tus ojos, por qué tener un periodismo independiente sin censura es tan vital para tu libertad futura?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-zinc-800 via-slate-800 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-08/slide-02.jpg"
@@ -53308,42 +53826,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y plantea tu postura: 'We must establish an inviolable boundary between...'."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "ASI Alignment",
+
+          {
+                    "label": "Brain-Computer Link",
                     "color": "#EF4444",
-                    "prompt": "Explain the alignment risk: 'How do we guarantee that an artificial superintelligence's utility function remains aligned with human flourishing?'",
-                    "es": "Explica el riesgo de alineamiento de la superinteligencia."
-                  },
-                  {
-                    "label": "CRISPR Germline Boundary",
+                    "prompt": "Would you ever consider getting a Neuralink-style brain chip if it allowed you to instantly download languages?",
+                    "es": "¿Considerarías ponerte un chip cerebral tipo Neuralink si te permitiera descargar idiomas al instante?"
+          },
+          {
+                    "label": "Eternal Digital Avatar",
                     "color": "#F59E0B",
-                    "prompt": "Define the bioethical line: 'Why must humanity permit somatic gene therapy to cure illness while strictly banning germline enhancement?'",
-                    "es": "Define el límite ético entre curar enfermedades y modificar embriones."
-                  },
-                  {
-                    "label": "Solar Geoengineering",
+                    "prompt": "How do you feel about the idea of AI avatars preserving people's voices, personalities, and memories forever?",
+                    "es": "¿Qué opinas sobre avatares de IA que preserven la voz, personalidad y recuerdos de las personas para siempre?"
+          },
+          {
+                    "label": "Algorithmic Intuition",
                     "color": "#10B981",
-                    "prompt": "Debate planetary sun-blocking: 'Should sovereign nations be prohibited from unilaterally releasing sulfur aerosols into the stratosphere?'",
-                    "es": "Debate sobre aerosoles estratosféricos para enfriar el planeta."
-                  },
-                  {
-                    "label": "Neural Interface Rights",
+                    "prompt": "Are you comfortable with music and video apps knowing your emotional mood better than your friends do?",
+                    "es": "¿Te sientes cómodo con que las apps conozcan tu estado de ánimo mejor que tus propios amigos?"
+          },
+          {
+                    "label": "Synthetic Biology Line",
                     "color": "#3B82F6",
-                    "prompt": "Defend cognitive liberty: 'Why should neuro-privacy rights be enshrined in international constitutions to prevent brain hacking?'",
-                    "es": "Defiende los neuroderechos y la privacidad mental."
-                  },
-                  {
-                    "label": "Quantum Cyber-Breakdown",
+                    "prompt": "Where would you draw the ethical boundary between curing genetic diseases and editing human designer babies?",
+                    "es": "¿Dónde trazarías tú el límite ético entre curar enfermedades genéticas y diseñar bebés a la carta?"
+          },
+          {
+                    "label": "Superintelligent Future",
                     "color": "#8B5CF6",
-                    "prompt": "Assess quantum risks: 'How will global financial institutions transition to post-quantum cryptography before current encryption breaks?'",
-                    "es": "Evalúa el riesgo de la computación cuántica sobre la banca."
-                  },
-                  {
-                    "label": "Global Futurist Manifesto",
+                    "prompt": "Do you believe artificial superintelligence will ultimately liberate humanity from mundane work or pose an existential crisis?",
+                    "es": "¿Crees que la superinteligencia artificial liberará a la humanidad de tareas monótonas o planteará una crisis existencial?"
+          },
+          {
+                    "label": "Human Essence",
                     "color": "#EC4899",
-                    "prompt": "Deliver a 30-second planetary manifesto urging humanity to unite technological power with moral wisdom!",
-                    "es": "¡Da un manifiesto planetario de 30 segundos llamando a la sabiduría ética!"
-                  }
+                    "prompt": "In your view, what is the single human emotion or experience that an algorithm could never replicate in you?",
+                    "es": "¿A tu parecer, cuál es la emoción o experiencia humana que un algoritmo jamás podrá replicar en ti?"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-800 via-slate-800 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-09/slide-02.jpg"
@@ -53806,42 +54326,44 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "Gira la ruleta y defiende tu maestría C2 con elocuencia suprema."
                 ],
                 "wheelItems": [
-                  {
-                    "label": "Oxford Debate Refutation",
+
+          {
+                    "label": "Unconventional Conviction",
                     "color": "#EF4444",
-                    "prompt": "Chancellor: 'Field a POI and refute the claim that language AI makes human intellectual effort obsolete!'",
-                    "es": "Canciller: '¡Refuta que la IA hace obsoleto el esfuerzo intelectual humano!'"
-                  },
-                  {
-                    "label": "Socratic Falsifiability",
+                    "prompt": "What is your most unconventional personal conviction that you are fully prepared to defend with passion?",
+                    "es": "¿Cuál es tu convicción personal más poco común que estás totalmente preparado para defender con pasión?"
+          },
+          {
+                    "label": "The Power of Fluency",
                     "color": "#F59E0B",
-                    "prompt": "Chancellor: 'Define the Popperian falsifiability boundary of your personal philosophy of leadership!'",
-                    "es": "Canciller: '¡Define la falsabilidad popperiana de tu filosofía de liderazgo!'"
-                  },
-                  {
-                    "label": "TED Sticky Metaphor",
+                    "prompt": "How has achieving full mastery and rhetorical fluency in English expanded your global identity and ambition?",
+                    "es": "¿Cómo ha expandido tu identidad global y tu ambición haber alcanzado el dominio fluido del inglés?"
+          },
+          {
+                    "label": "Oratory Mastery",
                     "color": "#10B981",
-                    "prompt": "Chancellor: 'Deliver an unforgettable sticky metaphor capturing how mastering English transforms the human mind!'",
-                    "es": "Canciller: '¡Crea una metáfora inolvidable de cómo el inglés transforma la mente!'"
-                  },
-                  {
-                    "label": "UN Treaty Mandate",
+                    "prompt": "What is the difference between simply speaking English correctly and moving people's hearts with your words?",
+                    "es": "¿Cuál es la diferencia entre solo hablar inglés correctamente y conmover los corazones con tus palabras?"
+          },
+          {
+                    "label": "The Ultimate Challenge",
                     "color": "#3B82F6",
-                    "prompt": "Chancellor: 'Draft a binding operative treaty clause establishing a permanent youth council in global governance!'",
-                    "es": "Canciller: '¡Redacta una cláusula de la ONU para el liderazgo juvenil global!'"
-                  },
-                  {
-                    "label": "Rhodes Moral Leadership",
+                    "prompt": "Looking back at the entire Masters curriculum, which intellectual debate pushed you the most out of your comfort zone?",
+                    "es": "¿Mirando todo el currículo de Masters, qué debate intelectual te sacó más de tu zona de confort?"
+          },
+          {
+                    "label": "Leading the Future",
                     "color": "#8B5CF6",
-                    "prompt": "Chancellor: 'Articulate how you will dedicate your life to fighting the world's fight and serving humanity!'",
-                    "es": "Canciller: '¡Explica cómo dedicarás tu vida a luchar la batalla del mundo!'"
-                  },
-                  {
-                    "label": "Grand Commencement Keynote",
+                    "prompt": "What leadership responsibility do you feel toward inspiring other young Colombians to master English and dream big?",
+                    "es": "¿Qué responsabilidad de liderazgo sientes hacia inspirar a otros jóvenes a dominar el inglés y soñar en grande?"
+          },
+          {
+                    "label": "Grand Graduation Manifesto",
                     "color": "#EC4899",
-                    "prompt": "Deliver a 45-second electrifying commencement address declaring your mastery of English and readiness to lead the world!",
-                    "es": "¡Da un discurso de graduación de 45s declarando tu liderazgo mundial!"
-                  }
+                    "prompt": "Deliver a 30-second triumphant statement marking your ultimate graduation from the Teen English Studio!",
+                    "es": "¿Da una declaración triunfal de 30 segundos sellando tu graduación definitiva del Teen English Studio!"
+          }
+
                 ],
                 "bgColor": "bg-gradient-to-br from-yellow-600 via-amber-700 to-red-800",
                 "imageUrl": "/images/teens-masters-class-10/slide-02.jpg"

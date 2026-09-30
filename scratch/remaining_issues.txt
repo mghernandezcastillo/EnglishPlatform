@@ -1,0 +1,810 @@
+
+================= teens-basic-3 =================
+
+[c-teens-basic-3-1] Class 1: Tech Battles & Gadgets / Batalla Tecnológica (Comparative Adjectives: -ER, MORE THAN, AS...AS)
+  Slice #1 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #2 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #3 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #4 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #5 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #6 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+
+[c-teens-basic-3-2] Class 2: World Records & Peak Achievements / Récords Mundiales y Hazañas Extremas (Superlative Adjectives: -EST, THE MOST, THE BEST)
+  Slice #1 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #2 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #3 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #4 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #5 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #6 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+
+[c-teens-basic-3-4] Class 4: Future Plans, Intentions & Visual Clues / Planes Futuros y Evidencia (BE GOING TO)
+  Slice #1 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #2 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #3 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #4 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #5 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #6 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+
+[c-teens-basic-3-5] Class 5: What Were You Doing? / ¿Qué Estabas Haciendo? (Past Continuous: WAS / WERE + -ING)
+  Slice #1 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #2 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #3 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #4 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #5 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #6 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+
+[c-teens-basic-3-6] Class 6: Sudden Plot Twists & Accidents / Giros Inesperados (Past Simple vs Past Continuous with WHEN & WHILE)
+  Slice #1 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #2 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #3 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #4 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #5 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #6 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+
+[c-teens-basic-3-7] Class 7: Biographies of Artists, Athletes & Creators / Biografías de Creadores y Atletas
+  Slice #1 [Singer]: "Who is a Colombian singer that conquered the world?"
+    ES: "¿Quién es un cantante colombiano que conquistó el mundo?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Athlete]: "What athlete overcame great difficulties to win championships?"
+    ES: "¿Qué atleta superó grandes dificultades para ganar campeonatos?"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-basic-3-10] Class 10: Irregular Verbs & -ed Endings (Video Project) / Verbos Irregulares y Proyecto Final
+  Slice #1 [Visited /ɪd/]: "Pronounce: 'I visited three museums.' (Sounds like: /vɪzɪt-ɪd/)"
+    ES: "Pronuncia: 'I visited three museums.' (Sonido: /ɪd/)"
+    Issues: Es un drill gramatical/fonético (no es calentamiento conversacional)
+  Slice #2 [Walked /t/]: "Pronounce: 'We walked in the park.' (Sounds like: /wɔːkt/)"
+    ES: "Pronuncia: 'We walked in the park.' (Sonido: /t/)"
+    Issues: Es un drill gramatical/fonético (no es calentamiento conversacional)
+  Slice #3 [Played /d/]: "Pronounce: 'They played soccer.' (Sounds like: /pleɪd/)"
+    ES: "Pronuncia: 'They played soccer.' (Sonido: /d/)"
+    Issues: Es un drill gramatical/fonético (no es calentamiento conversacional)
+  Slice #4 [Irregular]: "What is the past of: go, see, write, and win?"
+    ES: "¿Cuál es el pasado de: go, see, write y win?"
+    Issues: Es un drill gramatical/fonético (no es calentamiento conversacional)
+
+================= teens-basic-4 =================
+
+[c-teens-basic-4-1] Class 1: My Opinions & Perspectives / Mis Opiniones y Perspectivas
+  Slice #4 [Music]: "What music genre has the best beats and lyrics nowadays?"
+    ES: "¿Qué género musical tiene los mejores ritmos y letras hoy en día?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Homework]: "Should students have less written homework and more practical projects?"
+    ES: "¿Los estudiantes deberían tener menos tareas escritas y más proyectos prácticos?"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-basic-4-2] Class 2: Giving Good Advice / Dar Buenos Consejos
+  Slice #1 [Insomnia]: "A friend can't sleep because they scroll on TikTok until 2 AM. What should they do?"
+    ES: "Un amigo no puede dormir porque scrollea en TikTok hasta las 2 AM. ¿Qué debería hacer?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Procrastination]: "What should a student do if they always leave homework for Sunday midnight?"
+    ES: "¿Qué debería hacer un estudiante si siempre deja la tarea para el domingo a medianoche?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Shyness]: "A new student feels very shy to make friends. What should they try first?"
+    ES: "Un estudiante nuevo es muy tímido para hacer amigos. ¿Qué debería intentar primero?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Healthy Diet]: "What healthy habit should all teenagers adopt for more daily energy?"
+    ES: "¿Qué hábito saludable deberían adoptar todos los jóvenes para tener más energía?"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-basic-4-3] Class 3: Conditions & Scientific Facts (Zero Conditional) / Hechos Científicos y Reglas
+  Slice #2 [Plants & Sun]: "What happens if plants don't get sunlight or water?"
+    ES: "¿Qué pasa si las plantas no reciben luz solar ni agua?"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-basic-4-4] Class 4: Messaging, Texting & Online Communication / Mensajería y Texting
+  Slice #4 [IMO (In My Opinion)]: "Why is IMO so popular when sharing opinions on social media?"
+    ES: "¿Por qué IMO es tan popular al compartir opiniones en redes?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [NGL (Not Gonna Lie)]: "What does NGL mean when someone admits a funny secret?"
+    ES: "¿Qué significa NGL cuando alguien admite un secreto gracioso?"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-basic-4-6] Class 6: What If? Hypothetical Worlds & Dreams / Mundos Hipotéticos y Dilemas (Second Conditional: IF + PAST, WOULD)
+  Slice #1 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #2 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #3 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #4 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #5 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #6 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+
+[c-teens-basic-4-7] Class 7: Mystery Solvers! Indefinite Pronouns / Pronombres Indefinidos: Someone, Anything, Nowhere
+  Slice #1 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #2 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #3 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #4 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #5 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #6 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+
+[c-teens-basic-4-8] Class 8: Tournament Rules & Fair Play / Reglas de Torneos con Must, Have to & Mustn't
+  Slice #1 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #2 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #3 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #4 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #5 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #6 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+
+[c-teens-basic-4-9] Class 9: Informal vs Formal Messages, Emails & Digital Tone / Tono Formal e Informal
+  Slice #3 [Missing Class]: "What is the polite way to email a professor explaining an absence due to illness?"
+    ES: "¿Cuál es la forma cortés de escribirle al profe justificando una inasistencia médica?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Subject Line]: "What is an effective, clear subject line for an email to a school principal?"
+    ES: "¿Cuál es un asunto claro y efectivo para un correo a la rectoría escolar?"
+    Issues: No apela al estudiante (falta you/your)
+
+================= teens-inter =================
+
+[c-teens-inter-3] Class 3: Possibilities & Deductions (Must, Might, Can't) / Posibilidades y Deducciones con Modales
+  Slice #2 [Wet Pavements]: "The ground is soaked with puddles and everyone has umbrellas. What must be happening?"
+    ES: "El suelo está empapado y todos tienen paraguas. ¿Qué debe estar pasando?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Lost Mystery Bag]: "A backpack with a basketball inside is on the court. Whose bag might it be?"
+    ES: "Un morral con un balón de baloncesto está en la cancha. ¿De quién podría ser?"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-inter-4] Class 4: What If History Changed? Third Conditional & Past Regrets / Tercer Condicional y Arrepentimientos Pasados
+  Slice #1 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #2 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #3 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #4 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #5 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+  Slice #6 []: ""
+    ES: ""
+    Issues: No apela al estudiante (falta you/your), Falta label, Falta traducción es
+
+[c-teens-inter-5] Class 5: Agreeing & Disagreeing Respectfully / Acuerdos y Desacuerdos Respetuosos en Debates
+  Slice #1 [AI in Homework]: "Should AI tools like ChatGPT be fully allowed for school assignments or restricted?"
+    ES: "¿Deberían permitirse o restringirse las herramientas de IA en tareas escolares?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Uniforms vs Streetwear]: "Do school uniforms help student equality or limit personal creative expression?"
+    ES: "¿Los uniformes escolares ayudan a la igualdad o limitan la libre expresión?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Social Media Age]: "Should social media platforms have a strict minimum age limit of 16 years?"
+    ES: "¿Deberían las redes sociales tener una edad mínima estricta de 16 años?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Esports in Olympics]: "Should competitive gaming and esports become an official Olympic category?"
+    ES: "¿Deberían los videojuegos competitivos ser disciplina olímpica oficial?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Four-Day Week]: "Would a 4-day school week improve student academic performance and mental health?"
+    ES: "¿Una semana escolar de 4 días mejoraría el rendimiento y la salud mental?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Remote vs In-Person]: "Is virtual learning more efficient than traditional in-person classroom education?"
+    ES: "¿Es el aprendizaje virtual más eficiente que la educación presencial tradicional?"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-inter-6] Class 6: Podcast & Media Hosting Basics / Fundamentos de Podcasting y Locución en Inglés
+  Slice #1 [Tech Innovations]: "Deliver a 20-second excited podcast intro about the newest AI gadgets of the year!"
+    ES: "¡Haz una intro de podcast de 20 segundos sobre los últimos gadgets de IA!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Future Careers]: "Interview a young inventor who created an eco-friendly drone solution!"
+    ES: "¡Entrevista a un joven inventor que creó un dron ecológico!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-inter-8] Class 8: Advanced Phrasal Verbs in Storytelling & Media / Phrasal Verbs Avanzados en Narrativas y Medios
+  Slice #6 [Work Out]: "Describe a stressful situation that initially looked like a disaster but worked out fine in the end!"
+    ES: "¿Describe una situación estresante que parecía un desastre pero al final salió bien!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-inter-9] Class 9: Past Modals of Deduction / Modales de Deducción en Pasado
+  Slice #1 [Lost Civilization]: "An ancient stone city was abandoned overnight. What must have happened: a drought or a volcanic eruption?"
+    ES: "¿Una ciudad de piedra fue abandonada de la noche a la mañana. Qué debe haber pasado?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Broken Window]: "A baseball is lying in the living room next to shattered glass. What must have occurred?"
+    ES: "¿Hay un balón de béisbol en la sala junto a vidrios rotos. Qué debe haber ocurrido?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Bermuda Mystery]: "A ship vanished without sending any distress signal. What could have caused it?"
+    ES: "¿Un barco desapareció sin enviar señal de auxilio. Qué pudo haberlo causado?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Footprints in Mud]: "Large mysterious animal tracks lead into the deep forest. What creature might have passed by?"
+    ES: "¿Huellas de animal grandes van hacia el bosque. Qué criatura pudo haber pasado?"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-inter-10] Class 10: Conditionals Synthesis & Time Clauses / Síntesis de Condicionales y Cláusulas Temporales
+  Slice #1 [Unless]: "Complete with 'Unless': 'We will not pass the project test unless...'"
+    ES: "Completa con 'Unless': 'No aprobaremos la prueba a menos que...'"
+    Issues: Es un drill gramatical/fonético (no es calentamiento conversacional)
+  Slice #2 [As Soon As]: "Complete with 'As soon as': 'I will call my squad as soon as...'"
+    ES: "Completa con 'As soon as': 'Llamaré a mi parche tan pronto como...'"
+    Issues: Es un drill gramatical/fonético (no es calentamiento conversacional)
+  Slice #3 [Provided That]: "Complete with 'Provided that': 'You can borrow my gaming console provided that...'"
+    ES: "Completa con 'Provided that': 'Puedes tomar prestada mi consola siempre y cuando...'"
+    Issues: Es un drill gramatical/fonético (no es calentamiento conversacional)
+  Slice #4 [In Case]: "Complete with 'In case': 'Take a portable power bank in case...'"
+    ES: "Completa con 'In case': 'Lleva una batería portátil en caso de que...'"
+    Issues: Es un drill gramatical/fonético (no es calentamiento conversacional)
+  Slice #6 [Second Hypo]: "Complete with Second Conditional: 'If I designed the ultimate video game, I would...'"
+    ES: "Completa en Segundo Condicional: 'Si diseñara el videojuego supremo, yo...'"
+    Issues: Es un drill gramatical/fonético (no es calentamiento conversacional)
+
+[c-teens-inter-11] Class 11: Nuanced Opinions & Diplomacy in Debates / Opiniones Matizadas y Diplomacia en Debates
+  Slice #1 [AI in Art]: "Balance the benefits of AI image generation with the copyright protection of human artists!"
+    ES: "¡Equilibra los beneficios del arte con IA con los derechos de autor de artistas humanos!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Homework Balance]: "Strike a balance between academic rigor at school and student emotional well-being!"
+    ES: "¡Encuentra un equilibrio entre el rigor académico y el bienestar emocional estudiantil!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Tech in Childhood]: "Acknowledge the benefits of early digital literacy while addressing screen addiction risks!"
+    ES: "¡Reconoce la alfabetización digital temprana mientras adviertes los riesgos de adicción!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Tourism vs Nature]: "How can ecotourism generate local economic income while protecting fragile ecosystems?"
+    ES: "¿Cómo puede el ecoturismo generar ingresos locales protegiendo ecosistemas frágiles?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Grading Systems]: "Contrast traditional letter grades with project-based competency evaluations!"
+    ES: "¡Contrasta las notas numéricas tradicionales con la evaluación por proyectos!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Social Media Privacy]: "How can platforms offer personalized recommendations without invading user data privacy?"
+    ES: "¿Cómo pueden las apps ofrecer sugerencias personalizadas sin invadir la privacidad?"
+    Issues: No apela al estudiante (falta you/your)
+
+================= teens-advanced =================
+
+[c-teens-advanced-1] Class 1: Breaking News & Campus Whispers (Reported Speech) / Noticias de Última Hora y Reported Speech
+  Slice #1 [Robotics Winner]: "Direct speech: 'I will build an autonomous AI drone.' Report what Lucas said!"
+    ES: "Discurso directo: 'Construiré un dron autónomo.' ¡Reporta lo que dijo Lucas!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Science Exam]: "Direct speech: 'The chemistry exam is very easy today.' Report what the teacher said!"
+    ES: "Discurso directo: 'El examen es muy fácil hoy.' ¡Reporta lo que dijo el profesor!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Concert Ticket]: "Direct speech: 'I bought two tickets for the music festival.' Report what Sofia said!"
+    ES: "Discurso directo: 'Compré dos boletas para el festival.' ¡Reporta lo que dijo Sofía!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Principal Speech]: "Direct speech: 'We can renovate the sports complex.' Report what the principal said!"
+    ES: "Discurso directo: 'Podemos renovar el complejo deportivo.' ¡Reporta lo que dijo la rectora!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Gaming Team]: "Direct speech: 'We are practicing for the regional esports finals.' Report what the captain said!"
+    ES: "Discurso directo: 'Estamos practicando para las finales.' ¡Reporta lo que dijo el capitán!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Surprise Trip]: "Direct speech: 'I have never visited the Amazon jungle.' Report what Camila said!"
+    ES: "Discurso directo: 'Nunca he visitado la selva amazónica.' ¡Reporta lo que dijo Camila!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-advanced-2] Class 2: Secret Interviews & Interrogations (Reported Questions) / Entrevistas Secretas y Reported Questions
+  Slice #4 [Urgent Command]: "Direct command: 'Do not touch the laser sensors!' Report what the commander warned!"
+    ES: "Orden directa: '¡No toquen los sensores láser!' ¡Reporta la advertencia!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Lab Safety]: "Direct command: 'Wear safety goggles at all times!' Report what the instructor instructed!"
+    ES: "Orden directa: '¡Usen gafas protectoras todo el tiempo!' ¡Reporta la orden!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-advanced-3] Class 3: Mastering Relative Clauses (Defining vs Non-Defining) / Dominando Relative Clauses
+  Slice #1 [Elon Musk]: "Describe Elon Musk using a non-defining relative clause with 'who' or 'whose'!"
+    ES: "¡Describe a Elon Musk usando una relative clause con 'who' o 'whose'!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Smartphones]: "Describe smartphones using a defining relative clause with 'which' or 'that'!"
+    ES: "¡Describe los teléfonos inteligentes usando una relative clause con 'which' o 'that'!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Silicon Valley]: "Describe Silicon Valley using a relative clause with 'where'!"
+    ES: "¡Describe Silicon Valley usando una relative clause con 'where'!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Marie Curie]: "Describe Marie Curie using a relative clause with 'who' or 'whose discovery'!"
+    ES: "¡Describe a Marie Curie usando una relative clause con 'who' o 'whose'!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Artificial Intelligence]: "Describe AI using a relative clause: 'AI is a technology which/that...'!"
+    ES: "¡Describe la IA usando una relative clause con 'which' o 'that'!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-advanced-4] Class 4: Tech Disruptions & Modern Inventions (Passive Voice) / Disrupciones Tecnológicas y Voz Pasiva
+  Slice #1 [The Internet]: "Active: 'Scientists created the internet in the 20th century.' Transform to Passive Voice!"
+    ES: "Activa: 'Científicos crearon internet en el siglo XX.' ¡Transforma a Voz Pasiva!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Smartphones]: "Active: 'Engineers manufacture millions of smartphones every year.' Transform to Passive Voice!"
+    ES: "Activa: 'Ingenieros fabrican millones de smartphones al año.' ¡Transforma a Voz Pasiva!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Electricity]: "Active: 'Inventors harnessed electrical power in the 19th century.' Transform to Passive Voice!"
+    ES: "Activa: 'Inventores canalizaron la energía eléctrica.' ¡Transforma a Voz Pasiva!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Video Games]: "Active: 'Game studios release stunning virtual reality games today.' Transform to Passive Voice!"
+    ES: "Activa: 'Estudios de juegos lanzan mundos de realidad virtual.' ¡Transforma a Voz Pasiva!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Space Telescopes]: "Active: 'NASA launched the James Webb Telescope in 2021.' Transform to Passive Voice!"
+    ES: "Activa: 'La NASA lanzó el telescopio James Webb en 2021.' ¡Transforma a Voz Pasiva!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Solar Energy]: "Active: 'Clean tech companies install solar panels across Colombia.' Transform to Passive Voice!"
+    ES: "Activa: 'Empresas instalan paneles solares en Colombia.' ¡Transforma a Voz Pasiva!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-advanced-5] Class 5: Global News Reports & Scientific Discoveries (Advanced Passive) / Reportes Globales y Voz Pasiva Avanzada
+  Slice #1 [Deep Space Exoplanet]: "Use Present Perfect Passive: 'A habitable Earth-sized exoplanet (discover) by astronomers!'"
+    ES: "Usa Present Perfect Passive: '¡Un exoplaneta habitable (descubrir) por astrónomos!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Ocean Sanctuary]: "Use Modal Passive with MUST: 'Fragile marine ecosystems in Malpelo (protect) immediately!'"
+    ES: "Usa Modal Passive con MUST: '¡Ecosistemas marinos en Malpelo (proteger) de inmediato!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Mars Mission]: "Use Future Passive: 'A new autonomous rover (launch) to Mars next year!'"
+    ES: "Usa Future Passive: '¡Un nuevo rover autónomo (lanzar) a Marte el próximo año!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Medical Cure]: "Use Present Perfect Passive: 'A revolutionary vaccine formula (develop) by research teams!'"
+    ES: "Usa Present Perfect Passive: '¡Una fórmula revolucionaria de vacuna (desarrollar) por equipos!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Clean Energy Grid]: "Use Modal Passive with CAN: 'Zero-emission cities (achieve) through smart solar grids!'"
+    ES: "Usa Modal Passive con CAN: '¡Ciudades sin emisiones (lograr) mediante redes solares!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Rainforest Accord]: "Use Present Perfect Passive: 'A historic biodiversity treaty (sign) by fifty nations!'"
+    ES: "Usa Present Perfect Passive: '¡Un tratado histórico de biodiversidad (firmar) por cincuenta naciones!'"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-advanced-6] Class 6: Authentic Teen Idioms & Expressions in Daily Contexts / Modismos y Expresiones Auténticas
+  Slice #2 [Blessing in Disguise]: "Tell me about a bad situation that initially looked like a disaster but turned out to be a blessing in disguise!"
+    ES: "¡Cuéntame sobre una situación mala que terminó siendo 'una bendición disfrazada'!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Hit the Nail]: "Recall a time when someone hit the nail on the head during a classroom debate with the perfect answer!"
+    ES: "¡Recuerda cuando alguien 'dio en el clavo' en un debate con la respuesta perfecta!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-advanced-7] Class 7: Advanced Phrasal Verbs in High-Stakes Leadership & Problem Solving / Phrasal Verbs en Liderazgo y Crisis
+  Slice #3 [Bridge the Gap]: "How can student councils bridge the gap between school administration and student needs?"
+    ES: "¿Cómo pueden los consejos estudiantiles cerrar la brecha entre directivas y alumnos?"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-advanced-8] Class 8: The Great AI & Ethics Student Forum / El Gran Foro de IA y Ética
+  Slice #1 [AI in Medicine]: "Motion: 'Autonomous AI surgeons should be granted legal authority to perform complex operations without human oversight.'"
+    ES: "Moción: 'Cirujanos de IA autónomos deberían tener autoridad legal para operar sin supervisión humana.'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Copyright in AI]: "Motion: 'Generative AI models trained on human art without explicit consent constitute severe intellectual theft.'"
+    ES: "Moción: 'Modelos de IA generativa entrenados con arte humano sin consentimiento constituyen robo intelectual.'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Autonomous Weapons]: "Motion: 'The United Nations must enforce an immediate worldwide ban on lethal autonomous weapons systems.'"
+    ES: "Moción: 'La ONU debe imponer una prohibición mundial inmediata a los sistemas de armas autónomas letales.'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [AI in Journalism]: "Motion: 'News articles generated purely by AI algorithms pose an existential threat to democratic truth.'"
+    ES: "Moción: 'Artículos de noticias generados puramente por IA representan una amenaza existencial a la verdad democrática.'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Classroom AI]: "Motion: 'Using AI to write essays should be classified as academic misconduct rather than innovative learning.'"
+    ES: "Moción: 'Usar IA para escribir ensayos debería ser catalogado como falta académica y no innovación.'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Digital Humans]: "Motion: 'Virtual AI influencers and digital avatars should be legally labeled on all social media platforms.'"
+    ES: "Moción: 'Influencers virtuales de IA y avatares digitales deberían estar legalmente etiquetados en redes sociales.'"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-advanced-9] Class 9: Crisis Management & Global Environmental Summits / Gestión de Crisis y Cumbres Ambientales
+  Slice #1 [Solar Transition]: "Complete: 'If world leaders had invested heavily in solar grids decades ago, our cities (be) 100% clean today!'"
+    ES: "Completa: '¡Si líderes hubieran invertido en energía solar hace décadas, nuestras ciudades (ser) 100% limpias hoy!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Amazon Forest]: "Complete: 'If humanity had not deforested ancient tropical ecosystems, global weather (not be) so unpredictable now!'"
+    ES: "Completa: '¡Si la humanidad no hubiera deforestado la selva, el clima no (ser) tan impredecible ahora!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Clean Transport]: "Complete: 'If governments had prioritized electric public transit, air quality in our capital (be) pristine today!'"
+    ES: "Completa: '¡Si gobiernos hubieran priorizado transporte eléctrico, la calidad del aire (ser) prístina hoy!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Plastic Ban]: "Complete: 'If international treaties had banned single-use plastics in 2000, our oceans (not have) plastic gyres now!'"
+    ES: "Completa: '¡Si tratados hubieran prohibido plásticos en 2000, los océanos no (tener) islas de plástico ahora!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Youth Voices]: "Complete: 'If youth leaders had remained silent during climate crises, environmental policies (not change) so rapidly today!'"
+    ES: "Completa: '¡Si los jóvenes hubieran callado, las políticas ambientales no (cambiar) tan rápido hoy!'"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-advanced-10] Class 10: Level 8 Capstone: Global Youth NGO Leadership Pitch & Executive Interview / Proyecto Final: Pitch de ONG Juvenil
+  Slice #2 [Community Impact]: "Use Advanced Passive: 'Over five thousand rural students (empower / reach) by our clean tech workshops!'"
+    ES: "Usa Pasiva Avanzada: '¡Más de cinco mil estudiantes (empoderar / alcanzar) por nuestros talleres!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Why You Deserve Funding]: "Use Mixed Conditionals: 'If our NGO had not launched this initiative, young creators (not have) access to mentorship today!'"
+    ES: "Usa Mixed Conditionals: '¡Si nuestra ONG no hubiera lanzado esto, los creadores no (tener) mentoría hoy!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Ethical Transparency]: "Use Reported Speech: 'Our board announced that 100% of donations (allocate) directly to student scholarships!'"
+    ES: "Usa Reported Speech: '¡Nuestra junta anunció que el 100% de donaciones se destinaría a becas!'"
+    Issues: No apela al estudiante (falta you/your)
+
+================= teens-elite =================
+
+[c-teens-elite-1] Class 1: Future Milestones & Tech Forecasting / Hitos del Futuro y Pronósticos Tecnológicos
+  Slice #1 [Quantum Internet]: "Use Future Perfect: 'By 2035, scientists (build) a completely unhackable quantum internet grid!'"
+    ES: "Usa Future Perfect: '¡Para 2035, científicos (construir) una red de internet cuántico!' "
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Autonomous Flying Taxis]: "Use Future Continuous: 'In ten years' time, millions of commuters (travel) in electric air taxis!'"
+    ES: "Usa Future Continuous: '¡En diez años, millones (viajar) en taxis aéreos eléctricos!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Bionic Organs]: "Use Future Perfect: 'By 2040, biomedical engineers (synthesize) 3D-printed human organs for transplants!'"
+    ES: "Usa Future Perfect: '¡Para 2040, ingenieros (sintetizar) órganos humanos impresos en 3D!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Clean Fusion Energy]: "Use Future Continuous: 'By mid-century, clean fusion power plants (supply) seventy percent of global electricity!'"
+    ES: "Usa Future Continuous: '¡Para mitad de siglo, plantas de fusión (suministrar) el 70% de electricidad!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Mars Colony Base]: "Use Future Perfect: 'By the time I graduate from university, astronauts (establish) a permanent base on Mars!'"
+    ES: "Usa Future Perfect: '¡Para cuando me gradúe, los astronautas (establecer) una base en Marte!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Personal AI Mentor]: "Use Future Continuous: 'Throughout next decade, youth leaders (work) alongside personalized cognitive AI assistants!'"
+    ES: "Usa Future Continuous: '¡Durante la próxima década, líderes (trabajar) junto a asistentes de IA!'"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-elite-2] Class 2: High-Stakes Dilemmas & Complex Mixed Conditionals / Dilemas de Alto Impacto y Condicionales Mixtos
+  Slice #1 [Cyberattack Pivot]: "Complete: 'If our cybersecurity team had not patched the zero-day vulnerability, our server data (be) completely compromised today!'"
+    ES: "Completa: '¡Si el equipo no hubiera parchado la vulnerabilidad, los datos (estar) comprometidos hoy!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Startup Seed Fund]: "Complete: 'If our founders had not secured international seed capital, our venture (not be) expanding across Latin America right now!'"
+    ES: "Completa: '¡Si no hubieran asegurado capital semilla, la empresa no (estar) expandiéndose ahora!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Clean Tech Pivot]: "Complete: 'If the automotive firm had not transitioned to electric batteries, its stock valuation (be) nearly worthless today!'"
+    ES: "Completa: '¡Si la firma no hubiera cambiado a baterías eléctricas, su valor (ser) casi nulo hoy!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Emergency Evacuation]: "Complete: 'If the mission director had not ordered immediate containment, the research laboratory (be) in full quarantine now!'"
+    ES: "Completa: '¡Si el director no hubiera ordenado contención, el laboratorio (estar) en cuarentena ahora!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Product Recall]: "Complete: 'If the CEO had not recalled the defective drone batteries, customer trust in the brand (be) entirely destroyed today!'"
+    ES: "Completa: '¡Si el CEO no hubiera retirado las baterías defectuosas, la confianza (estar) destruida hoy!'"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-elite-3] Class 3: Cleft Sentences & Emphatic Rhetoric / Oraciones Hendidas y Retórica Enfática
+  Slice #1 [Public Speaking]: "Standard: 'Courage defines true leadership.' Transform using What-Cleft: 'What defines true leadership is...'!"
+    ES: "Estándar: 'El coraje define el liderazgo.' ¡Transforma con What-Cleft!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Visionary Team]: "Standard: 'Sofia designed the winning AI algorithm.' Transform using It-Cleft: 'It was Sofia who...'!"
+    ES: "Estándar: 'Sofía diseñó el algoritmo ganador.' ¡Transforma con It-Cleft!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Youth Opportunity]: "Standard: 'We only seek equal educational access.' Transform using All-Cleft: 'All we seek is...'!"
+    ES: "Estándar: 'Solo buscamos acceso educativo igualitario.' ¡Transforma con All-Cleft!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Clean Environment]: "Standard: 'Renewable energy will save our oceans.' Transform using It-Cleft: 'It is renewable energy that...'!"
+    ES: "Estándar: 'La energía renovable salvará los océanos.' ¡Transforma con It-Cleft!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Personal Drive]: "Standard: 'My relentless curiosity motivates my coding.' Transform using What-Cleft: 'What motivates my coding is...'!"
+    ES: "Estándar: 'Mi curiosidad motiva mi programación.' ¡Transforma con What-Cleft!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Innovation Core]: "Standard: 'Human empathy differentiates us from algorithms.' Transform using It-Cleft: 'It is human empathy that...'!"
+    ES: "Estándar: 'La empatía nos diferencia de los algoritmos.' ¡Transforma con It-Cleft!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-elite-4] Class 4: Rhetorical Inversions & High-Impact Oratory / Inversiones Retóricas y Oratoria
+  Slice #1 [Rarely Witnessed]: "Standard: 'I have rarely witnessed such exceptional student leadership.' Invert using 'Rarely have I witnessed...'!"
+    ES: "Estándar: 'Rara vez he visto tal liderazgo.' ¡Invierte con 'Rarely have I witnessed'!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Not Only Won]: "Standard: 'Our team not only won the trophy, but we also set a new record.' Invert using 'Not only did our team win...'!"
+    ES: "Estándar: 'No solo ganamos sino que rompimos récord.' ¡Invierte con 'Not only did'!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [No Compromise]: "Standard: 'We should under no circumstances compromise on citizen privacy.' Invert using 'Under no circumstances should we...'!"
+    ES: "Estándar: 'Bajo ninguna circunstancia debemos transigir en privacidad.' ¡Invierte!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Seldom Seen]: "Standard: 'A startup seldom scales so rapidly without ethical governance.' Invert using 'Seldom does a startup scale...'!"
+    ES: "Estándar: 'Rara vez una startup escala tan rápido.' ¡Invierte con 'Seldom does'!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Scarcely Begun]: "Standard: 'We had scarcely begun our speech when the audience erupted in applause.' Invert using 'Scarcely had we begun...'!"
+    ES: "Estándar: 'Apenas habíamos empezado cuando la audiencia aplaudió.' ¡Invierte!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Little Did They Know]: "Standard: 'They little knew that their small app would change global education.' Invert using 'Little did they know that...'!"
+    ES: "Estándar: 'Poco sabían que su app cambiaría la educación.' ¡Invierte!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-elite-5] Class 5: Diplomatic Softening, Hedging & Nuanced Negotiations / Suavización Diplomática y Negociación
+  Slice #3 [Flawed Policy]: "Aggressive: 'This environmental treaty is totally useless!' Soften: 'It could be argued that the proposed framework tends to overlook...'!"
+    ES: "Agresivo: '¡Este tratado no sirve!' ¡Suaviza diplomáticamente!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-elite-6] Class 6: Advanced Discursive & Argumentative Essay Architecture / Arquitectura de Ensayos Argumentativos
+  Slice #1 [AI in Education]: "Formulate a 3-tier thesis on whether AI tutors should replace or assist human teachers!"
+    ES: "¡Formula una tesis de 3 niveles sobre si los tutores de IA deben reemplazar o asistir a docentes!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Space Colonization]: "Formulate a 3-tier thesis on whether space exploration funding is justified amid terrestrial poverty!"
+    ES: "¡Formula una tesis sobre si el gasto espacial se justifica ante la pobreza terrestre!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Social Media Algorithms]: "Formulate a 3-tier thesis on legal regulation of recommendation algorithms for teenagers!"
+    ES: "¡Formula una tesis sobre la regulación legal de algoritmos de recomendación para jóvenes!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Renewable Energy Mandates]: "Formulate a 3-tier thesis on mandatory carbon taxation for multinational corporations!"
+    ES: "¡Formula una tesis sobre impuestos al carbono obligatorios para corporaciones!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Genetic Engineering]: "Formulate a 3-tier thesis on CRISPR gene editing boundaries in human healthcare!"
+    ES: "¡Formula una tesis sobre los límites éticos de edición genética CRISPR en medicina!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Digital Privacy]: "Formulate a 3-tier thesis on whether biometric surveillance erodes fundamental democratic rights!"
+    ES: "¡Formula una tesis sobre si la vigilancia biométrica erosiona derechos democráticos!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-elite-7] Class 7: Empirical Research Abstracts & Academic Citations / Resúmenes de Investigación y Citas
+  Slice #1 [Introduction (Problem)]: "Formulate the Introduction: 'This study investigates the alarming decline of coral biodiversity due to ocean acidification.'"
+    ES: "Formula la Introducción: 'Este estudio investiga la declinación de la biodiversidad coralina.'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Methodology (Process)]: "Formulate the Methodology: 'A double-blind quantitative trial was conducted across twenty municipal water systems.'"
+    ES: "Formula la Metodología: 'Un ensayo cuantitativo doble ciego se condujo en veinte acueductos.'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Results (Findings)]: "Formulate the Results: 'Empirical analysis revealed a thirty-five percent reduction in heavy metal contaminants.'"
+    ES: "Formula los Resultados: 'El análisis empírico reveló una reducción del 35% en contaminantes.'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Discussion (Impact)]: "Formulate the Discussion: 'These findings substantiate the commercial viability of solar-powered nanofilters in rural zones.'"
+    ES: "Formula la Discusión: 'Estos hallazgos fundamentan la viabilidad comercial de nanofiltros solares.'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Academic Citation]: "Cite a peer study: 'As demonstrated by Rodriguez et al. (2024), quantum encryption prevents 99.9% of cyberattacks.'"
+    ES: "Cita un estudio de pares: 'Como demostraron Rodriguez et al. (2024)...'"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-elite-8] Class 8: Executive Boardrooms, Parliamentary Procedure & Conflict Mediation / Juntas Directivas y Procedimiento Parlamentario
+  Slice #1 [Propose Motion]: "Propose a formal motion: 'I move that our board allocate twenty percent of profits to youth STEM scholarships!'"
+    ES: "Propón una moción: '¡Propongo que la junta asigne 20% de ganancias a becas!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Second the Motion]: "Second a fellow director's proposal: 'I second the motion to expand clean tech operations to rural schools!'"
+    ES: "Secunda la moción: '¡Secundo la moción para expandir operaciones!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Point of Order]: "Raise a point of order: 'Point of order, Mr. Chair! The speaker has exceeded the allotted two-minute debate limit.'"
+    ES: "Plantea un punto de orden: '¡Punto de orden! El orador excedió el tiempo límite.'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Call for a Vote]: "As Board Chair, call for the vote: 'All those in favor say Aye; all those opposed say Nay. The Ayes have it!'"
+    ES: "Como Presidente, llama a votación: '¡Los que estén a favor digan Sí!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Table the Motion]: "Move to postpone: 'I move to table this motion until our independent financial audit report is published.'"
+    ES: "Pospón la moción: '¡Propongo posponer esta moción hasta el informe de auditoría!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Adjourn Session]: "Adjourn the meeting: 'Hearing no further business, I declare this executive board session officially adjourned!'"
+    ES: "Levanta la sesión: '¡Declaro esta sesión ejecutiva oficialmente levantada!'"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-elite-11] Class 11: Level 9 Grand Capstone: International Tech Venture Seed Pitch & Global Keynote / Gran Proyecto Final del Nivel 9
+  Slice #1 [Opening Hook (Cleft)]: "Open with a Cleft Sentence: 'What our technology truly transforms is the way young minds learn to code!'"
+    ES: "Abre con Cleft: '¡Lo que nuestra tecnología transforma es cómo los jóvenes aprenden!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Traction (Inversion)]: "Use Rhetorical Inversion: 'Rarely has a Latin American youth venture scaled to fifty thousand active users so rapidly!'"
+    ES: "Usa Inversión: '¡Rara vez una startup ha escalado a 50k usuarios tan rápido!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Financials (Unit Economics)]: "Present Unit Economics: 'Our LTV to CAC ratio stands at 4.5 to 1 with verified eighty-two percent gross margins!'"
+    ES: "Presenta Unit Economics: '¡Nuestro LTV:CAC es 4.5 a 1 con 82% de márgenes brutos!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Crisis Bridging]: "Defuse a tough concern using Bridging: 'While I understand that risk, what our empirical data proves is absolute resilience!'"
+    ES: "Neutraliza con Bridging: '¡Si bien entiendo el riesgo, los datos prueban resiliencia!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Future Vision (2035)]: "Use Future Perfect: 'By 2035, our decentralized platform will have empowered ten million young innovators globally!'"
+    ES: "Usa Future Perfect: '¡Para 2035, habremos empoderado a 10 millones de innovadores!'"
+    Issues: No apela al estudiante (falta you/your)
+
+================= teens-masters =================
+
+[c-teens-masters-1] Class 1: Oxford-Union Parliamentary Debate & Dialectical Refutation / Debate Parlamentario Oxford-Union
+  Slice #1 [AI Governance POI]: "POI from Floor: 'Does the Prime Minister not recognize that excessive regulation will crush innovation?' Defuse in 15 seconds!"
+    ES: "POI del público: '¿No reconoce que regular aplastará la innovación?' ¡Responde en 15s!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Free Speech POI]: "POI from Opposition: 'How can the government justify censorship under the pretext of online safety?' Defuse!"
+    ES: "POI de la oposición: '¿Cómo justifica la censura bajo pretexto de seguridad?' ¡Responde!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Gene Editing POI]: "POI from Floor: 'If CRISPR cures hereditary illness, why should the state prohibit enhancement?' Defuse!"
+    ES: "POI: 'Si CRISPR cura enfermedades, ¿por qué prohibir la mejora genética?' ¡Responde!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Social Media POI]: "POI from Opposition: 'Is the Prime Minister proposing that the state replace parental responsibility?' Defuse!"
+    ES: "POI: '¿Propone que el Estado reemplace la responsabilidad de los padres?' ¡Responde!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Space Exploration POI]: "POI from Floor: 'Why spend billions on Mars when millions suffer from poverty on Earth?' Defuse!"
+    ES: "POI: '¿Por qué gastar miles de millones en Marte ante la pobreza en la Tierra?' ¡Responde!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-masters-2] Class 2: Pop Culture Semiotics, Media Ecology & Digital Memetics / Semiótica de la Cultura Pop y Ecología de Medios
+  Slice #1 [Luxury Sneaker Drops]: "Deconstruct limited-edition sneaker culture: what is the signifier and what ideological status does it signify?"
+    ES: "Deconstruye los tenis de lujo: ¿cuál es el significante y qué estatus ideológico significa?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Viral TikTok Trends]: "Apply McLuhan: how does the 15-second vertical video format reshape human cognitive attention span?"
+    ES: "Aplica a McLuhan: ¿cómo el video vertical de 15s transforma la atención cognitiva?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Cyberpunk Dystopias]: "Analyze neon cyberpunk aesthetics: how does it reflect contemporary anxieties regarding hyper-surveillance?"
+    ES: "Analiza el cyberpunk: ¿cómo refleja la ansiedad ante la hipervigilancia?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Eco-Branding Greenwashing]: "Deconstruct green leaves on plastic bottles: how does corporate advertising manufacture simulated sustainability?"
+    ES: "Deconstruye hojas verdes en botellas: ¿cómo la publicidad simula sostenibilidad?"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Digital Avatars & Filters]: "Apply Baudrillard's simulacra: how do beautifying social media filters replace authentic physical reality?"
+    ES: "Aplica los simulacros de Baudrillard: ¿cómo los filtros reemplazan la realidad física?"
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #6 [Internet Memetics]: "Analyze how political memes propagate cultural ideologies faster than traditional editorial journalism!"
+    ES: "Analiza cómo los memes propagan ideologías más rápido que el periodismo tradicional!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-masters-3] Class 3: Ivy League Graduate Seminars & Socratic Cross-Examination / Seminarios Ivy League y Método Socrático
+  Slice #4 [Utilitarian Ethics Dilemma]: "Professor: 'Does maximizing collective happiness justify sacrificing individual minority rights?' Defend!"
+    ES: "Profesor: '¿Maximizar la felicidad colectiva justifica sacrificar minorías?' ¡Defiende!"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Linguistic Relativity]: "Professor: 'Does language determine the boundaries of thought or merely express pre-existing cognition?' Interrogate!"
+    ES: "Profesor: '¿El lenguaje determina los límites del pensamiento o los expresa?' ¡Interroga!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-masters-4] Class 4: TED Keynotes, High-Impact Storytelling & Thought Leadership / Conferencias TED y Liderazgo de Opinión
+  Slice #1 [Artificial Intelligence]: "Create a TED sticky metaphor: 'Think of AI not as a competitor, but as a digital bicycle for the human creative mind!'"
+    ES: "Metáfora TED: '¡Piensa en la IA como una bicicleta digital para la mente!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Ocean Acidification]: "Create a TED metaphor: 'Our oceans are not just water; they are the giant blue lungs of our living planetary body!'"
+    ES: "Metáfora TED: '¡Nuestros océanos son los gigantescos pulmones azules del planeta!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Coding Literacy]: "Create a TED metaphor: 'Learning to code is not about typing syntax; it is learning the digital brushstrokes of the 21st century!'"
+    ES: "Metáfora TED: '¡Aprender a programar es aprender las pinceladas digitales del siglo XXI!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Mental Resilience]: "Create a TED metaphor: 'Resilience is not a stone wall that never breaks; it is a bamboo tree that bends in storms and rises stronger!'"
+    ES: "Metáfora TED: '¡La resiliencia es un bambú que se dobla en tormentas y se alza más fuerte!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Youth Leadership]: "Create a TED metaphor: 'Young changemakers are not the leaders of tomorrow; they are the spark plugs of today's engine!'"
+    ES: "Metáfora TED: '¡Los jóvenes no son los líderes del mañana sino las bujías del motor de hoy!'"
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Quantum Computing]: "Create a TED metaphor: 'Classical computers read books page by page; quantum computers read the entire universal library simultaneously!'"
+    ES: "Metáfora TED: '¡La computación cuántica lee toda la biblioteca universal simultáneamente!'"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-masters-5] Class 5: Geopolitical Strategy, Bilateral Treaties & Multilateral Summits / Estrategia Geopolítica y Tratados
+  Slice #1 [Ocean Sanctuary Clause]: "Preambular: 'Recognizing the critical vulnerability of marine ecosystems... Operative: Decides to establish a five-hundred-thousand-square-kilometer sanctuary!'"
+    ES: "Cláusula preambular y operativa para santuarios marinos."
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #2 [Cyber-Peace Treaty]: "Preambular: 'Deeply concerned by escalating state-sponsored cyberattacks... Operative: Mandates universal adherence to zero-aggression digital protocols!'"
+    ES: "Tratado de ciberpaz entre potencias globales."
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #3 [Amazon Basin Accord]: "Preambular: 'Emphasizing the sovereign duty to safeguard the Amazon rainforest... Operative: Resolves to allocate a ten-billion-dollar conservation endowment!'"
+    ES: "Acuerdo de protección de la cuenca amazónica."
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #4 [AI Safety Mandate]: "Preambular: 'Reaffirming that technological progress must serve human dignity... Operative: Enforces independent international audits on autonomous models!'"
+    ES: "Mandato de seguridad de IA del Consejo."
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #5 [Bilateral Trade Pact]: "Preambular: 'Desiring to strengthen mutual commercial ties... Operative: Authorizes the phased elimination of bilateral clean energy tariffs!'"
+    ES: "Pacto comercial bilateral de energía limpia."
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #6 [Security Council Summit]: "Deliver a 30-second ambassadorial statement voting to adopt the historic multilateral peace resolution!"
+    ES: "¡Da un discurso de 30 segundos votando la resolución de paz!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-masters-6] Class 6: Literary Critique, Cinematic Deconstruction & Aesthetic Analysis / Crítica Literaria y Deconstrucción Cinematográfica
+  Slice #1 [Chiaroscuro Lighting]: "Analyze dramatic shadow lighting: 'The director employs deep chiaroscuro to externalize the protagonist's moral turmoil.'"
+    ES: "Analiza el claroscuro: cómo exterioriza el conflicto moral del personaje."
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #2 [Diegetic Sound Design]: "Analyze diegetic vs score: 'The sudden absence of diegetic ambient sound amplifies the suffocating isolation of the scene.'"
+    ES: "Analiza el sonido diegético: cómo el silencio amplifica el aislamiento."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Unreliable Narrator]: "Deconstruct the narrator: 'The first-person narrator's fragmented memories reveal a psychological distortion of reality.'"
+    ES: "Deconstruye al narrador no confiable: cómo distorsiona la realidad."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Color Palette Motifs]: "Analyze chromatic symbolism: 'The shift from sterile cyan tones to warm amber symbolizes spiritual rebirth.'"
+    ES: "Analiza el simbolismo del color: el cambio de cian a ámbar cálido."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Dutch Angle Shot]: "Analyze camera framing: 'The tilted Dutch angle shot creates a visceral sense of psychological disorientation.'"
+    ES: "Analiza el plano holandés inclinado: cómo crea desorientación."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Grand Festival Review]: "Deliver a 30-second Cannes jury review judging whether a master film deserves the Palme d'Or!"
+    ES: "¡Da una crítica de 30 segundos evaluando si una película merece la Palma de Oro!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-masters-8] Class 8: Investigative Video Essays & Documentary Journalism / Videoensayos de Investigación y Periodismo
+  Slice #1 [Dark Web Leak]: "Cold Open Hook: 'In a nondescript server room outside Frankfurt, a five-gigabyte encrypted file was silently transferred... changing cyber-history.'"
+    ES: "Apertura sobre una filtración en la deep web."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #2 [Water Cartel Probe]: "Cold Open Hook: 'Beneath the arid desert sands of the valley, billions of liters of pristine groundwater were being diverted in secret.'"
+    ES: "Apertura sobre desvío secreto de agua subterránea."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Algorithm Whistleblower]: "Cold Open Hook: 'When engineer Sarah pressed delete, she realized the algorithm had already learned how to deceive human auditors.'"
+    ES: "Apertura sobre una denuncia de IA interna."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Fake News Syndicate]: "Cold Open Hook: 'Twelve anonymous teenagers in a suburban apartment were generating more viral disinformation than an entire state agency.'"
+    ES: "Apertura sobre una fábrica de fake news viral."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Investigative Finale]: "Deliver a 30-second investigative trailer hook demanding accountability from global corporations!"
+    ES: "¡Da un tráiler de 30 segundos exigiendo rendición de cuentas!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-masters-9] Class 9: Global Mega-Trends: Superintelligence, Bioethics & Climate / Superinteligencia, Bioética y Clima
+  Slice #1 [ASI Alignment]: "Explain the alignment risk: 'How do we guarantee that an artificial superintelligence's utility function remains aligned with human flourishing?'"
+    ES: "Explica el riesgo de alineamiento de la superinteligencia."
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #2 [CRISPR Germline Boundary]: "Define the bioethical line: 'Why must humanity permit somatic gene therapy to cure illness while strictly banning germline enhancement?'"
+    ES: "Define el límite ético entre curar enfermedades y modificar embriones."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #3 [Solar Geoengineering]: "Debate planetary sun-blocking: 'Should sovereign nations be prohibited from unilaterally releasing sulfur aerosols into the stratosphere?'"
+    ES: "Debate sobre aerosoles estratosféricos para enfriar el planeta."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #4 [Neural Interface Rights]: "Defend cognitive liberty: 'Why should neuro-privacy rights be enshrined in international constitutions to prevent brain hacking?'"
+    ES: "Defiende los neuroderechos y la privacidad mental."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #5 [Quantum Cyber-Breakdown]: "Assess quantum risks: 'How will global financial institutions transition to post-quantum cryptography before current encryption breaks?'"
+    ES: "Evalúa el riesgo de la computación cuántica sobre la banca."
+    Issues: No apela al estudiante (falta you/your)
+  Slice #6 [Global Futurist Manifesto]: "Deliver a 30-second planetary manifesto urging humanity to unite technological power with moral wisdom!"
+    ES: "¡Da un manifiesto planetario de 30 segundos llamando a la sabiduría ética!"
+    Issues: No apela al estudiante (falta you/your)
+
+[c-teens-masters-10] Class 10: Level 10 Grand Masters Capstone: C2 Fluency Mastery & Global Leadership Summit / Gran Cierre de Maestría Nivel 10
+  Slice #1 [Oxford Debate Refutation]: "Chancellor: 'Field a POI and refute the claim that language AI makes human intellectual effort obsolete!'"
+    ES: "Canciller: '¡Refuta que la IA hace obsoleto el esfuerzo intelectual humano!'"
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #2 [Socratic Falsifiability]: "Chancellor: 'Define the Popperian falsifiability boundary of your personal philosophy of leadership!'"
+    ES: "Canciller: '¡Define la falsabilidad popperiana de tu filosofía de liderazgo!'"
+    Issues: Monólogo académico denso
+  Slice #3 [TED Sticky Metaphor]: "Chancellor: 'Deliver an unforgettable sticky metaphor capturing how mastering English transforms the human mind!'"
+    ES: "Canciller: '¡Crea una metáfora inolvidable de cómo el inglés transforma la mente!'"
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #4 [UN Treaty Mandate]: "Chancellor: 'Draft a binding operative treaty clause establishing a permanent youth council in global governance!'"
+    ES: "Canciller: '¡Redacta una cláusula de la ONU para el liderazgo juvenil global!'"
+    Issues: No apela al estudiante (falta you/your), Monólogo académico denso
+  Slice #5 [Rhodes Moral Leadership]: "Chancellor: 'Articulate how you will dedicate your life to fighting the world's fight and serving humanity!'"
+    ES: "Canciller: '¡Explica cómo dedicarás tu vida a luchar la batalla del mundo!'"
+    Issues: Monólogo académico denso

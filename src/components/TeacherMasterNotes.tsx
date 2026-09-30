@@ -115,19 +115,39 @@ export function TeacherMasterNotes({
   const [showSettingsBar, setShowSettingsBar] = useState(false);
 
   // --- Window Positioning & Resizing (Clamped) ---
+  const getDefaultBounds = (
+    vw = typeof window !== 'undefined' ? window.innerWidth : 1200,
+    vh = typeof window !== 'undefined' ? window.innerHeight : 800
+  ): WindowBounds => {
+    // Generous canvas (~65vw wide by ~70vh tall) matching the screenshot layout
+    const defaultW = vw < 800 ? Math.min(vw - 20, 720) : Math.min(940, Math.max(720, Math.round(vw * 0.65)));
+    const defaultH = vh < 700 ? Math.min(vh - 40, 580) : Math.min(680, Math.max(520, Math.round(vh * 0.70)));
+    // Positioned slightly right of center to leave the left slide interaction (e.g. wheel) visible
+    const defaultX = vw < 800 ? 10 : Math.max(20, Math.min(vw - defaultW - 30, Math.round(vw * 0.25)));
+    const defaultY = Math.max(60, Math.min(vh - defaultH - 40, Math.round(vh * 0.12)));
+
+    return {
+      x: defaultX,
+      y: defaultY,
+      width: defaultW,
+      height: defaultH,
+    };
+  };
+
   const [bounds, setBounds] = useState<WindowBounds>(() => {
-    const defaultW = 520;
-    const defaultH = 560;
+    const vw = typeof window !== 'undefined' ? window.innerWidth : 1200;
+    const vh = typeof window !== 'undefined' ? window.innerHeight : 800;
+    const fallback = getDefaultBounds(vw, vh);
+
     try {
-      const saved = localStorage.getItem('teacher_notes_bounds_v2');
+      const saved = localStorage.getItem('teacher_notes_bounds_v3') || localStorage.getItem('teacher_notes_bounds_v2');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (parsed.width && parsed.height) {
-          const vw = typeof window !== 'undefined' ? window.innerWidth : 1200;
-          const vh = typeof window !== 'undefined' ? window.innerHeight : 800;
+        // Only keep saved size if it is already generous (>= 680px width); otherwise upgrade to spacious default
+        if (parsed.width && parsed.height && parsed.width >= 680) {
           return {
-            x: Math.min(Math.max(10, parsed.x ?? (vw - defaultW - 30)), Math.max(10, vw - 200)),
-            y: Math.min(Math.max(10, parsed.y ?? 70), Math.max(10, vh - 200)),
+            x: Math.min(Math.max(10, parsed.x ?? fallback.x), Math.max(10, vw - 200)),
+            y: Math.min(Math.max(10, parsed.y ?? fallback.y), Math.max(10, vh - 200)),
             width: Math.min(Math.max(320, parsed.width), vw - 20),
             height: Math.min(Math.max(260, parsed.height), vh - 40),
           };
@@ -135,14 +155,7 @@ export function TeacherMasterNotes({
       }
     } catch {}
 
-    const vw = typeof window !== 'undefined' ? window.innerWidth : 1200;
-    const vh = typeof window !== 'undefined' ? window.innerHeight : 800;
-    return {
-      x: Math.max(20, vw - defaultW - 30),
-      y: Math.max(60, 70),
-      width: defaultW,
-      height: defaultH,
-    };
+    return fallback;
   });
 
   // Keep references for pointer event math
@@ -182,7 +195,7 @@ export function TeacherMasterNotes({
 
   useEffect(() => {
     try {
-      localStorage.setItem('teacher_notes_bounds_v2', JSON.stringify(bounds));
+      localStorage.setItem('teacher_notes_bounds_v3', JSON.stringify(bounds));
     } catch {}
   }, [bounds]);
 
@@ -295,19 +308,22 @@ export function TeacherMasterNotes({
 
     switch (preset) {
       case 'center':
+        const centerW = vw < 800 ? Math.min(vw - 20, 720) : Math.min(940, Math.max(720, Math.round(vw * 0.65)));
+        const centerH = vh < 700 ? Math.min(vh - 40, 580) : Math.min(680, Math.max(520, Math.round(vh * 0.70)));
         setBounds({
-          x: Math.max(20, (vw - 500) / 2),
-          y: Math.max(30, (vh - 540) / 2),
-          width: Math.min(500, vw - 40),
-          height: Math.min(540, vh - 60),
+          x: Math.max(20, Math.round((vw - centerW) / 2)),
+          y: Math.max(30, Math.round((vh - centerH) / 2)),
+          width: centerW,
+          height: centerH,
         });
         break;
       case 'dock-right':
+        const rightW = Math.min(840, Math.max(600, Math.round(vw * 0.58)));
         setBounds({
-          x: Math.max(10, vw - 500),
-          y: 10,
-          width: Math.min(490, vw - 20),
-          height: vh - 20,
+          x: Math.max(10, vw - rightW - 20),
+          y: 20,
+          width: rightW,
+          height: vh - 40,
         });
         break;
       case 'dock-bottom':
