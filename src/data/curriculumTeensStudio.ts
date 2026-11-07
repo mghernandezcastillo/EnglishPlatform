@@ -5430,16 +5430,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "IN se usa cuando algo está contenido dentro de un espacio o cajón. ON cuando está apoyado sobre una superficie (mesa, pared, piso). UNDER cuando está debajo de algo.",
                                                       "examples": [
                                                             {
-                                                                  "en": "My notebooks are in the drawer. (En el cajón)",
-                                                                  "es": "Contenido dentro (In)"
+                                                                  "en": "My notebooks are in the desk drawer.",
+                                                                  "es": "Mis cuadernos están dentro del cajón del escritorio."
                                                             },
                                                             {
-                                                                  "en": "The laptop is on the desk. (Sobre el escritorio)",
-                                                                  "es": "Sobre superficie (On)"
+                                                                  "en": "The gaming laptop is on the wooden desk.",
+                                                                  "es": "El portátil gamer está sobre el escritorio de madera."
                                                             },
                                                             {
-                                                                  "en": "My sneakers are under the bed. (Debajo de la cama)",
-                                                                  "es": "Debajo (Under)"
+                                                                  "en": "My clean sneakers are under the bed.",
+                                                                  "es": "Mis tenis limpios están debajo de la cama."
                                                             }
                                                       ],
                                                       "keyTip": "Los pósteres en la pared van con ON: 'Posters on the wall'."
@@ -5452,16 +5452,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "NEXT TO indica que dos objetos están pegados lado a lado. BEHIND indica que está en la parte trasera. IN FRONT OF indica que está cara a cara o adelante.",
                                                       "examples": [
                                                             {
-                                                                  "en": "The nightstand is next to the bed. (Al lado de la cama)",
-                                                                  "es": "Lado a lado (Next to)"
+                                                                  "en": "The nightstand is right next to the bed.",
+                                                                  "es": "La mesa de noche está justo al lado de la cama."
                                                             },
                                                             {
-                                                                  "en": "The guitar is behind the door. (Detrás de la puerta)",
-                                                                  "es": "Parte trasera (Behind)"
+                                                                  "en": "The acoustic guitar is behind the bedroom door.",
+                                                                  "es": "La guitarra acústica está detrás de la puerta del cuarto."
                                                             },
                                                             {
-                                                                  "en": "The chair is in front of the desk. (Enfrente del escritorio)",
-                                                                  "es": "Delante (In front of)"
+                                                                  "en": "The ergonomic chair is in front of the study desk.",
+                                                                  "es": "La silla ergonómica está enfrente del escritorio de estudio."
                                                             }
                                                       ],
                                                       "keyTip": "Cuidado: 'in front of' no significa 'en frente' de confrontar, sino simplemente adelante."
@@ -5542,16 +5542,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Los espacios principales de un apartamento o casa.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Bedroom: habitación o cuarto donde duermes y estudias.",
-                                                                  "es": "Espacio del hogar"
+                                                                  "en": "My bedroom is my favorite place to study and relax.",
+                                                                  "es": "Mi habitación es mi lugar favorito para estudiar y relajarme."
                                                             },
                                                             {
-                                                                  "en": "Living room: sala de estar familiar con el sofá y televisor.",
-                                                                  "es": "Espacio del hogar"
+                                                                  "en": "We watch movies together on the big sofa in the living room.",
+                                                                  "es": "Vemos películas juntos en el sofá grande de la sala de estar."
                                                             },
                                                             {
-                                                                  "en": "Kitchen: cocina donde preparamos alimentos y meriendas.",
-                                                                  "es": "Espacio del hogar"
+                                                                  "en": "My brother is making delicious sandwiches in the kitchen.",
+                                                                  "es": "Mi hermano está preparando sándwiches deliciosos en la cocina."
                                                             }
                                                       ],
                                                       "keyTip": "Living room = sala; Dining room = comedor."
@@ -5564,16 +5564,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Los muebles esenciales del cuarto de un estudiante.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Study desk: escritorio para hacer tareas y usar el computador.",
-                                                                  "es": "Mueble principal"
+                                                                  "en": "I keep my laptop and notebooks on my clean study desk.",
+                                                                  "es": "Guardo mi portátil y mis cuadernos sobre mi escritorio de estudio limpio."
                                                             },
                                                             {
-                                                                  "en": "Wardrobe / Closet: armario para colgar la ropa y chaquetas.",
-                                                                  "es": "Mueble principal"
+                                                                  "en": "All my hoodies and jackets are hanging in the wardrobe.",
+                                                                  "es": "Todos mis sacos y chaquetas están colgados en el armario."
                                                             },
                                                             {
-                                                                  "en": "Bookshelf: estantería para libros, cómics y figuras coleccionables.",
-                                                                  "es": "Mueble principal"
+                                                                  "en": "There are comic books and action figures on the bookshelf.",
+                                                                  "es": "Hay cómics y figuras de acción en la estantería de libros."
                                                             }
                                                       ],
                                                       "keyTip": "'Nightstand' es la mesita de noche junto a la cama."
@@ -5586,16 +5586,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Los objetos cotidianos que siempre tienes en tu habitación.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Gaming headphones: audífonos gamer para jugar o escuchar música.",
-                                                                  "es": "Objetos personales"
+                                                                  "en": "My wireless gaming headphones are on the desk next to the monitor.",
+                                                                  "es": "Mis audífonos gamer inalámbricos están en el escritorio al lado del monitor."
                                                             },
                                                             {
-                                                                  "en": "Phone charger: cargador del celular conectado a la pared.",
-                                                                  "es": "Objetos personales"
+                                                                  "en": "My phone charger is plugged into the wall behind the nightstand.",
+                                                                  "es": "El cargador de mi celular está conectado a la pared detrás de la mesa de noche."
                                                             },
                                                             {
-                                                                  "en": "Backpack: maleta del colegio con los cuadernos.",
-                                                                  "es": "Objetos personales"
+                                                                  "en": "My school backpack is on the floor next to the closet.",
+                                                                  "es": "Mi maleta del colegio está en el piso al lado del armario."
                                                             }
                                                       ],
                                                       "keyTip": "Usa preposiciones exactas para decir dónde dejaste tu cargador."
@@ -5626,12 +5626,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Expresiones para guiar a un amigo en videollamada por tu habitación.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Welcome to my bedroom! On the left there is my bed next to the window.",
-                                                                  "es": "Apertura de Room Tour"
+                                                                  "en": "Welcome to my bedroom! On the left, there is my bed next to the window.",
+                                                                  "es": "¡Bienvenidos a mi habitación! A la izquierda hay una cama al lado de la ventana."
                                                             },
                                                             {
-                                                                  "en": "And right here on my desk is where I study and game.",
-                                                                  "es": "Destacar un rincón"
+                                                                  "en": "And right here on my desk is where I study and play video games.",
+                                                                  "es": "Y justo aquí en mi escritorio es donde estudio y juego videojuegos."
                                                             }
                                                       ],
                                                       "keyTip": "Usa 'On the left / On the right' para dar orden visual a tu descripción."
@@ -7159,7 +7159,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Fórmula de causa y efecto para explicar cómo el clima define tus planes del día.",
                                                       "examples": [
                                                             {
-                                                                  "en": "When it is sunny, we ride our bikes along the ciclovía.",
+                                                                  "en": "When it is sunny, we ride our bikes along the bike path.",
                                                                   "es": "Cuando hace sol, montamos bici por la ciclovía."
                                                             },
                                                             {
@@ -7191,16 +7191,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Los adjetivos principales para describir el cielo y la atmósfera.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Sunny: día con sol brillante y cielo despejado.",
-                                                                  "es": "Condición climática"
+                                                                  "en": "It is sunny today, and the sky is completely clear.",
+                                                                  "es": "Hoy está soleado y el cielo está completamente despejado."
                                                             },
                                                             {
-                                                                  "en": "Stormy: tormentoso con truenos y lluvia fuerte.",
-                                                                  "es": "Condición climática"
+                                                                  "en": "We stay inside when the weather gets dark and stormy.",
+                                                                  "es": "Nos quedamos adentro cuando el clima se pone oscuro y tormentoso."
                                                             },
                                                             {
-                                                                  "en": "Foggy: con niebla espesa que reduce la visibilidad.",
-                                                                  "es": "Condición climática"
+                                                                  "en": "The mountain road is very foggy early in the morning.",
+                                                                  "es": "La carretera de la montaña tiene mucha niebla temprano en la mañana."
                                                             }
                                                       ],
                                                       "keyTip": "Agrega '-y' al sustantivo: sun ➔ sunny, rain ➔ rainy, wind ➔ windy, cloud ➔ cloudy."
@@ -7213,16 +7213,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Desde el frío extremo hasta el calor intenso de verano.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Freezing: hace un frío que congela (bajo cero).",
-                                                                  "es": "Nivel de temperatura"
+                                                                  "en": "Wear a thick coat because it is freezing outside tonight!",
+                                                                  "es": "¡Usa un abrigo grueso porque afuera está haciendo un frío helado esta noche!"
                                                             },
                                                             {
-                                                                  "en": "Cool: clima fresco y agradable de suéter ligero.",
-                                                                  "es": "Nivel de temperatura"
+                                                                  "en": "The afternoon is cool and pleasant for a walk in the park.",
+                                                                  "es": "La tarde está fresca y agradable para dar un paseo por el parque."
                                                             },
                                                             {
-                                                                  "en": "Warm: agradable y templado, ideal para camiseta.",
-                                                                  "es": "Nivel de temperatura"
+                                                                  "en": "The water at the beach is warm and perfect for swimming.",
+                                                                  "es": "El agua de la playa está tibia y perfecta para nadar."
                                                             }
                                                       ],
                                                       "keyTip": "'Cool' significa fresco agradable, mientras que 'cold' ya da frío de verdad."
@@ -7235,16 +7235,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Lo que empacas en tu maleta según el pronóstico del día.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Umbrella: sombrilla para no mojarte en el aguacero.",
-                                                                  "es": "Indumentaria climática"
+                                                                  "en": "Always carry a small umbrella in your backpack during the rainy season.",
+                                                                  "es": "Lleva siempre una sombrilla pequeña en tu maleta durante la temporada de lluvias."
                                                             },
                                                             {
-                                                                  "en": "Waterproof jacket: chaqueta impermeable que repele el agua.",
-                                                                  "es": "Indumentaria climática"
+                                                                  "en": "I wear my waterproof jacket when I ride my bike in the rain.",
+                                                                  "es": "Uso mi chaqueta impermeable cuando monto en bicicleta bajo la lluvia."
                                                             },
                                                             {
-                                                                  "en": "Sunglasses: gafas de sol para días luminosos.",
-                                                                  "es": "Indumentaria climática"
+                                                                  "en": "Don't forget your sunglasses and sunscreen on a bright sunny day.",
+                                                                  "es": "No olvides tus gafas de sol y el bloqueador solar en un día brillante y soleado."
                                                             }
                                                       ],
                                                       "keyTip": "'Waterproof' significa 100% impermeable al agua."
@@ -7257,16 +7257,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Elementos naturales que vemos y escuchamos durante cambios de clima.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Thunder: el sonido estruendoso en el cielo.",
-                                                                  "es": "Fenómeno natural"
+                                                                  "en": "We heard loud thunder in the sky right before the heavy rain.",
+                                                                  "es": "Escuchamos un trueno fuerte en el cielo justo antes del aguacero."
                                                             },
                                                             {
-                                                                  "en": "Lightning: el destello eléctrico de luz.",
-                                                                  "es": "Fenómeno natural"
+                                                                  "en": "A bright flash of lightning lit up the dark clouds at night.",
+                                                                  "es": "Un destello brillante de relámpago iluminó las nubes oscuras en la noche."
                                                             },
                                                             {
-                                                                  "en": "Forecast: el pronóstico del tiempo en la app o TV.",
-                                                                  "es": "Fenómeno natural"
+                                                                  "en": "I always check the weather forecast on my phone before leaving home.",
+                                                                  "es": "Siempre reviso el pronóstico del tiempo en mi celular antes de salir de casa."
                                                             }
                                                       ],
                                                       "keyTip": "Lightning se ve primero, thunder se escucha después."
@@ -7279,8 +7279,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Estructura profesional para dar el pronóstico del día como un reportero.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Expect a sunny morning with rain showers in the late afternoon.",
-                                                                  "es": "Reporte con cambio previsto"
+                                                                  "en": "Good morning! Expect a sunny morning with rain showers in the late afternoon.",
+                                                                  "es": "¡Buenos días! Se espera una mañana soleada con lluvias al final de la tarde."
+                                                            },
+                                                            {
+                                                                  "en": "Today the weather will be cool and windy with a slight chance of rain.",
+                                                                  "es": "Hoy el clima estará fresco y ventoso con una ligera probabilidad de lluvia."
                                                             }
                                                       ],
                                                       "keyTip": "'A chance of rain' = probabilidad de lluvia."
@@ -8226,12 +8230,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Tú ERES alto (You are tall), pero tú TIENES cabello rizado (You have curly hair). Nunca digas 'I am black eyes' ni 'I have tall'.",
                                                       "examples": [
                                                             {
-                                                                  "en": "He is tall and athletic. (Él es alto y atlético)",
-                                                                  "es": "Estatura / Complexión con BE"
+                                                                  "en": "He is tall and athletic, and he plays on the school basketball team.",
+                                                                  "es": "Él es alto y atlético, y juega en el equipo de básquet del colegio."
                                                             },
                                                             {
-                                                                  "en": "He has short black hair. (Él tiene cabello negro corto)",
-                                                                  "es": "Cabello / Rasgos con HAS"
+                                                                  "en": "He has short black hair and dark brown eyes.",
+                                                                  "es": "Él tiene el cabello corto y negro y los ojos café oscuro."
                                                             }
                                                       ],
                                                       "keyTip": "Usa HAS para He, She, It; usa HAVE para I, You, We, They."
@@ -8298,8 +8302,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "La pregunta estándar en inglés para pedir una descripción física completa.",
                                                       "examples": [
                                                             {
-                                                                  "en": "What does your best friend look like? - He is tall and has curly hair.",
-                                                                  "es": "Pregunta y respuesta completa"
+                                                                  "en": "What does your best friend look like? He is tall and has curly hair.",
+                                                                  "es": "¿Cómo es físicamente tu mejor amigo? Él es alto y tiene el cabello rizado."
+                                                            },
+                                                            {
+                                                                  "en": "What does your sister look like? She is slim and has long wavy brown hair.",
+                                                                  "es": "¿Cómo es físicamente tu hermana? Ella es delgada y tiene el cabello largo, ondulado y castaño."
                                                             }
                                                       ],
                                                       "keyTip": "'What does he look like?' = apariencia física. 'What is he like?' = personalidad."
@@ -8326,16 +8334,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Formas respetuosas y precisas para describir la contextura física.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Tall: persona de estatura alta.",
-                                                                  "es": "Estatura"
+                                                                  "en": "My older cousin is very tall, so he reaches the top shelf easily.",
+                                                                  "es": "Mi primo mayor es muy alto, así que alcanza el estante más alto fácilmente."
                                                             },
                                                             {
-                                                                  "en": "Athletic: contextura deportiva y enérgica.",
-                                                                  "es": "Contextura"
+                                                                  "en": "Sofia is athletic because she practices swimming and tennis every week.",
+                                                                  "es": "Sofía es atlética porque practica natación y tenis todas las semanas."
                                                             },
                                                             {
-                                                                  "en": "Slim: contextura delgada.",
-                                                                  "es": "Contextura"
+                                                                  "en": "The new student is slim and medium-height with a great sense of style.",
+                                                                  "es": "El estudiante nuevo es delgado y de estatura media con un gran sentido del estilo."
                                                             }
                                                       ],
                                                       "keyTip": "Prefiere 'athletic' o 'slim' para sonar siempre cortés y positivo."
@@ -8348,16 +8356,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Los cuatro tipos principales de textura de cabello.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Curly hair: cabello rizado con ondas bien definidas.",
-                                                                  "es": "Textura de cabello"
+                                                                  "en": "My brother has short curly hair that bounces when he runs.",
+                                                                  "es": "Mi hermano tiene el cabello corto y rizado que rebota cuando corre."
                                                             },
                                                             {
-                                                                  "en": "Wavy hair: cabello con ondas suaves playeras.",
-                                                                  "es": "Textura de cabello"
+                                                                  "en": "She has long wavy hair that looks great in the summer breeze.",
+                                                                  "es": "Ella tiene el cabello largo y ondulado que se ve genial con la brisa de verano."
                                                             },
                                                             {
-                                                                  "en": "Straight hair: cabello liso sin curvas.",
-                                                                  "es": "Textura de cabello"
+                                                                  "en": "Camila has straight black hair and wears a colorful headband.",
+                                                                  "es": "Camila tiene el cabello liso y negro y usa una diadema colorida."
                                                             }
                                                       ],
                                                       "keyTip": "En Colombia le decimos 'crespo' a curly hair."
@@ -8370,16 +8378,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Tonalidades comunes para describir ojos y peinados.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Dark brown eyes: ojos café oscuro muy comunes.",
-                                                                  "es": "Color de ojos"
+                                                                  "en": "Most people in my family have warm dark brown eyes.",
+                                                                  "es": "La mayoría de las personas de mi familia tienen ojos café oscuro cálidos."
                                                             },
                                                             {
-                                                                  "en": "Blonde hair: cabello rubio.",
-                                                                  "es": "Color de cabello"
+                                                                  "en": "Our exchange student from Sweden has bright blonde hair and blue eyes.",
+                                                                  "es": "Nuestro estudiante de intercambio de Suecia tiene el cabello rubio brillante y ojos azules."
                                                             },
                                                             {
-                                                                  "en": "Dyed hair: cabello tinturado de colores modernos (azul, rosa).",
-                                                                  "es": "Color de cabello"
+                                                                  "en": "The lead singer of the band has cool blue dyed hair.",
+                                                                  "es": "La cantante principal de la banda tiene el cabello tinturado de azul genial."
                                                             }
                                                       ],
                                                       "keyTip": "Para cabello café decimos 'brown hair', nunca 'coffee hair'."
@@ -8392,16 +8400,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Detalles especiales que hacen única la apariencia de una persona.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Freckles: pecas en las mejillas o nariz.",
-                                                                  "es": "Rasgos especiales"
+                                                                  "en": "My little sister gets cute freckles on her nose every summer.",
+                                                                  "es": "A mi hermanita le salen pecas tiernas en la nariz todos los veranos."
                                                             },
                                                             {
-                                                                  "en": "Braces: brackets dentales para alinear los dientes.",
-                                                                  "es": "Rasgos especiales"
+                                                                  "en": "Lucas has metallic braces on his teeth and a very friendly smile.",
+                                                                  "es": "Lucas tiene brackets metálicos en los dientes y una sonrisa muy amigable."
                                                             },
                                                             {
-                                                                  "en": "Friendly smile: sonrisa amigable y contagiosa.",
-                                                                  "es": "Rasgos especiales"
+                                                                  "en": "Our art teacher wears round glasses and has a short neat beard.",
+                                                                  "es": "Nuestro profesor de arte usa gafas redondas y tiene una barba corta y cuidada."
                                                             }
                                                       ],
                                                       "keyTip": "Braces siempre es plural en inglés: 'She has braces'."
@@ -8415,7 +8423,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "examples": [
                                                             {
                                                                   "en": "Mateo is tall and athletic. He has short curly black hair and brown eyes.",
-                                                                  "es": "Perfil físico completo y natural"
+                                                                  "es": "Mateo es alto y atlético. Tiene el cabello corto, rizado y negro, y ojos cafés."
+                                                            },
+                                                            {
+                                                                  "en": "Valeria is medium-height and slim. She has long straight hair and wears glasses.",
+                                                                  "es": "Valeria es de estatura media y delgada. Tiene el cabello largo y liso y usa gafas."
                                                             }
                                                       ],
                                                       "keyTip": "Conecta con 'and' para que la frase fluya sin pausas cortadas."
@@ -14307,16 +14319,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Las preposiciones estáticas (in, on, at) indican DÓNDE está un objeto sin moverse. Las preposiciones de movimiento indican la DIRECCIÓN del desplazamiento.",
                                                       "examples": [
                                                             {
-                                                                  "en": "I am in the subway station. (Estoy adentro quieto)",
-                                                                  "es": "Posición estática (In)"
+                                                                  "en": "I am waiting in the subway station right now.",
+                                                                  "es": "Estoy esperando dentro de la estación del metro ahora mismo."
                                                             },
                                                             {
-                                                                  "en": "I walk into the subway station. (Entro a la estación)",
-                                                                  "es": "Movimiento de afuera hacia adentro (Into)"
+                                                                  "en": "I walk into the subway station every morning at seven.",
+                                                                  "es": "Entro caminando a la estación del metro todas las mañanas a las siete."
                                                             },
                                                             {
-                                                                  "en": "She walks out of the station. (Ella sale de la estación)",
-                                                                  "es": "Movimiento de adentro hacia afuera (Out of)"
+                                                                  "en": "She walks out of the station and crosses the main avenue.",
+                                                                  "es": "Ella sale caminando de la estación y cruza la avenida principal."
                                                             }
                                                       ],
                                                       "keyTip": "Usa INTO cuando cruzas una puerta o entras a un edificio o vehículo."
@@ -14329,16 +14341,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "THROUGH se usa cuando estás rodeado por el espacio (un parque arbolado, un túnel, una puerta, una multitud). ACROSS se usa cuando cruzas de un extremo al otro sobre una superficie (la calle, un puente, el río, una cancha).",
                                                       "examples": [
                                                             {
-                                                                  "en": "We walk through the central park with Mateo. (Cruzamos por en medio del parque)",
-                                                                  "es": "Rodeados de árboles y caminos (Through)"
+                                                                  "en": "We walk through the central park under the green trees.",
+                                                                  "es": "Caminamos a través del parque central bajo los árboles verdes."
                                                             },
                                                             {
-                                                                  "en": "We skate across the broad avenue. (Cruzamos la avenida de un lado al otro)",
-                                                                  "es": "Superficie de un lado al otro (Across)"
+                                                                  "en": "We skate across the wide avenue at the zebra crossing.",
+                                                                  "es": "Patinamos al otro lado de la avenida ancha por el paso de cebra."
                                                             },
                                                             {
-                                                                  "en": "The bus drives through a long tunnel. (El bus pasa por el túnel)",
-                                                                  "es": "Espacio cerrado tridimensional (Through)"
+                                                                  "en": "The express train drives through a long underground tunnel.",
+                                                                  "es": "El tren expreso avanza a través de un largo túnel subterráneo."
                                                             }
                                                       ],
                                                       "keyTip": "Si hay cosas a los lados y arriba tuyo, es THROUGH. Si vas de una acera a la otra, es ACROSS."
@@ -14351,16 +14363,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "ALONG significa seguir la línea de una calle, río, muro o ciclorruta sin desviarse. PAST significa pasar por el frente de un lugar o punto de referencia sin detenerse.",
                                                       "examples": [
                                                             {
-                                                                  "en": "I ride my scooter along the bike path. (Voy a lo largo de la ciclorruta)",
-                                                                  "es": "Siguiendo el trayecto continuo (Along)"
+                                                                  "en": "I ride my electric scooter along the bike path every afternoon.",
+                                                                  "es": "Monto mi patineta eléctrica a lo largo de la ciclorruta todas las tardes."
                                                             },
                                                             {
-                                                                  "en": "Walk past the coffee shop and turn right. (Pasa por delante de la cafetería)",
-                                                                  "es": "Punto de referencia que dejas atrás (Past)"
+                                                                  "en": "Walk past the corner coffee shop and turn right at the bank.",
+                                                                  "es": "Pasa por delante de la cafetería de la esquina y gira a la derecha en el banco."
                                                             },
                                                             {
-                                                                  "en": "They run along the beach every Sunday. (Corren a lo largo de la playa)",
-                                                                  "es": "Línea continua (Along)"
+                                                                  "en": "They run along the sandy beach every Sunday morning.",
+                                                                  "es": "Ellos corren a lo largo de la playa de arena todos los domingos por la mañana."
                                                             }
                                                       ],
                                                       "keyTip": "En indicaciones de Google Maps: 'Go along 7th avenue' = sigue por la 7ma; 'Go past the bank' = pasa el banco."
@@ -14373,16 +14385,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "TOWARDS indica en qué dirección te estás moviendo ('rumbo a'), mientras que TO indica que llegas a ese lugar como tu destino final.",
                                                       "examples": [
                                                             {
-                                                                  "en": "She is walking towards the stadium. (Camina en dirección al estadio)",
-                                                                  "es": "Indica dirección del rumbo (Towards)"
+                                                                  "en": "She is walking towards the stadium because the concert starts soon.",
+                                                                  "es": "Ella va caminando en dirección al estadio porque el concierto empieza pronto."
                                                             },
                                                             {
-                                                                  "en": "She is walking to the stadium. (Va para el estadio a entrar)",
-                                                                  "es": "Indica destino final (To)"
+                                                                  "en": "We are going to the stadium to watch the championship final.",
+                                                                  "es": "Vamos hasta el estadio para ver la final del campeonato."
                                                             },
                                                             {
-                                                                  "en": "The dark clouds are moving towards the mountains.",
-                                                                  "es": "Movimiento en esa dirección (Towards)"
+                                                                  "en": "The dark storm clouds are moving quickly towards the mountains.",
+                                                                  "es": "Las nubes oscuras de tormenta se están moviendo rápido hacia las montañas."
                                                             }
                                                       ],
                                                       "keyTip": "Towards describe la orientación de la brújula o la mirada mientras avanzas."
@@ -14395,16 +14407,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Combina verbos de acción (walk, skate, ride, drive, sprint, run) con las preposiciones de movimiento para dar indicaciones precisas y naturales.",
                                                       "examples": [
                                                             {
-                                                                  "en": "We ride our scooters along the avenue.",
-                                                                  "es": "Afirmativo (+): Sujeto + ride + along + lugar"
+                                                                  "en": "We ride our scooters along the avenue every Saturday.",
+                                                                  "es": "Montamos nuestras patinetas a lo largo de la avenida todos los sábados."
                                                             },
                                                             {
-                                                                  "en": "Don't walk into dark alleys at night.",
-                                                                  "es": "Imperativo Negativo (−): Don't walk into + lugar"
+                                                                  "en": "Don't walk into dark alleys alone late at night.",
+                                                                  "es": "No entres caminando en callejones oscuros a solas tarde en la noche."
                                                             },
                                                             {
-                                                                  "en": "Do we walk through the park or along the street?",
-                                                                  "es": "Pregunta (?): Do we + verbo + preposición...?"
+                                                                  "en": "Do we walk through the park or along the main street?",
+                                                                  "es": "¿Caminamos a través del parque o a lo largo de la calle principal?"
                                                             }
                                                       ],
                                                       "keyTip": "Aprende estas frases en bloques: 'along the path', 'through the park', 'across the bridge'."
@@ -14431,16 +14443,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Los vehículos urbanos más usados por los jóvenes para moverse por la ciudad.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Electric scooter: patineta eléctrica para trayectos rápidos.",
-                                                                  "es": "Vocabulario de transporte"
+                                                                  "en": "Riding an electric scooter is a fast way to travel short distances.",
+                                                                  "es": "Montar en patineta eléctrica es una forma rápida de recorrer distancias cortas."
                                                             },
                                                             {
-                                                                  "en": "Bicycle / Bike: bicicleta para la ciclorruta o ciclovía.",
-                                                                  "es": "Vocabulario de transporte"
+                                                                  "en": "We ride our bicycles along the city bike path on Sunday mornings.",
+                                                                  "es": "Montamos nuestras bicicletas por la ciclovía de la ciudad los domingos por la mañana."
                                                             },
                                                             {
-                                                                  "en": "Feeder bus: bus alimentador que conecta con el metro o troncal.",
-                                                                  "es": "Vocabulario de transporte"
+                                                                  "en": "I take the green feeder bus from my neighborhood to the main station.",
+                                                                  "es": "Tomo el bus alimentador verde desde mi barrio hasta la estación principal."
                                                             }
                                                       ],
                                                       "keyTip": "Decimos 'on foot' para ir a pie, pero 'by bike / by bus / by train' para vehículos."
@@ -14453,16 +14465,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Puntos clave de la ciudad que sirven para dar direcciones y encontrarse con amigos.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Pedestrian bridge: puente peatonal para cruzar avenidas seguras.",
-                                                                  "es": "Puntos de referencia"
+                                                                  "en": "Always use the pedestrian bridge to cross the busy highway safely.",
+                                                                  "es": "Usa siempre el puente peatonal para cruzar la autopista transitada con seguridad."
                                                             },
                                                             {
-                                                                  "en": "Crosswalk / Zebra crossing: paso de cebra peatonal pintado.",
-                                                                  "es": "Puntos de referencia"
+                                                                  "en": "Wait for the green light before walking across the zebra crossing.",
+                                                                  "es": "Espera el semáforo en verde antes de cruzar por el paso de cebra."
                                                             },
                                                             {
-                                                                  "en": "Town square / Plaza: plaza central concurrida de la ciudad.",
-                                                                  "es": "Puntos de referencia"
+                                                                  "en": "My friends and I meet at the town square on Friday afternoons.",
+                                                                  "es": "Mis amigos y yo nos encontramos en la plaza central los viernes por la tarde."
                                                             }
                                                       ],
                                                       "keyTip": "Usa puntos de referencia conocidos: 'past the bookstore', 'across from the mall'."
@@ -14475,16 +14487,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Verbos de movimiento que se combinan con preposiciones para trazar rutas completas.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Ride: montar en bici, patineta o moto.",
-                                                                  "es": "Verbos dinámicos"
+                                                                  "en": "Many teenagers ride skateboards and bikes at the urban park.",
+                                                                  "es": "Muchos adolescentes montan patineta y bicicleta en el parque urbano."
                                                             },
                                                             {
-                                                                  "en": "Head towards: dirigirse o avanzar rumbo a un punto.",
-                                                                  "es": "Verbos dinámicos"
+                                                                  "en": "After school, we head towards the shopping mall to eat ice cream.",
+                                                                  "es": "Después del colegio, nos dirigimos hacia el centro comercial a comer helado."
                                                             },
                                                             {
-                                                                  "en": "Cross: cruzar una calle, plaza o frontera de lado a lado.",
-                                                                  "es": "Verbos dinámicos"
+                                                                  "en": "Look both ways before you cross the street on your bicycle.",
+                                                                  "es": "Mira a ambos lados antes de cruzar la calle en tu bicicleta."
                                                             }
                                                       ],
                                                       "keyTip": "'Head' como verbo significa enfilar o poner rumbo hacia un lugar."
@@ -14497,16 +14509,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Frases hechas para hablar de cómo te mueves en las horas pico y evitas trancones.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Take a shortcut: tomar un atajo rápido por una calle interna.",
-                                                                  "es": "Expresión cotidiana"
+                                                                  "en": "Let's take a shortcut through the park so we arrive on time.",
+                                                                  "es": "Tomemos un atajo a través del parque para llegar a tiempo."
                                                             },
                                                             {
-                                                                  "en": "Beat the traffic: salir temprano para evitar el trancón de la hora pico.",
-                                                                  "es": "Expresión cotidiana"
+                                                                  "en": "My dad leaves home at six in the morning to beat the traffic.",
+                                                                  "es": "Mi papá sale de casa a las seis de la mañana para evitar el tráfico pesado."
                                                             },
                                                             {
-                                                                  "en": "Catch the bus: alcanzar a tomar el bus antes de que arranque.",
-                                                                  "es": "Expresión cotidiana"
+                                                                  "en": "We need to walk faster if we want to catch the school bus.",
+                                                                  "es": "Necesitamos caminar más rápido si queremos alcanzar el bus escolar."
                                                             }
                                                       ],
                                                       "keyTip": "Decimos 'miss the bus' cuando se te va el bus, y 'catch the bus' cuando lo alcanzas."
@@ -14520,11 +14532,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "examples": [
                                                             {
                                                                   "en": "Go out of the station, skate along the bike path, and walk across the bridge.",
-                                                                  "es": "Instrucción de 3 pasos conectada con fluidez"
+                                                                  "es": "Sal de la estación, patina a lo largo de la ciclorruta y cruza el puente caminando."
                                                             },
                                                             {
-                                                                  "en": "Head towards the library, but do not walk into the building.",
-                                                                  "es": "Instrucción con advertencia preventiva"
+                                                                  "en": "Head towards the public library, but do not walk into the building.",
+                                                                  "es": "Dirígete hacia la biblioteca pública, pero no entres al edificio."
                                                             }
                                                       ],
                                                       "keyTip": "Conecta tus pasos usando 'First...', 'Then...', 'After that...', y 'Finally...'."
@@ -22262,16 +22274,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Los 8 adjetivos más usados para evaluar cualquier dispositivo.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Light / Lighter: peso pluma fácil de llevar en la maleta.",
-                                                                  "es": "Adjetivo técnico"
+                                                                  "en": "This new tablet is super light, in fact it is lighter than my notebook.",
+                                                                  "es": "Esta nueva tablet es súper ligera; de hecho, es más liviana que mi cuaderno."
                                                             },
                                                             {
-                                                                  "en": "Durable / More durable: resistente a caídas y golpes.",
-                                                                  "es": "Adjetivo técnico"
+                                                                  "en": "A rugged protective case makes your phone more durable against drops.",
+                                                                  "es": "Una funda protectora resistente hace que tu celular sea más duradero ante las caídas."
                                                             },
                                                             {
-                                                                  "en": "Powerful / More powerful: procesador con alto rendimiento.",
-                                                                  "es": "Adjetivo técnico"
+                                                                  "en": "A desktop computer has a more powerful processor than a standard tablet.",
+                                                                  "es": "Un computador de escritorio tiene un procesador más potente que una tablet estándar."
                                                             }
                                                       ],
                                                       "keyTip": "Durable se compara con MORE: 'more durable than'."
@@ -22284,16 +22296,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Los componentes que comparan los reviewers de tecnología.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Battery life: duración de la batería durante el día.",
-                                                                  "es": "Especificación técnica"
+                                                                  "en": "This phone has amazing battery life that lasts almost two full days.",
+                                                                  "es": "Este teléfono tiene una duración de batería increíble que alcanza casi dos días enteros."
                                                             },
                                                             {
-                                                                  "en": "Refresh rate: tasa de refresco (60Hz vs 120Hz) para fluidez.",
-                                                                  "es": "Especificación técnica"
+                                                                  "en": "A 120Hz refresh rate makes mobile games look much smoother.",
+                                                                  "es": "Una tasa de refresco de 120Hz hace que los juegos móviles se vean mucho más fluidos."
                                                             },
                                                             {
-                                                                  "en": "Storage capacity: memoria interna en gigabytes (GB).",
-                                                                  "es": "Especificación técnica"
+                                                                  "en": "I need more storage capacity on my phone to record 4K videos.",
+                                                                  "es": "Necesito más capacidad de almacenamiento en mi celular para grabar videos en 4K."
                                                             }
                                                       ],
                                                       "keyTip": "Decimos 'longer battery life' para una batería que dura más horas."
@@ -22306,16 +22318,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Accesorios para armar tu setup de estudio y videojuegos.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Mechanical keyboard: teclado mecánico con respuesta táctil rápida.",
-                                                                  "es": "Periférico"
+                                                                  "en": "A mechanical keyboard gives you faster response times when typing or gaming.",
+                                                                  "es": "Un teclado mecánico te da tiempos de respuesta más rápidos al escribir o jugar."
                                                             },
                                                             {
-                                                                  "en": "Wireless earbuds: audífonos inalámbricos de botón para el celular.",
-                                                                  "es": "Periférico"
+                                                                  "en": "I always carry my wireless earbuds in my pocket to listen to music.",
+                                                                  "es": "Siempre llevo mis audífonos inalámbricos en el bolsillo para escuchar música."
                                                             },
                                                             {
-                                                                  "en": "Smartwatch: reloj inteligente que monitorea pasos y notificaciones.",
-                                                                  "es": "Periférico"
+                                                                  "en": "My smartwatch tracks my daily steps and shows incoming messages.",
+                                                                  "es": "Mi reloj inteligente registra mis pasos diarios y muestra los mensajes entrantes."
                                                             }
                                                       ],
                                                       "keyTip": "Wireless significa sin cables (inalámbrico)."
@@ -22328,16 +22340,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Frases que usan los creadores de contenido de tecnología en YouTube y TikTok.",
                                                       "examples": [
                                                             {
-                                                                  "en": "It is great value for money: excelente relación calidad-precio.",
-                                                                  "es": "Veredicto"
+                                                                  "en": "This mid-range phone is great value for money for students.",
+                                                                  "es": "Este teléfono de gama media tiene una excelente relación calidad-precio para estudiantes."
                                                             },
                                                             {
-                                                                  "en": "It beats the competition: supera a todos sus rivales directos.",
-                                                                  "es": "Veredicto"
+                                                                  "en": "With its fast chip and bright screen, this model beats the competition.",
+                                                                  "es": "Con su chip veloz y pantalla brillante, este modelo supera a la competencia."
                                                             },
                                                             {
-                                                                  "en": "It is totally worth it: vale totalmente la pena comprarlo.",
-                                                                  "es": "Veredicto"
+                                                                  "en": "Upgrading to a solid-state drive is totally worth it for speed.",
+                                                                  "es": "Actualizar a un disco de estado sólido vale totalmente la pena por la velocidad."
                                                             }
                                                       ],
                                                       "keyTip": "'Worth it' significa que vale la pena la inversión."
@@ -22350,8 +22362,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "La fórmula definitiva para contrastar pros y contras de forma balanceada.",
                                                       "examples": [
                                                             {
-                                                                  "en": "The console is cheaper than a PC, but a PC is more versatile for editing.",
-                                                                  "es": "Contraste equilibrado"
+                                                                  "en": "A console is cheaper than a gaming PC, but a PC is more versatile for editing.",
+                                                                  "es": "Una consola es más económica que un PC gamer, pero un PC es más versátil para editar."
+                                                            },
+                                                            {
+                                                                  "en": "Wireless headphones are more convenient than wired ones, but wired ones have zero latency.",
+                                                                  "es": "Los audífonos inalámbricos son más prácticos que los de cable, pero los de cable tienen cero latencia."
                                                             }
                                                       ],
                                                       "keyTip": "Usa 'but' o 'however' para conectar ventajas y desventajas."
@@ -22792,12 +22808,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Para adjetivos de 1 sílaba (o 2 terminadas en -Y), coloca siempre 'THE' al inicio y agrega '-EST' al final. Reglas ortográficas: big ➔ the biggest (CVC duplica), heavy ➔ the heaviest (la Y cambia por I).",
                                                       "examples": [
                                                             {
-                                                                  "en": "Usain Bolt is the fastest runner in history.",
-                                                                  "es": "El corredor más rápido de la historia."
+                                                                  "en": "Usain Bolt is the fastest sprinter in Olympic history.",
+                                                                  "es": "Usain Bolt es el velocista más rápido en la historia olímpica."
                                                             },
                                                             {
                                                                   "en": "Mount Everest is the highest mountain on Earth.",
-                                                                  "es": "La montaña más alta sobre la Tierra."
+                                                                  "es": "El monte Everest es la montaña más alta sobre la Tierra."
                                                             }
                                                       ],
                                                       "keyTip": "¡Nunca olvides 'THE'! Decir 'Bolt is fastest' es incorrecto. Debe ser 'the fastest'."
@@ -22811,11 +22827,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "examples": [
                                                             {
                                                                   "en": "Formula 1 is one of the most expensive sports in the world.",
-                                                                  "es": "Uno de los deportes más costosos."
+                                                                  "es": "La Fórmula 1 es uno de los deportes más costosos del mundo."
                                                             },
                                                             {
-                                                                  "en": "The blue whale is the most impressive creature in the sea.",
-                                                                  "es": "La criatura más impresionante del mar."
+                                                                  "en": "The blue whale is the most impressive creature in the ocean.",
+                                                                  "es": "La ballena azul es la criatura más impresionante del océano."
                                                             }
                                                       ],
                                                       "keyTip": "¡Prohibido mezclar! Decir 'the most expensivest' no existe en inglés."
@@ -22828,12 +22844,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Estos tres adjetivos cambian completamente de raíz en el superlativo.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Messi and Ronaldo are among the best players of all time.",
-                                                                  "es": "Entre los mejores jugadores de todos los tiempos."
+                                                                  "en": "Messi and Ronaldo are among the best soccer players of all time.",
+                                                                  "es": "Messi y Ronaldo están entre los mejores futbolistas de todos los tiempos."
                                                             },
                                                             {
-                                                                  "en": "Getting a game crash at the final level is the worst feeling!",
-                                                                  "es": "¡Es el peor sentimiento posible!"
+                                                                  "en": "Getting a game crash at the final boss is the worst feeling!",
+                                                                  "es": "¡Que el juego se cierre en el jefe final es la peor sensación!"
                                                             }
                                                       ],
                                                       "keyTip": "Decir 'the goodest' o 'the most bad' es un error común. Usa siempre THE BEST y THE WORST."
@@ -22846,12 +22862,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Usa IN para lugares geográficos y grupos cerrados (in the world, in the city, in my school). Usa OF para tiempos o colecciones (of all time, of the year, of all the athletes).",
                                                       "examples": [
                                                             {
-                                                                  "en": "The deepest trench in the ocean.",
-                                                                  "es": "En el océano (Lugar ➔ IN)"
+                                                                  "en": "The Mariana Trench is the deepest point in the Pacific Ocean.",
+                                                                  "es": "La Fosa de las Marianas es el punto más profundo en el océano Pacífico."
                                                             },
                                                             {
-                                                                  "en": "The greatest concert of the year.",
-                                                                  "es": "Del año (Tiempo ➔ OF)"
+                                                                  "en": "That music festival was the greatest concert of the entire year.",
+                                                                  "es": "Ese festival de música fue el mejor concierto de todo el año."
                                                             }
                                                       ],
                                                       "keyTip": "Regla mnemotécnica: 'in the world' pero 'of all time'."
@@ -22864,12 +22880,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Estructura universal para proclamar cualquier récord o hazaña histórica.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Burj Khalifa is the tallest building on Earth.",
-                                                                  "es": "El edificio más alto sobre la Tierra."
+                                                                  "en": "The Burj Khalifa is the tallest building on Earth.",
+                                                                  "es": "El Burj Khalifa es el edificio más alto sobre la Tierra."
                                                             },
                                                             {
-                                                                  "en": "Gaming is the most popular hobby among teenagers today.",
-                                                                  "es": "El pasatiempo más popular entre jóvenes hoy."
+                                                                  "en": "Gaming is the most popular digital hobby among teenagers today.",
+                                                                  "es": "Los videojuegos son el pasatiempo digital más popular entre los adolescentes hoy en día."
                                                             }
                                                       ],
                                                       "keyTip": "Agrega 'one of the...' cuando hay un grupo de élite: 'one of the fastest cars'."
@@ -22896,16 +22912,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Los superlativos que definen las fronteras de la física y la naturaleza.",
                                                       "examples": [
                                                             {
-                                                                  "en": "The deepest trench: la fosa submarina más profunda.",
-                                                                  "es": "Extremo geográfico"
+                                                                  "en": "Submarines need special armor to explore the deepest trench in the ocean.",
+                                                                  "es": "Los submarinos necesitan blindaje especial para explorar la fosa más profunda del océano."
                                                             },
                                                             {
-                                                                  "en": "The hottest desert: el desierto más caliente.",
-                                                                  "es": "Extremo geográfico"
+                                                                  "en": "Very few plants can survive in the hottest desert on the planet.",
+                                                                  "es": "Muy pocas plantas pueden sobrevivir en el desierto más caluroso del planeta."
                                                             },
                                                             {
-                                                                  "en": "The oldest tree: el árbol vivo más antiguo.",
-                                                                  "es": "Extremo geográfico"
+                                                                  "en": "Scientists protect the oldest tree in the national forest.",
+                                                                  "es": "Los científicos protegen el árbol más antiguo del bosque nacional."
                                                             }
                                                       ],
                                                       "keyTip": "Todos llevan THE obligatorio al inicio."
@@ -22918,16 +22934,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Lugares del planeta donde se registran los fenómenos más impresionantes.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Mariana Trench: la fosa oceánica más profunda del planeta.",
-                                                                  "es": "Lugar extremo"
+                                                                  "en": "The Mariana Trench is deeper than Mount Everest is tall.",
+                                                                  "es": "La Fosa de las Marianas es más profunda de lo que el monte Everest es alto."
                                                             },
                                                             {
-                                                                  "en": "Mount Everest: la cumbre más elevada sobre el nivel del mar.",
-                                                                  "es": "Lugar extremo"
+                                                                  "en": "Climbing to the peak of Mount Everest takes months of preparation.",
+                                                                  "es": "Escalar hasta la cumbre del monte Everest toma meses de preparación."
                                                             },
                                                             {
-                                                                  "en": "Death Valley: el valle con las temperaturas de aire más altas.",
-                                                                  "es": "Lugar extremo"
+                                                                  "en": "Death Valley holds the record for the highest air temperature ever recorded.",
+                                                                  "es": "El Valle de la Muerte tiene el récord de la temperatura del aire más alta jamás registrada."
                                                             }
                                                       ],
                                                       "keyTip": "Trench significa fosa o zanja profunda bajo el agua."
@@ -22940,12 +22956,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Campos de competencia donde humanos y máquinas buscan la gloria.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Gaming speedrun: completar un juego en el menor tiempo récord.",
-                                                                  "es": "Categoría de récord"
+                                                                  "en": "He practiced for months to achieve the fastest gaming speedrun in the world.",
+                                                                  "es": "Él practicó durante meses para lograr el speedrun de videojuegos más rápido del mundo."
                                                             },
                                                             {
-                                                                  "en": "Sprint speed: velocidad de aceleración máxima en atletismo.",
-                                                                  "es": "Categoría de récord"
+                                                                  "en": "Top athletes train every day to improve their maximum sprint speed.",
+                                                                  "es": "Los atletas de élite entrenan todos los días para mejorar su velocidad máxima de carrera."
                                                             }
                                                       ],
                                                       "keyTip": "'Speedrun' es terminar un videojuego con el mejor tiempo."
@@ -22958,16 +22974,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Cómo leer números y medidas récord en inglés nativo.",
                                                       "examples": [
                                                             {
-                                                                  "en": "44 km/h = forty-four kilometers per hour.",
-                                                                  "es": "Lectura de velocidad"
+                                                                  "en": "The fastest human sprinter can reach speeds of forty-four kilometers per hour.",
+                                                                  "es": "El velocista humano más rápido puede alcanzar velocidades de cuarenta y cuatro kilómetros por hora."
                                                             },
                                                             {
-                                                                  "en": "11,000 meters = eleven thousand meters.",
-                                                                  "es": "Lectura de distancia"
+                                                                  "en": "The ocean floor at that point is almost eleven thousand meters deep.",
+                                                                  "es": "El fondo del océano en ese punto tiene casi once mil metros de profundidad."
                                                             },
                                                             {
-                                                                  "en": "56°C = fifty-six degrees Celsius.",
-                                                                  "es": "Lectura de temperatura"
+                                                                  "en": "The desert thermometer reached a blistering fifty-six degrees Celsius.",
+                                                                  "es": "El termómetro del desierto alcanzó unos abrasadores cincuenta y seis grados centígrados."
                                                             }
                                                       ],
                                                       "keyTip": "Degrees Celsius se pronuncia /dɪˈɡriːz ˈsɛlsiəs/."
@@ -22981,7 +22997,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "examples": [
                                                             {
                                                                   "en": "Did you know that Death Valley holds the record for the hottest day on Earth?",
-                                                                  "es": "Dato curioso con impacto"
+                                                                  "es": "¿Sabías que el Valle de la Muerte tiene el récord del día más caluroso en la Tierra?"
+                                                            },
+                                                            {
+                                                                  "en": "Did you know that the cheetah is the fastest land animal in the world?",
+                                                                  "es": "¿Sabías que el guepardo es el animal terrestre más rápido del mundo?"
                                                             }
                                                       ],
                                                       "keyTip": "'Hold the record' = tener u ostentar la marca récord."
@@ -23960,12 +23980,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Invierte el verbo To Be con el sujeto. Agrega palabras Wh- al inicio para preguntas informativas.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Are you going to travel next month? - Yes, I am!",
-                                                                  "es": "Pregunta Sí/No con inversión"
+                                                                  "en": "Are you going to travel with your family next month?",
+                                                                  "es": "¿Vas a viajar con tu familia el próximo mes?"
                                                             },
                                                             {
-                                                                  "en": "What are you going to do after English class?",
-                                                                  "es": "Pregunta informativa con What"
+                                                                  "en": "What are you going to do after English class today?",
+                                                                  "es": "¿Qué vas a hacer hoy después de la clase de inglés?"
                                                             }
                                                       ],
                                                       "keyTip": "'What are you going to do?' es la pregunta de planes más popular en inglés."
@@ -24024,12 +24044,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Proyectos emocionantes que los jóvenes planean para su tiempo libre.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Digital animation: creación de animaciones e ilustraciones en computador.",
-                                                                  "es": "Meta personal"
+                                                                  "en": "I am going to learn digital animation to create my own short films.",
+                                                                  "es": "Voy a aprender animación digital para crear mis propios cortometrajes."
                                                             },
                                                             {
-                                                                  "en": "Custom skate ramp: rampa de patineta artesanal en el patio.",
-                                                                  "es": "Proyecto creativo"
+                                                                  "en": "We are going to build a custom skate ramp in the backyard this summer.",
+                                                                  "es": "Vamos a construir una rampa de skate personalizada en el patio este verano."
                                                             }
                                                       ],
                                                       "keyTip": "'Enroll in' significa matricularse o inscribirse en una clase o taller."
@@ -24042,12 +24062,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Planes familiares y con amigos para los periodos de receso escolar.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Go camping: acampar en carpa en la naturaleza o montaña.",
-                                                                  "es": "Actividad de vacaciones"
+                                                                  "en": "My cousins and I are going to go camping in the mountains next weekend.",
+                                                                  "es": "Mis primos y yo vamos a ir a acampar a las montañas el próximo fin de semana."
                                                             },
                                                             {
-                                                                  "en": "Road trip: viaje por carretera en carro familiar.",
-                                                                  "es": "Actividad de vacaciones"
+                                                                  "en": "Our family is going to take a road trip along the coast in December.",
+                                                                  "es": "Nuestra familia va a hacer un viaje por carretera por la costa en diciembre."
                                                             }
                                                       ],
                                                       "keyTip": "Decimos 'pack bags' para empacar maletas."
@@ -24060,12 +24080,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Decisiones de compra que requieren planear con semanas de anticipación.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Save up: juntar dinero poco a poco para un objetivo grande.",
-                                                                  "es": "Plan financiero"
+                                                                  "en": "I am going to save up my money for three months to buy a new guitar.",
+                                                                  "es": "Voy a ahorrar mi dinero durante tres meses para comprar una guitarra nueva."
                                                             },
                                                             {
-                                                                  "en": "Pocket money: mesada que recibes semanal o mensualmente.",
-                                                                  "es": "Vocabulario económico"
+                                                                  "en": "He is going to use his pocket money to buy a wireless gaming mouse.",
+                                                                  "es": "Él va a usar el dinero de su mesada para comprar un mouse gamer inalámbrico."
                                                             }
                                                       ],
                                                       "keyTip": "'Save up for a new phone' = ahorrar para un nuevo celular."
@@ -24078,12 +24098,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Llamados de atención que anticipan una acción inminente.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Watch out! You are going to drop your phone on the asphalt.",
-                                                                  "es": "Advertencia inmediata"
+                                                                  "en": "Watch out! You are going to drop your phone on the pavement.",
+                                                                  "es": "¡Cuidado! Vas a dejar caer tu celular en el pavimento."
                                                             },
                                                             {
-                                                                  "en": "Look at the time! We are going to be late for school.",
-                                                                  "es": "Evidencia de retraso"
+                                                                  "en": "Look at the time! We are going to be late for our first class.",
+                                                                  "es": "¡Mira la hora! Vamos a llegar tarde a nuestra primera clase."
                                                             }
                                                       ],
                                                       "keyTip": "'Watch out!' es el aviso más enérgico para '¡Ojo / Cuidado!'."
@@ -24096,8 +24116,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "La secuencia para conversar fluidamente sobre el futuro con tus compañeros.",
                                                       "examples": [
                                                             {
-                                                                  "en": "What are your plans for Friday? - We are going to watch the anime marathon!",
-                                                                  "es": "Diálogo cotidiano"
+                                                                  "en": "What are your plans for Friday? We are going to watch an anime marathon!",
+                                                                  "es": "¿Cuáles son tus planes para el viernes? ¡Vamos a ver una maratón de anime!"
+                                                            },
+                                                            {
+                                                                  "en": "I am going to practice guitar this afternoon. Are you going to join the band?",
+                                                                  "es": "Voy a practicar guitarra esta tarde. ¿Te vas a unir a la banda?"
                                                             }
                                                       ],
                                                       "keyTip": "Siempre devuelve la pregunta: 'What about you?'."
@@ -24576,12 +24600,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Para interrogar sobre actividades en curso en el pasado.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Were you sleeping when I called you? - No, I wasn't.",
-                                                                  "es": "Pregunta Sí/No con Were"
+                                                                  "en": "Were you sleeping when I called your phone last night?",
+                                                                  "es": "¿Estabas durmiendo cuando llamé a tu celular anoche?"
                                                             },
                                                             {
-                                                                  "en": "What were you doing yesterday at 8:00 PM?",
-                                                                  "es": "Pregunta informativa de detective"
+                                                                  "en": "What were you doing yesterday at eight o'clock in the evening?",
+                                                                  "es": "¿Qué estabas haciendo ayer a las ocho de la noche?"
                                                             }
                                                       ],
                                                       "keyTip": "Respuestas cortas: 'Yes, I was.' / 'No, I wasn't.' / 'Yes, we were.' / 'No, we weren't.'."
@@ -24640,12 +24664,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Actividades de la vida diaria en su forma continua.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Streaming gameplay: transmitiendo una partida en vivo.",
-                                                                  "es": "Acción continua"
+                                                                  "en": "I was streaming gameplay with my friends when the internet went down.",
+                                                                  "es": "Estaba transmitiendo una partida en vivo con mis amigos cuando se cayó el internet."
                                                             },
                                                             {
-                                                                  "en": "Walking the dog: paseando al perro por la cuadra.",
-                                                                  "es": "Acción continua"
+                                                                  "en": "She was walking the dog in the park at six in the afternoon.",
+                                                                  "es": "Ella estaba paseando al perro en el parque a las seis de la tarde."
                                                             }
                                                       ],
                                                       "keyTip": "El gerundio (-ING) describe la acción como un proceso abierto."
@@ -24658,12 +24682,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Frases para pintar la atmósfera de una noche de misterio o tormenta.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Rain was pouring: la lluvia caía a cántaros.",
-                                                                  "es": "Ambientación"
+                                                                  "en": "Outside the window, heavy rain was pouring down on the streets.",
+                                                                  "es": "Afuera de la ventana, una lluvia fuerte caía a cántaros sobre las calles."
                                                             },
                                                             {
-                                                                  "en": "Lights were flickering: las bombillas parpadeaban.",
-                                                                  "es": "Ambientación"
+                                                                  "en": "The hallway lights were flickering right before the power went out.",
+                                                                  "es": "Las luces del pasillo estaban parpadeando justo antes de que se fuera la energía."
                                                             }
                                                       ],
                                                       "keyTip": "Estas frases son indispensables para contar historias cinematográficas."
@@ -24676,12 +24700,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Términos usados en juegos de misterio y anécdotas de investigación.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Alibi: prueba de que estabas en otro lugar a esa hora.",
-                                                                  "es": "Misterio"
+                                                                  "en": "The suspect had a solid alibi because he was at the cinema with friends.",
+                                                                  "es": "El sospechoso tenía una coartada sólida porque estaba en el cine con amigos."
                                                             },
                                                             {
-                                                                  "en": "Blackout: corte total de luz eléctrica en el sector.",
-                                                                  "es": "Misterio"
+                                                                  "en": "During the neighborhood blackout, we used flashlights to play board games.",
+                                                                  "es": "Durante el apagón del barrio, usamos linternas para jugar juegos de mesa."
                                                             }
                                                       ],
                                                       "keyTip": "'I have an ironclad alibi' = tengo una coartada infalible."
@@ -24694,8 +24718,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Expresiones que congelan el segundo exacto en que transcurre la escena.",
                                                       "examples": [
                                                             {
-                                                                  "en": "At seven sharp: a las siete en punto exactas.",
-                                                                  "es": "Puntualidad"
+                                                                  "en": "At seven sharp, my whole family was having dinner at the table.",
+                                                                  "es": "A las siete en punto, toda mi familia estaba cenando en la mesa."
+                                                            },
+                                                            {
+                                                                  "en": "Right at that moment, I was looking for my keys in my backpack.",
+                                                                  "es": "Justo en ese momento, yo estaba buscando mis llaves en mi maleta."
                                                             }
                                                       ],
                                                       "keyTip": "'Sharp' después de la hora significa en punto estricto."
@@ -24708,8 +24736,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "La respuesta definitiva cuando te preguntan qué hacías.",
                                                       "examples": [
                                                             {
-                                                                  "en": "At 8 PM, I wasn't gaming, I was studying with my squad.",
-                                                                  "es": "Coartada completa"
+                                                                  "en": "At 8 PM, I wasn't playing video games; I was studying with my classmates.",
+                                                                  "es": "A las 8 PM no estaba jugando videojuegos; estaba estudiando con mis compañeros."
+                                                            },
+                                                            {
+                                                                  "en": "At midnight, we weren't making noise; we were sleeping in our rooms.",
+                                                                  "es": "A la medianoche no estábamos haciendo ruido; estábamos durmiendo en nuestros cuartos."
                                                             }
                                                       ],
                                                       "keyTip": "Combina negativo y afirmativo para máxima convicción."
@@ -25143,12 +25175,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "La acción larga (fondo) ya estaba ocurriendo en el tiempo (was sleeping, was riding). La acción corta ocurre de repente en un instante e interrumpe el proceso (the alarm rang, the phone fell).",
                                                       "examples": [
                                                             {
-                                                                  "en": "I was riding my electric scooter when my phone fell out.",
-                                                                  "es": "Iba en patineta (larga) cuando el celular se cayó (corta)."
+                                                                  "en": "I was riding my electric scooter when my phone fell out of my pocket.",
+                                                                  "es": "Estaba montando mi patineta eléctrica cuando mi celular se cayó de mi bolsillo."
                                                             },
                                                             {
-                                                                  "en": "She was walking to school when she met her teacher.",
-                                                                  "es": "Iba caminando (larga) cuando se encontró al profe (corta)."
+                                                                  "en": "She was walking to school when she met her math teacher on the corner.",
+                                                                  "es": "Ella iba caminando hacia el colegio cuando se encontró con su profesor de matemáticas en la esquina."
                                                             }
                                                       ],
                                                       "keyTip": "La acción larga lleva WAS/WERE + -ING; la acción que interrumpe va en Pasado Simple."
@@ -25243,16 +25275,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Pequeños accidentes que a todos nos pasan en el día a día.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Phone fell: el celular se resbaló y cayó.",
-                                                                  "es": "Accidente cotidiano"
+                                                                  "en": "My phone fell on the floor while I was taking a selfie.",
+                                                                  "es": "Mi celular se cayó al piso mientras me estaba tomando una selfie."
                                                             },
                                                             {
-                                                                  "en": "Screen cracked: la pantalla se estrelló o partió.",
-                                                                  "es": "Accidente cotidiano"
+                                                                  "en": "The glass screen cracked when it hit the edge of the sidewalk.",
+                                                                  "es": "La pantalla de vidrio se fisuró cuando golpeó el borde de la acera."
                                                             },
                                                             {
-                                                                  "en": "Battery died: el celular se apagó por batería.",
-                                                                  "es": "Accidente cotidiano"
+                                                                  "en": "My phone battery died right when I was checking the map.",
+                                                                  "es": "La batería de mi celular se agotó justo cuando estaba revisando el mapa."
                                                             }
                                                       ],
                                                       "keyTip": "'Lost balance' = perder el equilibrio."
@@ -25265,12 +25297,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Eventos externos que frenan de golpe lo que estabas haciendo.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Lights went out: la luz se fue por completo.",
-                                                                  "es": "Interrupción externa"
+                                                                  "en": "All the lights went out while we were watching the horror movie.",
+                                                                  "es": "Todas las luces se apagaron mientras estábamos viendo la película de terror."
                                                             },
                                                             {
-                                                                  "en": "Alarm rang: la alarma sonó con estruendo.",
-                                                                  "es": "Interrupción externa"
+                                                                  "en": "My morning alarm rang while I was having an amazing dream.",
+                                                                  "es": "Mi alarma de la mañana sonó mientras estaba teniendo un sueño increíble."
                                                             }
                                                       ],
                                                       "keyTip": "'Went out' es el pasado irregular de go out para luces y energía."
@@ -25283,12 +25315,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Palabras de transición que aceleran el ritmo de tu relato.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Out of nowhere: salido de la nada sin previo aviso.",
-                                                                  "es": "Adverbio dramático"
+                                                                  "en": "We were skating in the plaza when out of nowhere it started to rain.",
+                                                                  "es": "Estábamos patinando en la plaza cuando de la nada empezó a llover."
                                                             },
                                                             {
-                                                                  "en": "All of a sudden: de un momento a otro.",
-                                                                  "es": "Adverbio dramático"
+                                                                  "en": "All of a sudden, a friendly golden retriever ran across the soccer field.",
+                                                                  "es": "De repente, un golden retriever amigable corrió a través de la cancha de fútbol."
                                                             }
                                                       ],
                                                       "keyTip": "'Suddenly' es la palabra reina para introducir un giro de trama."
@@ -25301,12 +25333,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Cómo concluye la anécdota una vez superado el susto.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Completely intact: intacto sin un solo rayón.",
-                                                                  "es": "Desenlace"
+                                                                  "en": "I picked up my phone and thankfully the screen was completely intact.",
+                                                                  "es": "Recogí mi celular y afortunadamente la pantalla estaba completamente intacta."
                                                             },
                                                             {
-                                                                  "en": "Laughed it off: nos reímos del incidente después.",
-                                                                  "es": "Desenlace"
+                                                                  "en": "After I slipped on the wet grass, my friends and I just laughed it off.",
+                                                                  "es": "Después de que me resbalé en el pasto mojado, mis amigos y yo simplemente nos reímos del momento."
                                                             }
                                                       ],
                                                       "keyTip": "'Pick up' = recoger del suelo."
@@ -25319,8 +25351,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Las frases nativas para capturar la atención antes de soltar la historia.",
                                                       "examples": [
                                                             {
-                                                                  "en": "You won't believe what happened while I was skating in the park!",
-                                                                  "es": "Gancho de narrador"
+                                                                  "en": "You won't believe what happened while I was skating in the park yesterday!",
+                                                                  "es": "¡No vas a creer lo que pasó ayer mientras estaba patinando en el parque!"
+                                                            },
+                                                            {
+                                                                  "en": "Guess what happened to me while I was waiting for the school bus!",
+                                                                  "es": "¡Adivina qué me pasó mientras estaba esperando el bus del colegio!"
                                                             }
                                                       ],
                                                       "keyTip": "Usa entonación ascendente para crear misterio en la primera frase."
@@ -30411,16 +30447,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Poderes de superhéroes y ciencia ficción para debates imaginarios.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Teleportation: viajar instantáneamente de un punto a otro.",
-                                                                  "es": "Superpoder"
+                                                                  "en": "If I had teleportation, I would visit Paris and Tokyo in the same afternoon.",
+                                                                  "es": "Si tuviera teletransportación, visitaría París y Tokio en la misma tarde."
                                                             },
                                                             {
-                                                                  "en": "Invisibility: volverse completamente invisible a los ojos.",
-                                                                  "es": "Superpoder"
+                                                                  "en": "If you chose invisibility, nobody would see you walking down the hallway.",
+                                                                  "es": "Si eligieras la invisibilidad, nadie te vería caminando por el pasillo."
                                                             },
                                                             {
-                                                                  "en": "Time travel: viajar al pasado o al futuro.",
-                                                                  "es": "Superpoder"
+                                                                  "en": "If time travel were possible, I would go see real dinosaurs in the past.",
+                                                                  "es": "Si los viajes en el tiempo fueran posibles, iría a ver dinosaurios reales en el pasado."
                                                             }
                                                       ],
                                                       "keyTip": "Teleportation se pronuncia /ˌtɛləpɔːrˈteɪʃən/."
@@ -30433,12 +30469,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Situaciones de la vida real donde debes decidir qué es lo correcto.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Return the cash: devolver el dinero encontrado a su dueño legítimo.",
-                                                                  "es": "Dilema moral"
+                                                                  "en": "If I found a wallet on the bus, I would return the lost cash immediately.",
+                                                                  "es": "Si encontrara una billetera en el bus, devolvería el dinero perdido de inmediato."
                                                             },
                                                             {
-                                                                  "en": "Confess a mistake: admitir un error con valentía ante tus padres.",
-                                                                  "es": "Dilema moral"
+                                                                  "en": "If I broke something at home, I would confess the mistake to my parents.",
+                                                                  "es": "Si rompiera algo en casa, les confesaría el error a mis padres."
                                                             }
                                                       ],
                                                       "keyTip": "'Do the right thing' = hacer lo correcto."
@@ -30451,12 +30487,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Proyectos filantrópicos y familiares que harías con riqueza ilimitada.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Donate to animal shelters: donar a refugios de rescate animal.",
-                                                                  "es": "Proyecto soñado"
+                                                                  "en": "If I won the lottery, I would donate a large amount to animal shelters.",
+                                                                  "es": "Si ganara la lotería, donaría una gran cantidad a los refugios de animales."
                                                             },
                                                             {
-                                                                  "en": "Invest in startups: invertir en nuevas empresas de tecnología.",
-                                                                  "es": "Proyecto soñado"
+                                                                  "en": "If she were a billionaire, she would invest in green technology startups.",
+                                                                  "es": "Si ella fuera multimillonaria, invertiría en nuevas empresas de tecnología ecológica."
                                                             }
                                                       ],
                                                       "keyTip": "'Donate to charity' = donar a obras benéficas."
@@ -30469,12 +30505,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Frases sofisticadas de nivel B1 para argumentar tus decisiones hipotéticas.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Without hesitation: sin dudarlo ni un solo segundo.",
-                                                                  "es": "Conector de certeza"
+                                                                  "en": "If my best friend needed help, I would support him without hesitation.",
+                                                                  "es": "Si mi mejor amigo necesitara ayuda, lo apoyaría sin dudarlo un segundo."
                                                             },
                                                             {
-                                                                  "en": "In an ideal world: en un mundo ideal y perfecto.",
-                                                                  "es": "Conector reflexivo"
+                                                                  "en": "In an ideal world, every student would have a fast laptop for school.",
+                                                                  "es": "En un mundo ideal, cada estudiante tendría un portátil rápido para el colegio."
                                                             }
                                                       ],
                                                       "keyTip": "'Hypothetically speaking' da un tono muy culto a tus respuestas."
@@ -30488,7 +30524,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "examples": [
                                                             {
                                                                   "en": "If I faced this dilemma, I would return the wallet because honesty matters.",
-                                                                  "es": "Argumentación ética impecable"
+                                                                  "es": "Si enfrentara este dilema, devolvería la billetera porque la honestidad importa."
+                                                            },
+                                                            {
+                                                                  "en": "If it were up to me, I would defend my classmate against unfair rumors.",
+                                                                  "es": "Si dependiera de mí, defendería a mi compañero frente a rumores injustos."
                                                             }
                                                       ],
                                                       "keyTip": "'In the long run' significa a largo plazo."
@@ -31051,12 +31091,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Artículos tecnológicos y personales que los adolescentes suelen buscar o extraviar.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Wireless earbuds: audífonos inalámbricos que se caen fácilmente.",
-                                                                  "es": "Objeto personal"
+                                                                  "en": "Someone left these white wireless earbuds on the library table.",
+                                                                  "es": "Alguien dejó estos audífonos inalámbricos blancos en la mesa de la biblioteca."
                                                             },
                                                             {
-                                                                  "en": "Portable charger: batería portátil o powerbank para el celular.",
-                                                                  "es": "Objeto personal"
+                                                                  "en": "Does anyone have a portable charger I can borrow for ten minutes?",
+                                                                  "es": "¿Alguien tiene una batería portátil que me pueda prestar por diez minutos?"
                                                             }
                                                       ],
                                                       "keyTip": "'Earbuds' va en plural cuando te refieres al par completo."
@@ -31069,12 +31109,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Palabras para describir una atmósfera de misterio escolar o en casa.",
                                                       "examples": [
                                                             {
-                                                                  "en": "A strange noise: un sonido raro e inesperado en la noche.",
-                                                                  "es": "Pista"
+                                                                  "en": "Did you hear that strange noise coming from the empty hallway?",
+                                                                  "es": "¿Escuchaste ese ruido extraño que venía del pasillo vacío?"
                                                             },
                                                             {
-                                                                  "en": "Hidden clue: una pista oculta que ayuda a resolver el acertijo.",
-                                                                  "es": "Pista"
+                                                                  "en": "Everyone in the team looked for the hidden clue inside the room.",
+                                                                  "es": "Todos en el equipo buscaron la pista oculta dentro del salón."
                                                             }
                                                       ],
                                                       "keyTip": "'Footprint' significa huella de zapato o pie."
@@ -31087,12 +31127,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Frases coloquiales para reaccionar ante hallazgos o sustos inocentes.",
                                                       "examples": [
                                                             {
-                                                                  "en": "False alarm!: ¡Falsa alarma! No había ningún peligro.",
-                                                                  "es": "Reacción"
+                                                                  "en": "It was just a false alarm! Nobody was inside the dark classroom.",
+                                                                  "es": "¡Fue solo una falsa alarma! No había nadie dentro del salón oscuro."
                                                             },
                                                             {
-                                                                  "en": "Don't freak out!: ¡No entres en pánico ni te asustes!",
-                                                                  "es": "Reacción"
+                                                                  "en": "Don't freak out! Your phone must be somewhere inside your backpack.",
+                                                                  "es": "¡No entres en pánico! Tu celular debe estar en algún lugar dentro de tu maleta."
                                                             }
                                                       ],
                                                       "keyTip": "'Case closed!' se usa triunfalmente cuando encuentras lo perdido."
@@ -31105,12 +31145,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Rincones exactos donde suelen esconderse o aparecer las cosas.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Under the couch: debajo de los cojines del sofá.",
-                                                                  "es": "Lugar"
+                                                                  "en": "I looked under the couch and found the remote control.",
+                                                                  "es": "Miré debajo del sofá y encontré el control remoto."
                                                             },
                                                             {
-                                                                  "en": "In the backpack pocket: en el bolsillo secreto del morral.",
-                                                                  "es": "Lugar"
+                                                                  "en": "Check in the small backpack pocket before you say it is lost.",
+                                                                  "es": "Revisa en el bolsillo pequeño de la maleta antes de decir que se perdió."
                                                             }
                                                       ],
                                                       "keyTip": "Usa preposiciones precisas: 'under', 'behind', 'inside'."
@@ -31123,12 +31163,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Cómo traducir estos conceptos de manera fresca y colombiana.",
                                                       "examples": [
                                                             {
-                                                                  "en": "Someone left this: 'Alguien dejó esto por acá botado'.",
-                                                                  "es": "Expresión natural"
+                                                                  "en": "Someone left this jacket on the bench after the soccer game.",
+                                                                  "es": "Alguien dejó esta chaqueta en la banca después del partido de fútbol."
                                                             },
                                                             {
-                                                                  "en": "It's nowhere: 'No aparece por ningún lado, se refundió'.",
-                                                                  "es": "Expresión natural"
+                                                                  "en": "I checked every classroom, and my notebook is nowhere to be found.",
+                                                                  "es": "Revisé todos los salones y mi cuaderno no aparece por ningún lado."
                                                             }
                                                       ],
                                                       "keyTip": "'Refundirse' en inglés se expresa: 'It got misplaced somewhere'."
@@ -31634,16 +31674,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "La distinción clave para no cometer errores en exámenes internacionales B1/B2 o redacción formal.",
                                                       "examples": [
                                                             {
-                                                                  "en": "You must arrive on time (obligatorio).",
-                                                                  "es": "Regla obligatoria"
+                                                                  "en": "You must arrive fifteen minutes before the tournament starts.",
+                                                                  "es": "Debes llegar quince minutos antes de que empiece el torneo."
                                                             },
                                                             {
-                                                                  "en": "You mustn't cheat (prohibido).",
-                                                                  "es": "Regla de prohibición"
+                                                                  "en": "Players mustn't use any unauthorized glitches during the match.",
+                                                                  "es": "Los jugadores no deben usar ningún error no autorizado durante la partida."
                                                             },
                                                             {
-                                                                  "en": "You don't have to bring drinks (opcional).",
-                                                                  "es": "Acción opcional"
+                                                                  "en": "You don't have to bring snacks because the organizers provide food.",
+                                                                  "es": "No tienes que llevar refrigerios porque los organizadores dan comida."
                                                             }
                                                       ],
                                                       "keyTip": "Para hacer preguntas cotidianas, siempre di: 'Do I have to wear this?'."
@@ -31742,12 +31782,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Cómo traducir estas dinámicas a la cultura competitiva en Colombia.",
                                                       "examples": [
                                                             {
-                                                                  "en": "No haga trampa: 'Don't use hacks or cheat codes'.",
-                                                                  "es": "Expresión natural"
+                                                                  "en": "Don't use hacks or cheat codes if you want to stay in the league.",
+                                                                  "es": "No uses trucos ni códigos de trampa si quieres permanecer en la liga."
                                                             },
                                                             {
-                                                                  "en": "Juegue limpio parcero: 'Play fair and respect the lobby'.",
-                                                                  "es": "Expresión natural"
+                                                                  "en": "Always play fair and respect everyone in the tournament lobby.",
+                                                                  "es": "Juega siempre limpio y respeta a todos en la sala del torneo."
                                                             }
                                                       ],
                                                       "keyTip": "'Parchado en el lobby' = Hanging out in the gaming lobby."
@@ -34777,12 +34817,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "El Segundo Condicional sueña sobre hoy ('If I won today, I would buy'). El Tercer Condicional analiza el ayer que ya no cambia ('If I had won yesterday, I would have bought').",
                                                       "examples": [
                                                             {
-                                                                  "en": "If I had more money now, I would travel. (2nd Conditional - hoy)",
-                                                                  "es": "Deseo presente"
+                                                                  "en": "If I had more free time right now, I would learn to play the drums.",
+                                                                  "es": "Si tuviera más tiempo libre ahora mismo, aprendería a tocar la batería."
                                                             },
                                                             {
-                                                                  "en": "If I had saved money last year, I would have traveled. (3rd Conditional - pasado)",
-                                                                  "es": "Hecho pasado consumado"
+                                                                  "en": "If I had saved my allowance last year, I would have bought that bike.",
+                                                                  "es": "Si hubiera ahorrado mi mesada el año pasado, habría comprado esa bicicleta."
                                                             }
                                                       ],
                                                       "keyTip": "Pregúntate siempre: ¿ocurrió ya en el pasado, o es un sueño de hoy?"
@@ -34863,12 +34903,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Frases idiomáticas usadas por hablantes nativos para reflexionar con madurez.",
                                                       "examples": [
                                                             {
-                                                                  "en": "In hindsight, we should have prepared a backup plan.",
-                                                                  "es": "En retrospectiva, debimos haber preparado un plan de respaldo."
+                                                                  "en": "In hindsight, we should have prepared a backup plan for the presentation.",
+                                                                  "es": "En retrospectiva, debimos haber preparado un plan de respaldo para la presentación."
                                                             },
                                                             {
-                                                                  "en": "Lesson learned: always save your digital files regularly.",
-                                                                  "es": "Lección aprendida: siempre guarda tus archivos con frecuencia."
+                                                                  "en": "If only I had backed up my digital files before the computer crashed!",
+                                                                  "es": "¡Si tan solo hubiera hecho una copia de seguridad de mis archivos antes de que fallara el computador!"
                                                             }
                                                       ],
                                                       "keyTip": "'In hindsight' significa mirando hacia atrás con sabiduría."
@@ -34881,12 +34921,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                       "explanation": "Equivalencias naturales y directas al español conversacional de Colombia.",
                                                       "examples": [
                                                             {
-                                                                  "en": "De haber sabido que llovía, me traigo chaqueta: 'If I'd known it would rain, I would've brought a jacket'.",
-                                                                  "es": "Expresión natural"
+                                                                  "en": "If I'd known it would rain this hard, I would've brought my waterproof jacket.",
+                                                                  "es": "Si hubiera sabido que llovería tan fuerte, habría traído mi chaqueta impermeable."
                                                             },
                                                             {
-                                                                  "en": "Casi perdemos por un pelito: 'We would have lost by a hair if Diego hadn't saved that ball'.",
-                                                                  "es": "Expresión natural"
+                                                                  "en": "We would have lost the match by a hair if our goalkeeper hadn't saved that shot.",
+                                                                  "es": "Habríamos perdido el partido por un pelo si nuestro arquero no hubiera atajado ese disparo."
                                                             }
                                                       ],
                                                       "keyTip": "'Por un pelo de rana calva' = By the skin of our teeth."
