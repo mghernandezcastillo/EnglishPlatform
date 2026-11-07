@@ -212,15 +212,15 @@ const intermediateQuestions: DeepTalkQuestion[] = [
     category: 'Estilo de vida',
     questionEn: 'Is it better to live in a big city or in a quiet small town? Why?',
     questionEs: '¿Es mejor vivir en una gran ciudad o en un pueblo pequeño y tranquilo? ¿Por qué?',
-    suggestedAnswerEs: 'En mi opinión, vivir en una ciudad pequeña ofrece mayor tranquilidad y calidad de vida. Aunque las grandes ciudades tienen más oportunidades laborales y entretenimiento, el ritmo de vida suele ser muy estresante. Por otro lado, un lugar tranquilo te permite descansar mejor y disfrutar de la naturaleza. En conclusión, prefiero la calma de un pueblo antes que el ruido constante de la ciudad.',
-    suggestedAnswerEn: 'In my opinion, living in a small town offers more tranquility and quality of life. Although big cities have more job opportunities and entertainment, the pace of life is usually very stressful. On the other hand, a quiet place allows you to rest better and enjoy nature. In conclusion, I prefer the calmness of a town over the constant noise of the city.',
+    suggestedAnswerEs: 'En mi opinión, vivir en una ciudad pequeña ofrece mayor tranquilidad y calidad de vida. Aunque las grandes ciudades tienen más oportunidades laborales, el ritmo de vida suele ser muy estresante. Por otro lado, un lugar tranquilo te permite descansar mejor y disfrutar de la naturaleza. En conclusión, prefiero la calma de un pueblo antes que el ruido constante de la ciudad.',
+    suggestedAnswerEn: 'In my opinion, living in a small town offers more tranquility and quality of life. Although big cities have more job opportunities, the pace of life is usually very stressful. On the other hand, a quiet place allows you to rest better and enjoy nature. In conclusion, I prefer the calmness of a town over the constant noise of the city.',
     fragments: [
       {
         es: 'En mi opinión, vivir en una ciudad pequeña ofrece mayor tranquilidad y calidad de vida.',
         tokens: ['In my opinion,', 'living in', 'a small town', 'offers', 'more tranquility', 'and quality of life.'],
       },
       {
-        es: 'Aunque las grandes ciudades tienen más oportunidades laborales, el ritmo suele ser estresante.',
+        es: 'Aunque las grandes ciudades tienen más oportunidades laborales, el ritmo de vida suele ser muy estresante.',
         tokens: ['Although', 'big cities', 'have more job opportunities,', 'the pace of life', 'is usually', 'very stressful.'],
       },
       {
@@ -240,8 +240,8 @@ const intermediateQuestions: DeepTalkQuestion[] = [
     category: 'Trabajo y Dinero',
     questionEn: 'Is it better to save your money for the future or enjoy it right now?',
     questionEs: '¿Es mejor ahorrar tu dinero para el futuro o disfrutarlo ahora mismo?',
-    suggestedAnswerEs: 'Creo que la clave está en mantener un equilibrio saludable. Por un lado, ahorrar dinero te da seguridad en caso de una emergencia imprevista. Por otro lado, la vida es corta y también debemos disfrutar de nuestras experiencias presentes. Por esta razón, intento ahorrar un porcentaje de mis ingresos cada mes mientras disfruto del resto con moderación.',
-    suggestedAnswerEn: 'I believe that the key is to maintain a healthy balance. On one hand, saving money gives you security in case of an unexpected emergency. On the other hand, life is short and we should also enjoy our present experiences. For this reason, I try to save a percentage of my income every month while enjoying the rest in moderation.',
+    suggestedAnswerEs: 'Creo que la clave está en mantener un equilibrio saludable. Por un lado, ahorrar dinero te da seguridad en caso de una emergencia imprevista. Por otro lado, la vida es corta y también debemos disfrutar de nuestras experiencias presentes. Por esta razón, intento ahorrar cada mes mientras disfruto del resto con moderación.',
+    suggestedAnswerEn: 'I believe that the key is to maintain a healthy balance. On one hand, saving money gives you security in case of an unexpected emergency. On the other hand, life is short and we should also enjoy our present experiences. For this reason, I try to save every month while enjoying the rest in moderation.',
     fragments: [
       {
         es: 'Creo que la clave está en mantener un equilibrio saludable.',
@@ -268,15 +268,15 @@ const intermediateQuestions: DeepTalkQuestion[] = [
     category: 'Sociedad / Familia',
     questionEn: 'Should young adults live with their parents until they get married?',
     questionEs: '¿Deberían los adultos jóvenes vivir con sus padres hasta casarse?',
-    suggestedAnswerEs: 'En mi cultura, es muy común vivir con los padres durante varios años. Sin embargo, creo que independizarse antes del matrimonio te ayuda a madurar mucho más rápido. Por ejemplo, aprendes a administrar tus gastos y a resolver problemas por tu cuenta. En definitiva, ambas opciones son válidas dependiendo de la situación financiera de cada persona.',
-    suggestedAnswerEn: 'In my culture, it is very common to live with your parents for several years. However, I believe that becoming independent before marriage helps you mature much faster. For example, you learn to manage your expenses and solve problems on your own. Ultimately, both options are valid depending on the financial situation of each person.',
+    suggestedAnswerEs: 'En mi cultura, es muy común vivir con los padres durante varios años. Sin embargo, independizarse antes del matrimonio te ayuda a madurar mucho más rápido. Por ejemplo, aprendes a administrar tus gastos y a resolver problemas por tu cuenta. En definitiva, ambas opciones son válidas dependiendo de la situación financiera de cada persona.',
+    suggestedAnswerEn: 'In my culture, it is very common to live with your parents for several years. However, becoming independent before marriage helps you mature much faster. For example, you learn to manage your expenses and solve problems on your own. Ultimately, both options are valid depending on the financial situation of each person.',
     fragments: [
       {
         es: 'En mi cultura, es muy común vivir con los padres durante varios años.',
         tokens: ['In my culture,', 'it is very common', 'to live with your parents', 'for several years.'],
       },
       {
-        es: 'Sin embargo, independizarse antes del matrimonio te ayuda a madurar más rápido.',
+        es: 'Sin embargo, independizarse antes del matrimonio te ayuda a madurar mucho más rápido.',
         tokens: ['However,', 'becoming independent', 'before marriage', 'helps you mature', 'much faster.'],
       },
       {
@@ -284,7 +284,7 @@ const intermediateQuestions: DeepTalkQuestion[] = [
         tokens: ['For example,', 'you learn to manage', 'your expenses', 'and solve problems', 'on your own.'],
       },
       {
-        es: 'En definitiva, ambas opciones son válidas según la situación financiera de cada uno.',
+        es: 'En definitiva, ambas opciones son válidas dependiendo de la situación financiera de cada persona.',
         tokens: ['Ultimately,', 'both options are valid', 'depending on', 'the financial situation', 'of each person.'],
       },
     ],
@@ -312,7 +312,7 @@ const intermediateQuestions: DeepTalkQuestion[] = [
         tokens: ['Additionally,', 'overcoming difficult times', 'makes us', 'more resilient', 'and perseverant.'],
       },
       {
-        es: 'En resumen, nadie alcanza el éxito verdadero sin haber tropezado primero.',
+        es: 'En resumen, nadie alcanza el éxito verdadero sin haber tropezado primero varias veces.',
         tokens: ['In short,', 'nobody reaches', 'true success', 'without having stumbled', 'a few times first.'],
       },
     ],
@@ -324,15 +324,15 @@ const intermediateQuestions: DeepTalkQuestion[] = [
     category: 'Trabajo y Tecnología',
     questionEn: 'Is working from home better than working in a traditional office?',
     questionEs: '¿Es mejor trabajar desde casa que trabajar en una oficina tradicional?',
-    suggestedAnswerEs: 'En mi experiencia, el trabajo remoto ofrece enormes beneficios como ahorrar tiempo en el tráfico. No obstante, trabajar en una oficina facilita el trabajo en equipo y la comunicación directa con los colegas. Por lo tanto, considero que el modelo híbrido es la mejor solución moderna, porque combina la comodidad del hogar con la interacción social de la oficina.',
-    suggestedAnswerEn: 'In my experience, remote work offers huge benefits such as saving time in traffic. Nonetheless, working in an office facilitates teamwork and direct communication with colleagues. Therefore, I consider that the hybrid model is the best modern solution, because it combines the comfort of home with the social interaction of the office.',
+    suggestedAnswerEs: 'En mi experiencia, el trabajo remoto ofrece enormes beneficios como ahorrar tiempo en el tráfico. No obstante, trabajar en una oficina facilita el trabajo en equipo y la comunicación directa con los colegas. Por lo tanto, considero que el modelo híbrido es la mejor solución moderna. Porque combina la comodidad del hogar con la interacción social de la oficina.',
+    suggestedAnswerEn: 'In my experience, remote work offers huge benefits such as saving time in traffic. Nonetheless, working in an office facilitates teamwork and direct communication with colleagues. Therefore, I consider that the hybrid model is the best modern solution. Because it combines the comfort of home with the social interaction of the office.',
     fragments: [
       {
         es: 'En mi experiencia, el trabajo remoto ofrece enormes beneficios como ahorrar tiempo en el tráfico.',
         tokens: ['In my experience,', 'remote work', 'offers huge benefits', 'such as saving time', 'in traffic.'],
       },
       {
-        es: 'No obstante, trabajar en una oficina facilita el trabajo en equipo y la comunicación directa.',
+        es: 'No obstante, trabajar en una oficina facilita el trabajo en equipo y la comunicación directa con los colegas.',
         tokens: ['Nonetheless,', 'working in an office', 'facilitates teamwork', 'and direct communication', 'with colleagues.'],
       },
       {
@@ -340,7 +340,7 @@ const intermediateQuestions: DeepTalkQuestion[] = [
         tokens: ['Therefore,', 'I consider that', 'the hybrid model', 'is the best', 'modern solution.'],
       },
       {
-        es: 'Combina la comodidad del hogar con la interacción social de la oficina.',
+        es: 'Porque combina la comodidad del hogar con la interacción social de la oficina.',
         tokens: ['Because it combines', 'the comfort of home', 'with the social interaction', 'of the office.'],
       },
     ],
@@ -352,7 +352,7 @@ const intermediateQuestions: DeepTalkQuestion[] = [
     category: 'Salud y Bienestar',
     questionEn: 'Is mental health as important as physical health? Why?',
     questionEs: '¿Es la salud mental tan importante como la salud física? ¿Por qué?',
-    suggestedAnswerEs: 'Sin duda alguna, la salud mental es igual o incluso más importante que la física. La razón principal es que nuestra mente controla cómo nos sentimos y cómo tomamos decisiones. Además, el estrés constante y la ansiedad pueden provocar enfermedades físicas graves con el tiempo. Por consiguiente, cuidar nuestras emociones debe ser siempre una prioridad absoluta.',
+    suggestedAnswerEs: 'Sin duda alguna, la salud mental es igual o incluso más importante que la física. La razón principal es que nuestra mente controla cómo nos sentimos y tomamos decisiones. Además, el estrés constante y la ansiedad pueden provocar enfermedades físicas graves con el tiempo. Por consiguiente, cuidar nuestras emociones debe ser siempre una prioridad absoluta.',
     suggestedAnswerEn: 'Without a doubt, mental health is equally or even more important than physical health. The main reason is that our mind controls how we feel and make decisions. Furthermore, constant stress and anxiety can trigger serious physical illnesses over time. Consequently, taking care of our emotions must always be an absolute priority.',
     fragments: [
       {
@@ -364,7 +364,7 @@ const intermediateQuestions: DeepTalkQuestion[] = [
         tokens: ['The main reason is', 'that our mind controls', 'how we feel', 'and make decisions.'],
       },
       {
-        es: 'Además, el estrés constante y la ansiedad pueden provocar enfermedades físicas graves.',
+        es: 'Además, el estrés constante y la ansiedad pueden provocar enfermedades físicas graves con el tiempo.',
         tokens: ['Furthermore,', 'constant stress and anxiety', 'can trigger', 'serious physical illnesses', 'over time.'],
       },
       {
@@ -451,8 +451,8 @@ const advancedQuestions: DeepTalkQuestion[] = [
     category: 'Tecnología',
     questionEn: 'Has technology made us more connected or more isolated?',
     questionEs: '¿La tecnología nos ha hecho más conectados o más aislados?',
-    suggestedAnswerEs: 'Es una paradoja interesante. Por un lado, la tecnología nos permite hablar con cualquier persona en el mundo en cuestión de segundos. No obstante, muchas personas se sienten más solas que nunca, incluso estando rodeadas de dispositivos. Lo que creo es que la tecnología amplifica lo que ya somos: si eres sociable, te ayuda a conectar más; si tiendes al aislamiento, puede empeorar la situación. En resumen, la tecnología es un espejo de nuestras propias decisiones sociales.',
-    suggestedAnswerEn: 'It is an interesting paradox. On one hand, technology allows us to talk to anyone in the world in a matter of seconds. Nevertheless, many people feel lonelier than ever, even while surrounded by devices. What I believe is that technology amplifies what we already are: if you are sociable, it helps you connect more; if you tend toward isolation, it can make the situation worse. In summary, technology is a mirror of our own social choices.',
+    suggestedAnswerEs: 'Es una paradoja interesante. Por un lado, la tecnología nos permite hablar con cualquier persona en el mundo en cuestión de segundos. No obstante, muchas personas se sienten más solas que nunca, incluso estando rodeadas de dispositivos. Lo que creo es que la tecnología amplifica lo que ya somos. En resumen, la tecnología es un espejo de nuestras propias decisiones sociales.',
+    suggestedAnswerEn: 'It is an interesting paradox. On one hand, technology allows us to talk to anyone in the world in a matter of seconds. Nevertheless, many people feel lonelier than ever, even while surrounded by devices. What I believe is that technology amplifies what we already are. In summary, technology is a mirror of our own social choices.',
     fragments: [
       {
         es: 'Es una paradoja interesante.',
@@ -579,8 +579,8 @@ const advancedQuestions: DeepTalkQuestion[] = [
     category: 'Inteligencia Artificial y Futuro',
     questionEn: 'Will artificial intelligence replace human creativity or enhance it?',
     questionEs: '¿La inteligencia artificial reemplazará la creatividad humana o la potenciará?',
-    suggestedAnswerEs: 'Este es uno de los debates más apremiantes de nuestra era. Desde mi perspectiva, la inteligencia artificial no reemplazará la esencia de la creatividad humana, sino que funcionará como un catalizador extraordinario. Si bien los algoritmos pueden procesar datos y generar patrones a una velocidad sin precedentes, carecen de empatía y vivencias personales. En consecuencia, el verdadero arte seguirá naciendo de las experiencias vividas por seres humanos. En última instancia, la IA es una herramienta que amplifica nuestra imaginación, no un sustituto de nuestro espíritu.',
-    suggestedAnswerEn: 'This is one of the most pressing debates of our era. From my perspective, artificial intelligence will not replace the essence of human creativity, but rather act as an extraordinary catalyst. While algorithms can generate patterns at an unprecedented speed, they lack empathy and personal lived experiences. Consequently, true art will continue to arise from the genuine experiences of human beings. Ultimately, AI is a tool that amplifies our imagination, not a replacement for our creative spirit.',
+    suggestedAnswerEs: 'Este es uno de los debates más apremiantes de nuestra era moderna. Desde mi perspectiva, la inteligencia artificial no reemplazará la esencia de la creatividad humana. Si bien los algoritmos generan patrones a una velocidad sin precedentes, carecen de empatía y vivencias personales. En consecuencia, el verdadero arte seguirá naciendo de las experiencias genuinas de los seres humanos. En última instancia, la IA es una herramienta que amplifica nuestra imaginación, no un sustituto de nuestro espíritu creativo.',
+    suggestedAnswerEn: 'This is one of the most pressing debates of our modern era. From my perspective, artificial intelligence will not replace the essence of human creativity. While algorithms generate patterns at an unprecedented speed, they lack empathy and personal lived experiences. Consequently, true art will continue to arise from the genuine experiences of human beings. Ultimately, AI is a tool that amplifies our imagination, not a replacement for our creative spirit.',
     fragments: [
       {
         es: 'Este es uno de los debates más apremiantes de nuestra era moderna.',
@@ -591,15 +591,15 @@ const advancedQuestions: DeepTalkQuestion[] = [
         tokens: ['From my perspective,', 'artificial intelligence', 'will not replace', 'the essence of', 'human creativity.'],
       },
       {
-        es: 'Si bien los algoritmos generan patrones a gran velocidad, carecen de empatía y vivencias personales.',
+        es: 'Si bien los algoritmos generan patrones a una velocidad sin precedentes, carecen de empatía y vivencias personales.',
         tokens: ['While algorithms generate patterns', 'at an unprecedented speed,', 'they lack empathy', 'and personal lived experiences.'],
       },
       {
-        es: 'En consecuencia, el verdadero arte seguirá naciendo de las experiencias vividas por humanos.',
+        es: 'En consecuencia, el verdadero arte seguirá naciendo de las experiencias genuinas de los seres humanos.',
         tokens: ['Consequently,', 'true art will continue to arise', 'from the genuine experiences', 'of human beings.'],
       },
       {
-        es: 'En última instancia, la IA amplifica nuestra imaginación, pero no sustituye nuestro espíritu.',
+        es: 'En última instancia, la IA es una herramienta que amplifica nuestra imaginación, no un sustituto de nuestro espíritu creativo.',
         tokens: ['Ultimately,', 'AI is a tool', 'that amplifies our imagination,', 'not a replacement', 'for our creative spirit.'],
       },
     ],
@@ -611,7 +611,7 @@ const advancedQuestions: DeepTalkQuestion[] = [
     category: 'Ética y Moral Global',
     questionEn: 'Is it justifiable to tell a lie in order to protect someone else\'s feelings?',
     questionEs: '¿Es justificable decir una mentira para proteger los sentimientos de otra persona?',
-    suggestedAnswerEs: 'La moralidad detrás de las mentiras piadosas es un dilema ético complejo. Por un lado, la compasión nos impulsa a evitar causar sufrimiento innecesario a quienes apreciamos. Sin embargo, sostener una falsedad puede erosionar la confianza una vez que la verdad sale a la luz. A mi modo de ver, la sinceridad acompañada de empatía siempre es superior al engaño bienintencionado. En conclusión, el secreto radica en comunicar verdades difíciles con tacto y respeto.',
+    suggestedAnswerEs: 'La moralidad detrás de las mentiras piadosas es un dilema ético complejo. Por un lado, la compasión nos impulsa a evitar sufrimiento innecesario a quienes apreciamos. Sin embargo, sostener una falsedad puede erosionar la confianza una vez que la verdad sale a la luz. A mi modo de ver, la sinceridad acompañada de empatía siempre es superior al engaño bienintencionado. En conclusión, el secreto radica en comunicar verdades difíciles con tacto y respeto.',
     suggestedAnswerEn: 'The morality behind white lies is a complex ethical dilemma. On one hand, compassion drives us to prevent unnecessary suffering to those we care about. However, maintaining an untruth can erode trust once the truth comes to light. As I see it, honesty paired with empathy is always superior to well-intended deception. In conclusion, the secret lies in communicating hard truths with tact and respect.',
     fragments: [
       {
@@ -623,11 +623,11 @@ const advancedQuestions: DeepTalkQuestion[] = [
         tokens: ['On one hand,', 'compassion drives us', 'to prevent', 'unnecessary suffering', 'to those we care about.'],
       },
       {
-        es: 'Sin embargo, sostener una falsedad puede erosionar la confianza cuando la verdad sale a la luz.',
+        es: 'Sin embargo, sostener una falsedad puede erosionar la confianza una vez que la verdad sale a la luz.',
         tokens: ['However,', 'maintaining an untruth', 'can erode trust', 'once the truth', 'comes to light.'],
       },
       {
-        es: 'A mi modo de ver, la sinceridad con empatía siempre es superior al engaño bienintencionado.',
+        es: 'A mi modo de ver, la sinceridad acompañada de empatía siempre es superior al engaño bienintencionado.',
         tokens: ['As I see it,', 'honesty paired with empathy', 'is always superior', 'to well-intended deception.'],
       },
       {
@@ -643,23 +643,23 @@ const advancedQuestions: DeepTalkQuestion[] = [
     category: 'Sociedad y Éxito',
     questionEn: 'Does modern society define success too narrowly around wealth and status?',
     questionEs: '¿La sociedad moderna define el éxito de forma demasiado estrecha en torno a la riqueza y el estatus?',
-    suggestedAnswerEs: 'Indiscutiblemente sí. Vivimos en una cultura hipercompetitiva donde el valor de un individuo suele medirse por sus posesiones materiales. No obstante, esta perspectiva reduccionista ignora dimensiones fundamentales como la paz mental y la salud. Lo que necesitamos con urgencia es redefinir el éxito en congruencia con nuestros propios valores. En síntesis, el verdadero triunfo consiste en alcanzar serenidad interior y propósito, no en acumular aplausos externos.',
-    suggestedAnswerEn: 'Undoubtedly yes. We live in a hyper-competitive culture obsessed with material possessions. Nonetheless, this reductionist outlook ignores fundamental dimensions such as mental peace and health. What we urgently need is to redefine success in alignment with our personal values. In summary, genuine triumph consists of achieving inner serenity and purpose, not accumulating external applause.',
+    suggestedAnswerEs: 'Indiscutiblemente sí. Vivimos en una cultura hipercompetitiva obsesionada con las posesiones materiales. No obstante, esta perspectiva reduccionista ignora dimensiones fundamentales como la paz mental y la salud. Lo que necesitamos con urgencia es redefinir el éxito en sintonía con nuestros valores personales. En síntesis, el verdadero triunfo consiste en alcanzar serenidad interior y propósito, no en acumular aplausos.',
+    suggestedAnswerEn: 'Undoubtedly yes. We live in a hyper-competitive culture obsessed with material possessions. Nonetheless, this reductionist outlook ignores fundamental dimensions such as mental peace and health. What we urgently need is to redefine success in alignment with our personal values. In summary, genuine triumph consists of achieving inner serenity and purpose, not accumulating applause.',
     fragments: [
       {
-        es: 'Indiscutiblemente sí. Vivimos en una cultura hipercompetitiva obsesionada con posesiones materiales.',
+        es: 'Indiscutiblemente sí. Vivimos en una cultura hipercompetitiva obsesionada con las posesiones materiales.',
         tokens: ['Undoubtedly yes.', 'We live in', 'a hyper-competitive culture', 'obsessed with', 'material possessions.'],
       },
       {
-        es: 'No obstante, esta perspectiva ignora dimensiones fundamentales como la paz mental y la salud.',
+        es: 'No obstante, esta perspectiva reduccionista ignora dimensiones fundamentales como la paz mental y la salud.',
         tokens: ['Nonetheless,', 'this reductionist outlook', 'ignores fundamental dimensions', 'such as mental peace', 'and health.'],
       },
       {
-        es: 'Lo que necesitamos con urgencia es redefinir el éxito según nuestros propios valores.',
+        es: 'Lo que necesitamos con urgencia es redefinir el éxito en sintonía con nuestros valores personales.',
         tokens: ['What we urgently need', 'is to redefine success', 'in alignment with', 'our personal values.'],
       },
       {
-        es: 'En síntesis, el triunfo verdadero consiste en serenidad interior y no en aplausos externos.',
+        es: 'En síntesis, el verdadero triunfo consiste en alcanzar serenidad interior y propósito, no en acumular aplausos.',
         tokens: ['In summary,', 'genuine triumph consists of', 'achieving inner serenity', 'and purpose,', 'not accumulating applause.'],
       },
     ],
@@ -671,7 +671,7 @@ const advancedQuestions: DeepTalkQuestion[] = [
     category: 'Liderazgo y Poder',
     questionEn: 'Does power inevitably corrupt people, or does it merely reveal who they truly are?',
     questionEs: '¿El poder corrompe inevitablemente a las personas o simplemente revela lo que realmente son?',
-    suggestedAnswerEs: 'Esa es una de las reflexiones filosóficas más profundas sobre la condición humana. Si bien existe la noción de que el poder corrompe, yo creo que actúa más bien como un amplificador. Cuando un individuo adquiere autoridad, desaparecen las restricciones que solían frenar sus impulsos. Por lo tanto, el poder no crea la arrogancia, sino que le otorga el escenario para manifestarse. En conclusión, quien posee integridad moral utilizará el poder para servir y edificar a los demás.',
+    suggestedAnswerEs: 'Esa es una de las reflexiones filosóficas más profundas sobre la condición humana. Si bien existe la noción de que el poder corrompe, yo creo que actúa más bien como un poderoso amplificador. Cuando un individuo adquiere autoridad, desaparecen las restricciones que solían frenar sus impulsos. Por lo tanto, el poder no crea la arrogancia, sino que le da el escenario para manifestarse. En conclusión, quien posee integridad moral utilizará el poder para servir y edificar a los demás.',
     suggestedAnswerEn: 'That is one of the deepest philosophical reflections regarding the human condition. While there is a notion that power corrupts, I believe it acts rather as a powerful amplifier. When an individual gains authority, the restrictions that used to restrain their impulses disappear. Therefore, power does not create arrogance, but gives it the stage to manifest itself. In conclusion, whoever possesses moral integrity will utilize power to serve and uplift others.',
     fragments: [
       {
@@ -679,11 +679,11 @@ const advancedQuestions: DeepTalkQuestion[] = [
         tokens: ['That is one of', 'the deepest philosophical reflections', 'regarding the human condition.'],
       },
       {
-        es: 'Si bien existe la noción de que el poder corrompe, yo creo que actúa más bien como un amplificador.',
+        es: 'Si bien existe la noción de que el poder corrompe, yo creo que actúa más bien como un poderoso amplificador.',
         tokens: ['While there is a notion', 'that power corrupts,', 'I believe it acts rather', 'as a powerful amplifier.'],
       },
       {
-        es: 'Cuando alguien adquiere autoridad, desaparecen las restricciones que frenaban sus impulsos.',
+        es: 'Cuando un individuo adquiere autoridad, desaparecen las restricciones que solían frenar sus impulsos.',
         tokens: ['When an individual gains authority,', 'the restrictions that used to restrain', 'their impulses disappear.'],
       },
       {
@@ -691,7 +691,7 @@ const advancedQuestions: DeepTalkQuestion[] = [
         tokens: ['Therefore,', 'power does not create arrogance,', 'but gives it the stage', 'to manifest itself.'],
       },
       {
-        es: 'En conclusión, quien posee integridad moral utilizará el poder para servir a los demás.',
+        es: 'En conclusión, quien posee integridad moral utilizará el poder para servir y edificar a los demás.',
         tokens: ['In conclusion,', 'whoever possesses moral integrity', 'will utilize power', 'to serve and uplift others.'],
       },
     ],
@@ -703,7 +703,7 @@ const advancedQuestions: DeepTalkQuestion[] = [
     category: 'Medio Ambiente y Responsabilidad',
     questionEn: 'Is individual action enough to combat climate change, or is systemic government change the only real solution?',
     questionEs: '¿Es suficiente la acción individual para combatir el cambio climático o el cambio sistémico gubernamental es la única solución real?',
-    suggestedAnswerEs: 'Ambos enfoques son indispensables y se alimentan mutuamente en esta lucha. Por un lado, creer que solo los hábitos individuales resolverán la crisis climática es desproporcionado. Por otro lado, esperar pasivamente a que los gobiernos legislen sin presión ciudadana es ingenuo. En última instancia, la conciencia individual genera la demanda social para obligar a reformas estructurales. De ahí que el cambio comience en lo cotidiano, pero deba escalar al plano legislativo.',
+    suggestedAnswerEs: 'Ambos enfoques son indispensables y se alimentan mutuamente en esta lucha. Por un lado, creer que solo los hábitos individuales resolverán la crisis climática es desproporcionado. Por otro lado, esperar pasivamente a que los gobiernos legislen sin presión ciudadana es ingenuo. En última instancia, la conciencia individual genera la demanda social para obligar a reformas estructurales. De ahí que el cambio comience en la rutina cotidiana, pero deba inevitablemente escalar al plano legislativo.',
     suggestedAnswerEn: 'Both approaches are indispensable and mutually reinforce each other in this fight. On one hand, believing that individual habits alone will solve the climate crisis is disproportionate. On the other hand, passively waiting for governments to legislate without citizen pressure is naive. Ultimately, individual awareness generates the social demand to force structural reforms. Hence, change starts in the everyday routine, but must inevitably scale to the legislative sphere.',
     fragments: [
       {
@@ -715,15 +715,15 @@ const advancedQuestions: DeepTalkQuestion[] = [
         tokens: ['On one hand,', 'believing that individual habits alone', 'will solve the climate crisis', 'is disproportionate.'],
       },
       {
-        es: 'Por otro lado, esperar que los gobiernos legislen sin presión ciudadana es ingenuo.',
+        es: 'Por otro lado, esperar pasivamente a que los gobiernos legislen sin presión ciudadana es ingenuo.',
         tokens: ['On the other hand,', 'passively waiting', 'for governments to legislate', 'without citizen pressure', 'is naive.'],
       },
       {
-        es: 'En última instancia, la conciencia individual genera la demanda para obligar a reformas estructurales.',
+        es: 'En última instancia, la conciencia individual genera la demanda social para obligar a reformas estructurales.',
         tokens: ['Ultimately,', 'individual awareness generates', 'the social demand', 'to force structural reforms.'],
       },
       {
-        es: 'De ahí que el cambio comience en lo cotidiano, pero deba escalar a lo legislativo.',
+        es: 'De ahí que el cambio comience en la rutina cotidiana, pero deba inevitablemente escalar al plano legislativo.',
         tokens: ['Hence,', 'change starts in the everyday routine,', 'but must inevitably scale', 'to the legislative sphere.'],
       },
     ],
@@ -735,23 +735,23 @@ const advancedQuestions: DeepTalkQuestion[] = [
     category: 'Educación y Futuro del Trabajo',
     questionEn: 'In an automated world, should education prioritize technical skills or emotional intelligence and philosophy?',
     questionEs: 'En un mundo automatizado, ¿debería la educación priorizar habilidades técnicas o inteligencia emocional y filosofía?',
-    suggestedAnswerEs: 'A medida que la tecnología avanza, nuestras virtudes más humanas se vuelven más valiosas. Aunque el dominio técnico es relevante, esas destrezas son las primeras en ser automatizadas por software inteligente. En contraste, el pensamiento crítico, la diplomacia ética y la empatía son imposibles de replicar mediante código. Por consiguiente, la educación del futuro debe forjar pensadores humanistas y no meros operadores temporales de herramientas.',
-    suggestedAnswerEn: 'As technology advances, our most distinctly human virtues become vastly more valuable. Although technical mastery is relevant, those specific skills are the very first to be automated by intelligent software. In contrast, critical thinking, ethical diplomacy, and deep empathy are virtually impossible to replicate through code. Consequently, future education must cultivate humanistic thinkers rather than mere temporary tool operators.',
+    suggestedAnswerEs: 'A medida que la tecnología avanza, nuestras virtudes más humanas se vuelven mucho más valiosas. Aunque el dominio técnico es relevante, esas destrezas específicas son las primeras en ser automatizadas. En contraste, el pensamiento crítico, la diplomacia ética y la empatía profunda son casi imposibles de replicar. Por consiguiente, la educación del futuro debe forjar pensadores humanistas en lugar de meros operadores de herramientas.',
+    suggestedAnswerEn: 'As technology advances, our most distinctly human virtues become vastly more valuable. Although technical mastery is relevant, those specific skills are the very first to be automated. In contrast, critical thinking, ethical diplomacy, and deep empathy are virtually impossible to replicate. Consequently, future education must cultivate humanistic thinkers rather than mere tool operators.',
     fragments: [
       {
-        es: 'A medida que la tecnología avanza, nuestras virtudes más humanas se vuelven más valiosas.',
+        es: 'A medida que la tecnología avanza, nuestras virtudes más humanas se vuelven mucho más valiosas.',
         tokens: ['As technology advances,', 'our most distinctly human virtues', 'become vastly more valuable.'],
       },
       {
-        es: 'Aunque el dominio técnico es relevante, esas destrezas son las primeras en ser automatizadas.',
+        es: 'Aunque el dominio técnico es relevante, esas destrezas específicas son las primeras en ser automatizadas.',
         tokens: ['Although technical mastery is relevant,', 'those specific skills', 'are the very first', 'to be automated.'],
       },
       {
-        es: 'En contraste, el pensamiento crítico, la ética y la empatía son imposibles de replicar con código.',
+        es: 'En contraste, el pensamiento crítico, la diplomacia ética y la empatía profunda son casi imposibles de replicar.',
         tokens: ['In contrast,', 'critical thinking,', 'ethical diplomacy,', 'and deep empathy', 'are virtually impossible to replicate.'],
       },
       {
-        es: 'Por consiguiente, la educación debe forjar pensadores humanistas y no meros operadores de software.',
+        es: 'Por consiguiente, la educación del futuro debe forjar pensadores humanistas en lugar de meros operadores de herramientas.',
         tokens: ['Consequently,', 'future education must cultivate', 'humanistic thinkers', 'rather than mere tool operators.'],
       },
     ],
