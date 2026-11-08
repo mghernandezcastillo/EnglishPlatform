@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
-import { Eye, Lightbulb, MessageCircle, Pencil, Play, Sparkles, Check, Copy } from 'lucide-react';
+import { Eye, Lightbulb, MessageCircle, Pencil, Play, Sparkles, Check, Copy, Film, BookOpen } from 'lucide-react';
 import { ClassSlide, CurriculumClass } from '../types';
 import { resolveVideoHomeworkData } from '../lib/videoHomeworkResolver';
 import { getActiveStudentName } from '../lib/homeworkResolver';
 import { safeEncodeURIComponent } from '../lib/safeUrl';
 import { fireClassCompletionConfetti } from '../lib/celebration';
+import { InterestVideoHomeworkPanel } from './InterestVideoHomeworkPanel';
 
 interface VideoHomeworkSlideCardProps {
   slide: ClassSlide;
@@ -21,6 +22,7 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
   const [answer2, setAnswer2] = useState('');
   const [copied, setCopied] = useState(false);
   const [copiedText, setCopiedText] = useState(false);
+  const [homeworkMode, setHomeworkMode] = useState<'standard' | 'interest-video'>('standard');
 
   const data = resolveVideoHomeworkData(slide, cls);
   const activeStudent = studentName?.trim() || getActiveStudentName();
@@ -108,20 +110,49 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
       />
 
       {/* Header */}
-      <div className="relative z-10 shrink-0 mb-1 sm:mb-2">
-        <h1 className="text-2xl sm:text-3xl lg:text-[2.3rem] font-black tracking-tight leading-tight flex items-center gap-2">
-          <span>🎬</span>
-          <span>{slide.title?.includes('/') ? slide.title.split('/')[0].trim() : slide.title || 'Video Homework'}</span>
-          <span className="text-white/40 mx-1.5 font-normal">/</span>
-          <span className="text-purple-200">{slide.title?.includes('/') ? slide.title.split('/')[1].trim() : 'Tarea en Video'}</span>
-          <span>🎬</span>
-        </h1>
-        <p className="text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-indigo-300/80">
-          {slide.description || 'Video'}
-        </p>
+      <div className="relative z-10 shrink-0 mb-1 sm:mb-2 flex items-center justify-between gap-3 flex-wrap">
+        <div>
+          <h1 className="text-2xl sm:text-3xl lg:text-[2.2rem] font-black tracking-tight leading-tight flex items-center gap-2">
+            <span>🎬</span>
+            <span>{homeworkMode === 'standard' ? (slide.title?.includes('/') ? slide.title.split('/')[0].trim() : slide.title || 'Video Homework') : 'Video Homework por Gustos (10 Palabras)'}</span>
+          </h1>
+          <p className="text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-indigo-300/80">
+            {slide.description || 'Video'}
+          </p>
+        </div>
+
+        <div className="inline-flex rounded-2xl bg-slate-950/80 p-1 border border-indigo-400/40 shadow-inner">
+          <button
+            type="button"
+            onClick={() => setHomeworkMode('standard')}
+            className={`inline-flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-black transition cursor-pointer ${
+              homeworkMode === 'standard'
+                ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-md'
+                : 'text-indigo-200/80 hover:text-white'
+            }`}
+          >
+            <BookOpen className="h-4 w-4" />
+            <span>Video de la Clase</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setHomeworkMode('interest-video')}
+            className={`inline-flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs sm:text-sm font-black transition cursor-pointer ${
+              homeworkMode === 'interest-video'
+                ? 'bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 text-slate-950 shadow-md'
+                : 'text-amber-300 hover:text-amber-200'
+            }`}
+          >
+            <Film className="h-4 w-4" />
+            <span>Video por Gustos ✨</span>
+          </button>
+        </div>
       </div>
 
-      {/* Main Content Grid (Left: 46%, Right: 54%) */}
+      {homeworkMode === 'interest-video' ? (
+        <InterestVideoHomeworkPanel cls={cls} studentName={activeStudent} />
+      ) : (
+      /* Main Content Grid (Left: 46%, Right: 54%) */
       <div className="relative z-10 flex-1 grid grid-cols-1 lg:grid-cols-[1.02fr_1.18fr] gap-2.5 sm:gap-3.5 min-h-0 items-stretch">
         {/* LEFT COLUMN: Watch Card & Write Tasks */}
         <div className="flex flex-col justify-between gap-2 sm:gap-2.5 min-h-0">
@@ -257,6 +288,7 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
           </div>
         </div>
       </div>
+      )}
 
       {/* Bottom Bar */}
       <div className="relative z-10 mt-2 pt-2 flex items-center justify-between gap-2.5 border-t border-white/15 shrink-0">

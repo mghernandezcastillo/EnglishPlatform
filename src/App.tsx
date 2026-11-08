@@ -32,6 +32,7 @@ const CertificateView = lazy(() => import('./components/CertificateView').then(m
 const OralQuestionBankView = lazy(() => import('./components/OralQuestionBankView').then(m => ({ default: m.OralQuestionBankView })));
 const MissionHub = lazy(() => import('./components/missions/MissionHub').then(m => ({ default: m.MissionHub })));
 const DeepTalk = lazy(() => import('./components/DeepTalk').then(m => ({ default: m.DeepTalk })));
+const StudentInterestsModal = lazy(() => import('./components/StudentInterestsModal').then(m => ({ default: m.StudentInterestsModal })));
 
 const LazyFallback = () => (
   <div className="fixed inset-0 z-50 bg-slate-900/80 flex items-center justify-center">
@@ -54,6 +55,7 @@ export default function App() {
   const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'entrance_assessment' | 'speaking_practice' | 'story_decoder' | 'structure_mode' | 'verbs_guide' | 'verb_arena' | 'vocab_vault' | 'missions' | 'deep_talk'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
   const [activeMissionParam, setActiveMissionParam] = useState<string | null>(null);
+  const [studentNeedingInterests, setStudentNeedingInterests] = useState<DbStudent | null>(null);
 
   useEffect(() => {
     let mounted = true;
@@ -253,6 +255,12 @@ export default function App() {
         url.searchParams.set('studentId', st.id);
         window.history.replaceState({}, '', url.toString());
       } catch {}
+
+      if (!st.interests || st.interests.length === 0) {
+        setStudentNeedingInterests(st);
+      } else {
+        setStudentNeedingInterests(null);
+      }
     }
     setRole('student');
   };
@@ -745,6 +753,22 @@ export default function App() {
       </Suspense>
       {currentView !== 'missions' && <FloatingControls studentId={currentStudentId} studentName={progress.studentName} />}
       {currentView !== 'missions' && <Suspense fallback={null}><GlobalAiAssistant /></Suspense>}
+      {studentNeedingInterests && (
+        <Suspense fallback={null}>
+          <StudentInterestsModal
+            student={studentNeedingInterests}
+            isOpen={Boolean(studentNeedingInterests)}
+            isFirstTimePrompt={true}
+            onClose={() => setStudentNeedingInterests(null)}
+            onSaved={(newInterests) => {
+              setStudentNeedingInterests((prev) =>
+                prev ? { ...prev, interests: newInterests } : null
+              );
+              setStudentNeedingInterests(null);
+            }}
+          />
+        </Suspense>
+      )}
     </div>
   );
 }

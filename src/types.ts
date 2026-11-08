@@ -395,6 +395,8 @@ export interface DbStudent {
   presentation_mode?: 'studio' | 'classic';
   completed_lessons: string[];
   approved_levels?: string[];
+  interests?: string[];
+  watched_interest_videos?: string[];
   group_id?: string;
   teacher_id?: string;
   created_at?: string;

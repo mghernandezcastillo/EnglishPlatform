@@ -13,6 +13,8 @@ import { AdminSlideManager } from './admin/AdminSlideManager';
 import { ClassWorkshop } from './ClassWorkshop';
 import { MissionTeacherTab } from './missions/MissionTeacherTab';
 import type { StaffUser } from '../lib/staffAuth';
+import { StudentInterestsModal } from './StudentInterestsModal';
+import { getInterestById } from '../data/interestVideosCatalog';
 
 const AgendaMaven = lazy(() => import('../features/agenda/AgendaMaven'));
 
@@ -31,6 +33,20 @@ export function TeacherDashboard({ onBack, onEnterAsStudent, staffUser, onSignOu
   const [selectedStudent, setSelectedStudent] = useState<DbStudent | null>(null);
   const [isEditingStudentInfo, setIsEditingStudentInfo] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [showStudentInterestsModal, setShowStudentInterestsModal] = useState(false);
+  const [isFirstTimeInterestPrompt, setIsFirstTimeInterestPrompt] = useState(false);
+
+  const handleOpenStudentCard = (st: DbStudent) => {
+    setSelectedStudent(st);
+    const hasInterests = Array.isArray(st.interests) && st.interests.length > 0;
+    if (!hasInterests) {
+      setIsFirstTimeInterestPrompt(true);
+      setShowStudentInterestsModal(true);
+    } else {
+      setIsFirstTimeInterestPrompt(false);
+      setShowStudentInterestsModal(false);
+    }
+  };
 
   const [isCreatingStudent, setIsCreatingStudent] = useState(false);
   const [newStudent, setNewStudent] = useState({ name: '', avatar_id: 'female', level: 'Basic Zero', type: 'adulto', group_id: '' });
@@ -311,7 +327,35 @@ export function TeacherDashboard({ onBack, onEnterAsStudent, staffUser, onSignOu
                                          <span>📜 Clásico</span>
                                        </button>
                                      </div>
+
+                                     <button
+                                       type="button"
+                                       onClick={() => {
+                                         setIsFirstTimeInterestPrompt(false);
+                                         setShowStudentInterestsModal(true);
+                                       }}
+                                       className="text-xs font-black text-amber-800 bg-amber-100 hover:bg-amber-200 border border-amber-300 px-3 py-1 rounded-full transition cursor-pointer flex items-center gap-1"
+                                     >
+                                       <span>🎯 Gustos ({(selectedStudent.interests || []).length})</span>
+                                     </button>
                                  </div>
+                                 )}
+                                 {Array.isArray(selectedStudent.interests) && selectedStudent.interests.length > 0 && (
+                                   <div className="flex flex-wrap items-center gap-1.5 mt-2.5">
+                                     {selectedStudent.interests.map((intId) => {
+                                       const meta = getInterestById(intId);
+                                       if (!meta) return null;
+                                       return (
+                                         <span
+                                           key={intId}
+                                           className="inline-flex items-center gap-1 text-xs font-bold bg-slate-100 text-slate-700 border border-slate-200 px-2.5 py-0.5 rounded-full"
+                                         >
+                                           <span>{meta.emoji}</span>
+                                           <span>{meta.label.split('(')[0].trim()}</span>
+                                         </span>
+                                       );
+                                     })}
+                                   </div>
                                  )}
                              </div>
                          </div>
@@ -472,6 +516,19 @@ export function TeacherDashboard({ onBack, onEnterAsStudent, staffUser, onSignOu
                     <CurriculumView />
                 </div>
             </div>
+
+            <StudentInterestsModal
+              student={selectedStudent}
+              isOpen={showStudentInterestsModal}
+              isFirstTimePrompt={isFirstTimeInterestPrompt}
+              onClose={() => setShowStudentInterestsModal(false)}
+              onSaved={(newInterests) => {
+                const updated = { ...selectedStudent, interests: newInterests };
+                setSelectedStudent(updated);
+                setStudents((prev) => prev.map((s) => (s.id === updated.id ? updated : s)));
+                showToast('Gustos del estudiante guardados en Supabase.');
+              }}
+            />
         </div>
       </div>
     );
@@ -640,14 +697,21 @@ export function TeacherDashboard({ onBack, onEnterAsStudent, staffUser, onSignOu
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {students.map(st => (
-              <div key={st.id} onClick={() => setSelectedStudent(st)} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+              <div key={st.id} onClick={() => handleOpenStudentCard(st)} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
                 <div className="flex items-center gap-4 mb-4">
                   <img referrerPolicy="no-referrer" src={avatars[st.avatar_id as keyof typeof avatars] || avatars.female} className="w-16 h-16 rounded-full object-cover border-2 border-indigo-100" />
                   <div>
                     <h3 className="font-bold text-lg text-gray-900">{st.name}</h3>
-                    <div className="flex gap-2 mt-1">
+                    <div className="flex flex-wrap gap-2 mt-1">
                       <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded w-max">{st.level}</span>
                       {st.type && <span className="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded w-max capitalize">{st.type}</span>}
+                      {(!st.interests || st.interests.length === 0) ? (
+                        <span className="text-xs font-bold text-rose-600 bg-rose-50 px-2 py-1 rounded w-max">🎯 Elegir gustos</span>
+                      ) : (
+                        <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max">
+                          {st.interests.slice(0, 2).map(id => getInterestById(id)?.emoji || '✨').join(' ')} {st.interests.length} gusto{st.interests.length === 1 ? '' : 's'}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>

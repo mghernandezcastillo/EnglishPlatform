@@ -52,6 +52,15 @@ export const dbAdmin = {
   },
 
   updateStudent: async (id: string, updates: Partial<DbStudent>): Promise<boolean> => {
+    try {
+      const profileRaw = localStorage.getItem('active_student_profile');
+      if (profileRaw && profileRaw.startsWith('{')) {
+        const profile = JSON.parse(profileRaw);
+        if (profile?.id === id) {
+          localStorage.setItem('active_student_profile', JSON.stringify({ ...profile, ...updates }));
+        }
+      }
+    } catch {}
     const { error } = await supabase.from('students').update(updates).eq('id', id);
     if (error) {
       console.error('Error updating student in Supabase:', error);
@@ -64,6 +73,48 @@ export const dbAdmin = {
       return false;
     }
     return true;
+  },
+
+  updateStudentInterests: async (id: string, interests: string[]): Promise<boolean> => {
+    const clean = Array.from(new Set(interests.map(i => i.trim()).filter(Boolean)));
+    try {
+      const profileRaw = localStorage.getItem('active_student_profile');
+      if (profileRaw && profileRaw.startsWith('{')) {
+        const profile = JSON.parse(profileRaw);
+        if (profile?.id === id) {
+          localStorage.setItem('active_student_profile', JSON.stringify({ ...profile, interests: clean }));
+        }
+      }
+    } catch {}
+    const { error } = await supabase.from('students').update({ interests: clean }).eq('id', id);
+    if (error) {
+      console.error('Error updating student interests in Supabase:', error);
+      const mock: DbStudent[] = JSON.parse(localStorage.getItem('mock_students') || '[]');
+      const idx = mock.findIndex(s => s.id === id);
+      if (idx !== -1) {
+        mock[idx] = { ...mock[idx], interests: clean };
+        localStorage.setItem('mock_students', JSON.stringify(mock));
+      }
+      return false;
+    }
+    return true;
+  },
+
+  markInterestVideoWatched: async (id: string, videoId: string): Promise<void> => {
+    if (!id || !videoId) return;
+    const { data: student } = await supabase.from('students').select('watched_interest_videos').eq('id', id).single();
+    const current = Array.isArray(student?.watched_interest_videos) ? student.watched_interest_videos : [];
+    const updated = Array.from(new Set([...current, videoId]));
+    try {
+      const profileRaw = localStorage.getItem('active_student_profile');
+      if (profileRaw && profileRaw.startsWith('{')) {
+        const profile = JSON.parse(profileRaw);
+        if (profile?.id === id) {
+          localStorage.setItem('active_student_profile', JSON.stringify({ ...profile, watched_interest_videos: updated }));
+        }
+      }
+    } catch {}
+    await supabase.from('students').update({ watched_interest_videos: updated }).eq('id', id);
   },
 
   deleteStudent: async (id: string): Promise<void> => {

@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { 
   ArrowLeft, 
@@ -19,7 +19,9 @@ import {
   Lock,
   Layers,
   Award,
-  PenTool
+  PenTool,
+  Shuffle,
+  Wand2
 } from 'lucide-react';
 import { deepTalkQuestions, DeepTalkQuestion, DeepTalkFragment } from '../data/deepTalkQuestions';
 import { playAudio } from '../lib/audio';
@@ -49,6 +51,7 @@ function shuffleArray<T>(array: T[]): T[] {
 
 export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
   const [selectedLevel, setSelectedLevel] = useState<'intermediate' | 'advanced'>('intermediate');
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [questionIndex, setQuestionIndex] = useState(0);
   
   // Phase inside the current question:
@@ -60,10 +63,41 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
   // 3D Flip state for question card
   const [isFlipped, setIsFlipped] = useState(false);
 
-  // Filtered questions for current level
-  const questions = useMemo(() => {
+  // Persisted completed question IDs
+  const storageKey = `maven_deeptalk_completed_${studentId || 'default'}`;
+  const [completedQuestionIds, setCompletedQuestionIds] = useState<string[]>(() => {
+    try {
+      const saved = localStorage.getItem(storageKey);
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(completedQuestionIds));
+    } catch {
+      // ignore storage errors
+    }
+  }, [completedQuestionIds, storageKey]);
+
+  // All questions for current level
+  const levelQuestions = useMemo(() => {
     return deepTalkQuestions.filter(q => q.level === selectedLevel);
   }, [selectedLevel]);
+
+  // Available categories for current level
+  const categories = useMemo(() => {
+    return Array.from(new Set(levelQuestions.map(q => q.category)));
+  }, [levelQuestions]);
+
+  // Filtered questions for current level & category
+  const questions = useMemo(() => {
+    if (selectedCategory === 'all') return levelQuestions;
+    const filtered = levelQuestions.filter(q => q.category === selectedCategory);
+    return filtered.length > 0 ? filtered : levelQuestions;
+  }, [levelQuestions, selectedCategory]);
 
   const currentQuestion: DeepTalkQuestion = questions[questionIndex] || questions[0];
 
@@ -100,6 +134,36 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
     return shuffled;
   }, [currentQuestion.id, currentFragmentIndex, currentFragment]);
 
+  // First index where the selected token order breaks
+  const firstWrongPos = useMemo(() => {
+    for (let pos = 0; pos < selectedBankIds.length; pos++) {
+      const token = shuffledBankTokens.find(t => t.bankId === selectedBankIds[pos]);
+      if (!token || token.originalIndex !== pos) return pos;
+    }
+    return -1;
+  }, [selectedBankIds, shuffledBankTokens]);
+
+  // Jump to a specific fragment while preserving state if already completed
+  const handleJumpToFragment = (targetIdx: number) => {
+    const frag = currentQuestion.fragments[targetIdx];
+    if (!frag) return;
+    setCurrentFragmentIndex(targetIdx);
+    setHasOrderError(false);
+
+    if (completedFragments.includes(targetIdx)) {
+      const sortedIds = frag.tokens.map(
+        (text, idx) => `${currentQuestion.id}-${targetIdx}-${idx}-${text}`
+      );
+      setSelectedBankIds(sortedIds);
+      setTokensObfuscated(false);
+      setFragmentCompleted(true);
+    } else {
+      setSelectedBankIds([]);
+      setTokensObfuscated(true);
+      setFragmentCompleted(false);
+    }
+  };
+
   // Reset when level or question changes
   const handleSelectQuestion = (index: number) => {
     setQuestionIndex(index);
@@ -115,6 +179,7 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
 
   const handleSwitchLevel = (level: 'intermediate' | 'advanced') => {
     setSelectedLevel(level);
+    setSelectedCategory('all');
     setQuestionIndex(0);
     setPhase('question');
     setIsFlipped(false);
@@ -124,6 +189,31 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
     setTokensObfuscated(true);
     setFragmentCompleted(false);
     setCompletedFragments([]);
+  };
+
+  const handleSelectCategory = (cat: string) => {
+    setSelectedCategory(cat);
+    setQuestionIndex(0);
+    setPhase('question');
+    setIsFlipped(false);
+    setCurrentFragmentIndex(0);
+    setSelectedBankIds([]);
+    setHasOrderError(false);
+    setTokensObfuscated(true);
+    setFragmentCompleted(false);
+    setCompletedFragments([]);
+  };
+
+  const handleRandomQuestion = () => {
+    if (questions.length <= 1) return;
+    const uncompletedIndices = questions
+      .map((q, idx) => (!completedQuestionIds.includes(q.id) && idx !== questionIndex ? idx : -1))
+      .filter(idx => idx !== -1);
+    const pool = uncompletedIndices.length > 0
+      ? uncompletedIndices
+      : questions.map((_, idx) => idx).filter(idx => idx !== questionIndex);
+    const randomIdx = pool[Math.floor(Math.random() * pool.length)];
+    handleSelectQuestion(randomIdx);
   };
 
   // Start building suggested answer
@@ -137,42 +227,74 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
     setCompletedFragments([]);
   };
 
+  // Check if a sequence of bankIds completes the current fragment
+  const evaluateSequence = (next: string[]) => {
+    if (!currentFragment) return;
+    const anyWrong = next.some((id, pos) => {
+      const token = shuffledBankTokens.find(t => t.bankId === id);
+      return token?.originalIndex !== pos;
+    });
+    setHasOrderError(anyWrong);
+
+    if (!anyWrong && next.length === currentFragment.tokens.length) {
+      setFragmentCompleted(true);
+      if (!completedFragments.includes(currentFragmentIndex)) {
+        setCompletedFragments(prev => [...prev, currentFragmentIndex]);
+      }
+      playAudio(currentFragment.tokens.join(' '));
+    }
+  };
+
   // Token click in word bank
   const handleSelectToken = (bankId: string) => {
     if (fragmentCompleted) return;
     if (tokensObfuscated) setTokensObfuscated(false);
-    setHasOrderError(false);
-
     if (selectedBankIds.includes(bankId)) return;
+
+    const clickedToken = shuffledBankTokens.find(t => t.bankId === bankId);
+    if (clickedToken) {
+      playAudio(clickedToken.text);
+    }
 
     const next = [...selectedBankIds, bankId];
     setSelectedBankIds(next);
+    evaluateSequence(next);
+  };
 
-    // If student selected all tokens, check if sequence is in correct order
-    if (currentFragment && next.length === currentFragment.tokens.length) {
-      const isCorrect = next.every((id, pos) => {
-        const token = shuffledBankTokens.find(t => t.bankId === id);
-        return token?.originalIndex === pos;
-      });
+  // Hint: place the next correct block automatically
+  const handleHintNextToken = () => {
+    if (!currentFragment || fragmentCompleted) return;
+    setTokensObfuscated(false);
 
-      if (isCorrect) {
-        setFragmentCompleted(true);
-        setHasOrderError(false);
-        if (!completedFragments.includes(currentFragmentIndex)) {
-          setCompletedFragments(prev => [...prev, currentFragmentIndex]);
-        }
-        playAudio(currentFragment.tokens.join(' '));
+    // Keep only the valid prefix so far
+    const validPrefix: string[] = [];
+    for (let pos = 0; pos < selectedBankIds.length; pos++) {
+      const token = shuffledBankTokens.find(t => t.bankId === selectedBankIds[pos]);
+      if (token && token.originalIndex === pos) {
+        validPrefix.push(selectedBankIds[pos]);
       } else {
-        setHasOrderError(true);
+        break;
       }
     }
+
+    const nextPos = validPrefix.length;
+    const nextToken = shuffledBankTokens.find(t => t.originalIndex === nextPos);
+    if (!nextToken) return;
+
+    const next = [...validPrefix, nextToken.bankId];
+    setSelectedBankIds(next);
+    if (next.length < currentFragment.tokens.length) {
+      playAudio(nextToken.text);
+    }
+    evaluateSequence(next);
   };
 
   // Remove token from dropzone back to bank
   const handleRemoveToken = (bankId: string) => {
     if (fragmentCompleted) return;
-    setSelectedBankIds(prev => prev.filter(id => id !== bankId));
-    setHasOrderError(false);
+    const next = selectedBankIds.filter(id => id !== bankId);
+    setSelectedBankIds(next);
+    evaluateSequence(next);
   };
 
   // Instant reveal for current fragment in correct order
@@ -195,15 +317,13 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
   // Advance to next fragment or finish
   const handleNextFragment = () => {
     if (currentFragmentIndex < currentQuestion.fragments.length - 1) {
-      const nextIdx = currentFragmentIndex + 1;
-      setCurrentFragmentIndex(nextIdx);
-      setSelectedBankIds([]);
-      setHasOrderError(false);
-      setTokensObfuscated(true);
-      setFragmentCompleted(false);
+      handleJumpToFragment(currentFragmentIndex + 1);
     } else {
       // Completed all fragments!
       setPhase('complete');
+      if (!completedQuestionIds.includes(currentQuestion.id)) {
+        setCompletedQuestionIds(prev => [...prev, currentQuestion.id]);
+      }
       confetti({
         particleCount: 70,
         spread: 70,
@@ -300,41 +420,96 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
 
       {/* Main Container */}
       <main className="flex-1 max-w-5xl w-full mx-auto p-4 sm:p-6 flex flex-col">
-        {/* Question Selector Slider */}
-        <div className="mb-6 flex items-center justify-between gap-3 bg-white/5 p-2 rounded-2xl border border-white/10">
-          <button
-            onClick={() => handleSelectQuestion(Math.max(0, questionIndex - 1))}
-            disabled={questionIndex === 0}
-            className="p-2 rounded-xl bg-white/10 hover:bg-white/20 disabled:opacity-30 disabled:pointer-events-none transition"
-            title="Pregunta anterior"
-          >
-            <ChevronLeft className="w-5 h-5 text-white" />
-          </button>
-
-          <div className="flex items-center gap-1.5 overflow-x-auto py-1 px-2 scrollbar-thin">
-            {questions.map((q, idx) => (
+        {/* Category Filter & Question Selector Slider */}
+        <div className="mb-6 flex flex-col gap-2.5 bg-white/5 p-3 rounded-2xl border border-white/10">
+          {/* Top Row: Category Pills + Progress + Random Button */}
+          <div className="flex items-center justify-between gap-2 flex-wrap border-b border-white/10 pb-2">
+            <div className="flex items-center gap-1.5 overflow-x-auto py-0.5 scrollbar-thin">
               <button
-                key={q.id}
-                onClick={() => handleSelectQuestion(idx)}
-                className={`min-w-[36px] h-9 rounded-xl font-black text-xs transition-all flex items-center justify-center gap-1 px-2.5 ${
-                  questionIndex === idx
-                    ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white ring-2 ring-purple-400 shadow-lg scale-105'
-                    : 'bg-white/10 text-slate-300 hover:bg-white/20'
+                onClick={() => handleSelectCategory('all')}
+                className={`px-2.5 py-1 rounded-lg text-[11px] font-black whitespace-nowrap transition-all ${
+                  selectedCategory === 'all'
+                    ? 'bg-indigo-500 text-white shadow'
+                    : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'
                 }`}
               >
-                <span>#{idx + 1}</span>
+                Todas ({levelQuestions.length})
               </button>
-            ))}
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => handleSelectCategory(cat)}
+                  className={`px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap transition-all ${
+                    selectedCategory === cat
+                      ? 'bg-indigo-500 text-white shadow'
+                      : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+
+            <div className="flex items-center gap-2 shrink-0 ml-auto">
+              <span className="text-[11px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-lg flex items-center gap-1">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                {levelQuestions.filter(q => completedQuestionIds.includes(q.id)).length}/{levelQuestions.length}
+              </span>
+              <button
+                onClick={handleRandomQuestion}
+                className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-purple-500/20 hover:bg-purple-500/30 border border-purple-400/30 text-purple-200 text-[11px] font-black transition active:scale-95"
+                title="Elegir pregunta al azar"
+              >
+                <Shuffle className="w-3.5 h-3.5" />
+                <span>Aleatoria</span>
+              </button>
+            </div>
           </div>
 
-          <button
-            onClick={() => handleSelectQuestion(Math.min(questions.length - 1, questionIndex + 1))}
-            disabled={questionIndex === questions.length - 1}
-            className="p-2 rounded-xl bg-white/10 hover:bg-white/20 disabled:opacity-30 disabled:pointer-events-none transition"
-            title="Siguiente pregunta"
-          >
-            <ChevronRight className="w-5 h-5 text-white" />
-          </button>
+          {/* Bottom Row: Numbered Question Selector */}
+          <div className="flex items-center justify-between gap-2">
+            <button
+              onClick={() => handleSelectQuestion(Math.max(0, questionIndex - 1))}
+              disabled={questionIndex === 0}
+              className="p-2 rounded-xl bg-white/10 hover:bg-white/20 disabled:opacity-30 disabled:pointer-events-none transition"
+              title="Pregunta anterior"
+            >
+              <ChevronLeft className="w-5 h-5 text-white" />
+            </button>
+
+            <div className="flex items-center gap-1.5 overflow-x-auto py-1 px-2 scrollbar-thin">
+              {questions.map((q, idx) => {
+                const isDone = completedQuestionIds.includes(q.id);
+                const isActive = questionIndex === idx;
+                return (
+                  <button
+                    key={q.id}
+                    onClick={() => handleSelectQuestion(idx)}
+                    title={q.category}
+                    className={`min-w-[38px] h-9 rounded-xl font-black text-xs transition-all flex items-center justify-center gap-1 px-2.5 ${
+                      isActive
+                        ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white ring-2 ring-purple-400 shadow-lg scale-105'
+                        : isDone
+                        ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30'
+                        : 'bg-white/10 text-slate-300 hover:bg-white/20'
+                    }`}
+                  >
+                    <span>#{idx + 1}</span>
+                    {isDone && <Check className="w-3 h-3 text-emerald-400 shrink-0" />}
+                  </button>
+                );
+              })}
+            </div>
+
+            <button
+              onClick={() => handleSelectQuestion(Math.min(questions.length - 1, questionIndex + 1))}
+              disabled={questionIndex === questions.length - 1}
+              className="p-2 rounded-xl bg-white/10 hover:bg-white/20 disabled:opacity-30 disabled:pointer-events-none transition"
+              title="Siguiente pregunta"
+            >
+              <ChevronRight className="w-5 h-5 text-white" />
+            </button>
+          </div>
         </div>
 
         {/* ═══════════════════════════════════════════════════════════════════ */}
@@ -499,25 +674,29 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
                       Toca las palabras desordenadas de abajo para armar la frase en el orden correcto...
                     </span>
                   ) : (
-                    selectedBankIds.map((bankId) => {
+                    selectedBankIds.map((bankId, pos) => {
                       const token = shuffledBankTokens.find(t => t.bankId === bankId);
                       if (!token) return null;
+                      const isTokenWrong = firstWrongPos !== -1 && pos >= firstWrongPos;
                       return (
                         <motion.button
                           key={`selected-${bankId}`}
                           layout
                           onClick={() => handleRemoveToken(bankId)}
                           disabled={fragmentCompleted}
-                          className={`px-3 py-1.5 rounded-xl font-black text-sm shadow-md transition ${
+                          className={`px-3 py-1.5 rounded-xl font-black text-sm shadow-md transition flex items-center gap-1.5 ${
                             fragmentCompleted
                               ? 'bg-gradient-to-r from-emerald-400 to-teal-400 text-slate-950 cursor-default'
-                              : hasOrderError
-                              ? 'bg-gradient-to-r from-rose-500 to-red-600 text-white hover:opacity-90 active:scale-95'
-                              : 'bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 hover:opacity-90 active:scale-95'
+                              : isTokenWrong
+                              ? 'bg-gradient-to-r from-rose-500 to-red-600 text-white hover:opacity-90 active:scale-95 ring-2 ring-rose-300'
+                              : 'bg-gradient-to-r from-emerald-400/90 to-cyan-400 text-slate-950 hover:opacity-90 active:scale-95'
                           }`}
                           title={fragmentCompleted ? undefined : 'Toca para quitar'}
                         >
-                          {token.text}
+                          <span>{token.text}</span>
+                          {!fragmentCompleted && !isTokenWrong && (
+                            <Check className="w-3.5 h-3.5 text-slate-950/80 shrink-0" />
+                          )}
                         </motion.button>
                       );
                     })
@@ -528,27 +707,41 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
                 {hasOrderError && (
                   <div className="flex items-center justify-between bg-rose-950/70 border border-rose-500/50 rounded-xl px-3.5 py-2 text-xs text-rose-200">
                     <span className="flex items-center gap-1.5">
-                      ⚠️ <strong>Orden incorrecto:</strong> Toca las palabras que sobran para quitarlas o reinicia.
+                      ⚠️ <strong>Ese bloque no va en esa posición:</strong> Toca el bloque en rojo para quitarlo o usa <em>Pista (+1)</em>.
                     </span>
-                    <button
-                      onClick={() => {
-                        setSelectedBankIds([]);
-                        setHasOrderError(false);
-                      }}
-                      className="font-bold underline text-rose-300 hover:text-white ml-3 shrink-0"
-                    >
-                      Reiniciar
-                    </button>
+                    <div className="flex items-center gap-2 ml-3 shrink-0">
+                      {firstWrongPos > 0 && (
+                        <button
+                          onClick={() => {
+                            const validOnly = selectedBankIds.slice(0, firstWrongPos);
+                            setSelectedBankIds(validOnly);
+                            setHasOrderError(false);
+                          }}
+                          className="font-bold underline text-emerald-300 hover:text-white"
+                        >
+                          Quitar incorrectos
+                        </button>
+                      )}
+                      <button
+                        onClick={() => {
+                          setSelectedBankIds([]);
+                          setHasOrderError(false);
+                        }}
+                        className="font-bold underline text-rose-300 hover:text-white"
+                      >
+                        Reiniciar
+                      </button>
+                    </div>
                   </div>
                 )}
 
                 {/* Word Bank with Reveal Toggle */}
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
                     <span className="text-xs font-black uppercase tracking-wider text-slate-300">
                       Banco de Palabras (Desordenadas)
                     </span>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1.5 flex-wrap">
                       <button
                         onClick={() => setTokensObfuscated(prev => !prev)}
                         className="flex items-center gap-1 text-xs font-bold text-slate-300 hover:text-white px-2.5 py-1 rounded-lg bg-white/10 transition"
@@ -558,8 +751,19 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
                       </button>
 
                       <button
+                        onClick={handleHintNextToken}
+                        disabled={fragmentCompleted}
+                        className="flex items-center gap-1 text-xs font-bold text-cyan-300 hover:text-cyan-200 disabled:opacity-40 disabled:pointer-events-none px-2.5 py-1 rounded-lg bg-cyan-500/20 border border-cyan-500/30 transition"
+                        title="Coloca únicamente el siguiente bloque correcto"
+                      >
+                        <Wand2 className="w-3.5 h-3.5" />
+                        <span>Pista (+1)</span>
+                      </button>
+
+                      <button
                         onClick={handleRevealFragment}
-                        className="flex items-center gap-1 text-xs font-bold text-amber-300 hover:text-amber-200 px-2.5 py-1 rounded-lg bg-amber-500/20 border border-amber-500/30 transition"
+                        disabled={fragmentCompleted}
+                        className="flex items-center gap-1 text-xs font-bold text-amber-300 hover:text-amber-200 disabled:opacity-40 disabled:pointer-events-none px-2.5 py-1 rounded-lg bg-amber-500/20 border border-amber-500/30 transition"
                       >
                         <Sparkles className="w-3.5 h-3.5" />
                         <span>Completar</span>
@@ -596,10 +800,7 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
                   <button
                     onClick={() => {
                       if (currentFragmentIndex > 0) {
-                        setCurrentFragmentIndex(prev => prev - 1);
-                        setSelectedBankIds([]);
-                        setHasOrderError(false);
-                        setFragmentCompleted(false);
+                        handleJumpToFragment(currentFragmentIndex - 1);
                       }
                     }}
                     disabled={currentFragmentIndex === 0}
@@ -648,9 +849,27 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
                       <MessageSquare className="w-4 h-4" />
                       Respuesta en construcción
                     </span>
-                    <span className="text-[11px] font-bold text-slate-400">
-                      {completedFragments.length}/{currentQuestion.fragments.length} partes
-                    </span>
+                    <div className="flex items-center gap-2">
+                      {completedFragments.length > 0 && (
+                        <button
+                          onClick={() => {
+                            const textSoFar = currentQuestion.fragments
+                              .filter((_, idx) => idx < currentFragmentIndex || completedFragments.includes(idx))
+                              .map(f => f.tokens.join(' '))
+                              .join(' ');
+                            if (textSoFar) playAudio(textSoFar);
+                          }}
+                          className="flex items-center gap-1 text-[10px] font-bold text-emerald-300 hover:text-white px-2 py-0.5 rounded-md bg-emerald-500/20 border border-emerald-500/30 transition"
+                          title="Escuchar todas las partes listas hasta ahora"
+                        >
+                          <Volume2 className="w-3 h-3" />
+                          <span>Escuchar avance</span>
+                        </button>
+                      )}
+                      <span className="text-[11px] font-bold text-slate-400">
+                        {completedFragments.length}/{currentQuestion.fragments.length} partes
+                      </span>
+                    </div>
                   </div>
 
                   {/* Cumulative Fragments List */}
@@ -662,9 +881,14 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
                       return (
                         <div
                           key={`cumul-${idx}`}
+                          onClick={() => {
+                            if (isPast || idx <= completedFragments.length) {
+                              handleJumpToFragment(idx);
+                            }
+                          }}
                           className={`p-3 rounded-xl transition-all border ${
                             isPast
-                              ? 'bg-emerald-950/30 border-emerald-500/30 text-emerald-200'
+                              ? 'bg-emerald-950/30 border-emerald-500/30 text-emerald-200 cursor-pointer hover:bg-emerald-950/50'
                               : isCurrent
                               ? 'bg-indigo-950/50 border-indigo-400/50 text-white ring-1 ring-indigo-400/40'
                               : 'bg-white/5 border-white/5 text-slate-500'
@@ -675,9 +899,21 @@ export function DeepTalk({ studentId, onBack }: DeepTalkProps) {
                               Parte #{idx + 1}
                             </span>
                             {isPast ? (
-                              <span className="flex items-center gap-1 text-emerald-400 text-[10px]">
-                                <CheckCircle2 className="w-3.5 h-3.5" /> Listo
-                              </span>
+                              <div className="flex items-center gap-2">
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    playAudio(frag.tokens.join(' '));
+                                  }}
+                                  className="p-1 rounded-md bg-emerald-500/20 hover:bg-emerald-500/40 text-emerald-300 transition"
+                                  title="Escuchar esta parte"
+                                >
+                                  <Volume2 className="w-3.5 h-3.5" />
+                                </button>
+                                <span className="flex items-center gap-1 text-emerald-400 text-[10px]">
+                                  <CheckCircle2 className="w-3.5 h-3.5" /> Listo
+                                </span>
+                              </div>
                             ) : isCurrent ? (
                               <span className="text-amber-300 text-[10px] animate-pulse">
                                 ● Construyendo
