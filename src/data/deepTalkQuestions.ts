@@ -375,6 +375,146 @@ const intermediateQuestions: DeepTalkQuestion[] = [
     connectors: ['Without a doubt', 'The main reason is', 'Furthermore', 'Consequently'],
     level: 'intermediate',
   },
+  {
+    id: 'dt-int-13',
+    category: 'Educación e Idiomas',
+    questionEn: 'Does learning a second language change the way you see the world?',
+    questionEs: '¿Aprender un segundo idioma cambia la forma en que ves el mundo?',
+    suggestedAnswerEs: 'Sin duda alguna, aprender otro idioma abre tu mente a nuevas culturas. En primer lugar, te permite comunicarte con personas de diferentes países. Además, mejora tu memoria y te da mejores oportunidades laborales. En conclusión, hablar otro idioma transforma por completo tu visión del mundo.',
+    suggestedAnswerEn: 'Without a doubt, learning another language opens your mind to new cultures. First of all, it allows you to communicate with people from different countries. Moreover, it improves your memory and gives you better job opportunities. In conclusion, speaking another language completely transforms your worldview.',
+    fragments: [
+      {
+        es: 'Sin duda alguna, aprender otro idioma abre tu mente a nuevas culturas.',
+        tokens: ['Without a doubt,', 'learning another language', 'opens your mind', 'to new cultures.'],
+      },
+      {
+        es: 'En primer lugar, te permite comunicarte con personas de diferentes países.',
+        tokens: ['First of all,', 'it allows you', 'to communicate', 'with people', 'from different countries.'],
+      },
+      {
+        es: 'Además, mejora tu memoria y te da mejores oportunidades laborales.',
+        tokens: ['Moreover,', 'it improves your memory', 'and gives you', 'better job opportunities.'],
+      },
+      {
+        es: 'En conclusión, hablar otro idioma transforma por completo tu visión del mundo.',
+        tokens: ['In conclusion,', 'speaking another language', 'completely transforms', 'your worldview.'],
+      },
+    ],
+    connectors: ['Without a doubt', 'First of all', 'Moreover', 'In conclusion'],
+    level: 'intermediate',
+  },
+  {
+    id: 'dt-int-14',
+    category: 'Trabajo y Estudios',
+    questionEn: 'Is it better to work in a team or to work independently?',
+    questionEs: '¿Es mejor trabajar en equipo o trabajar de forma independiente?',
+    suggestedAnswerEs: 'Desde mi punto de vista, ambas formas de trabajo tienen grandes ventajas. Por un lado, trabajar solo te permite concentrarte sin distracciones. Por otro lado, trabajar en equipo te ayuda a compartir ideas y resolver problemas más rápido. Por lo tanto, prefiero combinar el trabajo individual con una buena colaboración en equipo.',
+    suggestedAnswerEn: 'From my point of view, both ways of working have great advantages. On one hand, working alone allows you to focus without distractions. On the other hand, working in a team helps you share ideas and solve problems faster. Therefore, I prefer to combine individual work with good team collaboration.',
+    fragments: [
+      {
+        es: 'Desde mi punto de vista, ambas formas de trabajo tienen grandes ventajas.',
+        tokens: ['From my point of view,', 'both ways of working', 'have great advantages.'],
+      },
+      {
+        es: 'Por un lado, trabajar solo te permite concentrarte sin distracciones.',
+        tokens: ['On one hand,', 'working alone', 'allows you to focus', 'without distractions.'],
+      },
+      {
+        es: 'Por otro lado, trabajar en equipo te ayuda a compartir ideas y resolver problemas más rápido.',
+        tokens: ['On the other hand,', 'working in a team', 'helps you share ideas', 'and solve problems faster.'],
+      },
+      {
+        es: 'Por lo tanto, prefiero combinar el trabajo individual con una buena colaboración en equipo.',
+        tokens: ['Therefore,', 'I prefer to combine', 'individual work', 'with good team collaboration.'],
+      },
+    ],
+    connectors: ['From my point of view', 'On one hand', 'On the other hand', 'Therefore'],
+    level: 'intermediate',
+  },
+  {
+    id: 'dt-int-15',
+    category: 'Estilo de Vida y Viajes',
+    questionEn: 'Is traveling the best way to learn about life, or can you learn just as much at home?',
+    questionEs: '¿Viajar es la mejor forma de aprender sobre la vida, o se puede aprender igual en casa?',
+    suggestedAnswerEs: 'Personalmente, considero que viajar te enseña lecciones únicas sobre la vida. Cuando visitas otro lugar, sales de tu zona de confort y conoces nuevas costumbres. Sin embargo, también puedes aprender mucho en casa leyendo libros y hablando con otros. En resumen, viajar es increíble, pero la curiosidad empieza en tu propia mente.',
+    suggestedAnswerEn: 'Personally, I consider that traveling teaches you unique lessons about life. When you visit another place, you step out of your comfort zone and meet new customs. However, you can also learn a lot at home by reading books and talking to others. In short, traveling is amazing, but curiosity starts in your own mind.',
+    fragments: [
+      {
+        es: 'Personalmente, considero que viajar te enseña lecciones únicas sobre la vida.',
+        tokens: ['Personally,', 'I consider that', 'traveling teaches you', 'unique lessons', 'about life.'],
+      },
+      {
+        es: 'Cuando visitas otro lugar, sales de tu zona de confort y conoces nuevas costumbres.',
+        tokens: ['When you visit', 'another place,', 'you step out of', 'your comfort zone', 'and meet new customs.'],
+      },
+      {
+        es: 'Sin embargo, también puedes aprender mucho en casa leyendo libros y hablando con otros.',
+        tokens: ['However,', 'you can also', 'learn a lot at home', 'by reading books', 'and talking to others.'],
+      },
+      {
+        es: 'En resumen, viajar es increíble, pero la curiosidad empieza en tu propia mente.',
+        tokens: ['In short,', 'traveling is amazing,', 'but curiosity starts', 'in your own mind.'],
+      },
+    ],
+    connectors: ['Personally', 'When', 'However', 'In short'],
+    level: 'intermediate',
+  },
+  {
+    id: 'dt-int-16',
+    category: 'Hábitos y Productividad',
+    questionEn: 'Are morning people more productive than night owls, or does it depend on the person?',
+    questionEs: '¿Las personas madrugadoras son más productivas que las nocturnas, o depende de cada quien?',
+    suggestedAnswerEs: 'En mi opinión, la productividad depende del ritmo biológico de cada persona. Por ejemplo, algunas personas tienen más energía y claridad temprano en la mañana. No obstante, muchas personas creativas se concentran mejor en el silencio de la noche. En definitiva, lo más importante es conocer tus mejores horas y aprovecharlas bien.',
+    suggestedAnswerEn: 'In my opinion, productivity depends on the biological rhythm of each person. For example, some people have more energy and clarity early in the morning. Nevertheless, many creative people focus better in the silence of the night. Ultimately, the most important thing is to know your best hours and use them well.',
+    fragments: [
+      {
+        es: 'En mi opinión, la productividad depende del ritmo biológico de cada persona.',
+        tokens: ['In my opinion,', 'productivity depends on', 'the biological rhythm', 'of each person.'],
+      },
+      {
+        es: 'Por ejemplo, algunas personas tienen más energía y claridad temprano en la mañana.',
+        tokens: ['For example,', 'some people have', 'more energy and clarity', 'early in the morning.'],
+      },
+      {
+        es: 'No obstante, muchas personas creativas se concentran mejor en el silencio de la noche.',
+        tokens: ['Nevertheless,', 'many creative people', 'focus better', 'in the silence of the night.'],
+      },
+      {
+        es: 'En definitiva, lo más importante es conocer tus mejores horas y aprovecharlas bien.',
+        tokens: ['Ultimately,', 'the most important thing', 'is to know your best hours', 'and use them well.'],
+      },
+    ],
+    connectors: ['In my opinion', 'For example', 'Nevertheless', 'Ultimately'],
+    level: 'intermediate',
+  },
+  {
+    id: 'dt-int-17',
+    category: 'Consumo y Felicidad',
+    questionEn: 'Does buying new things make us happier, or is it better to spend money on experiences?',
+    questionEs: '¿Comprar cosas nuevas nos hace más felices, o es mejor gastar el dinero en experiencias?',
+    suggestedAnswerEs: 'Creo que invertir en experiencias nos brinda una felicidad mucho más duradera. Aunque comprar un objeto nuevo es emocionante al principio, nos acostumbramos rápido a él. En cambio, los viajes y los momentos con amigos se convierten en recuerdos inolvidables. Por esta razón, prefiero coleccionar buenos momentos en lugar de objetos materiales.',
+    suggestedAnswerEn: 'I believe that investing in experiences brings us much more lasting happiness. Although buying a new item is exciting at first, we get used to it very quickly. In contrast, trips and moments with friends turn into unforgettable memories. For this reason, I prefer to collect good moments instead of material things.',
+    fragments: [
+      {
+        es: 'Creo que invertir en experiencias nos brinda una felicidad mucho más duradera.',
+        tokens: ['I believe that', 'investing in experiences', 'brings us', 'much more lasting happiness.'],
+      },
+      {
+        es: 'Aunque comprar un objeto nuevo es emocionante al principio, nos acostumbramos rápido a él.',
+        tokens: ['Although buying a new item', 'is exciting at first,', 'we get used to it', 'very quickly.'],
+      },
+      {
+        es: 'En cambio, los viajes y los momentos con amigos se convierten en recuerdos inolvidables.',
+        tokens: ['In contrast,', 'trips and moments with friends', 'turn into', 'unforgettable memories.'],
+      },
+      {
+        es: 'Por esta razón, prefiero coleccionar buenos momentos en lugar de objetos materiales.',
+        tokens: ['For this reason,', 'I prefer to collect', 'good moments', 'instead of material things.'],
+      },
+    ],
+    connectors: ['I believe that', 'Although', 'In contrast', 'For this reason'],
+    level: 'intermediate',
+  },
 ];
 
 // ═══════════════════════════════════════════════════════════
@@ -756,6 +896,146 @@ const advancedQuestions: DeepTalkQuestion[] = [
       },
     ],
     connectors: ['As', 'Although', 'In contrast', 'Consequently'],
+    level: 'advanced',
+  },
+  {
+    id: 'dt-adv-13',
+    category: 'Economía Laboral y Productividad',
+    questionEn: 'Would a four-day workweek increase productivity and well-being, or would it harm the economy?',
+    questionEs: '¿Una semana laboral de cuatro días aumentaría la productividad y el bienestar, o perjudicaría la economía?',
+    suggestedAnswerEs: 'Desde mi perspectiva, reducir la jornada laboral a cuatro días traería enormes beneficios. Cuando los empleados descansan adecuadamente, cometen menos errores y trabajan con mayor enfoque. Sin embargo, ciertas industrias de atención continua necesitarían adaptar sus turnos con cuidado. En última instancia, medir resultados en lugar de horas sentados es el futuro del trabajo moderno.',
+    suggestedAnswerEn: 'From my perspective, reducing the workweek to four days would bring huge benefits. When employees rest properly, they make fewer mistakes and work with greater focus. However, certain continuous-service industries would need to adapt their shifts carefully. Ultimately, measuring results instead of hours sitting down is the future of modern work.',
+    fragments: [
+      {
+        es: 'Desde mi perspectiva, reducir la jornada laboral a cuatro días traería enormes beneficios.',
+        tokens: ['From my perspective,', 'reducing the workweek', 'to four days', 'would bring huge benefits.'],
+      },
+      {
+        es: 'Cuando los empleados descansan adecuadamente, cometen menos errores y trabajan con mayor enfoque.',
+        tokens: ['When employees rest properly,', 'they make fewer mistakes', 'and work with greater focus.'],
+      },
+      {
+        es: 'Sin embargo, ciertas industrias de atención continua necesitarían adaptar sus turnos con cuidado.',
+        tokens: ['However,', 'certain continuous-service industries', 'would need to adapt', 'their shifts carefully.'],
+      },
+      {
+        es: 'En última instancia, medir resultados en lugar de horas sentados es el futuro del trabajo moderno.',
+        tokens: ['Ultimately,', 'measuring results', 'instead of hours sitting down', 'is the future of modern work.'],
+      },
+    ],
+    connectors: ['From my perspective', 'When', 'However', 'Ultimately'],
+    level: 'advanced',
+  },
+  {
+    id: 'dt-adv-14',
+    category: 'Psicología y Talento',
+    questionEn: 'In the long run, is self-discipline more important than natural talent for achieving mastery?',
+    questionEs: 'A largo plazo, ¿la autodisciplina es más importante que el talento natural para alcanzar la maestría?',
+    suggestedAnswerEs: 'Sin lugar a dudas, la disciplina constante supera al talento natural a largo plazo. Si bien el talento te da una ventaja inicial, puede volverse inútil sin práctica diaria. Además, la disciplina forja el carácter necesario para seguir adelante cuando surgen obstáculos. En conclusión, el talento marca el punto de partida, pero la constancia define hasta dónde llegas.',
+    suggestedAnswerEn: 'Without a shadow of a doubt, consistent discipline surpasses natural talent in the long run. While talent gives you an initial advantage, it can become useless without daily practice. Furthermore, discipline builds the necessary character to keep going when obstacles arise. In conclusion, talent sets the starting point, but consistency defines how far you go.',
+    fragments: [
+      {
+        es: 'Sin lugar a dudas, la disciplina constante supera al talento natural a largo plazo.',
+        tokens: ['Without a shadow of a doubt,', 'consistent discipline', 'surpasses natural talent', 'in the long run.'],
+      },
+      {
+        es: 'Si bien el talento te da una ventaja inicial, puede volverse inútil sin práctica diaria.',
+        tokens: ['While talent gives you', 'an initial advantage,', 'it can become useless', 'without daily practice.'],
+      },
+      {
+        es: 'Además, la disciplina forja el carácter necesario para seguir adelante cuando surgen obstáculos.',
+        tokens: ['Furthermore,', 'discipline builds', 'the necessary character', 'to keep going', 'when obstacles arise.'],
+      },
+      {
+        es: 'En conclusión, el talento marca el punto de partida, pero la constancia define hasta dónde llegas.',
+        tokens: ['In conclusion,', 'talent sets the starting point,', 'but consistency defines', 'how far you go.'],
+      },
+    ],
+    connectors: ['Without a shadow of a doubt', 'While', 'Furthermore', 'In conclusion'],
+    level: 'advanced',
+  },
+  {
+    id: 'dt-adv-15',
+    category: 'Privacidad Digital y Sociedad',
+    questionEn: 'Is personal privacy dead in the digital age, or can we still protect our personal data?',
+    questionEs: '¿Ha muerto la privacidad personal en la era digital, o aún podemos proteger nuestros datos personales?',
+    suggestedAnswerEs: 'Es innegable que proteger nuestra privacidad hoy en día es más difícil que nunca. Cada vez que usamos una aplicación gratuita, entregamos información valiosa sobre nuestros hábitos. No obstante, no debemos resignarnos a perder el control total sobre nuestra identidad digital. Por consiguiente, exigir leyes transparentes y cuidar nuestra huella digital es una responsabilidad ciudadana.',
+    suggestedAnswerEn: 'Undeniably, protecting our privacy nowadays is harder than ever. Every time we use a free application, we hand over valuable information about our habits. Nonetheless, we should not resign ourselves to losing total control over our digital identity. Consequently, demanding transparent laws and minding our digital footprint is a civic responsibility.',
+    fragments: [
+      {
+        es: 'Es innegable que proteger nuestra privacidad hoy en día es más difícil que nunca.',
+        tokens: ['Undeniably,', 'protecting our privacy nowadays', 'is harder than ever.'],
+      },
+      {
+        es: 'Cada vez que usamos una aplicación gratuita, entregamos información valiosa sobre nuestros hábitos.',
+        tokens: ['Every time we use', 'a free application,', 'we hand over valuable information', 'about our habits.'],
+      },
+      {
+        es: 'No obstante, no debemos resignarnos a perder el control total sobre nuestra identidad digital.',
+        tokens: ['Nonetheless,', 'we should not resign ourselves', 'to losing total control', 'over our digital identity.'],
+      },
+      {
+        es: 'Por consiguiente, exigir leyes transparentes y cuidar nuestra huella digital es una responsabilidad ciudadana.',
+        tokens: ['Consequently,', 'demanding transparent laws', 'and minding our digital footprint', 'is a civic responsibility.'],
+      },
+    ],
+    connectors: ['Undeniably', 'Every time', 'Nonetheless', 'Consequently'],
+    level: 'advanced',
+  },
+  {
+    id: 'dt-adv-16',
+    category: 'Medios e Información',
+    questionEn: 'Does constant exposure to global news make us more informed citizens, or does it just create anxiety?',
+    questionEs: '¿La exposición constante a las noticias globales nos hace ciudadanos más informados, o solo nos genera ansiedad?',
+    suggestedAnswerEs: 'Aunque estar informados es un deber cívico, el consumo excesivo de noticias suele ser contraproducente. Porque los medios digitales suelen destacar las crisis para captar nuestra atención mediante el miedo. Por lo tanto, es fundamental elegir fuentes confiables y establecer límites diarios de pantalla. En síntesis, un ciudadano bien informado busca profundidad y contexto, no un bombardeo constante de alertas.',
+    suggestedAnswerEn: 'Although staying informed is a civic duty, excessive news consumption is often counterproductive. Because digital media often highlights crises to capture our attention through fear. Therefore, it is essential to choose reliable sources and set daily screen limits. In summary, a well-informed citizen seeks depth and context, not a constant barrage of alerts.',
+    fragments: [
+      {
+        es: 'Aunque estar informados es un deber cívico, el consumo excesivo de noticias suele ser contraproducente.',
+        tokens: ['Although staying informed', 'is a civic duty,', 'excessive news consumption', 'is often counterproductive.'],
+      },
+      {
+        es: 'Porque los medios digitales suelen destacar las crisis para captar nuestra atención mediante el miedo.',
+        tokens: ['Because digital media', 'often highlights crises', 'to capture our attention', 'through fear.'],
+      },
+      {
+        es: 'Por lo tanto, es fundamental elegir fuentes confiables y establecer límites diarios de pantalla.',
+        tokens: ['Therefore,', 'it is essential', 'to choose reliable sources', 'and set daily screen limits.'],
+      },
+      {
+        es: 'En síntesis, un ciudadano bien informado busca profundidad y contexto, no un bombardeo constante de alertas.',
+        tokens: ['In summary,', 'a well-informed citizen', 'seeks depth and context,', 'not a constant barrage of alerts.'],
+      },
+    ],
+    connectors: ['Although', 'Because', 'Therefore', 'In summary'],
+    level: 'advanced',
+  },
+  {
+    id: 'dt-adv-17',
+    category: 'Cultura y Globalización',
+    questionEn: 'Is globalization erasing local traditions, or is it enriching cultures around the world?',
+    questionEs: '¿La globalización está borrando las tradiciones locales, o está enriqueciendo las culturas del mundo?',
+    suggestedAnswerEs: 'A mi modo de ver, la globalización es un arma de doble filo para la identidad cultural. Por un lado, el consumo masivo tiende a uniformar la moda, la música y el entretenimiento. Por otro lado, internet permite que las tradiciones locales se den a conocer y se valoren mundialmente. De ahí que el reto consista en abrirnos al mundo sin olvidar jamás nuestras propias raíces.',
+    suggestedAnswerEn: 'As I see it, globalization is a double-edged sword for cultural identity. On one hand, mass consumption tends to standardize fashion, music, and entertainment. On the other hand, the internet allows local traditions to be known and valued worldwide. Hence, the challenge lies in opening up to the world without ever forgetting our own roots.',
+    fragments: [
+      {
+        es: 'A mi modo de ver, la globalización es un arma de doble filo para la identidad cultural.',
+        tokens: ['As I see it,', 'globalization is', 'a double-edged sword', 'for cultural identity.'],
+      },
+      {
+        es: 'Por un lado, el consumo masivo tiende a uniformar la moda, la música y el entretenimiento.',
+        tokens: ['On one hand,', 'mass consumption tends', 'to standardize fashion,', 'music, and entertainment.'],
+      },
+      {
+        es: 'Por otro lado, internet permite que las tradiciones locales se den a conocer y se valoren mundialmente.',
+        tokens: ['On the other hand,', 'the internet allows', 'local traditions to be known', 'and valued worldwide.'],
+      },
+      {
+        es: 'De ahí que el reto consista en abrirnos al mundo sin olvidar jamás nuestras propias raíces.',
+        tokens: ['Hence,', 'the challenge lies in', 'opening up to the world', 'without ever forgetting our own roots.'],
+      },
+    ],
+    connectors: ['As I see it', 'On one hand', 'On the other hand', 'Hence'],
     level: 'advanced',
   },
 ];
