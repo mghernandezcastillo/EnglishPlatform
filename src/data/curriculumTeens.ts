@@ -9523,8 +9523,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: Give directions in the city 🗺️ / Den indicaciones en la ciudad 🗺️",
                   description: "Describe locations, places, and spatial prepositions.",
                   speakingScene: {
-  "topic": "Tell a Spooky or Surprising Story 🕵️",
-  "topicEs": "Cuenta una historia misteriosa o sorprendente",
+  "topic": "Tell a Funny or Surprising Story 🌟",
+  "topicEs": "Cuenta una historia divertida o sorprendente",
   "cues": [
     {
       "icon": "🌙",
@@ -11102,7 +11102,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     "title": "Holidays, Festivals & Traditions 🎉🎇 / Festivales y Fiestas",
                     "description": "Cultural Celebrations",
                     "content": [
-                              "New Year's Eve, Halloween, Thanksgiving, Carnival, Day of the Dead",
+                              "New Year's Eve, Christmas, Thanksgiving, Carnival, Independence Day",
                               "Fireworks, costumes, traditional feasts, parades, music",
                               "Festivals bring communities and friends together.",
                               "We decorate the house with colorful lights."

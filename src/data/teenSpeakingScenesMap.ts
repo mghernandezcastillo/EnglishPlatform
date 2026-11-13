@@ -1707,8 +1707,8 @@ export const TEEN_SPEAKING_SCENES_MAP: Record<string, ResolvedSpeakingScene> = {
     }
   },
   "c-teens-basic-2-8": {
-    "topic": "Tell a Spooky or Surprising Story 🕵️",
-    "topicEs": "Cuenta una historia misteriosa o sorprendente",
+    "topic": "Tell a Funny or Surprising Story 🌟",
+    "topicEs": "Cuenta una historia divertida o sorprendente",
     "cues": [
       {
         "icon": "🌙",
@@ -2214,7 +2214,7 @@ export const TEEN_SPEAKING_SCENES_MAP: Record<string, ResolvedSpeakingScene> = {
         "icon": "🎆",
         "label": "WHAT FESTIVAL?",
         "labelEs": "¿Qué festival?",
-        "questionExample": "Is it Carnival, Lantern Festival, or Day of the Dead?"
+        "questionExample": "Is it Carnival, Lantern Festival, or Flower Fair?"
       },
       {
         "icon": "🎭",

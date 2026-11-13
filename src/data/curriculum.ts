@@ -2618,7 +2618,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "content": [
                   "Month + Ordinal Number",
                   "Example: May 4th (May fourth)",
-                  "Example: October 31st (October thirty-first)"
+                  "Example: July 20th (July twentieth)"
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
               }
@@ -13847,7 +13847,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "speaking",
                 "content": [
                   "1. What do you need right now?",
-                  "2. Do you believe in ghosts?",
+                  "2. Do you believe in luck and destiny?",
                   "3. What are you doing this weekend?",
                   "4. Do you have any pets? What do they look like?"
                 ],
@@ -31961,7 +31961,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Grammar & Vocabulary",
                 "content": [
                   "Ever = anytime in your life (used in questions)",
-                  "Example: Have you ever seen a ghost?",
+                  "Example: Have you ever seen a shooting star?",
                   "Never = not at any time",
                   "Example: I have never flown in a helicopter."
                 ],

@@ -75,7 +75,7 @@ function getIconForRequirement(label: string): string {
   if (/do\s|gymnastic|martial|karate|yoga|judo|strength|workout/i.test(text)) return '🥋';
   if (/compar|faster|taller|better|more|than|-er/i.test(text)) return '⚡';
   if (/in\s|month|year|season|december|july/i.test(text)) return '📅';
-  if (/on\s|day|date|friday|birthday|halloween/i.test(text)) return '🎂';
+  if (/on\s|day|date|friday|birthday|holiday|festival/i.test(text)) return '🎂';
   if (/at\s|hour|time|midnight|noon|7:00|clock/i.test(text)) return '⏰';
   if (/will|won't|future|predict|space|mars/i.test(text)) return '🚀';
   if (/was|were|childhood|nostalgia|past to be/i.test(text)) return '🧸';

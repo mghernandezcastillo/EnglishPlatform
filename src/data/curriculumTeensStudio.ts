@@ -23343,7 +23343,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Hoy aprenderás a hablar de tus fiestas y tradiciones favoritas en inglés.",
                 "type": "standard",
                 "content": [
-                  "¿Cuál es tu festividad favorita: Navidad, Halloween o la Feria de las Flores?",
+                  "¿Cuál es tu festividad favorita: Navidad, Año Nuevo o la Feria de las Flores?",
                   "Aprenderás a usar las preposiciones IN, ON y AT para fechas exactas.",
                   "Podrás explicar cómo celebras con tu familia y amigos cualquier fiesta especial."
                 ],
@@ -23385,10 +23385,10 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "es": "¿Cómo celebras la Nochebuena en Colombia?"
                   },
                   {
-                    "label": "Halloween",
+                    "label": "Candles' Day",
                     "color": "#F59E0B",
-                    "prompt": "What costume did you wear for Halloween last year?",
-                    "es": "¿Qué disfraz usaste para Halloween el año pasado?"
+                    "prompt": "How do you celebrate Little Candles' Day on December 7th?",
+                    "es": "¿Cómo celebras el Día de las Velitas el 7 de diciembre?"
                   },
                   {
                     "label": "New Year",
@@ -23451,7 +23451,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     {
                       "type": "affirmative-3rd",
                       "label": "2. ON (Días & Fechas Exactas)",
-                      "subject": "On December 24th • On Halloween • On Friday • On my birthday • On weekends",
+                      "subject": "On December 24th • On New Year's Day • On Friday • On my birthday • On weekends",
                       "rule": "Se usa siempre que se mencione un día de la semana o una fecha con número.",
                       "formula": "[ On ] + [ Día / Fecha con número / Nombre de fiesta + Day ]",
                       "example": "On December 24th, we eat buñuelos and open gifts with my family.",
@@ -23478,10 +23478,10 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "subject": "Do you decorate the house in November? • Is your birthday in July?",
                       "rule": "Formula preguntas verificando la preposición correcta.",
                       "formula": "[ Do you / Is ] + [ Sujeto ] + [ in / on / at ] + [ Fecha / Hora ] + ?",
-                      "example": "Do you celebrate Halloween with your school friends on October 31st?",
-                      "exampleEs": "¿Celebras Halloween con tus amigos del colegio el 31 de octubre?",
-                      "audio": "Do you celebrate Halloween with your school friends on October 31st?",
-                      "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Do you celebrate Halloween with your school friends on October 31st?\", isolated on pure solid flat white background, no background bokeh, clean 3D character render",
+                      "example": "Do you celebrate Independence Day with your school friends on July 20th?",
+                      "exampleEs": "¿Celebras el Día de la Independencia con tus amigos del colegio el 20 de julio?",
+                      "audio": "Do you celebrate Independence Day with your school friends on July 20th?",
+                      "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Do you celebrate Independence Day with your school friends on July 20th?\", isolated on pure solid flat white background, no background bokeh, clean 3D character render",
                       "avatarUrl": "/images/avatars-3d/c01-s04-step3-negative-confident.webp"
                     },
                     {
@@ -23513,13 +23513,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     {
                       "type": "affirmative",
                       "label": "1. Festividades Populares",
-                      "subject": "Christmas (Navidad) • New Year's Eve (Año Nuevo) • Halloween • Valentine's Day (San Valentín) • Independence Day (Día de Independencia)",
+                      "subject": "Christmas (Navidad) • New Year's Eve (Año Nuevo) • Carnival (Carnaval) • Valentine's Day (San Valentín) • Independence Day (Día de Independencia)",
                       "rule": "Nombres de las fiestas más celebradas internacionalmente.",
                       "formula": "[ Nombre de la festividad ]",
-                      "example": "Halloween is on October 31st and kids wear amazing creative costumes.",
-                      "exampleEs": "Halloween es el 31 de octubre y los chicos usan disfraces creativos increíbles.",
-                      "audio": "Halloween is on October 31st and kids wear amazing creative costumes.",
-                      "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Halloween is on October 31st and kids wear amazing creative costumes.\", isolated on pure solid flat white background, no background bokeh, clean 3D character render",
+                      "example": "Independence Day is on July 20th and people watch amazing cultural parades.",
+                      "exampleEs": "El Día de la Independencia es el 20 de julio y la gente ve desfiles culturales increíbles.",
+                      "audio": "Independence Day is on July 20th and people watch amazing cultural parades.",
+                      "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Independence Day is on July 20th and people watch amazing cultural parades.\", isolated on pure solid flat white background, no background bokeh, clean 3D character render",
                       "avatarUrl": "/images/avatars-3d/c01-s04-step3-negative-confident.webp"
                     },
                     {
@@ -23606,8 +23606,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "past_participle": "Dressed up",
                     "meaning_es": "Disfrazarse / Vestirse de gala",
                     "pronunciation": "/dres ʌp/",
-                    "example": "Teens dress up in anime costumes for Halloween.",
-                    "example_es": "Los jóvenes se disfrazan con trajes de anime para Halloween."
+                    "example": "People dress up in traditional clothes for the carnival parade.",
+                    "example_es": "La gente se viste con trajes tradicionales para el desfile del carnaval."
                   },
                   {
                     "verb": "Gather",
@@ -23689,7 +23689,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "When does this traditional New Year celebration happen?",
                   "options": [
                     "In July on a sunny Friday afternoon.",
-                    "On October 31st during Halloween night.",
+                    "On December 7th during Little Candles' Night.",
                     "On December 31st at midnight (12:00 AM)."
                   ],
                   "correctOptionIndex": 2
@@ -23814,7 +23814,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escribe 4 oraciones sobre una festividad que amas usando In, On y At.",
                 "type": "homework",
                 "content": [
-                  "1. Usa IN con un mes o estación (ej: 'In October, we celebrate Halloween at school').",
+                  "1. Usa IN con un mes o estación (ej: 'In August, we celebrate the Flower Fair in Medellín').",
                   "2. Usa ON con un día o fecha específica (ej: 'On December 24th, we gather at my grandmother's house').",
                   "3. Usa AT con una hora o momento exacto (ej: 'At midnight, we hug and open presents').",
                   "4. Menciona tu comida festiva favorita (ej: 'We always eat fresh buñuelos and natilla')."
@@ -26248,10 +26248,10 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 ],
                 "wheelItems": [
                   {
-                    "label": "Spooky",
+                    "label": "Adventure",
                     "color": "#EF4444",
-                    "prompt": "Have you ever heard strange noises at home alone at night?",
-                    "es": "¿Alguna vez has escuchado ruidos raros solo en casa de noche?"
+                    "prompt": "Have you ever had an exciting outdoor adventure with your family or friends?",
+                    "es": "¿Alguna vez has tenido una aventura emocionante al aire libre con tu familia o amigos?"
                   },
                   {
                     "label": "Unexpected",
@@ -26648,7 +26648,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Narra oralmente una anécdota real en inglés usando conectores dramáticos.",
                 "type": "speaking",
                 "content": [
-                  "Tell a funny or spooky story using: First, Suddenly, Fortunately, and In the end.",
+                  "Tell a funny or surprising story using: First, Suddenly, Fortunately, and In the end.",
                   "What was the most surprising coincidence that has ever happened to you or your family?",
                   "Why do you think good storytellers make ordinary events sound so exciting?"
                 ],
@@ -34203,14 +34203,14 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
           {
                     "label": "Urban Legends",
                     "color": "#3B82F6",
-                    "prompt": "Is there a famous mysterious legend or haunted house story in your town or school?",
-                    "es": "¿Hay alguna leyenda misteriosa o historia de casa embrujada famosa en tu ciudad o colegio?"
+                    "prompt": "Is there a famous historical legend or hidden treasure story in your town or region?",
+                    "es": "¿Hay alguna leyenda histórica famosa o historia de un tesoro escondido en tu ciudad o región?"
           },
           {
                     "label": "Unexplained Photo",
                     "color": "#8B5CF6",
-                    "prompt": "Have you ever taken a photo where a weird reflection or shadow looked like a ghost?",
-                    "es": "¿Alguna vez tomaste una foto donde un reflejo o sombra extraña parecía un fantasma?"
+                    "prompt": "Have you ever taken a photo with a funny optical illusion or unexpected reflection?",
+                    "es": "¿Alguna vez tomaste una foto con una ilusión óptica divertida o un reflejo inesperado?"
           },
           {
                     "label": "Sherlock Instinct",
@@ -34620,7 +34620,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "type": "homework",
                 "content": [
                   "1. Usa 'must be' con una certeza basada en una pista evidente (ej: 'The kitchen smells like warm cookies, so mom must be baking').",
-                  "2. Usa 'can't be' para descartar una imposibilidad lógica (ej: 'That shadow can't be a ghost because it is just a coat rack').",
+                  "2. Usa 'can't be' para descartar una imposibilidad lógica (ej: 'That shadow can't be a dog because it is just a coat rack').",
                   "3. Usa 'might be' para una posibilidad intermedia (ej: 'The package on the porch might be my new sneakers').",
                   "4. Escribe una pregunta con 'Could it be' (ej: 'Could that strange sound be a cat on the roof?')."
                 ],

@@ -11809,7 +11809,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🎄 CHRISTMAS",
-                  "🎃 HALLOWEEN",
+                  "🎆 NEW YEAR",
                   "🎂 BIRTHDAY",
                   "🏖️ SUMMER"
                 ],
@@ -11824,7 +11824,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
                   "🎄 CHRISTMAS",
-                  "🎃 HALLOWEEN",
+                  "🎆 NEW YEAR",
                   "🎂 BIRTHDAY",
                   "🏖️ SUMMER"
                 ],
@@ -11837,7 +11837,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
                   "🎄 CHRISTMAS",
-                  "🎃 HALLOWEEN",
+                  "🎆 NEW YEAR",
                   "🎂 BIRTHDAY",
                   "🏖️ SUMMER"
                 ],
@@ -12008,7 +12008,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                     "color": "#dc2626"
                   },
                   {
-                    "label": "HALLOWEEN 🎃",
+                    "label": "NEW YEAR 🎆",
                     "color": "#ea580c"
                   },
                   {
@@ -12044,8 +12044,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                   },
                   {
                     "id": "2",
-                    "left": "🎃",
-                    "right": "HALLOWEEN"
+                    "left": "🎆",
+                    "right": "NEW YEAR"
                   },
                   {
                     "id": "3",
@@ -12067,7 +12067,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "speaking",
                 "content": [
                   "🎄 ➡️ ?????????",
-                  "🎃 ➡️ ?????????",
+                  "🎆 ➡️ ????????",
                   "🎂 ➡️ ????????",
                   "🏖️ ➡️ ??????"
                 ]

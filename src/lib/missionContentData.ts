@@ -7044,10 +7044,10 @@ export const TEEN_MISSION_CONTENT: MissionContentEntry[] = [
       {
         "id": "3-3-3",
         "term": "Dress up",
-        "translation": "Disfrazarse / Vestirse de gala",
+        "translation": "Vestirse de gala / Vestirse especial",
         "ipa": "/dres ʌp/",
-        "audioText": "Dress up. Teens dress up in anime costumes for Halloween.",
-        "example": "Teens dress up in anime costumes for Halloween.",
+        "audioText": "Dress up. People dress up in elegant clothes for New Year's Eve.",
+        "example": "People dress up in elegant clothes for New Year's Eve.",
         "type": "vocab",
         "learned": false
       },
