@@ -60,7 +60,7 @@ export const TEEN_HOMEWORK_CATALOG: Record<string, TeenHomeworkSpec> = {
     "exampleLines": [
         "I am fourteen years old. 🎂",
         "My birthday is in September. 📅",
-        "My lucky number is seven. 🍀"
+        "My favorite number is seven. ⭐"
     ],
     "whatToInclude": [
         {

@@ -860,7 +860,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                     "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
                     "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                    "wheelItems": [{ label: "Lucky", color: "#EF4444", prompt: "What is your lucky number?", es: "Cual es tu numero de suerte?" }, { label: "Age", color: "#F59E0B", prompt: "How old is someone in your family?", es: "Que edad tiene alguien de tu familia?" }, { label: "Time", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Phone", color: "#3B82F6", prompt: "What numbers are easy for you?", es: "Que numeros son faciles para ti?" }, { label: "Count", color: "#8B5CF6", prompt: "How many people are in class?", es: "Cuantas personas hay en clase?" }, { label: "Price", color: "#EC4899", prompt: "What price feels expensive?", es: "Que precio parece caro?" }],
+                    "wheelItems": [{ label: "Favorite #", color: "#EF4444", prompt: "What is your favorite number?", es: "Cual es tu numero favorito?" }, { label: "Age", color: "#F59E0B", prompt: "How old is someone in your family?", es: "Que edad tiene alguien de tu familia?" }, { label: "Time", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Phone", color: "#3B82F6", prompt: "What numbers are easy for you?", es: "Que numeros son faciles para ti?" }, { label: "Count", color: "#8B5CF6", prompt: "How many people are in class?", es: "Cuantas personas hay en clase?" }, { label: "Price", color: "#EC4899", prompt: "What price feels expensive?", es: "Que precio parece caro?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -13847,7 +13847,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "speaking",
                 "content": [
                   "1. What do you need right now?",
-                  "2. Do you believe in luck and destiny?",
+                  "2. Do you believe in God's promises and miracles?",
                   "3. What are you doing this weekend?",
                   "4. Do you have any pets? What do they look like?"
                 ],
@@ -31961,7 +31961,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Grammar & Vocabulary",
                 "content": [
                   "Ever = anytime in your life (used in questions)",
-                  "Example: Have you ever seen a shooting star?",
+                  "Example: Have you ever read the Bible in English?",
                   "Never = not at any time",
                   "Example: I have never flown in a helicopter."
                 ],

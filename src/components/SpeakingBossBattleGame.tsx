@@ -191,7 +191,7 @@ function getContextualSentenceExamples(topic: string, focus?: string) {
   if (t.includes('number') || t.includes('age') || t.includes('birthday')) {
     return {
       pos: "I am 15 years old and my birthday is in August.",
-      neg: "My lucky number isn't seven, it's twenty-four.",
+      neg: "My favorite number isn't seven, it's twenty-four.",
       q: "When is your birthday and how old are you?"
     };
   }

@@ -675,10 +675,10 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "es": "¿En qué mes cumples años?"
                   },
                   {
-                    "label": "Lucky #",
+                    "label": "Favorite #",
                     "color": "#10B981",
-                    "prompt": "What is your lucky number and why?",
-                    "es": "¿Cuál es tu número de la suerte y por qué?"
+                    "prompt": "What is your favorite number and why?",
+                    "es": "¿Cuál es tu número favorito y por qué?"
                   },
                   {
                     "label": "Party Food",
@@ -824,7 +824,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "label": "3. Preposiciones de Fecha (IN vs ON)",
                       "subject": "IN + Month vs ON + Specific Date",
                       "rule": "in [Mes] • on [Mes + Día exacto] • on [Día de la semana]",
-                      "formula": "[ My lucky number ] + [ is ] + [ seven / eleven ]",
+                      "formula": "[ My favorite number ] + [ is ] + [ seven / eleven ]",
                       "example": "My birthday party is on Saturday, October 12th.",
                       "exampleEs": "Mi fiesta de cumpleaños es el sábado 12 de octubre.",
                       "audio": "My birthday party is on Saturday, October 12th.",
@@ -26260,10 +26260,10 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "es": "¿Qué cosa inesperada te pasó en el colegio recientemente?"
                   },
                   {
-                    "label": "Lucky",
+                    "label": "Blessed",
                     "color": "#10B981",
-                    "prompt": "Tell about a lucky moment when you found something lost.",
-                    "es": "Cuenta un momento de suerte cuando encontraste algo perdido."
+                    "prompt": "Tell about a blessed moment when you found something lost.",
+                    "es": "Cuenta un momento de bendición cuando encontraste algo perdido."
                   },
                   {
                     "label": "Mystery",
@@ -35201,7 +35201,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                                                 "guide": "Use: 'If the internet hadn't been invented, people would have relied on... and social media wouldn't have existed...'"
                                           },
                                           {
-                                                "prompt": "Have you ever experienced a lucky coincidence where missing an event turned out to be a good thing?",
+                                                "prompt": "Have you ever experienced a surprising blessing where missing an event turned out to be a good thing?",
                                                 "guide": "Explain: 'Yes! If I hadn't missed the bus that morning, I wouldn't have run into my best friend...'"
                                           }
                                     ],

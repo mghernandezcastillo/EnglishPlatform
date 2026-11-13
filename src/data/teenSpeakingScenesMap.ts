@@ -8424,9 +8424,9 @@ export const TEEN_SPEAKING_SCENES_MAP: Record<string, ResolvedSpeakingScene> = {
       },
       {
         "icon": "🔢",
-        "label": "LUCKY NUMBER?",
+        "label": "FAVORITE NUMBER?",
         "labelEs": "¿Cuál es tu número?",
-        "questionExample": "What is your lucky number?"
+        "questionExample": "What is your favorite number?"
       }
     ],
     "roleA": {
@@ -8461,8 +8461,8 @@ export const TEEN_SPEAKING_SCENES_MAP: Record<string, ResolvedSpeakingScene> = {
       },
       {
         "emoji": "🔢",
-        "word": "lucky number",
-        "translation": "número de la suerte"
+        "word": "favorite number",
+        "translation": "número favorito"
       },
       {
         "emoji": "🎈",
@@ -8500,8 +8500,8 @@ export const TEEN_SPEAKING_SCENES_MAP: Record<string, ResolvedSpeakingScene> = {
           "es": "¡Mi cumpleaños es en octubre!"
         },
         {
-          "en": "My lucky number is seven.",
-          "es": "Mi número de la suerte es el siete."
+          "en": "My favorite number is seven.",
+          "es": "Mi número favorito es el siete."
         }
       ]
     }
